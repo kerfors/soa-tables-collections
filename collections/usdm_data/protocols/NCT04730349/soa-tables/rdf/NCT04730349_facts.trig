@@ -1,0 +1,4184 @@
+@prefix e: <https://kerfors.github.io/soa-tables/id/sha256/2ff447e30e89935998116db2c823385b803028dea19cf9bae339807d856d25dc/soa-tables-v1/> .
+@prefix page: <https://kerfors.github.io/soa-tables/id/sha256/2ff447e30e89935998116db2c823385b803028dea19cf9bae339807d856d25dc/page/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix st: <https://kerfors.github.io/soa-tables/id/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/soa-tables/id/sha256/2ff447e30e89935998116db2c823385b803028dea19cf9bae339807d856d25dc/soa-tables-v1> {
+    <https://kerfors.github.io/soa-tables/id/sha256/2ff447e30e89935998116db2c823385b803028dea19cf9bae339807d856d25dc/soa-tables-v1> a st:Transcription ;
+        st:aboutStudy <https://kerfors.github.io/soa-tables/id/study/NCT04730349> ;
+        st:codeCommit "bbb9ab3dac8c9fe153c293d6515e6f7fb78f7184" ;
+        st:collectionsCommit "1c7dc79b2ed7cf92259168673da2ab1deafd28b9" ;
+        st:consolidatedAt "2026-11-21T09:30:52.336483+00:00"^^xsd:dateTime ;
+        st:consolidator "soa_tables.consolidate v1.2" ;
+        st:ofFile <https://kerfors.github.io/soa-tables/id/sha256/2ff447e30e89935998116db2c823385b803028dea19cf9bae339807d856d25dc> ;
+        st:schemaVersion "1.7" .
+
+    e:m-t01-r003-t01-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r003-c002 ;
+        st:activity e:u-t01-r003 ;
+        st:column e:u-t01-c002 ;
+        st:value "X" .
+
+    e:m-t01-r004-t01-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r004-c002 ;
+        st:activity e:u-t01-r004 ;
+        st:column e:u-t01-c002 ;
+        st:value "X" .
+
+    e:m-t01-r005-t01-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r005-c002 ;
+        st:activity e:u-t01-r005 ;
+        st:column e:u-t01-c002 ;
+        st:value "X" .
+
+    e:m-t01-r007-t01-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r007-c002 ;
+        st:activity e:u-t01-r007 ;
+        st:column e:u-t01-c002 ;
+        st:value "X" .
+
+    e:m-t01-r008-t01-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r008-c002 ;
+        st:activity e:u-t01-r008 ;
+        st:column e:u-t01-c002 ;
+        st:value "X" .
+
+    e:m-t01-r008-t03-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r004-c002 ;
+        st:activity e:u-t01-r008 ;
+        st:column e:u-t03-c002 ;
+        st:value "X" .
+
+    e:m-t01-r008-t03-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r004-c004 ;
+        st:activity e:u-t01-r008 ;
+        st:column e:u-t03-c004 ;
+        st:value "X" .
+
+    e:m-t01-r009-t01-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r009-c002 ;
+        st:activity e:u-t01-r009 ;
+        st:column e:u-t01-c002 ;
+        st:value "X" .
+
+    e:m-t01-r010-t01-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r010-c002 ;
+        st:activity e:u-t01-r010 ;
+        st:column e:u-t01-c002 ;
+        st:value "X" .
+
+    e:m-t01-r010-t02-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r006-c003 ;
+        st:activity e:u-t01-r010 ;
+        st:column e:u-t02-c003 ;
+        st:value "Continuously" .
+
+    e:m-t01-r010-t02-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r006-c004 ;
+        st:activity e:u-t01-r010 ;
+        st:column e:u-t02-c004 ;
+        st:value "Continuously" .
+
+    e:m-t01-r010-t02-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r006-c005 ;
+        st:activity e:u-t01-r010 ;
+        st:column e:u-t02-c005 ;
+        st:value "Continuously" .
+
+    e:m-t01-r010-t02-c006 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r006-c006 ;
+        st:activity e:u-t01-r010 ;
+        st:column e:u-t02-c006 ;
+        st:value "Continuously" .
+
+    e:m-t01-r010-t02-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r006-c007 ;
+        st:activity e:u-t01-r010 ;
+        st:column e:u-t02-c007 ;
+        st:value "Continuously" .
+
+    e:m-t01-r010-t03-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r006-c002 ;
+        st:activity e:u-t01-r010 ;
+        st:column e:u-t03-c002 ;
+        st:value "X" .
+
+    e:m-t01-r010-t03-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r006-c003 ;
+        st:activity e:u-t01-r010 ;
+        st:column e:u-t03-c003 ;
+        st:value "X" .
+
+    e:m-t01-r010-t03-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r006-c004 ;
+        st:activity e:u-t01-r010 ;
+        st:column e:u-t03-c004 ;
+        st:value "X" .
+
+    e:m-t01-r010-t03-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r006-c005 ;
+        st:activity e:u-t01-r010 ;
+        st:column e:u-t03-c005 ;
+        st:value "See Notes" .
+
+    e:m-t01-r012-t01-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r012-c002 ;
+        st:activity e:u-t01-r012 ;
+        st:column e:u-t01-c002 ;
+        st:value "X" .
+
+    e:m-t01-r012-t02-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r009-c002 ;
+        st:activity e:u-t01-r012 ;
+        st:column e:u-t02-c002 ;
+        st:value "X" .
+
+    e:m-t01-r012-t02-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r009-c005 ;
+        st:activity e:u-t01-r012 ;
+        st:column e:u-t02-c005 ;
+        st:value "X" .
+
+    e:m-t01-r012-t02-c006 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r009-c006 ;
+        st:activity e:u-t01-r012 ;
+        st:column e:u-t02-c006 ;
+        st:value "X" .
+
+    e:m-t01-r013-t01-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r013-c002 ;
+        st:activity e:u-t01-r013 ;
+        st:column e:u-t01-c002 ;
+        st:value "X" .
+
+    e:m-t01-r014-t01-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r014-c002 ;
+        st:activity e:u-t01-r014 ;
+        st:column e:u-t01-c002 ;
+        st:value "X" .
+
+    e:m-t01-r015-t01-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r015-c002 ;
+        st:activity e:u-t01-r015 ;
+        st:column e:u-t01-c002 ;
+        st:value "X" .
+
+    e:m-t01-r015-t02-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r010-c002 ;
+        st:activity e:u-t01-r015 ;
+        st:column e:u-t02-c002 ;
+        st:value "X" .
+
+    e:m-t01-r015-t02-c006 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r010-c006 ;
+        st:activity e:u-t01-r015 ;
+        st:column e:u-t02-c006 ;
+        st:value "X" .
+
+    e:m-t01-r015-t03-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r011-c002 ;
+        st:activity e:u-t01-r015 ;
+        st:column e:u-t03-c002 ;
+        st:value "X" .
+
+    e:m-t01-r015-t03-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r011-c003 ;
+        st:activity e:u-t01-r015 ;
+        st:column e:u-t03-c003 ;
+        st:value "X" .
+
+    e:m-t01-r015-t03-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r011-c004 ;
+        st:activity e:u-t01-r015 ;
+        st:column e:u-t03-c004 ;
+        st:value "X" .
+
+    e:m-t01-r017-t01-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r017-c002 ;
+        st:activity e:u-t01-r017 ;
+        st:column e:u-t01-c002 ;
+        st:value "X" .
+
+    e:m-t01-r017-t02-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r012-c003 ;
+        st:activity e:u-t01-r017 ;
+        st:column e:u-t02-c003 ;
+        st:value """• Imaging should occur every 9 weeks (± 7 days) from start of treatment for the first 54 weeks, then every 12 weeks (± 7 days) until disease progression or treatment discontinuation (including treatment beyond progression), whichever occurs later. Tumor assessment schedule should be maintained regardless of dose delays. Use same imaging method as was used at screening.
+• Not applicable to participants with leukemia.
+• Skull base to mid-thigh [18F]fluorodeoxyglucose (FDG) positron emission tomography-computed tomography (PET-CT) or PET-magnetic resonance imaging (PET-MRI); additional anatomy to include all sites of disease) for FDG-avid non-Hodgkin lymphoma.
+• Contrast-enhanced CT of the chest, contrast-enhanced CT/magnetic resonance imaging (MRI) of the abdomen, pelvis, and all other known and/or suspected sites of disease.
+• Participants with metaiodobenzylguanidine (MIBG)-avid neuroblastoma must also undergo MIBG scintigraphy in addition to CT/MRI as above.""" .
+
+    e:m-t01-r017-t02-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r012-c004 ;
+        st:activity e:u-t01-r017 ;
+        st:column e:u-t02-c004 ;
+        st:value """• Imaging should occur every 9 weeks (± 7 days) from start of treatment for the first 54 weeks, then every 12 weeks (± 7 days) until disease progression or treatment discontinuation (including treatment beyond progression), whichever occurs later. Tumor assessment schedule should be maintained regardless of dose delays. Use same imaging method as was used at screening.
+• Not applicable to participants with leukemia.
+• Skull base to mid-thigh [18F]fluorodeoxyglucose (FDG) positron emission tomography-computed tomography (PET-CT) or PET-magnetic resonance imaging (PET-MRI); additional anatomy to include all sites of disease) for FDG-avid non-Hodgkin lymphoma.
+• Contrast-enhanced CT of the chest, contrast-enhanced CT/magnetic resonance imaging (MRI) of the abdomen, pelvis, and all other known and/or suspected sites of disease.
+• Participants with metaiodobenzylguanidine (MIBG)-avid neuroblastoma must also undergo MIBG scintigraphy in addition to CT/MRI as above.""" .
+
+    e:m-t01-r017-t02-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r012-c005 ;
+        st:activity e:u-t01-r017 ;
+        st:column e:u-t02-c005 ;
+        st:value """• Imaging should occur every 9 weeks (± 7 days) from start of treatment for the first 54 weeks, then every 12 weeks (± 7 days) until disease progression or treatment discontinuation (including treatment beyond progression), whichever occurs later. Tumor assessment schedule should be maintained regardless of dose delays. Use same imaging method as was used at screening.
+• Not applicable to participants with leukemia.
+• Skull base to mid-thigh [18F]fluorodeoxyglucose (FDG) positron emission tomography-computed tomography (PET-CT) or PET-magnetic resonance imaging (PET-MRI); additional anatomy to include all sites of disease) for FDG-avid non-Hodgkin lymphoma.
+• Contrast-enhanced CT of the chest, contrast-enhanced CT/magnetic resonance imaging (MRI) of the abdomen, pelvis, and all other known and/or suspected sites of disease.
+• Participants with metaiodobenzylguanidine (MIBG)-avid neuroblastoma must also undergo MIBG scintigraphy in addition to CT/MRI as above.""" .
+
+    e:m-t01-r017-t02-c006 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r012-c006 ;
+        st:activity e:u-t01-r017 ;
+        st:column e:u-t02-c006 ;
+        st:value """• Imaging should occur every 9 weeks (± 7 days) from start of treatment for the first 54 weeks, then every 12 weeks (± 7 days) until disease progression or treatment discontinuation (including treatment beyond progression), whichever occurs later. Tumor assessment schedule should be maintained regardless of dose delays. Use same imaging method as was used at screening.
+• Not applicable to participants with leukemia.
+• Skull base to mid-thigh [18F]fluorodeoxyglucose (FDG) positron emission tomography-computed tomography (PET-CT) or PET-magnetic resonance imaging (PET-MRI); additional anatomy to include all sites of disease) for FDG-avid non-Hodgkin lymphoma.
+• Contrast-enhanced CT of the chest, contrast-enhanced CT/magnetic resonance imaging (MRI) of the abdomen, pelvis, and all other known and/or suspected sites of disease.
+• Participants with metaiodobenzylguanidine (MIBG)-avid neuroblastoma must also undergo MIBG scintigraphy in addition to CT/MRI as above.""" .
+
+    e:m-t01-r017-t02-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r012-c007 ;
+        st:activity e:u-t01-r017 ;
+        st:column e:u-t02-c007 ;
+        st:value """• Imaging should occur every 9 weeks (± 7 days) from start of treatment for the first 54 weeks, then every 12 weeks (± 7 days) until disease progression or treatment discontinuation (including treatment beyond progression), whichever occurs later. Tumor assessment schedule should be maintained regardless of dose delays. Use same imaging method as was used at screening.
+• Not applicable to participants with leukemia.
+• Skull base to mid-thigh [18F]fluorodeoxyglucose (FDG) positron emission tomography-computed tomography (PET-CT) or PET-magnetic resonance imaging (PET-MRI); additional anatomy to include all sites of disease) for FDG-avid non-Hodgkin lymphoma.
+• Contrast-enhanced CT of the chest, contrast-enhanced CT/magnetic resonance imaging (MRI) of the abdomen, pelvis, and all other known and/or suspected sites of disease.
+• Participants with metaiodobenzylguanidine (MIBG)-avid neuroblastoma must also undergo MIBG scintigraphy in addition to CT/MRI as above.""" .
+
+    e:m-t01-r017-t03-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r013-c002 ;
+        st:activity e:u-t01-r017 ;
+        st:column e:u-t03-c002 ;
+        st:value """• Imaging should occur every 9 weeks (± 7 days) from start of treatment for the first 54 weeks, then every 12 weeks (± 7 days) until disease progression (including treatment beyond progression) or end of study, whichever occurs later. Use same imaging method as was used at screening. After completion of study therapy for participants without progression, results of additional imaging (including bone marrow and CSF, if applicable) are requested for the duration of the study.
+• Not applicable to participants with leukemia.
+• Skull base to mid-thigh [18F]fluorodeoxyglucose (FDG) positron emission tomography-computed tomography (PET-CT) or PET-magnetic resonance imaging (PET-MRI); additional anatomy to include all sites of disease for FDG-avid non-Hodgkin lymphoma.
+• Contrast-enhanced CT of the chest, contrast-enhanced CT/magnetic resonance imaging (MRI) of the abdomen, pelvis, and all other known and/or suspected sites of disease.
+• Participants with metaiodobenzylguanidine (MIBG)-avid neuroblastoma must also undergo MIBG scintigraphy in addition to CT/MRI as above.""" .
+
+    e:m-t01-r017-t03-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r013-c003 ;
+        st:activity e:u-t01-r017 ;
+        st:column e:u-t03-c003 ;
+        st:value """• Imaging should occur every 9 weeks (± 7 days) from start of treatment for the first 54 weeks, then every 12 weeks (± 7 days) until disease progression (including treatment beyond progression) or end of study, whichever occurs later. Use same imaging method as was used at screening. After completion of study therapy for participants without progression, results of additional imaging (including bone marrow and CSF, if applicable) are requested for the duration of the study.
+• Not applicable to participants with leukemia.
+• Skull base to mid-thigh [18F]fluorodeoxyglucose (FDG) positron emission tomography-computed tomography (PET-CT) or PET-magnetic resonance imaging (PET-MRI); additional anatomy to include all sites of disease for FDG-avid non-Hodgkin lymphoma.
+• Contrast-enhanced CT of the chest, contrast-enhanced CT/magnetic resonance imaging (MRI) of the abdomen, pelvis, and all other known and/or suspected sites of disease.
+• Participants with metaiodobenzylguanidine (MIBG)-avid neuroblastoma must also undergo MIBG scintigraphy in addition to CT/MRI as above.""" .
+
+    e:m-t01-r017-t03-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r013-c004 ;
+        st:activity e:u-t01-r017 ;
+        st:column e:u-t03-c004 ;
+        st:value """• Imaging should occur every 9 weeks (± 7 days) from start of treatment for the first 54 weeks, then every 12 weeks (± 7 days) until disease progression (including treatment beyond progression) or end of study, whichever occurs later. Use same imaging method as was used at screening. After completion of study therapy for participants without progression, results of additional imaging (including bone marrow and CSF, if applicable) are requested for the duration of the study.
+• Not applicable to participants with leukemia.
+• Skull base to mid-thigh [18F]fluorodeoxyglucose (FDG) positron emission tomography-computed tomography (PET-CT) or PET-magnetic resonance imaging (PET-MRI); additional anatomy to include all sites of disease for FDG-avid non-Hodgkin lymphoma.
+• Contrast-enhanced CT of the chest, contrast-enhanced CT/magnetic resonance imaging (MRI) of the abdomen, pelvis, and all other known and/or suspected sites of disease.
+• Participants with metaiodobenzylguanidine (MIBG)-avid neuroblastoma must also undergo MIBG scintigraphy in addition to CT/MRI as above.""" .
+
+    e:m-t01-r017-t03-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r013-c005 ;
+        st:activity e:u-t01-r017 ;
+        st:column e:u-t03-c005 ;
+        st:value """• Imaging should occur every 9 weeks (± 7 days) from start of treatment for the first 54 weeks, then every 12 weeks (± 7 days) until disease progression (including treatment beyond progression) or end of study, whichever occurs later. Use same imaging method as was used at screening. After completion of study therapy for participants without progression, results of additional imaging (including bone marrow and CSF, if applicable) are requested for the duration of the study.
+• Not applicable to participants with leukemia.
+• Skull base to mid-thigh [18F]fluorodeoxyglucose (FDG) positron emission tomography-computed tomography (PET-CT) or PET-magnetic resonance imaging (PET-MRI); additional anatomy to include all sites of disease for FDG-avid non-Hodgkin lymphoma.
+• Contrast-enhanced CT of the chest, contrast-enhanced CT/magnetic resonance imaging (MRI) of the abdomen, pelvis, and all other known and/or suspected sites of disease.
+• Participants with metaiodobenzylguanidine (MIBG)-avid neuroblastoma must also undergo MIBG scintigraphy in addition to CT/MRI as above.""" .
+
+    e:m-t01-r018-t01-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r018-c002 ;
+        st:activity e:u-t01-r018 ;
+        st:column e:u-t01-c002 ;
+        st:value "X" .
+
+    e:m-t01-r018-t02-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r013-c003 ;
+        st:activity e:u-t01-r018 ;
+        st:column e:u-t02-c003 ;
+        st:value "• Participants in brain tumor-related cohorts and those with a history of brain metastasis or symptoms should undergo MRI of the brain without and with contrast every 9 weeks (± 7 days) from start of treatment up to 54 weeks, and then approximately every 12 weeks (± 7 days), or sooner if clinically indicated. Tumor assessment schedule should be maintained regardless of dose delays. Cerebrospinal fluid (CSF), if clinically indicated, should be followed as per Response Assessment in Pediatric Neuro-Oncology guidelines." .
+
+    e:m-t01-r018-t02-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r013-c004 ;
+        st:activity e:u-t01-r018 ;
+        st:column e:u-t02-c004 ;
+        st:value "• Participants in brain tumor-related cohorts and those with a history of brain metastasis or symptoms should undergo MRI of the brain without and with contrast every 9 weeks (± 7 days) from start of treatment up to 54 weeks, and then approximately every 12 weeks (± 7 days), or sooner if clinically indicated. Tumor assessment schedule should be maintained regardless of dose delays. Cerebrospinal fluid (CSF), if clinically indicated, should be followed as per Response Assessment in Pediatric Neuro-Oncology guidelines." .
+
+    e:m-t01-r018-t02-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r013-c005 ;
+        st:activity e:u-t01-r018 ;
+        st:column e:u-t02-c005 ;
+        st:value "• Participants in brain tumor-related cohorts and those with a history of brain metastasis or symptoms should undergo MRI of the brain without and with contrast every 9 weeks (± 7 days) from start of treatment up to 54 weeks, and then approximately every 12 weeks (± 7 days), or sooner if clinically indicated. Tumor assessment schedule should be maintained regardless of dose delays. Cerebrospinal fluid (CSF), if clinically indicated, should be followed as per Response Assessment in Pediatric Neuro-Oncology guidelines." .
+
+    e:m-t01-r018-t02-c006 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r013-c006 ;
+        st:activity e:u-t01-r018 ;
+        st:column e:u-t02-c006 ;
+        st:value "• Participants in brain tumor-related cohorts and those with a history of brain metastasis or symptoms should undergo MRI of the brain without and with contrast every 9 weeks (± 7 days) from start of treatment up to 54 weeks, and then approximately every 12 weeks (± 7 days), or sooner if clinically indicated. Tumor assessment schedule should be maintained regardless of dose delays. Cerebrospinal fluid (CSF), if clinically indicated, should be followed as per Response Assessment in Pediatric Neuro-Oncology guidelines." .
+
+    e:m-t01-r018-t02-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r013-c007 ;
+        st:activity e:u-t01-r018 ;
+        st:column e:u-t02-c007 ;
+        st:value "• Participants in brain tumor-related cohorts and those with a history of brain metastasis or symptoms should undergo MRI of the brain without and with contrast every 9 weeks (± 7 days) from start of treatment up to 54 weeks, and then approximately every 12 weeks (± 7 days), or sooner if clinically indicated. Tumor assessment schedule should be maintained regardless of dose delays. Cerebrospinal fluid (CSF), if clinically indicated, should be followed as per Response Assessment in Pediatric Neuro-Oncology guidelines." .
+
+    e:m-t01-r018-t03-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r014-c002 ;
+        st:activity e:u-t01-r018 ;
+        st:column e:u-t03-c002 ;
+        st:value "• Participants in brain tumor-related cohorts and those with a history of brain metastasis or symptoms should undergo MRI of the brain without and with contrast every 9 weeks (± 7 days) from start of treatment up to 54 weeks, and then approximately every 12 weeks (± 7 days), or sooner if clinically indicated until disease progression (including treatment beyond progression) or end of study, whichever occurs later. Cerebrospinal fluid (CSF), if clinically indicated, should be followed as per Response Assessment in Pediatric Neuro-Oncology guidelines." .
+
+    e:m-t01-r018-t03-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r014-c003 ;
+        st:activity e:u-t01-r018 ;
+        st:column e:u-t03-c003 ;
+        st:value "• Participants in brain tumor-related cohorts and those with a history of brain metastasis or symptoms should undergo MRI of the brain without and with contrast every 9 weeks (± 7 days) from start of treatment up to 54 weeks, and then approximately every 12 weeks (± 7 days), or sooner if clinically indicated until disease progression (including treatment beyond progression) or end of study, whichever occurs later. Cerebrospinal fluid (CSF), if clinically indicated, should be followed as per Response Assessment in Pediatric Neuro-Oncology guidelines." .
+
+    e:m-t01-r018-t03-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r014-c004 ;
+        st:activity e:u-t01-r018 ;
+        st:column e:u-t03-c004 ;
+        st:value "• Participants in brain tumor-related cohorts and those with a history of brain metastasis or symptoms should undergo MRI of the brain without and with contrast every 9 weeks (± 7 days) from start of treatment up to 54 weeks, and then approximately every 12 weeks (± 7 days), or sooner if clinically indicated until disease progression (including treatment beyond progression) or end of study, whichever occurs later. Cerebrospinal fluid (CSF), if clinically indicated, should be followed as per Response Assessment in Pediatric Neuro-Oncology guidelines." .
+
+    e:m-t01-r018-t03-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r014-c005 ;
+        st:activity e:u-t01-r018 ;
+        st:column e:u-t03-c005 ;
+        st:value "• Participants in brain tumor-related cohorts and those with a history of brain metastasis or symptoms should undergo MRI of the brain without and with contrast every 9 weeks (± 7 days) from start of treatment up to 54 weeks, and then approximately every 12 weeks (± 7 days), or sooner if clinically indicated until disease progression (including treatment beyond progression) or end of study, whichever occurs later. Cerebrospinal fluid (CSF), if clinically indicated, should be followed as per Response Assessment in Pediatric Neuro-Oncology guidelines." .
+
+    e:m-t01-r019-t01-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r019-c002 ;
+        st:activity e:u-t01-r019 ;
+        st:column e:u-t01-c002 ;
+        st:value "X" .
+
+    e:m-t01-r020-t01-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r020-c002 ;
+        st:activity e:u-t01-r020 ;
+        st:column e:u-t01-c002 ;
+        st:value "X" .
+
+    e:m-t01-r021-t01-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r021-c002 ;
+        st:activity e:u-t01-r021 ;
+        st:column e:u-t01-c002 ;
+        st:value "X" .
+
+    e:m-t01-r021-t02-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r016-c003 ;
+        st:activity e:u-t01-r021 ;
+        st:column e:u-t02-c003 ;
+        st:value "Performed as clinically indicated." .
+
+    e:m-t01-r021-t02-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r016-c004 ;
+        st:activity e:u-t01-r021 ;
+        st:column e:u-t02-c004 ;
+        st:value "Performed as clinically indicated." .
+
+    e:m-t01-r021-t02-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r016-c005 ;
+        st:activity e:u-t01-r021 ;
+        st:column e:u-t02-c005 ;
+        st:value "Performed as clinically indicated." .
+
+    e:m-t01-r021-t02-c006 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r016-c006 ;
+        st:activity e:u-t01-r021 ;
+        st:column e:u-t02-c006 ;
+        st:value "Performed as clinically indicated." .
+
+    e:m-t01-r021-t02-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r016-c007 ;
+        st:activity e:u-t01-r021 ;
+        st:column e:u-t02-c007 ;
+        st:value "Performed as clinically indicated." .
+
+    e:m-t01-r022-t01-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r022-c002 ;
+        st:activity e:u-t01-r022 ;
+        st:column e:u-t01-c002 ;
+        st:value "X" .
+
+    e:m-t02-r004-t02-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r004-c002 ;
+        st:activity e:u-t02-r004 ;
+        st:column e:u-t02-c002 ;
+        st:value "X" .
+
+    e:m-t02-r004-t02-c006 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r004-c006 ;
+        st:activity e:u-t02-r004 ;
+        st:column e:u-t02-c006 ;
+        st:value "X" .
+
+    e:m-t02-r005-t02-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r005-c002 ;
+        st:activity e:u-t02-r005 ;
+        st:column e:u-t02-c002 ;
+        st:value "X" .
+
+    e:m-t02-r005-t02-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r005-c003 ;
+        st:activity e:u-t02-r005 ;
+        st:column e:u-t02-c003 ;
+        st:value "X" .
+
+    e:m-t02-r005-t02-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r005-c004 ;
+        st:activity e:u-t02-r005 ;
+        st:column e:u-t02-c004 ;
+        st:value "X" .
+
+    e:m-t02-r005-t02-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r005-c005 ;
+        st:activity e:u-t02-r005 ;
+        st:column e:u-t02-c005 ;
+        st:value "X" .
+
+    e:m-t02-r005-t02-c006 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r005-c006 ;
+        st:activity e:u-t02-r005 ;
+        st:column e:u-t02-c006 ;
+        st:value "X" .
+
+    e:m-t02-r005-t02-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r005-c007 ;
+        st:activity e:u-t02-r005 ;
+        st:column e:u-t02-c007 ;
+        st:value "X (Cycle 5 only)" .
+
+    e:m-t02-r005-t03-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r005-c002 ;
+        st:activity e:u-t02-r005 ;
+        st:column e:u-t03-c002 ;
+        st:value "X" .
+
+    e:m-t02-r007-t02-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r007-c003 ;
+        st:activity e:u-t02-r007 ;
+        st:column e:u-t02-c003 ;
+        st:value "Continuously" .
+
+    e:m-t02-r007-t02-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r007-c004 ;
+        st:activity e:u-t02-r007 ;
+        st:column e:u-t02-c004 ;
+        st:value "Continuously" .
+
+    e:m-t02-r007-t02-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r007-c005 ;
+        st:activity e:u-t02-r007 ;
+        st:column e:u-t02-c005 ;
+        st:value "Continuously" .
+
+    e:m-t02-r007-t02-c006 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r007-c006 ;
+        st:activity e:u-t02-r007 ;
+        st:column e:u-t02-c006 ;
+        st:value "Continuously" .
+
+    e:m-t02-r007-t02-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r007-c007 ;
+        st:activity e:u-t02-r007 ;
+        st:column e:u-t02-c007 ;
+        st:value "Continuously" .
+
+    e:m-t02-r014-t02-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r014-c003 ;
+        st:activity e:u-t02-r014 ;
+        st:column e:u-t02-c003 ;
+        st:value "Performed at time of imaging assessments for disease response as clinically indicated." .
+
+    e:m-t02-r014-t02-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r014-c004 ;
+        st:activity e:u-t02-r014 ;
+        st:column e:u-t02-c004 ;
+        st:value "Performed at time of imaging assessments for disease response as clinically indicated." .
+
+    e:m-t02-r014-t02-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r014-c005 ;
+        st:activity e:u-t02-r014 ;
+        st:column e:u-t02-c005 ;
+        st:value "Performed at time of imaging assessments for disease response as clinically indicated." .
+
+    e:m-t02-r014-t02-c006 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r014-c006 ;
+        st:activity e:u-t02-r014 ;
+        st:column e:u-t02-c006 ;
+        st:value "Performed at time of imaging assessments for disease response as clinically indicated." .
+
+    e:m-t02-r014-t02-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r014-c007 ;
+        st:activity e:u-t02-r014 ;
+        st:column e:u-t02-c007 ;
+        st:value "Performed at time of imaging assessments for disease response as clinically indicated." .
+
+    e:m-t02-r015-t02-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r015-c003 ;
+        st:activity e:u-t02-r015 ;
+        st:column e:u-t02-c003 ;
+        st:value "Performed at time of imaging assessments for disease response as clinically indicated." .
+
+    e:m-t02-r015-t02-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r015-c004 ;
+        st:activity e:u-t02-r015 ;
+        st:column e:u-t02-c004 ;
+        st:value "Performed at time of imaging assessments for disease response as clinically indicated." .
+
+    e:m-t02-r015-t02-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r015-c005 ;
+        st:activity e:u-t02-r015 ;
+        st:column e:u-t02-c005 ;
+        st:value "Performed at time of imaging assessments for disease response as clinically indicated." .
+
+    e:m-t02-r015-t02-c006 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r015-c006 ;
+        st:activity e:u-t02-r015 ;
+        st:column e:u-t02-c006 ;
+        st:value "Performed at time of imaging assessments for disease response as clinically indicated." .
+
+    e:m-t02-r015-t02-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r015-c007 ;
+        st:activity e:u-t02-r015 ;
+        st:column e:u-t02-c007 ;
+        st:value "Performed at time of imaging assessments for disease response as clinically indicated." .
+
+    e:m-t02-r017-t02-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r017-c003 ;
+        st:activity e:u-t02-r017 ;
+        st:column e:u-t02-c003 ;
+        st:value "Performed as clinically indicated." .
+
+    e:m-t02-r017-t02-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r017-c004 ;
+        st:activity e:u-t02-r017 ;
+        st:column e:u-t02-c004 ;
+        st:value "Performed as clinically indicated." .
+
+    e:m-t02-r017-t02-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r017-c005 ;
+        st:activity e:u-t02-r017 ;
+        st:column e:u-t02-c005 ;
+        st:value "Performed as clinically indicated." .
+
+    e:m-t02-r017-t02-c006 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r017-c006 ;
+        st:activity e:u-t02-r017 ;
+        st:column e:u-t02-c006 ;
+        st:value "Performed as clinically indicated." .
+
+    e:m-t02-r017-t02-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r017-c007 ;
+        st:activity e:u-t02-r017 ;
+        st:column e:u-t02-c007 ;
+        st:value "Performed as clinically indicated." .
+
+    e:m-t02-r019-t02-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r019-c003 ;
+        st:activity e:u-t02-r019 ;
+        st:column e:u-t02-c003 ;
+        st:value "See Section 9.5.1 for further details." .
+
+    e:m-t02-r019-t02-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r019-c004 ;
+        st:activity e:u-t02-r019 ;
+        st:column e:u-t02-c004 ;
+        st:value "See Section 9.5.1 for further details." .
+
+    e:m-t02-r019-t02-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r019-c005 ;
+        st:activity e:u-t02-r019 ;
+        st:column e:u-t02-c005 ;
+        st:value "See Section 9.5.1 for further details." .
+
+    e:m-t02-r019-t02-c006 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r019-c006 ;
+        st:activity e:u-t02-r019 ;
+        st:column e:u-t02-c006 ;
+        st:value "See Section 9.5.1 for further details." .
+
+    e:m-t02-r019-t02-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r019-c007 ;
+        st:activity e:u-t02-r019 ;
+        st:column e:u-t02-c007 ;
+        st:value "See Section 9.5.1 for further details." .
+
+    e:m-t02-r020-t02-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r020-c003 ;
+        st:activity e:u-t02-r020 ;
+        st:column e:u-t02-c003 ;
+        st:value "See Section 9.5.1 for further details." .
+
+    e:m-t02-r020-t02-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r020-c004 ;
+        st:activity e:u-t02-r020 ;
+        st:column e:u-t02-c004 ;
+        st:value "See Section 9.5.1 for further details." .
+
+    e:m-t02-r020-t02-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r020-c005 ;
+        st:activity e:u-t02-r020 ;
+        st:column e:u-t02-c005 ;
+        st:value "See Section 9.5.1 for further details." .
+
+    e:m-t02-r020-t02-c006 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r020-c006 ;
+        st:activity e:u-t02-r020 ;
+        st:column e:u-t02-c006 ;
+        st:value "See Section 9.5.1 for further details." .
+
+    e:m-t02-r020-t02-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r020-c007 ;
+        st:activity e:u-t02-r020 ;
+        st:column e:u-t02-c007 ;
+        st:value "See Section 9.5.1 for further details." .
+
+    e:m-t02-r021-t02-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r021-c003 ;
+        st:activity e:u-t02-r021 ;
+        st:column e:u-t02-c003 ;
+        st:value "See Section 9.5.1 for further details." .
+
+    e:m-t02-r021-t02-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r021-c004 ;
+        st:activity e:u-t02-r021 ;
+        st:column e:u-t02-c004 ;
+        st:value "See Section 9.5.1 for further details." .
+
+    e:m-t02-r021-t02-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r021-c005 ;
+        st:activity e:u-t02-r021 ;
+        st:column e:u-t02-c005 ;
+        st:value "See Section 9.5.1 for further details." .
+
+    e:m-t02-r021-t02-c006 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r021-c006 ;
+        st:activity e:u-t02-r021 ;
+        st:column e:u-t02-c006 ;
+        st:value "See Section 9.5.1 for further details." .
+
+    e:m-t02-r021-t02-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r021-c007 ;
+        st:activity e:u-t02-r021 ;
+        st:column e:u-t02-c007 ;
+        st:value "See Section 9.5.1 for further details." .
+
+    e:m-t02-r021-t03-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r020-c002 ;
+        st:activity e:u-t02-r021 ;
+        st:column e:u-t03-c002 ;
+        st:value "See Section 9.5.1 for further details." .
+
+    e:m-t02-r021-t03-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r020-c003 ;
+        st:activity e:u-t02-r021 ;
+        st:column e:u-t03-c003 ;
+        st:value "See Section 9.5.1 for further details." .
+
+    e:m-t02-r021-t03-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r020-c004 ;
+        st:activity e:u-t02-r021 ;
+        st:column e:u-t03-c004 ;
+        st:value "See Section 9.5.1 for further details." .
+
+    e:m-t02-r021-t03-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r020-c005 ;
+        st:activity e:u-t02-r021 ;
+        st:column e:u-t03-c005 ;
+        st:value "See Section 9.5.1 for further details." .
+
+    e:m-t02-r023-t02-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r023-c003 ;
+        st:activity e:u-t02-r023 ;
+        st:column e:u-t02-c003 ;
+        st:value "See Notes" .
+
+    e:m-t02-r023-t02-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r023-c004 ;
+        st:activity e:u-t02-r023 ;
+        st:column e:u-t02-c004 ;
+        st:value "See Notes" .
+
+    e:m-t02-r023-t02-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r023-c005 ;
+        st:activity e:u-t02-r023 ;
+        st:column e:u-t02-c005 ;
+        st:value "See Notes" .
+
+    e:m-t02-r023-t02-c006 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r023-c006 ;
+        st:activity e:u-t02-r023 ;
+        st:column e:u-t02-c006 ;
+        st:value "See Notes" .
+
+    e:m-t02-r023-t02-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r023-c007 ;
+        st:activity e:u-t02-r023 ;
+        st:column e:u-t02-c007 ;
+        st:value "See Notes" .
+
+    e:m-t02-r025-t02-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r025-c002 ;
+        st:activity e:u-t02-r025 ;
+        st:column e:u-t02-c002 ;
+        st:value "X" .
+
+    e:m-t02-r026-t02-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r026-c002 ;
+        st:activity e:u-t02-r026 ;
+        st:column e:u-t02-c002 ;
+        st:value "X" .
+
+    e:m-t02-r026-t02-c006 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r026-c006 ;
+        st:activity e:u-t02-r026 ;
+        st:column e:u-t02-c006 ;
+        st:value "X" .
+
+    e:m-t02-r027-t02-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r027-c002 ;
+        st:activity e:u-t02-r027 ;
+        st:column e:u-t02-c002 ;
+        st:value "X" .
+
+    e:m-t02-r027-t02-c006 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r027-c006 ;
+        st:activity e:u-t02-r027 ;
+        st:column e:u-t02-c006 ;
+        st:value "X" .
+
+    e:m-t02-r028-t02-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r028-c002 ;
+        st:activity e:u-t02-r028 ;
+        st:column e:u-t02-c002 ;
+        st:value "X" .
+
+    e:m-t02-r028-t02-c006 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r028-c006 ;
+        st:activity e:u-t02-r028 ;
+        st:column e:u-t02-c006 ;
+        st:value "X" .
+
+    e:m-t02-r029-t02-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r029-c004 ;
+        st:activity e:u-t02-r029 ;
+        st:column e:u-t02-c004 ;
+        st:value "X (Day 3-5)" .
+
+    e:m-t02-r029-t02-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r029-c007 ;
+        st:activity e:u-t02-r029 ;
+        st:column e:u-t02-c007 ;
+        st:value "X" .
+
+    e:m-t03-r003-t03-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r003-c002 ;
+        st:activity e:u-t03-r003 ;
+        st:column e:u-t03-c002 ;
+        st:value "X" .
+
+    e:m-t03-r003-t03-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r003-c003 ;
+        st:activity e:u-t03-r003 ;
+        st:column e:u-t03-c003 ;
+        st:value "X" .
+
+    e:m-t03-r003-t03-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r003-c004 ;
+        st:activity e:u-t03-r003 ;
+        st:column e:u-t03-c004 ;
+        st:value "X" .
+
+    e:m-t03-r007-t03-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r007-c002 ;
+        st:activity e:u-t03-r007 ;
+        st:column e:u-t03-c002 ;
+        st:value "X" .
+
+    e:m-t03-r007-t03-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r007-c003 ;
+        st:activity e:u-t03-r007 ;
+        st:column e:u-t03-c003 ;
+        st:value "X" .
+
+    e:m-t03-r007-t03-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r007-c004 ;
+        st:activity e:u-t03-r007 ;
+        st:column e:u-t03-c004 ;
+        st:value "X" .
+
+    e:m-t03-r008-t03-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r008-c002 ;
+        st:activity e:u-t03-r008 ;
+        st:column e:u-t03-c002 ;
+        st:value "X" .
+
+    e:m-t03-r008-t03-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r008-c003 ;
+        st:activity e:u-t03-r008 ;
+        st:column e:u-t03-c003 ;
+        st:value "X" .
+
+    e:m-t03-r008-t03-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r008-c004 ;
+        st:activity e:u-t03-r008 ;
+        st:column e:u-t03-c004 ;
+        st:value "X" .
+
+    e:m-t03-r008-t03-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r008-c005 ;
+        st:activity e:u-t03-r008 ;
+        st:column e:u-t03-c005 ;
+        st:value "X" .
+
+    e:m-t03-r010-t03-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r010-c002 ;
+        st:activity e:u-t03-r010 ;
+        st:column e:u-t03-c002 ;
+        st:value "X" .
+
+    e:m-t03-r010-t03-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r010-c003 ;
+        st:activity e:u-t03-r010 ;
+        st:column e:u-t03-c003 ;
+        st:value "If toxicities are present." .
+
+    e:m-t03-r010-t03-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r010-c004 ;
+        st:activity e:u-t03-r010 ;
+        st:column e:u-t03-c004 ;
+        st:value "If toxicities are present" .
+
+    e:m-t03-r015-t03-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r015-c002 ;
+        st:activity e:u-t03-r015 ;
+        st:column e:u-t03-c002 ;
+        st:value "As clinically indicated." .
+
+    e:m-t03-r015-t03-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r015-c003 ;
+        st:activity e:u-t03-r015 ;
+        st:column e:u-t03-c003 ;
+        st:value "As clinically indicated." .
+
+    e:m-t03-r015-t03-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r015-c004 ;
+        st:activity e:u-t03-r015 ;
+        st:column e:u-t03-c004 ;
+        st:value "As clinically indicated." .
+
+    e:m-t03-r015-t03-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r015-c005 ;
+        st:activity e:u-t03-r015 ;
+        st:column e:u-t03-c005 ;
+        st:value "As clinically indicated." .
+
+    e:m-t03-r016-t03-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r016-c002 ;
+        st:activity e:u-t03-r016 ;
+        st:column e:u-t03-c002 ;
+        st:value "As clinically indicated" .
+
+    e:m-t03-r016-t03-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r016-c003 ;
+        st:activity e:u-t03-r016 ;
+        st:column e:u-t03-c003 ;
+        st:value "As clinically indicated" .
+
+    e:m-t03-r016-t03-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r016-c004 ;
+        st:activity e:u-t03-r016 ;
+        st:column e:u-t03-c004 ;
+        st:value "As clinically indicated" .
+
+    e:m-t03-r016-t03-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r016-c005 ;
+        st:activity e:u-t03-r016 ;
+        st:column e:u-t03-c005 ;
+        st:value "As clinically indicated" .
+
+    e:m-t03-r017-t03-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r017-c002 ;
+        st:activity e:u-t03-r017 ;
+        st:column e:u-t03-c002 ;
+        st:value "X" .
+
+    e:m-t03-r017-t03-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r017-c003 ;
+        st:activity e:u-t03-r017 ;
+        st:column e:u-t03-c003 ;
+        st:value "X" .
+
+    e:m-t03-r017-t03-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r017-c004 ;
+        st:activity e:u-t03-r017 ;
+        st:column e:u-t03-c004 ;
+        st:value "X" .
+
+    e:m-t03-r017-t03-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r017-c005 ;
+        st:activity e:u-t03-r017 ;
+        st:column e:u-t03-c005 ;
+        st:value "X" .
+
+    e:m-t03-r019-t03-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r019-c002 ;
+        st:activity e:u-t03-r019 ;
+        st:column e:u-t03-c002 ;
+        st:value "See Section 9.5.1 for further details." .
+
+    e:m-t03-r019-t03-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r019-c003 ;
+        st:activity e:u-t03-r019 ;
+        st:column e:u-t03-c003 ;
+        st:value "See Section 9.5.1 for further details." .
+
+    e:m-t03-r019-t03-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r019-c004 ;
+        st:activity e:u-t03-r019 ;
+        st:column e:u-t03-c004 ;
+        st:value "See Section 9.5.1 for further details." .
+
+    e:m-t03-r019-t03-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r019-c005 ;
+        st:activity e:u-t03-r019 ;
+        st:column e:u-t03-c005 ;
+        st:value "See Section 9.5.1 for further details." .
+
+    e:match-t01-r008--t02-r004 a st:Match ;
+        st:decidedBy e:decision-ccorr-001 ;
+        st:matchKind "separate" ;
+        st:matchedRow e:t01-r008,
+            e:t02-r004 ;
+        st:reviewStatus "decided" ;
+        st:score 0.7 .
+
+    e:match-t01-r009--t02-r007 a st:Match ;
+        st:decidedBy e:decision-ccorr-002 ;
+        st:matchKind "separate" ;
+        st:matchedRow e:t01-r009,
+            e:t02-r007 ;
+        st:reviewStatus "decided" ;
+        st:score 0.84 .
+
+    e:match-t01-r010--t02-r006 a st:Match ;
+        st:matchKind "merged" ;
+        st:matchedRow e:t01-r010,
+            e:t02-r006 ;
+        st:reviewStatus "open" ;
+        st:score 0.9 .
+
+    e:match-t01-r010--t03-r006 a st:Match ;
+        st:matchKind "merged" ;
+        st:matchedRow e:t01-r010,
+            e:t03-r006 ;
+        st:reviewStatus "open" ;
+        st:score 0.92 .
+
+    e:match-t02-r005--t03-r005 a st:Match ;
+        st:decidedBy e:decision-ccorr-006 ;
+        st:matchKind "merged" ;
+        st:matchedRow e:t02-r005,
+            e:t03-r005 ;
+        st:reviewStatus "decided" ;
+        st:score 1.0 .
+
+    e:match-t02-r014--t03-r015 a st:Match ;
+        st:decidedBy e:decision-ccorr-003 ;
+        st:matchKind "separate" ;
+        st:matchedRow e:t02-r014,
+            e:t03-r015 ;
+        st:reviewStatus "decided" ;
+        st:score 0.84 .
+
+    e:match-t02-r015--t03-r016 a st:Match ;
+        st:decidedBy e:decision-ccorr-004 ;
+        st:matchKind "separate" ;
+        st:matchedRow e:t02-r015,
+            e:t03-r016 ;
+        st:reviewStatus "decided" ;
+        st:score 0.8285714285714285 .
+
+    e:match-t02-r018--t03-r018 a st:Match ;
+        st:decidedBy e:decision-ccorr-005 ;
+        st:matchKind "merged" ;
+        st:matchedRow e:t02-r018,
+            e:t03-r018 ;
+        st:reviewStatus "decided" ;
+        st:score 1.0 .
+
+    e:u-t01-n-a a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t01-n-a,
+            e:t02-n-a,
+            e:t03-n-c ;
+        st:refersToColumn e:u-t01-c002,
+            e:u-t02-c002,
+            e:u-t02-c003,
+            e:u-t02-c004,
+            e:u-t02-c005,
+            e:u-t02-c006,
+            e:u-t02-c007 ;
+        st:text "Some of the assessments referred to in this section may not be captured as data in the electronic case report form. They are intended to be used as safety monitoring by the treating physician. Additional testing or assessments may be performed as clinically necessary or where required by institutional or local regulations." .
+
+    e:u-t01-n-n1 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t01-n-n1 ;
+        st:refersToActivity e:u-t01-r003 ;
+        st:text """Register in Interactive Response Technology (IRT) system to obtain participant number. The participant or legally authorized representative should sign the informed consent prior to any study-related assessment is performed.
+Study allows for re-enrollment of a participant that is a pre-treatment failure and was not previously treated. If re-enrolled, the participant must be re-consented and assigned a new participant number from IRT.""" .
+
+    e:u-t01-n-n10 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t01-n-n10 ;
+        st:refersToActivity e:u-t01-r014 ;
+        st:text """Left ventricular ejection fraction > 45% within 60 days is required prior to treatment assignment.
+The investigator should further evaluate participants with other significant abnormalities on echocardiogram/MUGA. Decision regarding treatment should be based on investigator’s best clinical judgment.""" .
+
+    e:u-t01-n-n11 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t01-n-n11 ;
+        st:refersToActivity e:u-t01-r015 ;
+        st:text "Women of childbearing potential only. Serum or urine pregnancy test (minimum sensitivity 25 IU/L or equivalent units of human chorionic gonadotropin) to be done at screening visit and within 24 hours of first dose of study therapy." .
+
+    e:u-t01-n-n12 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:documentReference e:u-t01-n-n12-d01 ;
+        st:occurrence e:t01-n-n12 ;
+        st:refersToActivity e:u-t01-r017 ;
+        st:text """• Imaging to be performed within 28 days prior to treatment. See Section 9.1.1 for further details.
+• Not applicable to participants with leukemia.
+• Skull base to mid-thigh [18F]fluorodeoxyglucose (FDG) positron emission tomography-computed tomography (PET-CT) or PET-magnetic resonance imaging (PET-MRI); additional anatomy to include all sites of disease) for FDG-avid non-Hodgkin lymphoma.
+• Contrast-enhanced CT of the chest, contrast-enhanced CT/magnetic resonance imaging (MRI) of the abdomen, pelvis, and all other known and/or suspected sites of disease.
+• Participants with metaiodobenzylguanidine (MIBG)-avid neuroblastoma must also undergo MIBG scintigraphy in addition to CT/MRI as above.""" .
+
+    e:u-t01-n-n13 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:documentReference e:u-t01-n-n13-d01 ;
+        st:occurrence e:t01-n-n13 ;
+        st:refersToActivity e:u-t01-r018 ;
+        st:text "MRI of the brain without and with contrast is required for participants at baseline in participants with a history of brain metastasis or symptoms. Except for glioma, medulloblastoma, ependymoma, and other central nervous system tumors in which an MRI is required, CT of the brain (without and with contrast) can be performed if MRI is contraindicated. Brain imaging must be done within 28 days prior to treatment. See Section 9.1.1 for further details." .
+
+    e:u-t01-n-n14 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:documentReference e:u-t01-n-n14-d01 ;
+        st:occurrence e:t01-n-n14 ;
+        st:refersToActivity e:u-t01-r019 ;
+        st:text "CSF cytopathology should be obtained in any participant with a suspicion or high likelihood of CSF dissemination up to 7 days prior to treatment. This sample can be used as the Cycle 1 Day 1 sample. If initially positive, CSF cytopathology should be followed as part of response assessment. See Section 9.1. [remainder redacted in source]" .
+
+    e:u-t01-n-n15 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:documentReference e:u-t01-n-n15-d01 ;
+        st:occurrence e:t01-n-n15 ;
+        st:refersToActivity e:u-t01-r020 ;
+        st:text "For participants with suspected bone marrow disease, bone marrow aspirate obtained where clinically indicated should be submitted along with buccal swab up to 28 days prior to treatment. If initially positive, bone marrow should be evaluated as part of response assessment. See Section 9.1. [remainder redacted in source]" .
+
+    e:u-t01-n-n16 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:documentReference e:u-t01-n-n16-d01 ;
+        st:occurrence e:t01-n-n16 ;
+        st:refersToActivity e:u-t01-r021 ;
+        st:text "Screening sample collected up to 7 days prior to treatment initiation can be used as Cycle 1 Day 1 pretreatment sample. See Section 9.1.2.5. [remainder redacted in source]" .
+
+    e:u-t01-n-n17 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:documentReference e:u-t01-n-n17-d01 ;
+        st:occurrence e:t01-n-n17 ;
+        st:refersToActivity e:u-t01-r022 ;
+        st:text "Bone marrow aspirate collected at screening and submitted along with buccal swab up to 28 days prior to treatment initiation can be used as Cycle 1 Day 1 pre-treatment sample. See Section 9.1.2.5. [remainder redacted in source]" .
+
+    e:u-t01-n-n2 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:documentReference e:u-t01-n-n2-d01,
+            e:u-t01-n-n2-d02 ;
+        st:occurrence e:t01-n-n2 ;
+        st:refersToActivity e:u-t01-r004 ;
+        st:text """Must be confirmed prior to treatment.
+See Sections 6.1 and 6.2.""" .
+
+    e:u-t01-n-n3 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t01-n-n3 ;
+        st:refersToActivity e:u-t01-r005 ;
+        st:text "All relevant medical history including smoking history, and prior anti-cancer therapies." .
+
+    e:u-t01-n-n4 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t01-n-n4 ;
+        st:refersToActivity e:u-t01-r007 ;
+        st:text "Include vital signs (blood pressure, heart rate, and temperature) plus height, weight, and pulse oximetry within 14 days prior to treatment." .
+
+    e:u-t01-n-n5 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:documentReference e:u-t01-n-n5-d01 ;
+        st:occurrence e:t01-n-n5 ;
+        st:refersToActivity e:u-t01-r008 ;
+        st:text "Within 14 days prior to treatment, collect Lansky play score for ≤ 16 years or Karnofsky performance score for > 16 years of age (Appendix 7)." .
+
+    e:u-t01-n-n6 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t01-n-n6 ;
+        st:refersToActivity e:u-t01-r009 ;
+        st:text """Must be collected within 14 days prior to treatment.
+Vaccine use within 30 days prior to treatment must be collected.""" .
+
+    e:u-t01-n-n7 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t01-n-n7 ;
+        st:refersToActivity e:u-t01-r010 ;
+        st:text """SAEs collected and reported from time of consent.
+All AEs (SAEs or non-serious AEs) related to severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) infection collected from time of consent.""" .
+
+    e:u-t01-n-n8 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:documentReference e:u-t01-n-n8-d01 ;
+        st:occurrence e:t01-n-n8 ;
+        st:refersToActivity e:u-t01-r012 ;
+        st:text "All laboratory assessments to be performed within 14 days prior to treatment, except for viral testing, which, if clinically indicated, is to be completed within 28 days prior to treatment (see Section 9.4.6 for a list of laboratory tests to conduct)." .
+
+    e:u-t01-n-n9 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:documentReference e:u-t01-n-n9-d01 ;
+        st:occurrence e:t01-n-n9 ;
+        st:refersToActivity e:u-t01-r013 ;
+        st:text "Within 14 days prior to treatment (see Section 9.4.3)." .
+
+    e:u-t01-r001 a st:UnifiedProperty ;
+        st:level 1 ;
+        st:member e:t01-r001,
+            e:t02-r001,
+            e:t03-r001 ;
+        st:propertyName "Visit" ;
+        st:propertyType "visit" .
+
+    e:u-t02-n-b a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t02-n-b ;
+        st:refersToColumn e:u-t02-c002,
+            e:u-t02-c003,
+            e:u-t02-c004,
+            e:u-t02-c005,
+            e:u-t02-c006,
+            e:u-t02-c007 ;
+        st:text "If a dose is delayed, the procedures scheduled for that same time point, with the exception of the body/brain imaging, should also be delayed to coincide with when the time point’s dosing actually occurs." .
+
+    e:u-t02-n-c a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:documentReference e:u-t02-n-c-d01,
+            e:u-t02-n-c-d02 ;
+        st:occurrence e:t02-n-c ;
+        st:refersToColumn e:u-t02-c006,
+            e:u-t02-c007 ;
+        st:text "For Cycle 5 only, participants will return for additional sample collection at Days 3 and 5. Refer to Section 9.5.1 (Table 9.5.1-1) for all details, including allowed windows." .
+
+    e:u-t02-n-d a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t02-n-d ;
+        st:refersToColumn e:u-t02-c003 ;
+        st:text "Samples can be collected ± 3 hours. If participants are dosed on a Thursday, Day 3 samples may be collected on Day 2. If dosed on a Friday, Day 3 sample can be collected on Day 4." .
+
+    e:u-t02-n-e a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t02-n-e ;
+        st:refersToActivity e:u-t02-r018 ;
+        st:text "For participants who require blood draw volume modifications, blood collection volumes will be reduced per guidelines outlined in the laboratory manual. Omitted blood collection will likely be for [redacted in source] pharmacokinetic assessments, since all required safety assessments must be performed." .
+
+    e:u-t02-n-n1 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:documentReference e:u-t02-n-n1-d01 ;
+        st:occurrence e:t02-n-n1 ;
+        st:refersToActivity e:u-t02-r004 ;
+        st:text """Vital signs (blood pressure, heart rate, and temperature), weight, Lansky play score for ≤ 16 years or Karnofsky performance score for > 16 years of age (Appendix 7).
+Monitor and record vital signs at predose and within 30 minutes after administration of nivolumab.""" .
+
+    e:u-t02-n-n10 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:documentReference e:u-t02-n-n10-d01 ;
+        st:occurrence e:t02-n-n10 ;
+        st:refersToActivity e:u-t02-r015 ;
+        st:text "Bone marrow biopsy/aspirate should be obtained in any participant with a previously positive bone marrow aspirate as part of response assessment (see Section 9.1). [remainder redacted in source]" .
+
+    e:u-t02-n-n11 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:documentReference e:u-t02-n-n11-d01 ;
+        st:occurrence e:t02-n-n11 ;
+        st:refersToActivity e:u-t01-r021 ;
+        st:text "CSF cytopathology should be obtained in any participant with a previously positive CSF as part of response assessment (see Section 9.1.2.5). [remainder redacted in source]" .
+
+    e:u-t02-n-n12 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t02-n-n12 ;
+        st:refersToActivity e:u-t02-r017 ;
+        st:text "Bone marrow biopsy/aspirate should be obtained in any participant with a previously positive bone marrow aspirate as part of response assessment. [remainder redacted in source]" .
+
+    e:u-t02-n-n13 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t02-n-n13 ;
+        st:refersToActivity e:u-t02-r023 ;
+        st:text """Questionnaire to be administered electronically in Part B only, on a weekly basis during the first 3 cycles of treatment, every cycle from Cycles 4 through 8, and then every other cycle (starting at Cycle 10) while on treatment until end of treatment.
+PRO-CTCAE™ for adults ≥18 years.
+Pediatric (Ped-PRO-CTCAE) for children ≥7 to <18 years.
+Ped-PRO-CTCAE [Caregiver] for children <7 years.""" .
+
+    e:u-t02-n-n14 a st:UnifiedAnnotation ;
+        st:annotationType "source_note" ;
+        st:documentReference e:u-t02-n-n14-d01,
+            e:u-t02-n-n14-d02,
+            e:u-t02-n-n14-d03 ;
+        st:occurrence e:t02-n-n14 ;
+        st:refersToActivity e:u-t02-r025 ;
+        st:text "See Figure 5.1-1, Figure 5.1-2 and Figure 5.1-3." .
+
+    e:u-t02-n-n15 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:documentReference e:u-t02-n-n15-d01 ;
+        st:occurrence e:t02-n-n15 ;
+        st:refersToActivity e:u-t02-r026 ;
+        st:text "May be withheld if deemed by the investigator to be in the best interest of the participant. Refer to Section 7.1.1.1 for additional information." .
+
+    e:u-t02-n-n16 a st:UnifiedAnnotation ;
+        st:annotationType "source_note" ;
+        st:documentReference e:u-t02-n-n16-d01 ;
+        st:occurrence e:t02-n-n16 ;
+        st:refersToActivity e:u-t02-r028 ;
+        st:text "See Section 7.1.1.1." .
+
+    e:u-t02-n-n17 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:documentReference e:u-t02-n-n17-d01 ;
+        st:occurrence e:t02-n-n17 ;
+        st:refersToActivity e:u-t02-r029 ;
+        st:text """For the first 2 doses of bempegaldesleukin, between Days 3 and 5 following infusion, site personnel must contact the participant (by telephone or clinic visit) to remind the participant of the oral hydration guidelines, to assess for any symptomatology and compliance with the guidelines, and document the results of the discussion. For subsequent administrations of bempegaldesleukin, the oral hydration follow-up should be conducted as clinically indicated for participants receiving bempegaldesleukin.
+See Section 7.1.1.1 for details.""" .
+
+    e:u-t02-n-n2 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t02-n-n2 ;
+        st:refersToActivity e:u-t02-r005 ;
+        st:text """Pre-dose Day 1 of all cycles
+Pre-PK blood draw on Cycle 1, Days 3,5, and 8
+Pre-PK blood draw on Cycle 5, Days 3 and 5
+ECG should be performed within 30 minutes prior to PK blood draw.
+Participant should rest for 5 minutes prior to each ECG""" .
+
+    e:u-t02-n-n3 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:documentReference e:u-t02-n-n3-d01 ;
+        st:occurrence e:t02-n-n3 ;
+        st:refersToActivity e:u-t01-r010 ;
+        st:text """Adverse events (AEs) will be graded according to the National Cancer Institute Common Terminology Criteria for AEs (NCI-CTCAE) version 5.
+Record at each visit. All AEs (SAEs or non-serious AEs), including those associated with SARS-CoV-2 infection, must be collected continuously throughout the treatment period and for a minimum of 150 days after last dose of study treatment (Appendix 3).""" .
+
+    e:u-t02-n-n4 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t02-n-n4 ;
+        st:refersToActivity e:u-t02-r007 ;
+        st:text "Record at each visit." .
+
+    e:u-t02-n-n5 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:documentReference e:u-t02-n-n5-d01 ;
+        st:occurrence e:t02-n-n5 ;
+        st:refersToActivity e:u-t01-r012 ;
+        st:text """Hematology and chemistry assessments scheduled for the day of study drugs dosing must be available and assessed before dosing. Hematology and chemistry assessments can be drawn within 72 hours prior to treatment, though renal function (ie, serum creatinine) must be assessed within 24 hours prior to dosing with bempegaldesleukin or as soon as locally feasible.
+Refer to Section 9.4.6 for a list of laboratory tests to conduct.""" .
+
+    e:u-t02-n-n6 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t02-n-n6 ;
+        st:refersToActivity e:u-t01-r015 ;
+        st:text "Serum or urine pregnancy test (minimum sensitivity units 25 IU/L or equivalent units of human chorionic gonadotropin) is required within 24 hours prior to treatment in women of childbearing potential." .
+
+    e:u-t02-n-n7 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:documentReference e:u-t02-n-n7-d01,
+            e:u-t02-n-n7-d02 ;
+        st:occurrence e:t02-n-n7 ;
+        st:refersToActivity e:u-t01-r017 ;
+        st:text """All study treatment decisions will be based on the investigator’s assessment of tumor images.
+See Section 9.1.1 for additional details and to Section 8.1.2 for tumor assessment associated with treatment beyond progression.""" .
+
+    e:u-t02-n-n8 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:documentReference e:u-t02-n-n8-d01 ;
+        st:occurrence e:t02-n-n8 ;
+        st:refersToActivity e:u-t01-r018 ;
+        st:text """Except for glioma, medulloblastoma, ependymoma and other central nervous system tumors in which an MRI is required, CT of the brain (without and with contrast) can be performed if MRI is contraindicated.
+See Section 9.1.1 for further details.""" .
+
+    e:u-t02-n-n9 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:documentReference e:u-t02-n-n9-d01 ;
+        st:occurrence e:t02-n-n9 ;
+        st:refersToActivity e:u-t02-r014 ;
+        st:text "CSF cytopathology should be obtained in any participant with a previously positive CSF as part of response assessment (see Section 9.1). [remainder redacted in source]" .
+
+    e:u-t02-n-x2a a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t02-n-x2a ;
+        st:refersToActivity e:u-t02-r004 ;
+        st:refersToCell e:m-t02-r004-t02-c005 ;
+        st:text "At Day 8 visits collect vital signs only." .
+
+    e:u-t02-r002 a st:UnifiedProperty ;
+        st:level 2 ;
+        st:member e:t02-r002 ;
+        st:propertyName "Day" ;
+        st:propertyType "study_day" .
+
+    e:u-t03-n-a a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t03-n-a ;
+        st:refersToColumn e:u-t03-c002,
+            e:u-t03-c003,
+            e:u-t03-c004 ;
+        st:text "Participants must be followed for at least 150 days after last dose of study treatment. Follow-up Visit 1 should occur 30 days from the last dose (± 7) days or can be performed on the date of discontinuation if that date is greater than 42 days from last dose. Follow-up Visit 2 occurs approximately 100 days (± 7 days) from last dose of study drug. Follow-up Visit 3 occurs approximately 150 days (± 7 days) from last dose of study drug. All 3 follow-up visits should be conducted in person." .
+
+    e:u-t03-n-b a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t03-n-b ;
+        st:refersToColumn e:u-t03-c005 ;
+        st:text "Survival follow-up visits to occur every 3 months subsequent to Follow-up Visit 3. Survival visits may be conducted in person or by telephone. Bristol-Myers Squibb may request that survival data be collected on all treated participants outside of the 3 month specified window. At the time of this request, each participant will be contacted to determine their survival status unless the participant has withdrawn consent for all contact." .
+
+    e:u-t03-n-n1 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t03-n-n1 ;
+        st:refersToActivity e:u-t03-r003 ;
+        st:text "Blood pressure, heart rate, temperature." .
+
+    e:u-t03-n-n10 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:documentReference e:u-t03-n-n10-d01 ;
+        st:occurrence e:t03-n-n10 ;
+        st:refersToActivity e:u-t03-r015 ;
+        st:text "CSF cytopathology should be obtained in any participant with a previously positive CSF as part of response assessment. See Section 9.1" .
+
+    e:u-t03-n-n11 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:documentReference e:u-t03-n-n11-d01 ;
+        st:occurrence e:t03-n-n11 ;
+        st:refersToActivity e:u-t03-r016 ;
+        st:text "Bone marrow aspirate should be obtained in any participant with a previously positive bone marrow aspirate as part of response assessment. See Section 9.1." .
+
+    e:u-t03-n-n12 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:documentReference e:u-t03-n-n12-d01 ;
+        st:occurrence e:t03-n-n12 ;
+        st:refersToActivity e:u-t03-r017 ;
+        st:text "During safety follow-up and every 3 months (clinic visit or by telephone) thereafter and during survival phase. Include documentation of subsequent chemotherapy. See Section 5.1.4." .
+
+    e:u-t03-n-n2 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:documentReference e:u-t03-n-n2-d01 ;
+        st:occurrence e:t03-n-n2 ;
+        st:refersToActivity e:u-t01-r008 ;
+        st:text "Lansky play score for ≤ 16 years or Karnofsky performance score for > 16 years of age (Appendix 7)." .
+
+    e:u-t03-n-n3 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t03-n-n3 ;
+        st:refersToActivity e:u-t02-r005 ;
+        st:text "Participant should rest for 5 minutes prior to each ECG." .
+
+    e:u-t03-n-n4 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:documentReference e:u-t03-n-n4-d01,
+            e:u-t03-n-n4-d02 ;
+        st:occurrence e:t03-n-n4 ;
+        st:refersToActivity e:u-t01-r010 ;
+        st:text """All SAEs and non-serious AEs should be collected continuously during the treatment period and for a minimum of 150 days following discontinuation of study treatment.
+Participants will be followed for all SAEs, non-serious AEs of special interest (as defined in Section 9.2.8) and all AEs (SAEs and non-serious AEs) associated with confirmed or suspected SARS-CoV-2 infection until resolution, the condition stabilizes, the event is otherwise explained, the event is deemed irreversible, the participant is lost to follow-up (as defined in Section 8.3), or for suspected cases, until SARS-CoV-2 infection is ruled-out.""" .
+
+    e:u-t03-n-n5 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t03-n-n5 ;
+        st:refersToActivity e:u-t03-r008 ;
+        st:text "Additional subsequent cancer therapy details such as regimen, setting of the regimen, line of therapy, start and end date of each regimen, best response to the regimen, and date of progression to subsequent anti-cancer therapies will be collected." .
+
+    e:u-t03-n-n6 a st:UnifiedAnnotation ;
+        st:annotationType "source_note" ;
+        st:documentReference e:u-t03-n-n6-d01 ;
+        st:occurrence e:t03-n-n6 ;
+        st:refersToActivity e:u-t03-r010 ;
+        st:text "See Section 9.4.6 for the list of laboratory tests." .
+
+    e:u-t03-n-n7 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t03-n-n7 ;
+        st:refersToActivity e:u-t01-r015 ;
+        st:text "Women of childbearing potential only. Serum or urine pregnancy test (minimum sensitivity equivalent units 25 IU/L or equivalent units of human chorionic gonadotropin) is required." .
+
+    e:u-t03-n-n8 a st:UnifiedAnnotation ;
+        st:annotationType "source_note" ;
+        st:documentReference e:u-t03-n-n8-d01 ;
+        st:occurrence e:t03-n-n8 ;
+        st:refersToActivity e:u-t01-r017 ;
+        st:text "See Section 9.1.1 for further details." .
+
+    e:u-t03-n-n9 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:documentReference e:u-t03-n-n9-d01 ;
+        st:occurrence e:t03-n-n9 ;
+        st:refersToActivity e:u-t01-r018 ;
+        st:text """Except for glioma, medulloblastoma, ependymoma, and other central nervous system tumors in which an MRI is required, CT of the brain without and with contrast can be performed if MRI is contraindicated.
+See Section 9.1.1 for further details.""" .
+
+    page:38 a st:Page ;
+        st:inFile <https://kerfors.github.io/soa-tables/id/sha256/2ff447e30e89935998116db2c823385b803028dea19cf9bae339807d856d25dc> ;
+        st:pageNumber 38 .
+
+    e:decision-ccorr-001 a st:Decision ;
+        st:decidedAt "2026-10-04T08:20:00Z"^^xsd:dateTime ;
+        st:decidedByPerson "Kerstin Forsberg" ;
+        st:decisionSource e:t02-r004 ;
+        st:decisionTarget e:t01-r008 ;
+        st:op "keep" ;
+        st:reason "Table 2 is a combined row: physical examination, vital signs and performance status." .
+
+    e:decision-ccorr-002 a st:Decision ;
+        st:decidedAt "2026-10-04T08:20:00Z"^^xsd:dateTime ;
+        st:decidedByPerson "Kerstin Forsberg" ;
+        st:decisionSource e:t02-r007 ;
+        st:decisionTarget e:t01-r009 ;
+        st:op "keep" ;
+        st:reason "Table 1 includes prior medication." .
+
+    e:decision-ccorr-003 a st:Decision ;
+        st:decidedAt "2026-10-04T08:20:00Z"^^xsd:dateTime ;
+        st:decidedByPerson "Kerstin Forsberg" ;
+        st:decisionSource e:t03-r015 ;
+        st:decisionTarget e:t02-r014 ;
+        st:op "keep" ;
+        st:reason "Other population: Table 3 adds leukemia." .
+
+    e:decision-ccorr-004 a st:Decision ;
+        st:decidedAt "2026-10-04T08:20:00Z"^^xsd:dateTime ;
+        st:decidedByPerson "Kerstin Forsberg" ;
+        st:decisionSource e:t03-r016 ;
+        st:decisionTarget e:t02-r015 ;
+        st:op "keep" ;
+        st:reason "Other population: Table 3 adds leukemia." .
+
+    e:m-t02-r004-t02-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r004-c005 ;
+        st:activity e:u-t02-r004 ;
+        st:column e:u-t02-c005 ;
+        st:value "X" .
+
+    e:t01-n-a a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "a" .
+
+    e:t01-n-n1 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "n1" .
+
+    e:t01-n-n10 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "n10" .
+
+    e:t01-n-n11 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "n11" .
+
+    e:t01-n-n12 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "n12" .
+
+    e:t01-n-n13 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "n13" .
+
+    e:t01-n-n14 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "n14" .
+
+    e:t01-n-n15 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "n15" .
+
+    e:t01-n-n16 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "n16" .
+
+    e:t01-n-n17 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "n17" .
+
+    e:t01-n-n2 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "n2" .
+
+    e:t01-n-n3 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "n3" .
+
+    e:t01-n-n4 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "n4" .
+
+    e:t01-n-n5 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "n5" .
+
+    e:t01-n-n6 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "n6" .
+
+    e:t01-n-n7 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "n7" .
+
+    e:t01-n-n8 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "n8" .
+
+    e:t01-n-n9 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "n9" .
+
+    e:t01-r001 a st:SourcePropertyRow ;
+        st:hierarchyPosition 1 ;
+        st:inTable e:t01 ;
+        st:level 1 ;
+        st:propertyName "Visit" ;
+        st:propertyType "visit" ;
+        st:rowPosition 1 .
+
+    e:t01-r002 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Eligibility Assessments" ;
+        st:onPage page:28 ;
+        st:rowPosition 2 .
+
+    e:t01-r003-c002 a st:SourceCell ;
+        st:column e:t01-c002 ;
+        st:row e:t01-r003 ;
+        st:value "X" .
+
+    e:t01-r004-c002 a st:SourceCell ;
+        st:column e:t01-c002 ;
+        st:row e:t01-r004 ;
+        st:value "X" .
+
+    e:t01-r005-c002 a st:SourceCell ;
+        st:column e:t01-c002 ;
+        st:row e:t01-r005 ;
+        st:value "X" .
+
+    e:t01-r006 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Safety Assessments" ;
+        st:onPage page:28 ;
+        st:rowPosition 6 .
+
+    e:t01-r007-c002 a st:SourceCell ;
+        st:column e:t01-c002 ;
+        st:row e:t01-r007 ;
+        st:value "X" .
+
+    e:t01-r008-c002 a st:SourceCell ;
+        st:column e:t01-c002 ;
+        st:row e:t01-r008 ;
+        st:value "X" .
+
+    e:t01-r009-c002 a st:SourceCell ;
+        st:column e:t01-c002 ;
+        st:row e:t01-r009 ;
+        st:value "X" .
+
+    e:t01-r010-c002 a st:SourceCell ;
+        st:column e:t01-c002 ;
+        st:row e:t01-r010 ;
+        st:value "X" .
+
+    e:t01-r011 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Laboratory Tests" ;
+        st:onPage page:28 ;
+        st:rowPosition 11 .
+
+    e:t01-r012-c002 a st:SourceCell ;
+        st:column e:t01-c002 ;
+        st:row e:t01-r012 ;
+        st:value "X" .
+
+    e:t01-r013-c002 a st:SourceCell ;
+        st:column e:t01-c002 ;
+        st:row e:t01-r013 ;
+        st:value "X" .
+
+    e:t01-r014-c002 a st:SourceCell ;
+        st:column e:t01-c002 ;
+        st:row e:t01-r014 ;
+        st:value "X" .
+
+    e:t01-r015-c002 a st:SourceCell ;
+        st:column e:t01-c002 ;
+        st:row e:t01-r015 ;
+        st:value "X" .
+
+    e:t01-r016 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Tumor Assessment" ;
+        st:onPage page:29 ;
+        st:rowPosition 16 .
+
+    e:t01-r017-c002 a st:SourceCell ;
+        st:column e:t01-c002 ;
+        st:row e:t01-r017 ;
+        st:value "X" .
+
+    e:t01-r018-c002 a st:SourceCell ;
+        st:column e:t01-c002 ;
+        st:row e:t01-r018 ;
+        st:value "X" .
+
+    e:t01-r019-c002 a st:SourceCell ;
+        st:column e:t01-c002 ;
+        st:row e:t01-r019 ;
+        st:value "X" .
+
+    e:t01-r020-c002 a st:SourceCell ;
+        st:column e:t01-c002 ;
+        st:row e:t01-r020 ;
+        st:value "X" .
+
+    e:t01-r021-c002 a st:SourceCell ;
+        st:column e:t01-c002 ;
+        st:row e:t01-r021 ;
+        st:value "X" .
+
+    e:t01-r022-c002 a st:SourceCell ;
+        st:column e:t01-c002 ;
+        st:row e:t01-r022 ;
+        st:value "X" .
+
+    e:t02-n-a a st:SourceAnnotation ;
+        st:inTable e:t02 ;
+        st:marker "a" .
+
+    e:t02-n-b a st:SourceAnnotation ;
+        st:inTable e:t02 ;
+        st:marker "b" .
+
+    e:t02-n-c a st:SourceAnnotation ;
+        st:inTable e:t02 ;
+        st:marker "c" .
+
+    e:t02-n-d a st:SourceAnnotation ;
+        st:inTable e:t02 ;
+        st:marker "d" .
+
+    e:t02-n-e a st:SourceAnnotation ;
+        st:inTable e:t02 ;
+        st:marker "e" .
+
+    e:t02-n-n1 a st:SourceAnnotation ;
+        st:inTable e:t02 ;
+        st:marker "n1" .
+
+    e:t02-n-n10 a st:SourceAnnotation ;
+        st:inTable e:t02 ;
+        st:marker "n10" .
+
+    e:t02-n-n11 a st:SourceAnnotation ;
+        st:inTable e:t02 ;
+        st:marker "n11" .
+
+    e:t02-n-n12 a st:SourceAnnotation ;
+        st:inTable e:t02 ;
+        st:marker "n12" .
+
+    e:t02-n-n13 a st:SourceAnnotation ;
+        st:inTable e:t02 ;
+        st:marker "n13" .
+
+    e:t02-n-n14 a st:SourceAnnotation ;
+        st:inTable e:t02 ;
+        st:marker "n14" .
+
+    e:t02-n-n15 a st:SourceAnnotation ;
+        st:inTable e:t02 ;
+        st:marker "n15" .
+
+    e:t02-n-n16 a st:SourceAnnotation ;
+        st:inTable e:t02 ;
+        st:marker "n16" .
+
+    e:t02-n-n17 a st:SourceAnnotation ;
+        st:inTable e:t02 ;
+        st:marker "n17" .
+
+    e:t02-n-n2 a st:SourceAnnotation ;
+        st:inTable e:t02 ;
+        st:marker "n2" .
+
+    e:t02-n-n3 a st:SourceAnnotation ;
+        st:inTable e:t02 ;
+        st:marker "n3" .
+
+    e:t02-n-n4 a st:SourceAnnotation ;
+        st:inTable e:t02 ;
+        st:marker "n4" .
+
+    e:t02-n-n5 a st:SourceAnnotation ;
+        st:inTable e:t02 ;
+        st:marker "n5" .
+
+    e:t02-n-n6 a st:SourceAnnotation ;
+        st:inTable e:t02 ;
+        st:marker "n6" .
+
+    e:t02-n-n7 a st:SourceAnnotation ;
+        st:inTable e:t02 ;
+        st:marker "n7" .
+
+    e:t02-n-n8 a st:SourceAnnotation ;
+        st:inTable e:t02 ;
+        st:marker "n8" .
+
+    e:t02-n-n9 a st:SourceAnnotation ;
+        st:inTable e:t02 ;
+        st:marker "n9" .
+
+    e:t02-n-x2a a st:SourceAnnotation ;
+        st:inTable e:t02 ;
+        st:marker "*" .
+
+    e:t02-r001 a st:SourcePropertyRow ;
+        st:hierarchyPosition 1 ;
+        st:inTable e:t02 ;
+        st:level 1 ;
+        st:propertyName "Cycle" ;
+        st:propertyType "cycle" ;
+        st:rowPosition 1 .
+
+    e:t02-r002 a st:SourcePropertyRow ;
+        st:hierarchyPosition 2 ;
+        st:inTable e:t02 ;
+        st:level 2 ;
+        st:propertyName "Day" ;
+        st:propertyType "study_day" ;
+        st:rowPosition 2 .
+
+    e:t02-r003 a st:SourceActivityRow ;
+        st:inTable e:t02 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "exact" ;
+        st:name "Safety Assessments" ;
+        st:onPage page:31 ;
+        st:rowPosition 3 .
+
+    e:t02-r004-c002 a st:SourceCell ;
+        st:column e:t02-c002 ;
+        st:row e:t02-r004 ;
+        st:value "X" .
+
+    e:t02-r004-c005 a st:SourceCell ;
+        st:column e:t02-c005 ;
+        st:row e:t02-r004 ;
+        st:value "X" .
+
+    e:t02-r004-c006 a st:SourceCell ;
+        st:column e:t02-c006 ;
+        st:row e:t02-r004 ;
+        st:value "X" .
+
+    e:t02-r005-c002 a st:SourceCell ;
+        st:column e:t02-c002 ;
+        st:row e:t02-r005 ;
+        st:value "X" .
+
+    e:t02-r005-c003 a st:SourceCell ;
+        st:column e:t02-c003 ;
+        st:row e:t02-r005 ;
+        st:value "X" .
+
+    e:t02-r005-c004 a st:SourceCell ;
+        st:column e:t02-c004 ;
+        st:row e:t02-r005 ;
+        st:value "X" .
+
+    e:t02-r005-c005 a st:SourceCell ;
+        st:column e:t02-c005 ;
+        st:row e:t02-r005 ;
+        st:value "X" .
+
+    e:t02-r005-c006 a st:SourceCell ;
+        st:column e:t02-c006 ;
+        st:row e:t02-r005 ;
+        st:value "X" .
+
+    e:t02-r005-c007 a st:SourceCell ;
+        st:column e:t02-c007 ;
+        st:row e:t02-r005 ;
+        st:value "X (Cycle 5 only)" .
+
+    e:t02-r006-c003 a st:SourceCell ;
+        st:column e:t02-c003 ;
+        st:row e:t02-r006 ;
+        st:value "Continuously" .
+
+    e:t02-r006-c004 a st:SourceCell ;
+        st:column e:t02-c004 ;
+        st:row e:t02-r006 ;
+        st:value "Continuously" .
+
+    e:t02-r006-c005 a st:SourceCell ;
+        st:column e:t02-c005 ;
+        st:row e:t02-r006 ;
+        st:value "Continuously" .
+
+    e:t02-r006-c006 a st:SourceCell ;
+        st:column e:t02-c006 ;
+        st:row e:t02-r006 ;
+        st:value "Continuously" .
+
+    e:t02-r006-c007 a st:SourceCell ;
+        st:column e:t02-c007 ;
+        st:row e:t02-r006 ;
+        st:value "Continuously" .
+
+    e:t02-r007-c003 a st:SourceCell ;
+        st:column e:t02-c003 ;
+        st:row e:t02-r007 ;
+        st:value "Continuously" .
+
+    e:t02-r007-c004 a st:SourceCell ;
+        st:column e:t02-c004 ;
+        st:row e:t02-r007 ;
+        st:value "Continuously" .
+
+    e:t02-r007-c005 a st:SourceCell ;
+        st:column e:t02-c005 ;
+        st:row e:t02-r007 ;
+        st:value "Continuously" .
+
+    e:t02-r007-c006 a st:SourceCell ;
+        st:column e:t02-c006 ;
+        st:row e:t02-r007 ;
+        st:value "Continuously" .
+
+    e:t02-r007-c007 a st:SourceCell ;
+        st:column e:t02-c007 ;
+        st:row e:t02-r007 ;
+        st:value "Continuously" .
+
+    e:t02-r008 a st:SourceActivityRow ;
+        st:inTable e:t02 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "exact" ;
+        st:name "Laboratory Tests" ;
+        st:onPage page:32 ;
+        st:rowPosition 8 .
+
+    e:t02-r009-c002 a st:SourceCell ;
+        st:column e:t02-c002 ;
+        st:row e:t02-r009 ;
+        st:value "X" .
+
+    e:t02-r009-c005 a st:SourceCell ;
+        st:column e:t02-c005 ;
+        st:row e:t02-r009 ;
+        st:value "X" .
+
+    e:t02-r009-c006 a st:SourceCell ;
+        st:column e:t02-c006 ;
+        st:row e:t02-r009 ;
+        st:value "X" .
+
+    e:t02-r010-c002 a st:SourceCell ;
+        st:column e:t02-c002 ;
+        st:row e:t02-r010 ;
+        st:value "X" .
+
+    e:t02-r010-c006 a st:SourceCell ;
+        st:column e:t02-c006 ;
+        st:row e:t02-r010 ;
+        st:value "X" .
+
+    e:t02-r011 a st:SourceActivityRow ;
+        st:inTable e:t02 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Efficacy Assessments" ;
+        st:onPage page:33 ;
+        st:rowPosition 11 .
+
+    e:t02-r012-c003 a st:SourceCell ;
+        st:column e:t02-c003 ;
+        st:row e:t02-r012 ;
+        st:value """• Imaging should occur every 9 weeks (± 7 days) from start of treatment for the first 54 weeks, then every 12 weeks (± 7 days) until disease progression or treatment discontinuation (including treatment beyond progression), whichever occurs later. Tumor assessment schedule should be maintained regardless of dose delays. Use same imaging method as was used at screening.
+• Not applicable to participants with leukemia.
+• Skull base to mid-thigh [18F]fluorodeoxyglucose (FDG) positron emission tomography-computed tomography (PET-CT) or PET-magnetic resonance imaging (PET-MRI); additional anatomy to include all sites of disease) for FDG-avid non-Hodgkin lymphoma.
+• Contrast-enhanced CT of the chest, contrast-enhanced CT/magnetic resonance imaging (MRI) of the abdomen, pelvis, and all other known and/or suspected sites of disease.
+• Participants with metaiodobenzylguanidine (MIBG)-avid neuroblastoma must also undergo MIBG scintigraphy in addition to CT/MRI as above.""" .
+
+    e:t02-r012-c004 a st:SourceCell ;
+        st:column e:t02-c004 ;
+        st:row e:t02-r012 ;
+        st:value """• Imaging should occur every 9 weeks (± 7 days) from start of treatment for the first 54 weeks, then every 12 weeks (± 7 days) until disease progression or treatment discontinuation (including treatment beyond progression), whichever occurs later. Tumor assessment schedule should be maintained regardless of dose delays. Use same imaging method as was used at screening.
+• Not applicable to participants with leukemia.
+• Skull base to mid-thigh [18F]fluorodeoxyglucose (FDG) positron emission tomography-computed tomography (PET-CT) or PET-magnetic resonance imaging (PET-MRI); additional anatomy to include all sites of disease) for FDG-avid non-Hodgkin lymphoma.
+• Contrast-enhanced CT of the chest, contrast-enhanced CT/magnetic resonance imaging (MRI) of the abdomen, pelvis, and all other known and/or suspected sites of disease.
+• Participants with metaiodobenzylguanidine (MIBG)-avid neuroblastoma must also undergo MIBG scintigraphy in addition to CT/MRI as above.""" .
+
+    e:t02-r012-c005 a st:SourceCell ;
+        st:column e:t02-c005 ;
+        st:row e:t02-r012 ;
+        st:value """• Imaging should occur every 9 weeks (± 7 days) from start of treatment for the first 54 weeks, then every 12 weeks (± 7 days) until disease progression or treatment discontinuation (including treatment beyond progression), whichever occurs later. Tumor assessment schedule should be maintained regardless of dose delays. Use same imaging method as was used at screening.
+• Not applicable to participants with leukemia.
+• Skull base to mid-thigh [18F]fluorodeoxyglucose (FDG) positron emission tomography-computed tomography (PET-CT) or PET-magnetic resonance imaging (PET-MRI); additional anatomy to include all sites of disease) for FDG-avid non-Hodgkin lymphoma.
+• Contrast-enhanced CT of the chest, contrast-enhanced CT/magnetic resonance imaging (MRI) of the abdomen, pelvis, and all other known and/or suspected sites of disease.
+• Participants with metaiodobenzylguanidine (MIBG)-avid neuroblastoma must also undergo MIBG scintigraphy in addition to CT/MRI as above.""" .
+
+    e:t02-r012-c006 a st:SourceCell ;
+        st:column e:t02-c006 ;
+        st:row e:t02-r012 ;
+        st:value """• Imaging should occur every 9 weeks (± 7 days) from start of treatment for the first 54 weeks, then every 12 weeks (± 7 days) until disease progression or treatment discontinuation (including treatment beyond progression), whichever occurs later. Tumor assessment schedule should be maintained regardless of dose delays. Use same imaging method as was used at screening.
+• Not applicable to participants with leukemia.
+• Skull base to mid-thigh [18F]fluorodeoxyglucose (FDG) positron emission tomography-computed tomography (PET-CT) or PET-magnetic resonance imaging (PET-MRI); additional anatomy to include all sites of disease) for FDG-avid non-Hodgkin lymphoma.
+• Contrast-enhanced CT of the chest, contrast-enhanced CT/magnetic resonance imaging (MRI) of the abdomen, pelvis, and all other known and/or suspected sites of disease.
+• Participants with metaiodobenzylguanidine (MIBG)-avid neuroblastoma must also undergo MIBG scintigraphy in addition to CT/MRI as above.""" .
+
+    e:t02-r012-c007 a st:SourceCell ;
+        st:column e:t02-c007 ;
+        st:row e:t02-r012 ;
+        st:value """• Imaging should occur every 9 weeks (± 7 days) from start of treatment for the first 54 weeks, then every 12 weeks (± 7 days) until disease progression or treatment discontinuation (including treatment beyond progression), whichever occurs later. Tumor assessment schedule should be maintained regardless of dose delays. Use same imaging method as was used at screening.
+• Not applicable to participants with leukemia.
+• Skull base to mid-thigh [18F]fluorodeoxyglucose (FDG) positron emission tomography-computed tomography (PET-CT) or PET-magnetic resonance imaging (PET-MRI); additional anatomy to include all sites of disease) for FDG-avid non-Hodgkin lymphoma.
+• Contrast-enhanced CT of the chest, contrast-enhanced CT/magnetic resonance imaging (MRI) of the abdomen, pelvis, and all other known and/or suspected sites of disease.
+• Participants with metaiodobenzylguanidine (MIBG)-avid neuroblastoma must also undergo MIBG scintigraphy in addition to CT/MRI as above.""" .
+
+    e:t02-r013-c003 a st:SourceCell ;
+        st:column e:t02-c003 ;
+        st:row e:t02-r013 ;
+        st:value "• Participants in brain tumor-related cohorts and those with a history of brain metastasis or symptoms should undergo MRI of the brain without and with contrast every 9 weeks (± 7 days) from start of treatment up to 54 weeks, and then approximately every 12 weeks (± 7 days), or sooner if clinically indicated. Tumor assessment schedule should be maintained regardless of dose delays. Cerebrospinal fluid (CSF), if clinically indicated, should be followed as per Response Assessment in Pediatric Neuro-Oncology guidelines." .
+
+    e:t02-r013-c004 a st:SourceCell ;
+        st:column e:t02-c004 ;
+        st:row e:t02-r013 ;
+        st:value "• Participants in brain tumor-related cohorts and those with a history of brain metastasis or symptoms should undergo MRI of the brain without and with contrast every 9 weeks (± 7 days) from start of treatment up to 54 weeks, and then approximately every 12 weeks (± 7 days), or sooner if clinically indicated. Tumor assessment schedule should be maintained regardless of dose delays. Cerebrospinal fluid (CSF), if clinically indicated, should be followed as per Response Assessment in Pediatric Neuro-Oncology guidelines." .
+
+    e:t02-r013-c005 a st:SourceCell ;
+        st:column e:t02-c005 ;
+        st:row e:t02-r013 ;
+        st:value "• Participants in brain tumor-related cohorts and those with a history of brain metastasis or symptoms should undergo MRI of the brain without and with contrast every 9 weeks (± 7 days) from start of treatment up to 54 weeks, and then approximately every 12 weeks (± 7 days), or sooner if clinically indicated. Tumor assessment schedule should be maintained regardless of dose delays. Cerebrospinal fluid (CSF), if clinically indicated, should be followed as per Response Assessment in Pediatric Neuro-Oncology guidelines." .
+
+    e:t02-r013-c006 a st:SourceCell ;
+        st:column e:t02-c006 ;
+        st:row e:t02-r013 ;
+        st:value "• Participants in brain tumor-related cohorts and those with a history of brain metastasis or symptoms should undergo MRI of the brain without and with contrast every 9 weeks (± 7 days) from start of treatment up to 54 weeks, and then approximately every 12 weeks (± 7 days), or sooner if clinically indicated. Tumor assessment schedule should be maintained regardless of dose delays. Cerebrospinal fluid (CSF), if clinically indicated, should be followed as per Response Assessment in Pediatric Neuro-Oncology guidelines." .
+
+    e:t02-r013-c007 a st:SourceCell ;
+        st:column e:t02-c007 ;
+        st:row e:t02-r013 ;
+        st:value "• Participants in brain tumor-related cohorts and those with a history of brain metastasis or symptoms should undergo MRI of the brain without and with contrast every 9 weeks (± 7 days) from start of treatment up to 54 weeks, and then approximately every 12 weeks (± 7 days), or sooner if clinically indicated. Tumor assessment schedule should be maintained regardless of dose delays. Cerebrospinal fluid (CSF), if clinically indicated, should be followed as per Response Assessment in Pediatric Neuro-Oncology guidelines." .
+
+    e:t02-r014-c003 a st:SourceCell ;
+        st:column e:t02-c003 ;
+        st:row e:t02-r014 ;
+        st:value "Performed at time of imaging assessments for disease response as clinically indicated." .
+
+    e:t02-r014-c004 a st:SourceCell ;
+        st:column e:t02-c004 ;
+        st:row e:t02-r014 ;
+        st:value "Performed at time of imaging assessments for disease response as clinically indicated." .
+
+    e:t02-r014-c005 a st:SourceCell ;
+        st:column e:t02-c005 ;
+        st:row e:t02-r014 ;
+        st:value "Performed at time of imaging assessments for disease response as clinically indicated." .
+
+    e:t02-r014-c006 a st:SourceCell ;
+        st:column e:t02-c006 ;
+        st:row e:t02-r014 ;
+        st:value "Performed at time of imaging assessments for disease response as clinically indicated." .
+
+    e:t02-r014-c007 a st:SourceCell ;
+        st:column e:t02-c007 ;
+        st:row e:t02-r014 ;
+        st:value "Performed at time of imaging assessments for disease response as clinically indicated." .
+
+    e:t02-r015-c003 a st:SourceCell ;
+        st:column e:t02-c003 ;
+        st:row e:t02-r015 ;
+        st:value "Performed at time of imaging assessments for disease response as clinically indicated." .
+
+    e:t02-r015-c004 a st:SourceCell ;
+        st:column e:t02-c004 ;
+        st:row e:t02-r015 ;
+        st:value "Performed at time of imaging assessments for disease response as clinically indicated." .
+
+    e:t02-r015-c005 a st:SourceCell ;
+        st:column e:t02-c005 ;
+        st:row e:t02-r015 ;
+        st:value "Performed at time of imaging assessments for disease response as clinically indicated." .
+
+    e:t02-r015-c006 a st:SourceCell ;
+        st:column e:t02-c006 ;
+        st:row e:t02-r015 ;
+        st:value "Performed at time of imaging assessments for disease response as clinically indicated." .
+
+    e:t02-r015-c007 a st:SourceCell ;
+        st:column e:t02-c007 ;
+        st:row e:t02-r015 ;
+        st:value "Performed at time of imaging assessments for disease response as clinically indicated." .
+
+    e:t02-r016-c003 a st:SourceCell ;
+        st:column e:t02-c003 ;
+        st:row e:t02-r016 ;
+        st:value "Performed as clinically indicated." .
+
+    e:t02-r016-c004 a st:SourceCell ;
+        st:column e:t02-c004 ;
+        st:row e:t02-r016 ;
+        st:value "Performed as clinically indicated." .
+
+    e:t02-r016-c005 a st:SourceCell ;
+        st:column e:t02-c005 ;
+        st:row e:t02-r016 ;
+        st:value "Performed as clinically indicated." .
+
+    e:t02-r016-c006 a st:SourceCell ;
+        st:column e:t02-c006 ;
+        st:row e:t02-r016 ;
+        st:value "Performed as clinically indicated." .
+
+    e:t02-r016-c007 a st:SourceCell ;
+        st:column e:t02-c007 ;
+        st:row e:t02-r016 ;
+        st:value "Performed as clinically indicated." .
+
+    e:t02-r017-c003 a st:SourceCell ;
+        st:column e:t02-c003 ;
+        st:row e:t02-r017 ;
+        st:value "Performed as clinically indicated." .
+
+    e:t02-r017-c004 a st:SourceCell ;
+        st:column e:t02-c004 ;
+        st:row e:t02-r017 ;
+        st:value "Performed as clinically indicated." .
+
+    e:t02-r017-c005 a st:SourceCell ;
+        st:column e:t02-c005 ;
+        st:row e:t02-r017 ;
+        st:value "Performed as clinically indicated." .
+
+    e:t02-r017-c006 a st:SourceCell ;
+        st:column e:t02-c006 ;
+        st:row e:t02-r017 ;
+        st:value "Performed as clinically indicated." .
+
+    e:t02-r017-c007 a st:SourceCell ;
+        st:column e:t02-c007 ;
+        st:row e:t02-r017 ;
+        st:value "Performed as clinically indicated." .
+
+    e:t02-r019-c003 a st:SourceCell ;
+        st:column e:t02-c003 ;
+        st:row e:t02-r019 ;
+        st:value "See Section 9.5.1 for further details." .
+
+    e:t02-r019-c004 a st:SourceCell ;
+        st:column e:t02-c004 ;
+        st:row e:t02-r019 ;
+        st:value "See Section 9.5.1 for further details." .
+
+    e:t02-r019-c005 a st:SourceCell ;
+        st:column e:t02-c005 ;
+        st:row e:t02-r019 ;
+        st:value "See Section 9.5.1 for further details." .
+
+    e:t02-r019-c006 a st:SourceCell ;
+        st:column e:t02-c006 ;
+        st:row e:t02-r019 ;
+        st:value "See Section 9.5.1 for further details." .
+
+    e:t02-r019-c007 a st:SourceCell ;
+        st:column e:t02-c007 ;
+        st:row e:t02-r019 ;
+        st:value "See Section 9.5.1 for further details." .
+
+    e:t02-r020-c003 a st:SourceCell ;
+        st:column e:t02-c003 ;
+        st:row e:t02-r020 ;
+        st:value "See Section 9.5.1 for further details." .
+
+    e:t02-r020-c004 a st:SourceCell ;
+        st:column e:t02-c004 ;
+        st:row e:t02-r020 ;
+        st:value "See Section 9.5.1 for further details." .
+
+    e:t02-r020-c005 a st:SourceCell ;
+        st:column e:t02-c005 ;
+        st:row e:t02-r020 ;
+        st:value "See Section 9.5.1 for further details." .
+
+    e:t02-r020-c006 a st:SourceCell ;
+        st:column e:t02-c006 ;
+        st:row e:t02-r020 ;
+        st:value "See Section 9.5.1 for further details." .
+
+    e:t02-r020-c007 a st:SourceCell ;
+        st:column e:t02-c007 ;
+        st:row e:t02-r020 ;
+        st:value "See Section 9.5.1 for further details." .
+
+    e:t02-r021-c003 a st:SourceCell ;
+        st:column e:t02-c003 ;
+        st:row e:t02-r021 ;
+        st:value "See Section 9.5.1 for further details." .
+
+    e:t02-r021-c004 a st:SourceCell ;
+        st:column e:t02-c004 ;
+        st:row e:t02-r021 ;
+        st:value "See Section 9.5.1 for further details." .
+
+    e:t02-r021-c005 a st:SourceCell ;
+        st:column e:t02-c005 ;
+        st:row e:t02-r021 ;
+        st:value "See Section 9.5.1 for further details." .
+
+    e:t02-r021-c006 a st:SourceCell ;
+        st:column e:t02-c006 ;
+        st:row e:t02-r021 ;
+        st:value "See Section 9.5.1 for further details." .
+
+    e:t02-r021-c007 a st:SourceCell ;
+        st:column e:t02-c007 ;
+        st:row e:t02-r021 ;
+        st:value "See Section 9.5.1 for further details." .
+
+    e:t02-r022 a st:SourceActivityRow ;
+        st:inTable e:t02 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Health Outcomes" ;
+        st:onPage page:36 ;
+        st:rowPosition 22 .
+
+    e:t02-r023-c003 a st:SourceCell ;
+        st:column e:t02-c003 ;
+        st:row e:t02-r023 ;
+        st:value "See Notes" .
+
+    e:t02-r023-c004 a st:SourceCell ;
+        st:column e:t02-c004 ;
+        st:row e:t02-r023 ;
+        st:value "See Notes" .
+
+    e:t02-r023-c005 a st:SourceCell ;
+        st:column e:t02-c005 ;
+        st:row e:t02-r023 ;
+        st:value "See Notes" .
+
+    e:t02-r023-c006 a st:SourceCell ;
+        st:column e:t02-c006 ;
+        st:row e:t02-r023 ;
+        st:value "See Notes" .
+
+    e:t02-r023-c007 a st:SourceCell ;
+        st:column e:t02-c007 ;
+        st:row e:t02-r023 ;
+        st:value "See Notes" .
+
+    e:t02-r024 a st:SourceActivityRow ;
+        st:inTable e:t02 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Study Drug" ;
+        st:onPage page:36 ;
+        st:rowPosition 24 .
+
+    e:t02-r025-c002 a st:SourceCell ;
+        st:column e:t02-c002 ;
+        st:row e:t02-r025 ;
+        st:value "X" .
+
+    e:t02-r026-c002 a st:SourceCell ;
+        st:column e:t02-c002 ;
+        st:row e:t02-r026 ;
+        st:value "X" .
+
+    e:t02-r026-c006 a st:SourceCell ;
+        st:column e:t02-c006 ;
+        st:row e:t02-r026 ;
+        st:value "X" .
+
+    e:t02-r027-c002 a st:SourceCell ;
+        st:column e:t02-c002 ;
+        st:row e:t02-r027 ;
+        st:value "X" .
+
+    e:t02-r027-c006 a st:SourceCell ;
+        st:column e:t02-c006 ;
+        st:row e:t02-r027 ;
+        st:value "X" .
+
+    e:t02-r028-c002 a st:SourceCell ;
+        st:column e:t02-c002 ;
+        st:row e:t02-r028 ;
+        st:value "X" .
+
+    e:t02-r028-c006 a st:SourceCell ;
+        st:column e:t02-c006 ;
+        st:row e:t02-r028 ;
+        st:value "X" .
+
+    e:t02-r029-c004 a st:SourceCell ;
+        st:column e:t02-c004 ;
+        st:row e:t02-r029 ;
+        st:value "X (Day 3-5)" .
+
+    e:t02-r029-c007 a st:SourceCell ;
+        st:column e:t02-c007 ;
+        st:row e:t02-r029 ;
+        st:value "X" .
+
+    e:t03-n-a a st:SourceAnnotation ;
+        st:inTable e:t03 ;
+        st:marker "a" .
+
+    e:t03-n-b a st:SourceAnnotation ;
+        st:inTable e:t03 ;
+        st:marker "b" .
+
+    e:t03-n-c a st:SourceAnnotation ;
+        st:inTable e:t03 ;
+        st:marker "c" .
+
+    e:t03-n-n1 a st:SourceAnnotation ;
+        st:inTable e:t03 ;
+        st:marker "n1" .
+
+    e:t03-n-n10 a st:SourceAnnotation ;
+        st:inTable e:t03 ;
+        st:marker "n10" .
+
+    e:t03-n-n11 a st:SourceAnnotation ;
+        st:inTable e:t03 ;
+        st:marker "n11" .
+
+    e:t03-n-n12 a st:SourceAnnotation ;
+        st:inTable e:t03 ;
+        st:marker "n12" .
+
+    e:t03-n-n2 a st:SourceAnnotation ;
+        st:inTable e:t03 ;
+        st:marker "n2" .
+
+    e:t03-n-n3 a st:SourceAnnotation ;
+        st:inTable e:t03 ;
+        st:marker "n3" .
+
+    e:t03-n-n4 a st:SourceAnnotation ;
+        st:inTable e:t03 ;
+        st:marker "n4" .
+
+    e:t03-n-n5 a st:SourceAnnotation ;
+        st:inTable e:t03 ;
+        st:marker "n5" .
+
+    e:t03-n-n6 a st:SourceAnnotation ;
+        st:inTable e:t03 ;
+        st:marker "n6" .
+
+    e:t03-n-n7 a st:SourceAnnotation ;
+        st:inTable e:t03 ;
+        st:marker "n7" .
+
+    e:t03-n-n8 a st:SourceAnnotation ;
+        st:inTable e:t03 ;
+        st:marker "n8" .
+
+    e:t03-n-n9 a st:SourceAnnotation ;
+        st:inTable e:t03 ;
+        st:marker "n9" .
+
+    e:t03-r001 a st:SourcePropertyRow ;
+        st:hierarchyPosition 1 ;
+        st:inTable e:t03 ;
+        st:level 1 ;
+        st:propertyName "Visit" ;
+        st:propertyType "visit" ;
+        st:rowPosition 1 .
+
+    e:t03-r002 a st:SourceActivityRow ;
+        st:inTable e:t03 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "exact" ;
+        st:name "Safety Assessments" ;
+        st:onPage page:39 ;
+        st:rowPosition 2 .
+
+    e:t03-r003-c002 a st:SourceCell ;
+        st:column e:t03-c002 ;
+        st:row e:t03-r003 ;
+        st:value "X" .
+
+    e:t03-r003-c003 a st:SourceCell ;
+        st:column e:t03-c003 ;
+        st:row e:t03-r003 ;
+        st:value "X" .
+
+    e:t03-r003-c004 a st:SourceCell ;
+        st:column e:t03-c004 ;
+        st:row e:t03-r003 ;
+        st:value "X" .
+
+    e:t03-r004-c002 a st:SourceCell ;
+        st:column e:t03-c002 ;
+        st:row e:t03-r004 ;
+        st:value "X" .
+
+    e:t03-r004-c004 a st:SourceCell ;
+        st:column e:t03-c004 ;
+        st:row e:t03-r004 ;
+        st:value "X" .
+
+    e:t03-r005-c002 a st:SourceCell ;
+        st:column e:t03-c002 ;
+        st:row e:t03-r005 ;
+        st:value "X" .
+
+    e:t03-r006-c002 a st:SourceCell ;
+        st:column e:t03-c002 ;
+        st:row e:t03-r006 ;
+        st:value "X" .
+
+    e:t03-r006-c003 a st:SourceCell ;
+        st:column e:t03-c003 ;
+        st:row e:t03-r006 ;
+        st:value "X" .
+
+    e:t03-r006-c004 a st:SourceCell ;
+        st:column e:t03-c004 ;
+        st:row e:t03-r006 ;
+        st:value "X" .
+
+    e:t03-r006-c005 a st:SourceCell ;
+        st:column e:t03-c005 ;
+        st:row e:t03-r006 ;
+        st:value "See Notes" .
+
+    e:t03-r007-c002 a st:SourceCell ;
+        st:column e:t03-c002 ;
+        st:row e:t03-r007 ;
+        st:value "X" .
+
+    e:t03-r007-c003 a st:SourceCell ;
+        st:column e:t03-c003 ;
+        st:row e:t03-r007 ;
+        st:value "X" .
+
+    e:t03-r007-c004 a st:SourceCell ;
+        st:column e:t03-c004 ;
+        st:row e:t03-r007 ;
+        st:value "X" .
+
+    e:t03-r008-c002 a st:SourceCell ;
+        st:column e:t03-c002 ;
+        st:row e:t03-r008 ;
+        st:value "X" .
+
+    e:t03-r008-c003 a st:SourceCell ;
+        st:column e:t03-c003 ;
+        st:row e:t03-r008 ;
+        st:value "X" .
+
+    e:t03-r008-c004 a st:SourceCell ;
+        st:column e:t03-c004 ;
+        st:row e:t03-r008 ;
+        st:value "X" .
+
+    e:t03-r008-c005 a st:SourceCell ;
+        st:column e:t03-c005 ;
+        st:row e:t03-r008 ;
+        st:value "X" .
+
+    e:t03-r009 a st:SourceActivityRow ;
+        st:inTable e:t03 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "exact" ;
+        st:name "Laboratory Tests" ;
+        st:onPage page:40 ;
+        st:rowPosition 9 .
+
+    e:t03-r010-c002 a st:SourceCell ;
+        st:column e:t03-c002 ;
+        st:row e:t03-r010 ;
+        st:value "X" .
+
+    e:t03-r010-c003 a st:SourceCell ;
+        st:column e:t03-c003 ;
+        st:row e:t03-r010 ;
+        st:value "If toxicities are present." .
+
+    e:t03-r010-c004 a st:SourceCell ;
+        st:column e:t03-c004 ;
+        st:row e:t03-r010 ;
+        st:value "If toxicities are present" .
+
+    e:t03-r011-c002 a st:SourceCell ;
+        st:column e:t03-c002 ;
+        st:row e:t03-r011 ;
+        st:value "X" .
+
+    e:t03-r011-c003 a st:SourceCell ;
+        st:column e:t03-c003 ;
+        st:row e:t03-r011 ;
+        st:value "X" .
+
+    e:t03-r011-c004 a st:SourceCell ;
+        st:column e:t03-c004 ;
+        st:row e:t03-r011 ;
+        st:value "X" .
+
+    e:t03-r012 a st:SourceActivityRow ;
+        st:inTable e:t03 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "exact" ;
+        st:name "Efficacy Assessments" ;
+        st:onPage page:41 ;
+        st:rowPosition 12 .
+
+    e:t03-r013-c002 a st:SourceCell ;
+        st:column e:t03-c002 ;
+        st:row e:t03-r013 ;
+        st:value """• Imaging should occur every 9 weeks (± 7 days) from start of treatment for the first 54 weeks, then every 12 weeks (± 7 days) until disease progression (including treatment beyond progression) or end of study, whichever occurs later. Use same imaging method as was used at screening. After completion of study therapy for participants without progression, results of additional imaging (including bone marrow and CSF, if applicable) are requested for the duration of the study.
+• Not applicable to participants with leukemia.
+• Skull base to mid-thigh [18F]fluorodeoxyglucose (FDG) positron emission tomography-computed tomography (PET-CT) or PET-magnetic resonance imaging (PET-MRI); additional anatomy to include all sites of disease for FDG-avid non-Hodgkin lymphoma.
+• Contrast-enhanced CT of the chest, contrast-enhanced CT/magnetic resonance imaging (MRI) of the abdomen, pelvis, and all other known and/or suspected sites of disease.
+• Participants with metaiodobenzylguanidine (MIBG)-avid neuroblastoma must also undergo MIBG scintigraphy in addition to CT/MRI as above.""" .
+
+    e:t03-r013-c003 a st:SourceCell ;
+        st:column e:t03-c003 ;
+        st:row e:t03-r013 ;
+        st:value """• Imaging should occur every 9 weeks (± 7 days) from start of treatment for the first 54 weeks, then every 12 weeks (± 7 days) until disease progression (including treatment beyond progression) or end of study, whichever occurs later. Use same imaging method as was used at screening. After completion of study therapy for participants without progression, results of additional imaging (including bone marrow and CSF, if applicable) are requested for the duration of the study.
+• Not applicable to participants with leukemia.
+• Skull base to mid-thigh [18F]fluorodeoxyglucose (FDG) positron emission tomography-computed tomography (PET-CT) or PET-magnetic resonance imaging (PET-MRI); additional anatomy to include all sites of disease for FDG-avid non-Hodgkin lymphoma.
+• Contrast-enhanced CT of the chest, contrast-enhanced CT/magnetic resonance imaging (MRI) of the abdomen, pelvis, and all other known and/or suspected sites of disease.
+• Participants with metaiodobenzylguanidine (MIBG)-avid neuroblastoma must also undergo MIBG scintigraphy in addition to CT/MRI as above.""" .
+
+    e:t03-r013-c004 a st:SourceCell ;
+        st:column e:t03-c004 ;
+        st:row e:t03-r013 ;
+        st:value """• Imaging should occur every 9 weeks (± 7 days) from start of treatment for the first 54 weeks, then every 12 weeks (± 7 days) until disease progression (including treatment beyond progression) or end of study, whichever occurs later. Use same imaging method as was used at screening. After completion of study therapy for participants without progression, results of additional imaging (including bone marrow and CSF, if applicable) are requested for the duration of the study.
+• Not applicable to participants with leukemia.
+• Skull base to mid-thigh [18F]fluorodeoxyglucose (FDG) positron emission tomography-computed tomography (PET-CT) or PET-magnetic resonance imaging (PET-MRI); additional anatomy to include all sites of disease for FDG-avid non-Hodgkin lymphoma.
+• Contrast-enhanced CT of the chest, contrast-enhanced CT/magnetic resonance imaging (MRI) of the abdomen, pelvis, and all other known and/or suspected sites of disease.
+• Participants with metaiodobenzylguanidine (MIBG)-avid neuroblastoma must also undergo MIBG scintigraphy in addition to CT/MRI as above.""" .
+
+    e:t03-r013-c005 a st:SourceCell ;
+        st:column e:t03-c005 ;
+        st:row e:t03-r013 ;
+        st:value """• Imaging should occur every 9 weeks (± 7 days) from start of treatment for the first 54 weeks, then every 12 weeks (± 7 days) until disease progression (including treatment beyond progression) or end of study, whichever occurs later. Use same imaging method as was used at screening. After completion of study therapy for participants without progression, results of additional imaging (including bone marrow and CSF, if applicable) are requested for the duration of the study.
+• Not applicable to participants with leukemia.
+• Skull base to mid-thigh [18F]fluorodeoxyglucose (FDG) positron emission tomography-computed tomography (PET-CT) or PET-magnetic resonance imaging (PET-MRI); additional anatomy to include all sites of disease for FDG-avid non-Hodgkin lymphoma.
+• Contrast-enhanced CT of the chest, contrast-enhanced CT/magnetic resonance imaging (MRI) of the abdomen, pelvis, and all other known and/or suspected sites of disease.
+• Participants with metaiodobenzylguanidine (MIBG)-avid neuroblastoma must also undergo MIBG scintigraphy in addition to CT/MRI as above.""" .
+
+    e:t03-r014-c002 a st:SourceCell ;
+        st:column e:t03-c002 ;
+        st:row e:t03-r014 ;
+        st:value "• Participants in brain tumor-related cohorts and those with a history of brain metastasis or symptoms should undergo MRI of the brain without and with contrast every 9 weeks (± 7 days) from start of treatment up to 54 weeks, and then approximately every 12 weeks (± 7 days), or sooner if clinically indicated until disease progression (including treatment beyond progression) or end of study, whichever occurs later. Cerebrospinal fluid (CSF), if clinically indicated, should be followed as per Response Assessment in Pediatric Neuro-Oncology guidelines." .
+
+    e:t03-r014-c003 a st:SourceCell ;
+        st:column e:t03-c003 ;
+        st:row e:t03-r014 ;
+        st:value "• Participants in brain tumor-related cohorts and those with a history of brain metastasis or symptoms should undergo MRI of the brain without and with contrast every 9 weeks (± 7 days) from start of treatment up to 54 weeks, and then approximately every 12 weeks (± 7 days), or sooner if clinically indicated until disease progression (including treatment beyond progression) or end of study, whichever occurs later. Cerebrospinal fluid (CSF), if clinically indicated, should be followed as per Response Assessment in Pediatric Neuro-Oncology guidelines." .
+
+    e:t03-r014-c004 a st:SourceCell ;
+        st:column e:t03-c004 ;
+        st:row e:t03-r014 ;
+        st:value "• Participants in brain tumor-related cohorts and those with a history of brain metastasis or symptoms should undergo MRI of the brain without and with contrast every 9 weeks (± 7 days) from start of treatment up to 54 weeks, and then approximately every 12 weeks (± 7 days), or sooner if clinically indicated until disease progression (including treatment beyond progression) or end of study, whichever occurs later. Cerebrospinal fluid (CSF), if clinically indicated, should be followed as per Response Assessment in Pediatric Neuro-Oncology guidelines." .
+
+    e:t03-r014-c005 a st:SourceCell ;
+        st:column e:t03-c005 ;
+        st:row e:t03-r014 ;
+        st:value "• Participants in brain tumor-related cohorts and those with a history of brain metastasis or symptoms should undergo MRI of the brain without and with contrast every 9 weeks (± 7 days) from start of treatment up to 54 weeks, and then approximately every 12 weeks (± 7 days), or sooner if clinically indicated until disease progression (including treatment beyond progression) or end of study, whichever occurs later. Cerebrospinal fluid (CSF), if clinically indicated, should be followed as per Response Assessment in Pediatric Neuro-Oncology guidelines." .
+
+    e:t03-r015-c002 a st:SourceCell ;
+        st:column e:t03-c002 ;
+        st:row e:t03-r015 ;
+        st:value "As clinically indicated." .
+
+    e:t03-r015-c003 a st:SourceCell ;
+        st:column e:t03-c003 ;
+        st:row e:t03-r015 ;
+        st:value "As clinically indicated." .
+
+    e:t03-r015-c004 a st:SourceCell ;
+        st:column e:t03-c004 ;
+        st:row e:t03-r015 ;
+        st:value "As clinically indicated." .
+
+    e:t03-r015-c005 a st:SourceCell ;
+        st:column e:t03-c005 ;
+        st:row e:t03-r015 ;
+        st:value "As clinically indicated." .
+
+    e:t03-r016-c002 a st:SourceCell ;
+        st:column e:t03-c002 ;
+        st:row e:t03-r016 ;
+        st:value "As clinically indicated" .
+
+    e:t03-r016-c003 a st:SourceCell ;
+        st:column e:t03-c003 ;
+        st:row e:t03-r016 ;
+        st:value "As clinically indicated" .
+
+    e:t03-r016-c004 a st:SourceCell ;
+        st:column e:t03-c004 ;
+        st:row e:t03-r016 ;
+        st:value "As clinically indicated" .
+
+    e:t03-r016-c005 a st:SourceCell ;
+        st:column e:t03-c005 ;
+        st:row e:t03-r016 ;
+        st:value "As clinically indicated" .
+
+    e:t03-r017-c002 a st:SourceCell ;
+        st:column e:t03-c002 ;
+        st:row e:t03-r017 ;
+        st:value "X" .
+
+    e:t03-r017-c003 a st:SourceCell ;
+        st:column e:t03-c003 ;
+        st:row e:t03-r017 ;
+        st:value "X" .
+
+    e:t03-r017-c004 a st:SourceCell ;
+        st:column e:t03-c004 ;
+        st:row e:t03-r017 ;
+        st:value "X" .
+
+    e:t03-r017-c005 a st:SourceCell ;
+        st:column e:t03-c005 ;
+        st:row e:t03-r017 ;
+        st:value "X" .
+
+    e:t03-r019-c002 a st:SourceCell ;
+        st:column e:t03-c002 ;
+        st:row e:t03-r019 ;
+        st:value "See Section 9.5.1 for further details." .
+
+    e:t03-r019-c003 a st:SourceCell ;
+        st:column e:t03-c003 ;
+        st:row e:t03-r019 ;
+        st:value "See Section 9.5.1 for further details." .
+
+    e:t03-r019-c004 a st:SourceCell ;
+        st:column e:t03-c004 ;
+        st:row e:t03-r019 ;
+        st:value "See Section 9.5.1 for further details." .
+
+    e:t03-r019-c005 a st:SourceCell ;
+        st:column e:t03-c005 ;
+        st:row e:t03-r019 ;
+        st:value "See Section 9.5.1 for further details." .
+
+    e:t03-r020-c002 a st:SourceCell ;
+        st:column e:t03-c002 ;
+        st:row e:t03-r020 ;
+        st:value "See Section 9.5.1 for further details." .
+
+    e:t03-r020-c003 a st:SourceCell ;
+        st:column e:t03-c003 ;
+        st:row e:t03-r020 ;
+        st:value "See Section 9.5.1 for further details." .
+
+    e:t03-r020-c004 a st:SourceCell ;
+        st:column e:t03-c004 ;
+        st:row e:t03-r020 ;
+        st:value "See Section 9.5.1 for further details." .
+
+    e:t03-r020-c005 a st:SourceCell ;
+        st:column e:t03-c005 ;
+        st:row e:t03-r020 ;
+        st:value "See Section 9.5.1 for further details." .
+
+    e:u-t01-c002-v01 a st:ColumnPropertyValue ;
+        st:level 1 ;
+        st:position 1 ;
+        st:propertyName "Visit" ;
+        st:propertyType "visit" ;
+        st:value "Screening Visit" .
+
+    e:u-t01-n-n12-d01 a st:DocumentReference ;
+        st:position 1 ;
+        st:referenceKind "section" ;
+        st:target "9.1.1" .
+
+    e:u-t01-n-n13-d01 a st:DocumentReference ;
+        st:position 1 ;
+        st:referenceKind "section" ;
+        st:target "9.1.1" .
+
+    e:u-t01-n-n14-d01 a st:DocumentReference ;
+        st:position 1 ;
+        st:referenceKind "section" ;
+        st:target "9.1" .
+
+    e:u-t01-n-n15-d01 a st:DocumentReference ;
+        st:position 1 ;
+        st:referenceKind "section" ;
+        st:target "9.1" .
+
+    e:u-t01-n-n16-d01 a st:DocumentReference ;
+        st:position 1 ;
+        st:referenceKind "section" ;
+        st:target "9.1.2.5" .
+
+    e:u-t01-n-n17-d01 a st:DocumentReference ;
+        st:position 1 ;
+        st:referenceKind "section" ;
+        st:target "9.1.2.5" .
+
+    e:u-t01-n-n2-d01 a st:DocumentReference ;
+        st:position 1 ;
+        st:referenceKind "section" ;
+        st:target "6.1" .
+
+    e:u-t01-n-n2-d02 a st:DocumentReference ;
+        st:position 2 ;
+        st:referenceKind "section" ;
+        st:target "6.2" .
+
+    e:u-t01-n-n5-d01 a st:DocumentReference ;
+        st:position 1 ;
+        st:referenceKind "appendix" ;
+        st:target "7" .
+
+    e:u-t01-n-n8-d01 a st:DocumentReference ;
+        st:position 1 ;
+        st:referenceKind "section" ;
+        st:target "9.4.6" .
+
+    e:u-t01-n-n9-d01 a st:DocumentReference ;
+        st:position 1 ;
+        st:referenceKind "section" ;
+        st:target "9.4.3" .
+
+    e:u-t02-c002-v01 a st:ColumnPropertyValue ;
+        st:level 1 ;
+        st:position 1 ;
+        st:propertyName "Cycle" ;
+        st:propertyType "cycle" ;
+        st:value """Cycle 1 Only
+Cycle = 3 wks""" .
+
+    e:u-t02-c002-v02 a st:ColumnPropertyValue ;
+        st:level 2 ;
+        st:position 2 ;
+        st:propertyName "Day" ;
+        st:propertyType "study_day" ;
+        st:value "Day 1" .
+
+    e:u-t02-c003-v01 a st:ColumnPropertyValue ;
+        st:level 1 ;
+        st:position 1 ;
+        st:propertyName "Cycle" ;
+        st:propertyType "cycle" ;
+        st:value """Cycle 1 Only
+Cycle = 3 wks""" .
+
+    e:u-t02-c003-v02 a st:ColumnPropertyValue ;
+        st:level 2 ;
+        st:position 2 ;
+        st:propertyName "Day" ;
+        st:propertyType "study_day" ;
+        st:value """Day 3
+(± 1 day)""" .
+
+    e:u-t02-c004-v01 a st:ColumnPropertyValue ;
+        st:level 1 ;
+        st:position 1 ;
+        st:propertyName "Cycle" ;
+        st:propertyType "cycle" ;
+        st:value """Cycle 1 Only
+Cycle = 3 wks""" .
+
+    e:u-t02-c004-v02 a st:ColumnPropertyValue ;
+        st:level 2 ;
+        st:position 2 ;
+        st:propertyName "Day" ;
+        st:propertyType "study_day" ;
+        st:value """Day 5
+(± 1 day)""" .
+
+    e:u-t02-c005-v01 a st:ColumnPropertyValue ;
+        st:level 1 ;
+        st:position 1 ;
+        st:propertyName "Cycle" ;
+        st:propertyType "cycle" ;
+        st:value """Cycle 1 Only
+Cycle = 3 wks""" .
+
+    e:u-t02-c005-v02 a st:ColumnPropertyValue ;
+        st:level 2 ;
+        st:position 2 ;
+        st:propertyName "Day" ;
+        st:propertyType "study_day" ;
+        st:value """Day 8
+(- 1 day)""" .
+
+    e:u-t02-c006-v01 a st:ColumnPropertyValue ;
+        st:level 1 ;
+        st:position 1 ;
+        st:propertyName "Cycle" ;
+        st:propertyType "cycle" ;
+        st:value """Cycle 2 and Beyond
+Each cycle = 3 wks""" .
+
+    e:u-t02-c006-v02 a st:ColumnPropertyValue ;
+        st:level 2 ;
+        st:position 2 ;
+        st:propertyName "Day" ;
+        st:propertyType "study_day" ;
+        st:value "Day 1" .
+
+    e:u-t02-c007-v01 a st:ColumnPropertyValue ;
+        st:level 1 ;
+        st:position 1 ;
+        st:propertyName "Cycle" ;
+        st:propertyType "cycle" ;
+        st:value """Cycle 2 and Beyond
+Each cycle = 3 wks""" .
+
+    e:u-t02-c007-v02 a st:ColumnPropertyValue ;
+        st:level 2 ;
+        st:position 2 ;
+        st:propertyName "Day" ;
+        st:propertyType "study_day" ;
+        st:value "Day 3-5" .
+
+    e:u-t02-n-c-d01 a st:DocumentReference ;
+        st:position 1 ;
+        st:referenceKind "section" ;
+        st:target "9.5.1" .
+
+    e:u-t02-n-c-d02 a st:DocumentReference ;
+        st:position 2 ;
+        st:referenceKind "table" ;
+        st:target "9.5.1-1" .
+
+    e:u-t02-n-n1-d01 a st:DocumentReference ;
+        st:position 1 ;
+        st:referenceKind "appendix" ;
+        st:target "7" .
+
+    e:u-t02-n-n10-d01 a st:DocumentReference ;
+        st:position 1 ;
+        st:referenceKind "section" ;
+        st:target "9.1" .
+
+    e:u-t02-n-n11-d01 a st:DocumentReference ;
+        st:position 1 ;
+        st:referenceKind "section" ;
+        st:target "9.1.2.5" .
+
+    e:u-t02-n-n14-d01 a st:DocumentReference ;
+        st:position 1 ;
+        st:referenceKind "figure" ;
+        st:target "5.1-1" .
+
+    e:u-t02-n-n14-d02 a st:DocumentReference ;
+        st:position 2 ;
+        st:referenceKind "figure" ;
+        st:target "5.1-2" .
+
+    e:u-t02-n-n14-d03 a st:DocumentReference ;
+        st:position 3 ;
+        st:referenceKind "figure" ;
+        st:target "5.1-3" .
+
+    e:u-t02-n-n15-d01 a st:DocumentReference ;
+        st:position 1 ;
+        st:referenceKind "section" ;
+        st:target "7.1.1.1" .
+
+    e:u-t02-n-n16-d01 a st:DocumentReference ;
+        st:position 1 ;
+        st:referenceKind "section" ;
+        st:target "7.1.1.1" .
+
+    e:u-t02-n-n17-d01 a st:DocumentReference ;
+        st:position 1 ;
+        st:referenceKind "section" ;
+        st:target "7.1.1.1" .
+
+    e:u-t02-n-n3-d01 a st:DocumentReference ;
+        st:position 1 ;
+        st:referenceKind "appendix" ;
+        st:target "3" .
+
+    e:u-t02-n-n5-d01 a st:DocumentReference ;
+        st:position 1 ;
+        st:referenceKind "section" ;
+        st:target "9.4.6" .
+
+    e:u-t02-n-n7-d01 a st:DocumentReference ;
+        st:position 1 ;
+        st:referenceKind "section" ;
+        st:target "9.1.1" .
+
+    e:u-t02-n-n7-d02 a st:DocumentReference ;
+        st:position 2 ;
+        st:referenceKind "section" ;
+        st:target "8.1.2" .
+
+    e:u-t02-n-n8-d01 a st:DocumentReference ;
+        st:position 1 ;
+        st:referenceKind "section" ;
+        st:target "9.1.1" .
+
+    e:u-t02-n-n9-d01 a st:DocumentReference ;
+        st:position 1 ;
+        st:referenceKind "section" ;
+        st:target "9.1" .
+
+    e:u-t02-r022 a st:UnifiedActivity ;
+        st:displayOrder 40 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader true ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t02-r022 ;
+        st:name "Health Outcomes" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Health Outcomes" .
+
+    e:u-t03-c002-v01 a st:ColumnPropertyValue ;
+        st:level 1 ;
+        st:position 1 ;
+        st:propertyName "Visit" ;
+        st:propertyType "visit" ;
+        st:value "Safety Follow-up Visit 1" .
+
+    e:u-t03-c003-v01 a st:ColumnPropertyValue ;
+        st:level 1 ;
+        st:position 1 ;
+        st:propertyName "Visit" ;
+        st:propertyType "visit" ;
+        st:value "Safety Follow-up Visit 2" .
+
+    e:u-t03-c004-v01 a st:ColumnPropertyValue ;
+        st:level 1 ;
+        st:position 1 ;
+        st:propertyName "Visit" ;
+        st:propertyType "visit" ;
+        st:value "Safety Follow-up Visit 3" .
+
+    e:u-t03-c005-v01 a st:ColumnPropertyValue ;
+        st:level 1 ;
+        st:position 1 ;
+        st:propertyName "Visit" ;
+        st:propertyType "visit" ;
+        st:value "Survival Follow-up Every 3 Months (± 14 Days)" .
+
+    e:u-t03-n-n10-d01 a st:DocumentReference ;
+        st:position 1 ;
+        st:referenceKind "section" ;
+        st:target "9.1" .
+
+    e:u-t03-n-n11-d01 a st:DocumentReference ;
+        st:position 1 ;
+        st:referenceKind "section" ;
+        st:target "9.1" .
+
+    e:u-t03-n-n12-d01 a st:DocumentReference ;
+        st:position 1 ;
+        st:referenceKind "section" ;
+        st:target "5.1.4" .
+
+    e:u-t03-n-n2-d01 a st:DocumentReference ;
+        st:position 1 ;
+        st:referenceKind "appendix" ;
+        st:target "7" .
+
+    e:u-t03-n-n4-d01 a st:DocumentReference ;
+        st:position 1 ;
+        st:referenceKind "section" ;
+        st:target "9.2.8" .
+
+    e:u-t03-n-n4-d02 a st:DocumentReference ;
+        st:position 2 ;
+        st:referenceKind "section" ;
+        st:target "8.3" .
+
+    e:u-t03-n-n6-d01 a st:DocumentReference ;
+        st:position 1 ;
+        st:referenceKind "section" ;
+        st:target "9.4.6" .
+
+    e:u-t03-n-n8-d01 a st:DocumentReference ;
+        st:position 1 ;
+        st:referenceKind "section" ;
+        st:target "9.1.1" .
+
+    e:u-t03-n-n9-d01 a st:DocumentReference ;
+        st:position 1 ;
+        st:referenceKind "section" ;
+        st:target "9.1.1" .
+
+    <https://kerfors.github.io/soa-tables/id/study/NCT04730349> a st:Study ;
+        st:studyKey "NCT04730349" .
+
+    page:33 a st:Page ;
+        st:inFile <https://kerfors.github.io/soa-tables/id/sha256/2ff447e30e89935998116db2c823385b803028dea19cf9bae339807d856d25dc> ;
+        st:pageNumber 33 .
+
+    page:37 a st:Page ;
+        st:inFile <https://kerfors.github.io/soa-tables/id/sha256/2ff447e30e89935998116db2c823385b803028dea19cf9bae339807d856d25dc> ;
+        st:pageNumber 37 .
+
+    e:decision-ccorr-005 a st:Decision ;
+        st:decidedAt "2026-10-04T08:20:00Z"^^xsd:dateTime ;
+        st:decidedByPerson "Kerstin Forsberg" ;
+        st:decisionSource e:t03-r018 ;
+        st:decisionTarget e:t02-r018 ;
+        st:op "keep" ;
+        st:reason "Plural only; both are section headers." .
+
+    e:decision-ccorr-006 a st:Decision ;
+        st:decidedAt "2026-11-08T18:47:00Z"^^xsd:dateTime ;
+        st:decidedByPerson "Kerstin Forsberg" ;
+        st:decisionSource e:t03-r005 ;
+        st:decisionTarget e:t02-r005 ;
+        st:op "merge" ;
+        st:reason "Same test; ECG is the abbreviation Table 2 states." .
+
+    e:t01-r003 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Informed Consent" ;
+        st:onPage page:28 ;
+        st:rowPosition 3 .
+
+    e:t01-r004 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Inclusion/Exclusion Criteria" ;
+        st:onPage page:28 ;
+        st:rowPosition 4 .
+
+    e:t01-r005 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Medical History" ;
+        st:onPage page:28 ;
+        st:rowPosition 5 .
+
+    e:t01-r007 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Physical Examination" ;
+        st:onPage page:28 ;
+        st:rowPosition 7 .
+
+    e:t01-r012 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Clinical Laboratory Testing" ;
+        st:onPage page:28 ;
+        st:rowPosition 12 .
+
+    e:t01-r013 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Electrocardiogram" ;
+        st:onPage page:28 ;
+        st:rowPosition 13 .
+
+    e:t01-r014 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Echocardiogram or Multigated Acquisition Scan (MUGA)" ;
+        st:onPage page:29 ;
+        st:rowPosition 14 .
+
+    e:t01-r015 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Pregnancy Test" ;
+        st:onPage page:29 ;
+        st:rowPosition 15 .
+
+    e:t01-r017 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Body Imaging" ;
+        st:onPage page:29 ;
+        st:rowPosition 17 .
+
+    e:t01-r018 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Brain Imaging" ;
+        st:onPage page:29 ;
+        st:rowPosition 18 .
+
+    e:t01-r019 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Cerebrospinal Fluid (CSF) - Solid Tumors" ;
+        st:onPage page:29 ;
+        st:rowPosition 19 .
+
+    e:t01-r020 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Bone Marrow and Buccal Swab - Solid Tumors" ;
+        st:onPage page:30 ;
+        st:rowPosition 20 .
+
+    e:t01-r021 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "CSF - Leukemia" ;
+        st:onPage page:30 ;
+        st:rowPosition 21 .
+
+    e:t01-r022 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Bone Marrow and Buccal Swab - Leukemia" ;
+        st:onPage page:30 ;
+        st:rowPosition 22 .
+
+    e:t02-r025 a st:SourceActivityRow ;
+        st:inTable e:t02 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Determine Dosing Schema" ;
+        st:onPage page:36 ;
+        st:rowPosition 25 .
+
+    e:u-t01-r003 a st:UnifiedActivity ;
+        st:displayOrder 2 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r003 ;
+        st:name "Informed Consent" ;
+        st:parent e:u-t01-r002 ;
+        st:parentName "Eligibility Assessments" ;
+        st:qualifiedKey "Eligibility Assessments::Informed Consent" .
+
+    e:u-t01-r004 a st:UnifiedActivity ;
+        st:displayOrder 3 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r004 ;
+        st:name "Inclusion/Exclusion Criteria" ;
+        st:parent e:u-t01-r002 ;
+        st:parentName "Eligibility Assessments" ;
+        st:qualifiedKey "Eligibility Assessments::Inclusion/Exclusion Criteria" .
+
+    e:u-t01-r005 a st:UnifiedActivity ;
+        st:displayOrder 4 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r005 ;
+        st:name "Medical History" ;
+        st:parent e:u-t01-r002 ;
+        st:parentName "Eligibility Assessments" ;
+        st:qualifiedKey "Eligibility Assessments::Medical History" .
+
+    e:u-t01-r007 a st:UnifiedActivity ;
+        st:displayOrder 6 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r007 ;
+        st:name "Physical Examination" ;
+        st:parent e:u-t01-r006 ;
+        st:parentName "Safety Assessments" ;
+        st:qualifiedKey "Safety Assessments::Physical Examination" .
+
+    e:u-t01-r009 a st:UnifiedActivity ;
+        st:displayOrder 8 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r009 ;
+        st:name "Prior and Concomitant Medication Use" ;
+        st:parent e:u-t01-r006 ;
+        st:parentName "Safety Assessments" ;
+        st:qualifiedKey "Safety Assessments::Prior and Concomitant Medication Use" .
+
+    e:u-t01-r013 a st:UnifiedActivity ;
+        st:displayOrder 18 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r013 ;
+        st:name "Electrocardiogram" ;
+        st:parent e:u-t01-r011 ;
+        st:parentName "Laboratory Tests" ;
+        st:qualifiedKey "Laboratory Tests::Electrocardiogram" .
+
+    e:u-t01-r014 a st:UnifiedActivity ;
+        st:displayOrder 19 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r014 ;
+        st:name "Echocardiogram or Multigated Acquisition Scan (MUGA)" ;
+        st:parent e:u-t01-r011 ;
+        st:parentName "Laboratory Tests" ;
+        st:qualifiedKey "Laboratory Tests::Echocardiogram or Multigated Acquisition Scan (MUGA)" .
+
+    e:u-t01-r019 a st:UnifiedActivity ;
+        st:displayOrder 25 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r019 ;
+        st:name "Cerebrospinal Fluid (CSF) - Solid Tumors" ;
+        st:parent e:u-t01-r016 ;
+        st:parentName "Tumor Assessment" ;
+        st:qualifiedKey "Tumor Assessment::Cerebrospinal Fluid (CSF) - Solid Tumors" .
+
+    e:u-t01-r020 a st:UnifiedActivity ;
+        st:displayOrder 26 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r020 ;
+        st:name "Bone Marrow and Buccal Swab - Solid Tumors" ;
+        st:parent e:u-t01-r016 ;
+        st:parentName "Tumor Assessment" ;
+        st:qualifiedKey "Tumor Assessment::Bone Marrow and Buccal Swab - Solid Tumors" .
+
+    e:u-t01-r022 a st:UnifiedActivity ;
+        st:displayOrder 28 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r022 ;
+        st:name "Bone Marrow and Buccal Swab - Leukemia" ;
+        st:parent e:u-t01-r016 ;
+        st:parentName "Tumor Assessment" ;
+        st:qualifiedKey "Tumor Assessment::Bone Marrow and Buccal Swab - Leukemia" .
+
+    e:u-t02-r025 a st:UnifiedActivity ;
+        st:displayOrder 43 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t02-r025 ;
+        st:name "Determine Dosing Schema" ;
+        st:parent e:u-t02-r024 ;
+        st:parentName "Study Drug" ;
+        st:qualifiedKey "Study Drug::Determine Dosing Schema" .
+
+    e:u-t02-r027 a st:UnifiedActivity ;
+        st:displayOrder 45 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t02-r027 ;
+        st:name "Administer Bempegaldesleukin + Nivolumab (Parts A and B)" ;
+        st:parent e:u-t02-r024 ;
+        st:parentName "Study Drug" ;
+        st:qualifiedKey "Study Drug::Administer Bempegaldesleukin + Nivolumab (Parts A and B)" .
+
+    page:40 a st:Page ;
+        st:inFile <https://kerfors.github.io/soa-tables/id/sha256/2ff447e30e89935998116db2c823385b803028dea19cf9bae339807d856d25dc> ;
+        st:pageNumber 40 .
+
+    page:41 a st:Page ;
+        st:inFile <https://kerfors.github.io/soa-tables/id/sha256/2ff447e30e89935998116db2c823385b803028dea19cf9bae339807d856d25dc> ;
+        st:pageNumber 41 .
+
+    e:t02-r010 a st:SourceActivityRow ;
+        st:inTable e:t02 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "exact" ;
+        st:name "Pregnancy Test" ;
+        st:onPage page:32 ;
+        st:rowPosition 10 .
+
+    e:t02-r018 a st:SourceActivityRow ;
+        st:inTable e:t02 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Pharmacokinetic (PK)/Immunogenicity Assessments" ;
+        st:onPage page:35 ;
+        st:rowPosition 18 .
+
+    e:t02-r026 a st:SourceActivityRow ;
+        st:inTable e:t02 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Administer Intravenous Fluids" ;
+        st:onPage page:36 ;
+        st:rowPosition 26 .
+
+    e:t02-r027 a st:SourceActivityRow ;
+        st:inTable e:t02 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Administer Bempegaldesleukin + Nivolumab (Parts A and B)" ;
+        st:onPage page:36 ;
+        st:rowPosition 27 .
+
+    e:t02-r028 a st:SourceActivityRow ;
+        st:inTable e:t02 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Review Hydration Guidelines with Participants" ;
+        st:onPage page:37 ;
+        st:rowPosition 28 .
+
+    e:t02-r029 a st:SourceActivityRow ;
+        st:inTable e:t02 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Oral Hydration Follow-up" ;
+        st:onPage page:37 ;
+        st:rowPosition 29 .
+
+    e:t03-r004 a st:SourceActivityRow ;
+        st:inTable e:t03 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "exact" ;
+        st:name "Performance Status" ;
+        st:onPage page:39 ;
+        st:rowPosition 4 .
+
+    e:t03-r018 a st:SourceActivityRow ;
+        st:inTable e:t03 ;
+        st:matchConfidence 1.0 ;
+        st:matchDecision e:decision-ccorr-005 ;
+        st:matchStatus "fuzzy_auto" ;
+        st:name "Pharmacokinetics (PK)/Immunogenicity Assessment" ;
+        st:onPage page:42 ;
+        st:rowPosition 18 .
+
+    e:u-t01-r002 a st:UnifiedActivity ;
+        st:displayOrder 1 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader true ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r002 ;
+        st:name "Eligibility Assessments" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Eligibility Assessments" .
+
+    e:u-t02-r026 a st:UnifiedActivity ;
+        st:displayOrder 44 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t02-r026 ;
+        st:name "Administer Intravenous Fluids" ;
+        st:parent e:u-t02-r024 ;
+        st:parentName "Study Drug" ;
+        st:qualifiedKey "Study Drug::Administer Intravenous Fluids" .
+
+    e:u-t02-r028 a st:UnifiedActivity ;
+        st:displayOrder 46 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t02-r028 ;
+        st:name "Review Hydration Guidelines with Participants" ;
+        st:parent e:u-t02-r024 ;
+        st:parentName "Study Drug" ;
+        st:qualifiedKey "Study Drug::Review Hydration Guidelines with Participants" .
+
+    e:u-t02-r029 a st:UnifiedActivity ;
+        st:displayOrder 47 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t02-r029 ;
+        st:name "Oral Hydration Follow-up" ;
+        st:parent e:u-t02-r024 ;
+        st:parentName "Study Drug" ;
+        st:qualifiedKey "Study Drug::Oral Hydration Follow-up" .
+
+    e:u-t03-r007 a st:UnifiedActivity ;
+        st:displayOrder 14 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t03-r007 ;
+        st:name "Subsequent Medications" ;
+        st:parent e:u-t01-r006 ;
+        st:parentName "Safety Assessments" ;
+        st:qualifiedKey "Safety Assessments::Subsequent Medications" .
+
+    page:30 a st:Page ;
+        st:inFile <https://kerfors.github.io/soa-tables/id/sha256/2ff447e30e89935998116db2c823385b803028dea19cf9bae339807d856d25dc> ;
+        st:pageNumber 30 .
+
+    page:32 a st:Page ;
+        st:inFile <https://kerfors.github.io/soa-tables/id/sha256/2ff447e30e89935998116db2c823385b803028dea19cf9bae339807d856d25dc> ;
+        st:pageNumber 32 .
+
+    page:34 a st:Page ;
+        st:inFile <https://kerfors.github.io/soa-tables/id/sha256/2ff447e30e89935998116db2c823385b803028dea19cf9bae339807d856d25dc> ;
+        st:pageNumber 34 .
+
+    e:t01-r008 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Performance Status" ;
+        st:onPage page:28 ;
+        st:rowPosition 8 .
+
+    e:t01-r009 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Prior and Concomitant Medication Use" ;
+        st:onPage page:28 ;
+        st:rowPosition 9 .
+
+    e:t01-r010 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Serious Adverse Events (SAE) Assessment" ;
+        st:onPage page:28 ;
+        st:rowPosition 10 .
+
+    e:t02-r009 a st:SourceActivityRow ;
+        st:inTable e:t02 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "exact" ;
+        st:name "Clinical Laboratory Testing" ;
+        st:onPage page:32 ;
+        st:rowPosition 9 .
+
+    e:t03-r003 a st:SourceActivityRow ;
+        st:inTable e:t03 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Vital Signs" ;
+        st:onPage page:39 ;
+        st:rowPosition 3 .
+
+    e:t03-r005 a st:SourceActivityRow ;
+        st:inTable e:t03 ;
+        st:matchConfidence 1.0 ;
+        st:matchDecision e:decision-ccorr-006 ;
+        st:matchStatus "decision" ;
+        st:name "12-lead ECG" ;
+        st:onPage page:39 ;
+        st:rowPosition 5 .
+
+    e:t03-r007 a st:SourceActivityRow ;
+        st:inTable e:t03 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Subsequent Medications" ;
+        st:onPage page:39 ;
+        st:rowPosition 7 .
+
+    e:t03-r010 a st:SourceActivityRow ;
+        st:inTable e:t03 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Laboratory Tests (includes blood and urine samples)" ;
+        st:onPage page:40 ;
+        st:rowPosition 10 .
+
+    e:t03-r011 a st:SourceActivityRow ;
+        st:inTable e:t03 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "exact" ;
+        st:name "Pregnancy Test" ;
+        st:onPage page:40 ;
+        st:rowPosition 11 .
+
+    e:u-t02-r018 a st:UnifiedActivity ;
+        st:displayOrder 36 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader true ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "fuzzy_auto" ;
+        st:member e:t02-r018,
+            e:t03-r018 ;
+        st:name "Pharmacokinetic (PK)/Immunogenicity Assessments" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Pharmacokinetic (PK)/Immunogenicity Assessments" .
+
+    e:u-t03-r003 a st:UnifiedActivity ;
+        st:displayOrder 13 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t03-r003 ;
+        st:name "Vital Signs" ;
+        st:parent e:u-t01-r006 ;
+        st:parentName "Safety Assessments" ;
+        st:qualifiedKey "Safety Assessments::Vital Signs" .
+
+    e:u-t03-r010 a st:UnifiedActivity ;
+        st:displayOrder 21 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t03-r010 ;
+        st:name "Laboratory Tests (includes blood and urine samples)" ;
+        st:parent e:u-t01-r011 ;
+        st:parentName "Laboratory Tests" ;
+        st:qualifiedKey "Laboratory Tests::Laboratory Tests (includes blood and urine samples)" .
+
+    e:u-t03-r019 a st:UnifiedActivity ;
+        st:displayOrder 48 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t03-r019 ;
+        st:name "PK Samples" ;
+        st:parentName "Pharmacokinetics (PK)/Immunogenicity Assessment" ;
+        st:qualifiedKey "Pharmacokinetics (PK)/Immunogenicity Assessment::PK Samples" .
+
+    page:31 a st:Page ;
+        st:inFile <https://kerfors.github.io/soa-tables/id/sha256/2ff447e30e89935998116db2c823385b803028dea19cf9bae339807d856d25dc> ;
+        st:pageNumber 31 .
+
+    page:35 a st:Page ;
+        st:inFile <https://kerfors.github.io/soa-tables/id/sha256/2ff447e30e89935998116db2c823385b803028dea19cf9bae339807d856d25dc> ;
+        st:pageNumber 35 .
+
+    e:t03-r008 a st:SourceActivityRow ;
+        st:inTable e:t03 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Review of Subsequent Anti-cancer Therapy" ;
+        st:onPage page:39 ;
+        st:rowPosition 8 .
+
+    e:t03-r013 a st:SourceActivityRow ;
+        st:inTable e:t03 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "exact" ;
+        st:name "Body Imaging" ;
+        st:onPage page:41 ;
+        st:rowPosition 13 .
+
+    e:t03-r014 a st:SourceActivityRow ;
+        st:inTable e:t03 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "exact" ;
+        st:name "Brain Imaging" ;
+        st:onPage page:41 ;
+        st:rowPosition 14 .
+
+    e:t03-r017 a st:SourceActivityRow ;
+        st:inTable e:t03 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Survival Status" ;
+        st:onPage page:42 ;
+        st:rowPosition 17 .
+
+    e:t03-r019 a st:SourceActivityRow ;
+        st:inTable e:t03 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "PK Samples" ;
+        st:onPage page:42 ;
+        st:rowPosition 19 .
+
+    e:t03-r020 a st:SourceActivityRow ;
+        st:inTable e:t03 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "exact" ;
+        st:name "Immunogenicity Samples" ;
+        st:onPage page:42 ;
+        st:rowPosition 20 .
+
+    e:u-t01-r008 a st:UnifiedActivity ;
+        st:displayOrder 7 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "exact" ;
+        st:member e:t01-r008,
+            e:t03-r004 ;
+        st:name "Performance Status" ;
+        st:parent e:u-t01-r006 ;
+        st:parentName "Safety Assessments" ;
+        st:qualifiedKey "Safety Assessments::Performance Status" .
+
+    e:u-t01-r011 a st:UnifiedActivity ;
+        st:displayOrder 16 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader true ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "exact" ;
+        st:member e:t01-r011,
+            e:t02-r008,
+            e:t03-r009 ;
+        st:name "Laboratory Tests" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Laboratory Tests" .
+
+    e:u-t02-r004 a st:UnifiedActivity ;
+        st:displayOrder 10 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t02-r004 ;
+        st:name "Targeted Physical Examination, Vital Signs, and Performance Status" ;
+        st:parent e:u-t01-r006 ;
+        st:parentName "Safety Assessments" ;
+        st:qualifiedKey "Safety Assessments::Targeted Physical Examination, Vital Signs, and Performance Status" .
+
+    e:u-t02-r019 a st:UnifiedActivity ;
+        st:displayOrder 37 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t02-r019 ;
+        st:name "Bempegaldesleukin PK Plasma Samples" ;
+        st:parent e:u-t02-r018 ;
+        st:parentName "Pharmacokinetic (PK)/Immunogenicity Assessments" ;
+        st:qualifiedKey "Pharmacokinetic (PK)/Immunogenicity Assessments::Bempegaldesleukin PK Plasma Samples" .
+
+    e:u-t02-r020 a st:UnifiedActivity ;
+        st:displayOrder 38 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t02-r020 ;
+        st:name "Nivolumab PK Serum Samples" ;
+        st:parent e:u-t02-r018 ;
+        st:parentName "Pharmacokinetic (PK)/Immunogenicity Assessments" ;
+        st:qualifiedKey "Pharmacokinetic (PK)/Immunogenicity Assessments::Nivolumab PK Serum Samples" .
+
+    e:u-t02-r024 a st:UnifiedActivity ;
+        st:displayOrder 42 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader true ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t02-r024 ;
+        st:name "Study Drug" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Study Drug" .
+
+    e:u-t03-r008 a st:UnifiedActivity ;
+        st:displayOrder 15 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t03-r008 ;
+        st:name "Review of Subsequent Anti-cancer Therapy" ;
+        st:parent e:u-t01-r006 ;
+        st:parentName "Safety Assessments" ;
+        st:qualifiedKey "Safety Assessments::Review of Subsequent Anti-cancer Therapy" .
+
+    e:u-t03-r015 a st:UnifiedActivity ;
+        st:displayOrder 33 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t03-r015 ;
+        st:name "CSF - solid tumors and leukemia" ;
+        st:parent e:u-t02-r011 ;
+        st:parentName "Efficacy Assessments" ;
+        st:qualifiedKey "Efficacy Assessments::CSF - solid tumors and leukemia" .
+
+    e:u-t03-r016 a st:UnifiedActivity ;
+        st:displayOrder 34 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t03-r016 ;
+        st:name "Bone marrow aspirate - solid tumors and leukemia" ;
+        st:parent e:u-t02-r011 ;
+        st:parentName "Efficacy Assessments" ;
+        st:qualifiedKey "Efficacy Assessments::Bone marrow aspirate - solid tumors and leukemia" .
+
+    e:u-t03-r017 a st:UnifiedActivity ;
+        st:displayOrder 35 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t03-r017 ;
+        st:name "Survival Status" ;
+        st:parent e:u-t02-r011 ;
+        st:parentName "Efficacy Assessments" ;
+        st:qualifiedKey "Efficacy Assessments::Survival Status" .
+
+    page:29 a st:Page ;
+        st:inFile <https://kerfors.github.io/soa-tables/id/sha256/2ff447e30e89935998116db2c823385b803028dea19cf9bae339807d856d25dc> ;
+        st:pageNumber 29 .
+
+    page:36 a st:Page ;
+        st:inFile <https://kerfors.github.io/soa-tables/id/sha256/2ff447e30e89935998116db2c823385b803028dea19cf9bae339807d856d25dc> ;
+        st:pageNumber 36 .
+
+    e:t02-r004 a st:SourceActivityRow ;
+        st:inTable e:t02 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Targeted Physical Examination, Vital Signs, and Performance Status" ;
+        st:onPage page:31 ;
+        st:rowPosition 4 .
+
+    e:t02-r012 a st:SourceActivityRow ;
+        st:inTable e:t02 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "exact" ;
+        st:name "Body Imaging" ;
+        st:onPage page:33 ;
+        st:rowPosition 12 .
+
+    e:t02-r013 a st:SourceActivityRow ;
+        st:inTable e:t02 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "exact" ;
+        st:name "Brain Imaging" ;
+        st:onPage page:34 ;
+        st:rowPosition 13 .
+
+    e:t02-r016 a st:SourceActivityRow ;
+        st:inTable e:t02 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "exact" ;
+        st:name "CSF - Leukemia" ;
+        st:onPage page:34 ;
+        st:rowPosition 16 .
+
+    e:t02-r017 a st:SourceActivityRow ;
+        st:inTable e:t02 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Bone Marrow - Leukemia" ;
+        st:onPage page:35 ;
+        st:rowPosition 17 .
+
+    e:t02-r019 a st:SourceActivityRow ;
+        st:inTable e:t02 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Bempegaldesleukin PK Plasma Samples" ;
+        st:onPage page:35 ;
+        st:rowPosition 19 .
+
+    e:t02-r020 a st:SourceActivityRow ;
+        st:inTable e:t02 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Nivolumab PK Serum Samples" ;
+        st:onPage page:35 ;
+        st:rowPosition 20 .
+
+    e:t02-r021 a st:SourceActivityRow ;
+        st:inTable e:t02 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Immunogenicity Samples" ;
+        st:onPage page:35 ;
+        st:rowPosition 21 .
+
+    e:t02-r023 a st:SourceActivityRow ;
+        st:inTable e:t02 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Patient-reported Outcomes (PRO) Version of the CTCAE" ;
+        st:onPage page:36 ;
+        st:rowPosition 23 .
+
+    e:t03-r006 a st:SourceActivityRow ;
+        st:inTable e:t03 ;
+        st:matchConfidence 0.92 ;
+        st:matchStatus "fuzzy_auto" ;
+        st:name "Adverse Events and Serious Adverse Events (SAE) Assessment" ;
+        st:onPage page:39 ;
+        st:rowPosition 6 .
+
+    e:u-t01-r012 a st:UnifiedActivity ;
+        st:displayOrder 17 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "exact" ;
+        st:member e:t01-r012,
+            e:t02-r009 ;
+        st:name "Clinical Laboratory Testing" ;
+        st:parent e:u-t01-r011 ;
+        st:parentName "Laboratory Tests" ;
+        st:qualifiedKey "Laboratory Tests::Clinical Laboratory Testing" .
+
+    e:u-t01-r016 a st:UnifiedActivity ;
+        st:displayOrder 22 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader true ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r016 ;
+        st:name "Tumor Assessment" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Tumor Assessment" .
+
+    e:u-t02-r007 a st:UnifiedActivity ;
+        st:displayOrder 12 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t02-r007 ;
+        st:name "Concomitant Medication Use" ;
+        st:parent e:u-t01-r006 ;
+        st:parentName "Safety Assessments" ;
+        st:qualifiedKey "Safety Assessments::Concomitant Medication Use" .
+
+    e:u-t02-r011 a st:UnifiedActivity ;
+        st:displayOrder 29 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader true ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "exact" ;
+        st:member e:t02-r011,
+            e:t03-r012 ;
+        st:name "Efficacy Assessments" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Efficacy Assessments" .
+
+    e:u-t02-r014 a st:UnifiedActivity ;
+        st:displayOrder 30 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t02-r014 ;
+        st:name "CSF - Solid tumors" ;
+        st:parent e:u-t02-r011 ;
+        st:parentName "Efficacy Assessments" ;
+        st:qualifiedKey "Efficacy Assessments::CSF - Solid tumors" .
+
+    e:u-t02-r015 a st:UnifiedActivity ;
+        st:displayOrder 31 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t02-r015 ;
+        st:name "Bone Marrow- Solid tumors" ;
+        st:parent e:u-t02-r011 ;
+        st:parentName "Efficacy Assessments" ;
+        st:qualifiedKey "Efficacy Assessments::Bone Marrow- Solid tumors" .
+
+    e:u-t02-r017 a st:UnifiedActivity ;
+        st:displayOrder 32 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t02-r017 ;
+        st:name "Bone Marrow - Leukemia" ;
+        st:parent e:u-t02-r011 ;
+        st:parentName "Efficacy Assessments" ;
+        st:qualifiedKey "Efficacy Assessments::Bone Marrow - Leukemia" .
+
+    e:u-t02-r023 a st:UnifiedActivity ;
+        st:displayOrder 41 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t02-r023 ;
+        st:name "Patient-reported Outcomes (PRO) Version of the CTCAE" ;
+        st:parent e:u-t02-r022 ;
+        st:parentName "Health Outcomes" ;
+        st:qualifiedKey "Health Outcomes::Patient-reported Outcomes (PRO) Version of the CTCAE" .
+
+    page:42 a st:Page ;
+        st:inFile <https://kerfors.github.io/soa-tables/id/sha256/2ff447e30e89935998116db2c823385b803028dea19cf9bae339807d856d25dc> ;
+        st:pageNumber 42 .
+
+    e:t02-r006 a st:SourceActivityRow ;
+        st:inTable e:t02 ;
+        st:matchConfidence 0.9 ;
+        st:matchStatus "fuzzy_auto" ;
+        st:name "Adverse Events Assessment (including Serious Adverse Events)" ;
+        st:onPage page:31 ;
+        st:rowPosition 6 .
+
+    e:t03-r015 a st:SourceActivityRow ;
+        st:inTable e:t03 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "CSF - solid tumors and leukemia" ;
+        st:onPage page:42 ;
+        st:rowPosition 15 .
+
+    e:t03-r016 a st:SourceActivityRow ;
+        st:inTable e:t03 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Bone marrow aspirate - solid tumors and leukemia" ;
+        st:onPage page:42 ;
+        st:rowPosition 16 .
+
+    page:39 a st:Page ;
+        st:inFile <https://kerfors.github.io/soa-tables/id/sha256/2ff447e30e89935998116db2c823385b803028dea19cf9bae339807d856d25dc> ;
+        st:pageNumber 39 .
+
+    e:t02-r007 a st:SourceActivityRow ;
+        st:inTable e:t02 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Concomitant Medication Use" ;
+        st:onPage page:32 ;
+        st:rowPosition 7 .
+
+    e:t02-r014 a st:SourceActivityRow ;
+        st:inTable e:t02 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "CSF - Solid tumors" ;
+        st:onPage page:34 ;
+        st:rowPosition 14 .
+
+    e:t02-r015 a st:SourceActivityRow ;
+        st:inTable e:t02 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Bone Marrow- Solid tumors" ;
+        st:onPage page:34 ;
+        st:rowPosition 15 .
+
+    e:u-t01-r021 a st:UnifiedActivity ;
+        st:displayOrder 27 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "exact" ;
+        st:member e:t01-r021,
+            e:t02-r016 ;
+        st:name "CSF - Leukemia" ;
+        st:parent e:u-t01-r016 ;
+        st:parentName "Tumor Assessment" ;
+        st:qualifiedKey "Tumor Assessment::CSF - Leukemia" .
+
+    e:t02-c002 a st:SourceColumn ;
+        st:columnPosition 2 ;
+        st:inTable e:t02 .
+
+    e:t02-r005 a st:SourceActivityRow ;
+        st:inTable e:t02 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "12-lead Electrocardiogram (ECG)" ;
+        st:onPage page:31 ;
+        st:rowPosition 5 .
+
+    e:u-t01-r015 a st:UnifiedActivity ;
+        st:displayOrder 20 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "exact" ;
+        st:member e:t01-r015,
+            e:t02-r010,
+            e:t03-r011 ;
+        st:name "Pregnancy Test" ;
+        st:parent e:u-t01-r011 ;
+        st:parentName "Laboratory Tests" ;
+        st:qualifiedKey "Laboratory Tests::Pregnancy Test" .
+
+    e:u-t02-r005 a st:UnifiedActivity ;
+        st:displayOrder 11 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "decision" ;
+        st:member e:t02-r005,
+            e:t03-r005 ;
+        st:name "12-lead Electrocardiogram (ECG)" ;
+        st:parent e:u-t01-r006 ;
+        st:parentName "Safety Assessments" ;
+        st:qualifiedKey "Safety Assessments::12-lead Electrocardiogram (ECG)" .
+
+    e:u-t02-r021 a st:UnifiedActivity ;
+        st:displayOrder 39 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "exact" ;
+        st:member e:t02-r021,
+            e:t03-r020 ;
+        st:name "Immunogenicity Samples" ;
+        st:parent e:u-t02-r018 ;
+        st:parentName "Pharmacokinetic (PK)/Immunogenicity Assessments" ;
+        st:qualifiedKey "Pharmacokinetic (PK)/Immunogenicity Assessments::Immunogenicity Samples" .
+
+    e:t03-c005 a st:SourceColumn ;
+        st:columnPosition 5 ;
+        st:inTable e:t03 .
+
+    e:u-t01-r006 a st:UnifiedActivity ;
+        st:displayOrder 5 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader true ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "exact" ;
+        st:member e:t01-r006,
+            e:t02-r003,
+            e:t03-r002 ;
+        st:name "Safety Assessments" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Safety Assessments" .
+
+    e:u-t02-c002 a st:UnifiedColumn ;
+        st:compositeLabel """Cycle 1 Only
+Cycle = 3 wks / Day 1""" ;
+        st:member e:t02-c002 ;
+        st:propertyValue e:u-t02-c002-v01,
+            e:u-t02-c002-v02 ;
+        st:segment "main" .
+
+    e:u-t03-c005 a st:UnifiedColumn ;
+        st:compositeLabel "Survival Follow-up Every 3 Months (± 14 Days)" ;
+        st:member e:t03-c005 ;
+        st:propertyValue e:u-t03-c005-v01 ;
+        st:segment "main" .
+
+    page:28 a st:Page ;
+        st:inFile <https://kerfors.github.io/soa-tables/id/sha256/2ff447e30e89935998116db2c823385b803028dea19cf9bae339807d856d25dc> ;
+        st:pageNumber 28 .
+
+    e:u-t01-r010 a st:UnifiedActivity ;
+        st:displayOrder 9 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 0.9 ;
+        st:matchStatus "fuzzy_auto" ;
+        st:member e:t01-r010,
+            e:t02-r006,
+            e:t03-r006 ;
+        st:name "Serious Adverse Events (SAE) Assessment" ;
+        st:parent e:u-t01-r006 ;
+        st:parentName "Safety Assessments" ;
+        st:qualifiedKey "Safety Assessments::Serious Adverse Events (SAE) Assessment" .
+
+    e:u-t01-r017 a st:UnifiedActivity ;
+        st:displayOrder 23 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "exact" ;
+        st:member e:t01-r017,
+            e:t02-r012,
+            e:t03-r013 ;
+        st:name "Body Imaging" ;
+        st:parent e:u-t01-r016 ;
+        st:parentName "Tumor Assessment" ;
+        st:qualifiedKey "Tumor Assessment::Body Imaging" .
+
+    e:u-t01-r018 a st:UnifiedActivity ;
+        st:displayOrder 24 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "exact" ;
+        st:member e:t01-r018,
+            e:t02-r013,
+            e:t03-r014 ;
+        st:name "Brain Imaging" ;
+        st:parent e:u-t01-r016 ;
+        st:parentName "Tumor Assessment" ;
+        st:qualifiedKey "Tumor Assessment::Brain Imaging" .
+
+    e:t02-c003 a st:SourceColumn ;
+        st:columnPosition 3 ;
+        st:inTable e:t02 .
+
+    e:t03-c003 a st:SourceColumn ;
+        st:columnPosition 3 ;
+        st:inTable e:t03 .
+
+    e:u-t03-c003 a st:UnifiedColumn ;
+        st:compositeLabel "Safety Follow-up Visit 2" ;
+        st:member e:t03-c003 ;
+        st:propertyValue e:u-t03-c003-v01 ;
+        st:segment "main" .
+
+    e:t02-c004 a st:SourceColumn ;
+        st:columnPosition 4 ;
+        st:inTable e:t02 .
+
+    e:t02-c007 a st:SourceColumn ;
+        st:columnPosition 7 ;
+        st:inTable e:t02 .
+
+    e:t03-c004 a st:SourceColumn ;
+        st:columnPosition 4 ;
+        st:inTable e:t03 .
+
+    e:u-t03-c004 a st:UnifiedColumn ;
+        st:compositeLabel "Safety Follow-up Visit 3" ;
+        st:member e:t03-c004 ;
+        st:propertyValue e:u-t03-c004-v01 ;
+        st:segment "main" .
+
+    <https://kerfors.github.io/soa-tables/id/sha256/2ff447e30e89935998116db2c823385b803028dea19cf9bae339807d856d25dc> a st:File ;
+        st:sha256 "2ff447e30e89935998116db2c823385b803028dea19cf9bae339807d856d25dc" .
+
+    e:t02-c005 a st:SourceColumn ;
+        st:columnPosition 5 ;
+        st:inTable e:t02 .
+
+    e:t03-c002 a st:SourceColumn ;
+        st:columnPosition 2 ;
+        st:inTable e:t03 .
+
+    e:u-t02-c003 a st:UnifiedColumn ;
+        st:compositeLabel """Cycle 1 Only
+Cycle = 3 wks / Day 3
+(± 1 day)""" ;
+        st:member e:t02-c003 ;
+        st:propertyValue e:u-t02-c003-v01,
+            e:u-t02-c003-v02 ;
+        st:segment "main" .
+
+    e:u-t02-c004 a st:UnifiedColumn ;
+        st:compositeLabel """Cycle 1 Only
+Cycle = 3 wks / Day 5
+(± 1 day)""" ;
+        st:member e:t02-c004 ;
+        st:propertyValue e:u-t02-c004-v01,
+            e:u-t02-c004-v02 ;
+        st:segment "main" .
+
+    e:u-t03-c002 a st:UnifiedColumn ;
+        st:compositeLabel "Safety Follow-up Visit 1" ;
+        st:member e:t03-c002 ;
+        st:propertyValue e:u-t03-c002-v01 ;
+        st:segment "main" .
+
+    e:u-t02-c005 a st:UnifiedColumn ;
+        st:compositeLabel """Cycle 1 Only
+Cycle = 3 wks / Day 8
+(- 1 day)""" ;
+        st:member e:t02-c005 ;
+        st:propertyValue e:u-t02-c005-v01,
+            e:u-t02-c005-v02 ;
+        st:segment "main" .
+
+    e:u-t02-c007 a st:UnifiedColumn ;
+        st:compositeLabel """Cycle 2 and Beyond
+Each cycle = 3 wks / Day 3-5""" ;
+        st:member e:t02-c007 ;
+        st:propertyValue e:u-t02-c007-v01,
+            e:u-t02-c007-v02 ;
+        st:segment "main" .
+
+    e:t01-c002 a st:SourceColumn ;
+        st:columnPosition 2 ;
+        st:inTable e:t01 .
+
+    e:u-t01-c002 a st:UnifiedColumn ;
+        st:compositeLabel "Screening Visit" ;
+        st:member e:t01-c002 ;
+        st:propertyValue e:u-t01-c002-v01 ;
+        st:segment "main" .
+
+    e:t02-c006 a st:SourceColumn ;
+        st:columnPosition 6 ;
+        st:inTable e:t02 .
+
+    e:u-t02-c006 a st:UnifiedColumn ;
+        st:compositeLabel """Cycle 2 and Beyond
+Each cycle = 3 wks / Day 1""" ;
+        st:member e:t02-c006 ;
+        st:propertyValue e:u-t02-c006-v01,
+            e:u-t02-c006-v02 ;
+        st:segment "main" .
+
+    e:t03 a st:SourceTable ;
+        st:firstPage page:39 ;
+        st:lastPage page:42 ;
+        st:purpose "Safety follow-up visits 1-3 and survival follow-up" ;
+        st:tableNumber 3 ;
+        st:tableType "main_soa" ;
+        st:title "Table 2-3: Long-term Follow-up Period (CA045020)" .
+
+    e:t01 a st:SourceTable ;
+        st:firstPage page:28 ;
+        st:lastPage page:30 ;
+        st:purpose "Screening procedures (single screening visit)" ;
+        st:tableNumber 1 ;
+        st:tableType "main_soa" ;
+        st:title "Table 2-1: Screening Procedural Outline (CA045020)" .
+
+    e:t02 a st:SourceTable ;
+        st:firstPage page:31 ;
+        st:lastPage page:38 ;
+        st:purpose "On-treatment schedule (Cycle 1 days and Cycle 2 and beyond)" ;
+        st:tableNumber 2 ;
+        st:tableType "main_soa" ;
+        st:title "Table 2-2: On-treatment Procedural Outline (CA045020)" .
+}
+

@@ -1,0 +1,2184 @@
+@prefix e: <https://kerfors.github.io/soa-tables/id/sha256/a94c35b9e940b3cd1b7dc326c11ab004f88f8cea4e0df2fa20d4b28b4be16eba/soa-tables-v1/> .
+@prefix page: <https://kerfors.github.io/soa-tables/id/sha256/a94c35b9e940b3cd1b7dc326c11ab004f88f8cea4e0df2fa20d4b28b4be16eba/page/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix st: <https://kerfors.github.io/soa-tables/id/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/soa-tables/id/sha256/a94c35b9e940b3cd1b7dc326c11ab004f88f8cea4e0df2fa20d4b28b4be16eba/soa-tables-v1> {
+    <https://kerfors.github.io/soa-tables/id/sha256/a94c35b9e940b3cd1b7dc326c11ab004f88f8cea4e0df2fa20d4b28b4be16eba/soa-tables-v1> a st:Transcription ;
+        st:aboutStudy <https://kerfors.github.io/soa-tables/id/study/NCT03421379> ;
+        st:codeCommit "bbb9ab3dac8c9fe153c293d6515e6f7fb78f7184" ;
+        st:collectionsCommit "1c7dc79b2ed7cf92259168673da2ab1deafd28b9" ;
+        st:consolidatedAt "2026-11-21T09:30:38.798859+00:00"^^xsd:dateTime ;
+        st:consolidator "soa_tables.consolidate v1.2" ;
+        st:ofFile <https://kerfors.github.io/soa-tables/id/sha256/a94c35b9e940b3cd1b7dc326c11ab004f88f8cea4e0df2fa20d4b28b4be16eba> ;
+        st:schemaVersion "1.7" .
+
+    e:m-t01-r004-t01-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r004-c002 ;
+        st:activity e:u-t01-r004 ;
+        st:column e:u-t01-c002 ;
+        st:value "X" .
+
+    e:m-t01-r005-t01-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r005-c004 ;
+        st:activity e:u-t01-r005 ;
+        st:column e:u-t01-c004 ;
+        st:value "X" .
+
+    e:m-t01-r006-t01-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r006-c003 ;
+        st:activity e:u-t01-r006 ;
+        st:column e:u-t01-c003 ;
+        st:value "X" .
+
+    e:m-t01-r006-t01-c006 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r006-c006 ;
+        st:activity e:u-t01-r006 ;
+        st:column e:u-t01-c006 ;
+        st:value "X" .
+
+    e:m-t01-r007-t01-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r007-c004 ;
+        st:activity e:u-t01-r007 ;
+        st:column e:u-t01-c004 ;
+        st:value "X" .
+
+    e:m-t01-r007-t01-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r007-c007 ;
+        st:activity e:u-t01-r007 ;
+        st:column e:u-t01-c007 ;
+        st:value "X" .
+
+    e:m-t01-r008-t01-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r008-c002 ;
+        st:activity e:u-t01-r008 ;
+        st:column e:u-t01-c002 ;
+        st:value "X" .
+
+    e:m-t01-r009-t01-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r009-c002 ;
+        st:activity e:u-t01-r009 ;
+        st:column e:u-t01-c002 ;
+        st:value "X" .
+
+    e:m-t01-r009-t01-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r009-c003 ;
+        st:activity e:u-t01-r009 ;
+        st:column e:u-t01-c003 ;
+        st:value "X" .
+
+    e:m-t01-r009-t01-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r009-c004 ;
+        st:activity e:u-t01-r009 ;
+        st:column e:u-t01-c004 ;
+        st:value "X" .
+
+    e:m-t01-r009-t01-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r009-c005 ;
+        st:activity e:u-t01-r009 ;
+        st:column e:u-t01-c005 ;
+        st:value "X" .
+
+    e:m-t01-r009-t01-c006 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r009-c006 ;
+        st:activity e:u-t01-r009 ;
+        st:column e:u-t01-c006 ;
+        st:value "X" .
+
+    e:m-t01-r009-t01-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r009-c007 ;
+        st:activity e:u-t01-r009 ;
+        st:column e:u-t01-c007 ;
+        st:value "X" .
+
+    e:m-t01-r009-t01-c008 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r009-c008 ;
+        st:activity e:u-t01-r009 ;
+        st:column e:u-t01-c008 ;
+        st:value "X" .
+
+    e:m-t01-r010-t01-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r010-c002 ;
+        st:activity e:u-t01-r010 ;
+        st:column e:u-t01-c002 ;
+        st:value "X" .
+
+    e:m-t01-r010-t01-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r010-c004 ;
+        st:activity e:u-t01-r010 ;
+        st:column e:u-t01-c004 ;
+        st:value "240 min" .
+
+    e:m-t01-r010-t01-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r010-c007 ;
+        st:activity e:u-t01-r010 ;
+        st:column e:u-t01-c007 ;
+        st:value "240 min" .
+
+    e:m-t01-r010-t01-c008 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r010-c008 ;
+        st:activity e:u-t01-r010 ;
+        st:column e:u-t01-c008 ;
+        st:value "X" .
+
+    e:m-t01-r011-t01-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r011-c002 ;
+        st:activity e:u-t01-r011 ;
+        st:column e:u-t01-c002 ;
+        st:value "X" .
+
+    e:m-t01-r011-t01-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r011-c004 ;
+        st:activity e:u-t01-r011 ;
+        st:column e:u-t01-c004 ;
+        st:value "Pre-hypoglycemia induction" .
+
+    e:m-t01-r011-t01-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r011-c007 ;
+        st:activity e:u-t01-r011 ;
+        st:column e:u-t01-c007 ;
+        st:value "Pre-hypoglycemia induction" .
+
+    e:m-t01-r011-t01-c008 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r011-c008 ;
+        st:activity e:u-t01-r011 ;
+        st:column e:u-t01-c008 ;
+        st:value "X" .
+
+    e:m-t01-r012-t01-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r012-c004 ;
+        st:activity e:u-t01-r012 ;
+        st:column e:u-t01-c004 ;
+        st:value "X" .
+
+    e:m-t01-r012-t01-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r012-c007 ;
+        st:activity e:u-t01-r012 ;
+        st:column e:u-t01-c007 ;
+        st:value "X" .
+
+    e:m-t01-r013-t01-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r013-c002 ;
+        st:activity e:u-t01-r013 ;
+        st:column e:u-t01-c002 ;
+        st:value "X" .
+
+    e:m-t01-r013-t01-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r013-c003 ;
+        st:activity e:u-t01-r013 ;
+        st:column e:u-t01-c003 ;
+        st:value "X" .
+
+    e:m-t01-r013-t01-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r013-c004 ;
+        st:activity e:u-t01-r013 ;
+        st:column e:u-t01-c004 ;
+        st:value "X" .
+
+    e:m-t01-r013-t01-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r013-c005 ;
+        st:activity e:u-t01-r013 ;
+        st:column e:u-t01-c005 ;
+        st:value "X" .
+
+    e:m-t01-r013-t01-c006 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r013-c006 ;
+        st:activity e:u-t01-r013 ;
+        st:column e:u-t01-c006 ;
+        st:value "X" .
+
+    e:m-t01-r013-t01-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r013-c007 ;
+        st:activity e:u-t01-r013 ;
+        st:column e:u-t01-c007 ;
+        st:value "X" .
+
+    e:m-t01-r013-t01-c008 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r013-c008 ;
+        st:activity e:u-t01-r013 ;
+        st:column e:u-t01-c008 ;
+        st:value "X" .
+
+    e:m-t01-r014-t01-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r014-c004 ;
+        st:activity e:u-t01-r014 ;
+        st:column e:u-t01-c004 ;
+        st:value "X" .
+
+    e:m-t01-r014-t01-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r014-c007 ;
+        st:activity e:u-t01-r014 ;
+        st:column e:u-t01-c007 ;
+        st:value "X" .
+
+    e:m-t01-r015-t01-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r015-c004 ;
+        st:activity e:u-t01-r015 ;
+        st:column e:u-t01-c004 ;
+        st:value "X" .
+
+    e:m-t01-r015-t01-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r015-c007 ;
+        st:activity e:u-t01-r015 ;
+        st:column e:u-t01-c007 ;
+        st:value "X" .
+
+    e:m-t01-r016-t01-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r016-c004 ;
+        st:activity e:u-t01-r016 ;
+        st:column e:u-t01-c004 ;
+        st:value "X" .
+
+    e:m-t01-r016-t01-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r016-c007 ;
+        st:activity e:u-t01-r016 ;
+        st:column e:u-t01-c007 ;
+        st:value "X" .
+
+    e:m-t01-r017-t01-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r017-c004 ;
+        st:activity e:u-t01-r017 ;
+        st:column e:u-t01-c004 ;
+        st:value "X" .
+
+    e:m-t01-r017-t01-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r017-c007 ;
+        st:activity e:u-t01-r017 ;
+        st:column e:u-t01-c007 ;
+        st:value "X" .
+
+    e:m-t01-r018-t01-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r018-c004 ;
+        st:activity e:u-t01-r018 ;
+        st:column e:u-t01-c004 ;
+        st:value "Pre-hypoglycemia induction, 90 min" .
+
+    e:m-t01-r018-t01-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r018-c007 ;
+        st:activity e:u-t01-r018 ;
+        st:column e:u-t01-c007 ;
+        st:value "Pre-hypoglycemia induction, 90 min" .
+
+    e:m-t01-r019-t01-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r019-c004 ;
+        st:activity e:u-t01-r019 ;
+        st:column e:u-t01-c004 ;
+        st:value "Pre-hypoglycemia induction, 90 min" .
+
+    e:m-t01-r019-t01-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r019-c007 ;
+        st:activity e:u-t01-r019 ;
+        st:column e:u-t01-c007 ;
+        st:value "Pre-hypoglycemia induction, 90 min" .
+
+    e:m-t01-r020-t01-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r020-c002 ;
+        st:activity e:u-t01-r020 ;
+        st:column e:u-t01-c002 ;
+        st:value "X" .
+
+    e:m-t01-r020-t01-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r020-c004 ;
+        st:activity e:u-t01-r020 ;
+        st:column e:u-t01-c004 ;
+        st:value "Pre-hypoglycemia induction, Predose, 15, 30, 60, 120, 240 min" .
+
+    e:m-t01-r020-t01-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r020-c007 ;
+        st:activity e:u-t01-r020 ;
+        st:column e:u-t01-c007 ;
+        st:value "Pre-hypoglycemia induction, Predose, 15, 30, 60, 120, 240 min" .
+
+    e:m-t01-r020-t01-c008 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r020-c008 ;
+        st:activity e:u-t01-r020 ;
+        st:column e:u-t01-c008 ;
+        st:value "X" .
+
+    e:m-t01-r021-t01-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r021-c002 ;
+        st:activity e:u-t01-r021 ;
+        st:column e:u-t01-c002 ;
+        st:value "X" .
+
+    e:m-t01-r021-t01-c008 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r021-c008 ;
+        st:activity e:u-t01-r021 ;
+        st:column e:u-t01-c008 ;
+        st:value "X" .
+
+    e:m-t01-r022-t01-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r022-c004 ;
+        st:activity e:u-t01-r022 ;
+        st:column e:u-t01-c004 ;
+        st:value "Pre-hypoglycemia induction (30 and 15 min prior to insulin infusion), Predose, 15, 30, 60, 120, 240 min" .
+
+    e:m-t01-r022-t01-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r022-c007 ;
+        st:activity e:u-t01-r022 ;
+        st:column e:u-t01-c007 ;
+        st:value "Pre-hypoglycemia induction (30 and 15 min prior to insulin infusion), Predose, 15, 30, 60, 120, 240 min" .
+
+    e:m-t01-r024-t01-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r024-c002 ;
+        st:activity e:u-t01-r024 ;
+        st:column e:u-t01-c002 ;
+        st:value "X" .
+
+    e:m-t01-r025-t01-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r025-c002 ;
+        st:activity e:u-t01-r025 ;
+        st:column e:u-t01-c002 ;
+        st:value "X" .
+
+    e:m-t01-r025-t01-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r025-c004 ;
+        st:activity e:u-t01-r025 ;
+        st:column e:u-t01-c004 ;
+        st:value "Pre-hypoglycemia induction" .
+
+    e:m-t01-r025-t01-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r025-c007 ;
+        st:activity e:u-t01-r025 ;
+        st:column e:u-t01-c007 ;
+        st:value "Pre-hypoglycemia induction" .
+
+    e:m-t01-r025-t01-c008 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r025-c008 ;
+        st:activity e:u-t01-r025 ;
+        st:column e:u-t01-c008 ;
+        st:value "X" .
+
+    e:m-t01-r026-t01-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r026-c002 ;
+        st:activity e:u-t01-r026 ;
+        st:column e:u-t01-c002 ;
+        st:value "X" .
+
+    e:m-t01-r026-t01-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r026-c004 ;
+        st:activity e:u-t01-r026 ;
+        st:column e:u-t01-c004 ;
+        st:value "Pre-hypoglycemia induction" .
+
+    e:m-t01-r027-t01-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r027-c002 ;
+        st:activity e:u-t01-r027 ;
+        st:column e:u-t01-c002 ;
+        st:value "X" .
+
+    e:m-t01-r027-t01-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r027-c003 ;
+        st:activity e:u-t01-r027 ;
+        st:column e:u-t01-c003 ;
+        st:value "X" .
+
+    e:m-t01-r027-t01-c006 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r027-c006 ;
+        st:activity e:u-t01-r027 ;
+        st:column e:u-t01-c006 ;
+        st:value "X" .
+
+    e:m-t01-r027-t01-c008 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r027-c008 ;
+        st:activity e:u-t01-r027 ;
+        st:column e:u-t01-c008 ;
+        st:value "X" .
+
+    e:m-t01-r028-t01-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r028-c002 ;
+        st:activity e:u-t01-r028 ;
+        st:column e:u-t01-c002 ;
+        st:value "X" .
+
+    e:m-t01-r029-t01-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r029-c002 ;
+        st:activity e:u-t01-r029 ;
+        st:column e:u-t01-c002 ;
+        st:value "X" .
+
+    e:m-t01-r030-t01-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r030-c002 ;
+        st:activity e:u-t01-r030 ;
+        st:column e:u-t01-c002 ;
+        st:value "X" .
+
+    e:m-t01-r031-t01-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r031-c004 ;
+        st:activity e:u-t01-r031 ;
+        st:column e:u-t01-c004 ;
+        st:value "Pre-hypoglycemia induction, Predose, 5, 10, 15, 20, 25, 30, 40, 50, 60, 90, 120, 240 min" .
+
+    e:m-t01-r031-t01-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r031-c007 ;
+        st:activity e:u-t01-r031 ;
+        st:column e:u-t01-c007 ;
+        st:value "Pre-hypoglycemia induction, Predose, 5, 10, 15, 20, 25, 30, 40, 50, 60, 90, 120, 240 min" .
+
+    e:m-t01-r031-t01-c008 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r031-c008 ;
+        st:activity e:u-t01-r031 ;
+        st:column e:u-t01-c008 ;
+        st:value "X" .
+
+    e:m-t01-r031-t01-c009 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r031-c009 ;
+        st:activity e:u-t01-r031 ;
+        st:column e:u-t01-c009 ;
+        st:value "X" .
+
+    e:m-t01-r032-t01-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r032-c004 ;
+        st:activity e:u-t01-r032 ;
+        st:column e:u-t01-c004 ;
+        st:value "Pre-hypoglycemia induction, -5, Predose, 5, 10, 15, 20, 25, 30, 40, 50, 60, 90, 120, 240 min" .
+
+    e:m-t01-r032-t01-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r032-c007 ;
+        st:activity e:u-t01-r032 ;
+        st:column e:u-t01-c007 ;
+        st:value "Pre-hypoglycemia induction, -5, Predose, 5, 10, 15, 20, 25, 30, 40, 50, 60, 90, 120, 240 min" .
+
+    e:m-t01-r033-t01-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r033-c003 ;
+        st:activity e:u-t01-r033 ;
+        st:column e:u-t01-c003 ;
+        st:value "X" .
+
+    e:m-t01-r034-t01-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r034-c004 ;
+        st:activity e:u-t01-r034 ;
+        st:column e:u-t01-c004 ;
+        st:value "Pre-hypoglycemia induction" .
+
+    e:m-t01-r034-t01-c008 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r034-c008 ;
+        st:activity e:u-t01-r034 ;
+        st:column e:u-t01-c008 ;
+        st:value "X" .
+
+    e:m-t01-r034-t01-c009 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r034-c009 ;
+        st:activity e:u-t01-r034 ;
+        st:column e:u-t01-c009 ;
+        st:value "X" .
+
+    e:m-t01-r036-t01-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r036-c003 ;
+        st:activity e:u-t01-r036 ;
+        st:column e:u-t01-c003 ;
+        st:value "X" .
+
+    e:m-t01-r037-t01-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r037-c004 ;
+        st:activity e:u-t01-r037 ;
+        st:column e:u-t01-c004 ;
+        st:value "Pre-hypoglycemia induction, 15, 30, 60, 120 min" .
+
+    e:m-t01-r037-t01-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r037-c007 ;
+        st:activity e:u-t01-r037 ;
+        st:column e:u-t01-c007 ;
+        st:value "Pre-hypoglycemia induction, 15, 30, 60, 120 min" .
+
+    e:m-t01-r038-t01-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r038-c004 ;
+        st:activity e:u-t01-r038 ;
+        st:column e:u-t01-c004 ;
+        st:value "Pre-hypoglycemia induction, During hypoglycemia induction, Predose, 15, 30, 60, 120 min" .
+
+    e:m-t01-r038-t01-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r038-c007 ;
+        st:activity e:u-t01-r038 ;
+        st:column e:u-t01-c007 ;
+        st:value "Pre-hypoglycemia induction, During hypoglycemia induction, Predose, 15, 30, 60, 120 min" .
+
+    e:u-t01-n-a a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t01-n-a ;
+        st:refersToColumn e:u-t01-c009 ;
+        st:text "Samples for immunogenicity, should be collected every 12 weeks (84±7 days) until the titer returns to baseline (ie, returns to within a single 2-fold dilution of the baseline titer) or until 1 year after the last dose of study treatment. A time-matched PK (glucagon) sample may be collected at the follow-up immunogenicity assessment(s) if warranted and agreed upon between both the investigator and sponsor." .
+
+    e:u-t01-n-c1 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t01-n-c1 ;
+        st:refersToActivity e:u-t01-r006 ;
+        st:text "Admission can be rescheduled if PG level is not 90 to 250 mg/dL on Day 1." .
+
+    e:u-t01-n-c10 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t01-n-c10 ;
+        st:refersToActivity e:u-t01-r017 ;
+        st:text "Once bedside PG reaches <60 mg/dL, the insulin infusion is stopped and approximately 5 minutes later study drug is administered. Indicates Time = 0 min." .
+
+    e:u-t01-n-c11 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t01-n-c11 ;
+        st:refersToActivity e:u-t01-r018 ;
+        st:text "Injection-site assessment for IMG only." .
+
+    e:u-t01-n-c12 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t01-n-c12 ;
+        st:refersToActivity e:u-t01-r019 ;
+        st:text "Nasal inspection both for IMG and LY900018." .
+
+    e:u-t01-n-c13 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t01-n-c13 ;
+        st:refersToActivity e:u-t01-r020 ;
+        st:text "Time points may be added for each period if warranted and agreed upon between Lilly and the investigator. Predose time point will be between insulin infusion stop and study treatment." .
+
+    e:u-t01-n-c14 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t01-n-c14 ;
+        st:refersToActivity e:u-t01-r022 ;
+        st:text "Time points may be added for Period 1 and Period 2 if warranted and agreed upon between Lilly and the investigator. Predose time point will be between insulin infusion stop and study treatment." .
+
+    e:u-t01-n-c15 a st:UnifiedAnnotation ;
+        st:annotationType "source_note" ;
+        st:documentReference e:u-t01-n-c15-d01 ;
+        st:occurrence e:t01-n-c15 ;
+        st:refersToActivity e:u-t01-r024,
+            e:u-t01-r026 ;
+        st:text "See Appendix 2, Clinical Laboratory Tests, for details." .
+
+    e:u-t01-n-c16 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:documentReference e:u-t01-n-c16-d01 ;
+        st:occurrence e:t01-n-c16 ;
+        st:refersToActivity e:u-t01-r025 ;
+        st:text "See Appendix 2, Clinical Laboratory Tests, for details. Patients do not need to fast for samples at screening or follow-up. At Periods 1 and 2, samples should be collected from patients who have fasted at least 8 hours before any study procedures." .
+
+    e:u-t01-n-c17 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t01-n-c17 ;
+        st:refersToActivity e:u-t01-r027 ;
+        st:text "Serum pregnancy test will be performed at screening. Urine pregnancy test will be performed at every admission period and follow-up visit if applicable." .
+
+    e:u-t01-n-c18 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t01-n-c18 ;
+        st:refersToActivity e:u-t01-r028 ;
+        st:text "When needed to confirm postmenopausal status." .
+
+    e:u-t01-n-c19 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t01-n-c19 ;
+        st:refersToActivity e:u-t01-r029,
+            e:u-t01-r030 ;
+        st:text "Additional tests can be done at the discretion of the investigator." .
+
+    e:u-t01-n-c2 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t01-n-c2 ;
+        st:refersToActivity e:u-t01-r007 ;
+        st:text "Patient may be discharged 6 hours after glucagon administration. A patient may remain inpatient at the CRU at the discretion of the investigator." .
+
+    e:u-t01-n-c20 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t01-n-c20 ;
+        st:refersToActivity e:u-t01-r031 ;
+        st:text "Sampling times are relative to the time of study treatment administration (0 min). Predose time point will be between insulin infusion stop and study treatment." .
+
+    e:u-t01-n-c21 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t01-n-c21 ;
+        st:refersToActivity e:u-t01-r032 ;
+        st:text "-5 mins = stop insulin infusion. Sampling times are relative to the time of study treatment administration (0 min). Predose time point will be between insulin infusion stop and study treatment." .
+
+    e:u-t01-n-c22 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t01-n-c22 ;
+        st:refersToActivity e:u-t01-r033 ;
+        st:text "Single sample for pharmacogenetic analysis taken prior to/on Period 1 Day -1." .
+
+    e:u-t01-n-c23 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:documentReference e:u-t01-n-c23-d01 ;
+        st:occurrence e:t01-n-c23 ;
+        st:refersToActivity e:u-t01-r034 ;
+        st:text "In the event of drug hypersensitivity reactions (immediate or non-immediate), samples will be collected as close to event onset as possible, at event resolution, and 30 days following the event. Patients with TE ADA at follow-up/ED will undergo additional follow-up. Refer to Section 9.7.1 for details." .
+
+    e:u-t01-n-c24 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t01-n-c24 ;
+        st:refersToActivity e:u-t01-r037 ;
+        st:text "Sampling times are relative to the time of study treatment administration (0 min). Questionnaire will be collected in both LY900018 and IMG treatment groups in both periods." .
+
+    e:u-t01-n-c25 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t01-n-c25 ;
+        st:refersToActivity e:u-t01-r038 ;
+        st:text "Sampling times are relative to the time of study treatment administration (0 min). During hypoglycemia induction will be when PG ≤75 mg/dL. Predose time point will be between insulin infusion stop and study treatment." .
+
+    e:u-t01-n-c3 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t01-n-c3 ;
+        st:refersToActivity e:u-t01-r010 ;
+        st:text "After screening, medical assessment only performed to include medical review and targeted examination, as appropriate." .
+
+    e:u-t01-n-c4 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t01-n-c4 ;
+        st:refersToActivity e:u-t01-r011 ;
+        st:text "Height is at screening only. Weight on Day 1 will be collected before the start of the procedure to induce hypoglycemia." .
+
+    e:u-t01-n-c5 a st:UnifiedAnnotation ;
+        st:annotationType "source_note" ;
+        st:documentReference e:u-t01-n-c5-d01 ;
+        st:occurrence e:t01-n-c5 ;
+        st:refersToActivity e:u-t01-r012 ;
+        st:text "Refer to Section 9.5.5.1." .
+
+    e:u-t01-n-c6 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t01-n-c6 ;
+        st:refersToActivity e:u-t01-r013 ;
+        st:text "Review patients’ insulin regimens to confirm acceptability to undergo the procedure to induce hypoglycemia." .
+
+    e:u-t01-n-c7 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t01-n-c7 ;
+        st:refersToActivity e:u-t01-r014 ;
+        st:text "After completion of all PK sampling, patients will be provided a carbohydrate-rich meal. The investigator will ensure the patient’s PG is stable. A prandial insulin dose will be administered if needed." .
+
+    e:u-t01-n-c8 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t01-n-c8 ;
+        st:refersToActivity e:u-t01-r015 ;
+        st:text "Procedures in Period 2 will occur at approximately the same time as those in Period 1. Insulin infusion is stopped once bedside PG is <60 mg/dL." .
+
+    e:u-t01-n-c9 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t01-n-c9 ;
+        st:refersToActivity e:u-t01-r016 ;
+        st:text "Samples will be collected during the hypoglycemia induction procedure and post study treatment (up to 120 mins). Bedside PG monitoring will be conducted no more than 10 minutes apart while bedside PG is ≥90 mg/dL and no more than 5 minutes apart when bedside PG is <90 mg/dL." .
+
+    e:u-t01-n-n1 a st:UnifiedAnnotation ;
+        st:annotationScope "table" ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t01-n-n1 ;
+        st:text "Note: if multiple procedures take place at the same time point, the following order of the procedure should be used: ECG, vital signs, and venipuncture. Plasma glucose sample should be collected as close as possible of protocol-specified time point." .
+
+    e:u-t01-r001 a st:UnifiedProperty ;
+        st:level 1 ;
+        st:member e:t01-r001 ;
+        st:propertyName "Study Period" ;
+        st:propertyType "epoch" .
+
+    e:u-t01-r002 a st:UnifiedProperty ;
+        st:level 2 ;
+        st:member e:t01-r002 ;
+        st:propertyName "Study Day" ;
+        st:propertyType "study_day" .
+
+    e:t01-n-a a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "a" .
+
+    e:t01-n-c1 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "c1" .
+
+    e:t01-n-c10 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "c10" .
+
+    e:t01-n-c11 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "c11" .
+
+    e:t01-n-c12 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "c12" .
+
+    e:t01-n-c13 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "c13" .
+
+    e:t01-n-c14 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "c14" .
+
+    e:t01-n-c15 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "c15" .
+
+    e:t01-n-c16 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "c16" .
+
+    e:t01-n-c17 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "c17" .
+
+    e:t01-n-c18 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "c18" .
+
+    e:t01-n-c19 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "c19" .
+
+    e:t01-n-c2 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "c2" .
+
+    e:t01-n-c20 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "c20" .
+
+    e:t01-n-c21 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "c21" .
+
+    e:t01-n-c22 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "c22" .
+
+    e:t01-n-c23 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "c23" .
+
+    e:t01-n-c24 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "c24" .
+
+    e:t01-n-c25 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "c25" .
+
+    e:t01-n-c3 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "c3" .
+
+    e:t01-n-c4 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "c4" .
+
+    e:t01-n-c5 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "c5" .
+
+    e:t01-n-c6 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "c6" .
+
+    e:t01-n-c7 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "c7" .
+
+    e:t01-n-c8 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "c8" .
+
+    e:t01-n-c9 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "c9" .
+
+    e:t01-n-n1 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "n1" .
+
+    e:t01-r001 a st:SourcePropertyRow ;
+        st:hierarchyPosition 1 ;
+        st:inTable e:t01 ;
+        st:level 1 ;
+        st:propertyName "Study Period" ;
+        st:propertyType "epoch" ;
+        st:rowPosition 1 .
+
+    e:t01-r002 a st:SourcePropertyRow ;
+        st:hierarchyPosition 2 ;
+        st:inTable e:t01 ;
+        st:level 2 ;
+        st:propertyName "Study Day" ;
+        st:propertyType "study_day" ;
+        st:rowPosition 2 .
+
+    e:t01-r003 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Clinical Assessments" ;
+        st:onPage page:11 ;
+        st:rowPosition 3 .
+
+    e:t01-r004-c002 a st:SourceCell ;
+        st:column e:t01-c002 ;
+        st:row e:t01-r004 ;
+        st:value "X" .
+
+    e:t01-r005-c004 a st:SourceCell ;
+        st:column e:t01-c004 ;
+        st:row e:t01-r005 ;
+        st:value "X" .
+
+    e:t01-r006-c003 a st:SourceCell ;
+        st:column e:t01-c003 ;
+        st:row e:t01-r006 ;
+        st:value "X" .
+
+    e:t01-r006-c006 a st:SourceCell ;
+        st:column e:t01-c006 ;
+        st:row e:t01-r006 ;
+        st:value "X" .
+
+    e:t01-r007-c004 a st:SourceCell ;
+        st:column e:t01-c004 ;
+        st:row e:t01-r007 ;
+        st:value "X" .
+
+    e:t01-r007-c007 a st:SourceCell ;
+        st:column e:t01-c007 ;
+        st:row e:t01-r007 ;
+        st:value "X" .
+
+    e:t01-r008-c002 a st:SourceCell ;
+        st:column e:t01-c002 ;
+        st:row e:t01-r008 ;
+        st:value "X" .
+
+    e:t01-r009-c002 a st:SourceCell ;
+        st:column e:t01-c002 ;
+        st:row e:t01-r009 ;
+        st:value "X" .
+
+    e:t01-r009-c003 a st:SourceCell ;
+        st:column e:t01-c003 ;
+        st:row e:t01-r009 ;
+        st:value "X" .
+
+    e:t01-r009-c004 a st:SourceCell ;
+        st:column e:t01-c004 ;
+        st:row e:t01-r009 ;
+        st:value "X" .
+
+    e:t01-r009-c005 a st:SourceCell ;
+        st:column e:t01-c005 ;
+        st:row e:t01-r009 ;
+        st:value "X" .
+
+    e:t01-r009-c006 a st:SourceCell ;
+        st:column e:t01-c006 ;
+        st:row e:t01-r009 ;
+        st:value "X" .
+
+    e:t01-r009-c007 a st:SourceCell ;
+        st:column e:t01-c007 ;
+        st:row e:t01-r009 ;
+        st:value "X" .
+
+    e:t01-r009-c008 a st:SourceCell ;
+        st:column e:t01-c008 ;
+        st:row e:t01-r009 ;
+        st:value "X" .
+
+    e:t01-r010-c002 a st:SourceCell ;
+        st:column e:t01-c002 ;
+        st:row e:t01-r010 ;
+        st:value "X" .
+
+    e:t01-r010-c004 a st:SourceCell ;
+        st:column e:t01-c004 ;
+        st:row e:t01-r010 ;
+        st:value "240 min" .
+
+    e:t01-r010-c007 a st:SourceCell ;
+        st:column e:t01-c007 ;
+        st:row e:t01-r010 ;
+        st:value "240 min" .
+
+    e:t01-r010-c008 a st:SourceCell ;
+        st:column e:t01-c008 ;
+        st:row e:t01-r010 ;
+        st:value "X" .
+
+    e:t01-r011-c002 a st:SourceCell ;
+        st:column e:t01-c002 ;
+        st:row e:t01-r011 ;
+        st:value "X" .
+
+    e:t01-r011-c004 a st:SourceCell ;
+        st:column e:t01-c004 ;
+        st:row e:t01-r011 ;
+        st:value "Pre-hypoglycemia induction" .
+
+    e:t01-r011-c007 a st:SourceCell ;
+        st:column e:t01-c007 ;
+        st:row e:t01-r011 ;
+        st:value "Pre-hypoglycemia induction" .
+
+    e:t01-r011-c008 a st:SourceCell ;
+        st:column e:t01-c008 ;
+        st:row e:t01-r011 ;
+        st:value "X" .
+
+    e:t01-r012-c004 a st:SourceCell ;
+        st:column e:t01-c004 ;
+        st:row e:t01-r012 ;
+        st:value "X" .
+
+    e:t01-r012-c007 a st:SourceCell ;
+        st:column e:t01-c007 ;
+        st:row e:t01-r012 ;
+        st:value "X" .
+
+    e:t01-r013-c002 a st:SourceCell ;
+        st:column e:t01-c002 ;
+        st:row e:t01-r013 ;
+        st:value "X" .
+
+    e:t01-r013-c003 a st:SourceCell ;
+        st:column e:t01-c003 ;
+        st:row e:t01-r013 ;
+        st:value "X" .
+
+    e:t01-r013-c004 a st:SourceCell ;
+        st:column e:t01-c004 ;
+        st:row e:t01-r013 ;
+        st:value "X" .
+
+    e:t01-r013-c005 a st:SourceCell ;
+        st:column e:t01-c005 ;
+        st:row e:t01-r013 ;
+        st:value "X" .
+
+    e:t01-r013-c006 a st:SourceCell ;
+        st:column e:t01-c006 ;
+        st:row e:t01-r013 ;
+        st:value "X" .
+
+    e:t01-r013-c007 a st:SourceCell ;
+        st:column e:t01-c007 ;
+        st:row e:t01-r013 ;
+        st:value "X" .
+
+    e:t01-r013-c008 a st:SourceCell ;
+        st:column e:t01-c008 ;
+        st:row e:t01-r013 ;
+        st:value "X" .
+
+    e:t01-r014-c004 a st:SourceCell ;
+        st:column e:t01-c004 ;
+        st:row e:t01-r014 ;
+        st:value "X" .
+
+    e:t01-r014-c007 a st:SourceCell ;
+        st:column e:t01-c007 ;
+        st:row e:t01-r014 ;
+        st:value "X" .
+
+    e:t01-r015-c004 a st:SourceCell ;
+        st:column e:t01-c004 ;
+        st:row e:t01-r015 ;
+        st:value "X" .
+
+    e:t01-r015-c007 a st:SourceCell ;
+        st:column e:t01-c007 ;
+        st:row e:t01-r015 ;
+        st:value "X" .
+
+    e:t01-r016-c004 a st:SourceCell ;
+        st:column e:t01-c004 ;
+        st:row e:t01-r016 ;
+        st:value "X" .
+
+    e:t01-r016-c007 a st:SourceCell ;
+        st:column e:t01-c007 ;
+        st:row e:t01-r016 ;
+        st:value "X" .
+
+    e:t01-r017-c004 a st:SourceCell ;
+        st:column e:t01-c004 ;
+        st:row e:t01-r017 ;
+        st:value "X" .
+
+    e:t01-r017-c007 a st:SourceCell ;
+        st:column e:t01-c007 ;
+        st:row e:t01-r017 ;
+        st:value "X" .
+
+    e:t01-r018-c004 a st:SourceCell ;
+        st:column e:t01-c004 ;
+        st:row e:t01-r018 ;
+        st:value "Pre-hypoglycemia induction, 90 min" .
+
+    e:t01-r018-c007 a st:SourceCell ;
+        st:column e:t01-c007 ;
+        st:row e:t01-r018 ;
+        st:value "Pre-hypoglycemia induction, 90 min" .
+
+    e:t01-r019-c004 a st:SourceCell ;
+        st:column e:t01-c004 ;
+        st:row e:t01-r019 ;
+        st:value "Pre-hypoglycemia induction, 90 min" .
+
+    e:t01-r019-c007 a st:SourceCell ;
+        st:column e:t01-c007 ;
+        st:row e:t01-r019 ;
+        st:value "Pre-hypoglycemia induction, 90 min" .
+
+    e:t01-r020-c002 a st:SourceCell ;
+        st:column e:t01-c002 ;
+        st:row e:t01-r020 ;
+        st:value "X" .
+
+    e:t01-r020-c004 a st:SourceCell ;
+        st:column e:t01-c004 ;
+        st:row e:t01-r020 ;
+        st:value "Pre-hypoglycemia induction, Predose, 15, 30, 60, 120, 240 min" .
+
+    e:t01-r020-c007 a st:SourceCell ;
+        st:column e:t01-c007 ;
+        st:row e:t01-r020 ;
+        st:value "Pre-hypoglycemia induction, Predose, 15, 30, 60, 120, 240 min" .
+
+    e:t01-r020-c008 a st:SourceCell ;
+        st:column e:t01-c008 ;
+        st:row e:t01-r020 ;
+        st:value "X" .
+
+    e:t01-r021-c002 a st:SourceCell ;
+        st:column e:t01-c002 ;
+        st:row e:t01-r021 ;
+        st:value "X" .
+
+    e:t01-r021-c008 a st:SourceCell ;
+        st:column e:t01-c008 ;
+        st:row e:t01-r021 ;
+        st:value "X" .
+
+    e:t01-r022-c004 a st:SourceCell ;
+        st:column e:t01-c004 ;
+        st:row e:t01-r022 ;
+        st:value "Pre-hypoglycemia induction (30 and 15 min prior to insulin infusion), Predose, 15, 30, 60, 120, 240 min" .
+
+    e:t01-r022-c007 a st:SourceCell ;
+        st:column e:t01-c007 ;
+        st:row e:t01-r022 ;
+        st:value "Pre-hypoglycemia induction (30 and 15 min prior to insulin infusion), Predose, 15, 30, 60, 120, 240 min" .
+
+    e:t01-r023 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Laboratory Tests" ;
+        st:onPage page:14 ;
+        st:rowPosition 23 .
+
+    e:t01-r024-c002 a st:SourceCell ;
+        st:column e:t01-c002 ;
+        st:row e:t01-r024 ;
+        st:value "X" .
+
+    e:t01-r025-c002 a st:SourceCell ;
+        st:column e:t01-c002 ;
+        st:row e:t01-r025 ;
+        st:value "X" .
+
+    e:t01-r025-c004 a st:SourceCell ;
+        st:column e:t01-c004 ;
+        st:row e:t01-r025 ;
+        st:value "Pre-hypoglycemia induction" .
+
+    e:t01-r025-c007 a st:SourceCell ;
+        st:column e:t01-c007 ;
+        st:row e:t01-r025 ;
+        st:value "Pre-hypoglycemia induction" .
+
+    e:t01-r025-c008 a st:SourceCell ;
+        st:column e:t01-c008 ;
+        st:row e:t01-r025 ;
+        st:value "X" .
+
+    e:t01-r026-c002 a st:SourceCell ;
+        st:column e:t01-c002 ;
+        st:row e:t01-r026 ;
+        st:value "X" .
+
+    e:t01-r026-c004 a st:SourceCell ;
+        st:column e:t01-c004 ;
+        st:row e:t01-r026 ;
+        st:value "Pre-hypoglycemia induction" .
+
+    e:t01-r027-c002 a st:SourceCell ;
+        st:column e:t01-c002 ;
+        st:row e:t01-r027 ;
+        st:value "X" .
+
+    e:t01-r027-c003 a st:SourceCell ;
+        st:column e:t01-c003 ;
+        st:row e:t01-r027 ;
+        st:value "X" .
+
+    e:t01-r027-c006 a st:SourceCell ;
+        st:column e:t01-c006 ;
+        st:row e:t01-r027 ;
+        st:value "X" .
+
+    e:t01-r027-c008 a st:SourceCell ;
+        st:column e:t01-c008 ;
+        st:row e:t01-r027 ;
+        st:value "X" .
+
+    e:t01-r028-c002 a st:SourceCell ;
+        st:column e:t01-c002 ;
+        st:row e:t01-r028 ;
+        st:value "X" .
+
+    e:t01-r029-c002 a st:SourceCell ;
+        st:column e:t01-c002 ;
+        st:row e:t01-r029 ;
+        st:value "X" .
+
+    e:t01-r030-c002 a st:SourceCell ;
+        st:column e:t01-c002 ;
+        st:row e:t01-r030 ;
+        st:value "X" .
+
+    e:t01-r031-c004 a st:SourceCell ;
+        st:column e:t01-c004 ;
+        st:row e:t01-r031 ;
+        st:value "Pre-hypoglycemia induction, Predose, 5, 10, 15, 20, 25, 30, 40, 50, 60, 90, 120, 240 min" .
+
+    e:t01-r031-c007 a st:SourceCell ;
+        st:column e:t01-c007 ;
+        st:row e:t01-r031 ;
+        st:value "Pre-hypoglycemia induction, Predose, 5, 10, 15, 20, 25, 30, 40, 50, 60, 90, 120, 240 min" .
+
+    e:t01-r031-c008 a st:SourceCell ;
+        st:column e:t01-c008 ;
+        st:row e:t01-r031 ;
+        st:value "X" .
+
+    e:t01-r031-c009 a st:SourceCell ;
+        st:column e:t01-c009 ;
+        st:row e:t01-r031 ;
+        st:value "X" .
+
+    e:t01-r032-c004 a st:SourceCell ;
+        st:column e:t01-c004 ;
+        st:row e:t01-r032 ;
+        st:value "Pre-hypoglycemia induction, -5, Predose, 5, 10, 15, 20, 25, 30, 40, 50, 60, 90, 120, 240 min" .
+
+    e:t01-r032-c007 a st:SourceCell ;
+        st:column e:t01-c007 ;
+        st:row e:t01-r032 ;
+        st:value "Pre-hypoglycemia induction, -5, Predose, 5, 10, 15, 20, 25, 30, 40, 50, 60, 90, 120, 240 min" .
+
+    e:t01-r033-c003 a st:SourceCell ;
+        st:column e:t01-c003 ;
+        st:row e:t01-r033 ;
+        st:value "X" .
+
+    e:t01-r034-c004 a st:SourceCell ;
+        st:column e:t01-c004 ;
+        st:row e:t01-r034 ;
+        st:value "Pre-hypoglycemia induction" .
+
+    e:t01-r034-c008 a st:SourceCell ;
+        st:column e:t01-c008 ;
+        st:row e:t01-r034 ;
+        st:value "X" .
+
+    e:t01-r034-c009 a st:SourceCell ;
+        st:column e:t01-c009 ;
+        st:row e:t01-r034 ;
+        st:value "X" .
+
+    e:t01-r035 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Health Outcome Instruments" ;
+        st:onPage page:17 ;
+        st:rowPosition 35 .
+
+    e:t01-r036-c003 a st:SourceCell ;
+        st:column e:t01-c003 ;
+        st:row e:t01-r036 ;
+        st:value "X" .
+
+    e:t01-r037-c004 a st:SourceCell ;
+        st:column e:t01-c004 ;
+        st:row e:t01-r037 ;
+        st:value "Pre-hypoglycemia induction, 15, 30, 60, 120 min" .
+
+    e:t01-r037-c007 a st:SourceCell ;
+        st:column e:t01-c007 ;
+        st:row e:t01-r037 ;
+        st:value "Pre-hypoglycemia induction, 15, 30, 60, 120 min" .
+
+    e:t01-r038-c004 a st:SourceCell ;
+        st:column e:t01-c004 ;
+        st:row e:t01-r038 ;
+        st:value "Pre-hypoglycemia induction, During hypoglycemia induction, Predose, 15, 30, 60, 120 min" .
+
+    e:t01-r038-c007 a st:SourceCell ;
+        st:column e:t01-c007 ;
+        st:row e:t01-r038 ;
+        st:value "Pre-hypoglycemia induction, During hypoglycemia induction, Predose, 15, 30, 60, 120 min" .
+
+    e:u-t01-c002-v01 a st:ColumnPropertyValue ;
+        st:level 1 ;
+        st:position 1 ;
+        st:propertyName "Study Period" ;
+        st:propertyType "epoch" ;
+        st:value "Screening" .
+
+    e:u-t01-c002-v02 a st:ColumnPropertyValue ;
+        st:level 2 ;
+        st:position 2 ;
+        st:propertyName "Study Day" ;
+        st:propertyType "study_day" ;
+        st:value "Days -28 to -2" .
+
+    e:u-t01-c003-v01 a st:ColumnPropertyValue ;
+        st:level 1 ;
+        st:position 1 ;
+        st:propertyName "Study Period" ;
+        st:propertyType "epoch" ;
+        st:value "Period 1" .
+
+    e:u-t01-c003-v02 a st:ColumnPropertyValue ;
+        st:level 2 ;
+        st:position 2 ;
+        st:propertyName "Study Day" ;
+        st:propertyType "study_day" ;
+        st:value "Day -1" .
+
+    e:u-t01-c004-v01 a st:ColumnPropertyValue ;
+        st:level 1 ;
+        st:position 1 ;
+        st:propertyName "Study Period" ;
+        st:propertyType "epoch" ;
+        st:value "Period 1" .
+
+    e:u-t01-c004-v02 a st:ColumnPropertyValue ;
+        st:level 2 ;
+        st:position 2 ;
+        st:propertyName "Study Day" ;
+        st:propertyType "study_day" ;
+        st:value "Day 1" .
+
+    e:u-t01-c005-v01 a st:ColumnPropertyValue ;
+        st:level 1 ;
+        st:position 1 ;
+        st:propertyName "Study Period" ;
+        st:propertyType "epoch" ;
+        st:value "Wash out" .
+
+    e:u-t01-c005-v02 a st:ColumnPropertyValue ;
+        st:level 2 ;
+        st:position 2 ;
+        st:propertyName "Study Day" ;
+        st:propertyType "study_day" ;
+        st:value "3 to 14 days" .
+
+    e:u-t01-c006-v01 a st:ColumnPropertyValue ;
+        st:level 1 ;
+        st:position 1 ;
+        st:propertyName "Study Period" ;
+        st:propertyType "epoch" ;
+        st:value "Period 2" .
+
+    e:u-t01-c006-v02 a st:ColumnPropertyValue ;
+        st:level 2 ;
+        st:position 2 ;
+        st:propertyName "Study Day" ;
+        st:propertyType "study_day" ;
+        st:value "Day -1" .
+
+    e:u-t01-c007-v01 a st:ColumnPropertyValue ;
+        st:level 1 ;
+        st:position 1 ;
+        st:propertyName "Study Period" ;
+        st:propertyType "epoch" ;
+        st:value "Period 2" .
+
+    e:u-t01-c007-v02 a st:ColumnPropertyValue ;
+        st:level 2 ;
+        st:position 2 ;
+        st:propertyName "Study Day" ;
+        st:propertyType "study_day" ;
+        st:value "Day 1" .
+
+    e:u-t01-c008-v01 a st:ColumnPropertyValue ;
+        st:level 1 ;
+        st:position 1 ;
+        st:propertyName "Study Period" ;
+        st:propertyType "epoch" ;
+        st:value "Follow-up/ED" .
+
+    e:u-t01-c008-v02 a st:ColumnPropertyValue ;
+        st:level 2 ;
+        st:position 2 ;
+        st:propertyName "Study Day" ;
+        st:propertyType "study_day" ;
+        st:value "Within 28±2 days after last study treatment" .
+
+    e:u-t01-c009-v01 a st:ColumnPropertyValue ;
+        st:level 1 ;
+        st:position 1 ;
+        st:propertyName "Study Period" ;
+        st:propertyType "epoch" ;
+        st:value "Additional Follow-up for TE ADA" .
+
+    e:u-t01-c009-v02 a st:ColumnPropertyValue ;
+        st:level 2 ;
+        st:position 2 ;
+        st:propertyName "Study Day" ;
+        st:propertyType "study_day" ;
+        st:value "" .
+
+    e:u-t01-n-c15-d01 a st:DocumentReference ;
+        st:position 1 ;
+        st:referenceKind "appendix" ;
+        st:target "2" .
+
+    e:u-t01-n-c16-d01 a st:DocumentReference ;
+        st:position 1 ;
+        st:referenceKind "appendix" ;
+        st:target "2" .
+
+    e:u-t01-n-c23-d01 a st:DocumentReference ;
+        st:position 1 ;
+        st:referenceKind "section" ;
+        st:target "9.7.1" .
+
+    e:u-t01-n-c5-d01 a st:DocumentReference ;
+        st:position 1 ;
+        st:referenceKind "section" ;
+        st:target "9.5.5.1" .
+
+    e:u-t01-r004 a st:UnifiedActivity ;
+        st:displayOrder 2 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r004 ;
+        st:name "Informed Consent" ;
+        st:parent e:u-t01-r003 ;
+        st:parentName "Clinical Assessments" ;
+        st:qualifiedKey "Clinical Assessments::Informed Consent" .
+
+    e:u-t01-r005 a st:UnifiedActivity ;
+        st:displayOrder 3 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r005 ;
+        st:name "Randomization" ;
+        st:parent e:u-t01-r003 ;
+        st:parentName "Clinical Assessments" ;
+        st:qualifiedKey "Clinical Assessments::Randomization" .
+
+    e:u-t01-r008 a st:UnifiedActivity ;
+        st:displayOrder 6 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r008 ;
+        st:name "Medical History" ;
+        st:parent e:u-t01-r003 ;
+        st:parentName "Clinical Assessments" ;
+        st:qualifiedKey "Clinical Assessments::Medical History" .
+
+    e:u-t01-r036 a st:UnifiedActivity ;
+        st:displayOrder 34 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r036 ;
+        st:name "Clarke Hypoglycemia Awareness Survey" ;
+        st:parent e:u-t01-r035 ;
+        st:parentName "Health Outcome Instruments" ;
+        st:qualifiedKey "Health Outcome Instruments::Clarke Hypoglycemia Awareness Survey" .
+
+    <https://kerfors.github.io/soa-tables/id/study/NCT03421379> a st:Study ;
+        st:studyKey "NCT03421379" .
+
+    page:18 a st:Page ;
+        st:inFile <https://kerfors.github.io/soa-tables/id/sha256/a94c35b9e940b3cd1b7dc326c11ab004f88f8cea4e0df2fa20d4b28b4be16eba> ;
+        st:pageNumber 18 .
+
+    e:t01-r004 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Informed Consent" ;
+        st:onPage page:11 ;
+        st:rowPosition 4 .
+
+    e:t01-r005 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Randomization" ;
+        st:onPage page:11 ;
+        st:rowPosition 5 .
+
+    e:t01-r008 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Medical History" ;
+        st:onPage page:11 ;
+        st:rowPosition 8 .
+
+    e:t01-r024 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Clinical Serology Tests" ;
+        st:onPage page:14 ;
+        st:rowPosition 24 .
+
+    e:t01-r028 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "FSH (Female patients only)" ;
+        st:onPage page:15 ;
+        st:rowPosition 28 .
+
+    e:t01-r029 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Ethanol Testing" ;
+        st:onPage page:15 ;
+        st:rowPosition 29 .
+
+    e:t01-r030 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Urine Drug Screen" ;
+        st:onPage page:16 ;
+        st:rowPosition 30 .
+
+    e:t01-r033 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Genetic Sample (Stored)" ;
+        st:onPage page:16 ;
+        st:rowPosition 33 .
+
+    e:t01-r036 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Clarke Hypoglycemia Awareness Survey" ;
+        st:onPage page:17 ;
+        st:rowPosition 36 .
+
+    e:u-t01-c005 a st:UnifiedColumn ;
+        st:compositeLabel "Wash out / 3 to 14 days" ;
+        st:member e:t01-c005 ;
+        st:propertyValue e:u-t01-c005-v01,
+            e:u-t01-c005-v02 ;
+        st:segment "main" .
+
+    e:u-t01-r021 a st:UnifiedActivity ;
+        st:displayOrder 19 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r021 ;
+        st:name "Single 12-lead ECG (Local)" ;
+        st:parent e:u-t01-r003 ;
+        st:parentName "Clinical Assessments" ;
+        st:qualifiedKey "Clinical Assessments::Single 12-lead ECG (Local)" .
+
+    e:u-t01-r024 a st:UnifiedActivity ;
+        st:displayOrder 22 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r024 ;
+        st:name "Clinical Serology Tests" ;
+        st:parent e:u-t01-r023 ;
+        st:parentName "Laboratory Tests" ;
+        st:qualifiedKey "Laboratory Tests::Clinical Serology Tests" .
+
+    e:u-t01-r028 a st:UnifiedActivity ;
+        st:displayOrder 26 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r028 ;
+        st:name "FSH (Female patients only)" ;
+        st:parent e:u-t01-r023 ;
+        st:parentName "Laboratory Tests" ;
+        st:qualifiedKey "Laboratory Tests::FSH (Female patients only)" .
+
+    e:u-t01-r029 a st:UnifiedActivity ;
+        st:displayOrder 27 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r029 ;
+        st:name "Ethanol Testing" ;
+        st:parent e:u-t01-r023 ;
+        st:parentName "Laboratory Tests" ;
+        st:qualifiedKey "Laboratory Tests::Ethanol Testing" .
+
+    e:u-t01-r030 a st:UnifiedActivity ;
+        st:displayOrder 28 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r030 ;
+        st:name "Urine Drug Screen" ;
+        st:parent e:u-t01-r023 ;
+        st:parentName "Laboratory Tests" ;
+        st:qualifiedKey "Laboratory Tests::Urine Drug Screen" .
+
+    e:u-t01-r033 a st:UnifiedActivity ;
+        st:displayOrder 31 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r033 ;
+        st:name "Genetic Sample (Stored)" ;
+        st:parent e:u-t01-r023 ;
+        st:parentName "Laboratory Tests" ;
+        st:qualifiedKey "Laboratory Tests::Genetic Sample (Stored)" .
+
+    page:13 a st:Page ;
+        st:inFile <https://kerfors.github.io/soa-tables/id/sha256/a94c35b9e940b3cd1b7dc326c11ab004f88f8cea4e0df2fa20d4b28b4be16eba> ;
+        st:pageNumber 13 .
+
+    e:t01-c005 a st:SourceColumn ;
+        st:columnPosition 5 ;
+        st:inTable e:t01 .
+
+    e:t01-c009 a st:SourceColumn ;
+        st:columnPosition 9 ;
+        st:inTable e:t01 .
+
+    e:t01-r006 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Admission to CRU" ;
+        st:onPage page:11 ;
+        st:rowPosition 6 .
+
+    e:t01-r007 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Discharge from CRU" ;
+        st:onPage page:11 ;
+        st:rowPosition 7 .
+
+    e:t01-r012 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Collect Hypoglycemic Events" ;
+        st:onPage page:12 ;
+        st:rowPosition 12 .
+
+    e:t01-r014 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Meal" ;
+        st:onPage page:12 ;
+        st:rowPosition 14 .
+
+    e:t01-r015 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Insulin infusion to Induce Hypoglycemia" ;
+        st:onPage page:13 ;
+        st:rowPosition 15 .
+
+    e:t01-r016 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Bedside PG Monitoring for Safety" ;
+        st:onPage page:13 ;
+        st:rowPosition 16 .
+
+    e:t01-r017 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Study Treatment Administration" ;
+        st:onPage page:13 ;
+        st:rowPosition 17 .
+
+    e:t01-r018 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Injection-Site Assessment" ;
+        st:onPage page:14 ;
+        st:rowPosition 18 .
+
+    e:t01-r019 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Nasal Inspection" ;
+        st:onPage page:14 ;
+        st:rowPosition 19 .
+
+    e:t01-r021 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Single 12-lead ECG (Local)" ;
+        st:onPage page:14 ;
+        st:rowPosition 21 .
+
+    e:t01-r022 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Triplicate 12-lead ECG (Central)" ;
+        st:onPage page:14 ;
+        st:rowPosition 22 .
+
+    e:t01-r026 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "HbA1c" ;
+        st:onPage page:15 ;
+        st:rowPosition 26 .
+
+    e:t01-r032 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Plasma Glucose for PD" ;
+        st:onPage page:16 ;
+        st:rowPosition 32 .
+
+    e:t01-r037 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Nasal and Non-nasal Score Questionnaire" ;
+        st:onPage page:17 ;
+        st:rowPosition 37 .
+
+    e:t01-r038 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Edinburgh Hypoglycemia Scale: Experimental Hypoglycemia" ;
+        st:onPage page:18 ;
+        st:rowPosition 38 .
+
+    e:u-t01-c009 a st:UnifiedColumn ;
+        st:compositeLabel "Additional Follow-up for TE ADA" ;
+        st:member e:t01-c009 ;
+        st:propertyValue e:u-t01-c009-v01,
+            e:u-t01-c009-v02 ;
+        st:segment "main" .
+
+    e:u-t01-r006 a st:UnifiedActivity ;
+        st:displayOrder 4 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r006 ;
+        st:name "Admission to CRU" ;
+        st:parent e:u-t01-r003 ;
+        st:parentName "Clinical Assessments" ;
+        st:qualifiedKey "Clinical Assessments::Admission to CRU" .
+
+    e:u-t01-r007 a st:UnifiedActivity ;
+        st:displayOrder 5 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r007 ;
+        st:name "Discharge from CRU" ;
+        st:parent e:u-t01-r003 ;
+        st:parentName "Clinical Assessments" ;
+        st:qualifiedKey "Clinical Assessments::Discharge from CRU" .
+
+    e:u-t01-r012 a st:UnifiedActivity ;
+        st:displayOrder 10 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r012 ;
+        st:name "Collect Hypoglycemic Events" ;
+        st:parent e:u-t01-r003 ;
+        st:parentName "Clinical Assessments" ;
+        st:qualifiedKey "Clinical Assessments::Collect Hypoglycemic Events" .
+
+    e:u-t01-r014 a st:UnifiedActivity ;
+        st:displayOrder 12 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r014 ;
+        st:name "Meal" ;
+        st:parent e:u-t01-r003 ;
+        st:parentName "Clinical Assessments" ;
+        st:qualifiedKey "Clinical Assessments::Meal" .
+
+    e:u-t01-r015 a st:UnifiedActivity ;
+        st:displayOrder 13 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r015 ;
+        st:name "Insulin infusion to Induce Hypoglycemia" ;
+        st:parent e:u-t01-r003 ;
+        st:parentName "Clinical Assessments" ;
+        st:qualifiedKey "Clinical Assessments::Insulin infusion to Induce Hypoglycemia" .
+
+    e:u-t01-r016 a st:UnifiedActivity ;
+        st:displayOrder 14 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r016 ;
+        st:name "Bedside PG Monitoring for Safety" ;
+        st:parent e:u-t01-r003 ;
+        st:parentName "Clinical Assessments" ;
+        st:qualifiedKey "Clinical Assessments::Bedside PG Monitoring for Safety" .
+
+    e:u-t01-r017 a st:UnifiedActivity ;
+        st:displayOrder 15 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r017 ;
+        st:name "Study Treatment Administration" ;
+        st:parent e:u-t01-r003 ;
+        st:parentName "Clinical Assessments" ;
+        st:qualifiedKey "Clinical Assessments::Study Treatment Administration" .
+
+    e:u-t01-r018 a st:UnifiedActivity ;
+        st:displayOrder 16 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r018 ;
+        st:name "Injection-Site Assessment" ;
+        st:parent e:u-t01-r003 ;
+        st:parentName "Clinical Assessments" ;
+        st:qualifiedKey "Clinical Assessments::Injection-Site Assessment" .
+
+    e:u-t01-r019 a st:UnifiedActivity ;
+        st:displayOrder 17 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r019 ;
+        st:name "Nasal Inspection" ;
+        st:parent e:u-t01-r003 ;
+        st:parentName "Clinical Assessments" ;
+        st:qualifiedKey "Clinical Assessments::Nasal Inspection" .
+
+    e:u-t01-r022 a st:UnifiedActivity ;
+        st:displayOrder 20 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r022 ;
+        st:name "Triplicate 12-lead ECG (Central)" ;
+        st:parent e:u-t01-r003 ;
+        st:parentName "Clinical Assessments" ;
+        st:qualifiedKey "Clinical Assessments::Triplicate 12-lead ECG (Central)" .
+
+    e:u-t01-r026 a st:UnifiedActivity ;
+        st:displayOrder 24 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r026 ;
+        st:name "HbA1c" ;
+        st:parent e:u-t01-r023 ;
+        st:parentName "Laboratory Tests" ;
+        st:qualifiedKey "Laboratory Tests::HbA1c" .
+
+    e:u-t01-r032 a st:UnifiedActivity ;
+        st:displayOrder 30 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r032 ;
+        st:name "Plasma Glucose for PD" ;
+        st:parent e:u-t01-r023 ;
+        st:parentName "Laboratory Tests" ;
+        st:qualifiedKey "Laboratory Tests::Plasma Glucose for PD" .
+
+    e:u-t01-r035 a st:UnifiedActivity ;
+        st:displayOrder 33 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader true ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r035 ;
+        st:name "Health Outcome Instruments" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Health Outcome Instruments" .
+
+    e:u-t01-r037 a st:UnifiedActivity ;
+        st:displayOrder 35 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r037 ;
+        st:name "Nasal and Non-nasal Score Questionnaire" ;
+        st:parent e:u-t01-r035 ;
+        st:parentName "Health Outcome Instruments" ;
+        st:qualifiedKey "Health Outcome Instruments::Nasal and Non-nasal Score Questionnaire" .
+
+    e:u-t01-r038 a st:UnifiedActivity ;
+        st:displayOrder 36 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r038 ;
+        st:name "Edinburgh Hypoglycemia Scale: Experimental Hypoglycemia" ;
+        st:parent e:u-t01-r035 ;
+        st:parentName "Health Outcome Instruments" ;
+        st:qualifiedKey "Health Outcome Instruments::Edinburgh Hypoglycemia Scale: Experimental Hypoglycemia" .
+
+    page:12 a st:Page ;
+        st:inFile <https://kerfors.github.io/soa-tables/id/sha256/a94c35b9e940b3cd1b7dc326c11ab004f88f8cea4e0df2fa20d4b28b4be16eba> ;
+        st:pageNumber 12 .
+
+    page:16 a st:Page ;
+        st:inFile <https://kerfors.github.io/soa-tables/id/sha256/a94c35b9e940b3cd1b7dc326c11ab004f88f8cea4e0df2fa20d4b28b4be16eba> ;
+        st:pageNumber 16 .
+
+    page:17 a st:Page ;
+        st:inFile <https://kerfors.github.io/soa-tables/id/sha256/a94c35b9e940b3cd1b7dc326c11ab004f88f8cea4e0df2fa20d4b28b4be16eba> ;
+        st:pageNumber 17 .
+
+    e:t01-r034 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Anti-glucagon Antibodies" ;
+        st:onPage page:17 ;
+        st:rowPosition 34 .
+
+    e:u-t01-c006 a st:UnifiedColumn ;
+        st:compositeLabel "Period 2 / Day -1" ;
+        st:member e:t01-c006 ;
+        st:propertyValue e:u-t01-c006-v01,
+            e:u-t01-c006-v02 ;
+        st:segment "main" .
+
+    e:u-t01-r034 a st:UnifiedActivity ;
+        st:displayOrder 32 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r034 ;
+        st:name "Anti-glucagon Antibodies" ;
+        st:parent e:u-t01-r023 ;
+        st:parentName "Laboratory Tests" ;
+        st:qualifiedKey "Laboratory Tests::Anti-glucagon Antibodies" .
+
+    page:15 a st:Page ;
+        st:inFile <https://kerfors.github.io/soa-tables/id/sha256/a94c35b9e940b3cd1b7dc326c11ab004f88f8cea4e0df2fa20d4b28b4be16eba> ;
+        st:pageNumber 15 .
+
+    e:t01-c006 a st:SourceColumn ;
+        st:columnPosition 6 ;
+        st:inTable e:t01 .
+
+    e:t01-r010 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Physical Exam" ;
+        st:onPage page:11 ;
+        st:rowPosition 10 .
+
+    e:t01-r011 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Height and Weight" ;
+        st:onPage page:12 ;
+        st:rowPosition 11 .
+
+    e:t01-r020 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Vital Signs (Supine Blood Pressure, Pulse Rate, and Body Temperature)" ;
+        st:onPage page:14 ;
+        st:rowPosition 20 .
+
+    e:t01-r025 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Clinical Lab Tests (Hematology, Clinical Chemistry, and Urinalysis)" ;
+        st:onPage page:15 ;
+        st:rowPosition 25 .
+
+    e:t01-r027 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Pregnancy Test (Female patients of childbearing potential only)" ;
+        st:onPage page:15 ;
+        st:rowPosition 27 .
+
+    e:t01-r031 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "PK (Glucagon)" ;
+        st:onPage page:16 ;
+        st:rowPosition 31 .
+
+    e:u-t01-r010 a st:UnifiedActivity ;
+        st:displayOrder 8 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r010 ;
+        st:name "Physical Exam" ;
+        st:parent e:u-t01-r003 ;
+        st:parentName "Clinical Assessments" ;
+        st:qualifiedKey "Clinical Assessments::Physical Exam" .
+
+    e:u-t01-r011 a st:UnifiedActivity ;
+        st:displayOrder 9 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r011 ;
+        st:name "Height and Weight" ;
+        st:parent e:u-t01-r003 ;
+        st:parentName "Clinical Assessments" ;
+        st:qualifiedKey "Clinical Assessments::Height and Weight" .
+
+    e:u-t01-r020 a st:UnifiedActivity ;
+        st:displayOrder 18 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r020 ;
+        st:name "Vital Signs (Supine Blood Pressure, Pulse Rate, and Body Temperature)" ;
+        st:parent e:u-t01-r003 ;
+        st:parentName "Clinical Assessments" ;
+        st:qualifiedKey "Clinical Assessments::Vital Signs (Supine Blood Pressure, Pulse Rate, and Body Temperature)" .
+
+    e:u-t01-r025 a st:UnifiedActivity ;
+        st:displayOrder 23 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r025 ;
+        st:name "Clinical Lab Tests (Hematology, Clinical Chemistry, and Urinalysis)" ;
+        st:parent e:u-t01-r023 ;
+        st:parentName "Laboratory Tests" ;
+        st:qualifiedKey "Laboratory Tests::Clinical Lab Tests (Hematology, Clinical Chemistry, and Urinalysis)" .
+
+    e:u-t01-r027 a st:UnifiedActivity ;
+        st:displayOrder 25 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r027 ;
+        st:name "Pregnancy Test (Female patients of childbearing potential only)" ;
+        st:parent e:u-t01-r023 ;
+        st:parentName "Laboratory Tests" ;
+        st:qualifiedKey "Laboratory Tests::Pregnancy Test (Female patients of childbearing potential only)" .
+
+    e:u-t01-r031 a st:UnifiedActivity ;
+        st:displayOrder 29 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r031 ;
+        st:name "PK (Glucagon)" ;
+        st:parent e:u-t01-r023 ;
+        st:parentName "Laboratory Tests" ;
+        st:qualifiedKey "Laboratory Tests::PK (Glucagon)" .
+
+    e:u-t01-c003 a st:UnifiedColumn ;
+        st:compositeLabel "Period 1 / Day -1" ;
+        st:member e:t01-c003 ;
+        st:propertyValue e:u-t01-c003-v01,
+            e:u-t01-c003-v02 ;
+        st:segment "main" .
+
+    page:14 a st:Page ;
+        st:inFile <https://kerfors.github.io/soa-tables/id/sha256/a94c35b9e940b3cd1b7dc326c11ab004f88f8cea4e0df2fa20d4b28b4be16eba> ;
+        st:pageNumber 14 .
+
+    e:t01-c003 a st:SourceColumn ;
+        st:columnPosition 3 ;
+        st:inTable e:t01 .
+
+    e:u-t01-r009 a st:UnifiedActivity ;
+        st:displayOrder 7 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r009 ;
+        st:name "Collect Pre-existing Conditions and Adverse Events" ;
+        st:parent e:u-t01-r003 ;
+        st:parentName "Clinical Assessments" ;
+        st:qualifiedKey "Clinical Assessments::Collect Pre-existing Conditions and Adverse Events" .
+
+    e:t01-r009 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Collect Pre-existing Conditions and Adverse Events" ;
+        st:onPage page:11 ;
+        st:rowPosition 9 .
+
+    e:t01-r013 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Collect Concomitant Medications" ;
+        st:onPage page:12 ;
+        st:rowPosition 13 .
+
+    e:u-t01-r013 a st:UnifiedActivity ;
+        st:displayOrder 11 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r013 ;
+        st:name "Collect Concomitant Medications" ;
+        st:parent e:u-t01-r003 ;
+        st:parentName "Clinical Assessments" ;
+        st:qualifiedKey "Clinical Assessments::Collect Concomitant Medications" .
+
+    <https://kerfors.github.io/soa-tables/id/sha256/a94c35b9e940b3cd1b7dc326c11ab004f88f8cea4e0df2fa20d4b28b4be16eba> a st:File ;
+        st:sha256 "a94c35b9e940b3cd1b7dc326c11ab004f88f8cea4e0df2fa20d4b28b4be16eba" .
+
+    page:11 a st:Page ;
+        st:inFile <https://kerfors.github.io/soa-tables/id/sha256/a94c35b9e940b3cd1b7dc326c11ab004f88f8cea4e0df2fa20d4b28b4be16eba> ;
+        st:pageNumber 11 .
+
+    e:u-t01-c008 a st:UnifiedColumn ;
+        st:compositeLabel "Follow-up/ED / Within 28±2 days after last study treatment" ;
+        st:member e:t01-c008 ;
+        st:propertyValue e:u-t01-c008-v01,
+            e:u-t01-c008-v02 ;
+        st:segment "main" .
+
+    e:t01-c008 a st:SourceColumn ;
+        st:columnPosition 8 ;
+        st:inTable e:t01 .
+
+    e:u-t01-r023 a st:UnifiedActivity ;
+        st:displayOrder 21 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader true ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r023 ;
+        st:name "Laboratory Tests" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Laboratory Tests" .
+
+    e:u-t01-c002 a st:UnifiedColumn ;
+        st:compositeLabel "Screening / Days -28 to -2" ;
+        st:member e:t01-c002 ;
+        st:propertyValue e:u-t01-c002-v01,
+            e:u-t01-c002-v02 ;
+        st:segment "main" .
+
+    e:t01-c002 a st:SourceColumn ;
+        st:columnPosition 2 ;
+        st:inTable e:t01 .
+
+    e:u-t01-c007 a st:UnifiedColumn ;
+        st:compositeLabel "Period 2 / Day 1" ;
+        st:member e:t01-c007 ;
+        st:propertyValue e:u-t01-c007-v01,
+            e:u-t01-c007-v02 ;
+        st:segment "main" .
+
+    e:u-t01-r003 a st:UnifiedActivity ;
+        st:displayOrder 1 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader true ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r003 ;
+        st:name "Clinical Assessments" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Clinical Assessments" .
+
+    e:t01-c007 a st:SourceColumn ;
+        st:columnPosition 7 ;
+        st:inTable e:t01 .
+
+    e:u-t01-c004 a st:UnifiedColumn ;
+        st:compositeLabel "Period 1 / Day 1" ;
+        st:member e:t01-c004 ;
+        st:propertyValue e:u-t01-c004-v01,
+            e:u-t01-c004-v02 ;
+        st:segment "main" .
+
+    e:t01-c004 a st:SourceColumn ;
+        st:columnPosition 4 ;
+        st:inTable e:t01 .
+
+    e:t01 a st:SourceTable ;
+        st:firstPage page:11 ;
+        st:lastPage page:18 ;
+        st:purpose "Main study schedule: screening, two crossover dosing periods with washout, follow-up/ED and additional TE ADA follow-up" ;
+        st:tableNumber 1 ;
+        st:tableType "main_soa" ;
+        st:title "Study Schedule Protocol I8R-JE-IGBJ" .
+}
+

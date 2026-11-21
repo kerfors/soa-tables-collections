@@ -1,0 +1,5767 @@
+@prefix e: <https://kerfors.github.io/soa-tables/id/sha256/1ab18db01952c3ed464ff5e4c19e0af30c2d90066edc02e05ff8d443dbf54a58/soa-tables-v1/> .
+@prefix page: <https://kerfors.github.io/soa-tables/id/sha256/1ab18db01952c3ed464ff5e4c19e0af30c2d90066edc02e05ff8d443dbf54a58/page/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix st: <https://kerfors.github.io/soa-tables/id/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/soa-tables/id/sha256/1ab18db01952c3ed464ff5e4c19e0af30c2d90066edc02e05ff8d443dbf54a58/soa-tables-v1> {
+    <https://kerfors.github.io/soa-tables/id/sha256/1ab18db01952c3ed464ff5e4c19e0af30c2d90066edc02e05ff8d443dbf54a58/soa-tables-v1> a st:Transcription ;
+        st:aboutStudy <https://kerfors.github.io/soa-tables/id/study/NCT04557384> ;
+        st:codeCommit "bbb9ab3dac8c9fe153c293d6515e6f7fb78f7184" ;
+        st:collectionsCommit "1c7dc79b2ed7cf92259168673da2ab1deafd28b9" ;
+        st:consolidatedAt "2026-11-21T09:30:44.469323+00:00"^^xsd:dateTime ;
+        st:consolidator "soa_tables.consolidate v1.2" ;
+        st:ofFile <https://kerfors.github.io/soa-tables/id/sha256/1ab18db01952c3ed464ff5e4c19e0af30c2d90066edc02e05ff8d443dbf54a58> ;
+        st:schemaVersion "1.7" .
+
+    e:m-t01-r008-t01-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r008-c002 ;
+        st:activity e:u-t01-r008 ;
+        st:column e:u-t01-c002 ;
+        st:value "X" .
+
+    e:m-t01-r009-t01-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r009-c002 ;
+        st:activity e:u-t01-r009 ;
+        st:column e:u-t01-c002 ;
+        st:value "X" .
+
+    e:m-t01-r010-t01-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r010-c002 ;
+        st:activity e:u-t01-r010 ;
+        st:column e:u-t01-c002 ;
+        st:value "X" .
+
+    e:m-t01-r011-t01-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r011-c002 ;
+        st:activity e:u-t01-r011 ;
+        st:column e:u-t01-c002 ;
+        st:value "X" .
+
+    e:m-t01-r012-t01-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r012-c002 ;
+        st:activity e:u-t01-r012 ;
+        st:column e:u-t01-c002 ;
+        st:value "X" .
+
+    e:m-t01-r012-t01-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r012-c004 ;
+        st:activity e:u-t01-r012 ;
+        st:column e:u-t01-c004 ;
+        st:value "X" .
+
+    e:m-t01-r012-t01-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r012-c005 ;
+        st:activity e:u-t01-r012 ;
+        st:column e:u-t01-c005 ;
+        st:value "X" .
+
+    e:m-t01-r012-t01-c006 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r012-c006 ;
+        st:activity e:u-t01-r012 ;
+        st:column e:u-t01-c006 ;
+        st:value "X" .
+
+    e:m-t01-r012-t01-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r012-c007 ;
+        st:activity e:u-t01-r012 ;
+        st:column e:u-t01-c007 ;
+        st:value "X" .
+
+    e:m-t01-r012-t01-c008 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r012-c008 ;
+        st:activity e:u-t01-r012 ;
+        st:column e:u-t01-c008 ;
+        st:value "X" .
+
+    e:m-t01-r012-t01-c009 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r012-c009 ;
+        st:activity e:u-t01-r012 ;
+        st:column e:u-t01-c009 ;
+        st:value "X" .
+
+    e:m-t01-r012-t01-c010 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r012-c010 ;
+        st:activity e:u-t01-r012 ;
+        st:column e:u-t01-c010 ;
+        st:value "X" .
+
+    e:m-t01-r012-t01-c011 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r012-c011 ;
+        st:activity e:u-t01-r012 ;
+        st:column e:u-t01-c011 ;
+        st:value "X" .
+
+    e:m-t01-r012-t01-c012 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r012-c012 ;
+        st:activity e:u-t01-r012 ;
+        st:column e:u-t01-c012 ;
+        st:value "X" .
+
+    e:m-t01-r012-t01-c013 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r012-c013 ;
+        st:activity e:u-t01-r012 ;
+        st:column e:u-t01-c013 ;
+        st:value "X" .
+
+    e:m-t01-r012-t01-c014 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r012-c014 ;
+        st:activity e:u-t01-r012 ;
+        st:column e:u-t01-c014 ;
+        st:value "X" .
+
+    e:m-t01-r012-t01-c015 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r012-c015 ;
+        st:activity e:u-t01-r012 ;
+        st:column e:u-t01-c015 ;
+        st:value "X" .
+
+    e:m-t01-r013-t01-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r013-c002 ;
+        st:activity e:u-t01-r013 ;
+        st:column e:u-t01-c002 ;
+        st:value "X" .
+
+    e:m-t01-r013-t01-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r013-c004 ;
+        st:activity e:u-t01-r013 ;
+        st:column e:u-t01-c004 ;
+        st:value "X" .
+
+    e:m-t01-r013-t01-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r013-c005 ;
+        st:activity e:u-t01-r013 ;
+        st:column e:u-t01-c005 ;
+        st:value "X" .
+
+    e:m-t01-r013-t01-c006 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r013-c006 ;
+        st:activity e:u-t01-r013 ;
+        st:column e:u-t01-c006 ;
+        st:value "X" .
+
+    e:m-t01-r013-t01-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r013-c007 ;
+        st:activity e:u-t01-r013 ;
+        st:column e:u-t01-c007 ;
+        st:value "X" .
+
+    e:m-t01-r013-t01-c012 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r013-c012 ;
+        st:activity e:u-t01-r013 ;
+        st:column e:u-t01-c012 ;
+        st:value "X" .
+
+    e:m-t01-r013-t01-c016 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r013-c016 ;
+        st:activity e:u-t01-r013 ;
+        st:column e:u-t01-c016 ;
+        st:value "X" .
+
+    e:m-t01-r014-t01-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r014-c002 ;
+        st:activity e:u-t01-r014 ;
+        st:column e:u-t01-c002 ;
+        st:value "X" .
+
+    e:m-t01-r014-t01-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r014-c004 ;
+        st:activity e:u-t01-r014 ;
+        st:column e:u-t01-c004 ;
+        st:value "See instructions" .
+
+    e:m-t01-r014-t01-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r014-c005 ;
+        st:activity e:u-t01-r014 ;
+        st:column e:u-t01-c005 ;
+        st:value "See instructions" .
+
+    e:m-t01-r014-t01-c006 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r014-c006 ;
+        st:activity e:u-t01-r014 ;
+        st:column e:u-t01-c006 ;
+        st:value "See instructions" .
+
+    e:m-t01-r014-t01-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r014-c007 ;
+        st:activity e:u-t01-r014 ;
+        st:column e:u-t01-c007 ;
+        st:value "X" .
+
+    e:m-t01-r014-t01-c008 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r014-c008 ;
+        st:activity e:u-t01-r014 ;
+        st:column e:u-t01-c008 ;
+        st:value "X" .
+
+    e:m-t01-r014-t01-c009 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r014-c009 ;
+        st:activity e:u-t01-r014 ;
+        st:column e:u-t01-c009 ;
+        st:value "X" .
+
+    e:m-t01-r014-t01-c010 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r014-c010 ;
+        st:activity e:u-t01-r014 ;
+        st:column e:u-t01-c010 ;
+        st:value "X" .
+
+    e:m-t01-r014-t01-c011 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r014-c011 ;
+        st:activity e:u-t01-r014 ;
+        st:column e:u-t01-c011 ;
+        st:value "X" .
+
+    e:m-t01-r014-t01-c012 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r014-c012 ;
+        st:activity e:u-t01-r014 ;
+        st:column e:u-t01-c012 ;
+        st:value "X" .
+
+    e:m-t01-r014-t01-c013 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r014-c013 ;
+        st:activity e:u-t01-r014 ;
+        st:column e:u-t01-c013 ;
+        st:value "X" .
+
+    e:m-t01-r014-t01-c014 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r014-c014 ;
+        st:activity e:u-t01-r014 ;
+        st:column e:u-t01-c014 ;
+        st:value "X" .
+
+    e:m-t01-r014-t01-c015 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r014-c015 ;
+        st:activity e:u-t01-r014 ;
+        st:column e:u-t01-c015 ;
+        st:value "X" .
+
+    e:m-t01-r014-t01-c016 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r014-c016 ;
+        st:activity e:u-t01-r014 ;
+        st:column e:u-t01-c016 ;
+        st:value "X" .
+
+    e:m-t01-r015-t01-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r015-c002 ;
+        st:activity e:u-t01-r015 ;
+        st:column e:u-t01-c002 ;
+        st:value "X" .
+
+    e:m-t01-r015-t01-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r015-c004 ;
+        st:activity e:u-t01-r015 ;
+        st:column e:u-t01-c004 ;
+        st:value "X" .
+
+    e:m-t01-r015-t01-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r015-c005 ;
+        st:activity e:u-t01-r015 ;
+        st:column e:u-t01-c005 ;
+        st:value "X" .
+
+    e:m-t01-r015-t01-c006 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r015-c006 ;
+        st:activity e:u-t01-r015 ;
+        st:column e:u-t01-c006 ;
+        st:value "X" .
+
+    e:m-t01-r015-t01-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r015-c007 ;
+        st:activity e:u-t01-r015 ;
+        st:column e:u-t01-c007 ;
+        st:value "X" .
+
+    e:m-t01-r015-t01-c008 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r015-c008 ;
+        st:activity e:u-t01-r015 ;
+        st:column e:u-t01-c008 ;
+        st:value "X" .
+
+    e:m-t01-r015-t01-c009 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r015-c009 ;
+        st:activity e:u-t01-r015 ;
+        st:column e:u-t01-c009 ;
+        st:value "X" .
+
+    e:m-t01-r015-t01-c010 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r015-c010 ;
+        st:activity e:u-t01-r015 ;
+        st:column e:u-t01-c010 ;
+        st:value "X" .
+
+    e:m-t01-r015-t01-c011 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r015-c011 ;
+        st:activity e:u-t01-r015 ;
+        st:column e:u-t01-c011 ;
+        st:value "X" .
+
+    e:m-t01-r015-t01-c012 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r015-c012 ;
+        st:activity e:u-t01-r015 ;
+        st:column e:u-t01-c012 ;
+        st:value "X" .
+
+    e:m-t01-r015-t01-c013 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r015-c013 ;
+        st:activity e:u-t01-r015 ;
+        st:column e:u-t01-c013 ;
+        st:value "X" .
+
+    e:m-t01-r015-t01-c014 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r015-c014 ;
+        st:activity e:u-t01-r015 ;
+        st:column e:u-t01-c014 ;
+        st:value "X" .
+
+    e:m-t01-r015-t01-c015 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r015-c015 ;
+        st:activity e:u-t01-r015 ;
+        st:column e:u-t01-c015 ;
+        st:value "X" .
+
+    e:m-t01-r015-t01-c016 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r015-c016 ;
+        st:activity e:u-t01-r015 ;
+        st:column e:u-t01-c016 ;
+        st:value "X" .
+
+    e:m-t01-r015-t02-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r005-c002 ;
+        st:activity e:u-t01-r015 ;
+        st:column e:u-t02-c002 ;
+        st:value "X" .
+
+    e:m-t01-r015-t02-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r005-c003 ;
+        st:activity e:u-t01-r015 ;
+        st:column e:u-t02-c003 ;
+        st:value "X" .
+
+    e:m-t01-r016-t01-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r016-c002 ;
+        st:activity e:u-t01-r016 ;
+        st:column e:u-t01-c002 ;
+        st:value "X" .
+
+    e:m-t01-r016-t01-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r016-c004 ;
+        st:activity e:u-t01-r016 ;
+        st:column e:u-t01-c004 ;
+        st:value "X" .
+
+    e:m-t01-r016-t01-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r016-c007 ;
+        st:activity e:u-t01-r016 ;
+        st:column e:u-t01-c007 ;
+        st:value "X" .
+
+    e:m-t01-r016-t01-c012 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r016-c012 ;
+        st:activity e:u-t01-r016 ;
+        st:column e:u-t01-c012 ;
+        st:value "X" .
+
+    e:m-t01-r016-t01-c016 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r016-c016 ;
+        st:activity e:u-t01-r016 ;
+        st:column e:u-t01-c016 ;
+        st:value "X" .
+
+    e:m-t01-r017-t01-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r017-c002 ;
+        st:activity e:u-t01-r017 ;
+        st:column e:u-t01-c002 ;
+        st:value "X" .
+
+    e:m-t01-r017-t01-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r017-c004 ;
+        st:activity e:u-t01-r017 ;
+        st:column e:u-t01-c004 ;
+        st:value "See instructions" .
+
+    e:m-t01-r017-t01-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r017-c005 ;
+        st:activity e:u-t01-r017 ;
+        st:column e:u-t01-c005 ;
+        st:value "See instructions" .
+
+    e:m-t01-r017-t01-c006 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r017-c006 ;
+        st:activity e:u-t01-r017 ;
+        st:column e:u-t01-c006 ;
+        st:value "See instructions" .
+
+    e:m-t01-r017-t01-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r017-c007 ;
+        st:activity e:u-t01-r017 ;
+        st:column e:u-t01-c007 ;
+        st:value "See instructions" .
+
+    e:m-t01-r017-t01-c008 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r017-c008 ;
+        st:activity e:u-t01-r017 ;
+        st:column e:u-t01-c008 ;
+        st:value "See instructions" .
+
+    e:m-t01-r017-t01-c009 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r017-c009 ;
+        st:activity e:u-t01-r017 ;
+        st:column e:u-t01-c009 ;
+        st:value "See instructions" .
+
+    e:m-t01-r017-t01-c010 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r017-c010 ;
+        st:activity e:u-t01-r017 ;
+        st:column e:u-t01-c010 ;
+        st:value "See instructions" .
+
+    e:m-t01-r017-t01-c011 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r017-c011 ;
+        st:activity e:u-t01-r017 ;
+        st:column e:u-t01-c011 ;
+        st:value "See instructions" .
+
+    e:m-t01-r017-t01-c012 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r017-c012 ;
+        st:activity e:u-t01-r017 ;
+        st:column e:u-t01-c012 ;
+        st:value "See instructions" .
+
+    e:m-t01-r017-t01-c013 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r017-c013 ;
+        st:activity e:u-t01-r017 ;
+        st:column e:u-t01-c013 ;
+        st:value "See instructions" .
+
+    e:m-t01-r017-t01-c014 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r017-c014 ;
+        st:activity e:u-t01-r017 ;
+        st:column e:u-t01-c014 ;
+        st:value "See instructions" .
+
+    e:m-t01-r017-t01-c015 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r017-c015 ;
+        st:activity e:u-t01-r017 ;
+        st:column e:u-t01-c015 ;
+        st:value "See instructions" .
+
+    e:m-t01-r017-t01-c016 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r017-c016 ;
+        st:activity e:u-t01-r017 ;
+        st:column e:u-t01-c016 ;
+        st:value "X" .
+
+    e:m-t01-r018-t01-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r018-c003 ;
+        st:activity e:u-t01-r018 ;
+        st:column e:u-t01-c003 ;
+        st:value "X" .
+
+    e:m-t01-r018-t01-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r018-c004 ;
+        st:activity e:u-t01-r018 ;
+        st:column e:u-t01-c004 ;
+        st:value "X" .
+
+    e:m-t01-r018-t01-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r018-c005 ;
+        st:activity e:u-t01-r018 ;
+        st:column e:u-t01-c005 ;
+        st:value "X" .
+
+    e:m-t01-r018-t01-c006 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r018-c006 ;
+        st:activity e:u-t01-r018 ;
+        st:column e:u-t01-c006 ;
+        st:value "X" .
+
+    e:m-t01-r018-t01-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r018-c007 ;
+        st:activity e:u-t01-r018 ;
+        st:column e:u-t01-c007 ;
+        st:value "X" .
+
+    e:m-t01-r018-t01-c008 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r018-c008 ;
+        st:activity e:u-t01-r018 ;
+        st:column e:u-t01-c008 ;
+        st:value "X" .
+
+    e:m-t01-r018-t01-c009 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r018-c009 ;
+        st:activity e:u-t01-r018 ;
+        st:column e:u-t01-c009 ;
+        st:value "X" .
+
+    e:m-t01-r018-t01-c011 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r018-c011 ;
+        st:activity e:u-t01-r018 ;
+        st:column e:u-t01-c011 ;
+        st:value "X" .
+
+    e:m-t01-r018-t01-c012 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r018-c012 ;
+        st:activity e:u-t01-r018 ;
+        st:column e:u-t01-c012 ;
+        st:value "X" .
+
+    e:m-t01-r018-t01-c016 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r018-c016 ;
+        st:activity e:u-t01-r018 ;
+        st:column e:u-t01-c016 ;
+        st:value "X" .
+
+    e:m-t01-r019-t01-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r019-c003 ;
+        st:activity e:u-t01-r019 ;
+        st:column e:u-t01-c003 ;
+        st:value "X" .
+
+    e:m-t01-r019-t01-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r019-c007 ;
+        st:activity e:u-t01-r019 ;
+        st:column e:u-t01-c007 ;
+        st:value "X" .
+
+    e:m-t01-r020-t01-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r020-c003 ;
+        st:activity e:u-t01-r020 ;
+        st:column e:u-t01-c003 ;
+        st:value "X" .
+
+    e:m-t01-r020-t01-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r020-c004 ;
+        st:activity e:u-t01-r020 ;
+        st:column e:u-t01-c004 ;
+        st:value "X" .
+
+    e:m-t01-r020-t01-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r020-c005 ;
+        st:activity e:u-t01-r020 ;
+        st:column e:u-t01-c005 ;
+        st:value "X" .
+
+    e:m-t01-r020-t01-c006 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r020-c006 ;
+        st:activity e:u-t01-r020 ;
+        st:column e:u-t01-c006 ;
+        st:value "X" .
+
+    e:m-t01-r020-t01-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r020-c007 ;
+        st:activity e:u-t01-r020 ;
+        st:column e:u-t01-c007 ;
+        st:value "X" .
+
+    e:m-t01-r020-t01-c008 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r020-c008 ;
+        st:activity e:u-t01-r020 ;
+        st:column e:u-t01-c008 ;
+        st:value "X" .
+
+    e:m-t01-r020-t01-c009 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r020-c009 ;
+        st:activity e:u-t01-r020 ;
+        st:column e:u-t01-c009 ;
+        st:value "X" .
+
+    e:m-t01-r020-t01-c011 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r020-c011 ;
+        st:activity e:u-t01-r020 ;
+        st:column e:u-t01-c011 ;
+        st:value "X" .
+
+    e:m-t01-r020-t01-c012 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r020-c012 ;
+        st:activity e:u-t01-r020 ;
+        st:column e:u-t01-c012 ;
+        st:value "X" .
+
+    e:m-t01-r020-t01-c016 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r020-c016 ;
+        st:activity e:u-t01-r020 ;
+        st:column e:u-t01-c016 ;
+        st:value "X" .
+
+    e:m-t01-r021-t01-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r021-c003 ;
+        st:activity e:u-t01-r021 ;
+        st:column e:u-t01-c003 ;
+        st:value "X" .
+
+    e:m-t01-r021-t01-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r021-c004 ;
+        st:activity e:u-t01-r021 ;
+        st:column e:u-t01-c004 ;
+        st:value "X" .
+
+    e:m-t01-r021-t01-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r021-c005 ;
+        st:activity e:u-t01-r021 ;
+        st:column e:u-t01-c005 ;
+        st:value "X" .
+
+    e:m-t01-r021-t01-c006 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r021-c006 ;
+        st:activity e:u-t01-r021 ;
+        st:column e:u-t01-c006 ;
+        st:value "X" .
+
+    e:m-t01-r021-t01-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r021-c007 ;
+        st:activity e:u-t01-r021 ;
+        st:column e:u-t01-c007 ;
+        st:value "X" .
+
+    e:m-t01-r021-t01-c008 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r021-c008 ;
+        st:activity e:u-t01-r021 ;
+        st:column e:u-t01-c008 ;
+        st:value "X" .
+
+    e:m-t01-r021-t01-c009 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r021-c009 ;
+        st:activity e:u-t01-r021 ;
+        st:column e:u-t01-c009 ;
+        st:value "X" .
+
+    e:m-t01-r021-t01-c010 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r021-c010 ;
+        st:activity e:u-t01-r021 ;
+        st:column e:u-t01-c010 ;
+        st:value "X" .
+
+    e:m-t01-r021-t01-c011 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r021-c011 ;
+        st:activity e:u-t01-r021 ;
+        st:column e:u-t01-c011 ;
+        st:value "X" .
+
+    e:m-t01-r021-t01-c012 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r021-c012 ;
+        st:activity e:u-t01-r021 ;
+        st:column e:u-t01-c012 ;
+        st:value "X" .
+
+    e:m-t01-r021-t01-c013 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r021-c013 ;
+        st:activity e:u-t01-r021 ;
+        st:column e:u-t01-c013 ;
+        st:value "X" .
+
+    e:m-t01-r021-t01-c014 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r021-c014 ;
+        st:activity e:u-t01-r021 ;
+        st:column e:u-t01-c014 ;
+        st:value "X" .
+
+    e:m-t01-r021-t01-c015 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r021-c015 ;
+        st:activity e:u-t01-r021 ;
+        st:column e:u-t01-c015 ;
+        st:value "X" .
+
+    e:m-t01-r021-t01-c016 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r021-c016 ;
+        st:activity e:u-t01-r021 ;
+        st:column e:u-t01-c016 ;
+        st:value "X" .
+
+    e:m-t01-r022-t01-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r022-c003 ;
+        st:activity e:u-t01-r022 ;
+        st:column e:u-t01-c003 ;
+        st:value "X" .
+
+    e:m-t01-r022-t01-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r022-c004 ;
+        st:activity e:u-t01-r022 ;
+        st:column e:u-t01-c004 ;
+        st:value "See instructions" .
+
+    e:m-t01-r022-t01-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r022-c005 ;
+        st:activity e:u-t01-r022 ;
+        st:column e:u-t01-c005 ;
+        st:value "See instructions" .
+
+    e:m-t01-r022-t01-c006 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r022-c006 ;
+        st:activity e:u-t01-r022 ;
+        st:column e:u-t01-c006 ;
+        st:value "See instructions" .
+
+    e:m-t01-r022-t01-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r022-c007 ;
+        st:activity e:u-t01-r022 ;
+        st:column e:u-t01-c007 ;
+        st:value "See instructions" .
+
+    e:m-t01-r022-t01-c008 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r022-c008 ;
+        st:activity e:u-t01-r022 ;
+        st:column e:u-t01-c008 ;
+        st:value "See instructions" .
+
+    e:m-t01-r022-t01-c009 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r022-c009 ;
+        st:activity e:u-t01-r022 ;
+        st:column e:u-t01-c009 ;
+        st:value "See instructions" .
+
+    e:m-t01-r022-t01-c010 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r022-c010 ;
+        st:activity e:u-t01-r022 ;
+        st:column e:u-t01-c010 ;
+        st:value "See instructions" .
+
+    e:m-t01-r022-t01-c011 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r022-c011 ;
+        st:activity e:u-t01-r022 ;
+        st:column e:u-t01-c011 ;
+        st:value "See instructions" .
+
+    e:m-t01-r022-t01-c012 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r022-c012 ;
+        st:activity e:u-t01-r022 ;
+        st:column e:u-t01-c012 ;
+        st:value "See instructions" .
+
+    e:m-t01-r022-t01-c013 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r022-c013 ;
+        st:activity e:u-t01-r022 ;
+        st:column e:u-t01-c013 ;
+        st:value "See instructions" .
+
+    e:m-t01-r022-t01-c014 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r022-c014 ;
+        st:activity e:u-t01-r022 ;
+        st:column e:u-t01-c014 ;
+        st:value "See instructions" .
+
+    e:m-t01-r022-t01-c015 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r022-c015 ;
+        st:activity e:u-t01-r022 ;
+        st:column e:u-t01-c015 ;
+        st:value "See instructions" .
+
+    e:m-t01-r022-t01-c016 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r022-c016 ;
+        st:activity e:u-t01-r022 ;
+        st:column e:u-t01-c016 ;
+        st:value "X" .
+
+    e:m-t01-r023-t01-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r023-c003 ;
+        st:activity e:u-t01-r023 ;
+        st:column e:u-t01-c003 ;
+        st:value "X" .
+
+    e:m-t01-r023-t01-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r023-c004 ;
+        st:activity e:u-t01-r023 ;
+        st:column e:u-t01-c004 ;
+        st:value "See instructions" .
+
+    e:m-t01-r023-t01-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r023-c005 ;
+        st:activity e:u-t01-r023 ;
+        st:column e:u-t01-c005 ;
+        st:value "See instructions" .
+
+    e:m-t01-r023-t01-c006 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r023-c006 ;
+        st:activity e:u-t01-r023 ;
+        st:column e:u-t01-c006 ;
+        st:value "See instructions" .
+
+    e:m-t01-r023-t01-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r023-c007 ;
+        st:activity e:u-t01-r023 ;
+        st:column e:u-t01-c007 ;
+        st:value "See instructions" .
+
+    e:m-t01-r023-t01-c008 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r023-c008 ;
+        st:activity e:u-t01-r023 ;
+        st:column e:u-t01-c008 ;
+        st:value "See instructions" .
+
+    e:m-t01-r023-t01-c009 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r023-c009 ;
+        st:activity e:u-t01-r023 ;
+        st:column e:u-t01-c009 ;
+        st:value "See instructions" .
+
+    e:m-t01-r023-t01-c010 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r023-c010 ;
+        st:activity e:u-t01-r023 ;
+        st:column e:u-t01-c010 ;
+        st:value "See instructions" .
+
+    e:m-t01-r023-t01-c011 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r023-c011 ;
+        st:activity e:u-t01-r023 ;
+        st:column e:u-t01-c011 ;
+        st:value "See instructions" .
+
+    e:m-t01-r023-t01-c012 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r023-c012 ;
+        st:activity e:u-t01-r023 ;
+        st:column e:u-t01-c012 ;
+        st:value "See instructions" .
+
+    e:m-t01-r023-t01-c013 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r023-c013 ;
+        st:activity e:u-t01-r023 ;
+        st:column e:u-t01-c013 ;
+        st:value "See instructions" .
+
+    e:m-t01-r023-t01-c014 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r023-c014 ;
+        st:activity e:u-t01-r023 ;
+        st:column e:u-t01-c014 ;
+        st:value "See instructions" .
+
+    e:m-t01-r023-t01-c015 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r023-c015 ;
+        st:activity e:u-t01-r023 ;
+        st:column e:u-t01-c015 ;
+        st:value "See instructions" .
+
+    e:m-t01-r023-t01-c016 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r023-c016 ;
+        st:activity e:u-t01-r023 ;
+        st:column e:u-t01-c016 ;
+        st:value "X" .
+
+    e:m-t01-r024-t01-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r024-c002 ;
+        st:activity e:u-t01-r024 ;
+        st:column e:u-t01-c002 ;
+        st:value "X" .
+
+    e:m-t01-r024-t01-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r024-c004 ;
+        st:activity e:u-t01-r024 ;
+        st:column e:u-t01-c004 ;
+        st:value "See instructions" .
+
+    e:m-t01-r024-t01-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r024-c005 ;
+        st:activity e:u-t01-r024 ;
+        st:column e:u-t01-c005 ;
+        st:value "See instructions" .
+
+    e:m-t01-r024-t01-c006 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r024-c006 ;
+        st:activity e:u-t01-r024 ;
+        st:column e:u-t01-c006 ;
+        st:value "See instructions" .
+
+    e:m-t01-r024-t01-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r024-c007 ;
+        st:activity e:u-t01-r024 ;
+        st:column e:u-t01-c007 ;
+        st:value "See instructions" .
+
+    e:m-t01-r024-t01-c008 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r024-c008 ;
+        st:activity e:u-t01-r024 ;
+        st:column e:u-t01-c008 ;
+        st:value "See instructions" .
+
+    e:m-t01-r024-t01-c009 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r024-c009 ;
+        st:activity e:u-t01-r024 ;
+        st:column e:u-t01-c009 ;
+        st:value "See instructions" .
+
+    e:m-t01-r024-t01-c010 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r024-c010 ;
+        st:activity e:u-t01-r024 ;
+        st:column e:u-t01-c010 ;
+        st:value "See instructions" .
+
+    e:m-t01-r024-t01-c011 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r024-c011 ;
+        st:activity e:u-t01-r024 ;
+        st:column e:u-t01-c011 ;
+        st:value "See instructions" .
+
+    e:m-t01-r024-t01-c012 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r024-c012 ;
+        st:activity e:u-t01-r024 ;
+        st:column e:u-t01-c012 ;
+        st:value "See instructions" .
+
+    e:m-t01-r024-t01-c013 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r024-c013 ;
+        st:activity e:u-t01-r024 ;
+        st:column e:u-t01-c013 ;
+        st:value "See instructions" .
+
+    e:m-t01-r024-t01-c014 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r024-c014 ;
+        st:activity e:u-t01-r024 ;
+        st:column e:u-t01-c014 ;
+        st:value "See instructions" .
+
+    e:m-t01-r024-t01-c015 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r024-c015 ;
+        st:activity e:u-t01-r024 ;
+        st:column e:u-t01-c015 ;
+        st:value "See instructions" .
+
+    e:m-t01-r024-t01-c016 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r024-c016 ;
+        st:activity e:u-t01-r024 ;
+        st:column e:u-t01-c016 ;
+        st:value "X" .
+
+    e:m-t01-r025-t01-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r025-c004 ;
+        st:activity e:u-t01-r025 ;
+        st:column e:u-t01-c004 ;
+        st:value "See instructions" .
+
+    e:m-t01-r025-t01-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r025-c005 ;
+        st:activity e:u-t01-r025 ;
+        st:column e:u-t01-c005 ;
+        st:value "See instructions" .
+
+    e:m-t01-r025-t01-c006 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r025-c006 ;
+        st:activity e:u-t01-r025 ;
+        st:column e:u-t01-c006 ;
+        st:value "See instructions" .
+
+    e:m-t01-r025-t01-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r025-c007 ;
+        st:activity e:u-t01-r025 ;
+        st:column e:u-t01-c007 ;
+        st:value "X" .
+
+    e:m-t01-r025-t01-c008 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r025-c008 ;
+        st:activity e:u-t01-r025 ;
+        st:column e:u-t01-c008 ;
+        st:value "X" .
+
+    e:m-t01-r025-t01-c009 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r025-c009 ;
+        st:activity e:u-t01-r025 ;
+        st:column e:u-t01-c009 ;
+        st:value "X" .
+
+    e:m-t01-r025-t01-c010 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r025-c010 ;
+        st:activity e:u-t01-r025 ;
+        st:column e:u-t01-c010 ;
+        st:value "X" .
+
+    e:m-t01-r025-t01-c011 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r025-c011 ;
+        st:activity e:u-t01-r025 ;
+        st:column e:u-t01-c011 ;
+        st:value "X" .
+
+    e:m-t01-r025-t01-c012 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r025-c012 ;
+        st:activity e:u-t01-r025 ;
+        st:column e:u-t01-c012 ;
+        st:value "X" .
+
+    e:m-t01-r025-t01-c013 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r025-c013 ;
+        st:activity e:u-t01-r025 ;
+        st:column e:u-t01-c013 ;
+        st:value "X" .
+
+    e:m-t01-r025-t01-c014 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r025-c014 ;
+        st:activity e:u-t01-r025 ;
+        st:column e:u-t01-c014 ;
+        st:value "X" .
+
+    e:m-t01-r025-t01-c015 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r025-c015 ;
+        st:activity e:u-t01-r025 ;
+        st:column e:u-t01-c015 ;
+        st:value "X" .
+
+    e:m-t01-r026-t01-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r026-c004 ;
+        st:activity e:u-t01-r026 ;
+        st:column e:u-t01-c004 ;
+        st:value "See instructions" .
+
+    e:m-t01-r026-t01-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r026-c005 ;
+        st:activity e:u-t01-r026 ;
+        st:column e:u-t01-c005 ;
+        st:value "See instructions" .
+
+    e:m-t01-r026-t01-c006 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r026-c006 ;
+        st:activity e:u-t01-r026 ;
+        st:column e:u-t01-c006 ;
+        st:value "See instructions" .
+
+    e:m-t01-r026-t01-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r026-c007 ;
+        st:activity e:u-t01-r026 ;
+        st:column e:u-t01-c007 ;
+        st:value "See instructions" .
+
+    e:m-t01-r026-t01-c008 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r026-c008 ;
+        st:activity e:u-t01-r026 ;
+        st:column e:u-t01-c008 ;
+        st:value "See instructions" .
+
+    e:m-t01-r026-t01-c009 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r026-c009 ;
+        st:activity e:u-t01-r026 ;
+        st:column e:u-t01-c009 ;
+        st:value "See instructions" .
+
+    e:m-t01-r026-t01-c010 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r026-c010 ;
+        st:activity e:u-t01-r026 ;
+        st:column e:u-t01-c010 ;
+        st:value "See instructions" .
+
+    e:m-t01-r026-t01-c011 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r026-c011 ;
+        st:activity e:u-t01-r026 ;
+        st:column e:u-t01-c011 ;
+        st:value "See instructions" .
+
+    e:m-t01-r026-t01-c012 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r026-c012 ;
+        st:activity e:u-t01-r026 ;
+        st:column e:u-t01-c012 ;
+        st:value "See instructions" .
+
+    e:m-t01-r026-t01-c013 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r026-c013 ;
+        st:activity e:u-t01-r026 ;
+        st:column e:u-t01-c013 ;
+        st:value "See instructions" .
+
+    e:m-t01-r026-t01-c014 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r026-c014 ;
+        st:activity e:u-t01-r026 ;
+        st:column e:u-t01-c014 ;
+        st:value "See instructions" .
+
+    e:m-t01-r026-t01-c015 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r026-c015 ;
+        st:activity e:u-t01-r026 ;
+        st:column e:u-t01-c015 ;
+        st:value "See instructions" .
+
+    e:m-t01-r027-t01-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r027-c004 ;
+        st:activity e:u-t01-r027 ;
+        st:column e:u-t01-c004 ;
+        st:value "See instructions" .
+
+    e:m-t01-r027-t01-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r027-c005 ;
+        st:activity e:u-t01-r027 ;
+        st:column e:u-t01-c005 ;
+        st:value "See instructions" .
+
+    e:m-t01-r027-t01-c006 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r027-c006 ;
+        st:activity e:u-t01-r027 ;
+        st:column e:u-t01-c006 ;
+        st:value "See instructions" .
+
+    e:m-t01-r027-t01-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r027-c007 ;
+        st:activity e:u-t01-r027 ;
+        st:column e:u-t01-c007 ;
+        st:value "See instructions" .
+
+    e:m-t01-r027-t01-c008 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r027-c008 ;
+        st:activity e:u-t01-r027 ;
+        st:column e:u-t01-c008 ;
+        st:value "See instructions" .
+
+    e:m-t01-r027-t01-c009 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r027-c009 ;
+        st:activity e:u-t01-r027 ;
+        st:column e:u-t01-c009 ;
+        st:value "See instructions" .
+
+    e:m-t01-r027-t01-c010 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r027-c010 ;
+        st:activity e:u-t01-r027 ;
+        st:column e:u-t01-c010 ;
+        st:value "See instructions" .
+
+    e:m-t01-r027-t01-c011 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r027-c011 ;
+        st:activity e:u-t01-r027 ;
+        st:column e:u-t01-c011 ;
+        st:value "See instructions" .
+
+    e:m-t01-r027-t01-c012 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r027-c012 ;
+        st:activity e:u-t01-r027 ;
+        st:column e:u-t01-c012 ;
+        st:value "See instructions" .
+
+    e:m-t01-r027-t01-c013 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r027-c013 ;
+        st:activity e:u-t01-r027 ;
+        st:column e:u-t01-c013 ;
+        st:value "See instructions" .
+
+    e:m-t01-r027-t01-c014 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r027-c014 ;
+        st:activity e:u-t01-r027 ;
+        st:column e:u-t01-c014 ;
+        st:value "See instructions" .
+
+    e:m-t01-r027-t01-c015 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r027-c015 ;
+        st:activity e:u-t01-r027 ;
+        st:column e:u-t01-c015 ;
+        st:value "See instructions" .
+
+    e:m-t01-r029-t01-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r029-c005 ;
+        st:activity e:u-t01-r029 ;
+        st:column e:u-t01-c005 ;
+        st:value "See Section 1.3.1" .
+
+    e:m-t01-r029-t01-c006 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r029-c006 ;
+        st:activity e:u-t01-r029 ;
+        st:column e:u-t01-c006 ;
+        st:value "See Section 1.3.1" .
+
+    e:m-t01-r029-t01-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r029-c007 ;
+        st:activity e:u-t01-r029 ;
+        st:column e:u-t01-c007 ;
+        st:value "See Section 1.3.1" .
+
+    e:m-t01-r029-t01-c008 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r029-c008 ;
+        st:activity e:u-t01-r029 ;
+        st:column e:u-t01-c008 ;
+        st:value "See Section 1.3.1" .
+
+    e:m-t01-r029-t01-c009 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r029-c009 ;
+        st:activity e:u-t01-r029 ;
+        st:column e:u-t01-c009 ;
+        st:value "See Section 1.3.1" .
+
+    e:m-t01-r029-t01-c010 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r029-c010 ;
+        st:activity e:u-t01-r029 ;
+        st:column e:u-t01-c010 ;
+        st:value "See Section 1.3.1" .
+
+    e:m-t01-r029-t01-c011 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r029-c011 ;
+        st:activity e:u-t01-r029 ;
+        st:column e:u-t01-c011 ;
+        st:value "See Section 1.3.1" .
+
+    e:m-t01-r029-t01-c012 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r029-c012 ;
+        st:activity e:u-t01-r029 ;
+        st:column e:u-t01-c012 ;
+        st:value "See Section 1.3.1" .
+
+    e:m-t01-r029-t01-c013 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r029-c013 ;
+        st:activity e:u-t01-r029 ;
+        st:column e:u-t01-c013 ;
+        st:value "See Section 1.3.1" .
+
+    e:m-t01-r029-t01-c014 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r029-c014 ;
+        st:activity e:u-t01-r029 ;
+        st:column e:u-t01-c014 ;
+        st:value "See Section 1.3.1" .
+
+    e:m-t01-r029-t01-c015 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r029-c015 ;
+        st:activity e:u-t01-r029 ;
+        st:column e:u-t01-c015 ;
+        st:value "See Section 1.3.1" .
+
+    e:m-t01-r029-t01-c016 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r029-c016 ;
+        st:activity e:u-t01-r029 ;
+        st:column e:u-t01-c016 ;
+        st:value "See Section 1.3.1" .
+
+    e:m-t01-r030-t01-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r030-c005 ;
+        st:activity e:u-t01-r030 ;
+        st:column e:u-t01-c005 ;
+        st:value "See Section 1.3.1" .
+
+    e:m-t01-r030-t01-c006 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r030-c006 ;
+        st:activity e:u-t01-r030 ;
+        st:column e:u-t01-c006 ;
+        st:value "See Section 1.3.1" .
+
+    e:m-t01-r030-t01-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r030-c007 ;
+        st:activity e:u-t01-r030 ;
+        st:column e:u-t01-c007 ;
+        st:value "See Section 1.3.1" .
+
+    e:m-t01-r030-t01-c008 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r030-c008 ;
+        st:activity e:u-t01-r030 ;
+        st:column e:u-t01-c008 ;
+        st:value "See Section 1.3.1" .
+
+    e:m-t01-r030-t01-c009 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r030-c009 ;
+        st:activity e:u-t01-r030 ;
+        st:column e:u-t01-c009 ;
+        st:value "See Section 1.3.1" .
+
+    e:m-t01-r030-t01-c010 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r030-c010 ;
+        st:activity e:u-t01-r030 ;
+        st:column e:u-t01-c010 ;
+        st:value "See Section 1.3.1" .
+
+    e:m-t01-r030-t01-c011 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r030-c011 ;
+        st:activity e:u-t01-r030 ;
+        st:column e:u-t01-c011 ;
+        st:value "See Section 1.3.1" .
+
+    e:m-t01-r030-t01-c012 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r030-c012 ;
+        st:activity e:u-t01-r030 ;
+        st:column e:u-t01-c012 ;
+        st:value "See Section 1.3.1" .
+
+    e:m-t01-r030-t01-c013 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r030-c013 ;
+        st:activity e:u-t01-r030 ;
+        st:column e:u-t01-c013 ;
+        st:value "See Section 1.3.1" .
+
+    e:m-t01-r030-t01-c014 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r030-c014 ;
+        st:activity e:u-t01-r030 ;
+        st:column e:u-t01-c014 ;
+        st:value "See Section 1.3.1" .
+
+    e:m-t01-r030-t01-c015 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r030-c015 ;
+        st:activity e:u-t01-r030 ;
+        st:column e:u-t01-c015 ;
+        st:value "See Section 1.3.1" .
+
+    e:m-t01-r030-t01-c016 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r030-c016 ;
+        st:activity e:u-t01-r030 ;
+        st:column e:u-t01-c016 ;
+        st:value "See Section 1.3.1" .
+
+    e:m-t01-r031-t01-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r031-c004 ;
+        st:activity e:u-t01-r031 ;
+        st:column e:u-t01-c004 ;
+        st:value "See instructions" .
+
+    e:m-t01-r031-t01-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r031-c005 ;
+        st:activity e:u-t01-r031 ;
+        st:column e:u-t01-c005 ;
+        st:value "See instructions" .
+
+    e:m-t01-r031-t01-c006 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r031-c006 ;
+        st:activity e:u-t01-r031 ;
+        st:column e:u-t01-c006 ;
+        st:value "See instructions" .
+
+    e:m-t01-r031-t01-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r031-c007 ;
+        st:activity e:u-t01-r031 ;
+        st:column e:u-t01-c007 ;
+        st:value "See instructions" .
+
+    e:m-t01-r031-t01-c008 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r031-c008 ;
+        st:activity e:u-t01-r031 ;
+        st:column e:u-t01-c008 ;
+        st:value "See instructions" .
+
+    e:m-t01-r031-t01-c009 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r031-c009 ;
+        st:activity e:u-t01-r031 ;
+        st:column e:u-t01-c009 ;
+        st:value "See instructions" .
+
+    e:m-t01-r031-t01-c010 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r031-c010 ;
+        st:activity e:u-t01-r031 ;
+        st:column e:u-t01-c010 ;
+        st:value "See instructions" .
+
+    e:m-t01-r031-t01-c011 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r031-c011 ;
+        st:activity e:u-t01-r031 ;
+        st:column e:u-t01-c011 ;
+        st:value "See instructions" .
+
+    e:m-t01-r031-t01-c012 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r031-c012 ;
+        st:activity e:u-t01-r031 ;
+        st:column e:u-t01-c012 ;
+        st:value "See instructions" .
+
+    e:m-t01-r031-t01-c013 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r031-c013 ;
+        st:activity e:u-t01-r031 ;
+        st:column e:u-t01-c013 ;
+        st:value "See instructions" .
+
+    e:m-t01-r031-t01-c014 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r031-c014 ;
+        st:activity e:u-t01-r031 ;
+        st:column e:u-t01-c014 ;
+        st:value "See instructions" .
+
+    e:m-t01-r031-t01-c015 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r031-c015 ;
+        st:activity e:u-t01-r031 ;
+        st:column e:u-t01-c015 ;
+        st:value "See instructions" .
+
+    e:m-t01-r031-t02-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r007-c002 ;
+        st:activity e:u-t01-r031 ;
+        st:column e:u-t02-c002 ;
+        st:value "X" .
+
+    e:m-t01-r032-t01-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r032-c004 ;
+        st:activity e:u-t01-r032 ;
+        st:column e:u-t01-c004 ;
+        st:value "See instructions" .
+
+    e:m-t01-r032-t01-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r032-c005 ;
+        st:activity e:u-t01-r032 ;
+        st:column e:u-t01-c005 ;
+        st:value "See instructions" .
+
+    e:m-t01-r032-t01-c006 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r032-c006 ;
+        st:activity e:u-t01-r032 ;
+        st:column e:u-t01-c006 ;
+        st:value "See instructions" .
+
+    e:m-t01-r032-t01-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r032-c007 ;
+        st:activity e:u-t01-r032 ;
+        st:column e:u-t01-c007 ;
+        st:value "See instructions" .
+
+    e:m-t01-r032-t01-c008 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r032-c008 ;
+        st:activity e:u-t01-r032 ;
+        st:column e:u-t01-c008 ;
+        st:value "See instructions" .
+
+    e:m-t01-r032-t01-c009 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r032-c009 ;
+        st:activity e:u-t01-r032 ;
+        st:column e:u-t01-c009 ;
+        st:value "See instructions" .
+
+    e:m-t01-r032-t01-c010 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r032-c010 ;
+        st:activity e:u-t01-r032 ;
+        st:column e:u-t01-c010 ;
+        st:value "See instructions" .
+
+    e:m-t01-r032-t01-c012 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r032-c012 ;
+        st:activity e:u-t01-r032 ;
+        st:column e:u-t01-c012 ;
+        st:value "See instructions" .
+
+    e:m-t01-r032-t01-c013 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r032-c013 ;
+        st:activity e:u-t01-r032 ;
+        st:column e:u-t01-c013 ;
+        st:value "See instructions" .
+
+    e:m-t01-r032-t01-c014 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r032-c014 ;
+        st:activity e:u-t01-r032 ;
+        st:column e:u-t01-c014 ;
+        st:value "See instructions" .
+
+    e:m-t01-r032-t01-c015 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r032-c015 ;
+        st:activity e:u-t01-r032 ;
+        st:column e:u-t01-c015 ;
+        st:value "See instructions" .
+
+    e:m-t03-r002-t03-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r002-c002 ;
+        st:activity e:u-t03-r002 ;
+        st:column e:u-t03-c002 ;
+        st:value "1" .
+
+    e:m-t03-r002-t03-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r002-c003 ;
+        st:activity e:u-t03-r002 ;
+        st:column e:u-t03-c003 ;
+        st:value "1" .
+
+    e:m-t03-r002-t03-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r002-c004 ;
+        st:activity e:u-t03-r002 ;
+        st:column e:u-t03-c004 ;
+        st:value "-1 hr (predose)" .
+
+    e:m-t03-r002-t03-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r002-c005 ;
+        st:activity e:u-t03-r002 ;
+        st:column e:u-t03-c005 ;
+        st:value "X" .
+
+    e:m-t03-r002-t03-c006 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r002-c006 ;
+        st:activity e:u-t03-r002 ;
+        st:column e:u-t03-c006 ;
+        st:value "X" .
+
+    e:m-t03-r003-t03-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r003-c002 ;
+        st:activity e:u-t03-r003 ;
+        st:column e:u-t03-c002 ;
+        st:value "1" .
+
+    e:m-t03-r003-t03-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r003-c003 ;
+        st:activity e:u-t03-r003 ;
+        st:column e:u-t03-c003 ;
+        st:value "2" .
+
+    e:m-t03-r003-t03-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r003-c004 ;
+        st:activity e:u-t03-r003 ;
+        st:column e:u-t03-c004 ;
+        st:value "24 hrs ± 2 postdose" .
+
+    e:m-t03-r003-t03-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r003-c005 ;
+        st:activity e:u-t03-r003 ;
+        st:column e:u-t03-c005 ;
+        st:value "X" .
+
+    e:m-t03-r004-t03-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r004-c002 ;
+        st:activity e:u-t03-r004 ;
+        st:column e:u-t03-c002 ;
+        st:value "1" .
+
+    e:m-t03-r004-t03-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r004-c003 ;
+        st:activity e:u-t03-r004 ;
+        st:column e:u-t03-c003 ;
+        st:value "4 ± 1" .
+
+    e:m-t03-r004-t03-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r004-c004 ;
+        st:activity e:u-t03-r004 ;
+        st:column e:u-t03-c004 ;
+        st:value "48-96 hrs postdose window" .
+
+    e:m-t03-r004-t03-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r004-c005 ;
+        st:activity e:u-t03-r004 ;
+        st:column e:u-t03-c005 ;
+        st:value "X" .
+
+    e:m-t03-r005-t03-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r005-c002 ;
+        st:activity e:u-t03-r005 ;
+        st:column e:u-t03-c002 ;
+        st:value "1" .
+
+    e:m-t03-r005-t03-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r005-c003 ;
+        st:activity e:u-t03-r005 ;
+        st:column e:u-t03-c003 ;
+        st:value "8" .
+
+    e:m-t03-r005-t03-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r005-c004 ;
+        st:activity e:u-t03-r005 ;
+        st:column e:u-t03-c004 ;
+        st:value "-1 hr (predose)" .
+
+    e:m-t03-r005-t03-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r005-c005 ;
+        st:activity e:u-t03-r005 ;
+        st:column e:u-t03-c005 ;
+        st:value "X" .
+
+    e:m-t03-r006-t03-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r006-c002 ;
+        st:activity e:u-t03-r006 ;
+        st:column e:u-t03-c002 ;
+        st:value "1" .
+
+    e:m-t03-r006-t03-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r006-c003 ;
+        st:activity e:u-t03-r006 ;
+        st:column e:u-t03-c003 ;
+        st:value "15" .
+
+    e:m-t03-r006-t03-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r006-c004 ;
+        st:activity e:u-t03-r006 ;
+        st:column e:u-t03-c004 ;
+        st:value "-1 hr (predose)" .
+
+    e:m-t03-r006-t03-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r006-c005 ;
+        st:activity e:u-t03-r006 ;
+        st:column e:u-t03-c005 ;
+        st:value "X" .
+
+    e:m-t03-r006-t03-c006 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r006-c006 ;
+        st:activity e:u-t03-r006 ;
+        st:column e:u-t03-c006 ;
+        st:value "X" .
+
+    e:m-t03-r007-t03-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r007-c002 ;
+        st:activity e:u-t03-r007 ;
+        st:column e:u-t03-c002 ;
+        st:value "1" .
+
+    e:m-t03-r007-t03-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r007-c003 ;
+        st:activity e:u-t03-r007 ;
+        st:column e:u-t03-c003 ;
+        st:value "18 ± 1" .
+
+    e:m-t03-r007-t03-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r007-c004 ;
+        st:activity e:u-t03-r007 ;
+        st:column e:u-t03-c004 ;
+        st:value "48-96 hrs postdose window" .
+
+    e:m-t03-r007-t03-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r007-c005 ;
+        st:activity e:u-t03-r007 ;
+        st:column e:u-t03-c005 ;
+        st:value "X" .
+
+    e:m-t03-r008-t03-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r008-c002 ;
+        st:activity e:u-t03-r008 ;
+        st:column e:u-t03-c002 ;
+        st:value "2" .
+
+    e:m-t03-r008-t03-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r008-c003 ;
+        st:activity e:u-t03-r008 ;
+        st:column e:u-t03-c003 ;
+        st:value "1" .
+
+    e:m-t03-r008-t03-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r008-c004 ;
+        st:activity e:u-t03-r008 ;
+        st:column e:u-t03-c004 ;
+        st:value "-1 hr (predose)" .
+
+    e:m-t03-r008-t03-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r008-c005 ;
+        st:activity e:u-t03-r008 ;
+        st:column e:u-t03-c005 ;
+        st:value "X" .
+
+    e:m-t03-r009-t03-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r009-c002 ;
+        st:activity e:u-t03-r009 ;
+        st:column e:u-t03-c002 ;
+        st:value "2" .
+
+    e:m-t03-r009-t03-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r009-c003 ;
+        st:activity e:u-t03-r009 ;
+        st:column e:u-t03-c003 ;
+        st:value "8" .
+
+    e:m-t03-r009-t03-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r009-c004 ;
+        st:activity e:u-t03-r009 ;
+        st:column e:u-t03-c004 ;
+        st:value "-1 hr (predose)" .
+
+    e:m-t03-r009-t03-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r009-c005 ;
+        st:activity e:u-t03-r009 ;
+        st:column e:u-t03-c005 ;
+        st:value "X" .
+
+    e:m-t03-r009-t03-c006 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r009-c006 ;
+        st:activity e:u-t03-r009 ;
+        st:column e:u-t03-c006 ;
+        st:value "X" .
+
+    e:m-t03-r010-t03-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r010-c002 ;
+        st:activity e:u-t03-r010 ;
+        st:column e:u-t03-c002 ;
+        st:value "2" .
+
+    e:m-t03-r010-t03-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r010-c003 ;
+        st:activity e:u-t03-r010 ;
+        st:column e:u-t03-c003 ;
+        st:value "11 ± 1" .
+
+    e:m-t03-r010-t03-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r010-c004 ;
+        st:activity e:u-t03-r010 ;
+        st:column e:u-t03-c004 ;
+        st:value "48-96 hrs postdose window" .
+
+    e:m-t03-r010-t03-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r010-c005 ;
+        st:activity e:u-t03-r010 ;
+        st:column e:u-t03-c005 ;
+        st:value "X" .
+
+    e:m-t03-r011-t03-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r011-c002 ;
+        st:activity e:u-t03-r011 ;
+        st:column e:u-t03-c002 ;
+        st:value "3" .
+
+    e:m-t03-r011-t03-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r011-c003 ;
+        st:activity e:u-t03-r011 ;
+        st:column e:u-t03-c003 ;
+        st:value "1" .
+
+    e:m-t03-r011-t03-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r011-c004 ;
+        st:activity e:u-t03-r011 ;
+        st:column e:u-t03-c004 ;
+        st:value "-1 hr (predose)" .
+
+    e:m-t03-r011-t03-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r011-c005 ;
+        st:activity e:u-t03-r011 ;
+        st:column e:u-t03-c005 ;
+        st:value "X" .
+
+    e:m-t03-r012-t03-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r012-c002 ;
+        st:activity e:u-t03-r012 ;
+        st:column e:u-t03-c002 ;
+        st:value "3" .
+
+    e:m-t03-r012-t03-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r012-c003 ;
+        st:activity e:u-t03-r012 ;
+        st:column e:u-t03-c003 ;
+        st:value "15" .
+
+    e:m-t03-r012-t03-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r012-c004 ;
+        st:activity e:u-t03-r012 ;
+        st:column e:u-t03-c004 ;
+        st:value "-1 hr (predose)" .
+
+    e:m-t03-r012-t03-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r012-c005 ;
+        st:activity e:u-t03-r012 ;
+        st:column e:u-t03-c005 ;
+        st:value "X" .
+
+    e:m-t03-r013-t03-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r013-c002 ;
+        st:activity e:u-t03-r013 ;
+        st:column e:u-t03-c002 ;
+        st:value "3" .
+
+    e:m-t03-r013-t03-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r013-c003 ;
+        st:activity e:u-t03-r013 ;
+        st:column e:u-t03-c003 ;
+        st:value "18 ± 1" .
+
+    e:m-t03-r013-t03-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r013-c004 ;
+        st:activity e:u-t03-r013 ;
+        st:column e:u-t03-c004 ;
+        st:value "48-96 hrs postdose window" .
+
+    e:m-t03-r013-t03-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r013-c005 ;
+        st:activity e:u-t03-r013 ;
+        st:column e:u-t03-c005 ;
+        st:value "X" .
+
+    e:m-t03-r014-t03-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r014-c002 ;
+        st:activity e:u-t03-r014 ;
+        st:column e:u-t03-c002 ;
+        st:value "4" .
+
+    e:m-t03-r014-t03-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r014-c003 ;
+        st:activity e:u-t03-r014 ;
+        st:column e:u-t03-c003 ;
+        st:value "1" .
+
+    e:m-t03-r014-t03-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r014-c004 ;
+        st:activity e:u-t03-r014 ;
+        st:column e:u-t03-c004 ;
+        st:value "-1 hr (predose)" .
+
+    e:m-t03-r014-t03-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r014-c005 ;
+        st:activity e:u-t03-r014 ;
+        st:column e:u-t03-c005 ;
+        st:value "X" .
+
+    e:m-t03-r014-t03-c006 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r014-c006 ;
+        st:activity e:u-t03-r014 ;
+        st:column e:u-t03-c006 ;
+        st:value "X" .
+
+    e:m-t03-r015-t03-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r015-c002 ;
+        st:activity e:u-t03-r015 ;
+        st:column e:u-t03-c002 ;
+        st:value "5" .
+
+    e:m-t03-r015-t03-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r015-c003 ;
+        st:activity e:u-t03-r015 ;
+        st:column e:u-t03-c003 ;
+        st:value "1" .
+
+    e:m-t03-r015-t03-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r015-c004 ;
+        st:activity e:u-t03-r015 ;
+        st:column e:u-t03-c004 ;
+        st:value "-1 hr (predose)" .
+
+    e:m-t03-r015-t03-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r015-c005 ;
+        st:activity e:u-t03-r015 ;
+        st:column e:u-t03-c005 ;
+        st:value "X" .
+
+    e:m-t03-r016-t03-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r016-c004 ;
+        st:activity e:u-t03-r016 ;
+        st:column e:u-t03-c004 ;
+        st:value "30 days post last dose" .
+
+    e:m-t03-r016-t03-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r016-c005 ;
+        st:activity e:u-t03-r016 ;
+        st:column e:u-t03-c005 ;
+        st:value "X" .
+
+    e:m-t03-r016-t03-c006 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t03-r016-c006 ;
+        st:activity e:u-t03-r016 ;
+        st:column e:u-t03-c006 ;
+        st:value "X" .
+
+    e:match-t01-r015--t02-r005 a st:Match ;
+        st:decidedBy e:decision-ccorr-001 ;
+        st:matchKind "merged" ;
+        st:matchedRow e:t01-r015,
+            e:t02-r005 ;
+        st:reviewStatus "decided" ;
+        st:score 1.0 .
+
+    e:match-t01-r028--t03-r002 a st:Match ;
+        st:decidedBy e:decision-ccorr-002 ;
+        st:matchKind "separate" ;
+        st:matchedRow e:t01-r028,
+            e:t03-r002 ;
+        st:reviewStatus "decided" ;
+        st:score 0.8 .
+
+    e:match-t01-r028--t03-r003 a st:Match ;
+        st:decidedBy e:decision-ccorr-003 ;
+        st:matchKind "separate" ;
+        st:matchedRow e:t01-r028,
+            e:t03-r003 ;
+        st:reviewStatus "decided" ;
+        st:score 0.8 .
+
+    e:match-t01-r028--t03-r004 a st:Match ;
+        st:decidedBy e:decision-ccorr-004 ;
+        st:matchKind "separate" ;
+        st:matchedRow e:t01-r028,
+            e:t03-r004 ;
+        st:reviewStatus "decided" ;
+        st:score 0.8 .
+
+    e:match-t01-r028--t03-r005 a st:Match ;
+        st:decidedBy e:decision-ccorr-005 ;
+        st:matchKind "separate" ;
+        st:matchedRow e:t01-r028,
+            e:t03-r005 ;
+        st:reviewStatus "decided" ;
+        st:score 0.8 .
+
+    e:match-t01-r028--t03-r006 a st:Match ;
+        st:decidedBy e:decision-ccorr-006 ;
+        st:matchKind "separate" ;
+        st:matchedRow e:t01-r028,
+            e:t03-r006 ;
+        st:reviewStatus "decided" ;
+        st:score 0.8 .
+
+    e:match-t01-r028--t03-r007 a st:Match ;
+        st:decidedBy e:decision-ccorr-007 ;
+        st:matchKind "separate" ;
+        st:matchedRow e:t01-r028,
+            e:t03-r007 ;
+        st:reviewStatus "decided" ;
+        st:score 0.8 .
+
+    e:match-t01-r028--t03-r008 a st:Match ;
+        st:decidedBy e:decision-ccorr-008 ;
+        st:matchKind "separate" ;
+        st:matchedRow e:t01-r028,
+            e:t03-r008 ;
+        st:reviewStatus "decided" ;
+        st:score 0.8 .
+
+    e:match-t01-r028--t03-r009 a st:Match ;
+        st:decidedBy e:decision-ccorr-009 ;
+        st:matchKind "separate" ;
+        st:matchedRow e:t01-r028,
+            e:t03-r009 ;
+        st:reviewStatus "decided" ;
+        st:score 0.8 .
+
+    e:match-t01-r028--t03-r010 a st:Match ;
+        st:decidedBy e:decision-ccorr-010 ;
+        st:matchKind "separate" ;
+        st:matchedRow e:t01-r028,
+            e:t03-r010 ;
+        st:reviewStatus "decided" ;
+        st:score 0.8 .
+
+    e:match-t01-r028--t03-r011 a st:Match ;
+        st:decidedBy e:decision-ccorr-011 ;
+        st:matchKind "separate" ;
+        st:matchedRow e:t01-r028,
+            e:t03-r011 ;
+        st:reviewStatus "decided" ;
+        st:score 0.8 .
+
+    e:match-t01-r028--t03-r012 a st:Match ;
+        st:decidedBy e:decision-ccorr-012 ;
+        st:matchKind "separate" ;
+        st:matchedRow e:t01-r028,
+            e:t03-r012 ;
+        st:reviewStatus "decided" ;
+        st:score 0.8 .
+
+    e:match-t01-r028--t03-r013 a st:Match ;
+        st:decidedBy e:decision-ccorr-013 ;
+        st:matchKind "separate" ;
+        st:matchedRow e:t01-r028,
+            e:t03-r013 ;
+        st:reviewStatus "decided" ;
+        st:score 0.8 .
+
+    e:match-t01-r028--t03-r014 a st:Match ;
+        st:decidedBy e:decision-ccorr-014 ;
+        st:matchKind "separate" ;
+        st:matchedRow e:t01-r028,
+            e:t03-r014 ;
+        st:reviewStatus "decided" ;
+        st:score 0.8 .
+
+    e:match-t01-r028--t03-r015 a st:Match ;
+        st:decidedBy e:decision-ccorr-015 ;
+        st:matchKind "separate" ;
+        st:matchedRow e:t01-r028,
+            e:t03-r015 ;
+        st:reviewStatus "decided" ;
+        st:score 0.8 .
+
+    e:u-t01-n-a a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t01-n-a ;
+        st:refersToColumn e:u-t01-c016 ;
+        st:text "Short-term follow-up begins when the participant and investigator agree that the participant will no longer continue study treatment and lasts a minimum of 30 days following the last dose of study drug." .
+
+    e:u-t01-n-i1 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t01-n-i1 ;
+        st:refersToColumn e:u-t01-c010,
+            e:u-t01-c015 ;
+        st:text "D22 for 28-day cycles only." .
+
+    e:u-t01-n-i10 a st:UnifiedAnnotation ;
+        st:annotationType "source_note" ;
+        st:documentReference e:u-t01-n-i10-d01 ;
+        st:occurrence e:t01-n-i10 ;
+        st:refersToActivity e:u-t01-r018,
+            e:u-t01-r020 ;
+        st:text "See Appendix 2." .
+
+    e:u-t01-n-i11 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:documentReference e:u-t01-n-i11-d01 ;
+        st:occurrence e:t01-n-i11 ;
+        st:refersToActivity e:u-t01-r019 ;
+        st:text "See Appendix 2. Perform at baseline, C2D1, D1 of every other cycle afterwards (C4D1, C6D1, etc.), and as clinically indicated." .
+
+    e:u-t01-n-i12 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:documentReference e:u-t01-n-i12-d01 ;
+        st:occurrence e:t01-n-i12 ;
+        st:refersToActivity e:u-t01-r021 ;
+        st:text "See Appendix 2. In addition, perform as clinically indicated." .
+
+    e:u-t01-n-i13 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:documentReference e:u-t01-n-i13-d01 ;
+        st:occurrence e:t01-n-i13 ;
+        st:refersToActivity e:u-t01-r022 ;
+        st:text """• Applies only to women of childbearing potential.
+• Note: During study treatment, perform monthly or as required per local regulations and/or institutional guidelines.
+See Appendix 2.""" .
+
+    e:u-t01-n-i14 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:documentReference e:u-t01-n-i14-d01 ;
+        st:occurrence e:t01-n-i14 ;
+        st:refersToActivity e:u-t01-r023 ;
+        st:text "See Appendix 2. Starting C1D1, then every 3 months thereafter." .
+
+    e:u-t01-n-i15 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t01-n-i15 ;
+        st:refersToActivity e:u-t01-r024 ;
+        st:text """• Perform according to RECIST 1.1, by the same method used at baseline, every 8 weeks (±7 days) for the first 6 months after C1D1 and every 12 weeks (±7 days) thereafter until radiographic disease progression, death, or study completion, whichever occurs first.
+Perform as scheduled, even if study treatment is delayed or omitted.""" .
+
+    e:u-t01-n-i16 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:documentReference e:u-t01-n-i16-d01 ;
+        st:occurrence e:t01-n-i16 ;
+        st:refersToActivity e:u-t01-r025 ;
+        st:text """Prior to each injection and at the designated timepoints, the investigator/investigator designee will ask the participant if they have any injection site concerns and record the participant’s response.
+1.Cycle 1 collection:
+a.C1D1: 5-15 min after injection is complete and 60 min after injection is complete
+b.C1D2 (approximately 24 hr after injection)
+c.C1D4 (± 1 day)
+d.C1D8: 5-15 min after injection and 60 min after injection
+e.C1D15: 5-15 min after injection and 60 min after injection
+2.Cycle 2-n collection:
+a.5-15 min after injection and 60 min after injection
+The findings from the assessment are recorded on the ISR questionnaire. All positive responses of pain require an additional assessment using the participant-completed Pain VAS. If there are ≥2 injections, the ISR questionnaire will be filled out separately for each site, after all injections have been administered. See Section 8.2.5 for details.""" .
+
+    e:u-t01-n-i17 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t01-n-i17 ;
+        st:refersToActivity e:u-t01-r026 ;
+        st:text """1. ISR questionnaire completed outside of solicited assessment schedule.
+2. May be triggered by participant anytime during the cycle based on diary.
+3. If the participant indicates presence of pain during spontaneous ISR reporting, no VAS assessment is required.""" .
+
+    e:u-t01-n-i18 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t01-n-i18 ;
+        st:refersToActivity e:u-t01-r027 ;
+        st:text """• Participant will assess injection site(s) daily. If any ISR symptoms present, the participant should contact the investigator.
+• Diary should be returned to the investigator at each weekly visit.""" .
+
+    e:u-t01-n-i19 a st:UnifiedAnnotation ;
+        st:annotationType "source_note" ;
+        st:documentReference e:u-t01-n-i19-d01 ;
+        st:occurrence e:t01-n-i19 ;
+        st:refersToActivity e:u-t01-r028 ;
+        st:text "See Section 1.3.1 for PK and IG." .
+
+    e:u-t01-n-i2 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t01-n-i2 ;
+        st:refersToActivity e:u-t01-r008 ;
+        st:text "ICF must be signed before any protocol-specific procedures are performed" .
+
+    e:u-t01-n-i20 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:documentReference e:u-t01-n-i20-d01 ;
+        st:occurrence e:t01-n-i20 ;
+        st:refersToActivity e:u-t01-r031 ;
+        st:text "See Section 6.1. Participants must be closely monitored for a 1-hour observation period following the administration of SC ramucirumab (see Section 6.1)." .
+
+    e:u-t01-n-i21 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:documentReference e:u-t01-n-i21-d01 ;
+        st:occurrence e:t01-n-i21 ;
+        st:refersToActivity e:u-t01-r032 ;
+        st:text "Begin Combination anti-cancer therapies along with weekly SC ramucirumab at Cycle-2. See details in Section 6.1. Erlotinib (1L EGFR+ NSCLC), docetaxel (2L NSCLC), paclitaxel (2L gastric), FOLFIRI (2L CRC)." .
+
+    e:u-t01-n-i3 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t01-n-i3 ;
+        st:refersToActivity e:u-t01-r010 ;
+        st:text "Including assessment of preexisting conditions, historical illnesses, and habits (such as tobacco and alcohol use)." .
+
+    e:u-t01-n-i4 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t01-n-i4 ;
+        st:refersToActivity e:u-t01-r011 ;
+        st:text "Record prior anti-cancer therapy" .
+
+    e:u-t01-n-i5 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t01-n-i5 ;
+        st:refersToActivity e:u-t01-r012 ;
+        st:text """• At baseline, record prior and concurrent medications.
+• Record all premedication, supportive care, and concomitant medication continuously at every visit and throughout the study.""" .
+
+    e:u-t01-n-i6 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t01-n-i6 ;
+        st:refersToActivity e:u-t01-r014 ;
+        st:text """Measure vital signs (height [at baseline], weight, temperature, blood pressure, pulse rate, and respiration rate).
+On days with concurrent ECGs, vital signs, and/or PK sampling, these measurements should occur at approximately the same time.
+Vital sign measurements will be obtained:
+• Day 1 at predose (prior to SC ramucirumab dose, but within 90 minutes prior to predose blood draw)
+• C1D2 (24 hours postdose)
+• C1D8
+• C1D15
+• Any time for other specified visits, but prior to SC ramucirumab dose at same visit.""" .
+
+    e:u-t01-n-i7 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:documentReference e:u-t01-n-i7-d01 ;
+        st:occurrence e:t01-n-i7 ;
+        st:refersToActivity e:u-t01-r015 ;
+        st:text """• Collect continuously at every visit and throughout the study.
+• CTCAE Version 5.0
+• See Section 10.3 for AE grading for lab investigations.""" .
+
+    e:u-t01-n-i8 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t01-n-i8 ;
+        st:refersToActivity e:u-t01-r016 ;
+        st:text "During study treatment, perform ≤3 days prior to treatment." .
+
+    e:u-t01-n-i9 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t01-n-i9 ;
+        st:refersToActivity e:u-t01-r017 ;
+        st:text """Single, local.
+On days with concurrent measurements, see vital sign row for more details. Times are referenced to the end of dosing.
+ECGs will be obtained:
+• C1D1 at predose.
+• Every 6 weeks thereafter, predose.
+• Any other time as clinically indicated.""" .
+
+    e:u-t01-n-n1 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t01-n-n1 ;
+        st:refersToColumn e:u-t01-c011 ;
+        st:text "Note: For applicable participants who have their combination therapy held while SC weekly ramucirumab is continued, procedures noted in column DX are to be performed at the time of the additional ramucirumab doses." .
+
+    e:u-t01-r002 a st:UnifiedProperty ;
+        st:level 1 ;
+        st:member e:t01-r002,
+            e:t02-r002,
+            e:t03-r001 ;
+        st:propertyName "Epoch" ;
+        st:propertyType "epoch" .
+
+    e:u-t01-r003 a st:UnifiedProperty ;
+        st:level 2 ;
+        st:member e:t01-r003,
+            e:t02-r003 ;
+        st:propertyName "Cycle length" ;
+        st:propertyType "other" .
+
+    e:u-t01-r004 a st:UnifiedProperty ;
+        st:level 3 ;
+        st:member e:t01-r004 ;
+        st:propertyName "Cycle" ;
+        st:propertyType "cycle" .
+
+    e:u-t01-r005 a st:UnifiedProperty ;
+        st:member e:t01-r005 ;
+        st:propertyName "Visit window" ;
+        st:propertyType "window" .
+
+    e:u-t01-r006 a st:UnifiedProperty ;
+        st:level 4 ;
+        st:member e:t01-r006 ;
+        st:propertyName "Day" ;
+        st:propertyType "study_day" .
+
+    e:u-t02-n-a a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t02-n-a ;
+        st:refersToColumn e:u-t02-c003 ;
+        st:text "Continued-access follow-up begins when the participant and the investigator agree that the participant will no longer continue treatment in the continued-access period and lasts a minimum of 30 days following the last dose of study drug. In all cases, no follow-up procedures will be performed for a participant who withdraws informed consent unless he or she has explicitly provided permission and consent." .
+
+    e:u-t02-n-i1 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:documentReference e:u-t02-n-i1-d01 ;
+        st:occurrence e:t02-n-i1 ;
+        st:refersToActivity e:u-t01-r015 ;
+        st:text "Grading via CTCAE, Version 5.0. As part of AE collection, monitor vital signs and perform standard laboratory tests (hematology, chemistry, urinalysis, and pregnancy testing) at the same frequency as during the study treatment period. See Section 10.3 for AE grading for lab investigations. All laboratory tests during the continued access period will be performed in the local laboratories only." .
+
+    e:u-t02-n-i2 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t02-n-i2 ;
+        st:refersToActivity e:u-t02-r006 ;
+        st:text "In the event of hypersensitivity, blood samples will be collected for PK, IG, and exploratory hypersensitivity analyses at the following time points, as close as possible to: (i) the onset of the hypersensitivity, (ii) the resolution of the hypersensitivity, and (iii) 30 (±3) days following the hypersensitivity." .
+
+    e:u-t02-n-i3 a st:UnifiedAnnotation ;
+        st:annotationType "footnote" ;
+        st:documentReference e:u-t02-n-i3-d01 ;
+        st:occurrence e:t02-n-i3 ;
+        st:refersToActivity e:u-t01-r031 ;
+        st:text "See Section 6.1. Participants must be closely monitored for a 1-hour observation period following the ramucirumab injection (see Section 6.1)." .
+
+    e:u-t03-n-g1 a st:UnifiedAnnotation ;
+        st:annotationScope "table" ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t03-n-g1 ;
+        st:text "The pharmacokinetic sampling table applies to all participants irrespective of 21-day or 28-day cycle length." .
+
+    e:u-t03-n-g2 a st:UnifiedAnnotation ;
+        st:annotationScope "table" ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t03-n-g2 ;
+        st:text "Adequately record the actual collection date and time (24-hour clock; for example, 16:00, not 4 pm) on the requisition form of the sample." .
+
+    e:u-t03-n-g3 a st:UnifiedAnnotation ;
+        st:annotationScope "table" ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t03-n-g3 ;
+        st:text """In case of cycle delay and/or ramucirumab dosing interruption, if possible, collect an additional unscheduled PK samples using the appropriate central lab collection kit:
+• at time as close as possible to the onset of the adverse event (AE) (if the cycle delay or ramucirumab dosing interruption is due to an AE).
+• at the time when ramucirumab dose should have been administered (if there had not been a delay or dose interruption).
+• prior to resuming the ramucirumab dosing after dosing interruption/dosing delay.""" .
+
+    e:u-t03-n-g4 a st:UnifiedAnnotation ;
+        st:annotationScope "table" ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t03-n-g4 ;
+        st:text "Note: If the above time points for unscheduled PK sampling happen to occur at the same time as a scheduled PK time point (see table below), then only the scheduled sample will be taken." .
+
+    e:decision-ccorr-002 a st:Decision ;
+        st:decidedAt "2026-10-04T08:20:00Z"^^xsd:dateTime ;
+        st:decidedByPerson "Kerstin Forsberg" ;
+        st:decisionSource e:t03-r002 ;
+        st:decisionTarget e:t01-r028 ;
+        st:op "keep" ;
+        st:reason "A numbered sample row of the PK sampling schedule; the target is a section header." .
+
+    e:decision-ccorr-003 a st:Decision ;
+        st:decidedAt "2026-10-04T08:20:00Z"^^xsd:dateTime ;
+        st:decidedByPerson "Kerstin Forsberg" ;
+        st:decisionSource e:t03-r003 ;
+        st:decisionTarget e:t01-r028 ;
+        st:op "keep" ;
+        st:reason "A numbered sample row of the PK sampling schedule; the target is a section header." .
+
+    e:decision-ccorr-004 a st:Decision ;
+        st:decidedAt "2026-10-04T08:20:00Z"^^xsd:dateTime ;
+        st:decidedByPerson "Kerstin Forsberg" ;
+        st:decisionSource e:t03-r004 ;
+        st:decisionTarget e:t01-r028 ;
+        st:op "keep" ;
+        st:reason "A numbered sample row of the PK sampling schedule; the target is a section header." .
+
+    e:decision-ccorr-005 a st:Decision ;
+        st:decidedAt "2026-10-04T08:20:00Z"^^xsd:dateTime ;
+        st:decidedByPerson "Kerstin Forsberg" ;
+        st:decisionSource e:t03-r005 ;
+        st:decisionTarget e:t01-r028 ;
+        st:op "keep" ;
+        st:reason "A numbered sample row of the PK sampling schedule; the target is a section header." .
+
+    e:decision-ccorr-006 a st:Decision ;
+        st:decidedAt "2026-10-04T08:20:00Z"^^xsd:dateTime ;
+        st:decidedByPerson "Kerstin Forsberg" ;
+        st:decisionSource e:t03-r006 ;
+        st:decisionTarget e:t01-r028 ;
+        st:op "keep" ;
+        st:reason "A numbered sample row of the PK sampling schedule; the target is a section header." .
+
+    e:decision-ccorr-007 a st:Decision ;
+        st:decidedAt "2026-10-04T08:20:00Z"^^xsd:dateTime ;
+        st:decidedByPerson "Kerstin Forsberg" ;
+        st:decisionSource e:t03-r007 ;
+        st:decisionTarget e:t01-r028 ;
+        st:op "keep" ;
+        st:reason "A numbered sample row of the PK sampling schedule; the target is a section header." .
+
+    e:decision-ccorr-008 a st:Decision ;
+        st:decidedAt "2026-10-04T08:20:00Z"^^xsd:dateTime ;
+        st:decidedByPerson "Kerstin Forsberg" ;
+        st:decisionSource e:t03-r008 ;
+        st:decisionTarget e:t01-r028 ;
+        st:op "keep" ;
+        st:reason "A numbered sample row of the PK sampling schedule; the target is a section header." .
+
+    e:decision-ccorr-009 a st:Decision ;
+        st:decidedAt "2026-10-04T08:20:00Z"^^xsd:dateTime ;
+        st:decidedByPerson "Kerstin Forsberg" ;
+        st:decisionSource e:t03-r009 ;
+        st:decisionTarget e:t01-r028 ;
+        st:op "keep" ;
+        st:reason "A numbered sample row of the PK sampling schedule; the target is a section header." .
+
+    e:decision-ccorr-010 a st:Decision ;
+        st:decidedAt "2026-10-04T08:20:00Z"^^xsd:dateTime ;
+        st:decidedByPerson "Kerstin Forsberg" ;
+        st:decisionSource e:t03-r010 ;
+        st:decisionTarget e:t01-r028 ;
+        st:op "keep" ;
+        st:reason "A numbered sample row of the PK sampling schedule; the target is a section header." .
+
+    e:decision-ccorr-011 a st:Decision ;
+        st:decidedAt "2026-10-04T08:20:00Z"^^xsd:dateTime ;
+        st:decidedByPerson "Kerstin Forsberg" ;
+        st:decisionSource e:t03-r011 ;
+        st:decisionTarget e:t01-r028 ;
+        st:op "keep" ;
+        st:reason "A numbered sample row of the PK sampling schedule; the target is a section header." .
+
+    e:decision-ccorr-012 a st:Decision ;
+        st:decidedAt "2026-10-04T08:20:00Z"^^xsd:dateTime ;
+        st:decidedByPerson "Kerstin Forsberg" ;
+        st:decisionSource e:t03-r012 ;
+        st:decisionTarget e:t01-r028 ;
+        st:op "keep" ;
+        st:reason "A numbered sample row of the PK sampling schedule; the target is a section header." .
+
+    e:decision-ccorr-013 a st:Decision ;
+        st:decidedAt "2026-10-04T08:20:00Z"^^xsd:dateTime ;
+        st:decidedByPerson "Kerstin Forsberg" ;
+        st:decisionSource e:t03-r013 ;
+        st:decisionTarget e:t01-r028 ;
+        st:op "keep" ;
+        st:reason "A numbered sample row of the PK sampling schedule; the target is a section header." .
+
+    e:decision-ccorr-014 a st:Decision ;
+        st:decidedAt "2026-10-04T08:20:00Z"^^xsd:dateTime ;
+        st:decidedByPerson "Kerstin Forsberg" ;
+        st:decisionSource e:t03-r014 ;
+        st:decisionTarget e:t01-r028 ;
+        st:op "keep" ;
+        st:reason "A numbered sample row of the PK sampling schedule; the target is a section header." .
+
+    e:decision-ccorr-015 a st:Decision ;
+        st:decidedAt "2026-10-04T08:20:00Z"^^xsd:dateTime ;
+        st:decidedByPerson "Kerstin Forsberg" ;
+        st:decisionSource e:t03-r015 ;
+        st:decisionTarget e:t01-r028 ;
+        st:op "keep" ;
+        st:reason "A numbered sample row of the PK sampling schedule; the target is a section header." .
+
+    e:t01-n-a a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "a" .
+
+    e:t01-n-i1 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "i1" .
+
+    e:t01-n-i10 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "i10" .
+
+    e:t01-n-i11 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "i11" .
+
+    e:t01-n-i12 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "i12" .
+
+    e:t01-n-i13 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "i13" .
+
+    e:t01-n-i14 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "i14" .
+
+    e:t01-n-i15 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "i15" .
+
+    e:t01-n-i16 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "i16" .
+
+    e:t01-n-i17 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "i17" .
+
+    e:t01-n-i18 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "i18" .
+
+    e:t01-n-i19 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "i19" .
+
+    e:t01-n-i2 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "i2" .
+
+    e:t01-n-i20 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "i20" .
+
+    e:t01-n-i21 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "i21" .
+
+    e:t01-n-i3 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "i3" .
+
+    e:t01-n-i4 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "i4" .
+
+    e:t01-n-i5 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "i5" .
+
+    e:t01-n-i6 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "i6" .
+
+    e:t01-n-i7 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "i7" .
+
+    e:t01-n-i8 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "i8" .
+
+    e:t01-n-i9 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "i9" .
+
+    e:t01-n-n1 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "n1" .
+
+    e:t01-r002 a st:SourcePropertyRow ;
+        st:hierarchyPosition 1 ;
+        st:inTable e:t01 ;
+        st:level 1 ;
+        st:propertyName "Epoch" ;
+        st:propertyType "epoch" ;
+        st:rowPosition 2 .
+
+    e:t01-r003 a st:SourcePropertyRow ;
+        st:hierarchyPosition 2 ;
+        st:inTable e:t01 ;
+        st:level 2 ;
+        st:propertyName "Cycle length" ;
+        st:propertyType "other" ;
+        st:rowPosition 3 .
+
+    e:t01-r004 a st:SourcePropertyRow ;
+        st:hierarchyPosition 3 ;
+        st:inTable e:t01 ;
+        st:level 3 ;
+        st:propertyName "Cycle" ;
+        st:propertyType "cycle" ;
+        st:rowPosition 4 .
+
+    e:t01-r005 a st:SourcePropertyRow ;
+        st:hierarchyPosition 5 ;
+        st:inTable e:t01 ;
+        st:propertyName "Visit window" ;
+        st:propertyType "window" ;
+        st:rowPosition 5 .
+
+    e:t01-r006 a st:SourcePropertyRow ;
+        st:hierarchyPosition 4 ;
+        st:inTable e:t01 ;
+        st:level 4 ;
+        st:propertyName "Day" ;
+        st:propertyType "study_day" ;
+        st:rowPosition 6 .
+
+    e:t01-r008-c002 a st:SourceCell ;
+        st:column e:t01-c002 ;
+        st:row e:t01-r008 ;
+        st:value "X" .
+
+    e:t01-r009-c002 a st:SourceCell ;
+        st:column e:t01-c002 ;
+        st:row e:t01-r009 ;
+        st:value "X" .
+
+    e:t01-r010-c002 a st:SourceCell ;
+        st:column e:t01-c002 ;
+        st:row e:t01-r010 ;
+        st:value "X" .
+
+    e:t01-r011-c002 a st:SourceCell ;
+        st:column e:t01-c002 ;
+        st:row e:t01-r011 ;
+        st:value "X" .
+
+    e:t01-r012-c002 a st:SourceCell ;
+        st:column e:t01-c002 ;
+        st:row e:t01-r012 ;
+        st:value "X" .
+
+    e:t01-r012-c004 a st:SourceCell ;
+        st:column e:t01-c004 ;
+        st:row e:t01-r012 ;
+        st:value "X" .
+
+    e:t01-r012-c005 a st:SourceCell ;
+        st:column e:t01-c005 ;
+        st:row e:t01-r012 ;
+        st:value "X" .
+
+    e:t01-r012-c006 a st:SourceCell ;
+        st:column e:t01-c006 ;
+        st:row e:t01-r012 ;
+        st:value "X" .
+
+    e:t01-r012-c007 a st:SourceCell ;
+        st:column e:t01-c007 ;
+        st:row e:t01-r012 ;
+        st:value "X" .
+
+    e:t01-r012-c008 a st:SourceCell ;
+        st:column e:t01-c008 ;
+        st:row e:t01-r012 ;
+        st:value "X" .
+
+    e:t01-r012-c009 a st:SourceCell ;
+        st:column e:t01-c009 ;
+        st:row e:t01-r012 ;
+        st:value "X" .
+
+    e:t01-r012-c010 a st:SourceCell ;
+        st:column e:t01-c010 ;
+        st:row e:t01-r012 ;
+        st:value "X" .
+
+    e:t01-r012-c011 a st:SourceCell ;
+        st:column e:t01-c011 ;
+        st:row e:t01-r012 ;
+        st:value "X" .
+
+    e:t01-r012-c012 a st:SourceCell ;
+        st:column e:t01-c012 ;
+        st:row e:t01-r012 ;
+        st:value "X" .
+
+    e:t01-r012-c013 a st:SourceCell ;
+        st:column e:t01-c013 ;
+        st:row e:t01-r012 ;
+        st:value "X" .
+
+    e:t01-r012-c014 a st:SourceCell ;
+        st:column e:t01-c014 ;
+        st:row e:t01-r012 ;
+        st:value "X" .
+
+    e:t01-r012-c015 a st:SourceCell ;
+        st:column e:t01-c015 ;
+        st:row e:t01-r012 ;
+        st:value "X" .
+
+    e:t01-r013-c002 a st:SourceCell ;
+        st:column e:t01-c002 ;
+        st:row e:t01-r013 ;
+        st:value "X" .
+
+    e:t01-r013-c004 a st:SourceCell ;
+        st:column e:t01-c004 ;
+        st:row e:t01-r013 ;
+        st:value "X" .
+
+    e:t01-r013-c005 a st:SourceCell ;
+        st:column e:t01-c005 ;
+        st:row e:t01-r013 ;
+        st:value "X" .
+
+    e:t01-r013-c006 a st:SourceCell ;
+        st:column e:t01-c006 ;
+        st:row e:t01-r013 ;
+        st:value "X" .
+
+    e:t01-r013-c007 a st:SourceCell ;
+        st:column e:t01-c007 ;
+        st:row e:t01-r013 ;
+        st:value "X" .
+
+    e:t01-r013-c012 a st:SourceCell ;
+        st:column e:t01-c012 ;
+        st:row e:t01-r013 ;
+        st:value "X" .
+
+    e:t01-r013-c016 a st:SourceCell ;
+        st:column e:t01-c016 ;
+        st:row e:t01-r013 ;
+        st:value "X" .
+
+    e:t01-r014-c002 a st:SourceCell ;
+        st:column e:t01-c002 ;
+        st:row e:t01-r014 ;
+        st:value "X" .
+
+    e:t01-r014-c004 a st:SourceCell ;
+        st:column e:t01-c004 ;
+        st:row e:t01-r014 ;
+        st:value "See instructions" .
+
+    e:t01-r014-c005 a st:SourceCell ;
+        st:column e:t01-c005 ;
+        st:row e:t01-r014 ;
+        st:value "See instructions" .
+
+    e:t01-r014-c006 a st:SourceCell ;
+        st:column e:t01-c006 ;
+        st:row e:t01-r014 ;
+        st:value "See instructions" .
+
+    e:t01-r014-c007 a st:SourceCell ;
+        st:column e:t01-c007 ;
+        st:row e:t01-r014 ;
+        st:value "X" .
+
+    e:t01-r014-c008 a st:SourceCell ;
+        st:column e:t01-c008 ;
+        st:row e:t01-r014 ;
+        st:value "X" .
+
+    e:t01-r014-c009 a st:SourceCell ;
+        st:column e:t01-c009 ;
+        st:row e:t01-r014 ;
+        st:value "X" .
+
+    e:t01-r014-c010 a st:SourceCell ;
+        st:column e:t01-c010 ;
+        st:row e:t01-r014 ;
+        st:value "X" .
+
+    e:t01-r014-c011 a st:SourceCell ;
+        st:column e:t01-c011 ;
+        st:row e:t01-r014 ;
+        st:value "X" .
+
+    e:t01-r014-c012 a st:SourceCell ;
+        st:column e:t01-c012 ;
+        st:row e:t01-r014 ;
+        st:value "X" .
+
+    e:t01-r014-c013 a st:SourceCell ;
+        st:column e:t01-c013 ;
+        st:row e:t01-r014 ;
+        st:value "X" .
+
+    e:t01-r014-c014 a st:SourceCell ;
+        st:column e:t01-c014 ;
+        st:row e:t01-r014 ;
+        st:value "X" .
+
+    e:t01-r014-c015 a st:SourceCell ;
+        st:column e:t01-c015 ;
+        st:row e:t01-r014 ;
+        st:value "X" .
+
+    e:t01-r014-c016 a st:SourceCell ;
+        st:column e:t01-c016 ;
+        st:row e:t01-r014 ;
+        st:value "X" .
+
+    e:t01-r015-c002 a st:SourceCell ;
+        st:column e:t01-c002 ;
+        st:row e:t01-r015 ;
+        st:value "X" .
+
+    e:t01-r015-c004 a st:SourceCell ;
+        st:column e:t01-c004 ;
+        st:row e:t01-r015 ;
+        st:value "X" .
+
+    e:t01-r015-c005 a st:SourceCell ;
+        st:column e:t01-c005 ;
+        st:row e:t01-r015 ;
+        st:value "X" .
+
+    e:t01-r015-c006 a st:SourceCell ;
+        st:column e:t01-c006 ;
+        st:row e:t01-r015 ;
+        st:value "X" .
+
+    e:t01-r015-c007 a st:SourceCell ;
+        st:column e:t01-c007 ;
+        st:row e:t01-r015 ;
+        st:value "X" .
+
+    e:t01-r015-c008 a st:SourceCell ;
+        st:column e:t01-c008 ;
+        st:row e:t01-r015 ;
+        st:value "X" .
+
+    e:t01-r015-c009 a st:SourceCell ;
+        st:column e:t01-c009 ;
+        st:row e:t01-r015 ;
+        st:value "X" .
+
+    e:t01-r015-c010 a st:SourceCell ;
+        st:column e:t01-c010 ;
+        st:row e:t01-r015 ;
+        st:value "X" .
+
+    e:t01-r015-c011 a st:SourceCell ;
+        st:column e:t01-c011 ;
+        st:row e:t01-r015 ;
+        st:value "X" .
+
+    e:t01-r015-c012 a st:SourceCell ;
+        st:column e:t01-c012 ;
+        st:row e:t01-r015 ;
+        st:value "X" .
+
+    e:t01-r015-c013 a st:SourceCell ;
+        st:column e:t01-c013 ;
+        st:row e:t01-r015 ;
+        st:value "X" .
+
+    e:t01-r015-c014 a st:SourceCell ;
+        st:column e:t01-c014 ;
+        st:row e:t01-r015 ;
+        st:value "X" .
+
+    e:t01-r015-c015 a st:SourceCell ;
+        st:column e:t01-c015 ;
+        st:row e:t01-r015 ;
+        st:value "X" .
+
+    e:t01-r015-c016 a st:SourceCell ;
+        st:column e:t01-c016 ;
+        st:row e:t01-r015 ;
+        st:value "X" .
+
+    e:t01-r016-c002 a st:SourceCell ;
+        st:column e:t01-c002 ;
+        st:row e:t01-r016 ;
+        st:value "X" .
+
+    e:t01-r016-c004 a st:SourceCell ;
+        st:column e:t01-c004 ;
+        st:row e:t01-r016 ;
+        st:value "X" .
+
+    e:t01-r016-c007 a st:SourceCell ;
+        st:column e:t01-c007 ;
+        st:row e:t01-r016 ;
+        st:value "X" .
+
+    e:t01-r016-c012 a st:SourceCell ;
+        st:column e:t01-c012 ;
+        st:row e:t01-r016 ;
+        st:value "X" .
+
+    e:t01-r016-c016 a st:SourceCell ;
+        st:column e:t01-c016 ;
+        st:row e:t01-r016 ;
+        st:value "X" .
+
+    e:t01-r017-c002 a st:SourceCell ;
+        st:column e:t01-c002 ;
+        st:row e:t01-r017 ;
+        st:value "X" .
+
+    e:t01-r017-c004 a st:SourceCell ;
+        st:column e:t01-c004 ;
+        st:row e:t01-r017 ;
+        st:value "See instructions" .
+
+    e:t01-r017-c005 a st:SourceCell ;
+        st:column e:t01-c005 ;
+        st:row e:t01-r017 ;
+        st:value "See instructions" .
+
+    e:t01-r017-c006 a st:SourceCell ;
+        st:column e:t01-c006 ;
+        st:row e:t01-r017 ;
+        st:value "See instructions" .
+
+    e:t01-r017-c007 a st:SourceCell ;
+        st:column e:t01-c007 ;
+        st:row e:t01-r017 ;
+        st:value "See instructions" .
+
+    e:t01-r017-c008 a st:SourceCell ;
+        st:column e:t01-c008 ;
+        st:row e:t01-r017 ;
+        st:value "See instructions" .
+
+    e:t01-r017-c009 a st:SourceCell ;
+        st:column e:t01-c009 ;
+        st:row e:t01-r017 ;
+        st:value "See instructions" .
+
+    e:t01-r017-c010 a st:SourceCell ;
+        st:column e:t01-c010 ;
+        st:row e:t01-r017 ;
+        st:value "See instructions" .
+
+    e:t01-r017-c011 a st:SourceCell ;
+        st:column e:t01-c011 ;
+        st:row e:t01-r017 ;
+        st:value "See instructions" .
+
+    e:t01-r017-c012 a st:SourceCell ;
+        st:column e:t01-c012 ;
+        st:row e:t01-r017 ;
+        st:value "See instructions" .
+
+    e:t01-r017-c013 a st:SourceCell ;
+        st:column e:t01-c013 ;
+        st:row e:t01-r017 ;
+        st:value "See instructions" .
+
+    e:t01-r017-c014 a st:SourceCell ;
+        st:column e:t01-c014 ;
+        st:row e:t01-r017 ;
+        st:value "See instructions" .
+
+    e:t01-r017-c015 a st:SourceCell ;
+        st:column e:t01-c015 ;
+        st:row e:t01-r017 ;
+        st:value "See instructions" .
+
+    e:t01-r017-c016 a st:SourceCell ;
+        st:column e:t01-c016 ;
+        st:row e:t01-r017 ;
+        st:value "X" .
+
+    e:t01-r018-c003 a st:SourceCell ;
+        st:column e:t01-c003 ;
+        st:row e:t01-r018 ;
+        st:value "X" .
+
+    e:t01-r018-c004 a st:SourceCell ;
+        st:column e:t01-c004 ;
+        st:row e:t01-r018 ;
+        st:value "X" .
+
+    e:t01-r018-c005 a st:SourceCell ;
+        st:column e:t01-c005 ;
+        st:row e:t01-r018 ;
+        st:value "X" .
+
+    e:t01-r018-c006 a st:SourceCell ;
+        st:column e:t01-c006 ;
+        st:row e:t01-r018 ;
+        st:value "X" .
+
+    e:t01-r018-c007 a st:SourceCell ;
+        st:column e:t01-c007 ;
+        st:row e:t01-r018 ;
+        st:value "X" .
+
+    e:t01-r018-c008 a st:SourceCell ;
+        st:column e:t01-c008 ;
+        st:row e:t01-r018 ;
+        st:value "X" .
+
+    e:t01-r018-c009 a st:SourceCell ;
+        st:column e:t01-c009 ;
+        st:row e:t01-r018 ;
+        st:value "X" .
+
+    e:t01-r018-c011 a st:SourceCell ;
+        st:column e:t01-c011 ;
+        st:row e:t01-r018 ;
+        st:value "X" .
+
+    e:t01-r018-c012 a st:SourceCell ;
+        st:column e:t01-c012 ;
+        st:row e:t01-r018 ;
+        st:value "X" .
+
+    e:t01-r018-c016 a st:SourceCell ;
+        st:column e:t01-c016 ;
+        st:row e:t01-r018 ;
+        st:value "X" .
+
+    e:t01-r019-c003 a st:SourceCell ;
+        st:column e:t01-c003 ;
+        st:row e:t01-r019 ;
+        st:value "X" .
+
+    e:t01-r019-c007 a st:SourceCell ;
+        st:column e:t01-c007 ;
+        st:row e:t01-r019 ;
+        st:value "X" .
+
+    e:t01-r020-c003 a st:SourceCell ;
+        st:column e:t01-c003 ;
+        st:row e:t01-r020 ;
+        st:value "X" .
+
+    e:t01-r020-c004 a st:SourceCell ;
+        st:column e:t01-c004 ;
+        st:row e:t01-r020 ;
+        st:value "X" .
+
+    e:t01-r020-c005 a st:SourceCell ;
+        st:column e:t01-c005 ;
+        st:row e:t01-r020 ;
+        st:value "X" .
+
+    e:t01-r020-c006 a st:SourceCell ;
+        st:column e:t01-c006 ;
+        st:row e:t01-r020 ;
+        st:value "X" .
+
+    e:t01-r020-c007 a st:SourceCell ;
+        st:column e:t01-c007 ;
+        st:row e:t01-r020 ;
+        st:value "X" .
+
+    e:t01-r020-c008 a st:SourceCell ;
+        st:column e:t01-c008 ;
+        st:row e:t01-r020 ;
+        st:value "X" .
+
+    e:t01-r020-c009 a st:SourceCell ;
+        st:column e:t01-c009 ;
+        st:row e:t01-r020 ;
+        st:value "X" .
+
+    e:t01-r020-c011 a st:SourceCell ;
+        st:column e:t01-c011 ;
+        st:row e:t01-r020 ;
+        st:value "X" .
+
+    e:t01-r020-c012 a st:SourceCell ;
+        st:column e:t01-c012 ;
+        st:row e:t01-r020 ;
+        st:value "X" .
+
+    e:t01-r020-c016 a st:SourceCell ;
+        st:column e:t01-c016 ;
+        st:row e:t01-r020 ;
+        st:value "X" .
+
+    e:t01-r021-c003 a st:SourceCell ;
+        st:column e:t01-c003 ;
+        st:row e:t01-r021 ;
+        st:value "X" .
+
+    e:t01-r021-c004 a st:SourceCell ;
+        st:column e:t01-c004 ;
+        st:row e:t01-r021 ;
+        st:value "X" .
+
+    e:t01-r021-c005 a st:SourceCell ;
+        st:column e:t01-c005 ;
+        st:row e:t01-r021 ;
+        st:value "X" .
+
+    e:t01-r021-c006 a st:SourceCell ;
+        st:column e:t01-c006 ;
+        st:row e:t01-r021 ;
+        st:value "X" .
+
+    e:t01-r021-c007 a st:SourceCell ;
+        st:column e:t01-c007 ;
+        st:row e:t01-r021 ;
+        st:value "X" .
+
+    e:t01-r021-c008 a st:SourceCell ;
+        st:column e:t01-c008 ;
+        st:row e:t01-r021 ;
+        st:value "X" .
+
+    e:t01-r021-c009 a st:SourceCell ;
+        st:column e:t01-c009 ;
+        st:row e:t01-r021 ;
+        st:value "X" .
+
+    e:t01-r021-c010 a st:SourceCell ;
+        st:column e:t01-c010 ;
+        st:row e:t01-r021 ;
+        st:value "X" .
+
+    e:t01-r021-c011 a st:SourceCell ;
+        st:column e:t01-c011 ;
+        st:row e:t01-r021 ;
+        st:value "X" .
+
+    e:t01-r021-c012 a st:SourceCell ;
+        st:column e:t01-c012 ;
+        st:row e:t01-r021 ;
+        st:value "X" .
+
+    e:t01-r021-c013 a st:SourceCell ;
+        st:column e:t01-c013 ;
+        st:row e:t01-r021 ;
+        st:value "X" .
+
+    e:t01-r021-c014 a st:SourceCell ;
+        st:column e:t01-c014 ;
+        st:row e:t01-r021 ;
+        st:value "X" .
+
+    e:t01-r021-c015 a st:SourceCell ;
+        st:column e:t01-c015 ;
+        st:row e:t01-r021 ;
+        st:value "X" .
+
+    e:t01-r021-c016 a st:SourceCell ;
+        st:column e:t01-c016 ;
+        st:row e:t01-r021 ;
+        st:value "X" .
+
+    e:t01-r022-c003 a st:SourceCell ;
+        st:column e:t01-c003 ;
+        st:row e:t01-r022 ;
+        st:value "X" .
+
+    e:t01-r022-c004 a st:SourceCell ;
+        st:column e:t01-c004 ;
+        st:row e:t01-r022 ;
+        st:value "See instructions" .
+
+    e:t01-r022-c005 a st:SourceCell ;
+        st:column e:t01-c005 ;
+        st:row e:t01-r022 ;
+        st:value "See instructions" .
+
+    e:t01-r022-c006 a st:SourceCell ;
+        st:column e:t01-c006 ;
+        st:row e:t01-r022 ;
+        st:value "See instructions" .
+
+    e:t01-r022-c007 a st:SourceCell ;
+        st:column e:t01-c007 ;
+        st:row e:t01-r022 ;
+        st:value "See instructions" .
+
+    e:t01-r022-c008 a st:SourceCell ;
+        st:column e:t01-c008 ;
+        st:row e:t01-r022 ;
+        st:value "See instructions" .
+
+    e:t01-r022-c009 a st:SourceCell ;
+        st:column e:t01-c009 ;
+        st:row e:t01-r022 ;
+        st:value "See instructions" .
+
+    e:t01-r022-c010 a st:SourceCell ;
+        st:column e:t01-c010 ;
+        st:row e:t01-r022 ;
+        st:value "See instructions" .
+
+    e:t01-r022-c011 a st:SourceCell ;
+        st:column e:t01-c011 ;
+        st:row e:t01-r022 ;
+        st:value "See instructions" .
+
+    e:t01-r022-c012 a st:SourceCell ;
+        st:column e:t01-c012 ;
+        st:row e:t01-r022 ;
+        st:value "See instructions" .
+
+    e:t01-r022-c013 a st:SourceCell ;
+        st:column e:t01-c013 ;
+        st:row e:t01-r022 ;
+        st:value "See instructions" .
+
+    e:t01-r022-c014 a st:SourceCell ;
+        st:column e:t01-c014 ;
+        st:row e:t01-r022 ;
+        st:value "See instructions" .
+
+    e:t01-r022-c015 a st:SourceCell ;
+        st:column e:t01-c015 ;
+        st:row e:t01-r022 ;
+        st:value "See instructions" .
+
+    e:t01-r022-c016 a st:SourceCell ;
+        st:column e:t01-c016 ;
+        st:row e:t01-r022 ;
+        st:value "X" .
+
+    e:t01-r023-c003 a st:SourceCell ;
+        st:column e:t01-c003 ;
+        st:row e:t01-r023 ;
+        st:value "X" .
+
+    e:t01-r023-c004 a st:SourceCell ;
+        st:column e:t01-c004 ;
+        st:row e:t01-r023 ;
+        st:value "See instructions" .
+
+    e:t01-r023-c005 a st:SourceCell ;
+        st:column e:t01-c005 ;
+        st:row e:t01-r023 ;
+        st:value "See instructions" .
+
+    e:t01-r023-c006 a st:SourceCell ;
+        st:column e:t01-c006 ;
+        st:row e:t01-r023 ;
+        st:value "See instructions" .
+
+    e:t01-r023-c007 a st:SourceCell ;
+        st:column e:t01-c007 ;
+        st:row e:t01-r023 ;
+        st:value "See instructions" .
+
+    e:t01-r023-c008 a st:SourceCell ;
+        st:column e:t01-c008 ;
+        st:row e:t01-r023 ;
+        st:value "See instructions" .
+
+    e:t01-r023-c009 a st:SourceCell ;
+        st:column e:t01-c009 ;
+        st:row e:t01-r023 ;
+        st:value "See instructions" .
+
+    e:t01-r023-c010 a st:SourceCell ;
+        st:column e:t01-c010 ;
+        st:row e:t01-r023 ;
+        st:value "See instructions" .
+
+    e:t01-r023-c011 a st:SourceCell ;
+        st:column e:t01-c011 ;
+        st:row e:t01-r023 ;
+        st:value "See instructions" .
+
+    e:t01-r023-c012 a st:SourceCell ;
+        st:column e:t01-c012 ;
+        st:row e:t01-r023 ;
+        st:value "See instructions" .
+
+    e:t01-r023-c013 a st:SourceCell ;
+        st:column e:t01-c013 ;
+        st:row e:t01-r023 ;
+        st:value "See instructions" .
+
+    e:t01-r023-c014 a st:SourceCell ;
+        st:column e:t01-c014 ;
+        st:row e:t01-r023 ;
+        st:value "See instructions" .
+
+    e:t01-r023-c015 a st:SourceCell ;
+        st:column e:t01-c015 ;
+        st:row e:t01-r023 ;
+        st:value "See instructions" .
+
+    e:t01-r023-c016 a st:SourceCell ;
+        st:column e:t01-c016 ;
+        st:row e:t01-r023 ;
+        st:value "X" .
+
+    e:t01-r024-c002 a st:SourceCell ;
+        st:column e:t01-c002 ;
+        st:row e:t01-r024 ;
+        st:value "X" .
+
+    e:t01-r024-c004 a st:SourceCell ;
+        st:column e:t01-c004 ;
+        st:row e:t01-r024 ;
+        st:value "See instructions" .
+
+    e:t01-r024-c005 a st:SourceCell ;
+        st:column e:t01-c005 ;
+        st:row e:t01-r024 ;
+        st:value "See instructions" .
+
+    e:t01-r024-c006 a st:SourceCell ;
+        st:column e:t01-c006 ;
+        st:row e:t01-r024 ;
+        st:value "See instructions" .
+
+    e:t01-r024-c007 a st:SourceCell ;
+        st:column e:t01-c007 ;
+        st:row e:t01-r024 ;
+        st:value "See instructions" .
+
+    e:t01-r024-c008 a st:SourceCell ;
+        st:column e:t01-c008 ;
+        st:row e:t01-r024 ;
+        st:value "See instructions" .
+
+    e:t01-r024-c009 a st:SourceCell ;
+        st:column e:t01-c009 ;
+        st:row e:t01-r024 ;
+        st:value "See instructions" .
+
+    e:t01-r024-c010 a st:SourceCell ;
+        st:column e:t01-c010 ;
+        st:row e:t01-r024 ;
+        st:value "See instructions" .
+
+    e:t01-r024-c011 a st:SourceCell ;
+        st:column e:t01-c011 ;
+        st:row e:t01-r024 ;
+        st:value "See instructions" .
+
+    e:t01-r024-c012 a st:SourceCell ;
+        st:column e:t01-c012 ;
+        st:row e:t01-r024 ;
+        st:value "See instructions" .
+
+    e:t01-r024-c013 a st:SourceCell ;
+        st:column e:t01-c013 ;
+        st:row e:t01-r024 ;
+        st:value "See instructions" .
+
+    e:t01-r024-c014 a st:SourceCell ;
+        st:column e:t01-c014 ;
+        st:row e:t01-r024 ;
+        st:value "See instructions" .
+
+    e:t01-r024-c015 a st:SourceCell ;
+        st:column e:t01-c015 ;
+        st:row e:t01-r024 ;
+        st:value "See instructions" .
+
+    e:t01-r024-c016 a st:SourceCell ;
+        st:column e:t01-c016 ;
+        st:row e:t01-r024 ;
+        st:value "X" .
+
+    e:t01-r025-c004 a st:SourceCell ;
+        st:column e:t01-c004 ;
+        st:row e:t01-r025 ;
+        st:value "See instructions" .
+
+    e:t01-r025-c005 a st:SourceCell ;
+        st:column e:t01-c005 ;
+        st:row e:t01-r025 ;
+        st:value "See instructions" .
+
+    e:t01-r025-c006 a st:SourceCell ;
+        st:column e:t01-c006 ;
+        st:row e:t01-r025 ;
+        st:value "See instructions" .
+
+    e:t01-r025-c007 a st:SourceCell ;
+        st:column e:t01-c007 ;
+        st:row e:t01-r025 ;
+        st:value "X" .
+
+    e:t01-r025-c008 a st:SourceCell ;
+        st:column e:t01-c008 ;
+        st:row e:t01-r025 ;
+        st:value "X" .
+
+    e:t01-r025-c009 a st:SourceCell ;
+        st:column e:t01-c009 ;
+        st:row e:t01-r025 ;
+        st:value "X" .
+
+    e:t01-r025-c010 a st:SourceCell ;
+        st:column e:t01-c010 ;
+        st:row e:t01-r025 ;
+        st:value "X" .
+
+    e:t01-r025-c011 a st:SourceCell ;
+        st:column e:t01-c011 ;
+        st:row e:t01-r025 ;
+        st:value "X" .
+
+    e:t01-r025-c012 a st:SourceCell ;
+        st:column e:t01-c012 ;
+        st:row e:t01-r025 ;
+        st:value "X" .
+
+    e:t01-r025-c013 a st:SourceCell ;
+        st:column e:t01-c013 ;
+        st:row e:t01-r025 ;
+        st:value "X" .
+
+    e:t01-r025-c014 a st:SourceCell ;
+        st:column e:t01-c014 ;
+        st:row e:t01-r025 ;
+        st:value "X" .
+
+    e:t01-r025-c015 a st:SourceCell ;
+        st:column e:t01-c015 ;
+        st:row e:t01-r025 ;
+        st:value "X" .
+
+    e:t01-r026-c004 a st:SourceCell ;
+        st:column e:t01-c004 ;
+        st:row e:t01-r026 ;
+        st:value "See instructions" .
+
+    e:t01-r026-c005 a st:SourceCell ;
+        st:column e:t01-c005 ;
+        st:row e:t01-r026 ;
+        st:value "See instructions" .
+
+    e:t01-r026-c006 a st:SourceCell ;
+        st:column e:t01-c006 ;
+        st:row e:t01-r026 ;
+        st:value "See instructions" .
+
+    e:t01-r026-c007 a st:SourceCell ;
+        st:column e:t01-c007 ;
+        st:row e:t01-r026 ;
+        st:value "See instructions" .
+
+    e:t01-r026-c008 a st:SourceCell ;
+        st:column e:t01-c008 ;
+        st:row e:t01-r026 ;
+        st:value "See instructions" .
+
+    e:t01-r026-c009 a st:SourceCell ;
+        st:column e:t01-c009 ;
+        st:row e:t01-r026 ;
+        st:value "See instructions" .
+
+    e:t01-r026-c010 a st:SourceCell ;
+        st:column e:t01-c010 ;
+        st:row e:t01-r026 ;
+        st:value "See instructions" .
+
+    e:t01-r026-c011 a st:SourceCell ;
+        st:column e:t01-c011 ;
+        st:row e:t01-r026 ;
+        st:value "See instructions" .
+
+    e:t01-r026-c012 a st:SourceCell ;
+        st:column e:t01-c012 ;
+        st:row e:t01-r026 ;
+        st:value "See instructions" .
+
+    e:t01-r026-c013 a st:SourceCell ;
+        st:column e:t01-c013 ;
+        st:row e:t01-r026 ;
+        st:value "See instructions" .
+
+    e:t01-r026-c014 a st:SourceCell ;
+        st:column e:t01-c014 ;
+        st:row e:t01-r026 ;
+        st:value "See instructions" .
+
+    e:t01-r026-c015 a st:SourceCell ;
+        st:column e:t01-c015 ;
+        st:row e:t01-r026 ;
+        st:value "See instructions" .
+
+    e:t01-r027-c004 a st:SourceCell ;
+        st:column e:t01-c004 ;
+        st:row e:t01-r027 ;
+        st:value "See instructions" .
+
+    e:t01-r027-c005 a st:SourceCell ;
+        st:column e:t01-c005 ;
+        st:row e:t01-r027 ;
+        st:value "See instructions" .
+
+    e:t01-r027-c006 a st:SourceCell ;
+        st:column e:t01-c006 ;
+        st:row e:t01-r027 ;
+        st:value "See instructions" .
+
+    e:t01-r027-c007 a st:SourceCell ;
+        st:column e:t01-c007 ;
+        st:row e:t01-r027 ;
+        st:value "See instructions" .
+
+    e:t01-r027-c008 a st:SourceCell ;
+        st:column e:t01-c008 ;
+        st:row e:t01-r027 ;
+        st:value "See instructions" .
+
+    e:t01-r027-c009 a st:SourceCell ;
+        st:column e:t01-c009 ;
+        st:row e:t01-r027 ;
+        st:value "See instructions" .
+
+    e:t01-r027-c010 a st:SourceCell ;
+        st:column e:t01-c010 ;
+        st:row e:t01-r027 ;
+        st:value "See instructions" .
+
+    e:t01-r027-c011 a st:SourceCell ;
+        st:column e:t01-c011 ;
+        st:row e:t01-r027 ;
+        st:value "See instructions" .
+
+    e:t01-r027-c012 a st:SourceCell ;
+        st:column e:t01-c012 ;
+        st:row e:t01-r027 ;
+        st:value "See instructions" .
+
+    e:t01-r027-c013 a st:SourceCell ;
+        st:column e:t01-c013 ;
+        st:row e:t01-r027 ;
+        st:value "See instructions" .
+
+    e:t01-r027-c014 a st:SourceCell ;
+        st:column e:t01-c014 ;
+        st:row e:t01-r027 ;
+        st:value "See instructions" .
+
+    e:t01-r027-c015 a st:SourceCell ;
+        st:column e:t01-c015 ;
+        st:row e:t01-r027 ;
+        st:value "See instructions" .
+
+    e:t01-r029-c005 a st:SourceCell ;
+        st:column e:t01-c005 ;
+        st:row e:t01-r029 ;
+        st:value "See Section 1.3.1" .
+
+    e:t01-r029-c006 a st:SourceCell ;
+        st:column e:t01-c006 ;
+        st:row e:t01-r029 ;
+        st:value "See Section 1.3.1" .
+
+    e:t01-r029-c007 a st:SourceCell ;
+        st:column e:t01-c007 ;
+        st:row e:t01-r029 ;
+        st:value "See Section 1.3.1" .
+
+    e:t01-r029-c008 a st:SourceCell ;
+        st:column e:t01-c008 ;
+        st:row e:t01-r029 ;
+        st:value "See Section 1.3.1" .
+
+    e:t01-r029-c009 a st:SourceCell ;
+        st:column e:t01-c009 ;
+        st:row e:t01-r029 ;
+        st:value "See Section 1.3.1" .
+
+    e:t01-r029-c010 a st:SourceCell ;
+        st:column e:t01-c010 ;
+        st:row e:t01-r029 ;
+        st:value "See Section 1.3.1" .
+
+    e:t01-r029-c011 a st:SourceCell ;
+        st:column e:t01-c011 ;
+        st:row e:t01-r029 ;
+        st:value "See Section 1.3.1" .
+
+    e:t01-r029-c012 a st:SourceCell ;
+        st:column e:t01-c012 ;
+        st:row e:t01-r029 ;
+        st:value "See Section 1.3.1" .
+
+    e:t01-r029-c013 a st:SourceCell ;
+        st:column e:t01-c013 ;
+        st:row e:t01-r029 ;
+        st:value "See Section 1.3.1" .
+
+    e:t01-r029-c014 a st:SourceCell ;
+        st:column e:t01-c014 ;
+        st:row e:t01-r029 ;
+        st:value "See Section 1.3.1" .
+
+    e:t01-r029-c015 a st:SourceCell ;
+        st:column e:t01-c015 ;
+        st:row e:t01-r029 ;
+        st:value "See Section 1.3.1" .
+
+    e:t01-r029-c016 a st:SourceCell ;
+        st:column e:t01-c016 ;
+        st:row e:t01-r029 ;
+        st:value "See Section 1.3.1" .
+
+    e:t01-r030-c005 a st:SourceCell ;
+        st:column e:t01-c005 ;
+        st:row e:t01-r030 ;
+        st:value "See Section 1.3.1" .
+
+    e:t01-r030-c006 a st:SourceCell ;
+        st:column e:t01-c006 ;
+        st:row e:t01-r030 ;
+        st:value "See Section 1.3.1" .
+
+    e:t01-r030-c007 a st:SourceCell ;
+        st:column e:t01-c007 ;
+        st:row e:t01-r030 ;
+        st:value "See Section 1.3.1" .
+
+    e:t01-r030-c008 a st:SourceCell ;
+        st:column e:t01-c008 ;
+        st:row e:t01-r030 ;
+        st:value "See Section 1.3.1" .
+
+    e:t01-r030-c009 a st:SourceCell ;
+        st:column e:t01-c009 ;
+        st:row e:t01-r030 ;
+        st:value "See Section 1.3.1" .
+
+    e:t01-r030-c010 a st:SourceCell ;
+        st:column e:t01-c010 ;
+        st:row e:t01-r030 ;
+        st:value "See Section 1.3.1" .
+
+    e:t01-r030-c011 a st:SourceCell ;
+        st:column e:t01-c011 ;
+        st:row e:t01-r030 ;
+        st:value "See Section 1.3.1" .
+
+    e:t01-r030-c012 a st:SourceCell ;
+        st:column e:t01-c012 ;
+        st:row e:t01-r030 ;
+        st:value "See Section 1.3.1" .
+
+    e:t01-r030-c013 a st:SourceCell ;
+        st:column e:t01-c013 ;
+        st:row e:t01-r030 ;
+        st:value "See Section 1.3.1" .
+
+    e:t01-r030-c014 a st:SourceCell ;
+        st:column e:t01-c014 ;
+        st:row e:t01-r030 ;
+        st:value "See Section 1.3.1" .
+
+    e:t01-r030-c015 a st:SourceCell ;
+        st:column e:t01-c015 ;
+        st:row e:t01-r030 ;
+        st:value "See Section 1.3.1" .
+
+    e:t01-r030-c016 a st:SourceCell ;
+        st:column e:t01-c016 ;
+        st:row e:t01-r030 ;
+        st:value "See Section 1.3.1" .
+
+    e:t01-r031-c004 a st:SourceCell ;
+        st:column e:t01-c004 ;
+        st:row e:t01-r031 ;
+        st:value "See instructions" .
+
+    e:t01-r031-c005 a st:SourceCell ;
+        st:column e:t01-c005 ;
+        st:row e:t01-r031 ;
+        st:value "See instructions" .
+
+    e:t01-r031-c006 a st:SourceCell ;
+        st:column e:t01-c006 ;
+        st:row e:t01-r031 ;
+        st:value "See instructions" .
+
+    e:t01-r031-c007 a st:SourceCell ;
+        st:column e:t01-c007 ;
+        st:row e:t01-r031 ;
+        st:value "See instructions" .
+
+    e:t01-r031-c008 a st:SourceCell ;
+        st:column e:t01-c008 ;
+        st:row e:t01-r031 ;
+        st:value "See instructions" .
+
+    e:t01-r031-c009 a st:SourceCell ;
+        st:column e:t01-c009 ;
+        st:row e:t01-r031 ;
+        st:value "See instructions" .
+
+    e:t01-r031-c010 a st:SourceCell ;
+        st:column e:t01-c010 ;
+        st:row e:t01-r031 ;
+        st:value "See instructions" .
+
+    e:t01-r031-c011 a st:SourceCell ;
+        st:column e:t01-c011 ;
+        st:row e:t01-r031 ;
+        st:value "See instructions" .
+
+    e:t01-r031-c012 a st:SourceCell ;
+        st:column e:t01-c012 ;
+        st:row e:t01-r031 ;
+        st:value "See instructions" .
+
+    e:t01-r031-c013 a st:SourceCell ;
+        st:column e:t01-c013 ;
+        st:row e:t01-r031 ;
+        st:value "See instructions" .
+
+    e:t01-r031-c014 a st:SourceCell ;
+        st:column e:t01-c014 ;
+        st:row e:t01-r031 ;
+        st:value "See instructions" .
+
+    e:t01-r031-c015 a st:SourceCell ;
+        st:column e:t01-c015 ;
+        st:row e:t01-r031 ;
+        st:value "See instructions" .
+
+    e:t01-r032-c004 a st:SourceCell ;
+        st:column e:t01-c004 ;
+        st:row e:t01-r032 ;
+        st:value "See instructions" .
+
+    e:t01-r032-c005 a st:SourceCell ;
+        st:column e:t01-c005 ;
+        st:row e:t01-r032 ;
+        st:value "See instructions" .
+
+    e:t01-r032-c006 a st:SourceCell ;
+        st:column e:t01-c006 ;
+        st:row e:t01-r032 ;
+        st:value "See instructions" .
+
+    e:t01-r032-c007 a st:SourceCell ;
+        st:column e:t01-c007 ;
+        st:row e:t01-r032 ;
+        st:value "See instructions" .
+
+    e:t01-r032-c008 a st:SourceCell ;
+        st:column e:t01-c008 ;
+        st:row e:t01-r032 ;
+        st:value "See instructions" .
+
+    e:t01-r032-c009 a st:SourceCell ;
+        st:column e:t01-c009 ;
+        st:row e:t01-r032 ;
+        st:value "See instructions" .
+
+    e:t01-r032-c010 a st:SourceCell ;
+        st:column e:t01-c010 ;
+        st:row e:t01-r032 ;
+        st:value "See instructions" .
+
+    e:t01-r032-c012 a st:SourceCell ;
+        st:column e:t01-c012 ;
+        st:row e:t01-r032 ;
+        st:value "See instructions" .
+
+    e:t01-r032-c013 a st:SourceCell ;
+        st:column e:t01-c013 ;
+        st:row e:t01-r032 ;
+        st:value "See instructions" .
+
+    e:t01-r032-c014 a st:SourceCell ;
+        st:column e:t01-c014 ;
+        st:row e:t01-r032 ;
+        st:value "See instructions" .
+
+    e:t01-r032-c015 a st:SourceCell ;
+        st:column e:t01-c015 ;
+        st:row e:t01-r032 ;
+        st:value "See instructions" .
+
+    e:t02-n-a a st:SourceAnnotation ;
+        st:inTable e:t02 ;
+        st:marker "a" .
+
+    e:t02-n-i1 a st:SourceAnnotation ;
+        st:inTable e:t02 ;
+        st:marker "i1" .
+
+    e:t02-n-i2 a st:SourceAnnotation ;
+        st:inTable e:t02 ;
+        st:marker "i2" .
+
+    e:t02-n-i3 a st:SourceAnnotation ;
+        st:inTable e:t02 ;
+        st:marker "i3" .
+
+    e:t02-r002 a st:SourcePropertyRow ;
+        st:hierarchyPosition 1 ;
+        st:inTable e:t02 ;
+        st:level 1 ;
+        st:propertyName "Epoch" ;
+        st:propertyType "epoch" ;
+        st:rowPosition 2 .
+
+    e:t02-r003 a st:SourcePropertyRow ;
+        st:hierarchyPosition 2 ;
+        st:inTable e:t02 ;
+        st:level 2 ;
+        st:propertyName "Visit" ;
+        st:propertyType "visit" ;
+        st:rowPosition 3 .
+
+    e:t02-r005-c002 a st:SourceCell ;
+        st:column e:t02-c002 ;
+        st:row e:t02-r005 ;
+        st:value "X" .
+
+    e:t02-r005-c003 a st:SourceCell ;
+        st:column e:t02-c003 ;
+        st:row e:t02-r005 ;
+        st:value "X" .
+
+    e:t02-r006 a st:SourceActivityRow ;
+        st:inTable e:t02 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "PK, IG, and exploratory hypersensitivity" ;
+        st:onPage page:23 ;
+        st:rowPosition 6 .
+
+    e:t02-r007-c002 a st:SourceCell ;
+        st:column e:t02-c002 ;
+        st:row e:t02-r007 ;
+        st:value "X" .
+
+    e:t03-n-g1 a st:SourceAnnotation ;
+        st:inTable e:t03 ;
+        st:marker "g1" .
+
+    e:t03-n-g2 a st:SourceAnnotation ;
+        st:inTable e:t03 ;
+        st:marker "g2" .
+
+    e:t03-n-g3 a st:SourceAnnotation ;
+        st:inTable e:t03 ;
+        st:marker "g3" .
+
+    e:t03-n-g4 a st:SourceAnnotation ;
+        st:inTable e:t03 ;
+        st:marker "g4" .
+
+    e:t03-r001 a st:SourcePropertyRow ;
+        st:hierarchyPosition 1 ;
+        st:inTable e:t03 ;
+        st:level 1 ;
+        st:propertyName "Column heading" ;
+        st:propertyType "other" ;
+        st:rowPosition 1 .
+
+    e:t03-r002-c002 a st:SourceCell ;
+        st:column e:t03-c002 ;
+        st:row e:t03-r002 ;
+        st:value "1" .
+
+    e:t03-r002-c003 a st:SourceCell ;
+        st:column e:t03-c003 ;
+        st:row e:t03-r002 ;
+        st:value "1" .
+
+    e:t03-r002-c004 a st:SourceCell ;
+        st:column e:t03-c004 ;
+        st:row e:t03-r002 ;
+        st:value "-1 hr (predose)" .
+
+    e:t03-r002-c005 a st:SourceCell ;
+        st:column e:t03-c005 ;
+        st:row e:t03-r002 ;
+        st:value "X" .
+
+    e:t03-r002-c006 a st:SourceCell ;
+        st:column e:t03-c006 ;
+        st:row e:t03-r002 ;
+        st:value "X" .
+
+    e:t03-r003-c002 a st:SourceCell ;
+        st:column e:t03-c002 ;
+        st:row e:t03-r003 ;
+        st:value "1" .
+
+    e:t03-r003-c003 a st:SourceCell ;
+        st:column e:t03-c003 ;
+        st:row e:t03-r003 ;
+        st:value "2" .
+
+    e:t03-r003-c004 a st:SourceCell ;
+        st:column e:t03-c004 ;
+        st:row e:t03-r003 ;
+        st:value "24 hrs ± 2 postdose" .
+
+    e:t03-r003-c005 a st:SourceCell ;
+        st:column e:t03-c005 ;
+        st:row e:t03-r003 ;
+        st:value "X" .
+
+    e:t03-r004-c002 a st:SourceCell ;
+        st:column e:t03-c002 ;
+        st:row e:t03-r004 ;
+        st:value "1" .
+
+    e:t03-r004-c003 a st:SourceCell ;
+        st:column e:t03-c003 ;
+        st:row e:t03-r004 ;
+        st:value "4 ± 1" .
+
+    e:t03-r004-c004 a st:SourceCell ;
+        st:column e:t03-c004 ;
+        st:row e:t03-r004 ;
+        st:value "48-96 hrs postdose window" .
+
+    e:t03-r004-c005 a st:SourceCell ;
+        st:column e:t03-c005 ;
+        st:row e:t03-r004 ;
+        st:value "X" .
+
+    e:t03-r005-c002 a st:SourceCell ;
+        st:column e:t03-c002 ;
+        st:row e:t03-r005 ;
+        st:value "1" .
+
+    e:t03-r005-c003 a st:SourceCell ;
+        st:column e:t03-c003 ;
+        st:row e:t03-r005 ;
+        st:value "8" .
+
+    e:t03-r005-c004 a st:SourceCell ;
+        st:column e:t03-c004 ;
+        st:row e:t03-r005 ;
+        st:value "-1 hr (predose)" .
+
+    e:t03-r005-c005 a st:SourceCell ;
+        st:column e:t03-c005 ;
+        st:row e:t03-r005 ;
+        st:value "X" .
+
+    e:t03-r006-c002 a st:SourceCell ;
+        st:column e:t03-c002 ;
+        st:row e:t03-r006 ;
+        st:value "1" .
+
+    e:t03-r006-c003 a st:SourceCell ;
+        st:column e:t03-c003 ;
+        st:row e:t03-r006 ;
+        st:value "15" .
+
+    e:t03-r006-c004 a st:SourceCell ;
+        st:column e:t03-c004 ;
+        st:row e:t03-r006 ;
+        st:value "-1 hr (predose)" .
+
+    e:t03-r006-c005 a st:SourceCell ;
+        st:column e:t03-c005 ;
+        st:row e:t03-r006 ;
+        st:value "X" .
+
+    e:t03-r006-c006 a st:SourceCell ;
+        st:column e:t03-c006 ;
+        st:row e:t03-r006 ;
+        st:value "X" .
+
+    e:t03-r007-c002 a st:SourceCell ;
+        st:column e:t03-c002 ;
+        st:row e:t03-r007 ;
+        st:value "1" .
+
+    e:t03-r007-c003 a st:SourceCell ;
+        st:column e:t03-c003 ;
+        st:row e:t03-r007 ;
+        st:value "18 ± 1" .
+
+    e:t03-r007-c004 a st:SourceCell ;
+        st:column e:t03-c004 ;
+        st:row e:t03-r007 ;
+        st:value "48-96 hrs postdose window" .
+
+    e:t03-r007-c005 a st:SourceCell ;
+        st:column e:t03-c005 ;
+        st:row e:t03-r007 ;
+        st:value "X" .
+
+    e:t03-r008-c002 a st:SourceCell ;
+        st:column e:t03-c002 ;
+        st:row e:t03-r008 ;
+        st:value "2" .
+
+    e:t03-r008-c003 a st:SourceCell ;
+        st:column e:t03-c003 ;
+        st:row e:t03-r008 ;
+        st:value "1" .
+
+    e:t03-r008-c004 a st:SourceCell ;
+        st:column e:t03-c004 ;
+        st:row e:t03-r008 ;
+        st:value "-1 hr (predose)" .
+
+    e:t03-r008-c005 a st:SourceCell ;
+        st:column e:t03-c005 ;
+        st:row e:t03-r008 ;
+        st:value "X" .
+
+    e:t03-r009-c002 a st:SourceCell ;
+        st:column e:t03-c002 ;
+        st:row e:t03-r009 ;
+        st:value "2" .
+
+    e:t03-r009-c003 a st:SourceCell ;
+        st:column e:t03-c003 ;
+        st:row e:t03-r009 ;
+        st:value "8" .
+
+    e:t03-r009-c004 a st:SourceCell ;
+        st:column e:t03-c004 ;
+        st:row e:t03-r009 ;
+        st:value "-1 hr (predose)" .
+
+    e:t03-r009-c005 a st:SourceCell ;
+        st:column e:t03-c005 ;
+        st:row e:t03-r009 ;
+        st:value "X" .
+
+    e:t03-r009-c006 a st:SourceCell ;
+        st:column e:t03-c006 ;
+        st:row e:t03-r009 ;
+        st:value "X" .
+
+    e:t03-r010-c002 a st:SourceCell ;
+        st:column e:t03-c002 ;
+        st:row e:t03-r010 ;
+        st:value "2" .
+
+    e:t03-r010-c003 a st:SourceCell ;
+        st:column e:t03-c003 ;
+        st:row e:t03-r010 ;
+        st:value "11 ± 1" .
+
+    e:t03-r010-c004 a st:SourceCell ;
+        st:column e:t03-c004 ;
+        st:row e:t03-r010 ;
+        st:value "48-96 hrs postdose window" .
+
+    e:t03-r010-c005 a st:SourceCell ;
+        st:column e:t03-c005 ;
+        st:row e:t03-r010 ;
+        st:value "X" .
+
+    e:t03-r011-c002 a st:SourceCell ;
+        st:column e:t03-c002 ;
+        st:row e:t03-r011 ;
+        st:value "3" .
+
+    e:t03-r011-c003 a st:SourceCell ;
+        st:column e:t03-c003 ;
+        st:row e:t03-r011 ;
+        st:value "1" .
+
+    e:t03-r011-c004 a st:SourceCell ;
+        st:column e:t03-c004 ;
+        st:row e:t03-r011 ;
+        st:value "-1 hr (predose)" .
+
+    e:t03-r011-c005 a st:SourceCell ;
+        st:column e:t03-c005 ;
+        st:row e:t03-r011 ;
+        st:value "X" .
+
+    e:t03-r012-c002 a st:SourceCell ;
+        st:column e:t03-c002 ;
+        st:row e:t03-r012 ;
+        st:value "3" .
+
+    e:t03-r012-c003 a st:SourceCell ;
+        st:column e:t03-c003 ;
+        st:row e:t03-r012 ;
+        st:value "15" .
+
+    e:t03-r012-c004 a st:SourceCell ;
+        st:column e:t03-c004 ;
+        st:row e:t03-r012 ;
+        st:value "-1 hr (predose)" .
+
+    e:t03-r012-c005 a st:SourceCell ;
+        st:column e:t03-c005 ;
+        st:row e:t03-r012 ;
+        st:value "X" .
+
+    e:t03-r013-c002 a st:SourceCell ;
+        st:column e:t03-c002 ;
+        st:row e:t03-r013 ;
+        st:value "3" .
+
+    e:t03-r013-c003 a st:SourceCell ;
+        st:column e:t03-c003 ;
+        st:row e:t03-r013 ;
+        st:value "18 ± 1" .
+
+    e:t03-r013-c004 a st:SourceCell ;
+        st:column e:t03-c004 ;
+        st:row e:t03-r013 ;
+        st:value "48-96 hrs postdose window" .
+
+    e:t03-r013-c005 a st:SourceCell ;
+        st:column e:t03-c005 ;
+        st:row e:t03-r013 ;
+        st:value "X" .
+
+    e:t03-r014-c002 a st:SourceCell ;
+        st:column e:t03-c002 ;
+        st:row e:t03-r014 ;
+        st:value "4" .
+
+    e:t03-r014-c003 a st:SourceCell ;
+        st:column e:t03-c003 ;
+        st:row e:t03-r014 ;
+        st:value "1" .
+
+    e:t03-r014-c004 a st:SourceCell ;
+        st:column e:t03-c004 ;
+        st:row e:t03-r014 ;
+        st:value "-1 hr (predose)" .
+
+    e:t03-r014-c005 a st:SourceCell ;
+        st:column e:t03-c005 ;
+        st:row e:t03-r014 ;
+        st:value "X" .
+
+    e:t03-r014-c006 a st:SourceCell ;
+        st:column e:t03-c006 ;
+        st:row e:t03-r014 ;
+        st:value "X" .
+
+    e:t03-r015-c002 a st:SourceCell ;
+        st:column e:t03-c002 ;
+        st:row e:t03-r015 ;
+        st:value "5" .
+
+    e:t03-r015-c003 a st:SourceCell ;
+        st:column e:t03-c003 ;
+        st:row e:t03-r015 ;
+        st:value "1" .
+
+    e:t03-r015-c004 a st:SourceCell ;
+        st:column e:t03-c004 ;
+        st:row e:t03-r015 ;
+        st:value "-1 hr (predose)" .
+
+    e:t03-r015-c005 a st:SourceCell ;
+        st:column e:t03-c005 ;
+        st:row e:t03-r015 ;
+        st:value "X" .
+
+    e:t03-r016-c004 a st:SourceCell ;
+        st:column e:t03-c004 ;
+        st:row e:t03-r016 ;
+        st:value "30 days post last dose" .
+
+    e:t03-r016-c005 a st:SourceCell ;
+        st:column e:t03-c005 ;
+        st:row e:t03-r016 ;
+        st:value "X" .
+
+    e:t03-r016-c006 a st:SourceCell ;
+        st:column e:t03-c006 ;
+        st:row e:t03-r016 ;
+        st:value "X" .
+
+    e:u-t01-c002-v01 a st:ColumnPropertyValue ;
+        st:level 1 ;
+        st:position 1 ;
+        st:propertyName "Epoch" ;
+        st:propertyType "epoch" ;
+        st:value "Screening" .
+
+    e:u-t01-c002-v02 a st:ColumnPropertyValue ;
+        st:level 2 ;
+        st:position 2 ;
+        st:propertyName "Cycle length" ;
+        st:propertyType "other" ;
+        st:value "" .
+
+    e:u-t01-c002-v03 a st:ColumnPropertyValue ;
+        st:level 3 ;
+        st:position 3 ;
+        st:propertyName "Cycle" ;
+        st:propertyType "cycle" ;
+        st:value "(Day Relative to C1D1)" .
+
+    e:u-t01-c002-v04 a st:ColumnPropertyValue ;
+        st:level 4 ;
+        st:position 4 ;
+        st:propertyName "Day" ;
+        st:propertyType "study_day" ;
+        st:value "≤28" .
+
+    e:u-t01-c002-v05 a st:ColumnPropertyValue ;
+        st:position 5 ;
+        st:propertyName "Visit window" ;
+        st:propertyType "window" ;
+        st:value "" .
+
+    e:u-t01-c003-v01 a st:ColumnPropertyValue ;
+        st:level 1 ;
+        st:position 1 ;
+        st:propertyName "Epoch" ;
+        st:propertyType "epoch" ;
+        st:value "Screening" .
+
+    e:u-t01-c003-v02 a st:ColumnPropertyValue ;
+        st:level 2 ;
+        st:position 2 ;
+        st:propertyName "Cycle length" ;
+        st:propertyType "other" ;
+        st:value "" .
+
+    e:u-t01-c003-v03 a st:ColumnPropertyValue ;
+        st:level 3 ;
+        st:position 3 ;
+        st:propertyName "Cycle" ;
+        st:propertyType "cycle" ;
+        st:value "(Day Relative to C1D1)" .
+
+    e:u-t01-c003-v04 a st:ColumnPropertyValue ;
+        st:level 4 ;
+        st:position 4 ;
+        st:propertyName "Day" ;
+        st:propertyType "study_day" ;
+        st:value "≤7" .
+
+    e:u-t01-c003-v05 a st:ColumnPropertyValue ;
+        st:position 5 ;
+        st:propertyName "Visit window" ;
+        st:propertyType "window" ;
+        st:value "" .
+
+    e:u-t01-c004-v01 a st:ColumnPropertyValue ;
+        st:level 1 ;
+        st:position 1 ;
+        st:propertyName "Epoch" ;
+        st:propertyType "epoch" ;
+        st:value "On-Treatment" .
+
+    e:u-t01-c004-v02 a st:ColumnPropertyValue ;
+        st:level 2 ;
+        st:position 2 ;
+        st:propertyName "Cycle length" ;
+        st:propertyType "other" ;
+        st:value "Cycle = 21 days" .
+
+    e:u-t01-c004-v03 a st:ColumnPropertyValue ;
+        st:level 3 ;
+        st:position 3 ;
+        st:propertyName "Cycle" ;
+        st:propertyType "cycle" ;
+        st:value "Cycle 1" .
+
+    e:u-t01-c004-v04 a st:ColumnPropertyValue ;
+        st:level 4 ;
+        st:position 4 ;
+        st:propertyName "Day" ;
+        st:propertyType "study_day" ;
+        st:value "D1" .
+
+    e:u-t01-c004-v05 a st:ColumnPropertyValue ;
+        st:position 5 ;
+        st:propertyName "Visit window" ;
+        st:propertyType "window" ;
+        st:value "(±3 days)" .
+
+    e:u-t01-c005-v01 a st:ColumnPropertyValue ;
+        st:level 1 ;
+        st:position 1 ;
+        st:propertyName "Epoch" ;
+        st:propertyType "epoch" ;
+        st:value "On-Treatment" .
+
+    e:u-t01-c005-v02 a st:ColumnPropertyValue ;
+        st:level 2 ;
+        st:position 2 ;
+        st:propertyName "Cycle length" ;
+        st:propertyType "other" ;
+        st:value "Cycle = 21 days" .
+
+    e:u-t01-c005-v03 a st:ColumnPropertyValue ;
+        st:level 3 ;
+        st:position 3 ;
+        st:propertyName "Cycle" ;
+        st:propertyType "cycle" ;
+        st:value "Cycle 1" .
+
+    e:u-t01-c005-v04 a st:ColumnPropertyValue ;
+        st:level 4 ;
+        st:position 4 ;
+        st:propertyName "Day" ;
+        st:propertyType "study_day" ;
+        st:value "D8" .
+
+    e:u-t01-c005-v05 a st:ColumnPropertyValue ;
+        st:position 5 ;
+        st:propertyName "Visit window" ;
+        st:propertyType "window" ;
+        st:value "(±3 days)" .
+
+    e:u-t01-c006-v01 a st:ColumnPropertyValue ;
+        st:level 1 ;
+        st:position 1 ;
+        st:propertyName "Epoch" ;
+        st:propertyType "epoch" ;
+        st:value "On-Treatment" .
+
+    e:u-t01-c006-v02 a st:ColumnPropertyValue ;
+        st:level 2 ;
+        st:position 2 ;
+        st:propertyName "Cycle length" ;
+        st:propertyType "other" ;
+        st:value "Cycle = 21 days" .
+
+    e:u-t01-c006-v03 a st:ColumnPropertyValue ;
+        st:level 3 ;
+        st:position 3 ;
+        st:propertyName "Cycle" ;
+        st:propertyType "cycle" ;
+        st:value "Cycle 1" .
+
+    e:u-t01-c006-v04 a st:ColumnPropertyValue ;
+        st:level 4 ;
+        st:position 4 ;
+        st:propertyName "Day" ;
+        st:propertyType "study_day" ;
+        st:value "D15" .
+
+    e:u-t01-c006-v05 a st:ColumnPropertyValue ;
+        st:position 5 ;
+        st:propertyName "Visit window" ;
+        st:propertyType "window" ;
+        st:value "(±3 days)" .
+
+    e:u-t01-c007-v01 a st:ColumnPropertyValue ;
+        st:level 1 ;
+        st:position 1 ;
+        st:propertyName "Epoch" ;
+        st:propertyType "epoch" ;
+        st:value "On-Treatment" .
+
+    e:u-t01-c007-v02 a st:ColumnPropertyValue ;
+        st:level 2 ;
+        st:position 2 ;
+        st:propertyName "Cycle length" ;
+        st:propertyType "other" ;
+        st:value "Cycle = 21 days (or 28 days for Cohorts B & C per combination regimen)" .
+
+    e:u-t01-c007-v03 a st:ColumnPropertyValue ;
+        st:level 3 ;
+        st:position 3 ;
+        st:propertyName "Cycle" ;
+        st:propertyType "cycle" ;
+        st:value "Cycle 2" .
+
+    e:u-t01-c007-v04 a st:ColumnPropertyValue ;
+        st:level 4 ;
+        st:position 4 ;
+        st:propertyName "Day" ;
+        st:propertyType "study_day" ;
+        st:value "D1" .
+
+    e:u-t01-c007-v05 a st:ColumnPropertyValue ;
+        st:position 5 ;
+        st:propertyName "Visit window" ;
+        st:propertyType "window" ;
+        st:value "(±3 days)" .
+
+    e:u-t01-c008-v01 a st:ColumnPropertyValue ;
+        st:level 1 ;
+        st:position 1 ;
+        st:propertyName "Epoch" ;
+        st:propertyType "epoch" ;
+        st:value "On-Treatment" .
+
+    e:u-t01-c008-v02 a st:ColumnPropertyValue ;
+        st:level 2 ;
+        st:position 2 ;
+        st:propertyName "Cycle length" ;
+        st:propertyType "other" ;
+        st:value "Cycle = 21 days (or 28 days for Cohorts B & C per combination regimen)" .
+
+    e:u-t01-c008-v03 a st:ColumnPropertyValue ;
+        st:level 3 ;
+        st:position 3 ;
+        st:propertyName "Cycle" ;
+        st:propertyType "cycle" ;
+        st:value "Cycle 2" .
+
+    e:u-t01-c008-v04 a st:ColumnPropertyValue ;
+        st:level 4 ;
+        st:position 4 ;
+        st:propertyName "Day" ;
+        st:propertyType "study_day" ;
+        st:value "D8" .
+
+    e:u-t01-c008-v05 a st:ColumnPropertyValue ;
+        st:position 5 ;
+        st:propertyName "Visit window" ;
+        st:propertyType "window" ;
+        st:value "(±3 days)" .
+
+    e:u-t01-c009-v01 a st:ColumnPropertyValue ;
+        st:level 1 ;
+        st:position 1 ;
+        st:propertyName "Epoch" ;
+        st:propertyType "epoch" ;
+        st:value "On-Treatment" .
+
+    e:u-t01-c009-v02 a st:ColumnPropertyValue ;
+        st:level 2 ;
+        st:position 2 ;
+        st:propertyName "Cycle length" ;
+        st:propertyType "other" ;
+        st:value "Cycle = 21 days (or 28 days for Cohorts B & C per combination regimen)" .
+
+    e:u-t01-c009-v03 a st:ColumnPropertyValue ;
+        st:level 3 ;
+        st:position 3 ;
+        st:propertyName "Cycle" ;
+        st:propertyType "cycle" ;
+        st:value "Cycle 2" .
+
+    e:u-t01-c009-v04 a st:ColumnPropertyValue ;
+        st:level 4 ;
+        st:position 4 ;
+        st:propertyName "Day" ;
+        st:propertyType "study_day" ;
+        st:value "D15" .
+
+    e:u-t01-c009-v05 a st:ColumnPropertyValue ;
+        st:position 5 ;
+        st:propertyName "Visit window" ;
+        st:propertyType "window" ;
+        st:value "(±3 days)" .
+
+    e:u-t01-c010-v01 a st:ColumnPropertyValue ;
+        st:level 1 ;
+        st:position 1 ;
+        st:propertyName "Epoch" ;
+        st:propertyType "epoch" ;
+        st:value "On-Treatment" .
+
+    e:u-t01-c010-v02 a st:ColumnPropertyValue ;
+        st:level 2 ;
+        st:position 2 ;
+        st:propertyName "Cycle length" ;
+        st:propertyType "other" ;
+        st:value "Cycle = 21 days (or 28 days for Cohorts B & C per combination regimen)" .
+
+    e:u-t01-c010-v03 a st:ColumnPropertyValue ;
+        st:level 3 ;
+        st:position 3 ;
+        st:propertyName "Cycle" ;
+        st:propertyType "cycle" ;
+        st:value "Cycle 2" .
+
+    e:u-t01-c010-v04 a st:ColumnPropertyValue ;
+        st:level 4 ;
+        st:position 4 ;
+        st:propertyName "Day" ;
+        st:propertyType "study_day" ;
+        st:value "D22" .
+
+    e:u-t01-c010-v05 a st:ColumnPropertyValue ;
+        st:position 5 ;
+        st:propertyName "Visit window" ;
+        st:propertyType "window" ;
+        st:value "(±3 days)" .
+
+    e:u-t01-c011-v01 a st:ColumnPropertyValue ;
+        st:level 1 ;
+        st:position 1 ;
+        st:propertyName "Epoch" ;
+        st:propertyType "epoch" ;
+        st:value "On-Treatment" .
+
+    e:u-t01-c011-v02 a st:ColumnPropertyValue ;
+        st:level 2 ;
+        st:position 2 ;
+        st:propertyName "Cycle length" ;
+        st:propertyType "other" ;
+        st:value "Cycle = 21 days (or 28 days for Cohorts B & C per combination regimen)" .
+
+    e:u-t01-c011-v03 a st:ColumnPropertyValue ;
+        st:level 3 ;
+        st:position 3 ;
+        st:propertyName "Cycle" ;
+        st:propertyType "cycle" ;
+        st:value "Cycle 2-n (If combo therapy is held and ramucirumab is given)" .
+
+    e:u-t01-c011-v04 a st:ColumnPropertyValue ;
+        st:level 4 ;
+        st:position 4 ;
+        st:propertyName "Day" ;
+        st:propertyType "study_day" ;
+        st:value "DX" .
+
+    e:u-t01-c011-v05 a st:ColumnPropertyValue ;
+        st:position 5 ;
+        st:propertyName "Visit window" ;
+        st:propertyType "window" ;
+        st:value "(±3 days)" .
+
+    e:u-t01-c012-v01 a st:ColumnPropertyValue ;
+        st:level 1 ;
+        st:position 1 ;
+        st:propertyName "Epoch" ;
+        st:propertyType "epoch" ;
+        st:value "On-Treatment" .
+
+    e:u-t01-c012-v02 a st:ColumnPropertyValue ;
+        st:level 2 ;
+        st:position 2 ;
+        st:propertyName "Cycle length" ;
+        st:propertyType "other" ;
+        st:value "Cycle = 21 days (or 28 days for Cohorts B & C per combination regimen)" .
+
+    e:u-t01-c012-v03 a st:ColumnPropertyValue ;
+        st:level 3 ;
+        st:position 3 ;
+        st:propertyName "Cycle" ;
+        st:propertyType "cycle" ;
+        st:value "Cycle 3-n" .
+
+    e:u-t01-c012-v04 a st:ColumnPropertyValue ;
+        st:level 4 ;
+        st:position 4 ;
+        st:propertyName "Day" ;
+        st:propertyType "study_day" ;
+        st:value "D1" .
+
+    e:u-t01-c012-v05 a st:ColumnPropertyValue ;
+        st:position 5 ;
+        st:propertyName "Visit window" ;
+        st:propertyType "window" ;
+        st:value "(±3 days)" .
+
+    e:u-t01-c013-v01 a st:ColumnPropertyValue ;
+        st:level 1 ;
+        st:position 1 ;
+        st:propertyName "Epoch" ;
+        st:propertyType "epoch" ;
+        st:value "On-Treatment" .
+
+    e:u-t01-c013-v02 a st:ColumnPropertyValue ;
+        st:level 2 ;
+        st:position 2 ;
+        st:propertyName "Cycle length" ;
+        st:propertyType "other" ;
+        st:value "Cycle = 21 days (or 28 days for Cohorts B & C per combination regimen)" .
+
+    e:u-t01-c013-v03 a st:ColumnPropertyValue ;
+        st:level 3 ;
+        st:position 3 ;
+        st:propertyName "Cycle" ;
+        st:propertyType "cycle" ;
+        st:value "Cycle 3-n" .
+
+    e:u-t01-c013-v04 a st:ColumnPropertyValue ;
+        st:level 4 ;
+        st:position 4 ;
+        st:propertyName "Day" ;
+        st:propertyType "study_day" ;
+        st:value "D8" .
+
+    e:u-t01-c013-v05 a st:ColumnPropertyValue ;
+        st:position 5 ;
+        st:propertyName "Visit window" ;
+        st:propertyType "window" ;
+        st:value "(±3 days)" .
+
+    e:u-t01-c014-v01 a st:ColumnPropertyValue ;
+        st:level 1 ;
+        st:position 1 ;
+        st:propertyName "Epoch" ;
+        st:propertyType "epoch" ;
+        st:value "On-Treatment" .
+
+    e:u-t01-c014-v02 a st:ColumnPropertyValue ;
+        st:level 2 ;
+        st:position 2 ;
+        st:propertyName "Cycle length" ;
+        st:propertyType "other" ;
+        st:value "Cycle = 21 days (or 28 days for Cohorts B & C per combination regimen)" .
+
+    e:u-t01-c014-v03 a st:ColumnPropertyValue ;
+        st:level 3 ;
+        st:position 3 ;
+        st:propertyName "Cycle" ;
+        st:propertyType "cycle" ;
+        st:value "Cycle 3-n" .
+
+    e:u-t01-c014-v04 a st:ColumnPropertyValue ;
+        st:level 4 ;
+        st:position 4 ;
+        st:propertyName "Day" ;
+        st:propertyType "study_day" ;
+        st:value "D15" .
+
+    e:u-t01-c014-v05 a st:ColumnPropertyValue ;
+        st:position 5 ;
+        st:propertyName "Visit window" ;
+        st:propertyType "window" ;
+        st:value "(±3 days)" .
+
+    e:u-t01-c015-v01 a st:ColumnPropertyValue ;
+        st:level 1 ;
+        st:position 1 ;
+        st:propertyName "Epoch" ;
+        st:propertyType "epoch" ;
+        st:value "On-Treatment" .
+
+    e:u-t01-c015-v02 a st:ColumnPropertyValue ;
+        st:level 2 ;
+        st:position 2 ;
+        st:propertyName "Cycle length" ;
+        st:propertyType "other" ;
+        st:value "Cycle = 21 days (or 28 days for Cohorts B & C per combination regimen)" .
+
+    e:u-t01-c015-v03 a st:ColumnPropertyValue ;
+        st:level 3 ;
+        st:position 3 ;
+        st:propertyName "Cycle" ;
+        st:propertyType "cycle" ;
+        st:value "Cycle 3-n" .
+
+    e:u-t01-c015-v04 a st:ColumnPropertyValue ;
+        st:level 4 ;
+        st:position 4 ;
+        st:propertyName "Day" ;
+        st:propertyType "study_day" ;
+        st:value "D22" .
+
+    e:u-t01-c015-v05 a st:ColumnPropertyValue ;
+        st:position 5 ;
+        st:propertyName "Visit window" ;
+        st:propertyType "window" ;
+        st:value "(±3 days)" .
+
+    e:u-t01-c016-v01 a st:ColumnPropertyValue ;
+        st:level 1 ;
+        st:position 1 ;
+        st:propertyName "Epoch" ;
+        st:propertyType "epoch" ;
+        st:value "Post-Treatment" .
+
+    e:u-t01-c016-v02 a st:ColumnPropertyValue ;
+        st:level 2 ;
+        st:position 2 ;
+        st:propertyName "Cycle length" ;
+        st:propertyType "other" ;
+        st:value "" .
+
+    e:u-t01-c016-v03 a st:ColumnPropertyValue ;
+        st:level 3 ;
+        st:position 3 ;
+        st:propertyName "Cycle" ;
+        st:propertyType "cycle" ;
+        st:value "Short-term follow-up" .
+
+    e:u-t01-c016-v04 a st:ColumnPropertyValue ;
+        st:level 4 ;
+        st:position 4 ;
+        st:propertyName "Day" ;
+        st:propertyType "study_day" ;
+        st:value "V801" .
+
+    e:u-t01-c016-v05 a st:ColumnPropertyValue ;
+        st:position 5 ;
+        st:propertyName "Visit window" ;
+        st:propertyType "window" ;
+        st:value "(±3 days)" .
+
+    e:u-t01-n-i10-d01 a st:DocumentReference ;
+        st:position 1 ;
+        st:referenceKind "appendix" ;
+        st:target "2" .
+
+    e:u-t01-n-i11-d01 a st:DocumentReference ;
+        st:position 1 ;
+        st:referenceKind "appendix" ;
+        st:target "2" .
+
+    e:u-t01-n-i12-d01 a st:DocumentReference ;
+        st:position 1 ;
+        st:referenceKind "appendix" ;
+        st:target "2" .
+
+    e:u-t01-n-i13-d01 a st:DocumentReference ;
+        st:position 1 ;
+        st:referenceKind "appendix" ;
+        st:target "2" .
+
+    e:u-t01-n-i14-d01 a st:DocumentReference ;
+        st:position 1 ;
+        st:referenceKind "appendix" ;
+        st:target "2" .
+
+    e:u-t01-n-i16-d01 a st:DocumentReference ;
+        st:position 1 ;
+        st:referenceKind "section" ;
+        st:target "8.2.5" .
+
+    e:u-t01-n-i19-d01 a st:DocumentReference ;
+        st:position 1 ;
+        st:referenceKind "section" ;
+        st:target "1.3.1" .
+
+    e:u-t01-n-i20-d01 a st:DocumentReference ;
+        st:position 1 ;
+        st:referenceKind "section" ;
+        st:target "6.1" .
+
+    e:u-t01-n-i21-d01 a st:DocumentReference ;
+        st:position 1 ;
+        st:referenceKind "section" ;
+        st:target "6.1" .
+
+    e:u-t01-n-i7-d01 a st:DocumentReference ;
+        st:position 1 ;
+        st:referenceKind "section" ;
+        st:target "10.3" .
+
+    e:u-t01-r009 a st:UnifiedActivity ;
+        st:displayOrder 2 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r009 ;
+        st:name "Inclusion/Exclusion criteria" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Inclusion/Exclusion criteria" .
+
+    e:u-t02-c002-v01 a st:ColumnPropertyValue ;
+        st:level 1 ;
+        st:position 1 ;
+        st:propertyName "Epoch" ;
+        st:propertyType "epoch" ;
+        st:value "Study Treatment" .
+
+    e:u-t02-c002-v02 a st:ColumnPropertyValue ;
+        st:level 2 ;
+        st:position 2 ;
+        st:propertyName "Visit" ;
+        st:propertyType "visit" ;
+        st:value "501-5XX" .
+
+    e:u-t02-c003-v01 a st:ColumnPropertyValue ;
+        st:level 1 ;
+        st:position 1 ;
+        st:propertyName "Epoch" ;
+        st:propertyType "epoch" ;
+        st:value "Follow-Up" .
+
+    e:u-t02-c003-v02 a st:ColumnPropertyValue ;
+        st:level 2 ;
+        st:position 2 ;
+        st:propertyName "Visit" ;
+        st:propertyType "visit" ;
+        st:value "901" .
+
+    e:u-t02-n-i1-d01 a st:DocumentReference ;
+        st:position 1 ;
+        st:referenceKind "section" ;
+        st:target "10.3" .
+
+    e:u-t02-n-i3-d01 a st:DocumentReference ;
+        st:position 1 ;
+        st:referenceKind "section" ;
+        st:target "6.1" .
+
+    e:u-t02-r006 a st:UnifiedActivity ;
+        st:displayOrder 26 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t02-r006 ;
+        st:name "PK, IG, and exploratory hypersensitivity" ;
+        st:parentName "" ;
+        st:qualifiedKey "::PK, IG, and exploratory hypersensitivity" .
+
+    e:u-t03-c002-v01 a st:ColumnPropertyValue ;
+        st:level 1 ;
+        st:position 1 ;
+        st:propertyName "Column heading" ;
+        st:propertyType "other" ;
+        st:value "Study Cycle" .
+
+    e:u-t03-c003-v01 a st:ColumnPropertyValue ;
+        st:level 1 ;
+        st:position 1 ;
+        st:propertyName "Column heading" ;
+        st:propertyType "other" ;
+        st:value "Day within Cycle" .
+
+    e:u-t03-c004-v01 a st:ColumnPropertyValue ;
+        st:level 1 ;
+        st:position 1 ;
+        st:propertyName "Column heading" ;
+        st:propertyType "other" ;
+        st:value "Collection Time Point Relative to Ramucirumab Weekly Dose" .
+
+    e:u-t03-c005-v01 a st:ColumnPropertyValue ;
+        st:level 1 ;
+        st:position 1 ;
+        st:propertyName "Column heading" ;
+        st:propertyType "other" ;
+        st:value "Ramucirumab PK Collection" .
+
+    e:u-t03-c006-v01 a st:ColumnPropertyValue ;
+        st:level 1 ;
+        st:position 1 ;
+        st:propertyName "Column heading" ;
+        st:propertyType "other" ;
+        st:value "Immunogenicity Collection" .
+
+    <https://kerfors.github.io/soa-tables/id/study/NCT04557384> a st:Study ;
+        st:studyKey "NCT04557384" .
+
+    page:17 a st:Page ;
+        st:inFile <https://kerfors.github.io/soa-tables/id/sha256/1ab18db01952c3ed464ff5e4c19e0af30c2d90066edc02e05ff8d443dbf54a58> ;
+        st:pageNumber 17 .
+
+    e:decision-ccorr-001 a st:Decision ;
+        st:decidedAt "2026-10-04T08:20:00Z"^^xsd:dateTime ;
+        st:decidedByPerson "Kerstin Forsberg" ;
+        st:decisionSource e:t02-r005 ;
+        st:decisionTarget e:t01-r015 ;
+        st:op "keep" ;
+        st:reason "Case only." .
+
+    e:t01-r008 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Informed consent" ;
+        st:onPage page:16 ;
+        st:rowPosition 8 .
+
+    e:t01-r009 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Inclusion/Exclusion criteria" ;
+        st:onPage page:16 ;
+        st:rowPosition 9 .
+
+    e:t01-r010 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Medical history" ;
+        st:onPage page:16 ;
+        st:rowPosition 10 .
+
+    e:t01-r011 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Cancer treatment history" ;
+        st:onPage page:16 ;
+        st:rowPosition 11 .
+
+    e:t02-c003 a st:SourceColumn ;
+        st:columnPosition 3 ;
+        st:inTable e:t02 .
+
+    e:t02-r007 a st:SourceActivityRow ;
+        st:inTable e:t02 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "exact" ;
+        st:name "Administer ramucirumab" ;
+        st:onPage page:23 ;
+        st:rowPosition 7 .
+
+    e:u-t01-r008 a st:UnifiedActivity ;
+        st:displayOrder 1 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r008 ;
+        st:name "Informed consent" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Informed consent" .
+
+    e:u-t01-r010 a st:UnifiedActivity ;
+        st:displayOrder 3 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r010 ;
+        st:name "Medical history" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Medical history" .
+
+    e:u-t01-r011 a st:UnifiedActivity ;
+        st:displayOrder 4 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r011 ;
+        st:name "Cancer treatment history" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Cancer treatment history" .
+
+    e:u-t02-c002 a st:UnifiedColumn ;
+        st:compositeLabel "Study Treatment / 501-5XX" ;
+        st:member e:t02-c002 ;
+        st:populationTrack "Continued Access" ;
+        st:propertyValue e:u-t02-c002-v01,
+            e:u-t02-c002-v02 ;
+        st:segment "track" .
+
+    e:u-t02-c003 a st:UnifiedColumn ;
+        st:compositeLabel "Follow-Up / 901" ;
+        st:member e:t02-c003 ;
+        st:populationTrack "Continued Access" ;
+        st:propertyValue e:u-t02-c003-v01,
+            e:u-t02-c003-v02 ;
+        st:segment "track" .
+
+    page:19 a st:Page ;
+        st:inFile <https://kerfors.github.io/soa-tables/id/sha256/1ab18db01952c3ed464ff5e4c19e0af30c2d90066edc02e05ff8d443dbf54a58> ;
+        st:pageNumber 19 .
+
+    page:22 a st:Page ;
+        st:inFile <https://kerfors.github.io/soa-tables/id/sha256/1ab18db01952c3ed464ff5e4c19e0af30c2d90066edc02e05ff8d443dbf54a58> ;
+        st:pageNumber 22 .
+
+    e:t01-r019 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Coagulation" ;
+        st:onPage page:18 ;
+        st:rowPosition 19 .
+
+    e:t02-c002 a st:SourceColumn ;
+        st:columnPosition 2 ;
+        st:inTable e:t02 .
+
+    e:u-t01-r019 a st:UnifiedActivity ;
+        st:displayOrder 12 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r019 ;
+        st:name "Coagulation" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Coagulation" .
+
+    e:u-t01-r028 a st:UnifiedActivity ;
+        st:displayOrder 21 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader true ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r028 ;
+        st:name "Sample collection" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Sample collection" .
+
+    e:u-t03-r016 a st:UnifiedActivity ;
+        st:displayOrder 41 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t03-r016 ;
+        st:name "End of treatment" ;
+        st:parentName "" ;
+        st:qualifiedKey "::End of treatment" .
+
+    e:t03-r016 a st:SourceActivityRow ;
+        st:inTable e:t03 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "End of treatment" ;
+        st:onPage page:24 ;
+        st:rowPosition 16 .
+
+    e:u-t03-r003 a st:UnifiedActivity ;
+        st:displayOrder 28 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t03-r003 ;
+        st:name "Sample 2" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Sample 2" .
+
+    e:u-t03-r004 a st:UnifiedActivity ;
+        st:displayOrder 29 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t03-r004 ;
+        st:name "Sample 3" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Sample 3" .
+
+    e:u-t03-r005 a st:UnifiedActivity ;
+        st:displayOrder 30 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t03-r005 ;
+        st:name "Sample 4" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Sample 4" .
+
+    e:u-t03-r007 a st:UnifiedActivity ;
+        st:displayOrder 32 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t03-r007 ;
+        st:name "Sample 6" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Sample 6" .
+
+    e:u-t03-r008 a st:UnifiedActivity ;
+        st:displayOrder 33 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t03-r008 ;
+        st:name "Sample 7" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Sample 7" .
+
+    e:u-t03-r010 a st:UnifiedActivity ;
+        st:displayOrder 35 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t03-r010 ;
+        st:name "Sample 9" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Sample 9" .
+
+    e:u-t03-r011 a st:UnifiedActivity ;
+        st:displayOrder 36 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t03-r011 ;
+        st:name "Sample 10" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Sample 10" .
+
+    e:u-t03-r012 a st:UnifiedActivity ;
+        st:displayOrder 37 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t03-r012 ;
+        st:name "Sample 11" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Sample 11" .
+
+    e:u-t03-r013 a st:UnifiedActivity ;
+        st:displayOrder 38 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t03-r013 ;
+        st:name "Sample 12" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Sample 12" .
+
+    e:u-t03-r015 a st:UnifiedActivity ;
+        st:displayOrder 40 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t03-r015 ;
+        st:name "Sample 14" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Sample 14" .
+
+    page:21 a st:Page ;
+        st:inFile <https://kerfors.github.io/soa-tables/id/sha256/1ab18db01952c3ed464ff5e4c19e0af30c2d90066edc02e05ff8d443dbf54a58> ;
+        st:pageNumber 21 .
+
+    page:23 a st:Page ;
+        st:inFile <https://kerfors.github.io/soa-tables/id/sha256/1ab18db01952c3ed464ff5e4c19e0af30c2d90066edc02e05ff8d443dbf54a58> ;
+        st:pageNumber 23 .
+
+    e:t02-r005 a st:SourceActivityRow ;
+        st:inTable e:t02 ;
+        st:matchConfidence 1.0 ;
+        st:matchDecision e:decision-ccorr-001 ;
+        st:matchStatus "fuzzy_auto" ;
+        st:name "AE Collection" ;
+        st:onPage page:23 ;
+        st:rowPosition 5 .
+
+    e:u-t03-c006 a st:UnifiedColumn ;
+        st:compositeLabel "Immunogenicity Collection" ;
+        st:member e:t03-c006 ;
+        st:propertyValue e:u-t03-c006-v01 ;
+        st:segment "subsidiary" .
+
+    e:u-t03-r002 a st:UnifiedActivity ;
+        st:displayOrder 27 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t03-r002 ;
+        st:name "Sample 1" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Sample 1" .
+
+    e:u-t03-r006 a st:UnifiedActivity ;
+        st:displayOrder 31 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t03-r006 ;
+        st:name "Sample 5" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Sample 5" .
+
+    e:u-t03-r009 a st:UnifiedActivity ;
+        st:displayOrder 34 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t03-r009 ;
+        st:name "Sample 8" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Sample 8" .
+
+    e:u-t03-r014 a st:UnifiedActivity ;
+        st:displayOrder 39 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t03-r014 ;
+        st:name "Sample 13" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Sample 13" .
+
+    e:t01-r016 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "ECOG PS" ;
+        st:onPage page:18 ;
+        st:rowPosition 16 .
+
+    e:t03-c006 a st:SourceColumn ;
+        st:columnPosition 6 ;
+        st:inTable e:t03 .
+
+    e:u-t01-c003 a st:UnifiedColumn ;
+        st:compositeLabel "Screening / (Day Relative to C1D1) / ≤7" ;
+        st:member e:t01-c003 ;
+        st:propertyValue e:u-t01-c003-v01,
+            e:u-t01-c003-v02,
+            e:u-t01-c003-v03,
+            e:u-t01-c003-v04,
+            e:u-t01-c003-v05 ;
+        st:segment "main" .
+
+    e:u-t01-r016 a st:UnifiedActivity ;
+        st:displayOrder 9 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r016 ;
+        st:name "ECOG PS" ;
+        st:parentName "" ;
+        st:qualifiedKey "::ECOG PS" .
+
+    page:16 a st:Page ;
+        st:inFile <https://kerfors.github.io/soa-tables/id/sha256/1ab18db01952c3ed464ff5e4c19e0af30c2d90066edc02e05ff8d443dbf54a58> ;
+        st:pageNumber 16 .
+
+    page:18 a st:Page ;
+        st:inFile <https://kerfors.github.io/soa-tables/id/sha256/1ab18db01952c3ed464ff5e4c19e0af30c2d90066edc02e05ff8d443dbf54a58> ;
+        st:pageNumber 18 .
+
+    e:t01-c003 a st:SourceColumn ;
+        st:columnPosition 3 ;
+        st:inTable e:t01 .
+
+    e:t03-r003 a st:SourceActivityRow ;
+        st:inTable e:t03 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Sample 2" ;
+        st:onPage page:24 ;
+        st:rowPosition 3 .
+
+    e:t03-r004 a st:SourceActivityRow ;
+        st:inTable e:t03 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Sample 3" ;
+        st:onPage page:24 ;
+        st:rowPosition 4 .
+
+    e:t03-r005 a st:SourceActivityRow ;
+        st:inTable e:t03 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Sample 4" ;
+        st:onPage page:24 ;
+        st:rowPosition 5 .
+
+    e:t03-r007 a st:SourceActivityRow ;
+        st:inTable e:t03 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Sample 6" ;
+        st:onPage page:24 ;
+        st:rowPosition 7 .
+
+    e:t03-r008 a st:SourceActivityRow ;
+        st:inTable e:t03 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Sample 7" ;
+        st:onPage page:24 ;
+        st:rowPosition 8 .
+
+    e:t03-r010 a st:SourceActivityRow ;
+        st:inTable e:t03 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Sample 9" ;
+        st:onPage page:24 ;
+        st:rowPosition 10 .
+
+    e:t03-r011 a st:SourceActivityRow ;
+        st:inTable e:t03 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Sample 10" ;
+        st:onPage page:24 ;
+        st:rowPosition 11 .
+
+    e:t03-r012 a st:SourceActivityRow ;
+        st:inTable e:t03 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Sample 11" ;
+        st:onPage page:24 ;
+        st:rowPosition 12 .
+
+    e:t03-r013 a st:SourceActivityRow ;
+        st:inTable e:t03 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Sample 12" ;
+        st:onPage page:24 ;
+        st:rowPosition 13 .
+
+    e:t03-r015 a st:SourceActivityRow ;
+        st:inTable e:t03 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Sample 14" ;
+        st:onPage page:24 ;
+        st:rowPosition 15 .
+
+    e:u-t01-r013 a st:UnifiedActivity ;
+        st:displayOrder 6 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r013 ;
+        st:name "Physical examination" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Physical examination" .
+
+    e:t01-r013 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Physical examination" ;
+        st:onPage page:16 ;
+        st:rowPosition 13 .
+
+    e:t03-r002 a st:SourceActivityRow ;
+        st:inTable e:t03 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Sample 1" ;
+        st:onPage page:24 ;
+        st:rowPosition 2 .
+
+    e:t03-r006 a st:SourceActivityRow ;
+        st:inTable e:t03 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Sample 5" ;
+        st:onPage page:24 ;
+        st:rowPosition 6 .
+
+    e:t03-r009 a st:SourceActivityRow ;
+        st:inTable e:t03 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Sample 8" ;
+        st:onPage page:24 ;
+        st:rowPosition 9 .
+
+    e:t03-r014 a st:SourceActivityRow ;
+        st:inTable e:t03 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Sample 13" ;
+        st:onPage page:24 ;
+        st:rowPosition 14 .
+
+    <https://kerfors.github.io/soa-tables/id/sha256/1ab18db01952c3ed464ff5e4c19e0af30c2d90066edc02e05ff8d443dbf54a58> a st:File ;
+        st:sha256 "1ab18db01952c3ed464ff5e4c19e0af30c2d90066edc02e05ff8d443dbf54a58" .
+
+    e:t01-r018 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Hematology" ;
+        st:onPage page:18 ;
+        st:rowPosition 18 .
+
+    e:t01-r020 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Clinical chemistry" ;
+        st:onPage page:18 ;
+        st:rowPosition 20 .
+
+    e:t02 a st:SourceTable ;
+        st:firstPage page:23 ;
+        st:lastPage page:23 ;
+        st:purpose "Schedule for participants in the continued-access period" ;
+        st:tableNumber 2 ;
+        st:tableType "track" ;
+        st:title "Continued Access Schedule of Activities" ;
+        st:trackLabel "Continued Access" .
+
+    e:u-t01-c002 a st:UnifiedColumn ;
+        st:compositeLabel "Screening / (Day Relative to C1D1) / ≤28" ;
+        st:member e:t01-c002 ;
+        st:propertyValue e:u-t01-c002-v01,
+            e:u-t01-c002-v02,
+            e:u-t01-c002-v03,
+            e:u-t01-c002-v04,
+            e:u-t01-c002-v05 ;
+        st:segment "main" .
+
+    e:u-t01-r018 a st:UnifiedActivity ;
+        st:displayOrder 11 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r018 ;
+        st:name "Hematology" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Hematology" .
+
+    e:u-t01-r020 a st:UnifiedActivity ;
+        st:displayOrder 13 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r020 ;
+        st:name "Clinical chemistry" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Clinical chemistry" .
+
+    e:t01-c002 a st:SourceColumn ;
+        st:columnPosition 2 ;
+        st:inTable e:t01 .
+
+    e:t01-r032 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Administer combination medications, if applicable (Cohorts B and C only)" ;
+        st:onPage page:22 ;
+        st:rowPosition 32 .
+
+    e:u-t01-r029 a st:UnifiedActivity ;
+        st:displayOrder 22 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r029 ;
+        st:name "PK" ;
+        st:parent e:u-t01-r028 ;
+        st:parentName "Sample collection" ;
+        st:qualifiedKey "Sample collection::PK" .
+
+    e:u-t01-r030 a st:UnifiedActivity ;
+        st:displayOrder 23 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r030 ;
+        st:name "IG" ;
+        st:parent e:u-t01-r028 ;
+        st:parentName "Sample collection" ;
+        st:qualifiedKey "Sample collection::IG" .
+
+    e:u-t01-r032 a st:UnifiedActivity ;
+        st:displayOrder 25 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r032 ;
+        st:name "Administer combination medications, if applicable (Cohorts B and C only)" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Administer combination medications, if applicable (Cohorts B and C only)" .
+
+    e:t01-r025 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Injection site assessments (solicited)" ;
+        st:onPage page:19 ;
+        st:rowPosition 25 .
+
+    e:t01-r026 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Injection site assessments (spontaneous)" ;
+        st:onPage page:21 ;
+        st:rowPosition 26 .
+
+    e:t01-r027 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Participant diary" ;
+        st:onPage page:21 ;
+        st:rowPosition 27 .
+
+    e:t01-r029 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "PK" ;
+        st:onPage page:21 ;
+        st:rowPosition 29 .
+
+    e:t01-r030 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "IG" ;
+        st:onPage page:21 ;
+        st:rowPosition 30 .
+
+    e:t01-r031 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Administer ramucirumab" ;
+        st:onPage page:22 ;
+        st:rowPosition 31 .
+
+    e:u-t01-r025 a st:UnifiedActivity ;
+        st:displayOrder 18 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r025 ;
+        st:name "Injection site assessments (solicited)" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Injection site assessments (solicited)" .
+
+    e:u-t01-r026 a st:UnifiedActivity ;
+        st:displayOrder 19 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r026 ;
+        st:name "Injection site assessments (spontaneous)" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Injection site assessments (spontaneous)" .
+
+    e:u-t01-r027 a st:UnifiedActivity ;
+        st:displayOrder 20 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r027 ;
+        st:name "Participant diary" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Participant diary" .
+
+    e:t01-c016 a st:SourceColumn ;
+        st:columnPosition 16 ;
+        st:inTable e:t01 .
+
+    e:t01-r012 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Concomitant medication" ;
+        st:onPage page:16 ;
+        st:rowPosition 12 .
+
+    e:u-t01-c016 a st:UnifiedColumn ;
+        st:compositeLabel "Post-Treatment / Short-term follow-up / (±3 days) / V801" ;
+        st:member e:t01-c016 ;
+        st:propertyValue e:u-t01-c016-v01,
+            e:u-t01-c016-v02,
+            e:u-t01-c016-v03,
+            e:u-t01-c016-v04,
+            e:u-t01-c016-v05 ;
+        st:segment "main" .
+
+    e:u-t01-r012 a st:UnifiedActivity ;
+        st:displayOrder 5 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r012 ;
+        st:name "Concomitant medication" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Concomitant medication" .
+
+    e:u-t03-c002 a st:UnifiedColumn ;
+        st:compositeLabel "Study Cycle" ;
+        st:member e:t03-c002 ;
+        st:propertyValue e:u-t03-c002-v01 ;
+        st:segment "subsidiary" .
+
+    e:u-t03-c003 a st:UnifiedColumn ;
+        st:compositeLabel "Day within Cycle" ;
+        st:member e:t03-c003 ;
+        st:propertyValue e:u-t03-c003-v01 ;
+        st:segment "subsidiary" .
+
+    e:t01-r014 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Vital signs" ;
+        st:onPage page:17 ;
+        st:rowPosition 14 .
+
+    e:t01-r017 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "ECG" ;
+        st:onPage page:18 ;
+        st:rowPosition 17 .
+
+    e:t01-r021 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Urinalysis" ;
+        st:onPage page:18 ;
+        st:rowPosition 21 .
+
+    e:t01-r022 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Pregnancy test" ;
+        st:onPage page:18 ;
+        st:rowPosition 22 .
+
+    e:t01-r023 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Thyroid panel" ;
+        st:onPage page:19 ;
+        st:rowPosition 23 .
+
+    e:t01-r024 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Radiologic imaging and measurement of palpable or visible lesions" ;
+        st:onPage page:19 ;
+        st:rowPosition 24 .
+
+    e:t03-c002 a st:SourceColumn ;
+        st:columnPosition 2 ;
+        st:inTable e:t03 .
+
+    e:t03-c003 a st:SourceColumn ;
+        st:columnPosition 3 ;
+        st:inTable e:t03 .
+
+    e:u-t01-c013 a st:UnifiedColumn ;
+        st:compositeLabel "On-Treatment / Cycle = 21 days (or 28 days for Cohorts B & C per combination regimen) / Cycle 3-n / (±3 days) / D8" ;
+        st:member e:t01-c013 ;
+        st:propertyValue e:u-t01-c013-v01,
+            e:u-t01-c013-v02,
+            e:u-t01-c013-v03,
+            e:u-t01-c013-v04,
+            e:u-t01-c013-v05 ;
+        st:segment "main" .
+
+    e:u-t01-c014 a st:UnifiedColumn ;
+        st:compositeLabel "On-Treatment / Cycle = 21 days (or 28 days for Cohorts B & C per combination regimen) / Cycle 3-n / (±3 days) / D15" ;
+        st:member e:t01-c014 ;
+        st:propertyValue e:u-t01-c014-v01,
+            e:u-t01-c014-v02,
+            e:u-t01-c014-v03,
+            e:u-t01-c014-v04,
+            e:u-t01-c014-v05 ;
+        st:segment "main" .
+
+    e:u-t01-r014 a st:UnifiedActivity ;
+        st:displayOrder 7 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r014 ;
+        st:name "Vital signs" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Vital signs" .
+
+    e:u-t01-r017 a st:UnifiedActivity ;
+        st:displayOrder 10 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r017 ;
+        st:name "ECG" ;
+        st:parentName "" ;
+        st:qualifiedKey "::ECG" .
+
+    e:u-t01-r021 a st:UnifiedActivity ;
+        st:displayOrder 14 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r021 ;
+        st:name "Urinalysis" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Urinalysis" .
+
+    e:u-t01-r022 a st:UnifiedActivity ;
+        st:displayOrder 15 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r022 ;
+        st:name "Pregnancy test" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Pregnancy test" .
+
+    e:u-t01-r023 a st:UnifiedActivity ;
+        st:displayOrder 16 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r023 ;
+        st:name "Thyroid panel" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Thyroid panel" .
+
+    e:u-t01-r024 a st:UnifiedActivity ;
+        st:displayOrder 17 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r024 ;
+        st:name "Radiologic imaging and measurement of palpable or visible lesions" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Radiologic imaging and measurement of palpable or visible lesions" .
+
+    e:u-t01-r031 a st:UnifiedActivity ;
+        st:displayOrder 24 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "exact" ;
+        st:member e:t01-r031,
+            e:t02-r007 ;
+        st:name "Administer ramucirumab" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Administer ramucirumab" .
+
+    e:u-t03-c004 a st:UnifiedColumn ;
+        st:compositeLabel "Collection Time Point Relative to Ramucirumab Weekly Dose" ;
+        st:member e:t03-c004 ;
+        st:propertyValue e:u-t03-c004-v01 ;
+        st:segment "subsidiary" .
+
+    e:u-t03-c005 a st:UnifiedColumn ;
+        st:compositeLabel "Ramucirumab PK Collection" ;
+        st:member e:t03-c005 ;
+        st:propertyValue e:u-t03-c005-v01 ;
+        st:segment "subsidiary" .
+
+    e:t01-c010 a st:SourceColumn ;
+        st:columnPosition 10 ;
+        st:inTable e:t01 .
+
+    e:t01-c013 a st:SourceColumn ;
+        st:columnPosition 13 ;
+        st:inTable e:t01 .
+
+    e:t01-c014 a st:SourceColumn ;
+        st:columnPosition 14 ;
+        st:inTable e:t01 .
+
+    e:t01-c015 a st:SourceColumn ;
+        st:columnPosition 15 ;
+        st:inTable e:t01 .
+
+    e:t03-c004 a st:SourceColumn ;
+        st:columnPosition 4 ;
+        st:inTable e:t03 .
+
+    e:t03-c005 a st:SourceColumn ;
+        st:columnPosition 5 ;
+        st:inTable e:t03 .
+
+    e:u-t01-c010 a st:UnifiedColumn ;
+        st:compositeLabel "On-Treatment / Cycle = 21 days (or 28 days for Cohorts B & C per combination regimen) / Cycle 2 / (±3 days) / D22" ;
+        st:member e:t01-c010 ;
+        st:propertyValue e:u-t01-c010-v01,
+            e:u-t01-c010-v02,
+            e:u-t01-c010-v03,
+            e:u-t01-c010-v04,
+            e:u-t01-c010-v05 ;
+        st:segment "main" .
+
+    e:u-t01-c015 a st:UnifiedColumn ;
+        st:compositeLabel "On-Treatment / Cycle = 21 days (or 28 days for Cohorts B & C per combination regimen) / Cycle 3-n / (±3 days) / D22" ;
+        st:member e:t01-c015 ;
+        st:propertyValue e:u-t01-c015-v01,
+            e:u-t01-c015-v02,
+            e:u-t01-c015-v03,
+            e:u-t01-c015-v04,
+            e:u-t01-c015-v05 ;
+        st:segment "main" .
+
+    page:24 a st:Page ;
+        st:inFile <https://kerfors.github.io/soa-tables/id/sha256/1ab18db01952c3ed464ff5e4c19e0af30c2d90066edc02e05ff8d443dbf54a58> ;
+        st:pageNumber 24 .
+
+    e:t01-c011 a st:SourceColumn ;
+        st:columnPosition 11 ;
+        st:inTable e:t01 .
+
+    e:t01-r015 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "AE collection" ;
+        st:onPage page:17 ;
+        st:rowPosition 15 .
+
+    e:u-t01-c004 a st:UnifiedColumn ;
+        st:compositeLabel "On-Treatment / Cycle = 21 days / Cycle 1 / (±3 days) / D1" ;
+        st:member e:t01-c004 ;
+        st:propertyValue e:u-t01-c004-v01,
+            e:u-t01-c004-v02,
+            e:u-t01-c004-v03,
+            e:u-t01-c004-v04,
+            e:u-t01-c004-v05 ;
+        st:segment "main" .
+
+    e:u-t01-c008 a st:UnifiedColumn ;
+        st:compositeLabel "On-Treatment / Cycle = 21 days (or 28 days for Cohorts B & C per combination regimen) / Cycle 2 / (±3 days) / D8" ;
+        st:member e:t01-c008 ;
+        st:propertyValue e:u-t01-c008-v01,
+            e:u-t01-c008-v02,
+            e:u-t01-c008-v03,
+            e:u-t01-c008-v04,
+            e:u-t01-c008-v05 ;
+        st:segment "main" .
+
+    e:u-t01-c009 a st:UnifiedColumn ;
+        st:compositeLabel "On-Treatment / Cycle = 21 days (or 28 days for Cohorts B & C per combination regimen) / Cycle 2 / (±3 days) / D15" ;
+        st:member e:t01-c009 ;
+        st:propertyValue e:u-t01-c009-v01,
+            e:u-t01-c009-v02,
+            e:u-t01-c009-v03,
+            e:u-t01-c009-v04,
+            e:u-t01-c009-v05 ;
+        st:segment "main" .
+
+    e:u-t01-c011 a st:UnifiedColumn ;
+        st:compositeLabel "On-Treatment / Cycle = 21 days (or 28 days for Cohorts B & C per combination regimen) / Cycle 2-n (If combo therapy is held and ramucirumab is given) / (±3 days) / DX" ;
+        st:member e:t01-c011 ;
+        st:propertyValue e:u-t01-c011-v01,
+            e:u-t01-c011-v02,
+            e:u-t01-c011-v03,
+            e:u-t01-c011-v04,
+            e:u-t01-c011-v05 ;
+        st:segment "main" .
+
+    e:t01-c004 a st:SourceColumn ;
+        st:columnPosition 4 ;
+        st:inTable e:t01 .
+
+    e:t01-c008 a st:SourceColumn ;
+        st:columnPosition 8 ;
+        st:inTable e:t01 .
+
+    e:t01-c009 a st:SourceColumn ;
+        st:columnPosition 9 ;
+        st:inTable e:t01 .
+
+    e:u-t01-c005 a st:UnifiedColumn ;
+        st:compositeLabel "On-Treatment / Cycle = 21 days / Cycle 1 / (±3 days) / D8" ;
+        st:member e:t01-c005 ;
+        st:propertyValue e:u-t01-c005-v01,
+            e:u-t01-c005-v02,
+            e:u-t01-c005-v03,
+            e:u-t01-c005-v04,
+            e:u-t01-c005-v05 ;
+        st:segment "main" .
+
+    e:u-t01-c006 a st:UnifiedColumn ;
+        st:compositeLabel "On-Treatment / Cycle = 21 days / Cycle 1 / (±3 days) / D15" ;
+        st:member e:t01-c006 ;
+        st:propertyValue e:u-t01-c006-v01,
+            e:u-t01-c006-v02,
+            e:u-t01-c006-v03,
+            e:u-t01-c006-v04,
+            e:u-t01-c006-v05 ;
+        st:segment "main" .
+
+    e:u-t01-r015 a st:UnifiedActivity ;
+        st:displayOrder 8 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "fuzzy_auto" ;
+        st:member e:t01-r015,
+            e:t02-r005 ;
+        st:name "AE collection" ;
+        st:parentName "" ;
+        st:qualifiedKey "::AE collection" .
+
+    e:t01-c005 a st:SourceColumn ;
+        st:columnPosition 5 ;
+        st:inTable e:t01 .
+
+    e:t01-c006 a st:SourceColumn ;
+        st:columnPosition 6 ;
+        st:inTable e:t01 .
+
+    e:u-t01-c012 a st:UnifiedColumn ;
+        st:compositeLabel "On-Treatment / Cycle = 21 days (or 28 days for Cohorts B & C per combination regimen) / Cycle 3-n / (±3 days) / D1" ;
+        st:member e:t01-c012 ;
+        st:propertyValue e:u-t01-c012-v01,
+            e:u-t01-c012-v02,
+            e:u-t01-c012-v03,
+            e:u-t01-c012-v04,
+            e:u-t01-c012-v05 ;
+        st:segment "main" .
+
+    e:t01-c012 a st:SourceColumn ;
+        st:columnPosition 12 ;
+        st:inTable e:t01 .
+
+    e:u-t01-c007 a st:UnifiedColumn ;
+        st:compositeLabel "On-Treatment / Cycle = 21 days (or 28 days for Cohorts B & C per combination regimen) / Cycle 2 / (±3 days) / D1" ;
+        st:member e:t01-c007 ;
+        st:propertyValue e:u-t01-c007-v01,
+            e:u-t01-c007-v02,
+            e:u-t01-c007-v03,
+            e:u-t01-c007-v04,
+            e:u-t01-c007-v05 ;
+        st:segment "main" .
+
+    e:t01-c007 a st:SourceColumn ;
+        st:columnPosition 7 ;
+        st:inTable e:t01 .
+
+    e:t03 a st:SourceTable ;
+        st:firstPage page:24 ;
+        st:lastPage page:24 ;
+        st:purpose "Detailed PK and immunogenicity sample timing (Section 1.3.1) for the 'Sample collection: PK / IG' rows of Table 1" ;
+        st:tableNumber 3 ;
+        st:tableType "subsidiary" ;
+        st:title "Pharmacokinetic Sampling Schedule" .
+
+    e:t01-r028 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Sample collection" ;
+        st:onPage page:21 ;
+        st:rowPosition 28 .
+
+    e:t01 a st:SourceTable ;
+        st:firstPage page:16 ;
+        st:lastPage page:22 ;
+        st:purpose "Main schedule: screening, on-treatment cycles, and short-term follow-up" ;
+        st:tableNumber 1 ;
+        st:tableType "main_soa" ;
+        st:title "Screening, On-Study, and Post-Treatment Schedule of Activities" .
+}
+
