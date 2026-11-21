@@ -1,0 +1,8 @@
+Derived content in this repository (extracted, resolved and consolidated JSON, the generated
+HTML pages, the TriG files, register.csv) is licensed under Creative Commons Attribution 4.0
+International (CC-BY-4.0): https://creativecommons.org/licenses/by/4.0/
+
+Not covered: the SoA page excerpts (*_soa.pdf, *_soa_pages/), which are pages of the sponsors'
+protocols and remain their property.
+
+Code in this repository is under the MIT License (LICENSE).

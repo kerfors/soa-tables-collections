@@ -38,4 +38,4 @@ soa-tables [`documents/rdf-interface.md`](https://github.com/kerfors/soa-tables/
 
 ## License
 
-Derived content is shared under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/). Any code in this repo is under the [MIT License](LICENSE). Source protocol documents remain the property of their respective sponsors and are not redistributed here.
+Derived content is shared under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) (see [LICENSE-CONTENT](LICENSE-CONTENT)). Any code in this repo is under the [MIT License](LICENSE). Source protocol documents remain the property of their respective sponsors. Full protocols are not redistributed here; the SoA page excerpts are included for review.
