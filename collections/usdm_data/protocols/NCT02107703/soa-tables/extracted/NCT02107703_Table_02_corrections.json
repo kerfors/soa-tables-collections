@@ -1,0 +1,31 @@
+{
+ "schema_name": "soa-table-corrections",
+ "schema_version": "1.0",
+ "target_extraction": "NCT02107703_Table_02_extraction.json",
+ "corrections": [
+  {
+   "id": "corr-001",
+   "target": "activity_schedule",
+   "op": "confirm",
+   "review_item": "D7",
+   "reason": "Kept as extracted: one merged cell over Day 1 and Day 15 (columns 4-5), consistent with 'Days 1 and 15 of Cycle 1'. Rule for spanned values (group K): a merged cell's value is distributed over the columns its rule lines cover; a glyph drawn across ruled cells over the columns it crosses; a value in one ruled cell stays in that column. (Kerstin, 2026-09-27 review session, group K.)",
+   "source_ref": {
+    "page": 78
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-09-27T19:45:00+02:00"
+  },
+  {
+   "id": "corr-002",
+   "target": "table_metadata",
+   "op": "confirm",
+   "review_item": "D6",
+   "reason": "Kept as extracted (track 'Extension period'): patients continuing after study completion, like Continued Access. A schedule for a subset or branch of participants is a track (taxonomy v6); consistent with NCT04677179 D11. (Kerstin, 2026-09-27 review session, group B.)",
+   "source_ref": {
+    "page": 78
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-09-27T20:03:00+02:00"
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+# === Source protocol PDFs ===
+# Full CSP <id>.pdf stays LOCAL ONLY (fetched from ClinicalTrials.gov, never
+# published here). Only the sliced SoA PDFs (<id>_soa.pdf) are published, as the
+# review surface / provenance for each extraction.
+*.pdf
+!**/*_soa.pdf
+
+# === Full-protocol markdown dumps (regenerable via pymupdf4llm) ===
+# Match at any collection depth: <root>/collections/<name>/protocols/<id>/<id>.md
+**/protocols/*/*.md
+
+# === Full-protocol page text for context extraction (regenerable via tools/protocol_context_inputs.py) ===
+**/protocols/*/*_pages.txt
+
+# === Scratch / working dirs (never publish) ===
+_scratch_catalog/
+_to_delete/
+*.tgz
+
+# === OS / IDE ===
+.DS_Store
+**/.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# === Python (in case notebooks run here) ===
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints

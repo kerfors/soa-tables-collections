@@ -1,0 +1,104 @@
+{
+ "schema_name": "soa-table-corrections",
+ "schema_version": "1.0",
+ "target_extraction": "NCT04184622_Table_01_extraction.json",
+ "corrections": [
+  {
+   "id": "corr-001",
+   "target": "schedule_properties",
+   "op": "confirm",
+   "review_item": "D4",
+   "reason": "Header properties, as extracted: 'Fasting Visit' and 'Telephone Visit' are shaded with the header band, sit above the ruled body and are reprinted on every page; they describe the visit, not a procedure. Consistent with NCT05259917 D1 and misc_studies decision 5. (Kerstin, 2026-09-27 review session, group E.)",
+   "source_ref": {
+    "page": 18
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-09-27T19:36:00+02:00"
+  },
+  {
+   "id": "corr-002",
+   "target": "schedule_properties",
+   "op": "set",
+   "match": {
+    "row_position": 4
+   },
+   "set": {
+    "property_type": "visit_attribute",
+    "property_comment": "X marks visits at which the participant must attend fasting. A per-visit attribute, not a timing level; typed visit_attribute; does not distinguish columns, so hierarchical_level null."
+   },
+   "reason": "'Fasting visit' typed visit_attribute, the property type added in extraction schema 1.1 for a requirement on or attribute of a visit (inventory item 16). Replaces the interim typing as modality (2026-09-27 review session, group E), so the same visit attribute has one type across the corpus.",
+   "source_ref": {
+    "page": 18,
+    "row_position": 4
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-10-02T21:39:00+02:00"
+  },
+  {
+   "id": "corr-003",
+   "target": "annotations",
+   "op": "confirm",
+   "review_item": "D1",
+   "reason": "Kept as extracted: the Additional Information table (pp.25-28) pairs each note with the activity, visit or header it applies to in its own Activity column; each '*' is resolved to that note (n1-n27, text_match). T2 D7 (pointer line not emitted) was decided on this basis. (Kerstin, 2026-09-27 review session, group M2.)",
+   "source_ref": {
+    "page": 18
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-09-27T19:53:00+02:00"
+  },
+  {
+   "id": "corr-004",
+   "target": "annotations",
+   "op": "confirm",
+   "review_item": "D2",
+   "reason": "Kept as extracted: only the Visit 21 / Week 72 dispensing prints 'X*'; the note ('Dispense study drug Visit 72', i.e. Week 72) concerns that dispensing for the 2-year prediabetes extension, not every dispensing. (Kerstin, 2026-09-27 review session, group M2.)",
+   "source_ref": {
+    "page": 19
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-09-27T19:53:00+02:00"
+  },
+  {
+   "id": "corr-005",
+   "target": "annotations",
+   "op": "confirm",
+   "review_item": "D3",
+   "reason": "Kept as extracted: the five rows print 'X*' at Visit 1 only, and the note (labelled with exactly these five tests) concerns the screening assessment; Table 2 has no Visit 1 and no '*'. (Kerstin, 2026-09-27 review session, group M2.)",
+   "source_ref": {
+    "page": 20
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-09-27T19:53:00+02:00"
+  },
+  {
+   "id": "corr-006",
+   "target": "activities",
+   "op": "confirm",
+   "review_item": "D5",
+   "reason": "Kept as extracted: 'C-SSRS (Baseline/Screening) Version)' transcribed as printed; source typos are not corrected in activity names. (Kerstin, 2026-09-27 review session, group J.)",
+   "source_ref": {
+    "page": 21
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-09-27T20:21:00+02:00"
+  },
+  {
+   "id": "corr-007",
+   "target": "schedule_properties",
+   "op": "set",
+   "match": {
+    "row_position": 3
+   },
+   "set": {
+    "hierarchical_level": null
+   },
+   "reason": "Window row 'Allowable Deviation (days)': hierarchical_level 3 -> null. No header row below it carries a level, so no other level changes. Prompt 3.9.2 §3 hierarchical_level: a window or tolerance row (the allowed deviation around each visit) is a qualifier of the columns, not a way to tell them apart: null, even where its values differ from column to column; the levels of the other rows stay consecutive. Inventory item 25g (decision Kerstin, 2026-09-28 13:16).",
+   "source_ref": {
+    "page": 18,
+    "row_position": 3
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-09-28T13:45:00+02:00"
+  }
+ ]
+}

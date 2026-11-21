@@ -1,0 +1,61 @@
+{
+ "schema_name": "soa-table-corrections",
+ "schema_version": "1.0",
+ "target_extraction": "NCT03421379_Table_01_extraction.json",
+ "corrections": [
+  {
+   "id": "corr-001",
+   "target": "annotations",
+   "op": "confirm",
+   "review_item": "D2",
+   "reason": "Kept as extracted: the order-of-procedures note is a precedence rule among procedure categories when they coincide, not a condition on any one row. Rule: a note with no specific target stays table-wide, anchored to the header (group M). (Kerstin, 2026-09-27 review session, group M4.)",
+   "source_ref": {
+    "page": 18
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-09-27T19:58:00+02:00"
+  },
+  {
+   "id": "corr-002",
+   "target": "schedule_properties",
+   "op": "confirm",
+   "review_item": "D1",
+   "reason": "Kept as extracted: row 2 is named 'Study Day' and typed study_day; the printed 'Procedure' heads the activity-name column, and the washout duration and follow-up window are values of a mostly-day row (group D-a rule). Same decision as NCT04004988 D2. (Kerstin, 2026-09-27 review session, group D-b.)",
+   "source_ref": {
+    "page": 11
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-09-27T20:12:00+02:00"
+  },
+  {
+   "id": "corr-003",
+   "target": "activities",
+   "op": "confirm",
+   "review_item": "D3",
+   "reason": "Kept as extracted: PK (Glucagon), Plasma Glucose for PD, Genetic Sample and Anti-glucagon Antibodies keep the indent of the laboratory rows and stay under 'Laboratory Tests' until the next header. Rule (group H): hierarchy follows printed signals (indent, bold, shading, full-width section bands); a group stays open across a page break until the next header; no implicit group is invented; a label cell spanning sub-rows is a parent with children. (Kerstin, 2026-09-27 review session, group H.)",
+   "source_ref": {
+    "page": 16
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-09-27T20:15:00+02:00"
+  },
+  {
+   "id": "corr-004",
+   "target": "schedule_properties",
+   "op": "set",
+   "match": {
+    "row_position": 1
+   },
+   "set": {
+    "annotation_markers": ""
+   },
+   "reason": "Clears the table-wide note n1 from the 'Study Period' row's annotation_markers; marker_locations unchanged. 'Note:' on the order of procedures at the same time point; names no element. Prompt 3.9.2 §6 Binding by what a note names: a note that names no specific element stays table-wide; its marker is on no element's annotation_markers. Inventory item 25a (decision Kerstin, 2026-09-28 13:16).",
+   "source_ref": {
+    "page": 18,
+    "row_position": 1
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-09-28T13:40:00+02:00"
+  }
+ ]
+}

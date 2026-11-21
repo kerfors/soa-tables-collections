@@ -1,0 +1,43 @@
+{
+ "schema_name": "soa-table-corrections",
+ "schema_version": "1.0",
+ "target_extraction": "NCT04730349_Table_02_extraction.json",
+ "corrections": [
+  {
+   "id": "corr-001",
+   "target": "schedule_properties",
+   "op": "confirm",
+   "review_item": "D3",
+   "reason": "Accepted as extracted (Kerstin, 2026-09-27 16:57; sweep2-PHASE2-RESULTS batch B, D3): cycle length and windows kept inside the cycle/day header cells.",
+   "source_ref": {
+    "page": 31
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-09-27T19:30:00+02:00"
+  },
+  {
+   "id": "corr-002",
+   "target": "activity_schedule",
+   "op": "confirm",
+   "review_item": "D2",
+   "reason": "Kept as extracted: a rule line separates Day 3 and Day 5 in this row; 'X (Day 3-5)' is printed in the Day 5 cell only and names a window, not two visits. Rule for spanned values (group K): a merged cell's value is distributed over the columns its rule lines cover; a glyph drawn across ruled cells over the columns it crosses; a value in one ruled cell stays in that column. (Kerstin, 2026-09-27 review session, group K.)",
+   "source_ref": {
+    "page": 37
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-09-27T19:45:00+02:00"
+  },
+  {
+   "id": "corr-003",
+   "target": "annotations",
+   "op": "confirm",
+   "review_item": "D1",
+   "reason": "Kept as extracted: '*At Day 8 visits collect vital signs only.' is its own note on the 'X*' Day 8 cell and the rest of the Notes cell stays on the row; the same split as NCT04677179 D13. (Kerstin, 2026-09-27 review session, group M4.)",
+   "source_ref": {
+    "page": 31
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-09-27T19:58:00+02:00"
+  }
+ ]
+}

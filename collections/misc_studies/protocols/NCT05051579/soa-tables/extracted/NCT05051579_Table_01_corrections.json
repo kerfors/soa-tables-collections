@@ -1,0 +1,170 @@
+{
+  "schema_name": "soa-table-corrections",
+  "schema_version": "1.0",
+  "target_extraction": "NCT05051579_Table_01_extraction.json",
+  "corrections": [
+    {
+      "id": "corr-006",
+      "target": "annotations",
+      "op": "confirm",
+      "review_item": "D2",
+      "reason": "We keep this as test for now",
+      "source_ref": {
+        "page": 16
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-08-22T13:23:56Z"
+    },
+    {
+      "id": "corr-008",
+      "target": "schedule_properties",
+      "op": "set",
+      "match": {
+        "row_position": 6
+      },
+      "set": {
+        "property_type": "visit_attribute",
+        "property_comment": "Marks with 'X' which visits are fasting visits (every column except the Lead-In visit). This is an attribute/type of the visit rather than a timing concept, so property_type=visit_attribute. hierarchical_level is null: removing the row leaves every column still distinguishable by Visit Number."
+      },
+      "reason": "'Fasting Visit' typed visit_attribute, the property type added in extraction schema 1.1 for a requirement on or attribute of a visit (inventory item 16). Replaces the interim typing as modality (D4, 2026-08-22; 2026-09-27), so the same visit attribute has one type across the corpus.",
+      "source_ref": {
+        "page": 13
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-10-02T21:39:00+02:00"
+    },
+    {
+      "id": "corr-009",
+      "target": "activities",
+      "op": "confirm",
+      "review_item": "D1",
+      "reason": "PK sample as a mark-free parent row with 'Predose' / 'Postdose' as level-2 children is kept: same marks as the accepted flat composed names, and it follows the NCT02107703 grouping-row precedent. The accepted-corpus D1 was never decided.",
+      "source_ref": {
+        "page": 17
+      },
+      "by": "Kerstin Forsberg (sweep-2 misc_studies review, 2026-09-27)",
+      "at": "2026-09-27T17:56:00+02:00"
+    },
+    {
+      "id": "corr-010",
+      "target": "schedule_properties",
+      "op": "confirm",
+      "review_item": "D4",
+      "reason": "Header property, as extracted: the 'Fasting Visit' row is shaded with the header block above the first body section band; it describes the visit, not a procedure. Its type is set to modality by corr-008 (misc_studies decision 5). (Kerstin, 2026-09-27 review session, group E.)",
+      "source_ref": {
+        "page": 13
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-09-27T19:36:00+02:00"
+    },
+    {
+      "id": "corr-011",
+      "target": "annotations",
+      "op": "confirm",
+      "review_item": "D3",
+      "reason": "Kept as extracted: the sentence is printed inside the 'Study Period II Treatment Period' header cell and is bound to the columns that cell spans (Visits 3-18); its second sentence is a shading legend with no marks to bind. (Kerstin, 2026-09-27 review session, group M4.)",
+      "source_ref": {
+        "page": 13
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-09-27T19:58:00+02:00"
+    },
+    {
+      "id": "corr-012",
+      "target": "annotations",
+      "op": "set",
+      "review_item": "D5",
+      "match": {
+        "annotation_marker": "n10"
+      },
+      "set": {
+        "marker_locations": [
+          {
+            "table_number": 1,
+            "location_type": "schedule_cell",
+            "row_position": 37,
+            "column_position": 20,
+            "method": "text_match"
+          }
+        ]
+      },
+      "reason": "Alternative taken for D5: 'The Participant Survey should be administered at early termination if it occurs before 26 weeks.' is a condition on the one ET mark (column 20), not on the Week 26 mark; bound to that cell (text_match). Same rule as NCT04677179 D13 and NCT04557384 D5. (Kerstin, 2026-09-27 review session, group M4.)",
+      "source_ref": {
+        "page": 15,
+        "row_position": 37,
+        "column_position": 20
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-09-27T19:58:00+02:00"
+    },
+    {
+      "id": "corr-013",
+      "target": "activities",
+      "op": "set",
+      "match": {
+        "row_position": 37
+      },
+      "set": {
+        "annotation_markers": ""
+      },
+      "reason": "n10 moves from the Participant Survey row to its ET cell (D5 alternative). (Kerstin, 2026-09-27 review session, group M4.)",
+      "source_ref": {
+        "page": 15,
+        "row_position": 37
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-09-27T19:58:00+02:00"
+    },
+    {
+      "id": "corr-014",
+      "target": "activity_schedule",
+      "op": "set",
+      "match": {
+        "row_position": 37,
+        "column_position": 20
+      },
+      "set": {
+        "annotation_markers": "n10"
+      },
+      "reason": "Binds n10 to the Participant Survey x ET mark (D5 alternative). (Kerstin, 2026-09-27 review session, group M4.)",
+      "source_ref": {
+        "page": 15,
+        "row_position": 37,
+        "column_position": 20,
+        "cell_value": "X"
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-09-27T19:58:00+02:00"
+    },
+    {
+      "id": "corr-015",
+      "target": "schedule_properties",
+      "op": "confirm",
+      "review_item": "D6",
+      "reason": "Kept as extracted: second band (Screening, Lead-In) typed period at level 2, sub-phases of Study Period I. Rule (group D-a): a header band is typed by its dominant content; a printed row label wins; single-column visit labels inside an epoch/period band stay values of that band. (Kerstin, 2026-09-27 review session, group D-a.)",
+      "source_ref": {
+        "page": 13
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-09-27T20:09:00+02:00"
+    },
+    {
+      "id": "corr-016",
+      "target": "schedule_properties",
+      "op": "set",
+      "match": {
+        "row_position": 5
+      },
+      "set": {
+        "hierarchical_level": null
+      },
+      "reason": "Window row 'Allowable Interval Tolerance (days)': hierarchical_level 5 -> null. No header row below it carries a level, so no other level changes. Prompt 3.9.2 §3 hierarchical_level: a window or tolerance row (the allowed deviation around each visit) is a qualifier of the columns, not a way to tell them apart: null, even where its values differ from column to column; the levels of the other rows stay consecutive. Inventory item 25g (decision Kerstin, 2026-09-28 13:16).",
+      "source_ref": {
+        "page": 13,
+        "row_position": 5
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-09-28T13:45:00+02:00"
+    }
+  ]
+}

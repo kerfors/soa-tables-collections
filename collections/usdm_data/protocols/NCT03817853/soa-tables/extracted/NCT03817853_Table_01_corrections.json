@@ -1,0 +1,43 @@
+{
+ "schema_name": "soa-table-corrections",
+ "schema_version": "1.0",
+ "target_extraction": "NCT03817853_Table_01_extraction.json",
+ "corrections": [
+  {
+   "id": "corr-001",
+   "target": "schedule_properties",
+   "op": "confirm",
+   "review_item": "D2",
+   "reason": "Kept as extracted: second band (Induction, EOI, Maintenance, EOM) typed period; EOI/EOM are single-column values. Rule (group D-a): a header band is typed by its dominant content; a printed row label wins; single-column visit labels inside an epoch/period band stay values of that band. (Kerstin, 2026-09-27 review session, group D-a.)",
+   "source_ref": {
+    "page": 100
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-09-27T20:09:00+02:00"
+  },
+  {
+   "id": "corr-002",
+   "target": "activities",
+   "op": "confirm",
+   "review_item": "D1",
+   "reason": "Kept as extracted: 'Study drug administration' spans two sub-rows and is a mark-free parent of 'obinutuzumab' and 'chemotherapy' (as misc NCT05051579 D1). Rule (group H): hierarchy follows printed signals (indent, bold, shading, full-width section bands); a group stays open across a page break until the next header; no implicit group is invented; a label cell spanning sub-rows is a parent with children. (Kerstin, 2026-09-27 review session, group H.)",
+   "source_ref": {
+    "page": 100
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-09-27T20:15:00+02:00"
+  },
+  {
+   "id": "corr-003",
+   "target": "schedule_grid",
+   "op": "confirm",
+   "review_item": "D3",
+   "reason": "Kept as extracted: vertically spanning cells (Screening, EOI, Maintenance, EOM, Follow-up) are recorded on the top row they occupy; the covered Cycle/Day cells are empty. Rule (group F): a header cell spanning several header rows is recorded once, on the row whose type matches its content, split by printed line where the lines match different rows; covered cells stay empty; no value is repeated and no header row is added. (Kerstin, 2026-09-27 review session, group F.)",
+   "source_ref": {
+    "page": 100
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-09-27T20:17:00+02:00"
+  }
+ ]
+}

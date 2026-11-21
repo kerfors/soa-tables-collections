@@ -1,0 +1,2029 @@
+{
+  "schema_name": "soa-table-resolved",
+  "schema_version": "1.3",
+  "resolution_metadata": {
+    "resolved_at": "2026-11-21T09:30:54.204999+00:00",
+    "resolver": "soa_tables.resolve v1.0",
+    "source_extraction": {
+      "schema_name": "soa-table-extraction",
+      "schema_version": "1.0",
+      "extraction_file": "NCT05324124_Table_01_extraction.verified.json",
+      "extraction_status": "ready_for_resolution"
+    },
+    "validation_results": {
+      "structure_valid": true,
+      "hierarchy_valid": true,
+      "annotations_valid": true,
+      "validation_warnings": [
+        "Property 'Days' (type=other) has no hierarchical_level but sits between L1 and L2 — may be a missing level assignment"
+      ],
+      "validation_errors": [],
+      "method_provenance": [
+        "activity_name:visual_transcription: 1",
+        "annotation_text:deglyph_reconstruction: 1",
+        "indentation_level:assumed_flat: 19",
+        "marker_location:synthesized: 8",
+        "property_structure:inferred_from_layout: 1",
+        "schedule_cell:visual_read: 22"
+      ]
+    },
+    "resolution_status": "resolved_with_warnings",
+    "ready_for_integration": true,
+    "resolution_notes": ""
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-09-27T12:00:00Z",
+    "extractor": "Claude, PDF_TO_JSON_PROMPT single-pass",
+    "prompt_version": "3.8.1",
+    "source_document": {
+      "filename": "NCT05324124_soa.pdf",
+      "document_type": "protocol"
+    },
+    "extraction_status": "ready_for_resolution",
+    "extraction_notes": "Single SoA table (section 1.3, protocol J2G-MC-JZPA) printed over document pages 9-12 with the header reprinted on every page; extracted as one table. Pages 9-11 are vector text-layer pages (marks verified by pdftotext -bbox column binning). Page 12 is a full-page raster with an invisible glyph-spread text layer; marks cross-checked by bbox, arrows read visually. A 'CCI' redaction box on page 12 may conceal activity rows. Label columns L=1 (Procedure); data columns 2-16; the right-hand Comments column (17) is a notes column rendered as footnote annotations with synthesized markers cm1-cm8. In-grid mark 'P' has no printed legend.",
+    "model": "claude-opus-5-5"
+  },
+  "table_metadata": {
+    "table_id": "table-001",
+    "table_number": 1,
+    "table_type": "main_soa",
+    "table_title": "Schedule of Activities (SoA)",
+    "table_purpose": "Main study schedule: screening, 11-day inpatient treatment period, ED and follow-up phone call",
+    "page_start": 9,
+    "page_end": 12,
+    "track_label": null,
+    "column_count": 15,
+    "row_count": 23,
+    "header_row_count": 3,
+    "activity_row_count": 20,
+    "notes": "Only SoA table in the excerpt; primary anchor grid -> main_soa. The header reprints on pages 10-12 with identical columns and the rows continue; no separate table number or caption, so treated as one table spanning 9-12 (not a continuation)."
+  },
+  "schedule_properties": [
+    {
+      "property_id": "prop-001",
+      "table_id": "table-001",
+      "row_position": 1,
+      "property_name": "Study period",
+      "property_name_source": {
+        "row_position": 1,
+        "column_position": 1,
+        "cell_value": "",
+        "synthesized": true
+      },
+      "property_type": "epoch",
+      "property_comment": "Top header band naming study phases: Screening (col 2), Treatment Period (merged across cols 3-15, Day -1 to ED), Follow-Up phone call (col 16). Phase names -> epoch. Label cell empty; name synthesized.",
+      "hierarchical_level": 1,
+      "parent_property_id": null,
+      "child_property_ids": [
+        "prop-003"
+      ],
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "property_id": "prop-002",
+      "table_id": "table-001",
+      "row_position": 2,
+      "property_name": "Days",
+      "property_name_source": {
+        "row_position": 2,
+        "column_position": 1,
+        "cell_value": "",
+        "synthesized": true
+      },
+      "property_type": "other",
+      "property_comment": "Presentational band carrying the single spanning label 'Days' over cols 3-15, qualifying the numbers in row 3 as study days. It does not by itself distinguish any two columns, so hierarchical_level is null. Label cell empty; name taken from the spanning value.",
+      "hierarchical_level": null,
+      "parent_property_id": null,
+      "child_property_ids": [],
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "property_id": "prop-003",
+      "table_id": "table-001",
+      "row_position": 3,
+      "property_name": "Study day",
+      "property_name_source": {
+        "row_position": 3,
+        "column_position": 1,
+        "cell_value": "Procedure",
+        "synthesized": true
+      },
+      "property_type": "study_day",
+      "property_comment": "Study-day row: '-28 to -2 days prior to Day 1' (Screening), Day -1, Days 1-11, ED (early discontinuation), and for the Follow-Up column the window 'within 7 to 10 days after last dose' (vertically merged across rows 2-3 in the source). Numeric day labels -> study_day. The printed label cell reads 'Procedure', which heads the activity column, so the property name is synthesized.",
+      "hierarchical_level": 2,
+      "parent_property_id": "prop-001",
+      "child_property_ids": [],
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    }
+  ],
+  "schedule_columns": [
+    {
+      "column_id": "col-002",
+      "table_id": "table-001",
+      "column_position": 2,
+      "is_label_column": false,
+      "column_values": [
+        {
+          "property_id": "prop-001",
+          "value": "Screening",
+          "is_merged": false,
+          "annotation_markers": ""
+        },
+        {
+          "property_id": "prop-002",
+          "value": "",
+          "is_merged": false,
+          "annotation_markers": ""
+        },
+        {
+          "property_id": "prop-003",
+          "value": "-28 to -2 days prior to Day 1",
+          "is_merged": false,
+          "annotation_markers": ""
+        }
+      ],
+      "composite_label": "Screening / -28 to -2 days prior to Day 1",
+      "linked_annotation_ids": []
+    },
+    {
+      "column_id": "col-003",
+      "table_id": "table-001",
+      "column_position": 3,
+      "is_label_column": false,
+      "column_values": [
+        {
+          "property_id": "prop-001",
+          "value": "Treatment Period",
+          "is_merged": true,
+          "annotation_markers": ""
+        },
+        {
+          "property_id": "prop-002",
+          "value": "Days",
+          "is_merged": true,
+          "annotation_markers": ""
+        },
+        {
+          "property_id": "prop-003",
+          "value": "-1",
+          "is_merged": false,
+          "annotation_markers": ""
+        }
+      ],
+      "composite_label": "Treatment Period / Days / -1",
+      "linked_annotation_ids": []
+    },
+    {
+      "column_id": "col-004",
+      "table_id": "table-001",
+      "column_position": 4,
+      "is_label_column": false,
+      "column_values": [
+        {
+          "property_id": "prop-001",
+          "value": "Treatment Period",
+          "is_merged": true,
+          "annotation_markers": ""
+        },
+        {
+          "property_id": "prop-002",
+          "value": "Days",
+          "is_merged": true,
+          "annotation_markers": ""
+        },
+        {
+          "property_id": "prop-003",
+          "value": "1",
+          "is_merged": false,
+          "annotation_markers": ""
+        }
+      ],
+      "composite_label": "Treatment Period / Days / 1",
+      "linked_annotation_ids": []
+    },
+    {
+      "column_id": "col-005",
+      "table_id": "table-001",
+      "column_position": 5,
+      "is_label_column": false,
+      "column_values": [
+        {
+          "property_id": "prop-001",
+          "value": "Treatment Period",
+          "is_merged": true,
+          "annotation_markers": ""
+        },
+        {
+          "property_id": "prop-002",
+          "value": "Days",
+          "is_merged": true,
+          "annotation_markers": ""
+        },
+        {
+          "property_id": "prop-003",
+          "value": "2",
+          "is_merged": false,
+          "annotation_markers": ""
+        }
+      ],
+      "composite_label": "Treatment Period / Days / 2",
+      "linked_annotation_ids": []
+    },
+    {
+      "column_id": "col-006",
+      "table_id": "table-001",
+      "column_position": 6,
+      "is_label_column": false,
+      "column_values": [
+        {
+          "property_id": "prop-001",
+          "value": "Treatment Period",
+          "is_merged": true,
+          "annotation_markers": ""
+        },
+        {
+          "property_id": "prop-002",
+          "value": "Days",
+          "is_merged": true,
+          "annotation_markers": ""
+        },
+        {
+          "property_id": "prop-003",
+          "value": "3",
+          "is_merged": false,
+          "annotation_markers": ""
+        }
+      ],
+      "composite_label": "Treatment Period / Days / 3",
+      "linked_annotation_ids": []
+    },
+    {
+      "column_id": "col-007",
+      "table_id": "table-001",
+      "column_position": 7,
+      "is_label_column": false,
+      "column_values": [
+        {
+          "property_id": "prop-001",
+          "value": "Treatment Period",
+          "is_merged": true,
+          "annotation_markers": ""
+        },
+        {
+          "property_id": "prop-002",
+          "value": "Days",
+          "is_merged": true,
+          "annotation_markers": ""
+        },
+        {
+          "property_id": "prop-003",
+          "value": "4",
+          "is_merged": false,
+          "annotation_markers": ""
+        }
+      ],
+      "composite_label": "Treatment Period / Days / 4",
+      "linked_annotation_ids": []
+    },
+    {
+      "column_id": "col-008",
+      "table_id": "table-001",
+      "column_position": 8,
+      "is_label_column": false,
+      "column_values": [
+        {
+          "property_id": "prop-001",
+          "value": "Treatment Period",
+          "is_merged": true,
+          "annotation_markers": ""
+        },
+        {
+          "property_id": "prop-002",
+          "value": "Days",
+          "is_merged": true,
+          "annotation_markers": ""
+        },
+        {
+          "property_id": "prop-003",
+          "value": "5",
+          "is_merged": false,
+          "annotation_markers": ""
+        }
+      ],
+      "composite_label": "Treatment Period / Days / 5",
+      "linked_annotation_ids": []
+    },
+    {
+      "column_id": "col-009",
+      "table_id": "table-001",
+      "column_position": 9,
+      "is_label_column": false,
+      "column_values": [
+        {
+          "property_id": "prop-001",
+          "value": "Treatment Period",
+          "is_merged": true,
+          "annotation_markers": ""
+        },
+        {
+          "property_id": "prop-002",
+          "value": "Days",
+          "is_merged": true,
+          "annotation_markers": ""
+        },
+        {
+          "property_id": "prop-003",
+          "value": "6",
+          "is_merged": false,
+          "annotation_markers": ""
+        }
+      ],
+      "composite_label": "Treatment Period / Days / 6",
+      "linked_annotation_ids": []
+    },
+    {
+      "column_id": "col-010",
+      "table_id": "table-001",
+      "column_position": 10,
+      "is_label_column": false,
+      "column_values": [
+        {
+          "property_id": "prop-001",
+          "value": "Treatment Period",
+          "is_merged": true,
+          "annotation_markers": ""
+        },
+        {
+          "property_id": "prop-002",
+          "value": "Days",
+          "is_merged": true,
+          "annotation_markers": ""
+        },
+        {
+          "property_id": "prop-003",
+          "value": "7",
+          "is_merged": false,
+          "annotation_markers": ""
+        }
+      ],
+      "composite_label": "Treatment Period / Days / 7",
+      "linked_annotation_ids": []
+    },
+    {
+      "column_id": "col-011",
+      "table_id": "table-001",
+      "column_position": 11,
+      "is_label_column": false,
+      "column_values": [
+        {
+          "property_id": "prop-001",
+          "value": "Treatment Period",
+          "is_merged": true,
+          "annotation_markers": ""
+        },
+        {
+          "property_id": "prop-002",
+          "value": "Days",
+          "is_merged": true,
+          "annotation_markers": ""
+        },
+        {
+          "property_id": "prop-003",
+          "value": "8",
+          "is_merged": false,
+          "annotation_markers": ""
+        }
+      ],
+      "composite_label": "Treatment Period / Days / 8",
+      "linked_annotation_ids": []
+    },
+    {
+      "column_id": "col-012",
+      "table_id": "table-001",
+      "column_position": 12,
+      "is_label_column": false,
+      "column_values": [
+        {
+          "property_id": "prop-001",
+          "value": "Treatment Period",
+          "is_merged": true,
+          "annotation_markers": ""
+        },
+        {
+          "property_id": "prop-002",
+          "value": "Days",
+          "is_merged": true,
+          "annotation_markers": ""
+        },
+        {
+          "property_id": "prop-003",
+          "value": "9",
+          "is_merged": false,
+          "annotation_markers": ""
+        }
+      ],
+      "composite_label": "Treatment Period / Days / 9",
+      "linked_annotation_ids": []
+    },
+    {
+      "column_id": "col-013",
+      "table_id": "table-001",
+      "column_position": 13,
+      "is_label_column": false,
+      "column_values": [
+        {
+          "property_id": "prop-001",
+          "value": "Treatment Period",
+          "is_merged": true,
+          "annotation_markers": ""
+        },
+        {
+          "property_id": "prop-002",
+          "value": "Days",
+          "is_merged": true,
+          "annotation_markers": ""
+        },
+        {
+          "property_id": "prop-003",
+          "value": "10",
+          "is_merged": false,
+          "annotation_markers": ""
+        }
+      ],
+      "composite_label": "Treatment Period / Days / 10",
+      "linked_annotation_ids": []
+    },
+    {
+      "column_id": "col-014",
+      "table_id": "table-001",
+      "column_position": 14,
+      "is_label_column": false,
+      "column_values": [
+        {
+          "property_id": "prop-001",
+          "value": "Treatment Period",
+          "is_merged": true,
+          "annotation_markers": ""
+        },
+        {
+          "property_id": "prop-002",
+          "value": "Days",
+          "is_merged": true,
+          "annotation_markers": ""
+        },
+        {
+          "property_id": "prop-003",
+          "value": "11",
+          "is_merged": false,
+          "annotation_markers": ""
+        }
+      ],
+      "composite_label": "Treatment Period / Days / 11",
+      "linked_annotation_ids": []
+    },
+    {
+      "column_id": "col-015",
+      "table_id": "table-001",
+      "column_position": 15,
+      "is_label_column": false,
+      "column_values": [
+        {
+          "property_id": "prop-001",
+          "value": "Treatment Period",
+          "is_merged": true,
+          "annotation_markers": ""
+        },
+        {
+          "property_id": "prop-002",
+          "value": "Days",
+          "is_merged": true,
+          "annotation_markers": ""
+        },
+        {
+          "property_id": "prop-003",
+          "value": "ED",
+          "is_merged": false,
+          "annotation_markers": ""
+        }
+      ],
+      "composite_label": "Treatment Period / Days / ED",
+      "linked_annotation_ids": []
+    },
+    {
+      "column_id": "col-016",
+      "table_id": "table-001",
+      "column_position": 16,
+      "is_label_column": false,
+      "column_values": [
+        {
+          "property_id": "prop-001",
+          "value": "Follow-Up phone call",
+          "is_merged": false,
+          "annotation_markers": ""
+        },
+        {
+          "property_id": "prop-002",
+          "value": "",
+          "is_merged": false,
+          "annotation_markers": ""
+        },
+        {
+          "property_id": "prop-003",
+          "value": "within 7 to 10 days after last dose",
+          "is_merged": false,
+          "annotation_markers": ""
+        }
+      ],
+      "composite_label": "Follow-Up phone call / within 7 to 10 days after last dose",
+      "linked_annotation_ids": []
+    }
+  ],
+  "activities": [
+    {
+      "activity_id": "act-001",
+      "table_id": "table-001",
+      "row_position": 4,
+      "activity_name": "Informed consent",
+      "activity_name_source": {
+        "cell_text": "Informed consent",
+        "indentation_level": 0,
+        "indentation_method": "assumed_flat"
+      },
+      "hierarchy_level": 0,
+      "is_section_header": false,
+      "parent_activity_id": null,
+      "child_activity_ids": [],
+      "has_schedule_data": true,
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-002",
+      "table_id": "table-001",
+      "row_position": 5,
+      "activity_name": "Inclusion and exclusion criteria",
+      "activity_name_source": {
+        "cell_text": "Inclusion and\nexclusion criteria",
+        "indentation_level": 0,
+        "indentation_method": "assumed_flat"
+      },
+      "hierarchy_level": 0,
+      "is_section_header": false,
+      "parent_activity_id": null,
+      "child_activity_ids": [],
+      "has_schedule_data": true,
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-003",
+      "table_id": "table-001",
+      "row_position": 6,
+      "activity_name": "Demography",
+      "activity_name_source": {
+        "cell_text": "Demography",
+        "indentation_level": 0,
+        "indentation_method": "assumed_flat"
+      },
+      "hierarchy_level": 0,
+      "is_section_header": false,
+      "parent_activity_id": null,
+      "child_activity_ids": [],
+      "has_schedule_data": true,
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-004",
+      "table_id": "table-001",
+      "row_position": 7,
+      "activity_name": "Participant admission to CRU",
+      "activity_name_source": {
+        "cell_text": "Participant\nadmission to CRU",
+        "indentation_level": 0,
+        "indentation_method": "assumed_flat"
+      },
+      "hierarchy_level": 0,
+      "is_section_header": false,
+      "parent_activity_id": null,
+      "child_activity_ids": [],
+      "has_schedule_data": true,
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-005",
+      "table_id": "table-001",
+      "row_position": 8,
+      "activity_name": "Participant discharge from CRU",
+      "activity_name_source": {
+        "cell_text": "Participant\ndischarge from\nCRU",
+        "indentation_level": 0,
+        "indentation_method": "assumed_flat"
+      },
+      "hierarchy_level": 0,
+      "is_section_header": false,
+      "parent_activity_id": null,
+      "child_activity_ids": [],
+      "has_schedule_data": true,
+      "annotation_markers": "cm1",
+      "linked_annotation_ids": [
+        "annot-001"
+      ]
+    },
+    {
+      "activity_id": "act-006",
+      "table_id": "table-001",
+      "row_position": 9,
+      "activity_name": "Outpatient visit",
+      "activity_name_source": {
+        "cell_text": "Outpatient visit",
+        "indentation_level": 0,
+        "indentation_method": "assumed_flat"
+      },
+      "hierarchy_level": 0,
+      "is_section_header": false,
+      "parent_activity_id": null,
+      "child_activity_ids": [],
+      "has_schedule_data": true,
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-007",
+      "table_id": "table-001",
+      "row_position": 10,
+      "activity_name": "Medical history",
+      "activity_name_source": {
+        "cell_text": "Medical history",
+        "indentation_level": 0,
+        "indentation_method": "assumed_flat"
+      },
+      "hierarchy_level": 0,
+      "is_section_header": false,
+      "parent_activity_id": null,
+      "child_activity_ids": [],
+      "has_schedule_data": true,
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-008",
+      "table_id": "table-001",
+      "row_position": 11,
+      "activity_name": "Medical assessment",
+      "activity_name_source": {
+        "cell_text": "Medical\nassessment",
+        "indentation_level": 0,
+        "indentation_method": "assumed_flat"
+      },
+      "hierarchy_level": 0,
+      "is_section_header": false,
+      "parent_activity_id": null,
+      "child_activity_ids": [],
+      "has_schedule_data": true,
+      "annotation_markers": "cm2",
+      "linked_annotation_ids": [
+        "annot-002"
+      ]
+    },
+    {
+      "activity_id": "act-009",
+      "table_id": "table-001",
+      "row_position": 12,
+      "activity_name": "Height and weight",
+      "activity_name_source": {
+        "cell_text": "Height and weight",
+        "indentation_level": 0,
+        "indentation_method": "assumed_flat"
+      },
+      "hierarchy_level": 0,
+      "is_section_header": false,
+      "parent_activity_id": null,
+      "child_activity_ids": [],
+      "has_schedule_data": true,
+      "annotation_markers": "cm3",
+      "linked_annotation_ids": [
+        "annot-003"
+      ]
+    },
+    {
+      "activity_id": "act-010",
+      "table_id": "table-001",
+      "row_position": 13,
+      "activity_name": "Serum or urine pregnancy test (women of childbearing potential only)",
+      "activity_name_source": {
+        "cell_text": "Serum or urine\npregnancy test\n(women of\nchildbearing\npotential only)",
+        "indentation_level": 0,
+        "indentation_method": "assumed_flat"
+      },
+      "hierarchy_level": 0,
+      "is_section_header": false,
+      "parent_activity_id": null,
+      "child_activity_ids": [],
+      "has_schedule_data": true,
+      "annotation_markers": "cm4",
+      "linked_annotation_ids": [
+        "annot-004"
+      ]
+    },
+    {
+      "activity_id": "act-011",
+      "table_id": "table-001",
+      "row_position": 14,
+      "activity_name": "Follicle-stimulating hormone (women of non-childbearing potential only)",
+      "activity_name_source": {
+        "cell_text": "Follicle-\nstimulating\nhormone (women\nof non-\nchildbearing\npotential only)",
+        "indentation_level": 0,
+        "indentation_method": "assumed_flat"
+      },
+      "hierarchy_level": 0,
+      "is_section_header": false,
+      "parent_activity_id": null,
+      "child_activity_ids": [],
+      "has_schedule_data": true,
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-012",
+      "table_id": "table-001",
+      "row_position": 15,
+      "activity_name": "Human immunodeficiency virus, hepatitis B and C screen",
+      "activity_name_source": {
+        "cell_text": "Human\nimmunodeficiency\nvirus, hepatitis B\nand C screen",
+        "indentation_level": 0,
+        "indentation_method": "assumed_flat"
+      },
+      "hierarchy_level": 0,
+      "is_section_header": false,
+      "parent_activity_id": null,
+      "child_activity_ids": [],
+      "has_schedule_data": true,
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-013",
+      "table_id": "table-001",
+      "row_position": 16,
+      "activity_name": "12-lead ECG",
+      "activity_name_source": {
+        "cell_text": "12-lead ECG",
+        "indentation_level": 0,
+        "indentation_method": "assumed_flat"
+      },
+      "hierarchy_level": 0,
+      "is_section_header": false,
+      "parent_activity_id": null,
+      "child_activity_ids": [],
+      "has_schedule_data": true,
+      "annotation_markers": "cm5",
+      "linked_annotation_ids": [
+        "annot-005"
+      ]
+    },
+    {
+      "activity_id": "act-014",
+      "table_id": "table-001",
+      "row_position": 17,
+      "activity_name": "Vital signs (supine), pulse rate, and blood pressure",
+      "activity_name_source": {
+        "cell_text": "Vital signs\n(supine), pulse\nrate, and blood\npressure",
+        "indentation_level": 0,
+        "indentation_method": "assumed_flat"
+      },
+      "hierarchy_level": 0,
+      "is_section_header": false,
+      "parent_activity_id": null,
+      "child_activity_ids": [],
+      "has_schedule_data": true,
+      "annotation_markers": "cm6",
+      "linked_annotation_ids": [
+        "annot-006"
+      ]
+    },
+    {
+      "activity_id": "act-015",
+      "table_id": "table-001",
+      "row_position": 18,
+      "activity_name": "Clinical laboratory tests",
+      "activity_name_source": {
+        "cell_text": "Clinical\nlaboratory tests",
+        "indentation_level": 0,
+        "indentation_method": "assumed_flat"
+      },
+      "hierarchy_level": 0,
+      "is_section_header": false,
+      "parent_activity_id": null,
+      "child_activity_ids": [],
+      "has_schedule_data": true,
+      "annotation_markers": "cm7",
+      "linked_annotation_ids": [
+        "annot-007"
+      ]
+    },
+    {
+      "activity_id": "act-016",
+      "table_id": "table-001",
+      "row_position": 19,
+      "activity_name": "Genetic sample",
+      "activity_name_source": {
+        "cell_text": "Genetic sample",
+        "indentation_level": 0,
+        "indentation_method": "assumed_flat"
+      },
+      "hierarchy_level": 0,
+      "is_section_header": false,
+      "parent_activity_id": null,
+      "child_activity_ids": [],
+      "has_schedule_data": true,
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-017",
+      "table_id": "table-001",
+      "row_position": 20,
+      "activity_name": "Selpercatinib administration",
+      "activity_name_source": {
+        "cell_text": "Selpercatinib\nadministration",
+        "indentation_level": 0,
+        "indentation_method": "assumed_flat"
+      },
+      "hierarchy_level": 0,
+      "is_section_header": false,
+      "parent_activity_id": null,
+      "child_activity_ids": [],
+      "has_schedule_data": true,
+      "annotation_markers": "cm8",
+      "linked_annotation_ids": [
+        "annot-008"
+      ]
+    },
+    {
+      "activity_id": "act-018",
+      "table_id": "table-001",
+      "row_position": 21,
+      "activity_name": "Adverse event /Serious adverse event review",
+      "activity_name_source": {
+        "cell_text": "Adverse event\n/Serious adverse\nevent review",
+        "indentation_level": 0,
+        "indentation_method": "assumed_flat"
+      },
+      "hierarchy_level": 0,
+      "is_section_header": false,
+      "parent_activity_id": null,
+      "child_activity_ids": [],
+      "has_schedule_data": true,
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-019",
+      "table_id": "table-001",
+      "row_position": 22,
+      "activity_name": "Concomitant medication review",
+      "activity_name_source": {
+        "cell_text": "Concomitant\nmedication review",
+        "indentation_level": 0,
+        "indentation_method": "assumed_flat"
+      },
+      "hierarchy_level": 0,
+      "is_section_header": false,
+      "parent_activity_id": null,
+      "child_activity_ids": [
+        "act-020"
+      ],
+      "has_schedule_data": true,
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-020",
+      "table_id": "table-001",
+      "row_position": 23,
+      "activity_name": "CCI",
+      "activity_name_source": {
+        "cell_text": "CCI",
+        "indentation_level": 1,
+        "method": "visual_transcription"
+      },
+      "is_redacted": true,
+      "hierarchy_level": 1,
+      "is_section_header": false,
+      "parent_activity_id": "act-019",
+      "child_activity_ids": [],
+      "has_schedule_data": false,
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    }
+  ],
+  "activity_schedule": [
+    {
+      "activity_id": "act-001",
+      "column_id": "col-002",
+      "row_position": 4,
+      "column_position": 2,
+      "cell_value": "X",
+      "cell_value_type": "marker",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-002",
+      "column_id": "col-002",
+      "row_position": 5,
+      "column_position": 2,
+      "cell_value": "X",
+      "cell_value_type": "marker",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-003",
+      "column_id": "col-002",
+      "row_position": 6,
+      "column_position": 2,
+      "cell_value": "X",
+      "cell_value_type": "marker",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-004",
+      "column_id": "col-003",
+      "row_position": 7,
+      "column_position": 3,
+      "cell_value": "X",
+      "cell_value_type": "marker",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-005",
+      "column_id": "col-014",
+      "row_position": 8,
+      "column_position": 14,
+      "cell_value": "X",
+      "cell_value_type": "marker",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-006",
+      "column_id": "col-002",
+      "row_position": 9,
+      "column_position": 2,
+      "cell_value": "X",
+      "cell_value_type": "marker",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-007",
+      "column_id": "col-002",
+      "row_position": 10,
+      "column_position": 2,
+      "cell_value": "X",
+      "cell_value_type": "marker",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-008",
+      "column_id": "col-002",
+      "row_position": 11,
+      "column_position": 2,
+      "cell_value": "X",
+      "cell_value_type": "marker",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-008",
+      "column_id": "col-004",
+      "row_position": 11,
+      "column_position": 4,
+      "cell_value": "P",
+      "cell_value_type": "other",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-008",
+      "column_id": "col-011",
+      "row_position": 11,
+      "column_position": 11,
+      "cell_value": "P",
+      "cell_value_type": "other",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-008",
+      "column_id": "col-014",
+      "row_position": 11,
+      "column_position": 14,
+      "cell_value": "X",
+      "cell_value_type": "marker",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-008",
+      "column_id": "col-015",
+      "row_position": 11,
+      "column_position": 15,
+      "cell_value": "X",
+      "cell_value_type": "marker",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-009",
+      "column_id": "col-002",
+      "row_position": 12,
+      "column_position": 2,
+      "cell_value": "X",
+      "cell_value_type": "marker",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-009",
+      "column_id": "col-014",
+      "row_position": 12,
+      "column_position": 14,
+      "cell_value": "X",
+      "cell_value_type": "marker",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-009",
+      "column_id": "col-015",
+      "row_position": 12,
+      "column_position": 15,
+      "cell_value": "X",
+      "cell_value_type": "marker",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-010",
+      "column_id": "col-002",
+      "row_position": 13,
+      "column_position": 2,
+      "cell_value": "X",
+      "cell_value_type": "marker",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-010",
+      "column_id": "col-003",
+      "row_position": 13,
+      "column_position": 3,
+      "cell_value": "X",
+      "cell_value_type": "marker",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-010",
+      "column_id": "col-014",
+      "row_position": 13,
+      "column_position": 14,
+      "cell_value": "X",
+      "cell_value_type": "marker",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-010",
+      "column_id": "col-015",
+      "row_position": 13,
+      "column_position": 15,
+      "cell_value": "X",
+      "cell_value_type": "marker",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-011",
+      "column_id": "col-002",
+      "row_position": 14,
+      "column_position": 2,
+      "cell_value": "X",
+      "cell_value_type": "marker",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-012",
+      "column_id": "col-002",
+      "row_position": 15,
+      "column_position": 2,
+      "cell_value": "X",
+      "cell_value_type": "marker",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-013",
+      "column_id": "col-002",
+      "row_position": 16,
+      "column_position": 2,
+      "cell_value": "X",
+      "cell_value_type": "marker",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-013",
+      "column_id": "col-004",
+      "row_position": 16,
+      "column_position": 4,
+      "cell_value": "P, 2h",
+      "cell_value_type": "other",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-013",
+      "column_id": "col-006",
+      "row_position": 16,
+      "column_position": 6,
+      "cell_value": "X",
+      "cell_value_type": "marker",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-013",
+      "column_id": "col-011",
+      "row_position": 16,
+      "column_position": 11,
+      "cell_value": "P, 2h",
+      "cell_value_type": "other",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-013",
+      "column_id": "col-013",
+      "row_position": 16,
+      "column_position": 13,
+      "cell_value": "X",
+      "cell_value_type": "marker",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-013",
+      "column_id": "col-014",
+      "row_position": 16,
+      "column_position": 14,
+      "cell_value": "X",
+      "cell_value_type": "marker",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-013",
+      "column_id": "col-015",
+      "row_position": 16,
+      "column_position": 15,
+      "cell_value": "X",
+      "cell_value_type": "marker",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-014",
+      "column_id": "col-002",
+      "row_position": 17,
+      "column_position": 2,
+      "cell_value": "X",
+      "cell_value_type": "marker",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-014",
+      "column_id": "col-004",
+      "row_position": 17,
+      "column_position": 4,
+      "cell_value": "P, 1, 2h",
+      "cell_value_type": "other",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-014",
+      "column_id": "col-005",
+      "row_position": 17,
+      "column_position": 5,
+      "cell_value": "24h",
+      "cell_value_type": "other",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-014",
+      "column_id": "col-006",
+      "row_position": 17,
+      "column_position": 6,
+      "cell_value": "X",
+      "cell_value_type": "marker",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-014",
+      "column_id": "col-007",
+      "row_position": 17,
+      "column_position": 7,
+      "cell_value": "X",
+      "cell_value_type": "marker",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-014",
+      "column_id": "col-011",
+      "row_position": 17,
+      "column_position": 11,
+      "cell_value": "P, 1,2h",
+      "cell_value_type": "other",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-014",
+      "column_id": "col-012",
+      "row_position": 17,
+      "column_position": 12,
+      "cell_value": "24h",
+      "cell_value_type": "other",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-014",
+      "column_id": "col-013",
+      "row_position": 17,
+      "column_position": 13,
+      "cell_value": "X",
+      "cell_value_type": "marker",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-014",
+      "column_id": "col-014",
+      "row_position": 17,
+      "column_position": 14,
+      "cell_value": "X",
+      "cell_value_type": "marker",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-014",
+      "column_id": "col-015",
+      "row_position": 17,
+      "column_position": 15,
+      "cell_value": "X",
+      "cell_value_type": "marker",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-015",
+      "column_id": "col-002",
+      "row_position": 18,
+      "column_position": 2,
+      "cell_value": "X",
+      "cell_value_type": "marker",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-015",
+      "column_id": "col-004",
+      "row_position": 18,
+      "column_position": 4,
+      "cell_value": "P",
+      "cell_value_type": "other",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-015",
+      "column_id": "col-005",
+      "row_position": 18,
+      "column_position": 5,
+      "cell_value": "24h",
+      "cell_value_type": "other",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-015",
+      "column_id": "col-007",
+      "row_position": 18,
+      "column_position": 7,
+      "cell_value": "X",
+      "cell_value_type": "marker",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-015",
+      "column_id": "col-011",
+      "row_position": 18,
+      "column_position": 11,
+      "cell_value": "P",
+      "cell_value_type": "other",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-015",
+      "column_id": "col-012",
+      "row_position": 18,
+      "column_position": 12,
+      "cell_value": "24h",
+      "cell_value_type": "other",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-015",
+      "column_id": "col-014",
+      "row_position": 18,
+      "column_position": 14,
+      "cell_value": "X",
+      "cell_value_type": "marker",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-015",
+      "column_id": "col-015",
+      "row_position": 18,
+      "column_position": 15,
+      "cell_value": "X",
+      "cell_value_type": "marker",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-016",
+      "column_id": "col-004",
+      "row_position": 19,
+      "column_position": 4,
+      "cell_value": "X",
+      "cell_value_type": "marker",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-017",
+      "column_id": "col-004",
+      "row_position": 20,
+      "column_position": 4,
+      "cell_value": "X",
+      "cell_value_type": "marker",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-017",
+      "column_id": "col-011",
+      "row_position": 20,
+      "column_position": 11,
+      "cell_value": "X",
+      "cell_value_type": "marker",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-018",
+      "column_id": "col-002",
+      "row_position": 21,
+      "column_position": 2,
+      "cell_value": "X",
+      "cell_value_type": "marker",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-018",
+      "column_id": "col-003",
+      "row_position": 21,
+      "column_position": 3,
+      "cell_value": "X",
+      "cell_value_type": "marker",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-018",
+      "column_id": "col-004",
+      "row_position": 21,
+      "column_position": 4,
+      "cell_value": "↔",
+      "cell_value_type": "other",
+      "source_range": "4:14",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-018",
+      "column_id": "col-005",
+      "row_position": 21,
+      "column_position": 5,
+      "cell_value": "↔",
+      "cell_value_type": "other",
+      "source_range": "4:14",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-018",
+      "column_id": "col-006",
+      "row_position": 21,
+      "column_position": 6,
+      "cell_value": "↔",
+      "cell_value_type": "other",
+      "source_range": "4:14",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-018",
+      "column_id": "col-007",
+      "row_position": 21,
+      "column_position": 7,
+      "cell_value": "↔",
+      "cell_value_type": "other",
+      "source_range": "4:14",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-018",
+      "column_id": "col-008",
+      "row_position": 21,
+      "column_position": 8,
+      "cell_value": "↔",
+      "cell_value_type": "other",
+      "source_range": "4:14",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-018",
+      "column_id": "col-009",
+      "row_position": 21,
+      "column_position": 9,
+      "cell_value": "↔",
+      "cell_value_type": "other",
+      "source_range": "4:14",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-018",
+      "column_id": "col-010",
+      "row_position": 21,
+      "column_position": 10,
+      "cell_value": "↔",
+      "cell_value_type": "other",
+      "source_range": "4:14",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-018",
+      "column_id": "col-011",
+      "row_position": 21,
+      "column_position": 11,
+      "cell_value": "↔",
+      "cell_value_type": "other",
+      "source_range": "4:14",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-018",
+      "column_id": "col-012",
+      "row_position": 21,
+      "column_position": 12,
+      "cell_value": "↔",
+      "cell_value_type": "other",
+      "source_range": "4:14",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-018",
+      "column_id": "col-013",
+      "row_position": 21,
+      "column_position": 13,
+      "cell_value": "↔",
+      "cell_value_type": "other",
+      "source_range": "4:14",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-018",
+      "column_id": "col-014",
+      "row_position": 21,
+      "column_position": 14,
+      "cell_value": "↔",
+      "cell_value_type": "other",
+      "source_range": "4:14",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-018",
+      "column_id": "col-015",
+      "row_position": 21,
+      "column_position": 15,
+      "cell_value": "X",
+      "cell_value_type": "marker",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-019",
+      "column_id": "col-002",
+      "row_position": 22,
+      "column_position": 2,
+      "cell_value": "X",
+      "cell_value_type": "marker",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-019",
+      "column_id": "col-003",
+      "row_position": 22,
+      "column_position": 3,
+      "cell_value": "X",
+      "cell_value_type": "marker",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-019",
+      "column_id": "col-004",
+      "row_position": 22,
+      "column_position": 4,
+      "cell_value": "↔",
+      "cell_value_type": "other",
+      "source_range": "4:14",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-019",
+      "column_id": "col-005",
+      "row_position": 22,
+      "column_position": 5,
+      "cell_value": "↔",
+      "cell_value_type": "other",
+      "source_range": "4:14",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-019",
+      "column_id": "col-006",
+      "row_position": 22,
+      "column_position": 6,
+      "cell_value": "↔",
+      "cell_value_type": "other",
+      "source_range": "4:14",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-019",
+      "column_id": "col-007",
+      "row_position": 22,
+      "column_position": 7,
+      "cell_value": "↔",
+      "cell_value_type": "other",
+      "source_range": "4:14",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-019",
+      "column_id": "col-008",
+      "row_position": 22,
+      "column_position": 8,
+      "cell_value": "↔",
+      "cell_value_type": "other",
+      "source_range": "4:14",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-019",
+      "column_id": "col-009",
+      "row_position": 22,
+      "column_position": 9,
+      "cell_value": "↔",
+      "cell_value_type": "other",
+      "source_range": "4:14",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-019",
+      "column_id": "col-010",
+      "row_position": 22,
+      "column_position": 10,
+      "cell_value": "↔",
+      "cell_value_type": "other",
+      "source_range": "4:14",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-019",
+      "column_id": "col-011",
+      "row_position": 22,
+      "column_position": 11,
+      "cell_value": "↔",
+      "cell_value_type": "other",
+      "source_range": "4:14",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-019",
+      "column_id": "col-012",
+      "row_position": 22,
+      "column_position": 12,
+      "cell_value": "↔",
+      "cell_value_type": "other",
+      "source_range": "4:14",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-019",
+      "column_id": "col-013",
+      "row_position": 22,
+      "column_position": 13,
+      "cell_value": "↔",
+      "cell_value_type": "other",
+      "source_range": "4:14",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-019",
+      "column_id": "col-014",
+      "row_position": 22,
+      "column_position": 14,
+      "cell_value": "↔",
+      "cell_value_type": "other",
+      "source_range": "4:14",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    },
+    {
+      "activity_id": "act-019",
+      "column_id": "col-015",
+      "row_position": 22,
+      "column_position": 15,
+      "cell_value": "X",
+      "cell_value_type": "marker",
+      "source_range": "",
+      "annotation_markers": "",
+      "linked_annotation_ids": []
+    }
+  ],
+  "annotations": [
+    {
+      "annotation_id": "annot-001",
+      "table_id": "table-001",
+      "annotation_marker": "cm1",
+      "annotation_type": "footnote",
+      "annotation_text": "A study participant may be required to stay later than Day 11 for management or monitoring of an AE or a clinically significant finding, at the discretion of the investigator.",
+      "annotation_scope": "activity",
+      "referenced_elements": {
+        "property_ids": [],
+        "column_ids": [],
+        "activity_ids": [
+          "act-005"
+        ],
+        "cell_references": []
+      },
+      "marker_locations": [
+        {
+          "table_number": 1,
+          "location_type": "activity_name",
+          "row_position": 8,
+          "method": "synthesized"
+        }
+      ]
+    },
+    {
+      "annotation_id": "annot-002",
+      "table_id": "table-001",
+      "annotation_marker": "cm2",
+      "annotation_type": "footnote",
+      "annotation_text": "Full medical assessment to be performed at screening, and symptom driven examination to be done at other/any time point at physician’s discretion.",
+      "annotation_scope": "activity",
+      "referenced_elements": {
+        "property_ids": [],
+        "column_ids": [],
+        "activity_ids": [
+          "act-008"
+        ],
+        "cell_references": []
+      },
+      "marker_locations": [
+        {
+          "table_number": 1,
+          "location_type": "activity_name",
+          "row_position": 11,
+          "method": "synthesized"
+        }
+      ]
+    },
+    {
+      "annotation_id": "annot-003",
+      "table_id": "table-001",
+      "annotation_marker": "cm3",
+      "annotation_type": "footnote",
+      "annotation_text": "Height and weight to be measured at screening; weight only to be measured at Day 11 or ED as appropriate.",
+      "annotation_scope": "activity",
+      "referenced_elements": {
+        "property_ids": [],
+        "column_ids": [],
+        "activity_ids": [
+          "act-009"
+        ],
+        "cell_references": []
+      },
+      "marker_locations": [
+        {
+          "table_number": 1,
+          "location_type": "activity_name",
+          "row_position": 12,
+          "method": "synthesized"
+        }
+      ]
+    },
+    {
+      "annotation_id": "annot-004",
+      "table_id": "table-001",
+      "annotation_marker": "cm4",
+      "annotation_type": "footnote",
+      "annotation_text": "Serum pregnancy tests will be performed at screening and urine pregnancy test at all other time points",
+      "annotation_scope": "activity",
+      "referenced_elements": {
+        "property_ids": [],
+        "column_ids": [],
+        "activity_ids": [
+          "act-010"
+        ],
+        "cell_references": []
+      },
+      "marker_locations": [
+        {
+          "table_number": 1,
+          "location_type": "activity_name",
+          "row_position": 13,
+          "method": "synthesized"
+        }
+      ]
+    },
+    {
+      "annotation_id": "annot-005",
+      "table_id": "table-001",
+      "annotation_marker": "cm5",
+      "annotation_type": "footnote",
+      "annotation_text": "Single ECGs are required.",
+      "annotation_scope": "activity",
+      "referenced_elements": {
+        "property_ids": [],
+        "column_ids": [],
+        "activity_ids": [
+          "act-013"
+        ],
+        "cell_references": []
+      },
+      "marker_locations": [
+        {
+          "table_number": 1,
+          "location_type": "activity_name",
+          "row_position": 16,
+          "method": "synthesized"
+        }
+      ]
+    },
+    {
+      "annotation_id": "annot-006",
+      "table_id": "table-001",
+      "annotation_marker": "cm6",
+      "annotation_type": "footnote",
+      "annotation_text": "Time points may be added, if warranted and agreed upon between Lilly and the investigator.",
+      "annotation_scope": "activity",
+      "referenced_elements": {
+        "property_ids": [],
+        "column_ids": [],
+        "activity_ids": [
+          "act-014"
+        ],
+        "cell_references": []
+      },
+      "marker_locations": [
+        {
+          "table_number": 1,
+          "location_type": "activity_name",
+          "row_position": 17,
+          "method": "synthesized"
+        }
+      ]
+    },
+    {
+      "annotation_id": "annot-007",
+      "table_id": "table-001",
+      "annotation_marker": "cm7",
+      "annotation_type": "source_note",
+      "annotation_text": "See Appendix 10.2, Clinical Laboratory Tests, for details.",
+      "annotation_scope": "activity",
+      "referenced_elements": {
+        "property_ids": [],
+        "column_ids": [],
+        "activity_ids": [
+          "act-015"
+        ],
+        "cell_references": []
+      },
+      "marker_locations": [
+        {
+          "table_number": 1,
+          "location_type": "activity_name",
+          "row_position": 18,
+          "method": "synthesized"
+        }
+      ],
+      "document_references": [
+        {
+          "kind": "appendix",
+          "target": "10.2"
+        }
+      ]
+    },
+    {
+      "annotation_id": "annot-008",
+      "table_id": "table-001",
+      "annotation_marker": "cm8",
+      "annotation_type": "footnote",
+      "annotation_text": "Participant consumes high-fat meal within 30 minutes prior to dose based on randomization.",
+      "annotation_scope": "activity",
+      "referenced_elements": {
+        "property_ids": [],
+        "column_ids": [],
+        "activity_ids": [
+          "act-017"
+        ],
+        "cell_references": []
+      },
+      "marker_locations": [
+        {
+          "table_number": 1,
+          "location_type": "activity_name",
+          "row_position": 20,
+          "method": "synthesized"
+        }
+      ]
+    }
+  ],
+  "review_items": [
+    {
+      "id": "D1",
+      "severity": "high",
+      "location": {
+        "page": 12,
+        "row_positions": [
+          19,
+          20
+        ]
+      },
+      "call_made": "The black 'CCI' redaction box between 'Genetic sample' and 'Selpercatinib administration' (full table width) is treated as hiding unknown content; no activity rows were created for it.",
+      "alternative": "Add one or more placeholder activity rows (e.g. 'Redacted (CCI)') with no marks, so the concealed rows are represented in the schedule.",
+      "report_section": "3.1"
+    },
+    {
+      "id": "D2",
+      "severity": "high",
+      "location": {
+        "page": 12,
+        "row_positions": [
+          21,
+          22
+        ]
+      },
+      "call_made": "The double-headed arrow in 'Adverse event /Serious adverse event review' and 'Concomitant medication review' is recorded as one merged cell covering Day 1 to Day 11 (columns 4-14), and is distributed as '↔' to each of those 11 columns.",
+      "alternative": "Limit the arrow to the columns the drawn arrow physically crosses (tip-to-tip roughly Day 1 to Day 10) instead of the full merged cell.",
+      "report_section": "3.2"
+    },
+    {
+      "id": "D3",
+      "severity": "medium",
+      "location": {
+        "page": 9,
+        "row_positions": [
+          2,
+          3
+        ],
+        "column_position": 16
+      },
+      "call_made": "The Follow-Up column's text 'within 7 to 10 days after last dose', printed in a cell merged down across header rows 2-3, is stored on the study-day row (row 3); row 2 is left empty for that column.",
+      "alternative": "Store it as a separate visit-window property, or on row 2, since the source cell spans both rows.",
+      "report_section": "3.3"
+    },
+    {
+      "id": "D4",
+      "severity": "low",
+      "location": {
+        "page": 12
+      },
+      "call_made": "The abbreviation line under the table (CRU, ECG, ED, h; tail redacted as CCI) is not emitted as annotations, because none of these terms is printed as a marker; they only occur as ordinary words in labels and cells.",
+      "alternative": "Emit abbreviation annotations ab1-ab4 (CRU, ECG, ED, h) bound to the labels/cells where those words appear.",
+      "report_section": "3.4"
+    }
+  ]
+}

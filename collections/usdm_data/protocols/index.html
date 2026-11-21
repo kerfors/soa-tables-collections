@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>usdm_data · collection index · soa-tables</title>
+    <style>
+        :root { --blue:#1F4788; --blue2:#2E75B6; --ink:#1f2933; --muted:#5f6b7a; --line:#d9dee5;
+                --bg:#f5f7fa; --head:#fafbfc; --ok:#2e7d32; --warn:#c77700; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font: 13px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+               background: var(--bg); color: var(--ink); }
+
+        .header { background: var(--blue); color: #fff; padding: 14px 22px;
+                  display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
+        .header h1 { font-size: 20px; font-weight: 600; }
+        .header .sub { font-size: 13px; opacity: .85; margin-top: 3px; }
+        .crumbs { background: #fff; border-bottom: 1px solid var(--line); padding: 8px 22px; font-size: 12px; color: var(--muted); }
+        .crumbs a { color: var(--blue2); text-decoration: none; }
+        .crumbs a:hover { text-decoration: underline; }
+        .crumbs .cur { font-weight: 600; color: var(--ink); }
+        .crumbs .sep { color: #9aa4af; margin: 0 4px; }
+        .content { padding: 14px 22px 20px; }
+
+        .section { background: #fff; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
+        .section-header { padding: 9px 12px; font-size: 13px; font-weight: 600; color: var(--ink);
+                          background: var(--head); border-bottom: 1px solid var(--line); }
+
+        .table-wrap { overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; font-size: 12px; }
+        th { background: var(--head); padding: 6px 10px; text-align: left; font-size: 11px; font-weight: 600;
+             color: var(--muted); border-bottom: 1px solid var(--line); white-space: nowrap; }
+        /* group row: layers 1-2 are per table, layer 3 is per protocol */
+        tr.groups th { color: var(--ink); font-size: 11px; text-transform: none; border-bottom: 1px solid var(--line); }
+        tr.groups th.grp { border-left: 2px solid var(--line); }
+        th.grp-start, td.grp-start { border-left: 2px solid var(--line); }
+
+        td { padding: 6px 10px; border-bottom: 1px solid #eef1f4; vertical-align: top; }
+        tr.ready:hover td { background: #eef4fb; }
+        /* The row a protocol page's breadcrumb points back to (#NCT... anchor). */
+        tr:target td { background: #fff3d6; }
+
+        .nct { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-weight: 600; white-space: nowrap; }
+        .nct a { color: var(--blue); text-decoration: none; }
+        .nct a:hover { text-decoration: underline; }
+        .study-code, .prov-ref, .soa-pages, .stats { font-family: ui-monospace, "SF Mono", Menlo, monospace;
+            font-size: 11px; color: var(--muted); white-space: nowrap; }
+        .sponsor { color: var(--muted); }
+        .prov-ref a { color: var(--muted); text-decoration: none; }
+        .prov-ref a:hover { color: var(--blue2); text-decoration: underline; }
+        .acronym { white-space: nowrap; }
+
+        /* one link style for every artifact: the column says what it is, the link says which */
+        .sources a, .viz a { color: var(--blue2); text-decoration: none; margin-right: 7px; white-space: nowrap; }
+        .sources a:hover, .viz a:hover { text-decoration: underline; }
+        .ttype { color: var(--muted); font-size: 11px; }
+        .tables a { display: block; }  /* one table per line, so Extraction and Resolution line up */
+        .link-json, .link-rdf { color: var(--muted) !important; font-size: 11px; font-family: ui-monospace, "SF Mono", Menlo, monospace; }
+        .link-review { font-weight: 600; }
+        .decisions { font-size: 11px; color: var(--ok); white-space: nowrap; }
+        .decisions.open { color: var(--warn); font-weight: 600; }
+        a.decisions { text-decoration: none; }
+        a.decisions:hover { text-decoration: underline; }
+
+        .pending { color: #9aa4af; font-style: italic; font-size: 11px; }
+        .pending-row { opacity: 0.55; }
+        .excluded-row td { color: #9aa4af; background: var(--head); }
+        .excluded-reason { font-style: italic; font-size: 11px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>
+            <h1>usdm_data</h1>
+            <div class="sub">soa-tables — Schedule of Activities transcription · 22 protocols · 22 processed · 0 pending · 1 excluded · generated 2026-11-21 09:30 UTC</div>
+        </div>
+    </div>
+    <div class="crumbs"><a href="../../../index.html">Collections</a><span class="sep">›</span><span class="cur">usdm_data</span></div>
+
+    <div class="content">
+    <div class="section">
+        <div class="section-header">Protocols</div>
+        <div class="table-wrap">
+        <table>
+            <thead><tr class="groups">
+                <th colspan="6"></th><th class="grp" colspan="4" title="Layers 1 and 2 work table by table; the review checks each table against its source pages">Per table, against the source pages</th><th class="grp" colspan="2" title="Layer 3 unifies the tables of a protocol; its matches are reviewed in the consolidated view">Per protocol, across tables</th>
+            </tr><tr>
+                <th>NCT ID</th><th>Sponsor</th><th>Study Code</th><th>Acronym</th><th>SoA pp</th><th>Source</th><th class="grp-start" title="Layer 1 — extraction JSON per table (viewer), with its table type">1. Extraction (JSON)</th><th title="Layer 2 — resolved JSON per table (viewer): IDs, hierarchy, relationships; table type after corrections">2. Resolution (JSON)</th><th title="Review the extraction against its source pages and take the open decisions">Extraction review</th><th title="The extractor's own account of the run (uncertainty report)">Log</th><th class="grp-start" title="Layer 3 — protocol-level unified SoA (HTML + JSON), and the review of its matches across tables">3. Consolidation (view + review, JSON)</th><th title="Unified activity rows whose name is redacted in the public protocol (CCI) — of total unified activities">Redacted</th>
+            </tr></thead>
+            <tbody>
+                <tr class="ready" id="CDISC_Pilot">
+            <td class="nct">CDISC_Pilot</td>
+            <td class="sponsor">CDISC</td>
+            <td class="study-code">H2Q-MC-LZZT</td>
+            <td class="acronym">LZZT</td>
+            <td class="soa-pages">53-54</td>
+            <td class="sources"><a href="https://raw.githubusercontent.com/data4knowledge/usdm_data/main/source_data/protocols/CDISC_Pilot/CDISC_Pilot_Study.pdf" class="link-pdf" title="Full protocol at source" target="_blank" rel="noopener">Protocol</a> <a href="CDISC_Pilot/CDISC_Pilot_soa.pdf" class="link-soa" title="CDISC_Pilot_soa.pdf">SoA PDF</a></td>
+            <td class="viz tables grp-start"><a href="CDISC_Pilot/soa-tables/extracted/CDISC_Pilot_Table_01_extraction_viewer.html" class="link-table" title="main_soa — Schedule of Events for Protocol H2Q-MC-LZZT(c)">T01 <span class="ttype">main</span></a></td>
+            <td class="viz tables"><a href="CDISC_Pilot/soa-tables/resolved/CDISC_Pilot_Table_01_resolved_viewer.html" class="link-table" title="main_soa — Schedule of Events for Protocol H2Q-MC-LZZT(c)">T01 <span class="ttype">main</span></a></td>
+            <td class="viz"><a href="CDISC_Pilot/soa-tables/extracted/CDISC_Pilot_review.html" class="link-review" title="Review page: the extraction against its source pages">review</a> <span class="decisions" title="Judgement calls raised by the extraction, and how many still await a reviewer">all 3 decided</span></td>
+            <td class="viz"><a href="CDISC_Pilot/soa-tables/extracted/CDISC_Pilot_uncertainty_report.html" class="link-report" title="The extractor's own account of the run: what it decided and where it was unsure">extraction log</a></td>
+            <td class="viz grp-start"><a href="CDISC_Pilot/soa-tables/consolidated/CDISC_Pilot_consolidated.html" class="link-table" title="Protocol-level SoA — all tables unified">View</a> <a href="CDISC_Pilot/soa-tables/consolidated/CDISC_Pilot_consolidated_viewer.html" class="link-json" title="Consolidated JSON data">json</a></td>
+            <td class="stats"></td>
+        </tr><tr class="ready" id="NCT01847274">
+            <td class="nct"><a href="https://clinicaltrials.gov/study/NCT01847274" target="_blank">NCT01847274</a></td>
+            <td class="sponsor">Tesaro</td>
+            <td class="study-code">PR-30-5011-C</td>
+            <td class="acronym"></td>
+            <td class="soa-pages">63-78</td>
+            <td class="sources"><a href="https://ClinicalTrials.gov/ProvidedDocs/74/NCT01847274/Prot_000.pdf" class="link-pdf" title="Full protocol at source" target="_blank" rel="noopener">Protocol</a> <a href="NCT01847274/NCT01847274_soa.pdf" class="link-soa" title="NCT01847274_soa.pdf">SoA PDF</a></td>
+            <td class="viz tables grp-start"><a href="NCT01847274/soa-tables/extracted/NCT01847274_Table_01_extraction_viewer.html" class="link-table" title="main_soa — Schedule of Events – Main Study">T01 <span class="ttype">main</span></a> <a href="NCT01847274/soa-tables/extracted/NCT01847274_Table_02_extraction_viewer.html" class="link-table" title="track: Food Effect Sub-Study — Schedule of Events – Open-Label Food Effect Sub-Study (Study Completed)">T02 <span class="ttype">track</span></a> <a href="NCT01847274/soa-tables/extracted/NCT01847274_Table_03_extraction_viewer.html" class="link-table" title="track: Extended Visit Cycle — Schedule of Events – Main Study –Extended Visit Cycle">T03 <span class="ttype">track</span></a></td>
+            <td class="viz tables"><a href="NCT01847274/soa-tables/resolved/NCT01847274_Table_01_resolved_viewer.html" class="link-table" title="main_soa — Schedule of Events – Main Study">T01 <span class="ttype">main</span></a> <a href="NCT01847274/soa-tables/resolved/NCT01847274_Table_02_resolved_viewer.html" class="link-table" title="track: Food Effect Sub-Study — Schedule of Events – Open-Label Food Effect Sub-Study (Study Completed)">T02 <span class="ttype">track</span></a> <a href="NCT01847274/soa-tables/resolved/NCT01847274_Table_03_resolved_viewer.html" class="link-table" title="track: Extended Visit Cycle — Schedule of Events – Main Study –Extended Visit Cycle">T03 <span class="ttype">track</span></a></td>
+            <td class="viz"><a href="NCT01847274/soa-tables/extracted/NCT01847274_review.html" class="link-review" title="Review page: the extraction against its source pages">review</a> <span class="decisions" title="Judgement calls raised by the extraction, and how many still await a reviewer">all 7 decided</span></td>
+            <td class="viz"><a href="NCT01847274/soa-tables/extracted/NCT01847274_uncertainty_report.html" class="link-report" title="The extractor's own account of the run: what it decided and where it was unsure">extraction log</a></td>
+            <td class="viz grp-start"><a href="NCT01847274/soa-tables/consolidated/NCT01847274_consolidated.html" class="link-table" title="Protocol-level SoA — all tables unified">View</a> <a href="NCT01847274/soa-tables/consolidated/NCT01847274_consolidated_viewer.html" class="link-json" title="Consolidated JSON data">json</a> <a href="NCT01847274/soa-tables/consolidated/NCT01847274_consolidated.html#matches" class="decisions open" title="Matches across tables that consolidation made on name similarity or nearly made, and how many still await a reviewer">matches: 1 open of 4</a></td>
+            <td class="stats"></td>
+        </tr><tr class="ready" id="NCT02107703">
+            <td class="nct"><a href="https://clinicaltrials.gov/study/NCT02107703" target="_blank">NCT02107703</a></td>
+            <td class="sponsor">EliLilly</td>
+            <td class="study-code">I3Y-MC-JPBL</td>
+            <td class="acronym">MONARCH 2</td>
+            <td class="soa-pages">73-78</td>
+            <td class="sources"><a href="https://ClinicalTrials.gov/ProvidedDocs/03/NCT02107703/Prot_000.pdf" class="link-pdf" title="Full protocol at source" target="_blank" rel="noopener">Protocol</a> <a href="NCT02107703/NCT02107703_soa.pdf" class="link-soa" title="NCT02107703_soa.pdf">SoA PDF</a></td>
+            <td class="viz tables grp-start"><a href="NCT02107703/soa-tables/extracted/NCT02107703_Table_01_extraction_viewer.html" class="link-table" title="main_soa — Study Schedule, Protocol I3Y-MC-JPBL">T01 <span class="ttype">main</span></a> <a href="NCT02107703/soa-tables/extracted/NCT02107703_Table_02_extraction_viewer.html" class="link-table" title="track: Extension period — Study Schedule for the extension period only, Protocol I3Y-MC-JPBL">T02 <span class="ttype">track</span></a></td>
+            <td class="viz tables"><a href="NCT02107703/soa-tables/resolved/NCT02107703_Table_01_resolved_viewer.html" class="link-table" title="main_soa — Study Schedule, Protocol I3Y-MC-JPBL">T01 <span class="ttype">main</span></a> <a href="NCT02107703/soa-tables/resolved/NCT02107703_Table_02_resolved_viewer.html" class="link-table" title="track: Extension period — Study Schedule for the extension period only, Protocol I3Y-MC-JPBL">T02 <span class="ttype">track</span></a></td>
+            <td class="viz"><a href="NCT02107703/soa-tables/extracted/NCT02107703_review.html" class="link-review" title="Review page: the extraction against its source pages">review</a> <span class="decisions" title="Judgement calls raised by the extraction, and how many still await a reviewer">all 7 decided</span></td>
+            <td class="viz"><a href="NCT02107703/soa-tables/extracted/NCT02107703_uncertainty_report.html" class="link-report" title="The extractor's own account of the run: what it decided and where it was unsure">extraction log</a></td>
+            <td class="viz grp-start"><a href="NCT02107703/soa-tables/consolidated/NCT02107703_consolidated.html" class="link-table" title="Protocol-level SoA — all tables unified">View</a> <a href="NCT02107703/soa-tables/consolidated/NCT02107703_consolidated_viewer.html" class="link-json" title="Consolidated JSON data">json</a> <a href="NCT02107703/soa-tables/consolidated/NCT02107703_consolidated.html#matches" class="decisions" title="Matches across tables that consolidation made on name similarity or nearly made, and how many still await a reviewer">matches: all 1 decided</a></td>
+            <td class="stats"></td>
+        </tr><tr class="ready" id="NCT02291289">
+            <td class="nct"><a href="https://clinicaltrials.gov/study/NCT02291289" target="_blank">NCT02291289</a></td>
+            <td class="sponsor">Roche</td>
+            <td class="study-code">MO29112</td>
+            <td class="acronym">MODUL</td>
+            <td class="soa-pages">169-193</td>
+            <td class="sources"><a href="https://ClinicalTrials.gov/ProvidedDocs/89/NCT02291289/Prot_000.pdf" class="link-pdf" title="Full protocol at source" target="_blank" rel="noopener">Protocol</a> <a href="NCT02291289/NCT02291289_soa.pdf" class="link-soa" title="NCT02291289_soa.pdf">SoA PDF</a></td>
+            <td class="viz tables grp-start"><a href="NCT02291289/soa-tables/extracted/NCT02291289_Table_01_extraction_viewer.html" class="link-table" title="main_soa — Appendix 1 Schedule of Assessments for All Patients (Screening / Baseline and Induction Treatment Phase)">T01 <span class="ttype">main</span></a> <a href="NCT02291289/soa-tables/extracted/NCT02291289_Table_02_extraction_viewer.html" class="link-table" title="track: Cohort 1 — Appendix 2 Schedule of Assessments during Maintenance Phase (Cohort 1)">T02 <span class="ttype">track</span></a> <a href="NCT02291289/soa-tables/extracted/NCT02291289_Table_03_extraction_viewer.html" class="link-table" title="track: Cohort 2 — Appendix 3 Schedule of Assessments during Maintenance Phase (Cohort 2)">T03 <span class="ttype">track</span></a> <a href="NCT02291289/soa-tables/extracted/NCT02291289_Table_04_extraction_viewer.html" class="link-table" title="track: Cohort 3 — Appendix 4 Schedule of Assessments during Maintenance Phase (Cohort 3)">T04 <span class="ttype">track</span></a> <a href="NCT02291289/soa-tables/extracted/NCT02291289_Table_05_extraction_viewer.html" class="link-table" title="track: Cohort 4 — Appendix 5 Schedule of Assessments during Maintenance Phase (Cohort 4)">T05 <span class="ttype">track</span></a></td>
+            <td class="viz tables"><a href="NCT02291289/soa-tables/resolved/NCT02291289_Table_01_resolved_viewer.html" class="link-table" title="main_soa — Appendix 1 Schedule of Assessments for All Patients (Screening / Baseline and Induction Treatment Phase)">T01 <span class="ttype">main</span></a> <a href="NCT02291289/soa-tables/resolved/NCT02291289_Table_02_resolved_viewer.html" class="link-table" title="track: Cohort 1 — Appendix 2 Schedule of Assessments during Maintenance Phase (Cohort 1)">T02 <span class="ttype">track</span></a> <a href="NCT02291289/soa-tables/resolved/NCT02291289_Table_03_resolved_viewer.html" class="link-table" title="track: Cohort 2 — Appendix 3 Schedule of Assessments during Maintenance Phase (Cohort 2)">T03 <span class="ttype">track</span></a> <a href="NCT02291289/soa-tables/resolved/NCT02291289_Table_04_resolved_viewer.html" class="link-table" title="track: Cohort 3 — Appendix 4 Schedule of Assessments during Maintenance Phase (Cohort 3)">T04 <span class="ttype">track</span></a> <a href="NCT02291289/soa-tables/resolved/NCT02291289_Table_05_resolved_viewer.html" class="link-table" title="track: Cohort 4 — Appendix 5 Schedule of Assessments during Maintenance Phase (Cohort 4)">T05 <span class="ttype">track</span></a></td>
+            <td class="viz"><a href="NCT02291289/soa-tables/extracted/NCT02291289_review.html" class="link-review" title="Review page: the extraction against its source pages">review</a> <span class="decisions" title="Judgement calls raised by the extraction, and how many still await a reviewer">all 3 decided</span></td>
+            <td class="viz"><a href="NCT02291289/soa-tables/extracted/NCT02291289_uncertainty_report.html" class="link-report" title="The extractor's own account of the run: what it decided and where it was unsure">extraction log</a></td>
+            <td class="viz grp-start"><a href="NCT02291289/soa-tables/consolidated/NCT02291289_consolidated.html" class="link-table" title="Protocol-level SoA — all tables unified">View</a> <a href="NCT02291289/soa-tables/consolidated/NCT02291289_consolidated_viewer.html" class="link-json" title="Consolidated JSON data">json</a> <a href="NCT02291289/soa-tables/consolidated/NCT02291289_consolidated.html#matches" class="decisions" title="Matches across tables that consolidation made on name similarity or nearly made, and how many still await a reviewer">matches: all 1 decided</a></td>
+            <td class="stats"></td>
+        </tr><tr class="ready" id="NCT03283098">
+            <td class="nct"><a href="https://clinicaltrials.gov/study/NCT03283098" target="_blank">NCT03283098</a></td>
+            <td class="sponsor">Amgen</td>
+            <td class="study-code">20140197</td>
+            <td class="acronym"></td>
+            <td class="soa-pages">32-36</td>
+            <td class="sources"><a href="https://ClinicalTrials.gov/ProvidedDocs/98/NCT03283098/Prot_001.pdf" class="link-pdf" title="Full protocol at source" target="_blank" rel="noopener">Protocol</a> <a href="NCT03283098/NCT03283098_soa.pdf" class="link-soa" title="NCT03283098_soa.pdf">SoA PDF</a></td>
+            <td class="viz tables grp-start"><a href="NCT03283098/soa-tables/extracted/NCT03283098_Table_01_extraction_viewer.html" class="link-table" title="main_soa — Table 1a. Schedule of Non-laboratory Assessments">T01 <span class="ttype">main</span></a> <a href="NCT03283098/soa-tables/extracted/NCT03283098_Table_02_extraction_viewer.html" class="link-table" title="domain — Table 1b. Schedule of Laboratory Assessments">T02 <span class="ttype">domain</span></a> <a href="NCT03283098/soa-tables/extracted/NCT03283098_Table_03_extraction_viewer.html" class="link-table" title="domain — Table 1c. Schedule of Pharmacokinetic Assessments">T03 <span class="ttype">domain</span></a></td>
+            <td class="viz tables"><a href="NCT03283098/soa-tables/resolved/NCT03283098_Table_01_resolved_viewer.html" class="link-table" title="main_soa — Table 1a. Schedule of Non-laboratory Assessments">T01 <span class="ttype">main</span></a> <a href="NCT03283098/soa-tables/resolved/NCT03283098_Table_02_resolved_viewer.html" class="link-table" title="domain — Table 1b. Schedule of Laboratory Assessments">T02 <span class="ttype">domain</span></a> <a href="NCT03283098/soa-tables/resolved/NCT03283098_Table_03_resolved_viewer.html" class="link-table" title="domain — Table 1c. Schedule of Pharmacokinetic Assessments">T03 <span class="ttype">domain</span></a></td>
+            <td class="viz"><a href="NCT03283098/soa-tables/extracted/NCT03283098_review.html" class="link-review" title="Review page: the extraction against its source pages">review</a> <span class="decisions" title="Judgement calls raised by the extraction, and how many still await a reviewer">all 6 decided</span></td>
+            <td class="viz"><a href="NCT03283098/soa-tables/extracted/NCT03283098_uncertainty_report.html" class="link-report" title="The extractor's own account of the run: what it decided and where it was unsure">extraction log</a></td>
+            <td class="viz grp-start"><a href="NCT03283098/soa-tables/consolidated/NCT03283098_consolidated.html" class="link-table" title="Protocol-level SoA — all tables unified">View</a> <a href="NCT03283098/soa-tables/consolidated/NCT03283098_consolidated_viewer.html" class="link-json" title="Consolidated JSON data">json</a></td>
+            <td class="stats"></td>
+        </tr><tr class="ready" id="NCT03402841">
+            <td class="nct"><a href="https://clinicaltrials.gov/study/NCT03402841" target="_blank">NCT03402841</a></td>
+            <td class="sponsor">AZ</td>
+            <td class="study-code">D0816C00020</td>
+            <td class="acronym">OPINION</td>
+            <td class="soa-pages">40-44</td>
+            <td class="sources"><a href="https://ClinicalTrials.gov/ProvidedDocs/41/NCT03402841/Prot_002.pdf" class="link-pdf" title="Full protocol at source" target="_blank" rel="noopener">Protocol</a> <a href="NCT03402841/NCT03402841_soa.pdf" class="link-soa" title="NCT03402841_soa.pdf">SoA PDF</a></td>
+            <td class="viz tables grp-start"><a href="NCT03402841/soa-tables/extracted/NCT03402841_Table_01_extraction_viewer.html" class="link-table" title="main_soa — Study Schedule – Screening (Visit 1)">T01 <span class="ttype">main</span></a> <a href="NCT03402841/soa-tables/extracted/NCT03402841_Table_02_extraction_viewer.html" class="link-table" title="main_soa — Study Plan Detailing the Procedures">T02 <span class="ttype">main</span></a></td>
+            <td class="viz tables"><a href="NCT03402841/soa-tables/resolved/NCT03402841_Table_01_resolved_viewer.html" class="link-table" title="main_soa — Study Schedule – Screening (Visit 1)">T01 <span class="ttype">main</span></a> <a href="NCT03402841/soa-tables/resolved/NCT03402841_Table_02_resolved_viewer.html" class="link-table" title="main_soa — Study Plan Detailing the Procedures">T02 <span class="ttype">main</span></a></td>
+            <td class="viz"><a href="NCT03402841/soa-tables/extracted/NCT03402841_review.html" class="link-review" title="Review page: the extraction against its source pages">review</a> <span class="decisions" title="Judgement calls raised by the extraction, and how many still await a reviewer">all 2 decided</span></td>
+            <td class="viz"><a href="NCT03402841/soa-tables/extracted/NCT03402841_uncertainty_report.html" class="link-report" title="The extractor's own account of the run: what it decided and where it was unsure">extraction log</a></td>
+            <td class="viz grp-start"><a href="NCT03402841/soa-tables/consolidated/NCT03402841_consolidated.html" class="link-table" title="Protocol-level SoA — all tables unified">View</a> <a href="NCT03402841/soa-tables/consolidated/NCT03402841_consolidated_viewer.html" class="link-json" title="Consolidated JSON data">json</a> <a href="NCT03402841/soa-tables/consolidated/NCT03402841_consolidated.html#matches" class="decisions" title="Matches across tables that consolidation made on name similarity or nearly made, and how many still await a reviewer">matches: all 4 decided</a></td>
+            <td class="stats"></td>
+        </tr><tr class="ready" id="NCT03421379">
+            <td class="nct"><a href="https://clinicaltrials.gov/study/NCT03421379" target="_blank">NCT03421379</a></td>
+            <td class="sponsor">EliLilly</td>
+            <td class="study-code">I8R-JE-IGBJ</td>
+            <td class="acronym"></td>
+            <td class="soa-pages">11-18</td>
+            <td class="sources"><a href="https://ClinicalTrials.gov/ProvidedDocs/79/NCT03421379/Prot_000.pdf" class="link-pdf" title="Full protocol at source" target="_blank" rel="noopener">Protocol</a> <a href="NCT03421379/NCT03421379_soa.pdf" class="link-soa" title="NCT03421379_soa.pdf">SoA PDF</a></td>
+            <td class="viz tables grp-start"><a href="NCT03421379/soa-tables/extracted/NCT03421379_Table_01_extraction_viewer.html" class="link-table" title="main_soa — Study Schedule Protocol I8R-JE-IGBJ">T01 <span class="ttype">main</span></a></td>
+            <td class="viz tables"><a href="NCT03421379/soa-tables/resolved/NCT03421379_Table_01_resolved_viewer.html" class="link-table" title="main_soa — Study Schedule Protocol I8R-JE-IGBJ">T01 <span class="ttype">main</span></a></td>
+            <td class="viz"><a href="NCT03421379/soa-tables/extracted/NCT03421379_review.html" class="link-review" title="Review page: the extraction against its source pages">review</a> <span class="decisions" title="Judgement calls raised by the extraction, and how many still await a reviewer">all 3 decided</span></td>
+            <td class="viz"><a href="NCT03421379/soa-tables/extracted/NCT03421379_uncertainty_report.html" class="link-report" title="The extractor's own account of the run: what it decided and where it was unsure">extraction log</a></td>
+            <td class="viz grp-start"><a href="NCT03421379/soa-tables/consolidated/NCT03421379_consolidated.html" class="link-table" title="Protocol-level SoA — all tables unified">View</a> <a href="NCT03421379/soa-tables/consolidated/NCT03421379_consolidated_viewer.html" class="link-json" title="Consolidated JSON data">json</a></td>
+            <td class="stats"></td>
+        </tr><tr class="ready" id="NCT03548935">
+            <td class="nct"><a href="https://clinicaltrials.gov/study/NCT03548935" target="_blank">NCT03548935</a></td>
+            <td class="sponsor">Novo</td>
+            <td class="study-code">NN9536-4373</td>
+            <td class="acronym">STEP 1</td>
+            <td class="soa-pages">8-13</td>
+            <td class="sources"><a href="https://ClinicalTrials.gov/ProvidedDocs/35/NCT03548935/Prot_002.pdf" class="link-pdf" title="Full protocol at source" target="_blank" rel="noopener">Protocol</a> <a href="NCT03548935/NCT03548935_soa.pdf" class="link-soa" title="NCT03548935_soa.pdf">SoA PDF</a></td>
+            <td class="viz tables grp-start"><a href="NCT03548935/soa-tables/extracted/NCT03548935_Table_01_extraction_viewer.html" class="link-table" title="main_soa — Flowchart">T01 <span class="ttype">main</span></a></td>
+            <td class="viz tables"><a href="NCT03548935/soa-tables/resolved/NCT03548935_Table_01_resolved_viewer.html" class="link-table" title="main_soa — Flowchart">T01 <span class="ttype">main</span></a></td>
+            <td class="viz"><a href="NCT03548935/soa-tables/extracted/NCT03548935_review.html" class="link-review" title="Review page: the extraction against its source pages">review</a> <span class="decisions" title="Judgement calls raised by the extraction, and how many still await a reviewer">all 3 decided</span></td>
+            <td class="viz"><a href="NCT03548935/soa-tables/extracted/NCT03548935_uncertainty_report.html" class="link-report" title="The extractor's own account of the run: what it decided and where it was unsure">extraction log</a></td>
+            <td class="viz grp-start"><a href="NCT03548935/soa-tables/consolidated/NCT03548935_consolidated.html" class="link-table" title="Protocol-level SoA — all tables unified">View</a> <a href="NCT03548935/soa-tables/consolidated/NCT03548935_consolidated_viewer.html" class="link-json" title="Consolidated JSON data">json</a></td>
+            <td class="stats"></td>
+        </tr><tr class="ready" id="NCT03548987">
+            <td class="nct"><a href="https://clinicaltrials.gov/study/NCT03548987" target="_blank">NCT03548987</a></td>
+            <td class="sponsor">Novo</td>
+            <td class="study-code">NN9536-4376</td>
+            <td class="acronym">STEP 4</td>
+            <td class="soa-pages">8-11</td>
+            <td class="sources"><a href="https://ClinicalTrials.gov/ProvidedDocs/87/NCT03548987/Prot_000.pdf" class="link-pdf" title="Full protocol at source" target="_blank" rel="noopener">Protocol</a> <a href="NCT03548987/NCT03548987_soa.pdf" class="link-soa" title="NCT03548987_soa.pdf">SoA PDF</a></td>
+            <td class="viz tables grp-start"><a href="NCT03548987/soa-tables/extracted/NCT03548987_Table_01_extraction_viewer.html" class="link-table" title="main_soa — Flowchart">T01 <span class="ttype">main</span></a></td>
+            <td class="viz tables"><a href="NCT03548987/soa-tables/resolved/NCT03548987_Table_01_resolved_viewer.html" class="link-table" title="main_soa — Flowchart">T01 <span class="ttype">main</span></a></td>
+            <td class="viz"><a href="NCT03548987/soa-tables/extracted/NCT03548987_review.html" class="link-review" title="Review page: the extraction against its source pages">review</a> <span class="decisions" title="Judgement calls raised by the extraction, and how many still await a reviewer">all 3 decided</span></td>
+            <td class="viz"><a href="NCT03548987/soa-tables/extracted/NCT03548987_uncertainty_report.html" class="link-report" title="The extractor's own account of the run: what it decided and where it was unsure">extraction log</a></td>
+            <td class="viz grp-start"><a href="NCT03548987/soa-tables/consolidated/NCT03548987_consolidated.html" class="link-table" title="Protocol-level SoA — all tables unified">View</a> <a href="NCT03548987/soa-tables/consolidated/NCT03548987_consolidated_viewer.html" class="link-json" title="Consolidated JSON data">json</a></td>
+            <td class="stats"></td>
+        </tr><tr class="ready" id="NCT03637764">
+            <td class="nct"><a href="https://clinicaltrials.gov/study/NCT03637764" target="_blank">NCT03637764</a></td>
+            <td class="sponsor">Sanofi</td>
+            <td class="study-code">ACT15377</td>
+            <td class="acronym"></td>
+            <td class="soa-pages">18-21</td>
+            <td class="sources"><a href="https://ClinicalTrials.gov/ProvidedDocs/64/NCT03637764/Prot_000.pdf" class="link-pdf" title="Full protocol at source" target="_blank" rel="noopener">Protocol</a> <a href="NCT03637764/NCT03637764_soa.pdf" class="link-soa" title="NCT03637764_soa.pdf">SoA PDF</a></td>
+            <td class="viz tables grp-start"><a href="NCT03637764/soa-tables/extracted/NCT03637764_Table_01_extraction_viewer.html" class="link-table" title="main_soa — SCHEDULE OF ACTIVITIES (SOA)">T01 <span class="ttype">main</span></a> <a href="NCT03637764/soa-tables/extracted/NCT03637764_Table_02_extraction_viewer.html" class="link-table" title="subsidiary — PHARMACOKINETICS AND IMMUNOGENICITY FLOW CHART">T02 <span class="ttype">subsid.</span></a> <a href="NCT03637764/soa-tables/extracted/NCT03637764_Table_03_extraction_viewer.html" class="link-table" title="subsidiary — EXPLORATORY BIOMARKER FLOW CHART">T03 <span class="ttype">subsid.</span></a></td>
+            <td class="viz tables"><a href="NCT03637764/soa-tables/resolved/NCT03637764_Table_01_resolved_viewer.html" class="link-table" title="main_soa — SCHEDULE OF ACTIVITIES (SOA)">T01 <span class="ttype">main</span></a> <a href="NCT03637764/soa-tables/resolved/NCT03637764_Table_02_resolved_viewer.html" class="link-table" title="subsidiary — PHARMACOKINETICS AND IMMUNOGENICITY FLOW CHART">T02 <span class="ttype">subsid.</span></a> <a href="NCT03637764/soa-tables/resolved/NCT03637764_Table_03_resolved_viewer.html" class="link-table" title="subsidiary — EXPLORATORY BIOMARKER FLOW CHART">T03 <span class="ttype">subsid.</span></a></td>
+            <td class="viz"><a href="NCT03637764/soa-tables/extracted/NCT03637764_review.html" class="link-review" title="Review page: the extraction against its source pages">review</a> <span class="decisions" title="Judgement calls raised by the extraction, and how many still await a reviewer">all 13 decided</span></td>
+            <td class="viz"><a href="NCT03637764/soa-tables/extracted/NCT03637764_uncertainty_report.html" class="link-report" title="The extractor's own account of the run: what it decided and where it was unsure">extraction log</a> <a href="NCT03637764/soa-tables/extracted/NCT03637764_flowcharts_uncertainty_report.html" class="link-report" title="Extraction log of a later session on this protocol (flowcharts)">extraction log (flowcharts)</a></td>
+            <td class="viz grp-start"><a href="NCT03637764/soa-tables/consolidated/NCT03637764_consolidated.html" class="link-table" title="Protocol-level SoA — all tables unified">View</a> <a href="NCT03637764/soa-tables/consolidated/NCT03637764_consolidated_viewer.html" class="link-json" title="Consolidated JSON data">json</a></td>
+            <td class="stats"></td>
+        </tr><tr class="ready" id="NCT03693430">
+            <td class="nct"><a href="https://clinicaltrials.gov/study/NCT03693430" target="_blank">NCT03693430</a></td>
+            <td class="sponsor">Novo</td>
+            <td class="study-code">NN9536-4378</td>
+            <td class="acronym">STEP 5</td>
+            <td class="soa-pages">9-12</td>
+            <td class="sources"><a href="https://ClinicalTrials.gov/ProvidedDocs/30/NCT03693430/Prot_000.pdf" class="link-pdf" title="Full protocol at source" target="_blank" rel="noopener">Protocol</a> <a href="NCT03693430/NCT03693430_soa.pdf" class="link-soa" title="NCT03693430_soa.pdf">SoA PDF</a></td>
+            <td class="viz tables grp-start"><a href="NCT03693430/soa-tables/extracted/NCT03693430_Table_01_extraction_viewer.html" class="link-table" title="main_soa — Flowchart">T01 <span class="ttype">main</span></a></td>
+            <td class="viz tables"><a href="NCT03693430/soa-tables/resolved/NCT03693430_Table_01_resolved_viewer.html" class="link-table" title="main_soa — Flowchart">T01 <span class="ttype">main</span></a></td>
+            <td class="viz"><a href="NCT03693430/soa-tables/extracted/NCT03693430_review.html" class="link-review" title="Review page: the extraction against its source pages">review</a> <span class="decisions" title="Judgement calls raised by the extraction, and how many still await a reviewer">all 4 decided</span></td>
+            <td class="viz"><a href="NCT03693430/soa-tables/extracted/NCT03693430_uncertainty_report.html" class="link-report" title="The extractor's own account of the run: what it decided and where it was unsure">extraction log</a></td>
+            <td class="viz grp-start"><a href="NCT03693430/soa-tables/consolidated/NCT03693430_consolidated.html" class="link-table" title="Protocol-level SoA — all tables unified">View</a> <a href="NCT03693430/soa-tables/consolidated/NCT03693430_consolidated_viewer.html" class="link-json" title="Consolidated JSON data">json</a></td>
+            <td class="stats"></td>
+        </tr><tr class="ready" id="NCT03817853">
+            <td class="nct"><a href="https://clinicaltrials.gov/study/NCT03817853" target="_blank">NCT03817853</a></td>
+            <td class="sponsor">Roche</td>
+            <td class="study-code">MO40597</td>
+            <td class="acronym"></td>
+            <td class="soa-pages">100-102</td>
+            <td class="sources"><a href="https://ClinicalTrials.gov/ProvidedDocs/53/NCT03817853/Prot_002.pdf" class="link-pdf" title="Full protocol at source" target="_blank" rel="noopener">Protocol</a> <a href="NCT03817853/NCT03817853_soa.pdf" class="link-soa" title="NCT03817853_soa.pdf">SoA PDF</a></td>
+            <td class="viz tables grp-start"><a href="NCT03817853/soa-tables/extracted/NCT03817853_Table_01_extraction_viewer.html" class="link-table" title="main_soa — Appendix 1 Schedule of Activities">T01 <span class="ttype">main</span></a></td>
+            <td class="viz tables"><a href="NCT03817853/soa-tables/resolved/NCT03817853_Table_01_resolved_viewer.html" class="link-table" title="main_soa — Appendix 1 Schedule of Activities">T01 <span class="ttype">main</span></a></td>
+            <td class="viz"><a href="NCT03817853/soa-tables/extracted/NCT03817853_review.html" class="link-review" title="Review page: the extraction against its source pages">review</a> <span class="decisions" title="Judgement calls raised by the extraction, and how many still await a reviewer">all 3 decided</span></td>
+            <td class="viz"><a href="NCT03817853/soa-tables/extracted/NCT03817853_uncertainty_report.html" class="link-report" title="The extractor's own account of the run: what it decided and where it was unsure">extraction log</a></td>
+            <td class="viz grp-start"><a href="NCT03817853/soa-tables/consolidated/NCT03817853_consolidated.html" class="link-table" title="Protocol-level SoA — all tables unified">View</a> <a href="NCT03817853/soa-tables/consolidated/NCT03817853_consolidated_viewer.html" class="link-json" title="Consolidated JSON data">json</a></td>
+            <td class="stats"></td>
+        </tr><tr class="ready" id="NCT04004988">
+            <td class="nct"><a href="https://clinicaltrials.gov/study/NCT04004988" target="_blank">NCT04004988</a></td>
+            <td class="sponsor">EliLilly</td>
+            <td class="study-code">I8F-MC-GPGS</td>
+            <td class="acronym"></td>
+            <td class="soa-pages">10-11</td>
+            <td class="sources"><a href="https://ClinicalTrials.gov/ProvidedDocs/88/NCT04004988/Prot_000.pdf" class="link-pdf" title="Full protocol at source" target="_blank" rel="noopener">Protocol</a> <a href="NCT04004988/NCT04004988_soa.pdf" class="link-soa" title="NCT04004988_soa.pdf">SoA PDF</a></td>
+            <td class="viz tables grp-start"><a href="NCT04004988/soa-tables/extracted/NCT04004988_Table_01_extraction_viewer.html" class="link-table" title="main_soa — Study Schedule Protocol I8F-MC-GPGS">T01 <span class="ttype">main</span></a></td>
+            <td class="viz tables"><a href="NCT04004988/soa-tables/resolved/NCT04004988_Table_01_resolved_viewer.html" class="link-table" title="main_soa — Study Schedule Protocol I8F-MC-GPGS">T01 <span class="ttype">main</span></a></td>
+            <td class="viz"><a href="NCT04004988/soa-tables/extracted/NCT04004988_review.html" class="link-review" title="Review page: the extraction against its source pages">review</a> <span class="decisions" title="Judgement calls raised by the extraction, and how many still await a reviewer">all 3 decided</span></td>
+            <td class="viz"><a href="NCT04004988/soa-tables/extracted/NCT04004988_uncertainty_report.html" class="link-report" title="The extractor's own account of the run: what it decided and where it was unsure">extraction log</a></td>
+            <td class="viz grp-start"><a href="NCT04004988/soa-tables/consolidated/NCT04004988_consolidated.html" class="link-table" title="Protocol-level SoA — all tables unified">View</a> <a href="NCT04004988/soa-tables/consolidated/NCT04004988_consolidated_viewer.html" class="link-json" title="Consolidated JSON data">json</a></td>
+            <td class="stats"></td>
+        </tr><tr class="ready" id="NCT04184622">
+            <td class="nct"><a href="https://clinicaltrials.gov/study/NCT04184622" target="_blank">NCT04184622</a></td>
+            <td class="sponsor">EliLilly</td>
+            <td class="study-code">I8F-MC-GPHK</td>
+            <td class="acronym">SURMOUNT-1</td>
+            <td class="soa-pages">18-24</td>
+            <td class="sources"><a href="https://ClinicalTrials.gov/ProvidedDocs/22/NCT04184622/Prot_000.pdf" class="link-pdf" title="Full protocol at source" target="_blank" rel="noopener">Protocol</a> <a href="NCT04184622/NCT04184622_soa.pdf" class="link-soa" title="NCT04184622_soa.pdf">SoA PDF</a></td>
+            <td class="viz tables grp-start"><a href="NCT04184622/soa-tables/extracted/NCT04184622_Table_01_extraction_viewer.html" class="link-table" title="main_soa — Schedule of Activities covering visits to primary study endpoint">T01 <span class="ttype">main</span></a> <a href="NCT04184622/soa-tables/extracted/NCT04184622_Table_02_extraction_viewer.html" class="link-table" title="track: Prediabetes — Schedule of Activities for additional 2-year treatment period for participants with prediabetes at randomization">T02 <span class="ttype">track</span></a></td>
+            <td class="viz tables"><a href="NCT04184622/soa-tables/resolved/NCT04184622_Table_01_resolved_viewer.html" class="link-table" title="main_soa — Schedule of Activities covering visits to primary study endpoint">T01 <span class="ttype">main</span></a> <a href="NCT04184622/soa-tables/resolved/NCT04184622_Table_02_resolved_viewer.html" class="link-table" title="track: Prediabetes — Schedule of Activities for additional 2-year treatment period for participants with prediabetes at randomization">T02 <span class="ttype">track</span></a></td>
+            <td class="viz"><a href="NCT04184622/soa-tables/extracted/NCT04184622_review.html" class="link-review" title="Review page: the extraction against its source pages">review</a> <span class="decisions" title="Judgement calls raised by the extraction, and how many still await a reviewer">all 7 decided</span></td>
+            <td class="viz"><a href="NCT04184622/soa-tables/extracted/NCT04184622_uncertainty_report.html" class="link-report" title="The extractor's own account of the run: what it decided and where it was unsure">extraction log</a></td>
+            <td class="viz grp-start"><a href="NCT04184622/soa-tables/consolidated/NCT04184622_consolidated.html" class="link-table" title="Protocol-level SoA — all tables unified">View</a> <a href="NCT04184622/soa-tables/consolidated/NCT04184622_consolidated_viewer.html" class="link-json" title="Consolidated JSON data">json</a> <a href="NCT04184622/soa-tables/consolidated/NCT04184622_consolidated.html#matches" class="decisions" title="Matches across tables that consolidation made on name similarity or nearly made, and how many still await a reviewer">matches: all 7 decided</a></td>
+            <td class="stats"></td>
+        </tr><tr class="ready" id="NCT04320615">
+            <td class="nct"><a href="https://clinicaltrials.gov/study/NCT04320615" target="_blank">NCT04320615</a></td>
+            <td class="sponsor">Roche</td>
+            <td class="study-code">WA42380</td>
+            <td class="acronym">COVACTA</td>
+            <td class="soa-pages">77-85</td>
+            <td class="sources"><a href="https://ClinicalTrials.gov/ProvidedDocs/15/NCT04320615/Prot_000.pdf" class="link-pdf" title="Full protocol at source" target="_blank" rel="noopener">Protocol</a> <a href="NCT04320615/NCT04320615_soa.pdf" class="link-soa" title="NCT04320615_soa.pdf">SoA PDF</a></td>
+            <td class="viz tables grp-start"><a href="NCT04320615/soa-tables/extracted/NCT04320615_Table_01_extraction_viewer.html" class="link-table" title="main_soa — Appendix 1 Schedule of Activities: Days 1 and 2">T01 <span class="ttype">main</span></a> <a href="NCT04320615/soa-tables/extracted/NCT04320615_Table_02_extraction_viewer.html" class="link-table" title="main_soa — Appendix 2 Schedule of Activities: Days 3–28">T02 <span class="ttype">main</span></a> <a href="NCT04320615/soa-tables/extracted/NCT04320615_Table_03_extraction_viewer.html" class="link-table" title="main_soa — Appendix 3 Schedule of Activities: After Day 28">T03 <span class="ttype">main</span></a></td>
+            <td class="viz tables"><a href="NCT04320615/soa-tables/resolved/NCT04320615_Table_01_resolved_viewer.html" class="link-table" title="main_soa — Appendix 1 Schedule of Activities: Days 1 and 2">T01 <span class="ttype">main</span></a> <a href="NCT04320615/soa-tables/resolved/NCT04320615_Table_02_resolved_viewer.html" class="link-table" title="main_soa — Appendix 2 Schedule of Activities: Days 3–28">T02 <span class="ttype">main</span></a> <a href="NCT04320615/soa-tables/resolved/NCT04320615_Table_03_resolved_viewer.html" class="link-table" title="main_soa — Appendix 3 Schedule of Activities: After Day 28">T03 <span class="ttype">main</span></a></td>
+            <td class="viz"><a href="NCT04320615/soa-tables/extracted/NCT04320615_review.html" class="link-review" title="Review page: the extraction against its source pages">review</a> <span class="decisions" title="Judgement calls raised by the extraction, and how many still await a reviewer">all 6 decided</span></td>
+            <td class="viz"><a href="NCT04320615/soa-tables/extracted/NCT04320615_uncertainty_report.html" class="link-report" title="The extractor's own account of the run: what it decided and where it was unsure">extraction log</a></td>
+            <td class="viz grp-start"><a href="NCT04320615/soa-tables/consolidated/NCT04320615_consolidated.html" class="link-table" title="Protocol-level SoA — all tables unified">View</a> <a href="NCT04320615/soa-tables/consolidated/NCT04320615_consolidated_viewer.html" class="link-json" title="Consolidated JSON data">json</a> <a href="NCT04320615/soa-tables/consolidated/NCT04320615_consolidated.html#matches" class="decisions" title="Matches across tables that consolidation made on name similarity or nearly made, and how many still await a reviewer">matches: all 1 decided</a></td>
+            <td class="stats"></td>
+        </tr><tr class="ready" id="NCT04557384">
+            <td class="nct"><a href="https://clinicaltrials.gov/study/NCT04557384" target="_blank">NCT04557384</a></td>
+            <td class="sponsor">EliLilly</td>
+            <td class="study-code">I4T-MC-JVDU</td>
+            <td class="acronym"></td>
+            <td class="soa-pages">16-24</td>
+            <td class="sources"><a href="https://ClinicalTrials.gov/ProvidedDocs/84/NCT04557384/Prot_000.pdf" class="link-pdf" title="Full protocol at source" target="_blank" rel="noopener">Protocol</a> <a href="NCT04557384/NCT04557384_soa.pdf" class="link-soa" title="NCT04557384_soa.pdf">SoA PDF</a></td>
+            <td class="viz tables grp-start"><a href="NCT04557384/soa-tables/extracted/NCT04557384_Table_01_extraction_viewer.html" class="link-table" title="main_soa — Screening, On-Study, and Post-Treatment Schedule of Activities">T01 <span class="ttype">main</span></a> <a href="NCT04557384/soa-tables/extracted/NCT04557384_Table_02_extraction_viewer.html" class="link-table" title="track: Continued Access — Continued Access Schedule of Activities">T02 <span class="ttype">track</span></a> <a href="NCT04557384/soa-tables/extracted/NCT04557384_Table_03_extraction_viewer.html" class="link-table" title="subsidiary — Pharmacokinetic Sampling Schedule">T03 <span class="ttype">subsid.</span></a></td>
+            <td class="viz tables"><a href="NCT04557384/soa-tables/resolved/NCT04557384_Table_01_resolved_viewer.html" class="link-table" title="main_soa — Screening, On-Study, and Post-Treatment Schedule of Activities">T01 <span class="ttype">main</span></a> <a href="NCT04557384/soa-tables/resolved/NCT04557384_Table_02_resolved_viewer.html" class="link-table" title="track: Continued Access — Continued Access Schedule of Activities">T02 <span class="ttype">track</span></a> <a href="NCT04557384/soa-tables/resolved/NCT04557384_Table_03_resolved_viewer.html" class="link-table" title="subsidiary — Pharmacokinetic Sampling Schedule">T03 <span class="ttype">subsid.</span></a></td>
+            <td class="viz"><a href="NCT04557384/soa-tables/extracted/NCT04557384_review.html" class="link-review" title="Review page: the extraction against its source pages">review</a> <span class="decisions" title="Judgement calls raised by the extraction, and how many still await a reviewer">all 11 decided</span></td>
+            <td class="viz"><a href="NCT04557384/soa-tables/extracted/NCT04557384_uncertainty_report.html" class="link-report" title="The extractor's own account of the run: what it decided and where it was unsure">extraction log</a></td>
+            <td class="viz grp-start"><a href="NCT04557384/soa-tables/consolidated/NCT04557384_consolidated.html" class="link-table" title="Protocol-level SoA — all tables unified">View</a> <a href="NCT04557384/soa-tables/consolidated/NCT04557384_consolidated_viewer.html" class="link-json" title="Consolidated JSON data">json</a> <a href="NCT04557384/soa-tables/consolidated/NCT04557384_consolidated.html#matches" class="decisions" title="Matches across tables that consolidation made on name similarity or nearly made, and how many still await a reviewer">matches: all 15 decided</a></td>
+            <td class="stats"></td>
+        </tr><tr class="ready" id="NCT04573309">
+            <td class="nct"><a href="https://clinicaltrials.gov/study/NCT04573309" target="_blank">NCT04573309</a></td>
+            <td class="sponsor">Alexion</td>
+            <td class="study-code">ALXN1840-WD-204</td>
+            <td class="acronym"></td>
+            <td class="soa-pages">14-17</td>
+            <td class="sources"><a href="https://ClinicalTrials.gov/ProvidedDocs/09/NCT04573309/Prot_000.pdf" class="link-pdf" title="Full protocol at source" target="_blank" rel="noopener">Protocol</a> <a href="NCT04573309/NCT04573309_soa.pdf" class="link-soa" title="NCT04573309_soa.pdf">SoA PDF</a></td>
+            <td class="viz tables grp-start"><a href="NCT04573309/soa-tables/extracted/NCT04573309_Table_01_extraction_viewer.html" class="link-table" title="main_soa — Table 1: Schedule of Activities">T01 <span class="ttype">main</span></a> <a href="NCT04573309/soa-tables/extracted/NCT04573309_Table_02_extraction_viewer.html" class="link-table" title="subsidiary — Table 2: Schedule of Pharmacokinetic and Pharmacodynamic Assessments on Days 1, 25, 29, and 39">T02 <span class="ttype">subsid.</span></a></td>
+            <td class="viz tables"><a href="NCT04573309/soa-tables/resolved/NCT04573309_Table_01_resolved_viewer.html" class="link-table" title="main_soa — Table 1: Schedule of Activities">T01 <span class="ttype">main</span></a> <a href="NCT04573309/soa-tables/resolved/NCT04573309_Table_02_resolved_viewer.html" class="link-table" title="subsidiary — Table 2: Schedule of Pharmacokinetic and Pharmacodynamic Assessments on Days 1, 25, 29, and 39">T02 <span class="ttype">subsid.</span></a></td>
+            <td class="viz"><a href="NCT04573309/soa-tables/extracted/NCT04573309_review.html" class="link-review" title="Review page: the extraction against its source pages">review</a> <span class="decisions" title="Judgement calls raised by the extraction, and how many still await a reviewer">all 4 decided</span></td>
+            <td class="viz"><a href="NCT04573309/soa-tables/extracted/NCT04573309_uncertainty_report.html" class="link-report" title="The extractor's own account of the run: what it decided and where it was unsure">extraction log</a></td>
+            <td class="viz grp-start"><a href="NCT04573309/soa-tables/consolidated/NCT04573309_consolidated.html" class="link-table" title="Protocol-level SoA — all tables unified">View</a> <a href="NCT04573309/soa-tables/consolidated/NCT04573309_consolidated_viewer.html" class="link-json" title="Consolidated JSON data">json</a></td>
+            <td class="stats"></td>
+        </tr><tr class="ready" id="NCT04677179">
+            <td class="nct"><a href="https://clinicaltrials.gov/study/NCT04677179" target="_blank">NCT04677179</a></td>
+            <td class="sponsor">EliLilly</td>
+            <td class="study-code">J1P-MC-KFAH</td>
+            <td class="acronym">INSTRUCT-UC</td>
+            <td class="soa-pages">17-46</td>
+            <td class="sources"><a href="https://ClinicalTrials.gov/ProvidedDocs/79/NCT04677179/Prot_000.pdf" class="link-pdf" title="Full protocol at source" target="_blank" rel="noopener">Protocol</a> <a href="NCT04677179/NCT04677179_soa.pdf" class="link-soa" title="NCT04677179_soa.pdf">SoA PDF</a></td>
+            <td class="viz tables grp-start"><a href="NCT04677179/soa-tables/extracted/NCT04677179_Table_01_extraction_viewer.html" class="link-table" title="main_soa — Table 1. Schedule of Activities for the Screening and Induction Treatment Periods of Study J1P-MC-KFAH">T01 <span class="ttype">main</span></a> <a href="NCT04677179/soa-tables/extracted/NCT04677179_Table_02_extraction_viewer.html" class="link-table" title="track: Responders — Table 2. Schedule of Activities for the Maintenance Treatment Period of Study J1P-MC-KFAH">T02 <span class="ttype">track</span></a> <a href="NCT04677179/soa-tables/extracted/NCT04677179_Table_03_extraction_viewer.html" class="link-table" title="track: Nonresponders — Table 3. Schedule of Activities for the Extension Induction and Extension Maintenance Treatment Periods of Study J1P-MC-KFAH">T03 <span class="ttype">track</span></a> <a href="NCT04677179/soa-tables/extracted/NCT04677179_Table_04_extraction_viewer.html" class="link-table" title="main_soa — Table 4. Schedule of Activities for Early Termination, Unscheduled Visits, and Post-Treatment Follow-Up Period">T04 <span class="ttype">main</span></a></td>
+            <td class="viz tables"><a href="NCT04677179/soa-tables/resolved/NCT04677179_Table_01_resolved_viewer.html" class="link-table" title="main_soa — Table 1. Schedule of Activities for the Screening and Induction Treatment Periods of Study J1P-MC-KFAH">T01 <span class="ttype">main</span></a> <a href="NCT04677179/soa-tables/resolved/NCT04677179_Table_02_resolved_viewer.html" class="link-table" title="track: Responders — Table 2. Schedule of Activities for the Maintenance Treatment Period of Study J1P-MC-KFAH">T02 <span class="ttype">track</span></a> <a href="NCT04677179/soa-tables/resolved/NCT04677179_Table_03_resolved_viewer.html" class="link-table" title="track: Nonresponders — Table 3. Schedule of Activities for the Extension Induction and Extension Maintenance Treatment Periods of Study J1P-MC-KFAH">T03 <span class="ttype">track</span></a> <a href="NCT04677179/soa-tables/resolved/NCT04677179_Table_04_resolved_viewer.html" class="link-table" title="track: Early Termination / Unscheduled / Post-Treatment — Table 4. Schedule of Activities for Early Termination, Unscheduled Visits, and Post-Treatment Follow-Up Period (corrected; extracted as main_soa)">T04 <span class="ttype">track</span></a></td>
+            <td class="viz"><a href="NCT04677179/soa-tables/extracted/NCT04677179_review.html" class="link-review" title="Review page: the extraction against its source pages">review</a> <span class="decisions" title="Judgement calls raised by the extraction, and how many still await a reviewer">all 13 decided</span></td>
+            <td class="viz"><a href="NCT04677179/soa-tables/extracted/NCT04677179_uncertainty_report.html" class="link-report" title="The extractor's own account of the run: what it decided and where it was unsure">extraction log</a></td>
+            <td class="viz grp-start"><a href="NCT04677179/soa-tables/consolidated/NCT04677179_consolidated.html" class="link-table" title="Protocol-level SoA — all tables unified">View</a> <a href="NCT04677179/soa-tables/consolidated/NCT04677179_consolidated_viewer.html" class="link-json" title="Consolidated JSON data">json</a></td>
+            <td class="stats"><span title="24 of 82 unified activity rows are CCI-redacted in the public protocol">24 / 82</span></td>
+        </tr><tr class="ready" id="NCT04730349">
+            <td class="nct"><a href="https://clinicaltrials.gov/study/NCT04730349" target="_blank">NCT04730349</a></td>
+            <td class="sponsor">BMS</td>
+            <td class="study-code">CA045020</td>
+            <td class="acronym">PIVOT IO 020</td>
+            <td class="soa-pages">28-42</td>
+            <td class="sources"><a href="https://ClinicalTrials.gov/ProvidedDocs/49/NCT04730349/Prot_SAP_000.pdf" class="link-pdf" title="Full protocol at source" target="_blank" rel="noopener">Protocol</a> <a href="NCT04730349/NCT04730349_soa.pdf" class="link-soa" title="NCT04730349_soa.pdf">SoA PDF</a></td>
+            <td class="viz tables grp-start"><a href="NCT04730349/soa-tables/extracted/NCT04730349_Table_01_extraction_viewer.html" class="link-table" title="main_soa — Table 2-1: Screening Procedural Outline (CA045020)">T01 <span class="ttype">main</span></a> <a href="NCT04730349/soa-tables/extracted/NCT04730349_Table_02_extraction_viewer.html" class="link-table" title="main_soa — Table 2-2: On-treatment Procedural Outline (CA045020)">T02 <span class="ttype">main</span></a> <a href="NCT04730349/soa-tables/extracted/NCT04730349_Table_03_extraction_viewer.html" class="link-table" title="main_soa — Table 2-3: Long-term Follow-up Period (CA045020)">T03 <span class="ttype">main</span></a></td>
+            <td class="viz tables"><a href="NCT04730349/soa-tables/resolved/NCT04730349_Table_01_resolved_viewer.html" class="link-table" title="main_soa — Table 2-1: Screening Procedural Outline (CA045020)">T01 <span class="ttype">main</span></a> <a href="NCT04730349/soa-tables/resolved/NCT04730349_Table_02_resolved_viewer.html" class="link-table" title="main_soa — Table 2-2: On-treatment Procedural Outline (CA045020)">T02 <span class="ttype">main</span></a> <a href="NCT04730349/soa-tables/resolved/NCT04730349_Table_03_resolved_viewer.html" class="link-table" title="main_soa — Table 2-3: Long-term Follow-up Period (CA045020)">T03 <span class="ttype">main</span></a></td>
+            <td class="viz"><a href="NCT04730349/soa-tables/extracted/NCT04730349_review.html" class="link-review" title="Review page: the extraction against its source pages">review</a> <span class="decisions" title="Judgement calls raised by the extraction, and how many still await a reviewer">all 3 decided</span></td>
+            <td class="viz"><a href="NCT04730349/soa-tables/extracted/NCT04730349_uncertainty_report.html" class="link-report" title="The extractor's own account of the run: what it decided and where it was unsure">extraction log</a></td>
+            <td class="viz grp-start"><a href="NCT04730349/soa-tables/consolidated/NCT04730349_consolidated.html" class="link-table" title="Protocol-level SoA — all tables unified">View</a> <a href="NCT04730349/soa-tables/consolidated/NCT04730349_consolidated_viewer.html" class="link-json" title="Consolidated JSON data">json</a> <a href="NCT04730349/soa-tables/consolidated/NCT04730349_consolidated.html#matches" class="decisions open" title="Matches across tables that consolidation made on name similarity or nearly made, and how many still await a reviewer">matches: 2 open of 8</a></td>
+            <td class="stats"></td>
+        </tr><tr class="ready" id="NCT05176314">
+            <td class="nct"><a href="https://clinicaltrials.gov/study/NCT05176314" target="_blank">NCT05176314</a></td>
+            <td class="sponsor">EliLilly</td>
+            <td class="study-code">J2N-MC-JZNW</td>
+            <td class="acronym"></td>
+            <td class="soa-pages">10-11</td>
+            <td class="sources"><a href="https://ClinicalTrials.gov/ProvidedDocs/14/NCT05176314/Prot_000.pdf" class="link-pdf" title="Full protocol at source" target="_blank" rel="noopener">Protocol</a> <a href="NCT05176314/NCT05176314_soa.pdf" class="link-soa" title="NCT05176314_soa.pdf">SoA PDF</a></td>
+            <td class="viz tables grp-start"><a href="NCT05176314/soa-tables/extracted/NCT05176314_Table_01_extraction_viewer.html" class="link-table" title="main_soa — Schedule of Activities (SoA)">T01 <span class="ttype">main</span></a></td>
+            <td class="viz tables"><a href="NCT05176314/soa-tables/resolved/NCT05176314_Table_01_resolved_viewer.html" class="link-table" title="main_soa — Schedule of Activities (SoA)">T01 <span class="ttype">main</span></a></td>
+            <td class="viz"><a href="NCT05176314/soa-tables/extracted/NCT05176314_review.html" class="link-review" title="Review page: the extraction against its source pages">review</a> <span class="decisions" title="Judgement calls raised by the extraction, and how many still await a reviewer">all 3 decided</span></td>
+            <td class="viz"><a href="NCT05176314/soa-tables/extracted/NCT05176314_uncertainty_report.html" class="link-report" title="The extractor's own account of the run: what it decided and where it was unsure">extraction log</a></td>
+            <td class="viz grp-start"><a href="NCT05176314/soa-tables/consolidated/NCT05176314_consolidated.html" class="link-table" title="Protocol-level SoA — all tables unified">View</a> <a href="NCT05176314/soa-tables/consolidated/NCT05176314_consolidated_viewer.html" class="link-json" title="Consolidated JSON data">json</a></td>
+            <td class="stats"><span title="2 of 24 unified activity rows are CCI-redacted in the public protocol">2 / 24</span></td>
+        </tr><tr class="ready" id="NCT05259917">
+            <td class="nct"><a href="https://clinicaltrials.gov/study/NCT05259917" target="_blank">NCT05259917</a></td>
+            <td class="sponsor">KalVista</td>
+            <td class="study-code">KVD900-301</td>
+            <td class="acronym"></td>
+            <td class="soa-pages">17-18</td>
+            <td class="sources"><a href="https://ClinicalTrials.gov/ProvidedDocs/17/NCT05259917/Prot_000.pdf" class="link-pdf" title="Full protocol at source" target="_blank" rel="noopener">Protocol</a> <a href="NCT05259917/NCT05259917_soa.pdf" class="link-soa" title="NCT05259917_soa.pdf">SoA PDF</a></td>
+            <td class="viz tables grp-start"><a href="NCT05259917/soa-tables/extracted/NCT05259917_Table_01_extraction_viewer.html" class="link-table" title="main_soa — Schedule of Events">T01 <span class="ttype">main</span></a></td>
+            <td class="viz tables"><a href="NCT05259917/soa-tables/resolved/NCT05259917_Table_01_resolved_viewer.html" class="link-table" title="main_soa — Schedule of Events">T01 <span class="ttype">main</span></a></td>
+            <td class="viz"><a href="NCT05259917/soa-tables/extracted/NCT05259917_review.html" class="link-review" title="Review page: the extraction against its source pages">review</a> <span class="decisions" title="Judgement calls raised by the extraction, and how many still await a reviewer">all 3 decided</span></td>
+            <td class="viz"><a href="NCT05259917/soa-tables/extracted/NCT05259917_uncertainty_report.html" class="link-report" title="The extractor's own account of the run: what it decided and where it was unsure">extraction log</a></td>
+            <td class="viz grp-start"><a href="NCT05259917/soa-tables/consolidated/NCT05259917_consolidated.html" class="link-table" title="Protocol-level SoA — all tables unified">View</a> <a href="NCT05259917/soa-tables/consolidated/NCT05259917_consolidated_viewer.html" class="link-json" title="Consolidated JSON data">json</a></td>
+            <td class="stats"></td>
+        </tr><tr class="ready" id="NCT05324124">
+            <td class="nct"><a href="https://clinicaltrials.gov/study/NCT05324124" target="_blank">NCT05324124</a></td>
+            <td class="sponsor">EliLilly</td>
+            <td class="study-code">J2G-MC-JZPA</td>
+            <td class="acronym"></td>
+            <td class="soa-pages">9-12</td>
+            <td class="sources"><a href="https://ClinicalTrials.gov/ProvidedDocs/24/NCT05324124/Prot_000.pdf" class="link-pdf" title="Full protocol at source" target="_blank" rel="noopener">Protocol</a> <a href="NCT05324124/NCT05324124_soa.pdf" class="link-soa" title="NCT05324124_soa.pdf">SoA PDF</a></td>
+            <td class="viz tables grp-start"><a href="NCT05324124/soa-tables/extracted/NCT05324124_Table_01_extraction_viewer.html" class="link-table" title="main_soa — Schedule of Activities (SoA)">T01 <span class="ttype">main</span></a></td>
+            <td class="viz tables"><a href="NCT05324124/soa-tables/resolved/NCT05324124_Table_01_resolved_viewer.html" class="link-table" title="main_soa — Schedule of Activities (SoA)">T01 <span class="ttype">main</span></a></td>
+            <td class="viz"><a href="NCT05324124/soa-tables/extracted/NCT05324124_review.html" class="link-review" title="Review page: the extraction against its source pages">review</a> <span class="decisions" title="Judgement calls raised by the extraction, and how many still await a reviewer">all 4 decided</span></td>
+            <td class="viz"><a href="NCT05324124/soa-tables/extracted/NCT05324124_uncertainty_report.html" class="link-report" title="The extractor's own account of the run: what it decided and where it was unsure">extraction log</a></td>
+            <td class="viz grp-start"><a href="NCT05324124/soa-tables/consolidated/NCT05324124_consolidated.html" class="link-table" title="Protocol-level SoA — all tables unified">View</a> <a href="NCT05324124/soa-tables/consolidated/NCT05324124_consolidated_viewer.html" class="link-json" title="Consolidated JSON data">json</a></td>
+            <td class="stats"><span title="1 of 20 unified activity rows are CCI-redacted in the public protocol">1 / 20</span></td>
+        </tr>
+                
+                
+        <tr class="excluded-row" id="NCT03523273">
+            <td class="nct">NCT03523273</td><td class="sponsor">Inv</td>
+            <td class="study-code"></td>
+            <td class="acronym"></td>
+            <td class="excluded-reason" colspan="8">Not extractable &mdash; posted protocol contains no SoA table</td>
+        </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

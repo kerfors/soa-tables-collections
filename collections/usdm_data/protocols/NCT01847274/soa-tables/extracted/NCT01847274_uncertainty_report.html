@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>NCT01847274 · Extraction log · usdm_data</title>
+<style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+           max-width: 960px; margin: 40px auto; padding: 0 20px; color: #333; line-height: 1.6; }
+    
+    .pnav { background: #fff; border: 1px solid #e0e0e0; border-radius: 8px;
+            padding: 8px 16px; margin-bottom: 14px; font-size: 12px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            color: #666; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+    .pnav a { color: #1F4788; text-decoration: none; }
+    .pnav a:hover { text-decoration: underline; }
+    .pnav-sep { color: #999; margin: 0 4px; }
+    .pnav-cur { font-weight: 600; color: #333; }
+    .pnav-sib { margin-top: 4px; }
+    .pnav-grp { color: #888; font-size: 11px; }
+
+    h1 { color: #1F4788; border-bottom: 2px solid #1F4788; padding-bottom: 8px; font-size: 22px; }
+    h2 { color: #2E75B6; border-bottom: 1px solid #ddd; padding-bottom: 4px; margin-top: 32px; font-size: 17px; }
+    h3 { color: #444; margin-top: 24px; font-size: 14px; }
+    table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 12px; }
+    th { background: #f0f0f0; padding: 8px 10px; text-align: left; border: 1px solid #ddd; font-weight: 600; }
+    td { padding: 6px 10px; border: 1px solid #eee; vertical-align: top; }
+    tr:hover { background: #f8f9fa; }
+    code { background: #f4f4f4; padding: 2px 5px; border-radius: 3px; font-size: 12px; }
+    pre { background: #f8f8f8; padding: 16px; border-radius: 6px; overflow-x: auto; font-size: 12px; }
+    pre code { background: none; padding: 0; }
+    blockquote { border-left: 3px solid #6a1b9a; margin: 16px 0; padding: 8px 16px; background: #faf5fc; color: #555; }
+    strong { color: #222; }
+    hr { border: none; border-top: 1px solid #ddd; margin: 24px 0; }
+</style>
+</head>
+<body>
+    <nav class="pnav" aria-label="Breadcrumb"><div class="pnav-crumb"><a href="../../../../../../index.html">Collections</a><span class="pnav-sep">›</span><a href="../../../index.html">usdm_data</a><span class="pnav-sep">›</span><a href="../../../index.html#NCT01847274" title="This protocol's row on the collection index">NCT01847274</a><span class="pnav-sep">›</span><span class="pnav-cur">Extraction log</span></div><div class="pnav-sib"><span class="pnav-grp">extraction data:</span> <a href="../../soa-tables/extracted/NCT01847274_Table_01_extraction_viewer.html">T1</a> <a href="../../soa-tables/extracted/NCT01847274_Table_02_extraction_viewer.html">T2</a> <a href="../../soa-tables/extracted/NCT01847274_Table_03_extraction_viewer.html">T3</a> <span class="pnav-sep">·</span> <span class="pnav-grp">resolved data:</span> <a href="../../soa-tables/resolved/NCT01847274_Table_01_resolved_viewer.html">T1</a> <a href="../../soa-tables/resolved/NCT01847274_Table_02_resolved_viewer.html">T2</a> <a href="../../soa-tables/resolved/NCT01847274_Table_03_resolved_viewer.html">T3</a> <span class="pnav-sep">·</span> <a href="../../soa-tables/consolidated/NCT01847274_consolidated.html">consolidated</a> <span class="pnav-sep">·</span> <a href="../../soa-tables/extracted/NCT01847274_review.html">review</a> <span class="pnav-sep">·</span> <span class="pnav-cur">extraction log</span></div></nav>
+    <h1>NCT01847274 — SoA extraction uncertainty report</h1>
+<p>Prompt 3.8.1 (single pass). Source: NCT01847274_soa.pdf (7 PDF pages = document pages 63, 64, 65, 66, 72, 73, 78 per PAGEMAP.md). No protocol markdown was available, so all text comes from the PDF text layer.</p>
+<h2>Decisions needed (7)</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>where</th>
+<th>call made</th>
+<th>alternative</th>
+<th>detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D1</td>
+<td>p63, Table 1 row 1 "Cycle" (also Table 3 row 1, p78)</td>
+<td>Header row labelled "Cycle" typed as a <strong>cycle</strong> row</td>
+<td>Type it as an <strong>epoch</strong> row, because it also holds study phases (Screening, Discontinuation, Post Treatment)</td>
+<td>2.3</td>
+</tr>
+<tr>
+<td>D2</td>
+<td>p66, Table 1 row 30 "Bone marrow aspirate and biopsy"</td>
+<td>Top-level activity (indent 0); the single leading space in the source cell is treated as a typing artefact</td>
+<td>Read the leading space as indentation, making it a child (level 1) of "Survival assessment"</td>
+<td>2.3</td>
+</tr>
+<tr>
+<td>D3</td>
+<td>p72, Table 2 (printed Table 8)</td>
+<td>Typed <strong>track</strong>, label "Food Effect Sub-Study" (separate sub-study population with its own FE Day 1/FE Day 8 visits)</td>
+<td>Type as <strong>main_soa</strong> (independent schedule table, no track label)</td>
+<td>3.1</td>
+</tr>
+<tr>
+<td>D4</td>
+<td>p73, Table 2 header markers 12, 13</td>
+<td>Reprinted header de-duplicated; markers 12/13 carry the same text as 1/2 and are not emitted separately</td>
+<td>Emit footnotes 12 and 13 as their own notes on the header cells</td>
+<td>3.4</td>
+</tr>
+<tr>
+<td>D5</td>
+<td>p73, Table 2 full-width "Note: Patients in food effect sub-study…" row</td>
+<td>Not an activity; one table-wide footnote, synthesised marker <code>n1</code>, anchored on header row 1</td>
+<td>Bind it to specific activity rows, or leave its scope <code>unresolved</code></td>
+<td>3.3</td>
+</tr>
+<tr>
+<td>D6</td>
+<td>p78, Table 3 (printed Table 9)</td>
+<td>Typed <strong>track</strong>, label "Extended Visit Cycle" (alternative later-phase visit pattern for main-study patients)</td>
+<td>Type as <strong>main_soa</strong>, or as <strong>subsidiary</strong> of Table 1's "Subsequent Cycles" column</td>
+<td>4.1</td>
+</tr>
+<tr>
+<td>D7</td>
+<td>p78, Table 3 markers 4–15 (rows 5, 7, 10–18)</td>
+<td>Footnote texts are not printed in the excerpt; each note states "definition not printed" and adds a clearly-labelled <em>probable</em> equivalent from Table 1 where one exists</td>
+<td>State only "definition not printed", no cross-reference</td>
+<td>4.3</td>
+</tr>
+</tbody>
+</table>
+<h2>Recorded, not open (8)</h2>
+<ul>
+<li>Table numbering: <code>table_number</code> is sequential 1–3 across the protocol's SoA tables (schema definition); printed numbers are Table 7 → 1, Table 8 → 2, Table 9 → 3, recorded in each <code>table_metadata.notes</code>.</li>
+<li>Printed Table 8 page 73 "(Continued)" is the same printed table under a reprinted header → extracted as one table spanning pp72–73, not a <code>continuation</code> (taxonomy: page break inside one printed table).</li>
+<li>Reprinted header rows on pp64–66 (Table 1) and p73 (Table 2) de-duplicated (§1b).</li>
+<li>Abbreviation blocks (Table 1 p63; Table 2 pp72/73) yield zero annotations: no term is printed as a marker in any grid cell, header or label (§6).</li>
+<li>Leading label columns: L = 1 for all three tables; first data column = 2 (§5).</li>
+<li>Synthesised <code>property_name</code>s: Table 2 rows 1 "Period" and 2 "Cycle" (unlabelled header bands; §3), <code>structure_method: inferred_from_layout</code>.</li>
+<li>Superscript "20" in the bone-marrow footnote ("WHO criteria²⁰", Table 1 fn 28 / Table 2 fn 15) is a bibliographic reference citation in the note text, not a table marker; kept as text.</li>
+<li>Vertical placement of X marks inside the tall FOSI/EQ-5D-5L row (p65: Screening and Post-Treatment marks top-aligned, others centred) is presentation only — one row, all marks kept.</li>
+</ul>
+<h2>1. Method</h2>
+<ul>
+<li>Text layer present on all pages (not glyph-spread; no §1c reconstruction needed). No image-based pages.</li>
+<li>Rule lines recovered from 200-dpi renders (§1d; used uniformly). Vertical rules gave 10 column bands (Table 1), 9 (Table 2), 6 (Table 3); horizontal row bands read from the label column.</li>
+<li>Mechanical mark check (§1b): <code>pdftotext -bbox</code> tokens binned to raster column bands per row band; merged spans taken from missing internal vertical rules within each row band. <strong>The bbox matrix agreed with the visual read cell-for-cell on every table; no disagreements.</strong></li>
+</ul>
+<h2>2. Table 1 — printed Table 7 "Schedule of Events – Main Study" (pp63–66)</h2>
+<h3>2.1 Summary</h3>
+<ul>
+<li><code>main_soa</code>. 9 data columns (2–10): Screening; Cycle 1 D1, D8, D15, D21; Cycle 2 D1; Subsequent Cycles (Cycle n, Day 1); Study Treatment Discontinuation; Post Treatment Assessments.</li>
+<li>2 schedule properties (Cycle, Day); 28 activities; 90 schedule cells; 28 annotations (all footnotes).</li>
+<li>Activity rows per page: p63 = 7, p64 = 11, p65 = 6, p66 = 4. Every page contributed.</li>
+</ul>
+<h3>2.2 Merged cells</h3>
+<ul>
+<li>Header row 1 "1" (Cycle 1) merged across columns 3:6.</li>
+<li>"Bone marrow aspirate and biopsy" (row 30): one X²⁸ in a cell merged across columns <strong>3:10</strong> (Cycle 1 Day 1 through Post Treatment; Screening excluded). Distributed to 8 cells with <code>source_range "3:10"</code>; marker 28 placed on every covered cell.</li>
+</ul>
+<h3>2.3 Low-confidence calls</h3>
+<ul>
+<li>D1: row 1 values mix numbered cycles with phases; kept as <code>cycle</code> after the printed label "Cycle". Same call for Table 3 row 1.</li>
+<li>D2: Only "Bone marrow aspirate and biopsy" has a leading space in the cell (p66); the table has no grouping headers and the row carries its own mark, so all rows are level 0 (<code>indentation_method: assumed_flat</code>). Raw leading space kept in <code>cell_text</code>.</li>
+</ul>
+<h3>2.4 Annotations</h3>
+<ul>
+<li>Markers on the header: 1 on the "Cycle" row label (schedule_property), 2 on the Subsequent Cycles header cell (col 8), 3 on the C1 "Day 1" header cell (col 3).</li>
+<li>Footnote 14 ends "(Section 6.1)" but also explains — kept as <code>footnote</code>.</li>
+<li>Footnote 19 has an unbalanced parenthesis "(within 30± 15 minutes Note:" — transcribed as printed.</li>
+<li>No containment pairs: fn 10 (Table 1) and fn 14 (Table 2) share the same text ("SAEs recorded…"), and fn 28 / Table 2 fn 15 share the bone-marrow text, but these are in different tables and are source-faithful repeats.</li>
+</ul>
+<h2>3. Table 2 — printed Table 8 "Schedule of Events – Open-Label Food Effect Sub-Study (Study Completed)" (pp72–73)</h2>
+<h3>3.1 Classification</h3>
+<ul>
+<li><code>track</code>, <code>track_label</code> "Food Effect Sub-Study" (D3). Different population (sub-study patients) and different columns (FE Day 1, FE Day 8 ahead of Cycle 1). 8 data columns (2–9): Screening; FE 1; FE 8; C1 D1; C1 D15; C2 D1; Subsequent Cycles; Treatment Discontinuation.</li>
+<li>3 schedule properties (Period [synth], Cycle [synth], Day); 17 activities; 79 schedule cells; 14 annotations.</li>
+<li>Activity rows per page: p72 = 14, p73 = 3.</li>
+</ul>
+<h3>3.2 Merged cells</h3>
+<ul>
+<li>Header: "14-Day Food Effect" 3:4, "Cycle1" 5:7 (row 1); "C1" 5:6 (row 2). Screening, 14-Day Food Effect, Subsequent Cycles and Treatment Discontinuation cells span header rows 1–2 vertically; their row-2 grid cells are recorded as empty.</li>
+<li>"Bone marrow aspirate and biopsy" (row 19): X¹⁵ merged across <strong>3:9</strong> (FE 1 through Treatment Discontinuation; Screening excluded), distributed to 7 cells.</li>
+</ul>
+<h3>3.3 Note row (D5)</h3>
+<ul>
+<li>The full-width note row at the foot of the p73 grid (rule-bounded cell spanning all columns) is one note, taken whole from its cell. Synthesised marker <code>n1</code>, location schedule_property row 1, <code>method: synthesized</code>; <code>n1</code> added to row 1's <code>annotation_markers</code>.</li>
+</ul>
+<h3>3.4 Header reprint markers (D4)</h3>
+<ul>
+<li>The p73 reprinted header renumbers the Cycle1 / Subsequent Cycles footnotes as 12 / 13 (same text as 1 / 2). Header de-duplicated, so markers 1 and 2 stand; 12 and 13 are not emitted. Marker 1 is placed on each covered cell of the merged "Cycle" header (cols 5–7).</li>
+</ul>
+<h2>4. Table 3 — printed Table 9 "Schedule of Events – Main Study –Extended Visit Cycle" (p78)</h2>
+<h3>4.1 Classification</h3>
+<ul>
+<li><code>track</code>, <code>track_label</code> "Extended Visit Cycle" (D6). Main-study patients in a later phase following a different visit pattern (in-clinic extended cycle / telephone contact / local-clinic or in-home nursing), with its own column structure; it does not give finer timing for Table 1, so it is not subsidiary.</li>
+<li>5 data columns (2–6). 3 schedule properties (Cycle, Day, Location = <code>modality</code>); 15 activities (all p78); 40 schedule cells; 15 annotations.</li>
+</ul>
+<h3>4.2 Merged cells</h3>
+<ul>
+<li>"Bone marrow aspirate and biopsy" (row 18): X¹⁵ merged across <strong>2:6</strong> (all data columns), distributed to 5 cells.</li>
+</ul>
+<h3>4.3 Orphan risk — markers without printed definitions (D7)</h3>
+<ul>
+<li>Markers 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 are printed in the grid/labels but their footnote text is not on p78 (it ends after footnote 3; the following page is not in the excerpt). Each gets an annotation stating the definition is not printed, with a <em>probable</em> Table 1 equivalent where obvious (5→fn10, 6→fn12, 7/8→fn13/14 (order undeterminable), 9→fn16, 10→fn22, 11→fn24, 12→fn25, 13→fn26, 14→fn27, 15→fn28). Marker 4 (Vital signs, weight at the local-clinic column) has no obvious equivalent. All are placed at their printed locations, so none is an orphan.</li>
+<li>Header markers 1, 2, 3 sit on the three "Subsequent Cycles" header cells (cols 2, 3, 4) and are defined on p78.</li>
+</ul>
+<h2>5. Synthesised items</h2>
+<ul>
+<li>Property names: Table 2 "Period" (row 1), "Cycle" (row 2).</li>
+<li>Annotation markers: Table 2 <code>n1</code> (note row).</li>
+</ul>
+<h2>6. Method provenance (non-default)</h2>
+<ul>
+<li>All activities: <code>indentation_method: assumed_flat</code> (flat tables, no grouping headers).</li>
+<li>Table 2 schedule properties rows 1–2: <code>structure_method: inferred_from_layout</code>.</li>
+<li>Table 2 <code>n1</code> location: <code>method: synthesized</code>.</li>
+<li>No <code>unresolved</code> locations; no proximity-bound note text; no visual-only cells (all marks confirmed from the text layer + raster rules).</li>
+</ul>
+</body>
+</html>

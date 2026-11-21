@@ -1,0 +1,61 @@
+{
+ "schema_name": "soa-table-corrections",
+ "schema_version": "1.0",
+ "target_extraction": "NCT04557384_Table_03_extraction.json",
+ "corrections": [
+  {
+   "id": "corr-001",
+   "target": "annotations",
+   "op": "confirm",
+   "review_item": "D11",
+   "reason": "Accepted as extracted (Kerstin, 2026-09-27; sweep2-PHASE1-RESULTS decision 6): General Instructions as table-scope notes g1-g4.",
+   "source_ref": {
+    "page": 24
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-09-27T19:30:00+02:00"
+  },
+  {
+   "id": "corr-002",
+   "target": "table_metadata",
+   "op": "confirm",
+   "review_item": "D9",
+   "reason": "Kept as extracted (subsidiary, printed orientation; as in the accepted corpus). The USDM-correct shape would be transposed (samples as timepoint columns, PK/IG as activities); that is a re-extraction, not a correction, and is noted for inventory-improvements. (Kerstin, 2026-09-27 review session, group B.)",
+   "source_ref": {
+    "page": 24
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-09-27T20:03:00+02:00"
+  },
+  {
+   "id": "corr-003",
+   "target": "activities",
+   "op": "confirm",
+   "review_item": "D10",
+   "reason": "Kept as extracted: rows named 'Sample 1'...'Sample 14' from the 'Sample #' heading and the printed number (cell_text keeps the number); as the accepted corpus required (§4.2). (Kerstin, 2026-09-27 review session, group J.)",
+   "source_ref": {
+    "page": 24
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-09-27T20:21:00+02:00"
+  },
+  {
+   "id": "corr-004",
+   "target": "schedule_properties",
+   "op": "set",
+   "match": {
+    "row_position": 1
+   },
+   "set": {
+    "annotation_markers": ""
+   },
+   "reason": "Clears the table-wide notes g1, g2, g3, g4 from the 'Column heading' row's annotation_markers; marker_locations unchanged. General Instructions above the frame (g1-g4); name no element. Prompt 3.9.2 §6 Binding by what a note names: a note that names no specific element stays table-wide; its marker is on no element's annotation_markers. Inventory item 25a (decision Kerstin, 2026-09-28 13:16).",
+   "source_ref": {
+    "page": 24,
+    "row_position": 1
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-09-28T13:40:00+02:00"
+  }
+ ]
+}

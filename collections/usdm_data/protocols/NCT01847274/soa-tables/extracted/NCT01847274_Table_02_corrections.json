@@ -1,0 +1,61 @@
+{
+ "schema_name": "soa-table-corrections",
+ "schema_version": "1.0",
+ "target_extraction": "NCT01847274_Table_02_extraction.json",
+ "corrections": [
+  {
+   "id": "corr-001",
+   "target": "annotations",
+   "op": "confirm",
+   "review_item": "D4",
+   "reason": "Accepted as extracted (Kerstin, 2026-09-27; sweep2-PHASE1-RESULTS decision 4): reprinted-header markers 12/13 repeat 1/2 and are not emitted.",
+   "source_ref": {
+    "page": 73
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-09-27T19:30:00+02:00"
+  },
+  {
+   "id": "corr-002",
+   "target": "annotations",
+   "op": "confirm",
+   "review_item": "D5",
+   "reason": "Kept as extracted: the full-width food-effect note describes how the whole sub-study runs and stays one table-wide note. Rule: a note with no specific target stays table-wide, anchored to the header (group M). (Kerstin, 2026-09-27 review session, group M4.)",
+   "source_ref": {
+    "page": 73
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-09-27T19:58:00+02:00"
+  },
+  {
+   "id": "corr-003",
+   "target": "table_metadata",
+   "op": "confirm",
+   "review_item": "D3",
+   "reason": "Kept as extracted (track 'Food Effect Sub-Study'): only sub-study patients, own FE Day 1/8 visits. A schedule for a subset or branch of participants is a track (taxonomy v6); consistent with NCT04677179 D11. (Kerstin, 2026-09-27 review session, group B.)",
+   "source_ref": {
+    "page": 72
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-09-27T20:03:00+02:00"
+  },
+  {
+   "id": "corr-004",
+   "target": "schedule_properties",
+   "op": "set",
+   "match": {
+    "row_position": 1
+   },
+   "set": {
+    "annotation_markers": ""
+   },
+   "reason": "Clears the table-wide note n1 from the 'Period' row's annotation_markers; marker_locations unchanged. In-frame 'Note:' row across the full table width, no printed marker, about the whole food-effect sub-study. Added to the 25a list after the corpus measurement (Kerstin, 2026-09-28). Prompt 3.9.2 §6 Binding by what a note names: a note that names no specific element stays table-wide; its marker is on no element's annotation_markers. Inventory item 25a (decision Kerstin, 2026-09-28 13:16).",
+   "source_ref": {
+    "page": 73,
+    "row_position": 1
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-09-28T13:40:00+02:00"
+  }
+ ]
+}

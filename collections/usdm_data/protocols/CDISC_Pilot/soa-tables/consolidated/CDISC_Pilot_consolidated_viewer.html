@@ -1,0 +1,3564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CDISC_Pilot · consolidated data · usdm_data</title>
+<style>
+    * { box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+           margin: 0; padding: 20px; background: #f8f9fa; color: #333; }
+    
+    .pnav { background: #fff; border: 1px solid #e0e0e0; border-radius: 8px;
+            padding: 8px 16px; margin-bottom: 14px; font-size: 12px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            color: #666; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+    .pnav a { color: #1F4788; text-decoration: none; }
+    .pnav a:hover { text-decoration: underline; }
+    .pnav-sep { color: #999; margin: 0 4px; }
+    .pnav-cur { font-weight: 600; color: #333; }
+    .pnav-sib { margin-top: 4px; }
+    .pnav-grp { color: #888; font-size: 11px; }
+
+    .toolbar { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; flex-wrap: wrap; }
+    .title { font-size: 16px; font-weight: 600; color: #1F4788; }
+    .raw-link { font-size: 11px; }
+    .raw-link a { color: #888; text-decoration: none; font-family: monospace; }
+    .raw-link a:hover { color: #555; text-decoration: underline; }
+    #search { padding: 6px 12px; border: 1px solid #ccc; border-radius: 4px; font-size: 12px;
+               width: 240px; margin-left: auto; }
+    #search:focus { outline: none; border-color: #2E75B6; box-shadow: 0 0 0 2px rgba(46,117,182,0.15); }
+    .stats { font-size: 11px; color: #888; }
+    
+    #json-container { background: white; border: 1px solid #e0e0e0; border-radius: 8px;
+                       padding: 20px; overflow: auto; max-height: calc(100vh - 120px);
+                       font-family: "SF Mono", "Fira Code", "Fira Mono", Menlo, Consolas, monospace;
+                       font-size: 12px; line-height: 1.6; }
+    
+    /* Syntax highlighting */
+    .json-key { color: #881391; font-weight: 500; }
+    .json-string { color: #1a6b2c; }
+    .json-number { color: #1750eb; }
+    .json-boolean { color: #d32f2f; font-weight: 500; }
+    .json-null { color: #888; font-style: italic; }
+    .json-bracket { color: #555; }
+    
+    /* Collapsible */
+    .json-toggle { cursor: pointer; user-select: none; position: relative; }
+    .json-toggle::before { content: "▼"; display: inline-block; width: 14px; font-size: 9px;
+                            color: #aaa; transition: transform 0.15s; }
+    .json-toggle.collapsed::before { transform: rotate(-90deg); }
+    .json-toggle:hover::before { color: #1F4788; }
+    .json-content { margin-left: 20px; }
+    .json-content.hidden { display: none; }
+    .json-ellipsis { display: none; color: #aaa; font-style: italic; font-size: 11px; }
+    .json-toggle.collapsed + .json-content + .json-ellipsis { display: inline; }
+    .json-comma { color: #555; }
+    
+    /* Search highlight */
+    .highlight { background: #fff3b0; border-radius: 2px; padding: 0 1px; }
+    .search-no-match { opacity: 0.2; }
+</style>
+</head>
+<body>
+    <nav class="pnav" aria-label="Breadcrumb"><div class="pnav-crumb"><a href="../../../../../../index.html">Collections</a><span class="pnav-sep">›</span><a href="../../../index.html">usdm_data</a><span class="pnav-sep">›</span><a href="../../../index.html#CDISC_Pilot" title="This protocol's row on the collection index">CDISC_Pilot</a><span class="pnav-sep">›</span><span class="pnav-cur">consolidated data</span></div><div class="pnav-sib"><span class="pnav-grp">extraction data:</span> <a href="../../soa-tables/extracted/CDISC_Pilot_Table_01_extraction_viewer.html">T1</a> <span class="pnav-sep">·</span> <span class="pnav-grp">resolved data:</span> <a href="../../soa-tables/resolved/CDISC_Pilot_Table_01_resolved_viewer.html">T1</a> <span class="pnav-sep">·</span> <a href="../../soa-tables/consolidated/CDISC_Pilot_consolidated.html">consolidated</a> <span class="pnav-sep">·</span> <a href="../../soa-tables/extracted/CDISC_Pilot_review.html">review</a> <span class="pnav-sep">·</span> <a href="../../soa-tables/extracted/CDISC_Pilot_uncertainty_report.html">extraction log</a></div></nav>
+    <div class="toolbar">
+        <div class="title">CDISC_Pilot — consolidated data</div>
+        <div class="raw-link"><a href="CDISC_Pilot_consolidated.json" download>raw json</a></div>
+        <div class="stats" id="stats"></div>
+        <input type="text" id="search" placeholder="Search keys and values…">
+    </div>
+    <div id="json-container"></div>
+    
+    <script>
+    const jsonData = {
+  "schema_name": "soa-tables-consolidated",
+  "schema_version": "1.7",
+  "protocol_id": "CDISC_Pilot",
+  "consolidation_metadata": {
+    "consolidated_at": "2026-11-21T09:30:33.697953+00:00",
+    "consolidator": "soa_tables.consolidate v1.2",
+    "source_tables": [
+      {
+        "table_id": "table-001",
+        "table_num": 1,
+        "table_type": "main_soa",
+        "table_title": "Schedule of Events for Protocol H2Q-MC-LZZT(c)",
+        "table_purpose": "Main schedule of events (Protocol Attachment LZZT.1) covering screening through week 26 plus Early Termination and Retrieval visits",
+        "track_label": null,
+        "activity_count": 30,
+        "column_count": 15,
+        "annotation_count": 4,
+        "property_hierarchy": [
+          {
+            "hierarchical_level": 1,
+            "property_name": "VISIT",
+            "property_type": "visit",
+            "property_comment": "Visit identifiers printed in the header-label column as 'VISIT': 1, 2, 3, 4, 5, (blank), 7, 8 on document page 53 and 9, 10, 11, 12, 13, ET, RT on page 54. Numbered/named visits -> visit. The column between visit 5 and visit 7 has an empty visit cell (no visit 6 printed)."
+          },
+          {
+            "hierarchical_level": 2,
+            "property_name": "WEEK",
+            "property_type": "week",
+            "property_comment": "Study week of each visit printed as 'WEEK': -2, -.3, 0, 2, 4, (blank), 6, 8, 12, 16, 20, 24, 26; empty for ET and RT (unscheduled Early Termination / Retrieval visits). Week numbers -> week."
+          }
+        ]
+      }
+    ],
+    "match_stats": {
+      "exact": 0,
+      "fuzzy_auto": 0,
+      "fuzzy_cross_parent": 0,
+      "fuzzy_review": 0,
+      "decision": 0,
+      "new": 30
+    },
+    "review_stats": {
+      "total": 0,
+      "open": 0,
+      "decided": 0,
+      "near_matches": 0
+    },
+    "source_activity_count": 30,
+    "unified_activity_count": 30,
+    "compression_percent": 0,
+    "annotation_stats": {
+      "source_annotation_count": 4,
+      "unified_annotation_count": 4,
+      "deduplicated_count": 0,
+      "deduplication_percent": 0,
+      "by_type": {
+        "legend": 4
+      }
+    }
+  },
+  "property_hierarchy": [
+    {
+      "property_id": "prop-001",
+      "property_type": "visit",
+      "property_name": "VISIT",
+      "hierarchical_level": 1,
+      "property_comment": "Visit identifiers printed in the header-label column as 'VISIT': 1, 2, 3, 4, 5, (blank), 7, 8 on document page 53 and 9, 10, 11, 12, 13, ET, RT on page 54. Numbered/named visits -> visit. The column between visit 5 and visit 7 has an empty visit cell (no visit 6 printed)."
+    },
+    {
+      "property_id": "prop-002",
+      "property_type": "week",
+      "property_name": "WEEK",
+      "hierarchical_level": 2,
+      "property_comment": "Study week of each visit printed as 'WEEK': -2, -.3, 0, 2, 4, (blank), 6, 8, 12, 16, 20, 24, 26; empty for ET and RT (unscheduled Early Termination / Retrieval visits). Week numbers -> week."
+    }
+  ],
+  "review_queue": [],
+  "unified_activities": [
+    {
+      "xact_id": "xact-001",
+      "activity_name": "Informed consent",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 1,
+      "qualified_key": "::Informed consent",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-001",
+          "row_position": 3,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Informed consent"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-002",
+      "activity_name": "Patient number assigned",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 2,
+      "qualified_key": "::Patient number assigned",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-002",
+          "row_position": 4,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Patient number assigned"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-003",
+      "activity_name": "Hachinski ≤4",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 3,
+      "qualified_key": "::Hachinski ≤4",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-003",
+          "row_position": 5,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Hachinski ≤4"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-004",
+      "activity_name": "MMSE 10-23",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 4,
+      "qualified_key": "::MMSE 10-23",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-004",
+          "row_position": 6,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "MMSE 10-23"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-005",
+      "activity_name": "Physical examination",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 5,
+      "qualified_key": "::Physical examination",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-005",
+          "row_position": 7,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Physical examination"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-006",
+      "activity_name": "Medical History",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 6,
+      "qualified_key": "::Medical History",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-006",
+          "row_position": 8,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Medical History"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-007",
+      "activity_name": "Habits",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 7,
+      "qualified_key": "::Habits",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-007",
+          "row_position": 9,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Habits"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-008",
+      "activity_name": "Chest x-ray",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 8,
+      "qualified_key": "::Chest x-ray",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-008",
+          "row_position": 10,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Chest x-ray"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-009",
+      "activity_name": "Apo E genotyping",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 9,
+      "qualified_key": "::Apo E genotyping",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-009",
+          "row_position": 11,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Apo E genotyping"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-010",
+      "activity_name": "Patient randomized",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 10,
+      "qualified_key": "::Patient randomized",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-010",
+          "row_position": 12,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Patient randomized"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-011",
+      "activity_name": "Vital signs/Temperature",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 11,
+      "qualified_key": "::Vital signs/Temperature",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-011",
+          "row_position": 13,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Vital signs/Temperature"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-012",
+      "activity_name": "Ambulatory ECG placed",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 12,
+      "qualified_key": "::Ambulatory ECG placed",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-012",
+          "row_position": 14,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Ambulatory ECG placed"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-013",
+      "activity_name": "Ambulatory ECG removed",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 13,
+      "qualified_key": "::Ambulatory ECG removed",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-013",
+          "row_position": 15,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Ambulatory ECG removed"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-014",
+      "activity_name": "ECG",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 14,
+      "qualified_key": "::ECG",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-014",
+          "row_position": 16,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "ECG"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-015",
+      "activity_name": "Placebo TTS test",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 15,
+      "qualified_key": "::Placebo TTS test",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-015",
+          "row_position": 17,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Placebo TTS test"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-016",
+      "activity_name": "CT Scan (if not within last year and patient passes all other screens)",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 16,
+      "qualified_key": "::CT Scan (if not within last year and patient passes all other screens)",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-016",
+          "row_position": 18,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "CT Scan (if not within last year and patient passes all other screens)"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-017",
+      "activity_name": "Concomitant Medications",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 17,
+      "qualified_key": "::Concomitant Medications",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-017",
+          "row_position": 19,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Concomitant Medications"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-018",
+      "activity_name": "Laboratory (Chem/Hemat):",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 18,
+      "qualified_key": "::Laboratory (Chem/Hemat):",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-018",
+          "row_position": 20,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Laboratory (Chem/Hemat):"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-019",
+      "activity_name": "Laboratory (Urinalysis)",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 19,
+      "qualified_key": "::Laboratory (Urinalysis)",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-019",
+          "row_position": 21,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Laboratory (Urinalysis)"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-020",
+      "activity_name": "Plasma Specimen (Xanomeline)",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 20,
+      "qualified_key": "::Plasma Specimen (Xanomeline)",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-020",
+          "row_position": 22,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Plasma Specimen (Xanomeline)"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-021",
+      "activity_name": "Hemoglobin A1C",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 21,
+      "qualified_key": "::Hemoglobin A1C",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-021",
+          "row_position": 23,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Hemoglobin A1C"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-022",
+      "activity_name": "Study drug record",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 22,
+      "qualified_key": "::Study drug record",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-022",
+          "row_position": 24,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Study drug record"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-023",
+      "activity_name": "Medications dispensed",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 23,
+      "qualified_key": "::Medications dispensed",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-023",
+          "row_position": 25,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Medications dispensed"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-024",
+      "activity_name": "Medications returned",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 24,
+      "qualified_key": "::Medications returned",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-024",
+          "row_position": 26,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Medications returned"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-025",
+      "activity_name": "TTS Acceptability Survey",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 25,
+      "qualified_key": "::TTS Acceptability Survey",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-025",
+          "row_position": 27,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "TTS Acceptability Survey"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-026",
+      "activity_name": "ADAS-Cog",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 26,
+      "qualified_key": "::ADAS-Cog",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-026",
+          "row_position": 28,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "ADAS-Cog"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-027",
+      "activity_name": "CIBIC+",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 27,
+      "qualified_key": "::CIBIC+",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-027",
+          "row_position": 29,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "CIBIC+"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-028",
+      "activity_name": "DAD",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 28,
+      "qualified_key": "::DAD",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-028",
+          "row_position": 30,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "DAD"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-029",
+      "activity_name": "NPI-X",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 29,
+      "qualified_key": "::NPI-X",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-029",
+          "row_position": 31,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "NPI-X"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-030",
+      "activity_name": "Adverse events",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 30,
+      "qualified_key": "::Adverse events",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-030",
+          "row_position": 32,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Adverse events"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    }
+  ],
+  "timeline_segments": {
+    "main": [
+      {
+        "xcol_id": "xcol-001",
+        "composite_label": "1 / -2",
+        "segment": "main",
+        "population_track": null,
+        "property_values": [
+          {
+            "level": 1,
+            "property_type": "visit",
+            "property_name": "VISIT",
+            "value": "1"
+          },
+          {
+            "level": 2,
+            "property_type": "week",
+            "property_name": "WEEK",
+            "value": "-2"
+          }
+        ],
+        "source_columns": [
+          {
+            "table_id": "table-001",
+            "table_num": 1,
+            "column_id": "col-003",
+            "column_position": 3
+          }
+        ]
+      },
+      {
+        "xcol_id": "xcol-002",
+        "composite_label": "2 / -.3",
+        "segment": "main",
+        "population_track": null,
+        "property_values": [
+          {
+            "level": 1,
+            "property_type": "visit",
+            "property_name": "VISIT",
+            "value": "2"
+          },
+          {
+            "level": 2,
+            "property_type": "week",
+            "property_name": "WEEK",
+            "value": "-.3"
+          }
+        ],
+        "source_columns": [
+          {
+            "table_id": "table-001",
+            "table_num": 1,
+            "column_id": "col-004",
+            "column_position": 4
+          }
+        ]
+      },
+      {
+        "xcol_id": "xcol-003",
+        "composite_label": "3 / 0",
+        "segment": "main",
+        "population_track": null,
+        "property_values": [
+          {
+            "level": 1,
+            "property_type": "visit",
+            "property_name": "VISIT",
+            "value": "3"
+          },
+          {
+            "level": 2,
+            "property_type": "week",
+            "property_name": "WEEK",
+            "value": "0"
+          }
+        ],
+        "source_columns": [
+          {
+            "table_id": "table-001",
+            "table_num": 1,
+            "column_id": "col-005",
+            "column_position": 5
+          }
+        ]
+      },
+      {
+        "xcol_id": "xcol-004",
+        "composite_label": "4 / 2",
+        "segment": "main",
+        "population_track": null,
+        "property_values": [
+          {
+            "level": 1,
+            "property_type": "visit",
+            "property_name": "VISIT",
+            "value": "4"
+          },
+          {
+            "level": 2,
+            "property_type": "week",
+            "property_name": "WEEK",
+            "value": "2"
+          }
+        ],
+        "source_columns": [
+          {
+            "table_id": "table-001",
+            "table_num": 1,
+            "column_id": "col-006",
+            "column_position": 6
+          }
+        ]
+      },
+      {
+        "xcol_id": "xcol-005",
+        "composite_label": "5 / 4",
+        "segment": "main",
+        "population_track": null,
+        "property_values": [
+          {
+            "level": 1,
+            "property_type": "visit",
+            "property_name": "VISIT",
+            "value": "5"
+          },
+          {
+            "level": 2,
+            "property_type": "week",
+            "property_name": "WEEK",
+            "value": "4"
+          }
+        ],
+        "source_columns": [
+          {
+            "table_id": "table-001",
+            "table_num": 1,
+            "column_id": "col-007",
+            "column_position": 7
+          }
+        ]
+      },
+      {
+        "xcol_id": "xcol-006",
+        "composite_label": "",
+        "segment": "main",
+        "population_track": null,
+        "property_values": [
+          {
+            "level": 1,
+            "property_type": "visit",
+            "property_name": "VISIT",
+            "value": ""
+          },
+          {
+            "level": 2,
+            "property_type": "week",
+            "property_name": "WEEK",
+            "value": ""
+          }
+        ],
+        "source_columns": [
+          {
+            "table_id": "table-001",
+            "table_num": 1,
+            "column_id": "col-008",
+            "column_position": 8
+          }
+        ]
+      },
+      {
+        "xcol_id": "xcol-007",
+        "composite_label": "7 / 6",
+        "segment": "main",
+        "population_track": null,
+        "property_values": [
+          {
+            "level": 1,
+            "property_type": "visit",
+            "property_name": "VISIT",
+            "value": "7"
+          },
+          {
+            "level": 2,
+            "property_type": "week",
+            "property_name": "WEEK",
+            "value": "6"
+          }
+        ],
+        "source_columns": [
+          {
+            "table_id": "table-001",
+            "table_num": 1,
+            "column_id": "col-009",
+            "column_position": 9
+          }
+        ]
+      },
+      {
+        "xcol_id": "xcol-008",
+        "composite_label": "8 / 8",
+        "segment": "main",
+        "population_track": null,
+        "property_values": [
+          {
+            "level": 1,
+            "property_type": "visit",
+            "property_name": "VISIT",
+            "value": "8"
+          },
+          {
+            "level": 2,
+            "property_type": "week",
+            "property_name": "WEEK",
+            "value": "8"
+          }
+        ],
+        "source_columns": [
+          {
+            "table_id": "table-001",
+            "table_num": 1,
+            "column_id": "col-010",
+            "column_position": 10
+          }
+        ]
+      },
+      {
+        "xcol_id": "xcol-009",
+        "composite_label": "9 / 12",
+        "segment": "main",
+        "population_track": null,
+        "property_values": [
+          {
+            "level": 1,
+            "property_type": "visit",
+            "property_name": "VISIT",
+            "value": "9"
+          },
+          {
+            "level": 2,
+            "property_type": "week",
+            "property_name": "WEEK",
+            "value": "12"
+          }
+        ],
+        "source_columns": [
+          {
+            "table_id": "table-001",
+            "table_num": 1,
+            "column_id": "col-011",
+            "column_position": 11
+          }
+        ]
+      },
+      {
+        "xcol_id": "xcol-010",
+        "composite_label": "10 / 16",
+        "segment": "main",
+        "population_track": null,
+        "property_values": [
+          {
+            "level": 1,
+            "property_type": "visit",
+            "property_name": "VISIT",
+            "value": "10"
+          },
+          {
+            "level": 2,
+            "property_type": "week",
+            "property_name": "WEEK",
+            "value": "16"
+          }
+        ],
+        "source_columns": [
+          {
+            "table_id": "table-001",
+            "table_num": 1,
+            "column_id": "col-012",
+            "column_position": 12
+          }
+        ]
+      },
+      {
+        "xcol_id": "xcol-011",
+        "composite_label": "11 / 20",
+        "segment": "main",
+        "population_track": null,
+        "property_values": [
+          {
+            "level": 1,
+            "property_type": "visit",
+            "property_name": "VISIT",
+            "value": "11"
+          },
+          {
+            "level": 2,
+            "property_type": "week",
+            "property_name": "WEEK",
+            "value": "20"
+          }
+        ],
+        "source_columns": [
+          {
+            "table_id": "table-001",
+            "table_num": 1,
+            "column_id": "col-013",
+            "column_position": 13
+          }
+        ]
+      },
+      {
+        "xcol_id": "xcol-012",
+        "composite_label": "12 / 24",
+        "segment": "main",
+        "population_track": null,
+        "property_values": [
+          {
+            "level": 1,
+            "property_type": "visit",
+            "property_name": "VISIT",
+            "value": "12"
+          },
+          {
+            "level": 2,
+            "property_type": "week",
+            "property_name": "WEEK",
+            "value": "24"
+          }
+        ],
+        "source_columns": [
+          {
+            "table_id": "table-001",
+            "table_num": 1,
+            "column_id": "col-014",
+            "column_position": 14
+          }
+        ]
+      },
+      {
+        "xcol_id": "xcol-013",
+        "composite_label": "13 / 26",
+        "segment": "main",
+        "population_track": null,
+        "property_values": [
+          {
+            "level": 1,
+            "property_type": "visit",
+            "property_name": "VISIT",
+            "value": "13"
+          },
+          {
+            "level": 2,
+            "property_type": "week",
+            "property_name": "WEEK",
+            "value": "26"
+          }
+        ],
+        "source_columns": [
+          {
+            "table_id": "table-001",
+            "table_num": 1,
+            "column_id": "col-015",
+            "column_position": 15
+          }
+        ]
+      },
+      {
+        "xcol_id": "xcol-014",
+        "composite_label": "ET",
+        "segment": "main",
+        "population_track": null,
+        "property_values": [
+          {
+            "level": 1,
+            "property_type": "visit",
+            "property_name": "VISIT",
+            "value": "ET"
+          },
+          {
+            "level": 2,
+            "property_type": "week",
+            "property_name": "WEEK",
+            "value": ""
+          }
+        ],
+        "source_columns": [
+          {
+            "table_id": "table-001",
+            "table_num": 1,
+            "column_id": "col-016",
+            "column_position": 16
+          }
+        ]
+      },
+      {
+        "xcol_id": "xcol-015",
+        "composite_label": "RT",
+        "segment": "main",
+        "population_track": null,
+        "property_values": [
+          {
+            "level": 1,
+            "property_type": "visit",
+            "property_name": "VISIT",
+            "value": "RT"
+          },
+          {
+            "level": 2,
+            "property_type": "week",
+            "property_name": "WEEK",
+            "value": ""
+          }
+        ],
+        "source_columns": [
+          {
+            "table_id": "table-001",
+            "table_num": 1,
+            "column_id": "col-017",
+            "column_position": 17
+          }
+        ]
+      }
+    ]
+  },
+  "schedule_matrix": [
+    {
+      "xact_id": "xact-001",
+      "xcol_id": "xcol-001",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-002",
+      "xcol_id": "xcol-001",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-003",
+      "xcol_id": "xcol-001",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-004",
+      "xcol_id": "xcol-001",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-005",
+      "xcol_id": "xcol-001",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-005",
+      "xcol_id": "xcol-013",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-005",
+      "xcol_id": "xcol-014",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-006",
+      "xcol_id": "xcol-001",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-007",
+      "xcol_id": "xcol-001",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-008",
+      "xcol_id": "xcol-001",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-009",
+      "xcol_id": "xcol-004",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-010",
+      "xcol_id": "xcol-003",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-011",
+      "xcol_id": "xcol-001",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-011",
+      "xcol_id": "xcol-002",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-011",
+      "xcol_id": "xcol-003",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-011",
+      "xcol_id": "xcol-004",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-011",
+      "xcol_id": "xcol-005",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-011",
+      "xcol_id": "xcol-007",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-011",
+      "xcol_id": "xcol-008",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-011",
+      "xcol_id": "xcol-009",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-011",
+      "xcol_id": "xcol-010",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-011",
+      "xcol_id": "xcol-011",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-011",
+      "xcol_id": "xcol-012",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-011",
+      "xcol_id": "xcol-013",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-011",
+      "xcol_id": "xcol-014",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-011",
+      "xcol_id": "xcol-015",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-012",
+      "xcol_id": "xcol-002",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-013",
+      "xcol_id": "xcol-003",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-014",
+      "xcol_id": "xcol-001",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-014",
+      "xcol_id": "xcol-004",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-014",
+      "xcol_id": "xcol-005",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-014",
+      "xcol_id": "xcol-007",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-014",
+      "xcol_id": "xcol-008",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-014",
+      "xcol_id": "xcol-009",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-014",
+      "xcol_id": "xcol-010",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-014",
+      "xcol_id": "xcol-011",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-014",
+      "xcol_id": "xcol-012",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-014",
+      "xcol_id": "xcol-013",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-014",
+      "xcol_id": "xcol-014",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-015",
+      "xcol_id": "xcol-001",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-016",
+      "xcol_id": "xcol-001",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-017",
+      "xcol_id": "xcol-001",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-017",
+      "xcol_id": "xcol-003",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-017",
+      "xcol_id": "xcol-004",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-017",
+      "xcol_id": "xcol-005",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-017",
+      "xcol_id": "xcol-007",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-017",
+      "xcol_id": "xcol-008",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-017",
+      "xcol_id": "xcol-009",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-017",
+      "xcol_id": "xcol-010",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-017",
+      "xcol_id": "xcol-011",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-017",
+      "xcol_id": "xcol-012",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-017",
+      "xcol_id": "xcol-013",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-017",
+      "xcol_id": "xcol-014",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-017",
+      "xcol_id": "xcol-015",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-018",
+      "xcol_id": "xcol-001",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-018",
+      "xcol_id": "xcol-004",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-018",
+      "xcol_id": "xcol-005",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-018",
+      "xcol_id": "xcol-007",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-018",
+      "xcol_id": "xcol-008",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-018",
+      "xcol_id": "xcol-009",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-018",
+      "xcol_id": "xcol-010",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-018",
+      "xcol_id": "xcol-011",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-018",
+      "xcol_id": "xcol-012",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-018",
+      "xcol_id": "xcol-013",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-018",
+      "xcol_id": "xcol-014",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-019",
+      "xcol_id": "xcol-001",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-019",
+      "xcol_id": "xcol-004",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-019",
+      "xcol_id": "xcol-009",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-019",
+      "xcol_id": "xcol-012",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-019",
+      "xcol_id": "xcol-014",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-020",
+      "xcol_id": "xcol-003",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-020",
+      "xcol_id": "xcol-004",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-020",
+      "xcol_id": "xcol-005",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-020",
+      "xcol_id": "xcol-007",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-020",
+      "xcol_id": "xcol-009",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-020",
+      "xcol_id": "xcol-011",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-020",
+      "xcol_id": "xcol-014",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-021",
+      "xcol_id": "xcol-001",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-022",
+      "xcol_id": "xcol-003",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-022",
+      "xcol_id": "xcol-004",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-022",
+      "xcol_id": "xcol-005",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-022",
+      "xcol_id": "xcol-007",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-022",
+      "xcol_id": "xcol-008",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-022",
+      "xcol_id": "xcol-009",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-022",
+      "xcol_id": "xcol-010",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-022",
+      "xcol_id": "xcol-011",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-022",
+      "xcol_id": "xcol-012",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-022",
+      "xcol_id": "xcol-013",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-022",
+      "xcol_id": "xcol-014",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-023",
+      "xcol_id": "xcol-003",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-023",
+      "xcol_id": "xcol-004",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-023",
+      "xcol_id": "xcol-005",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-023",
+      "xcol_id": "xcol-007",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-023",
+      "xcol_id": "xcol-008",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-023",
+      "xcol_id": "xcol-009",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-023",
+      "xcol_id": "xcol-010",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-023",
+      "xcol_id": "xcol-011",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-023",
+      "xcol_id": "xcol-012",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-023",
+      "xcol_id": "xcol-013",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-023",
+      "xcol_id": "xcol-014",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-024",
+      "xcol_id": "xcol-003",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-024",
+      "xcol_id": "xcol-004",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-024",
+      "xcol_id": "xcol-005",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-024",
+      "xcol_id": "xcol-007",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-024",
+      "xcol_id": "xcol-008",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-024",
+      "xcol_id": "xcol-009",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-024",
+      "xcol_id": "xcol-010",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-024",
+      "xcol_id": "xcol-011",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-024",
+      "xcol_id": "xcol-012",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-024",
+      "xcol_id": "xcol-013",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-024",
+      "xcol_id": "xcol-014",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-025",
+      "xcol_id": "xcol-013",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-025",
+      "xcol_id": "xcol-014",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-026",
+      "xcol_id": "xcol-001",
+      "consolidated_value": "P",
+      "source_values": {
+        "1": "P"
+      }
+    },
+    {
+      "xact_id": "xact-026",
+      "xcol_id": "xcol-003",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-026",
+      "xcol_id": "xcol-008",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-026",
+      "xcol_id": "xcol-010",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-026",
+      "xcol_id": "xcol-012",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-026",
+      "xcol_id": "xcol-014",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-026",
+      "xcol_id": "xcol-015",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-027",
+      "xcol_id": "xcol-001",
+      "consolidated_value": "P",
+      "source_values": {
+        "1": "P"
+      }
+    },
+    {
+      "xact_id": "xact-027",
+      "xcol_id": "xcol-003",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-027",
+      "xcol_id": "xcol-008",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-027",
+      "xcol_id": "xcol-010",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-027",
+      "xcol_id": "xcol-012",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-027",
+      "xcol_id": "xcol-014",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-027",
+      "xcol_id": "xcol-015",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-028",
+      "xcol_id": "xcol-001",
+      "consolidated_value": "P",
+      "source_values": {
+        "1": "P"
+      }
+    },
+    {
+      "xact_id": "xact-028",
+      "xcol_id": "xcol-003",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-028",
+      "xcol_id": "xcol-008",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-028",
+      "xcol_id": "xcol-010",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-028",
+      "xcol_id": "xcol-012",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-028",
+      "xcol_id": "xcol-014",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-028",
+      "xcol_id": "xcol-015",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-029",
+      "xcol_id": "xcol-001",
+      "consolidated_value": "P",
+      "source_values": {
+        "1": "P"
+      }
+    },
+    {
+      "xact_id": "xact-029",
+      "xcol_id": "xcol-003",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-029",
+      "xcol_id": "xcol-004",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-029",
+      "xcol_id": "xcol-005",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-029",
+      "xcol_id": "xcol-007",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-029",
+      "xcol_id": "xcol-008",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-029",
+      "xcol_id": "xcol-009",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-029",
+      "xcol_id": "xcol-010",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-029",
+      "xcol_id": "xcol-011",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-029",
+      "xcol_id": "xcol-012",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-029",
+      "xcol_id": "xcol-013",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-029",
+      "xcol_id": "xcol-014",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-029",
+      "xcol_id": "xcol-015",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-030",
+      "xcol_id": "xcol-001",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-030",
+      "xcol_id": "xcol-002",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-030",
+      "xcol_id": "xcol-003",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-030",
+      "xcol_id": "xcol-004",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-030",
+      "xcol_id": "xcol-005",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-030",
+      "xcol_id": "xcol-007",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-030",
+      "xcol_id": "xcol-008",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-030",
+      "xcol_id": "xcol-009",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-030",
+      "xcol_id": "xcol-010",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-030",
+      "xcol_id": "xcol-011",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-030",
+      "xcol_id": "xcol-012",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-030",
+      "xcol_id": "xcol-013",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-030",
+      "xcol_id": "xcol-014",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-030",
+      "xcol_id": "xcol-015",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    }
+  ],
+  "unified_annotations": [
+    {
+      "xannot_id": "xannot-001",
+      "annotation_type": "legend",
+      "annotation_text": "Performed at this visit.",
+      "display_markers": "T1:X",
+      "source_occurrences": [
+        {
+          "table_num": 1,
+          "marker": "X",
+          "annotation_id": "annot-001"
+        }
+      ],
+      "referenced_xacts": [
+        "xact-001",
+        "xact-002",
+        "xact-003",
+        "xact-004",
+        "xact-005",
+        "xact-006",
+        "xact-007",
+        "xact-008",
+        "xact-009",
+        "xact-010",
+        "xact-011",
+        "xact-012",
+        "xact-013",
+        "xact-014",
+        "xact-015",
+        "xact-016",
+        "xact-017",
+        "xact-018",
+        "xact-019",
+        "xact-020",
+        "xact-022",
+        "xact-023",
+        "xact-024",
+        "xact-025",
+        "xact-026",
+        "xact-027",
+        "xact-028",
+        "xact-029",
+        "xact-030"
+      ],
+      "referenced_xcols": [],
+      "referenced_props": [],
+      "cell_references": [
+        {
+          "xact_id": "xact-001",
+          "xcol_id": "xcol-001"
+        },
+        {
+          "xact_id": "xact-002",
+          "xcol_id": "xcol-001"
+        },
+        {
+          "xact_id": "xact-003",
+          "xcol_id": "xcol-001"
+        },
+        {
+          "xact_id": "xact-004",
+          "xcol_id": "xcol-001"
+        },
+        {
+          "xact_id": "xact-005",
+          "xcol_id": "xcol-001"
+        },
+        {
+          "xact_id": "xact-005",
+          "xcol_id": "xcol-013"
+        },
+        {
+          "xact_id": "xact-005",
+          "xcol_id": "xcol-014"
+        },
+        {
+          "xact_id": "xact-006",
+          "xcol_id": "xcol-001"
+        },
+        {
+          "xact_id": "xact-007",
+          "xcol_id": "xcol-001"
+        },
+        {
+          "xact_id": "xact-008",
+          "xcol_id": "xcol-001"
+        },
+        {
+          "xact_id": "xact-009",
+          "xcol_id": "xcol-004"
+        },
+        {
+          "xact_id": "xact-010",
+          "xcol_id": "xcol-003"
+        },
+        {
+          "xact_id": "xact-011",
+          "xcol_id": "xcol-001"
+        },
+        {
+          "xact_id": "xact-011",
+          "xcol_id": "xcol-002"
+        },
+        {
+          "xact_id": "xact-011",
+          "xcol_id": "xcol-003"
+        },
+        {
+          "xact_id": "xact-011",
+          "xcol_id": "xcol-004"
+        },
+        {
+          "xact_id": "xact-011",
+          "xcol_id": "xcol-005"
+        },
+        {
+          "xact_id": "xact-011",
+          "xcol_id": "xcol-007"
+        },
+        {
+          "xact_id": "xact-011",
+          "xcol_id": "xcol-008"
+        },
+        {
+          "xact_id": "xact-011",
+          "xcol_id": "xcol-009"
+        },
+        {
+          "xact_id": "xact-011",
+          "xcol_id": "xcol-010"
+        },
+        {
+          "xact_id": "xact-011",
+          "xcol_id": "xcol-011"
+        },
+        {
+          "xact_id": "xact-011",
+          "xcol_id": "xcol-012"
+        },
+        {
+          "xact_id": "xact-011",
+          "xcol_id": "xcol-013"
+        },
+        {
+          "xact_id": "xact-011",
+          "xcol_id": "xcol-014"
+        },
+        {
+          "xact_id": "xact-011",
+          "xcol_id": "xcol-015"
+        },
+        {
+          "xact_id": "xact-012",
+          "xcol_id": "xcol-002"
+        },
+        {
+          "xact_id": "xact-013",
+          "xcol_id": "xcol-003"
+        },
+        {
+          "xact_id": "xact-014",
+          "xcol_id": "xcol-001"
+        },
+        {
+          "xact_id": "xact-014",
+          "xcol_id": "xcol-004"
+        },
+        {
+          "xact_id": "xact-014",
+          "xcol_id": "xcol-005"
+        },
+        {
+          "xact_id": "xact-014",
+          "xcol_id": "xcol-007"
+        },
+        {
+          "xact_id": "xact-014",
+          "xcol_id": "xcol-008"
+        },
+        {
+          "xact_id": "xact-014",
+          "xcol_id": "xcol-009"
+        },
+        {
+          "xact_id": "xact-014",
+          "xcol_id": "xcol-010"
+        },
+        {
+          "xact_id": "xact-014",
+          "xcol_id": "xcol-011"
+        },
+        {
+          "xact_id": "xact-014",
+          "xcol_id": "xcol-012"
+        },
+        {
+          "xact_id": "xact-014",
+          "xcol_id": "xcol-013"
+        },
+        {
+          "xact_id": "xact-014",
+          "xcol_id": "xcol-014"
+        },
+        {
+          "xact_id": "xact-015",
+          "xcol_id": "xcol-001"
+        },
+        {
+          "xact_id": "xact-016",
+          "xcol_id": "xcol-001"
+        },
+        {
+          "xact_id": "xact-017",
+          "xcol_id": "xcol-001"
+        },
+        {
+          "xact_id": "xact-017",
+          "xcol_id": "xcol-003"
+        },
+        {
+          "xact_id": "xact-017",
+          "xcol_id": "xcol-004"
+        },
+        {
+          "xact_id": "xact-017",
+          "xcol_id": "xcol-005"
+        },
+        {
+          "xact_id": "xact-017",
+          "xcol_id": "xcol-007"
+        },
+        {
+          "xact_id": "xact-017",
+          "xcol_id": "xcol-008"
+        },
+        {
+          "xact_id": "xact-017",
+          "xcol_id": "xcol-009"
+        },
+        {
+          "xact_id": "xact-017",
+          "xcol_id": "xcol-010"
+        },
+        {
+          "xact_id": "xact-017",
+          "xcol_id": "xcol-011"
+        },
+        {
+          "xact_id": "xact-017",
+          "xcol_id": "xcol-012"
+        },
+        {
+          "xact_id": "xact-017",
+          "xcol_id": "xcol-013"
+        },
+        {
+          "xact_id": "xact-017",
+          "xcol_id": "xcol-014"
+        },
+        {
+          "xact_id": "xact-017",
+          "xcol_id": "xcol-015"
+        },
+        {
+          "xact_id": "xact-018",
+          "xcol_id": "xcol-001"
+        },
+        {
+          "xact_id": "xact-018",
+          "xcol_id": "xcol-004"
+        },
+        {
+          "xact_id": "xact-018",
+          "xcol_id": "xcol-005"
+        },
+        {
+          "xact_id": "xact-018",
+          "xcol_id": "xcol-007"
+        },
+        {
+          "xact_id": "xact-018",
+          "xcol_id": "xcol-008"
+        },
+        {
+          "xact_id": "xact-018",
+          "xcol_id": "xcol-009"
+        },
+        {
+          "xact_id": "xact-018",
+          "xcol_id": "xcol-010"
+        },
+        {
+          "xact_id": "xact-018",
+          "xcol_id": "xcol-011"
+        },
+        {
+          "xact_id": "xact-018",
+          "xcol_id": "xcol-012"
+        },
+        {
+          "xact_id": "xact-018",
+          "xcol_id": "xcol-013"
+        },
+        {
+          "xact_id": "xact-018",
+          "xcol_id": "xcol-014"
+        },
+        {
+          "xact_id": "xact-019",
+          "xcol_id": "xcol-001"
+        },
+        {
+          "xact_id": "xact-019",
+          "xcol_id": "xcol-004"
+        },
+        {
+          "xact_id": "xact-019",
+          "xcol_id": "xcol-009"
+        },
+        {
+          "xact_id": "xact-019",
+          "xcol_id": "xcol-012"
+        },
+        {
+          "xact_id": "xact-019",
+          "xcol_id": "xcol-014"
+        },
+        {
+          "xact_id": "xact-020",
+          "xcol_id": "xcol-003"
+        },
+        {
+          "xact_id": "xact-020",
+          "xcol_id": "xcol-004"
+        },
+        {
+          "xact_id": "xact-020",
+          "xcol_id": "xcol-005"
+        },
+        {
+          "xact_id": "xact-020",
+          "xcol_id": "xcol-007"
+        },
+        {
+          "xact_id": "xact-020",
+          "xcol_id": "xcol-009"
+        },
+        {
+          "xact_id": "xact-020",
+          "xcol_id": "xcol-011"
+        },
+        {
+          "xact_id": "xact-020",
+          "xcol_id": "xcol-014"
+        },
+        {
+          "xact_id": "xact-022",
+          "xcol_id": "xcol-003"
+        },
+        {
+          "xact_id": "xact-022",
+          "xcol_id": "xcol-004"
+        },
+        {
+          "xact_id": "xact-022",
+          "xcol_id": "xcol-005"
+        },
+        {
+          "xact_id": "xact-022",
+          "xcol_id": "xcol-007"
+        },
+        {
+          "xact_id": "xact-022",
+          "xcol_id": "xcol-008"
+        },
+        {
+          "xact_id": "xact-022",
+          "xcol_id": "xcol-009"
+        },
+        {
+          "xact_id": "xact-022",
+          "xcol_id": "xcol-010"
+        },
+        {
+          "xact_id": "xact-022",
+          "xcol_id": "xcol-011"
+        },
+        {
+          "xact_id": "xact-022",
+          "xcol_id": "xcol-012"
+        },
+        {
+          "xact_id": "xact-022",
+          "xcol_id": "xcol-013"
+        },
+        {
+          "xact_id": "xact-022",
+          "xcol_id": "xcol-014"
+        },
+        {
+          "xact_id": "xact-023",
+          "xcol_id": "xcol-003"
+        },
+        {
+          "xact_id": "xact-023",
+          "xcol_id": "xcol-004"
+        },
+        {
+          "xact_id": "xact-023",
+          "xcol_id": "xcol-005"
+        },
+        {
+          "xact_id": "xact-023",
+          "xcol_id": "xcol-007"
+        },
+        {
+          "xact_id": "xact-023",
+          "xcol_id": "xcol-008"
+        },
+        {
+          "xact_id": "xact-023",
+          "xcol_id": "xcol-009"
+        },
+        {
+          "xact_id": "xact-023",
+          "xcol_id": "xcol-010"
+        },
+        {
+          "xact_id": "xact-023",
+          "xcol_id": "xcol-011"
+        },
+        {
+          "xact_id": "xact-023",
+          "xcol_id": "xcol-012"
+        },
+        {
+          "xact_id": "xact-023",
+          "xcol_id": "xcol-013"
+        },
+        {
+          "xact_id": "xact-023",
+          "xcol_id": "xcol-014"
+        },
+        {
+          "xact_id": "xact-024",
+          "xcol_id": "xcol-003"
+        },
+        {
+          "xact_id": "xact-024",
+          "xcol_id": "xcol-004"
+        },
+        {
+          "xact_id": "xact-024",
+          "xcol_id": "xcol-005"
+        },
+        {
+          "xact_id": "xact-024",
+          "xcol_id": "xcol-007"
+        },
+        {
+          "xact_id": "xact-024",
+          "xcol_id": "xcol-008"
+        },
+        {
+          "xact_id": "xact-024",
+          "xcol_id": "xcol-009"
+        },
+        {
+          "xact_id": "xact-024",
+          "xcol_id": "xcol-010"
+        },
+        {
+          "xact_id": "xact-024",
+          "xcol_id": "xcol-011"
+        },
+        {
+          "xact_id": "xact-024",
+          "xcol_id": "xcol-012"
+        },
+        {
+          "xact_id": "xact-024",
+          "xcol_id": "xcol-013"
+        },
+        {
+          "xact_id": "xact-024",
+          "xcol_id": "xcol-014"
+        },
+        {
+          "xact_id": "xact-025",
+          "xcol_id": "xcol-013"
+        },
+        {
+          "xact_id": "xact-025",
+          "xcol_id": "xcol-014"
+        },
+        {
+          "xact_id": "xact-026",
+          "xcol_id": "xcol-003"
+        },
+        {
+          "xact_id": "xact-026",
+          "xcol_id": "xcol-008"
+        },
+        {
+          "xact_id": "xact-026",
+          "xcol_id": "xcol-010"
+        },
+        {
+          "xact_id": "xact-026",
+          "xcol_id": "xcol-012"
+        },
+        {
+          "xact_id": "xact-026",
+          "xcol_id": "xcol-014"
+        },
+        {
+          "xact_id": "xact-026",
+          "xcol_id": "xcol-015"
+        },
+        {
+          "xact_id": "xact-027",
+          "xcol_id": "xcol-003"
+        },
+        {
+          "xact_id": "xact-027",
+          "xcol_id": "xcol-008"
+        },
+        {
+          "xact_id": "xact-027",
+          "xcol_id": "xcol-010"
+        },
+        {
+          "xact_id": "xact-027",
+          "xcol_id": "xcol-012"
+        },
+        {
+          "xact_id": "xact-027",
+          "xcol_id": "xcol-014"
+        },
+        {
+          "xact_id": "xact-027",
+          "xcol_id": "xcol-015"
+        },
+        {
+          "xact_id": "xact-028",
+          "xcol_id": "xcol-003"
+        },
+        {
+          "xact_id": "xact-028",
+          "xcol_id": "xcol-008"
+        },
+        {
+          "xact_id": "xact-028",
+          "xcol_id": "xcol-010"
+        },
+        {
+          "xact_id": "xact-028",
+          "xcol_id": "xcol-012"
+        },
+        {
+          "xact_id": "xact-028",
+          "xcol_id": "xcol-014"
+        },
+        {
+          "xact_id": "xact-028",
+          "xcol_id": "xcol-015"
+        },
+        {
+          "xact_id": "xact-029",
+          "xcol_id": "xcol-003"
+        },
+        {
+          "xact_id": "xact-029",
+          "xcol_id": "xcol-004"
+        },
+        {
+          "xact_id": "xact-029",
+          "xcol_id": "xcol-005"
+        },
+        {
+          "xact_id": "xact-029",
+          "xcol_id": "xcol-007"
+        },
+        {
+          "xact_id": "xact-029",
+          "xcol_id": "xcol-012"
+        },
+        {
+          "xact_id": "xact-029",
+          "xcol_id": "xcol-013"
+        },
+        {
+          "xact_id": "xact-029",
+          "xcol_id": "xcol-014"
+        },
+        {
+          "xact_id": "xact-029",
+          "xcol_id": "xcol-015"
+        },
+        {
+          "xact_id": "xact-030",
+          "xcol_id": "xcol-001"
+        },
+        {
+          "xact_id": "xact-030",
+          "xcol_id": "xcol-002"
+        },
+        {
+          "xact_id": "xact-030",
+          "xcol_id": "xcol-003"
+        },
+        {
+          "xact_id": "xact-030",
+          "xcol_id": "xcol-004"
+        },
+        {
+          "xact_id": "xact-030",
+          "xcol_id": "xcol-005"
+        },
+        {
+          "xact_id": "xact-030",
+          "xcol_id": "xcol-007"
+        },
+        {
+          "xact_id": "xact-030",
+          "xcol_id": "xcol-008"
+        },
+        {
+          "xact_id": "xact-030",
+          "xcol_id": "xcol-009"
+        },
+        {
+          "xact_id": "xact-030",
+          "xcol_id": "xcol-010"
+        },
+        {
+          "xact_id": "xact-030",
+          "xcol_id": "xcol-011"
+        },
+        {
+          "xact_id": "xact-030",
+          "xcol_id": "xcol-012"
+        },
+        {
+          "xact_id": "xact-030",
+          "xcol_id": "xcol-013"
+        },
+        {
+          "xact_id": "xact-030",
+          "xcol_id": "xcol-014"
+        },
+        {
+          "xact_id": "xact-030",
+          "xcol_id": "xcol-015"
+        }
+      ],
+      "occurrence_count": 1
+    },
+    {
+      "xannot_id": "xannot-002",
+      "annotation_type": "legend",
+      "annotation_text": "Performed at this visit if patient is an insulin-dependent diabetic.",
+      "display_markers": "T1:a",
+      "source_occurrences": [
+        {
+          "table_num": 1,
+          "marker": "a",
+          "annotation_id": "annot-002"
+        }
+      ],
+      "referenced_xacts": [
+        "xact-021"
+      ],
+      "referenced_xcols": [],
+      "referenced_props": [],
+      "cell_references": [
+        {
+          "xact_id": "xact-021",
+          "xcol_id": "xcol-001"
+        }
+      ],
+      "occurrence_count": 1
+    },
+    {
+      "xannot_id": "xannot-003",
+      "annotation_type": "legend",
+      "annotation_text": "Performed at this visit and via telephone interview 2 weeks following this visit.",
+      "display_markers": "T1:b",
+      "source_occurrences": [
+        {
+          "table_num": 1,
+          "marker": "b",
+          "annotation_id": "annot-003"
+        }
+      ],
+      "referenced_xacts": [
+        "xact-029"
+      ],
+      "referenced_xcols": [],
+      "referenced_props": [],
+      "cell_references": [
+        {
+          "xact_id": "xact-029",
+          "xcol_id": "xcol-008"
+        },
+        {
+          "xact_id": "xact-029",
+          "xcol_id": "xcol-009"
+        },
+        {
+          "xact_id": "xact-029",
+          "xcol_id": "xcol-010"
+        },
+        {
+          "xact_id": "xact-029",
+          "xcol_id": "xcol-011"
+        }
+      ],
+      "occurrence_count": 1
+    },
+    {
+      "xannot_id": "xannot-004",
+      "annotation_type": "legend",
+      "annotation_text": "Practice only - It is recommended that a sampling of the CIBIC+, ADAS-Cog, DAD, and NPI-X be administered at Visit 1. Data from this sampling would not be considered as study data and would not be collected.",
+      "display_markers": "T1:P",
+      "source_occurrences": [
+        {
+          "table_num": 1,
+          "marker": "P",
+          "annotation_id": "annot-004"
+        }
+      ],
+      "referenced_xacts": [
+        "xact-026",
+        "xact-027",
+        "xact-028",
+        "xact-029"
+      ],
+      "referenced_xcols": [],
+      "referenced_props": [],
+      "cell_references": [
+        {
+          "xact_id": "xact-026",
+          "xcol_id": "xcol-001"
+        },
+        {
+          "xact_id": "xact-027",
+          "xcol_id": "xcol-001"
+        },
+        {
+          "xact_id": "xact-028",
+          "xcol_id": "xcol-001"
+        },
+        {
+          "xact_id": "xact-029",
+          "xcol_id": "xcol-001"
+        }
+      ],
+      "occurrence_count": 1
+    }
+  ],
+  "review_items": [
+    {
+      "table_number": 1,
+      "id": "D1",
+      "severity": "high",
+      "location": {
+        "page": 53,
+        "row_positions": [
+          24,
+          25,
+          26
+        ]
+      },
+      "call_made": "'Study drug record', 'Medications dispensed' and 'Medications returned' are printed as three lines inside ONE rule-bounded row cell with a single X per visit column (printed on the first line). Extracted as three activities, each carrying the same X at visits 3, 4, 5, 7, 8, 9, 10, 11, 12, 13 and ET (the cell's mark applies to every label in the cell).",
+      "alternative": "Either (a) marks belong only to 'Study drug record' (the line the X is printed on) and 'Medications dispensed'/'Medications returned' carry no marks, or (b) the cell is a single activity 'Study drug record' whose extra lines are sub-items/descriptions rather than separate activities.",
+      "report_section": "3.2"
+    },
+    {
+      "table_number": 1,
+      "id": "D2",
+      "severity": "medium",
+      "location": {
+        "page": 53,
+        "column_position": 8
+      },
+      "call_made": "The physical column between Visit 5 (week 4) and Visit 7 (week 6) on page 53, which has empty VISIT and WEEK header cells and no marks in any row, is kept as data column 8 with empty values.",
+      "alternative": "Drop the empty column entirely (treat it as a presentation artefact, e.g. a deleted Visit 6), renumbering nothing else; or label it as an implied Visit 6 (not printed in the source).",
+      "report_section": "3.3"
+    },
+    {
+      "table_number": 1,
+      "id": "D3",
+      "severity": "low",
+      "location": {
+        "page": 54,
+        "column_position": 16,
+        "annotation_marker": "ab1"
+      },
+      "call_made": "Abbreviations ET (Early Termination) and RT (Retrieval) are kept as abbreviation annotations bound to the VISIT header cells that consist of exactly those terms (columns 16 and 17); CT and ECG from the same abbreviation line are dropped because they only occur inside activity labels.",
+      "alternative": "Drop ET/RT as well (treat the whole abbreviation line as a standalone list with no in-grid marker), or keep CT/ECG bound to the 'CT Scan', 'ECG' and 'Ambulatory ECG' activity labels.",
+      "report_section": "3.4"
+    }
+  ]
+};
+    
+    function escHtml(s) {
+        return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    }
+    
+    function renderJson(data, indent, isLast) {
+        const comma = isLast ? '' : '<span class="json-comma">,</span>';
+        if (data === null) return `<span class="json-null">null</span>${comma}`;
+        if (typeof data === 'boolean') return `<span class="json-boolean">${data}</span>${comma}`;
+        if (typeof data === 'number') return `<span class="json-number">${data}</span>${comma}`;
+        if (typeof data === 'string') return `<span class="json-string">"${escHtml(data)}"</span>${comma}`;
+        
+        const isArray = Array.isArray(data);
+        const entries = isArray ? data.map((v, i) => [i, v]) : Object.entries(data);
+        const open = isArray ? '[' : '{';
+        const close = isArray ? ']' : '}';
+        
+        if (entries.length === 0) {
+            return `<span class="json-bracket">${open}${close}</span>${comma}`;
+        }
+        
+        const id = 'n' + Math.random().toString(36).substr(2, 8);
+        let html = `<span class="json-toggle" data-target="${id}" onclick="toggleNode(this)">`;
+        html += `<span class="json-bracket">${open}</span></span>`;
+        html += `<div class="json-content" id="${id}">`;
+        
+        entries.forEach(([key, val], i) => {
+            const last = i === entries.length - 1;
+            const keyHtml = isArray ? '' : `<span class="json-key">"${escHtml(key)}"</span>: `;
+            html += `<div class="json-line">${keyHtml}${renderJson(val, indent + 1, last)}</div>`;
+        });
+        
+        html += `</div><span class="json-ellipsis"> ${entries.length} items… </span>`;
+        html += `<span class="json-bracket">${close}</span>${comma}`;
+        return html;
+    }
+    
+    function toggleNode(el) {
+        el.classList.toggle('collapsed');
+        const target = document.getElementById(el.dataset.target);
+        target.classList.toggle('hidden');
+    }
+    
+    // Render
+    const container = document.getElementById('json-container');
+    container.innerHTML = renderJson(jsonData, 0, true);
+    
+    // Stats
+    const jsonStr = JSON.stringify(jsonData);
+    const kb = (jsonStr.length / 1024).toFixed(1);
+    document.getElementById('stats').textContent = `${kb} KB`;
+    
+    // Auto-collapse large arrays/objects at depth > 1
+    document.querySelectorAll('.json-toggle').forEach(el => {
+        const content = document.getElementById(el.dataset.target);
+        if (content && content.children.length > 20) {
+            el.classList.add('collapsed');
+            content.classList.add('hidden');
+        }
+    });
+    
+    // Search
+    const searchInput = document.getElementById('search');
+    let searchTimeout;
+    searchInput.addEventListener('input', function() {
+        clearTimeout(searchTimeout);
+        searchTimeout = setTimeout(doSearch, 200);
+    });
+    
+    function doSearch() {
+        const term = searchInput.value.trim().toLowerCase();
+        const lines = container.querySelectorAll('.json-line');
+        
+        // Clear previous highlights
+        container.querySelectorAll('.highlight').forEach(el => {
+            el.outerHTML = el.textContent;
+        });
+        lines.forEach(l => l.classList.remove('search-no-match'));
+        
+        if (!term) return;
+        
+        // Expand all first
+        container.querySelectorAll('.json-toggle.collapsed').forEach(el => {
+            el.classList.remove('collapsed');
+            document.getElementById(el.dataset.target).classList.remove('hidden');
+        });
+        
+        lines.forEach(line => {
+            const text = line.textContent.toLowerCase();
+            if (text.includes(term)) {
+                // Highlight matches in text nodes
+                const walker = document.createTreeWalker(line, NodeFilter.SHOW_TEXT);
+                const textNodes = [];
+                while (walker.nextNode()) textNodes.push(walker.currentNode);
+                textNodes.forEach(node => {
+                    const idx = node.textContent.toLowerCase().indexOf(term);
+                    if (idx >= 0) {
+                        const span = document.createElement('span');
+                        span.className = 'highlight';
+                        const range = document.createRange();
+                        range.setStart(node, idx);
+                        range.setEnd(node, idx + term.length);
+                        range.surroundContents(span);
+                    }
+                });
+            } else {
+                line.classList.add('search-no-match');
+            }
+        });
+    }
+    </script>
+</body>
+</html>

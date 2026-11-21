@@ -1,0 +1,1975 @@
+{
+  "schema_name": "soa-tables-consolidated",
+  "schema_version": "1.7",
+  "protocol_id": "NCT05324124",
+  "consolidation_metadata": {
+    "consolidated_at": "2026-11-21T09:30:54.209008+00:00",
+    "consolidator": "soa_tables.consolidate v1.2",
+    "source_tables": [
+      {
+        "table_id": "table-001",
+        "table_num": 1,
+        "table_type": "main_soa",
+        "table_title": "Schedule of Activities (SoA)",
+        "table_purpose": "Main study schedule: screening, 11-day inpatient treatment period, ED and follow-up phone call",
+        "track_label": null,
+        "activity_count": 20,
+        "column_count": 15,
+        "annotation_count": 8,
+        "property_hierarchy": [
+          {
+            "hierarchical_level": 1,
+            "property_name": "Study period",
+            "property_type": "epoch",
+            "property_comment": "Top header band naming study phases: Screening (col 2), Treatment Period (merged across cols 3-15, Day -1 to ED), Follow-Up phone call (col 16). Phase names -> epoch. Label cell empty; name synthesized."
+          },
+          {
+            "hierarchical_level": 2,
+            "property_name": "Study day",
+            "property_type": "study_day",
+            "property_comment": "Study-day row: '-28 to -2 days prior to Day 1' (Screening), Day -1, Days 1-11, ED (early discontinuation), and for the Follow-Up column the window 'within 7 to 10 days after last dose' (vertically merged across rows 2-3 in the source). Numeric day labels -> study_day. The printed label cell reads 'Procedure', which heads the activity column, so the property name is synthesized."
+          },
+          {
+            "hierarchical_level": null,
+            "property_name": "Days",
+            "property_type": "other",
+            "property_comment": "Presentational band carrying the single spanning label 'Days' over cols 3-15, qualifying the numbers in row 3 as study days. It does not by itself distinguish any two columns, so hierarchical_level is null. Label cell empty; name taken from the spanning value."
+          }
+        ]
+      }
+    ],
+    "match_stats": {
+      "exact": 0,
+      "fuzzy_auto": 0,
+      "fuzzy_cross_parent": 0,
+      "fuzzy_review": 0,
+      "decision": 0,
+      "new": 20
+    },
+    "review_stats": {
+      "total": 0,
+      "open": 0,
+      "decided": 0,
+      "near_matches": 0
+    },
+    "source_activity_count": 20,
+    "unified_activity_count": 20,
+    "compression_percent": 0,
+    "annotation_stats": {
+      "source_annotation_count": 8,
+      "unified_annotation_count": 8,
+      "deduplicated_count": 0,
+      "deduplication_percent": 0,
+      "by_type": {
+        "footnote": 7,
+        "source_note": 1
+      }
+    }
+  },
+  "property_hierarchy": [
+    {
+      "property_id": "prop-001",
+      "property_type": "epoch",
+      "property_name": "Study period",
+      "hierarchical_level": 1,
+      "property_comment": "Top header band naming study phases: Screening (col 2), Treatment Period (merged across cols 3-15, Day -1 to ED), Follow-Up phone call (col 16). Phase names -> epoch. Label cell empty; name synthesized."
+    },
+    {
+      "property_id": "prop-003",
+      "property_type": "study_day",
+      "property_name": "Study day",
+      "hierarchical_level": 2,
+      "property_comment": "Study-day row: '-28 to -2 days prior to Day 1' (Screening), Day -1, Days 1-11, ED (early discontinuation), and for the Follow-Up column the window 'within 7 to 10 days after last dose' (vertically merged across rows 2-3 in the source). Numeric day labels -> study_day. The printed label cell reads 'Procedure', which heads the activity column, so the property name is synthesized."
+    },
+    {
+      "property_id": "prop-002",
+      "property_type": "other",
+      "property_name": "Days",
+      "hierarchical_level": null,
+      "property_comment": "Presentational band carrying the single spanning label 'Days' over cols 3-15, qualifying the numbers in row 3 as study days. It does not by itself distinguish any two columns, so hierarchical_level is null. Label cell empty; name taken from the spanning value."
+    }
+  ],
+  "review_queue": [],
+  "unified_activities": [
+    {
+      "xact_id": "xact-001",
+      "activity_name": "Informed consent",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 1,
+      "qualified_key": "::Informed consent",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-001",
+          "row_position": 4,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Informed consent"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-002",
+      "activity_name": "Inclusion and exclusion criteria",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 2,
+      "qualified_key": "::Inclusion and exclusion criteria",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-002",
+          "row_position": 5,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Inclusion and exclusion criteria"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-003",
+      "activity_name": "Demography",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 3,
+      "qualified_key": "::Demography",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-003",
+          "row_position": 6,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Demography"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-004",
+      "activity_name": "Participant admission to CRU",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 4,
+      "qualified_key": "::Participant admission to CRU",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-004",
+          "row_position": 7,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Participant admission to CRU"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-005",
+      "activity_name": "Participant discharge from CRU",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 5,
+      "qualified_key": "::Participant discharge from CRU",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-005",
+          "row_position": 8,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Participant discharge from CRU"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-006",
+      "activity_name": "Outpatient visit",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 6,
+      "qualified_key": "::Outpatient visit",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-006",
+          "row_position": 9,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Outpatient visit"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-007",
+      "activity_name": "Medical history",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 7,
+      "qualified_key": "::Medical history",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-007",
+          "row_position": 10,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Medical history"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-008",
+      "activity_name": "Medical assessment",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 8,
+      "qualified_key": "::Medical assessment",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-008",
+          "row_position": 11,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Medical assessment"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-009",
+      "activity_name": "Height and weight",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 9,
+      "qualified_key": "::Height and weight",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-009",
+          "row_position": 12,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Height and weight"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-010",
+      "activity_name": "Serum or urine pregnancy test (women of childbearing potential only)",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 10,
+      "qualified_key": "::Serum or urine pregnancy test (women of childbearing potential only)",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-010",
+          "row_position": 13,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Serum or urine pregnancy test (women of childbearing potential only)"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-011",
+      "activity_name": "Follicle-stimulating hormone (women of non-childbearing potential only)",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 11,
+      "qualified_key": "::Follicle-stimulating hormone (women of non-childbearing potential only)",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-011",
+          "row_position": 14,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Follicle-stimulating hormone (women of non-childbearing potential only)"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-012",
+      "activity_name": "Human immunodeficiency virus, hepatitis B and C screen",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 12,
+      "qualified_key": "::Human immunodeficiency virus, hepatitis B and C screen",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-012",
+          "row_position": 15,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Human immunodeficiency virus, hepatitis B and C screen"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-013",
+      "activity_name": "12-lead ECG",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 13,
+      "qualified_key": "::12-lead ECG",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-013",
+          "row_position": 16,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "12-lead ECG"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-014",
+      "activity_name": "Vital signs (supine), pulse rate, and blood pressure",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 14,
+      "qualified_key": "::Vital signs (supine), pulse rate, and blood pressure",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-014",
+          "row_position": 17,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Vital signs (supine), pulse rate, and blood pressure"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-015",
+      "activity_name": "Clinical laboratory tests",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 15,
+      "qualified_key": "::Clinical laboratory tests",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-015",
+          "row_position": 18,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Clinical laboratory tests"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-016",
+      "activity_name": "Genetic sample",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 16,
+      "qualified_key": "::Genetic sample",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-016",
+          "row_position": 19,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Genetic sample"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-017",
+      "activity_name": "Selpercatinib administration",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 17,
+      "qualified_key": "::Selpercatinib administration",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-017",
+          "row_position": 20,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Selpercatinib administration"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-018",
+      "activity_name": "Adverse event /Serious adverse event review",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 18,
+      "qualified_key": "::Adverse event /Serious adverse event review",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-018",
+          "row_position": 21,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Adverse event /Serious adverse event review"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-019",
+      "activity_name": "Concomitant medication review",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 19,
+      "qualified_key": "::Concomitant medication review",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-019",
+          "row_position": 22,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Concomitant medication review"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-020",
+      "activity_name": "CCI",
+      "parent_name": "Concomitant medication review",
+      "parent_xact_id": "xact-019",
+      "hierarchy_level": 1,
+      "display_order": 20,
+      "qualified_key": "Concomitant medication review::CCI",
+      "is_section_header": false,
+      "is_redacted": true,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-020",
+          "row_position": 23,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "CCI"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    }
+  ],
+  "timeline_segments": {
+    "main": [
+      {
+        "xcol_id": "xcol-001",
+        "composite_label": "Screening / -28 to -2 days prior to Day 1",
+        "segment": "main",
+        "population_track": null,
+        "property_values": [
+          {
+            "level": 1,
+            "property_type": "epoch",
+            "property_name": "Study period",
+            "value": "Screening"
+          },
+          {
+            "level": 2,
+            "property_type": "study_day",
+            "property_name": "Study day",
+            "value": "-28 to -2 days prior to Day 1"
+          },
+          {
+            "level": null,
+            "property_type": "other",
+            "property_name": "Days",
+            "value": ""
+          }
+        ],
+        "source_columns": [
+          {
+            "table_id": "table-001",
+            "table_num": 1,
+            "column_id": "col-002",
+            "column_position": 2
+          }
+        ]
+      },
+      {
+        "xcol_id": "xcol-002",
+        "composite_label": "Treatment Period / Days / -1",
+        "segment": "main",
+        "population_track": null,
+        "property_values": [
+          {
+            "level": 1,
+            "property_type": "epoch",
+            "property_name": "Study period",
+            "value": "Treatment Period"
+          },
+          {
+            "level": 2,
+            "property_type": "study_day",
+            "property_name": "Study day",
+            "value": "-1"
+          },
+          {
+            "level": null,
+            "property_type": "other",
+            "property_name": "Days",
+            "value": "Days"
+          }
+        ],
+        "source_columns": [
+          {
+            "table_id": "table-001",
+            "table_num": 1,
+            "column_id": "col-003",
+            "column_position": 3
+          }
+        ]
+      },
+      {
+        "xcol_id": "xcol-003",
+        "composite_label": "Treatment Period / Days / 1",
+        "segment": "main",
+        "population_track": null,
+        "property_values": [
+          {
+            "level": 1,
+            "property_type": "epoch",
+            "property_name": "Study period",
+            "value": "Treatment Period"
+          },
+          {
+            "level": 2,
+            "property_type": "study_day",
+            "property_name": "Study day",
+            "value": "1"
+          },
+          {
+            "level": null,
+            "property_type": "other",
+            "property_name": "Days",
+            "value": "Days"
+          }
+        ],
+        "source_columns": [
+          {
+            "table_id": "table-001",
+            "table_num": 1,
+            "column_id": "col-004",
+            "column_position": 4
+          }
+        ]
+      },
+      {
+        "xcol_id": "xcol-004",
+        "composite_label": "Treatment Period / Days / 2",
+        "segment": "main",
+        "population_track": null,
+        "property_values": [
+          {
+            "level": 1,
+            "property_type": "epoch",
+            "property_name": "Study period",
+            "value": "Treatment Period"
+          },
+          {
+            "level": 2,
+            "property_type": "study_day",
+            "property_name": "Study day",
+            "value": "2"
+          },
+          {
+            "level": null,
+            "property_type": "other",
+            "property_name": "Days",
+            "value": "Days"
+          }
+        ],
+        "source_columns": [
+          {
+            "table_id": "table-001",
+            "table_num": 1,
+            "column_id": "col-005",
+            "column_position": 5
+          }
+        ]
+      },
+      {
+        "xcol_id": "xcol-005",
+        "composite_label": "Treatment Period / Days / 3",
+        "segment": "main",
+        "population_track": null,
+        "property_values": [
+          {
+            "level": 1,
+            "property_type": "epoch",
+            "property_name": "Study period",
+            "value": "Treatment Period"
+          },
+          {
+            "level": 2,
+            "property_type": "study_day",
+            "property_name": "Study day",
+            "value": "3"
+          },
+          {
+            "level": null,
+            "property_type": "other",
+            "property_name": "Days",
+            "value": "Days"
+          }
+        ],
+        "source_columns": [
+          {
+            "table_id": "table-001",
+            "table_num": 1,
+            "column_id": "col-006",
+            "column_position": 6
+          }
+        ]
+      },
+      {
+        "xcol_id": "xcol-006",
+        "composite_label": "Treatment Period / Days / 4",
+        "segment": "main",
+        "population_track": null,
+        "property_values": [
+          {
+            "level": 1,
+            "property_type": "epoch",
+            "property_name": "Study period",
+            "value": "Treatment Period"
+          },
+          {
+            "level": 2,
+            "property_type": "study_day",
+            "property_name": "Study day",
+            "value": "4"
+          },
+          {
+            "level": null,
+            "property_type": "other",
+            "property_name": "Days",
+            "value": "Days"
+          }
+        ],
+        "source_columns": [
+          {
+            "table_id": "table-001",
+            "table_num": 1,
+            "column_id": "col-007",
+            "column_position": 7
+          }
+        ]
+      },
+      {
+        "xcol_id": "xcol-007",
+        "composite_label": "Treatment Period / Days / 5",
+        "segment": "main",
+        "population_track": null,
+        "property_values": [
+          {
+            "level": 1,
+            "property_type": "epoch",
+            "property_name": "Study period",
+            "value": "Treatment Period"
+          },
+          {
+            "level": 2,
+            "property_type": "study_day",
+            "property_name": "Study day",
+            "value": "5"
+          },
+          {
+            "level": null,
+            "property_type": "other",
+            "property_name": "Days",
+            "value": "Days"
+          }
+        ],
+        "source_columns": [
+          {
+            "table_id": "table-001",
+            "table_num": 1,
+            "column_id": "col-008",
+            "column_position": 8
+          }
+        ]
+      },
+      {
+        "xcol_id": "xcol-008",
+        "composite_label": "Treatment Period / Days / 6",
+        "segment": "main",
+        "population_track": null,
+        "property_values": [
+          {
+            "level": 1,
+            "property_type": "epoch",
+            "property_name": "Study period",
+            "value": "Treatment Period"
+          },
+          {
+            "level": 2,
+            "property_type": "study_day",
+            "property_name": "Study day",
+            "value": "6"
+          },
+          {
+            "level": null,
+            "property_type": "other",
+            "property_name": "Days",
+            "value": "Days"
+          }
+        ],
+        "source_columns": [
+          {
+            "table_id": "table-001",
+            "table_num": 1,
+            "column_id": "col-009",
+            "column_position": 9
+          }
+        ]
+      },
+      {
+        "xcol_id": "xcol-009",
+        "composite_label": "Treatment Period / Days / 7",
+        "segment": "main",
+        "population_track": null,
+        "property_values": [
+          {
+            "level": 1,
+            "property_type": "epoch",
+            "property_name": "Study period",
+            "value": "Treatment Period"
+          },
+          {
+            "level": 2,
+            "property_type": "study_day",
+            "property_name": "Study day",
+            "value": "7"
+          },
+          {
+            "level": null,
+            "property_type": "other",
+            "property_name": "Days",
+            "value": "Days"
+          }
+        ],
+        "source_columns": [
+          {
+            "table_id": "table-001",
+            "table_num": 1,
+            "column_id": "col-010",
+            "column_position": 10
+          }
+        ]
+      },
+      {
+        "xcol_id": "xcol-010",
+        "composite_label": "Treatment Period / Days / 8",
+        "segment": "main",
+        "population_track": null,
+        "property_values": [
+          {
+            "level": 1,
+            "property_type": "epoch",
+            "property_name": "Study period",
+            "value": "Treatment Period"
+          },
+          {
+            "level": 2,
+            "property_type": "study_day",
+            "property_name": "Study day",
+            "value": "8"
+          },
+          {
+            "level": null,
+            "property_type": "other",
+            "property_name": "Days",
+            "value": "Days"
+          }
+        ],
+        "source_columns": [
+          {
+            "table_id": "table-001",
+            "table_num": 1,
+            "column_id": "col-011",
+            "column_position": 11
+          }
+        ]
+      },
+      {
+        "xcol_id": "xcol-011",
+        "composite_label": "Treatment Period / Days / 9",
+        "segment": "main",
+        "population_track": null,
+        "property_values": [
+          {
+            "level": 1,
+            "property_type": "epoch",
+            "property_name": "Study period",
+            "value": "Treatment Period"
+          },
+          {
+            "level": 2,
+            "property_type": "study_day",
+            "property_name": "Study day",
+            "value": "9"
+          },
+          {
+            "level": null,
+            "property_type": "other",
+            "property_name": "Days",
+            "value": "Days"
+          }
+        ],
+        "source_columns": [
+          {
+            "table_id": "table-001",
+            "table_num": 1,
+            "column_id": "col-012",
+            "column_position": 12
+          }
+        ]
+      },
+      {
+        "xcol_id": "xcol-012",
+        "composite_label": "Treatment Period / Days / 10",
+        "segment": "main",
+        "population_track": null,
+        "property_values": [
+          {
+            "level": 1,
+            "property_type": "epoch",
+            "property_name": "Study period",
+            "value": "Treatment Period"
+          },
+          {
+            "level": 2,
+            "property_type": "study_day",
+            "property_name": "Study day",
+            "value": "10"
+          },
+          {
+            "level": null,
+            "property_type": "other",
+            "property_name": "Days",
+            "value": "Days"
+          }
+        ],
+        "source_columns": [
+          {
+            "table_id": "table-001",
+            "table_num": 1,
+            "column_id": "col-013",
+            "column_position": 13
+          }
+        ]
+      },
+      {
+        "xcol_id": "xcol-013",
+        "composite_label": "Treatment Period / Days / 11",
+        "segment": "main",
+        "population_track": null,
+        "property_values": [
+          {
+            "level": 1,
+            "property_type": "epoch",
+            "property_name": "Study period",
+            "value": "Treatment Period"
+          },
+          {
+            "level": 2,
+            "property_type": "study_day",
+            "property_name": "Study day",
+            "value": "11"
+          },
+          {
+            "level": null,
+            "property_type": "other",
+            "property_name": "Days",
+            "value": "Days"
+          }
+        ],
+        "source_columns": [
+          {
+            "table_id": "table-001",
+            "table_num": 1,
+            "column_id": "col-014",
+            "column_position": 14
+          }
+        ]
+      },
+      {
+        "xcol_id": "xcol-014",
+        "composite_label": "Treatment Period / Days / ED",
+        "segment": "main",
+        "population_track": null,
+        "property_values": [
+          {
+            "level": 1,
+            "property_type": "epoch",
+            "property_name": "Study period",
+            "value": "Treatment Period"
+          },
+          {
+            "level": 2,
+            "property_type": "study_day",
+            "property_name": "Study day",
+            "value": "ED"
+          },
+          {
+            "level": null,
+            "property_type": "other",
+            "property_name": "Days",
+            "value": "Days"
+          }
+        ],
+        "source_columns": [
+          {
+            "table_id": "table-001",
+            "table_num": 1,
+            "column_id": "col-015",
+            "column_position": 15
+          }
+        ]
+      },
+      {
+        "xcol_id": "xcol-015",
+        "composite_label": "Follow-Up phone call / within 7 to 10 days after last dose",
+        "segment": "main",
+        "population_track": null,
+        "property_values": [
+          {
+            "level": 1,
+            "property_type": "epoch",
+            "property_name": "Study period",
+            "value": "Follow-Up phone call"
+          },
+          {
+            "level": 2,
+            "property_type": "study_day",
+            "property_name": "Study day",
+            "value": "within 7 to 10 days after last dose"
+          },
+          {
+            "level": null,
+            "property_type": "other",
+            "property_name": "Days",
+            "value": ""
+          }
+        ],
+        "source_columns": [
+          {
+            "table_id": "table-001",
+            "table_num": 1,
+            "column_id": "col-016",
+            "column_position": 16
+          }
+        ]
+      }
+    ]
+  },
+  "schedule_matrix": [
+    {
+      "xact_id": "xact-001",
+      "xcol_id": "xcol-001",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-002",
+      "xcol_id": "xcol-001",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-003",
+      "xcol_id": "xcol-001",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-004",
+      "xcol_id": "xcol-002",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-005",
+      "xcol_id": "xcol-013",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-006",
+      "xcol_id": "xcol-001",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-007",
+      "xcol_id": "xcol-001",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-008",
+      "xcol_id": "xcol-001",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-008",
+      "xcol_id": "xcol-003",
+      "consolidated_value": "P",
+      "source_values": {
+        "1": "P"
+      }
+    },
+    {
+      "xact_id": "xact-008",
+      "xcol_id": "xcol-010",
+      "consolidated_value": "P",
+      "source_values": {
+        "1": "P"
+      }
+    },
+    {
+      "xact_id": "xact-008",
+      "xcol_id": "xcol-013",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-008",
+      "xcol_id": "xcol-014",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-009",
+      "xcol_id": "xcol-001",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-009",
+      "xcol_id": "xcol-013",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-009",
+      "xcol_id": "xcol-014",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-010",
+      "xcol_id": "xcol-001",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-010",
+      "xcol_id": "xcol-002",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-010",
+      "xcol_id": "xcol-013",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-010",
+      "xcol_id": "xcol-014",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-011",
+      "xcol_id": "xcol-001",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-012",
+      "xcol_id": "xcol-001",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-013",
+      "xcol_id": "xcol-001",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-013",
+      "xcol_id": "xcol-003",
+      "consolidated_value": "P, 2h",
+      "source_values": {
+        "1": "P, 2h"
+      }
+    },
+    {
+      "xact_id": "xact-013",
+      "xcol_id": "xcol-005",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-013",
+      "xcol_id": "xcol-010",
+      "consolidated_value": "P, 2h",
+      "source_values": {
+        "1": "P, 2h"
+      }
+    },
+    {
+      "xact_id": "xact-013",
+      "xcol_id": "xcol-012",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-013",
+      "xcol_id": "xcol-013",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-013",
+      "xcol_id": "xcol-014",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-014",
+      "xcol_id": "xcol-001",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-014",
+      "xcol_id": "xcol-003",
+      "consolidated_value": "P, 1, 2h",
+      "source_values": {
+        "1": "P, 1, 2h"
+      }
+    },
+    {
+      "xact_id": "xact-014",
+      "xcol_id": "xcol-004",
+      "consolidated_value": "24h",
+      "source_values": {
+        "1": "24h"
+      }
+    },
+    {
+      "xact_id": "xact-014",
+      "xcol_id": "xcol-005",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-014",
+      "xcol_id": "xcol-006",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-014",
+      "xcol_id": "xcol-010",
+      "consolidated_value": "P, 1,2h",
+      "source_values": {
+        "1": "P, 1,2h"
+      }
+    },
+    {
+      "xact_id": "xact-014",
+      "xcol_id": "xcol-011",
+      "consolidated_value": "24h",
+      "source_values": {
+        "1": "24h"
+      }
+    },
+    {
+      "xact_id": "xact-014",
+      "xcol_id": "xcol-012",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-014",
+      "xcol_id": "xcol-013",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-014",
+      "xcol_id": "xcol-014",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-015",
+      "xcol_id": "xcol-001",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-015",
+      "xcol_id": "xcol-003",
+      "consolidated_value": "P",
+      "source_values": {
+        "1": "P"
+      }
+    },
+    {
+      "xact_id": "xact-015",
+      "xcol_id": "xcol-004",
+      "consolidated_value": "24h",
+      "source_values": {
+        "1": "24h"
+      }
+    },
+    {
+      "xact_id": "xact-015",
+      "xcol_id": "xcol-006",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-015",
+      "xcol_id": "xcol-010",
+      "consolidated_value": "P",
+      "source_values": {
+        "1": "P"
+      }
+    },
+    {
+      "xact_id": "xact-015",
+      "xcol_id": "xcol-011",
+      "consolidated_value": "24h",
+      "source_values": {
+        "1": "24h"
+      }
+    },
+    {
+      "xact_id": "xact-015",
+      "xcol_id": "xcol-013",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-015",
+      "xcol_id": "xcol-014",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-016",
+      "xcol_id": "xcol-003",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-017",
+      "xcol_id": "xcol-003",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-017",
+      "xcol_id": "xcol-010",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-018",
+      "xcol_id": "xcol-001",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-018",
+      "xcol_id": "xcol-002",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-018",
+      "xcol_id": "xcol-003",
+      "consolidated_value": "↔",
+      "source_values": {
+        "1": "↔"
+      }
+    },
+    {
+      "xact_id": "xact-018",
+      "xcol_id": "xcol-004",
+      "consolidated_value": "↔",
+      "source_values": {
+        "1": "↔"
+      }
+    },
+    {
+      "xact_id": "xact-018",
+      "xcol_id": "xcol-005",
+      "consolidated_value": "↔",
+      "source_values": {
+        "1": "↔"
+      }
+    },
+    {
+      "xact_id": "xact-018",
+      "xcol_id": "xcol-006",
+      "consolidated_value": "↔",
+      "source_values": {
+        "1": "↔"
+      }
+    },
+    {
+      "xact_id": "xact-018",
+      "xcol_id": "xcol-007",
+      "consolidated_value": "↔",
+      "source_values": {
+        "1": "↔"
+      }
+    },
+    {
+      "xact_id": "xact-018",
+      "xcol_id": "xcol-008",
+      "consolidated_value": "↔",
+      "source_values": {
+        "1": "↔"
+      }
+    },
+    {
+      "xact_id": "xact-018",
+      "xcol_id": "xcol-009",
+      "consolidated_value": "↔",
+      "source_values": {
+        "1": "↔"
+      }
+    },
+    {
+      "xact_id": "xact-018",
+      "xcol_id": "xcol-010",
+      "consolidated_value": "↔",
+      "source_values": {
+        "1": "↔"
+      }
+    },
+    {
+      "xact_id": "xact-018",
+      "xcol_id": "xcol-011",
+      "consolidated_value": "↔",
+      "source_values": {
+        "1": "↔"
+      }
+    },
+    {
+      "xact_id": "xact-018",
+      "xcol_id": "xcol-012",
+      "consolidated_value": "↔",
+      "source_values": {
+        "1": "↔"
+      }
+    },
+    {
+      "xact_id": "xact-018",
+      "xcol_id": "xcol-013",
+      "consolidated_value": "↔",
+      "source_values": {
+        "1": "↔"
+      }
+    },
+    {
+      "xact_id": "xact-018",
+      "xcol_id": "xcol-014",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-019",
+      "xcol_id": "xcol-001",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-019",
+      "xcol_id": "xcol-002",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-019",
+      "xcol_id": "xcol-003",
+      "consolidated_value": "↔",
+      "source_values": {
+        "1": "↔"
+      }
+    },
+    {
+      "xact_id": "xact-019",
+      "xcol_id": "xcol-004",
+      "consolidated_value": "↔",
+      "source_values": {
+        "1": "↔"
+      }
+    },
+    {
+      "xact_id": "xact-019",
+      "xcol_id": "xcol-005",
+      "consolidated_value": "↔",
+      "source_values": {
+        "1": "↔"
+      }
+    },
+    {
+      "xact_id": "xact-019",
+      "xcol_id": "xcol-006",
+      "consolidated_value": "↔",
+      "source_values": {
+        "1": "↔"
+      }
+    },
+    {
+      "xact_id": "xact-019",
+      "xcol_id": "xcol-007",
+      "consolidated_value": "↔",
+      "source_values": {
+        "1": "↔"
+      }
+    },
+    {
+      "xact_id": "xact-019",
+      "xcol_id": "xcol-008",
+      "consolidated_value": "↔",
+      "source_values": {
+        "1": "↔"
+      }
+    },
+    {
+      "xact_id": "xact-019",
+      "xcol_id": "xcol-009",
+      "consolidated_value": "↔",
+      "source_values": {
+        "1": "↔"
+      }
+    },
+    {
+      "xact_id": "xact-019",
+      "xcol_id": "xcol-010",
+      "consolidated_value": "↔",
+      "source_values": {
+        "1": "↔"
+      }
+    },
+    {
+      "xact_id": "xact-019",
+      "xcol_id": "xcol-011",
+      "consolidated_value": "↔",
+      "source_values": {
+        "1": "↔"
+      }
+    },
+    {
+      "xact_id": "xact-019",
+      "xcol_id": "xcol-012",
+      "consolidated_value": "↔",
+      "source_values": {
+        "1": "↔"
+      }
+    },
+    {
+      "xact_id": "xact-019",
+      "xcol_id": "xcol-013",
+      "consolidated_value": "↔",
+      "source_values": {
+        "1": "↔"
+      }
+    },
+    {
+      "xact_id": "xact-019",
+      "xcol_id": "xcol-014",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    }
+  ],
+  "unified_annotations": [
+    {
+      "xannot_id": "xannot-001",
+      "annotation_type": "footnote",
+      "annotation_text": "A study participant may be required to stay later than Day 11 for management or monitoring of an AE or a clinically significant finding, at the discretion of the investigator.",
+      "display_markers": "T1:cm1",
+      "source_occurrences": [
+        {
+          "table_num": 1,
+          "marker": "cm1",
+          "annotation_id": "annot-001"
+        }
+      ],
+      "referenced_xacts": [
+        "xact-005"
+      ],
+      "referenced_xcols": [],
+      "referenced_props": [],
+      "cell_references": [],
+      "occurrence_count": 1
+    },
+    {
+      "xannot_id": "xannot-002",
+      "annotation_type": "footnote",
+      "annotation_text": "Full medical assessment to be performed at screening, and symptom driven examination to be done at other/any time point at physician’s discretion.",
+      "display_markers": "T1:cm2",
+      "source_occurrences": [
+        {
+          "table_num": 1,
+          "marker": "cm2",
+          "annotation_id": "annot-002"
+        }
+      ],
+      "referenced_xacts": [
+        "xact-008"
+      ],
+      "referenced_xcols": [],
+      "referenced_props": [],
+      "cell_references": [],
+      "occurrence_count": 1
+    },
+    {
+      "xannot_id": "xannot-003",
+      "annotation_type": "footnote",
+      "annotation_text": "Height and weight to be measured at screening; weight only to be measured at Day 11 or ED as appropriate.",
+      "display_markers": "T1:cm3",
+      "source_occurrences": [
+        {
+          "table_num": 1,
+          "marker": "cm3",
+          "annotation_id": "annot-003"
+        }
+      ],
+      "referenced_xacts": [
+        "xact-009"
+      ],
+      "referenced_xcols": [],
+      "referenced_props": [],
+      "cell_references": [],
+      "occurrence_count": 1
+    },
+    {
+      "xannot_id": "xannot-004",
+      "annotation_type": "footnote",
+      "annotation_text": "Serum pregnancy tests will be performed at screening and urine pregnancy test at all other time points",
+      "display_markers": "T1:cm4",
+      "source_occurrences": [
+        {
+          "table_num": 1,
+          "marker": "cm4",
+          "annotation_id": "annot-004"
+        }
+      ],
+      "referenced_xacts": [
+        "xact-010"
+      ],
+      "referenced_xcols": [],
+      "referenced_props": [],
+      "cell_references": [],
+      "occurrence_count": 1
+    },
+    {
+      "xannot_id": "xannot-005",
+      "annotation_type": "footnote",
+      "annotation_text": "Single ECGs are required.",
+      "display_markers": "T1:cm5",
+      "source_occurrences": [
+        {
+          "table_num": 1,
+          "marker": "cm5",
+          "annotation_id": "annot-005"
+        }
+      ],
+      "referenced_xacts": [
+        "xact-013"
+      ],
+      "referenced_xcols": [],
+      "referenced_props": [],
+      "cell_references": [],
+      "occurrence_count": 1
+    },
+    {
+      "xannot_id": "xannot-006",
+      "annotation_type": "footnote",
+      "annotation_text": "Time points may be added, if warranted and agreed upon between Lilly and the investigator.",
+      "display_markers": "T1:cm6",
+      "source_occurrences": [
+        {
+          "table_num": 1,
+          "marker": "cm6",
+          "annotation_id": "annot-006"
+        }
+      ],
+      "referenced_xacts": [
+        "xact-014"
+      ],
+      "referenced_xcols": [],
+      "referenced_props": [],
+      "cell_references": [],
+      "occurrence_count": 1
+    },
+    {
+      "xannot_id": "xannot-007",
+      "annotation_type": "source_note",
+      "annotation_text": "See Appendix 10.2, Clinical Laboratory Tests, for details.",
+      "display_markers": "T1:cm7",
+      "source_occurrences": [
+        {
+          "table_num": 1,
+          "marker": "cm7",
+          "annotation_id": "annot-007"
+        }
+      ],
+      "referenced_xacts": [
+        "xact-015"
+      ],
+      "referenced_xcols": [],
+      "referenced_props": [],
+      "cell_references": [],
+      "occurrence_count": 1,
+      "document_references": [
+        {
+          "kind": "appendix",
+          "target": "10.2"
+        }
+      ]
+    },
+    {
+      "xannot_id": "xannot-008",
+      "annotation_type": "footnote",
+      "annotation_text": "Participant consumes high-fat meal within 30 minutes prior to dose based on randomization.",
+      "display_markers": "T1:cm8",
+      "source_occurrences": [
+        {
+          "table_num": 1,
+          "marker": "cm8",
+          "annotation_id": "annot-008"
+        }
+      ],
+      "referenced_xacts": [
+        "xact-017"
+      ],
+      "referenced_xcols": [],
+      "referenced_props": [],
+      "cell_references": [],
+      "occurrence_count": 1
+    }
+  ],
+  "review_items": [
+    {
+      "table_number": 1,
+      "id": "D1",
+      "severity": "high",
+      "location": {
+        "page": 12,
+        "row_positions": [
+          19,
+          20
+        ]
+      },
+      "call_made": "The black 'CCI' redaction box between 'Genetic sample' and 'Selpercatinib administration' (full table width) is treated as hiding unknown content; no activity rows were created for it.",
+      "alternative": "Add one or more placeholder activity rows (e.g. 'Redacted (CCI)') with no marks, so the concealed rows are represented in the schedule.",
+      "report_section": "3.1"
+    },
+    {
+      "table_number": 1,
+      "id": "D2",
+      "severity": "high",
+      "location": {
+        "page": 12,
+        "row_positions": [
+          21,
+          22
+        ]
+      },
+      "call_made": "The double-headed arrow in 'Adverse event /Serious adverse event review' and 'Concomitant medication review' is recorded as one merged cell covering Day 1 to Day 11 (columns 4-14), and is distributed as '↔' to each of those 11 columns.",
+      "alternative": "Limit the arrow to the columns the drawn arrow physically crosses (tip-to-tip roughly Day 1 to Day 10) instead of the full merged cell.",
+      "report_section": "3.2"
+    },
+    {
+      "table_number": 1,
+      "id": "D3",
+      "severity": "medium",
+      "location": {
+        "page": 9,
+        "row_positions": [
+          2,
+          3
+        ],
+        "column_position": 16
+      },
+      "call_made": "The Follow-Up column's text 'within 7 to 10 days after last dose', printed in a cell merged down across header rows 2-3, is stored on the study-day row (row 3); row 2 is left empty for that column.",
+      "alternative": "Store it as a separate visit-window property, or on row 2, since the source cell spans both rows.",
+      "report_section": "3.3"
+    },
+    {
+      "table_number": 1,
+      "id": "D4",
+      "severity": "low",
+      "location": {
+        "page": 12
+      },
+      "call_made": "The abbreviation line under the table (CRU, ECG, ED, h; tail redacted as CCI) is not emitted as annotations, because none of these terms is printed as a marker; they only occur as ordinary words in labels and cells.",
+      "alternative": "Emit abbreviation annotations ab1-ab4 (CRU, ECG, ED, h) bound to the labels/cells where those words appear.",
+      "report_section": "3.4"
+    }
+  ]
+}

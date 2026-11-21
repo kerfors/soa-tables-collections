@@ -1,0 +1,66 @@
+{
+ "schema_name": "soa-table-corrections",
+ "schema_version": "1.0",
+ "target_extraction": "NCT05324124_Table_01_extraction.json",
+ "corrections": [
+  {
+   "id": "corr-023",
+   "target": "activities",
+   "op": "add",
+   "set": {
+    "table_number": 1,
+    "row_position": 23,
+    "source_page": 12,
+    "activity_name": "CCI",
+    "activity_name_source": {
+     "cell_text": "CCI",
+     "indentation_level": 1,
+     "method": "visual_transcription"
+    }
+   },
+   "reason": "Full-width redaction band (y ~ 222-363 pt, doc p.12) between the 'Genetic sample' and 'Selpercatinib administration' rows conceals at least one activity row, which the re-extraction deliberately did not emit. At ~141 pt against ~17 pt single-line rows the band is tall enough for several rows; the count is NOT determinable, so this is one placeholder row for the observed band, not a claim that exactly one row is hidden. Carries the corpus's established 'CCI' placeholder that resolve.REDACTED_NAME_PATTERN counts as redacted.",
+   "source_ref": {
+    "page": 12
+   },
+   "by": "Kerstin Forsberg (Phase 3 promotion review, Cowork session 2026-08-17)",
+   "at": "2026-08-17T18:00:00+02:00",
+   "review_item": "D1"
+  },
+  {
+   "id": "corr-024",
+   "target": "activity_schedule",
+   "op": "confirm",
+   "review_item": "D2",
+   "reason": "Kept as extracted: no rule lines between Day 1 and Day 11, so '↔' covers the merged cell (columns 4-14); the shorter drawn arrow is slack inside the cell. Rule for spanned values (group K): a merged cell's value is distributed over the columns its rule lines cover; a glyph drawn across ruled cells over the columns it crosses; a value in one ruled cell stays in that column. (Kerstin, 2026-09-27 review session, group K.)",
+   "source_ref": {
+    "page": 12
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-09-27T19:45:00+02:00"
+  },
+  {
+   "id": "corr-025",
+   "target": "schedule_grid",
+   "op": "confirm",
+   "review_item": "D3",
+   "reason": "Kept as extracted: 'within 7 to 10 days after last dose' is timing and is stored on the study-day row (row 3); row 2 is empty for that column. Rule (group F): a header cell spanning several header rows is recorded once, on the row whose type matches its content, split by printed line where the lines match different rows; covered cells stay empty; no value is repeated and no header row is added. (Kerstin, 2026-09-27 review session, group F.)",
+   "source_ref": {
+    "page": 9
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-09-27T20:17:00+02:00"
+  },
+  {
+   "id": "corr-026",
+   "target": "annotations",
+   "op": "confirm",
+   "review_item": "D4",
+   "reason": "Kept as extracted: no abbreviation notes. By prompt §6 'ED' (printed as a header cell) would qualify, as ET/RT in CDISC_Pilot; this is fixed corpus-wide via inventory-improvements rather than per study. (Kerstin, 2026-09-27 review session, group N.)",
+   "source_ref": {
+    "page": 12
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-09-27T20:21:00+02:00"
+  }
+ ]
+}

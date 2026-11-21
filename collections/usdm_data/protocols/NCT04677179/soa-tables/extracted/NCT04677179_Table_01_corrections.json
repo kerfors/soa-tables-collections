@@ -1,0 +1,98 @@
+{
+ "schema_name": "soa-table-corrections",
+ "schema_version": "1.0",
+ "target_extraction": "NCT04677179_Table_01_extraction.json",
+ "corrections": [
+  {
+   "id": "corr-001",
+   "target": "schedule_properties",
+   "op": "confirm",
+   "review_item": "D1",
+   "reason": "Header property, as extracted, in Tables 1-4: the 'Fasting visit' band is shaded and bold like the header rows above it and is reprinted on every page; it describes the visit, not a procedure. Consistent with NCT05259917 D1 and misc_studies decision 5. (Kerstin, 2026-09-27 review session, group E.)",
+   "source_ref": {
+    "page": 17
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-09-27T19:36:00+02:00"
+  },
+  {
+   "id": "corr-002",
+   "target": "schedule_properties",
+   "op": "set",
+   "match": {
+    "row_position": 5
+   },
+   "set": {
+    "property_type": "visit_attribute",
+    "property_comment": "Shaded bold header-band row reprinted on every page marking the visits at which the participant attends fasting (X at V2 and V9). A visit attribute rather than a timing level; typed visit_attribute; does not distinguish columns, so hierarchical_level null."
+   },
+   "reason": "'Fasting visit' typed visit_attribute, the property type added in extraction schema 1.1 for a requirement on or attribute of a visit (inventory item 16). Replaces the interim typing as modality (2026-09-27 review session, group E), so the same visit attribute has one type across the corpus.",
+   "source_ref": {
+    "page": 17,
+    "row_position": 5
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-10-02T21:39:00+02:00"
+  },
+  {
+   "id": "corr-003",
+   "target": "schedule_grid",
+   "op": "confirm",
+   "review_item": "D2",
+   "reason": "Kept as extracted: the multi-day note names V1 and V9 and is bound to those two Visit number cells; same rule as T2 D6 / T3 D10 and NCT04557384 D5. (Kerstin, 2026-09-27 review session, group M3.)",
+   "source_ref": {
+    "page": 17
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-09-27T19:55:00+02:00"
+  },
+  {
+   "id": "corr-004",
+   "target": "activities",
+   "op": "confirm",
+   "review_item": "D3",
+   "reason": "Kept as extracted: rows above the first section header stay at level 0; no unnamed group is invented. Rule (group H): hierarchy follows printed signals (indent, bold, shading, full-width section bands); a group stays open across a page break until the next header; no implicit group is invented; a label cell spanning sub-rows is a parent with children. (Kerstin, 2026-09-27 review session, group H.)",
+   "source_ref": {
+    "page": 17
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-09-27T20:15:00+02:00"
+  },
+  {
+   "id": "corr-005",
+   "target": "schedule_properties",
+   "op": "set",
+   "match": {
+    "row_position": 1
+   },
+   "set": {
+    "annotation_markers": ""
+   },
+   "reason": "Clears the table-wide notes t2, t3 from the 'Visit number' row's annotation_markers; marker_locations unchanged. Notes t2, t3 (cross-references to Table 4 for ETV and unscheduled visits); name no element. Prompt 3.9.2 §6 Binding by what a note names: a note that names no specific element stays table-wide; its marker is on no element's annotation_markers. Inventory item 25a (decision Kerstin, 2026-09-28 13:16).",
+   "source_ref": {
+    "page": 17,
+    "row_position": 1
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-09-28T13:40:00+02:00"
+  },
+  {
+   "id": "corr-006",
+   "target": "schedule_properties",
+   "op": "set",
+   "match": {
+    "row_position": 4
+   },
+   "set": {
+    "hierarchical_level": null
+   },
+   "reason": "Window row 'Visit interval tolerance (days)': hierarchical_level 4 -> null. No header row below it carries a level, so no other level changes. Prompt 3.9.2 §3 hierarchical_level: a window or tolerance row (the allowed deviation around each visit) is a qualifier of the columns, not a way to tell them apart: null, even where its values differ from column to column; the levels of the other rows stay consecutive. Inventory item 25g (decision Kerstin, 2026-09-28 13:16).",
+   "source_ref": {
+    "page": 17,
+    "row_position": 4
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-09-28T13:45:00+02:00"
+  }
+ ]
+}

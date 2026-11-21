@@ -1,0 +1,134 @@
+{
+ "schema_name": "soa-table-corrections",
+ "schema_version": "1.0",
+ "target_extraction": "NCT03283098_Table_03_extraction.json",
+ "corrections": [
+  {
+   "id": "corr-001",
+   "target": "activities",
+   "op": "confirm",
+   "review_item": "D4",
+   "reason": "Accepted as extracted (Kerstin, 2026-09-27 16:56; sweep2-PHASE2-RESULTS batch A decision 1): Time label folded into the activity names.",
+   "source_ref": {
+    "page": 36
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-09-27T19:30:00+02:00"
+  },
+  {
+   "id": "corr-002",
+   "target": "annotations",
+   "op": "confirm",
+   "review_item": "D6",
+   "reason": "Kept (Kerstin, 2026-09-27 review session): the annotation states the definition is not printed for Table 1c and labels the Table 1b footnote a text as a probable, unasserted equivalent - same class as NCT01847274 T3 D7.",
+   "source_ref": {
+    "page": 36
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-09-27T19:30:00+02:00"
+  },
+  {
+   "id": "corr-003",
+   "target": "table_metadata",
+   "op": "confirm",
+   "review_item": "D3",
+   "reason": "Kept as extracted (domain): same day columns and participants as Table 1a, PK category. Worked example of this type in the table-type taxonomy (v6). (Kerstin, 2026-09-27 review session, group B.)",
+   "source_ref": {
+    "page": 36
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-09-27T20:03:00+02:00"
+  },
+  {
+   "id": "corr-004",
+   "target": "activities",
+   "op": "confirm",
+   "review_item": "D5",
+   "reason": "Kept as extracted: the full-width 'Central Laboratory' band is a mark-free level-0 section header over the PK rows (as NCT04320615 'Central Labs'). Rule (group H): hierarchy follows printed signals (indent, bold, shading, full-width section bands); a group stays open across a page break until the next header; no implicit group is invented; a label cell spanning sub-rows is a parent with children. (Kerstin, 2026-09-27 review session, group H.)",
+   "source_ref": {
+    "page": 36
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-09-27T20:15:00+02:00"
+  },
+  {
+   "id": "corr-005",
+   "target": "schedule_properties",
+   "op": "remove",
+   "match": {
+    "table_number": 3,
+    "row_position": 1
+   },
+   "reason": "The banner 'Study Visit (Day)' is printed once, in a cell merged across all data columns (3-22), directly above the day values; the label cells of both header rows are empty. It is the caption of the day row below, not a header row of its own (inventory item 33). The row is left out; row positions are not renumbered.",
+   "source_ref": {
+    "page": 36,
+    "row_position": 1,
+    "column_position": 3,
+    "cell_value": "Study Visit (Day)"
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-10-19T23:15:00+02:00"
+  },
+  {
+   "id": "corr-006",
+   "target": "schedule_grid",
+   "op": "remove",
+   "match": {
+    "table_number": 3,
+    "row_position": 1
+   },
+   "reason": "The banner row's 20 grid cells go with the row (corr-005).",
+   "source_ref": {
+    "page": 36,
+    "row_position": 1
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-10-19T23:15:00+02:00"
+  },
+  {
+   "id": "corr-007",
+   "target": "schedule_properties",
+   "op": "set",
+   "match": {
+    "table_number": 3,
+    "row_position": 2
+   },
+   "set": {
+    "property_name": "Study Visit (Day)",
+    "property_name_source": {
+     "row_position": 1,
+     "column_position": 3,
+     "cell_value": "Study Visit (Day)",
+     "synthesized": false
+    },
+    "property_comment": "Study visit days (Screening, Day -2, 1 ... 55); '(HD)' printed inside the same cell marks hemodialysis days and is kept literally. Classified study_day because the values are protocol day numbers; the Screening column is the only non-numeric day. The row's name is the banner 'Study Visit (Day)' printed in row 1 across all data columns, not a synthesized name (corr-005)."
+   },
+   "reason": "The banner 'Study Visit (Day)' is printed once, in a cell merged across all data columns (3-22), directly above the day values; the label cells of both header rows are empty. It is the caption of the day row below, not a header row of its own (inventory item 33). The day row takes the banner as its printed name instead of the synthesized 'Study Day'.",
+   "source_ref": {
+    "page": 36,
+    "row_position": 1,
+    "column_position": 3,
+    "cell_value": "Study Visit (Day)"
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-10-19T23:15:00+02:00"
+  },
+  {
+   "id": "corr-008",
+   "target": "annotations",
+   "op": "set",
+   "match": {
+    "annotation_marker": "a"
+   },
+   "set": {
+    "annotation_type": "placeholder",
+    "annotation_text": "",
+    "placeholder_reason": "not_printed",
+    "review_note": "Probable equivalent (NOT source content for this table): Table 1b footnote a - 'If a treated subject withdraws from study before completion of dosing, the investigator will make every effort to obtain day 29 samples as close to 2 days after the last dose of investigational product as possible.'"
+   },
+   "reason": "Layer 1 hygiene (reflection 2026-11-07 §3.5a, decided by Kerstin): this marker has no protocol text behind it; typed placeholder (the definition is not printed in the source). The text that is not protocol text moves to review_note. Raw extraction unchanged. Prepared by Claude.",
+   "by": "Kerstin Forsberg",
+   "at": "2026-11-07T17:30:00+01:00"
+  }
+ ]
+}

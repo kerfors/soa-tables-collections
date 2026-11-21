@@ -1,0 +1,31 @@
+{
+ "schema_name": "soa-table-corrections",
+ "schema_version": "1.0",
+ "target_extraction": "NCT03402841_Table_01_extraction.json",
+ "corrections": [
+  {
+   "id": "corr-001",
+   "target": "annotations",
+   "op": "confirm",
+   "review_item": "D1",
+   "reason": "Kept as extracted: the unmarked Note is printed as its own paragraph between footnotes e and f and concerns the RECIST scan of e; kept as n1 bound to Tumour assessment, preserving the printed structure. (Kerstin, 2026-09-27 review session, group M4.)",
+   "source_ref": {
+    "page": 41
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-09-27T19:58:00+02:00"
+  },
+  {
+   "id": "corr-002",
+   "target": "table_metadata",
+   "op": "confirm",
+   "review_item": "D2",
+   "reason": "Kept as extracted (Tables 1 and 2 main_soa): screening then on-study. Sequential schedule that every participant passes through: one timeline split into tables, so main_soa, not a track. Consolidation places all columns in the main segment; the duplicate unified activities it produces are consolidation item 10 (tool), not an extraction error. (Kerstin, 2026-09-27 review session, group B.)",
+   "source_ref": {
+    "page": 40
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-09-27T20:03:00+02:00"
+  }
+ ]
+}

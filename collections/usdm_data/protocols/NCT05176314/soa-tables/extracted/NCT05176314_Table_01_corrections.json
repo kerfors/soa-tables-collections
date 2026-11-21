@@ -1,0 +1,125 @@
+{
+ "schema_name": "soa-table-corrections",
+ "schema_version": "1.0",
+ "target_extraction": "NCT05176314_Table_01_extraction.json",
+ "corrections": [
+  {
+   "id": "corr-025",
+   "target": "activities",
+   "op": "add",
+   "set": {
+    "table_number": 1,
+    "row_position": 25,
+    "source_page": 11,
+    "activity_name": "CCI",
+    "activity_name_source": {
+     "cell_text": "CCI",
+     "indentation_level": 1,
+     "method": "visual_transcription"
+    }
+   },
+   "reason": "Full-width redaction band conceals at least one activity row, which the re-extraction deliberately did not emit: the 'CCI' lettering prints at x = 174-199 px, OUTSIDE the table's left rule at x = 200 px (verified independently at 200 dpi), so it is a redaction overlay and not a cell value. The row itself is real - a full-width dark band inside the table's rules. One placeholder row per observed band, carrying the corpus's established 'CCI' placeholder that resolve.REDACTED_NAME_PATTERN counts as redacted. The band may conceal more than one row; the count is not determinable from the source. Band 1 of 2, between the rows at positions 21 and 22.",
+   "source_ref": {
+    "page": 11
+   },
+   "by": "Kerstin Forsberg (Phase 3 promotion review, Cowork session 2026-08-17)",
+   "at": "2026-08-17T18:00:00+02:00",
+   "review_item": "D1"
+  },
+  {
+   "id": "corr-026",
+   "target": "activities",
+   "op": "add",
+   "set": {
+    "table_number": 1,
+    "row_position": 26,
+    "source_page": 11,
+    "activity_name": "CCI",
+    "activity_name_source": {
+     "cell_text": "CCI",
+     "indentation_level": 1,
+     "method": "visual_transcription"
+    }
+   },
+   "reason": "Full-width redaction band conceals at least one activity row, which the re-extraction deliberately did not emit: the 'CCI' lettering prints at x = 174-199 px, OUTSIDE the table's left rule at x = 200 px (verified independently at 200 dpi), so it is a redaction overlay and not a cell value. The row itself is real - a full-width dark band inside the table's rules. One placeholder row per observed band, carrying the corpus's established 'CCI' placeholder that resolve.REDACTED_NAME_PATTERN counts as redacted. The band may conceal more than one row; the count is not determinable from the source. Band 2 of 2, between the rows at positions 22 and 23.",
+   "source_ref": {
+    "page": 11
+   },
+   "by": "Kerstin Forsberg (Phase 3 promotion review, Cowork session 2026-08-17)",
+   "at": "2026-08-17T18:00:00+02:00",
+   "review_item": "D1"
+  },
+  {
+   "id": "corr-027",
+   "target": "schedule_grid",
+   "op": "confirm",
+   "review_item": "D3",
+   "reason": "Kept as extracted: the rotated Screening cell is split by its printed lines: 'Screening' on the epoch row, '(D-42 to -2)' on the study-day row. Rule (group F): a header cell spanning several header rows is recorded once, on the row whose type matches its content, split by printed line where the lines match different rows; covered cells stay empty; no value is repeated and no header row is added. (Kerstin, 2026-09-27 review session, group F.)",
+   "source_ref": {
+    "page": 10
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-09-27T20:17:00+02:00"
+  },
+  {
+   "id": "corr-028",
+   "target": "activities",
+   "op": "confirm",
+   "review_item": "D2",
+   "reason": "Kept as extracted: 'Genetic blood sample for screening' as the three visible lines read; the redaction bar only clips the last line. Redaction flags are inventory item 2. (Kerstin, 2026-09-27 review session, group J.)",
+   "source_ref": {
+    "page": 11
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-09-27T20:21:00+02:00"
+  },
+  {
+   "id": "corr-029",
+   "target": "annotations",
+   "op": "set",
+   "match": {
+    "annotation_marker": "d"
+   },
+   "set": {
+    "annotation_type": "placeholder",
+    "annotation_text": "",
+    "placeholder_reason": "redacted"
+   },
+   "reason": "Layer 1 hygiene (reflection 2026-11-07 §3.5a, decided by Kerstin): this marker has no protocol text behind it; typed placeholder (the text is covered by a redaction box). The commentary is dropped. Raw extraction unchanged. Prepared by Claude.",
+   "by": "Kerstin Forsberg",
+   "at": "2026-11-07T17:30:00+01:00"
+  },
+  {
+   "id": "corr-030",
+   "target": "annotations",
+   "op": "set",
+   "match": {
+    "annotation_marker": "f"
+   },
+   "set": {
+    "annotation_type": "placeholder",
+    "annotation_text": "",
+    "placeholder_reason": "redacted"
+   },
+   "reason": "Layer 1 hygiene (reflection 2026-11-07 §3.5a, decided by Kerstin): this marker has no protocol text behind it; typed placeholder (the text is covered by a redaction box). The commentary is dropped. Raw extraction unchanged. Prepared by Claude.",
+   "by": "Kerstin Forsberg",
+   "at": "2026-11-07T17:30:00+01:00"
+  },
+  {
+   "id": "corr-031",
+   "target": "annotations",
+   "op": "set",
+   "match": {
+    "annotation_marker": "g"
+   },
+   "set": {
+    "annotation_type": "placeholder",
+    "annotation_text": "",
+    "placeholder_reason": "redacted"
+   },
+   "reason": "Layer 1 hygiene (reflection 2026-11-07 §3.5a, decided by Kerstin): this marker has no protocol text behind it; typed placeholder (the text is covered by a redaction box). The commentary is dropped. Raw extraction unchanged. Prepared by Claude.",
+   "by": "Kerstin Forsberg",
+   "at": "2026-11-07T17:30:00+01:00"
+  }
+ ]
+}

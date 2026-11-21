@@ -1,0 +1,120 @@
+{
+ "schema_name": "soa-table-corrections",
+ "schema_version": "1.0",
+ "target_extraction": "NCT03693430_Table_01_extraction.json",
+ "corrections": [
+  {
+   "id": "corr-001",
+   "target": "schedule_properties",
+   "op": "confirm",
+   "review_item": "D4",
+   "reason": "Kept as extracted: top band typed epoch for all six values, as in NCT03548935 D3. Rule (group D-a): a header band is typed by its dominant content; a printed row label wins; single-column visit labels inside an epoch/period band stay values of that band. (Kerstin, 2026-09-27 review session, group D-a.)",
+   "source_ref": {
+    "page": 9
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-09-27T20:09:00+02:00"
+  },
+  {
+   "id": "corr-002",
+   "target": "activities",
+   "op": "confirm",
+   "review_item": "D2",
+   "reason": "Kept as extracted: the first body row of pages 11 and 12 is printed above the reprinted Visit header; read in order, it continues SAFETY and REMINDERS. Rule (group H): hierarchy follows printed signals (indent, bold, shading, full-width section bands); a group stays open across a page break until the next header; no implicit group is invented; a label cell spanning sub-rows is a parent with children. (Kerstin, 2026-09-27 review session, group H.)",
+   "source_ref": {
+    "page": 11
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-09-27T20:15:00+02:00"
+  },
+  {
+   "id": "corr-003",
+   "target": "schedule_grid",
+   "op": "confirm",
+   "review_item": "D1",
+   "reason": "Kept as extracted: V33 window recorded as ±3 (pages 9-10); the conflicting ±5 of pages 11-12 is recorded in reviewer note n1 (corr-004/005). (Kerstin, 2026-09-27 review session, group G.)",
+   "source_ref": {
+    "page": 11
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-09-27T20:21:00+02:00"
+  },
+  {
+   "id": "corr-004",
+   "target": "annotations",
+   "op": "add",
+   "set": {
+    "annotation_marker": "n1",
+    "annotation_type": "footnote",
+    "annotation_text": "Reviewer note, not source content: the End of treatment (V33) visit window is printed as ±3 on pages 9-10 and as ±5 on the reprinted header of pages 11-12; ±3 (first printed) is recorded. The source is inconsistent and the protocol text available does not resolve it.",
+    "marker_locations": [
+     {
+      "table_number": 1,
+      "location_type": "schedule_cell",
+      "row_position": 4,
+      "column_position": 34,
+      "method": "synthesized"
+     }
+    ]
+   },
+   "reason": "Labelled reviewer note recording the source conflict on the V33 window, answering D1 together with its confirm. (Kerstin, 2026-09-27 review session, group G.)",
+   "source_ref": {
+    "page": 11,
+    "row_position": 4,
+    "column_position": 34
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-09-27T20:21:00+02:00"
+  },
+  {
+   "id": "corr-005",
+   "target": "schedule_grid",
+   "op": "set",
+   "match": {
+    "row_position": 4,
+    "column_position": 34
+   },
+   "set": {
+    "annotation_markers": "n1"
+   },
+   "reason": "Binds reviewer note n1 to the V33 window cell. (Kerstin, 2026-09-27 review session, group G.)",
+   "source_ref": {
+    "page": 11,
+    "row_position": 4,
+    "column_position": 34,
+    "cell_value": "±3"
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-09-27T20:21:00+02:00"
+  },
+  {
+   "id": "corr-006",
+   "target": "activity_schedule",
+   "op": "confirm",
+   "review_item": "D3",
+   "reason": "Kept as extracted: the lower-case 'x' marks are kept as printed; resolve types them as markers. (Kerstin, 2026-09-27 review session, group L.)",
+   "source_ref": {
+    "page": 10
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-09-27T20:21:00+02:00"
+  },
+  {
+   "id": "corr-007",
+   "target": "annotations",
+   "op": "set",
+   "match": {
+    "annotation_marker": "n1"
+   },
+   "set": {
+    "annotation_type": "placeholder",
+    "annotation_text": "",
+    "placeholder_reason": "reviewer_note",
+    "review_note": "Reviewer note, not source content: the End of treatment (V33) visit window is printed as ±3 on pages 9-10 and as ±5 on the reprinted header of pages 11-12; ±3 (first printed) is recorded. The source is inconsistent and the protocol text available does not resolve it."
+   },
+   "reason": "Layer 1 hygiene (reflection 2026-11-07 §3.5a, decided by Kerstin): this marker has no protocol text behind it; typed placeholder (a synthesized marker carrying a reviewer's note). The text that is not protocol text moves to review_note. Raw extraction unchanged. Prepared by Claude.",
+   "by": "Kerstin Forsberg",
+   "at": "2026-11-07T17:30:00+01:00"
+  }
+ ]
+}

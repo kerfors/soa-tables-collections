@@ -1,0 +1,1286 @@
+{
+  "schema_name": "soa-table-extraction",
+  "schema_version": "1.0",
+  "extraction_metadata": {
+    "extracted_at": "2026-09-27T12:00:00Z",
+    "extractor": "Claude, PDF_TO_JSON_PROMPT single-pass",
+    "prompt_version": "3.8.1",
+    "source_document": {
+      "filename": "NCT05324124_soa.pdf",
+      "document_type": "protocol"
+    },
+    "extraction_status": "ready_for_resolution",
+    "extraction_notes": "Single SoA table (section 1.3, protocol J2G-MC-JZPA) printed over document pages 9-12 with the header reprinted on every page; extracted as one table. Pages 9-11 are vector text-layer pages (marks verified by pdftotext -bbox column binning). Page 12 is a full-page raster with an invisible glyph-spread text layer; marks cross-checked by bbox, arrows read visually. A 'CCI' redaction box on page 12 may conceal activity rows. Label columns L=1 (Procedure); data columns 2-16; the right-hand Comments column (17) is a notes column rendered as footnote annotations with synthesized markers cm1-cm8. In-grid mark 'P' has no printed legend.",
+    "model": "claude-opus-5-5"
+  },
+  "table_metadata": {
+    "table_number": 1,
+    "table_type": "main_soa",
+    "table_title": "Schedule of Activities (SoA)",
+    "table_purpose": "Main study schedule: screening, 11-day inpatient treatment period, ED and follow-up phone call",
+    "page_start": 9,
+    "page_end": 12,
+    "notes": "Only SoA table in the excerpt; primary anchor grid -> main_soa. The header reprints on pages 10-12 with identical columns and the rows continue; no separate table number or caption, so treated as one table spanning 9-12 (not a continuation)."
+  },
+  "schedule_properties": [
+    {
+      "table_number": 1,
+      "row_position": 1,
+      "property_name": "Study period",
+      "property_name_source": {
+        "row_position": 1,
+        "column_position": 1,
+        "cell_value": "",
+        "synthesized": true
+      },
+      "property_type": "epoch",
+      "hierarchical_level": 1,
+      "property_comment": "Top header band naming study phases: Screening (col 2), Treatment Period (merged across cols 3-15, Day -1 to ED), Follow-Up phone call (col 16). Phase names -> epoch. Label cell empty; name synthesized."
+    },
+    {
+      "table_number": 1,
+      "row_position": 2,
+      "property_name": "Days",
+      "property_name_source": {
+        "row_position": 2,
+        "column_position": 1,
+        "cell_value": "",
+        "synthesized": true
+      },
+      "property_type": "other",
+      "hierarchical_level": null,
+      "structure_method": "inferred_from_layout",
+      "property_comment": "Presentational band carrying the single spanning label 'Days' over cols 3-15, qualifying the numbers in row 3 as study days. It does not by itself distinguish any two columns, so hierarchical_level is null. Label cell empty; name taken from the spanning value."
+    },
+    {
+      "table_number": 1,
+      "row_position": 3,
+      "property_name": "Study day",
+      "property_name_source": {
+        "row_position": 3,
+        "column_position": 1,
+        "cell_value": "Procedure",
+        "synthesized": true
+      },
+      "property_type": "study_day",
+      "hierarchical_level": 2,
+      "property_comment": "Study-day row: '-28 to -2 days prior to Day 1' (Screening), Day -1, Days 1-11, ED (early discontinuation), and for the Follow-Up column the window 'within 7 to 10 days after last dose' (vertically merged across rows 2-3 in the source). Numeric day labels -> study_day. The printed label cell reads 'Procedure', which heads the activity column, so the property name is synthesized."
+    }
+  ],
+  "schedule_grid": [
+    {
+      "table_number": 1,
+      "row_position": 1,
+      "column_position": 2,
+      "cell_value": "Screening"
+    },
+    {
+      "table_number": 1,
+      "row_position": 1,
+      "column_position": 3,
+      "cell_value": "Treatment Period",
+      "is_merged_cell": true,
+      "merged_cell_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 1,
+      "column_position": 4,
+      "cell_value": "Treatment Period",
+      "is_merged_cell": true,
+      "merged_cell_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 1,
+      "column_position": 5,
+      "cell_value": "Treatment Period",
+      "is_merged_cell": true,
+      "merged_cell_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 1,
+      "column_position": 6,
+      "cell_value": "Treatment Period",
+      "is_merged_cell": true,
+      "merged_cell_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 1,
+      "column_position": 7,
+      "cell_value": "Treatment Period",
+      "is_merged_cell": true,
+      "merged_cell_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 1,
+      "column_position": 8,
+      "cell_value": "Treatment Period",
+      "is_merged_cell": true,
+      "merged_cell_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 1,
+      "column_position": 9,
+      "cell_value": "Treatment Period",
+      "is_merged_cell": true,
+      "merged_cell_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 1,
+      "column_position": 10,
+      "cell_value": "Treatment Period",
+      "is_merged_cell": true,
+      "merged_cell_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 1,
+      "column_position": 11,
+      "cell_value": "Treatment Period",
+      "is_merged_cell": true,
+      "merged_cell_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 1,
+      "column_position": 12,
+      "cell_value": "Treatment Period",
+      "is_merged_cell": true,
+      "merged_cell_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 1,
+      "column_position": 13,
+      "cell_value": "Treatment Period",
+      "is_merged_cell": true,
+      "merged_cell_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 1,
+      "column_position": 14,
+      "cell_value": "Treatment Period",
+      "is_merged_cell": true,
+      "merged_cell_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 1,
+      "column_position": 15,
+      "cell_value": "Treatment Period",
+      "is_merged_cell": true,
+      "merged_cell_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 1,
+      "column_position": 16,
+      "cell_value": "Follow-Up phone call"
+    },
+    {
+      "table_number": 1,
+      "row_position": 2,
+      "column_position": 2,
+      "cell_value": ""
+    },
+    {
+      "table_number": 1,
+      "row_position": 2,
+      "column_position": 3,
+      "cell_value": "Days",
+      "is_merged_cell": true,
+      "merged_cell_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 2,
+      "column_position": 4,
+      "cell_value": "Days",
+      "is_merged_cell": true,
+      "merged_cell_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 2,
+      "column_position": 5,
+      "cell_value": "Days",
+      "is_merged_cell": true,
+      "merged_cell_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 2,
+      "column_position": 6,
+      "cell_value": "Days",
+      "is_merged_cell": true,
+      "merged_cell_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 2,
+      "column_position": 7,
+      "cell_value": "Days",
+      "is_merged_cell": true,
+      "merged_cell_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 2,
+      "column_position": 8,
+      "cell_value": "Days",
+      "is_merged_cell": true,
+      "merged_cell_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 2,
+      "column_position": 9,
+      "cell_value": "Days",
+      "is_merged_cell": true,
+      "merged_cell_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 2,
+      "column_position": 10,
+      "cell_value": "Days",
+      "is_merged_cell": true,
+      "merged_cell_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 2,
+      "column_position": 11,
+      "cell_value": "Days",
+      "is_merged_cell": true,
+      "merged_cell_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 2,
+      "column_position": 12,
+      "cell_value": "Days",
+      "is_merged_cell": true,
+      "merged_cell_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 2,
+      "column_position": 13,
+      "cell_value": "Days",
+      "is_merged_cell": true,
+      "merged_cell_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 2,
+      "column_position": 14,
+      "cell_value": "Days",
+      "is_merged_cell": true,
+      "merged_cell_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 2,
+      "column_position": 15,
+      "cell_value": "Days",
+      "is_merged_cell": true,
+      "merged_cell_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 2,
+      "column_position": 16,
+      "cell_value": ""
+    },
+    {
+      "table_number": 1,
+      "row_position": 3,
+      "column_position": 2,
+      "cell_value": "-28 to -2 days prior to Day 1"
+    },
+    {
+      "table_number": 1,
+      "row_position": 3,
+      "column_position": 3,
+      "cell_value": "-1"
+    },
+    {
+      "table_number": 1,
+      "row_position": 3,
+      "column_position": 4,
+      "cell_value": "1"
+    },
+    {
+      "table_number": 1,
+      "row_position": 3,
+      "column_position": 5,
+      "cell_value": "2"
+    },
+    {
+      "table_number": 1,
+      "row_position": 3,
+      "column_position": 6,
+      "cell_value": "3"
+    },
+    {
+      "table_number": 1,
+      "row_position": 3,
+      "column_position": 7,
+      "cell_value": "4"
+    },
+    {
+      "table_number": 1,
+      "row_position": 3,
+      "column_position": 8,
+      "cell_value": "5"
+    },
+    {
+      "table_number": 1,
+      "row_position": 3,
+      "column_position": 9,
+      "cell_value": "6"
+    },
+    {
+      "table_number": 1,
+      "row_position": 3,
+      "column_position": 10,
+      "cell_value": "7"
+    },
+    {
+      "table_number": 1,
+      "row_position": 3,
+      "column_position": 11,
+      "cell_value": "8"
+    },
+    {
+      "table_number": 1,
+      "row_position": 3,
+      "column_position": 12,
+      "cell_value": "9"
+    },
+    {
+      "table_number": 1,
+      "row_position": 3,
+      "column_position": 13,
+      "cell_value": "10"
+    },
+    {
+      "table_number": 1,
+      "row_position": 3,
+      "column_position": 14,
+      "cell_value": "11"
+    },
+    {
+      "table_number": 1,
+      "row_position": 3,
+      "column_position": 15,
+      "cell_value": "ED"
+    },
+    {
+      "table_number": 1,
+      "row_position": 3,
+      "column_position": 16,
+      "cell_value": "within 7 to 10 days after last dose"
+    }
+  ],
+  "activities": [
+    {
+      "table_number": 1,
+      "row_position": 4,
+      "source_page": 9,
+      "activity_name": "Informed consent",
+      "activity_name_source": {
+        "cell_text": "Informed consent",
+        "indentation_level": 0,
+        "indentation_method": "assumed_flat"
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 5,
+      "source_page": 9,
+      "activity_name": "Inclusion and exclusion criteria",
+      "activity_name_source": {
+        "cell_text": "Inclusion and\nexclusion criteria",
+        "indentation_level": 0,
+        "indentation_method": "assumed_flat"
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 6,
+      "source_page": 9,
+      "activity_name": "Demography",
+      "activity_name_source": {
+        "cell_text": "Demography",
+        "indentation_level": 0,
+        "indentation_method": "assumed_flat"
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 7,
+      "source_page": 9,
+      "activity_name": "Participant admission to CRU",
+      "activity_name_source": {
+        "cell_text": "Participant\nadmission to CRU",
+        "indentation_level": 0,
+        "indentation_method": "assumed_flat"
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 8,
+      "source_page": 9,
+      "activity_name": "Participant discharge from CRU",
+      "activity_name_source": {
+        "cell_text": "Participant\ndischarge from\nCRU",
+        "indentation_level": 0,
+        "indentation_method": "assumed_flat"
+      },
+      "annotation_markers": "cm1"
+    },
+    {
+      "table_number": 1,
+      "row_position": 9,
+      "source_page": 9,
+      "activity_name": "Outpatient visit",
+      "activity_name_source": {
+        "cell_text": "Outpatient visit",
+        "indentation_level": 0,
+        "indentation_method": "assumed_flat"
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 10,
+      "source_page": 10,
+      "activity_name": "Medical history",
+      "activity_name_source": {
+        "cell_text": "Medical history",
+        "indentation_level": 0,
+        "indentation_method": "assumed_flat"
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 11,
+      "source_page": 10,
+      "activity_name": "Medical assessment",
+      "activity_name_source": {
+        "cell_text": "Medical\nassessment",
+        "indentation_level": 0,
+        "indentation_method": "assumed_flat"
+      },
+      "annotation_markers": "cm2"
+    },
+    {
+      "table_number": 1,
+      "row_position": 12,
+      "source_page": 10,
+      "activity_name": "Height and weight",
+      "activity_name_source": {
+        "cell_text": "Height and weight",
+        "indentation_level": 0,
+        "indentation_method": "assumed_flat"
+      },
+      "annotation_markers": "cm3"
+    },
+    {
+      "table_number": 1,
+      "row_position": 13,
+      "source_page": 11,
+      "activity_name": "Serum or urine pregnancy test (women of childbearing potential only)",
+      "activity_name_source": {
+        "cell_text": "Serum or urine\npregnancy test\n(women of\nchildbearing\npotential only)",
+        "indentation_level": 0,
+        "indentation_method": "assumed_flat"
+      },
+      "annotation_markers": "cm4"
+    },
+    {
+      "table_number": 1,
+      "row_position": 14,
+      "source_page": 11,
+      "activity_name": "Follicle-stimulating hormone (women of non-childbearing potential only)",
+      "activity_name_source": {
+        "cell_text": "Follicle-\nstimulating\nhormone (women\nof non-\nchildbearing\npotential only)",
+        "indentation_level": 0,
+        "indentation_method": "assumed_flat"
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 15,
+      "source_page": 11,
+      "activity_name": "Human immunodeficiency virus, hepatitis B and C screen",
+      "activity_name_source": {
+        "cell_text": "Human\nimmunodeficiency\nvirus, hepatitis B\nand C screen",
+        "indentation_level": 0,
+        "indentation_method": "assumed_flat"
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 16,
+      "source_page": 11,
+      "activity_name": "12-lead ECG",
+      "activity_name_source": {
+        "cell_text": "12-lead ECG",
+        "indentation_level": 0,
+        "indentation_method": "assumed_flat"
+      },
+      "annotation_markers": "cm5"
+    },
+    {
+      "table_number": 1,
+      "row_position": 17,
+      "source_page": 11,
+      "activity_name": "Vital signs (supine), pulse rate, and blood pressure",
+      "activity_name_source": {
+        "cell_text": "Vital signs\n(supine), pulse\nrate, and blood\npressure",
+        "indentation_level": 0,
+        "indentation_method": "assumed_flat"
+      },
+      "annotation_markers": "cm6"
+    },
+    {
+      "table_number": 1,
+      "row_position": 18,
+      "source_page": 11,
+      "activity_name": "Clinical laboratory tests",
+      "activity_name_source": {
+        "cell_text": "Clinical\nlaboratory tests",
+        "indentation_level": 0,
+        "indentation_method": "assumed_flat"
+      },
+      "annotation_markers": "cm7"
+    },
+    {
+      "table_number": 1,
+      "row_position": 19,
+      "source_page": 12,
+      "activity_name": "Genetic sample",
+      "activity_name_source": {
+        "cell_text": "Genetic sample",
+        "indentation_level": 0,
+        "indentation_method": "assumed_flat"
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 20,
+      "source_page": 12,
+      "activity_name": "Selpercatinib administration",
+      "activity_name_source": {
+        "cell_text": "Selpercatinib\nadministration",
+        "indentation_level": 0,
+        "indentation_method": "assumed_flat"
+      },
+      "annotation_markers": "cm8"
+    },
+    {
+      "table_number": 1,
+      "row_position": 21,
+      "source_page": 12,
+      "activity_name": "Adverse event /Serious adverse event review",
+      "activity_name_source": {
+        "cell_text": "Adverse event\n/Serious adverse\nevent review",
+        "indentation_level": 0,
+        "indentation_method": "assumed_flat"
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 22,
+      "source_page": 12,
+      "activity_name": "Concomitant medication review",
+      "activity_name_source": {
+        "cell_text": "Concomitant\nmedication review",
+        "indentation_level": 0,
+        "indentation_method": "assumed_flat"
+      }
+    }
+  ],
+  "activity_schedule": [
+    {
+      "table_number": 1,
+      "row_position": 4,
+      "column_position": 2,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 5,
+      "column_position": 2,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 6,
+      "column_position": 2,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 7,
+      "column_position": 3,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 8,
+      "column_position": 14,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 9,
+      "column_position": 2,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 10,
+      "column_position": 2,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 11,
+      "column_position": 2,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 11,
+      "column_position": 4,
+      "cell_value": "P"
+    },
+    {
+      "table_number": 1,
+      "row_position": 11,
+      "column_position": 11,
+      "cell_value": "P"
+    },
+    {
+      "table_number": 1,
+      "row_position": 11,
+      "column_position": 14,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 11,
+      "column_position": 15,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 12,
+      "column_position": 2,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 12,
+      "column_position": 14,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 12,
+      "column_position": 15,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 13,
+      "column_position": 2,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 13,
+      "column_position": 3,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 13,
+      "column_position": 14,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 13,
+      "column_position": 15,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 14,
+      "column_position": 2,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 15,
+      "column_position": 2,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 16,
+      "column_position": 2,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 16,
+      "column_position": 4,
+      "cell_value": "P, 2h"
+    },
+    {
+      "table_number": 1,
+      "row_position": 16,
+      "column_position": 6,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 16,
+      "column_position": 11,
+      "cell_value": "P, 2h"
+    },
+    {
+      "table_number": 1,
+      "row_position": 16,
+      "column_position": 13,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 16,
+      "column_position": 14,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 16,
+      "column_position": 15,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 17,
+      "column_position": 2,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 17,
+      "column_position": 4,
+      "cell_value": "P, 1, 2h"
+    },
+    {
+      "table_number": 1,
+      "row_position": 17,
+      "column_position": 5,
+      "cell_value": "24h"
+    },
+    {
+      "table_number": 1,
+      "row_position": 17,
+      "column_position": 6,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 17,
+      "column_position": 7,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 17,
+      "column_position": 11,
+      "cell_value": "P, 1,2h"
+    },
+    {
+      "table_number": 1,
+      "row_position": 17,
+      "column_position": 12,
+      "cell_value": "24h"
+    },
+    {
+      "table_number": 1,
+      "row_position": 17,
+      "column_position": 13,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 17,
+      "column_position": 14,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 17,
+      "column_position": 15,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 18,
+      "column_position": 2,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 18,
+      "column_position": 4,
+      "cell_value": "P"
+    },
+    {
+      "table_number": 1,
+      "row_position": 18,
+      "column_position": 5,
+      "cell_value": "24h"
+    },
+    {
+      "table_number": 1,
+      "row_position": 18,
+      "column_position": 7,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 18,
+      "column_position": 11,
+      "cell_value": "P"
+    },
+    {
+      "table_number": 1,
+      "row_position": 18,
+      "column_position": 12,
+      "cell_value": "24h"
+    },
+    {
+      "table_number": 1,
+      "row_position": 18,
+      "column_position": 14,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 18,
+      "column_position": 15,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 19,
+      "column_position": 4,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 20,
+      "column_position": 4,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 20,
+      "column_position": 11,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 21,
+      "column_position": 2,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 21,
+      "column_position": 3,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 21,
+      "column_position": 4,
+      "cell_value": "↔",
+      "source_range": "4:14",
+      "method": "visual_read"
+    },
+    {
+      "table_number": 1,
+      "row_position": 21,
+      "column_position": 5,
+      "cell_value": "↔",
+      "source_range": "4:14",
+      "method": "visual_read"
+    },
+    {
+      "table_number": 1,
+      "row_position": 21,
+      "column_position": 6,
+      "cell_value": "↔",
+      "source_range": "4:14",
+      "method": "visual_read"
+    },
+    {
+      "table_number": 1,
+      "row_position": 21,
+      "column_position": 7,
+      "cell_value": "↔",
+      "source_range": "4:14",
+      "method": "visual_read"
+    },
+    {
+      "table_number": 1,
+      "row_position": 21,
+      "column_position": 8,
+      "cell_value": "↔",
+      "source_range": "4:14",
+      "method": "visual_read"
+    },
+    {
+      "table_number": 1,
+      "row_position": 21,
+      "column_position": 9,
+      "cell_value": "↔",
+      "source_range": "4:14",
+      "method": "visual_read"
+    },
+    {
+      "table_number": 1,
+      "row_position": 21,
+      "column_position": 10,
+      "cell_value": "↔",
+      "source_range": "4:14",
+      "method": "visual_read"
+    },
+    {
+      "table_number": 1,
+      "row_position": 21,
+      "column_position": 11,
+      "cell_value": "↔",
+      "source_range": "4:14",
+      "method": "visual_read"
+    },
+    {
+      "table_number": 1,
+      "row_position": 21,
+      "column_position": 12,
+      "cell_value": "↔",
+      "source_range": "4:14",
+      "method": "visual_read"
+    },
+    {
+      "table_number": 1,
+      "row_position": 21,
+      "column_position": 13,
+      "cell_value": "↔",
+      "source_range": "4:14",
+      "method": "visual_read"
+    },
+    {
+      "table_number": 1,
+      "row_position": 21,
+      "column_position": 14,
+      "cell_value": "↔",
+      "source_range": "4:14",
+      "method": "visual_read"
+    },
+    {
+      "table_number": 1,
+      "row_position": 21,
+      "column_position": 15,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 22,
+      "column_position": 2,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 22,
+      "column_position": 3,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 22,
+      "column_position": 4,
+      "cell_value": "↔",
+      "source_range": "4:14",
+      "method": "visual_read"
+    },
+    {
+      "table_number": 1,
+      "row_position": 22,
+      "column_position": 5,
+      "cell_value": "↔",
+      "source_range": "4:14",
+      "method": "visual_read"
+    },
+    {
+      "table_number": 1,
+      "row_position": 22,
+      "column_position": 6,
+      "cell_value": "↔",
+      "source_range": "4:14",
+      "method": "visual_read"
+    },
+    {
+      "table_number": 1,
+      "row_position": 22,
+      "column_position": 7,
+      "cell_value": "↔",
+      "source_range": "4:14",
+      "method": "visual_read"
+    },
+    {
+      "table_number": 1,
+      "row_position": 22,
+      "column_position": 8,
+      "cell_value": "↔",
+      "source_range": "4:14",
+      "method": "visual_read"
+    },
+    {
+      "table_number": 1,
+      "row_position": 22,
+      "column_position": 9,
+      "cell_value": "↔",
+      "source_range": "4:14",
+      "method": "visual_read"
+    },
+    {
+      "table_number": 1,
+      "row_position": 22,
+      "column_position": 10,
+      "cell_value": "↔",
+      "source_range": "4:14",
+      "method": "visual_read"
+    },
+    {
+      "table_number": 1,
+      "row_position": 22,
+      "column_position": 11,
+      "cell_value": "↔",
+      "source_range": "4:14",
+      "method": "visual_read"
+    },
+    {
+      "table_number": 1,
+      "row_position": 22,
+      "column_position": 12,
+      "cell_value": "↔",
+      "source_range": "4:14",
+      "method": "visual_read"
+    },
+    {
+      "table_number": 1,
+      "row_position": 22,
+      "column_position": 13,
+      "cell_value": "↔",
+      "source_range": "4:14",
+      "method": "visual_read"
+    },
+    {
+      "table_number": 1,
+      "row_position": 22,
+      "column_position": 14,
+      "cell_value": "↔",
+      "source_range": "4:14",
+      "method": "visual_read"
+    },
+    {
+      "table_number": 1,
+      "row_position": 22,
+      "column_position": 15,
+      "cell_value": "X"
+    }
+  ],
+  "annotations": [
+    {
+      "annotation_marker": "cm1",
+      "annotation_type": "footnote",
+      "annotation_text": "A study participant may be required to stay later than Day 11 for management or monitoring of an AE or a clinically significant finding, at the discretion of the investigator.",
+      "marker_locations": [
+        {
+          "table_number": 1,
+          "location_type": "activity_name",
+          "row_position": 8,
+          "method": "synthesized"
+        }
+      ]
+    },
+    {
+      "annotation_marker": "cm2",
+      "annotation_type": "footnote",
+      "annotation_text": "Full medical assessment to be performed at screening, and symptom driven examination to be done at other/any time point at physician’s discretion.",
+      "marker_locations": [
+        {
+          "table_number": 1,
+          "location_type": "activity_name",
+          "row_position": 11,
+          "method": "synthesized"
+        }
+      ]
+    },
+    {
+      "annotation_marker": "cm3",
+      "annotation_type": "footnote",
+      "annotation_text": "Height and weight to be measured at screening; weight only to be measured at Day 11 or ED as appropriate.",
+      "marker_locations": [
+        {
+          "table_number": 1,
+          "location_type": "activity_name",
+          "row_position": 12,
+          "method": "synthesized"
+        }
+      ]
+    },
+    {
+      "annotation_marker": "cm4",
+      "annotation_type": "footnote",
+      "annotation_text": "Serum pregnancy tests will be performed at screening and urine pregnancy test at all other time points",
+      "marker_locations": [
+        {
+          "table_number": 1,
+          "location_type": "activity_name",
+          "row_position": 13,
+          "method": "synthesized"
+        }
+      ]
+    },
+    {
+      "annotation_marker": "cm5",
+      "annotation_type": "footnote",
+      "annotation_text": "Single ECGs are required.",
+      "marker_locations": [
+        {
+          "table_number": 1,
+          "location_type": "activity_name",
+          "row_position": 16,
+          "method": "synthesized"
+        }
+      ]
+    },
+    {
+      "annotation_marker": "cm6",
+      "annotation_type": "footnote",
+      "annotation_text": "Time points may be added, if warranted and agreed upon between Lilly and the investigator.",
+      "marker_locations": [
+        {
+          "table_number": 1,
+          "location_type": "activity_name",
+          "row_position": 17,
+          "method": "synthesized"
+        }
+      ]
+    },
+    {
+      "annotation_marker": "cm7",
+      "annotation_type": "source_note",
+      "annotation_text": "See Appendix 10.2, Clinical Laboratory Tests, for details.",
+      "marker_locations": [
+        {
+          "table_number": 1,
+          "location_type": "activity_name",
+          "row_position": 18,
+          "method": "synthesized"
+        }
+      ]
+    },
+    {
+      "annotation_marker": "cm8",
+      "annotation_type": "footnote",
+      "annotation_text": "Participant consumes high-fat meal within 30 minutes prior to dose based on randomization.",
+      "marker_locations": [
+        {
+          "table_number": 1,
+          "location_type": "activity_name",
+          "row_position": 20,
+          "method": "synthesized"
+        }
+      ],
+      "annotation_text_source": {
+        "method": "deglyph_reconstruction",
+        "note": "Document page 12 is a full-page raster with a glyph-spread invisible text layer; words rebuilt from glyph tokens and checked against the rendered page; cell bounded by the rule lines visible in the raster."
+      }
+    }
+  ],
+  "review_items": [
+    {
+      "id": "D1",
+      "severity": "high",
+      "location": {
+        "page": 12,
+        "row_positions": [
+          19,
+          20
+        ]
+      },
+      "call_made": "The black 'CCI' redaction box between 'Genetic sample' and 'Selpercatinib administration' (full table width) is treated as hiding unknown content; no activity rows were created for it.",
+      "alternative": "Add one or more placeholder activity rows (e.g. 'Redacted (CCI)') with no marks, so the concealed rows are represented in the schedule.",
+      "report_section": "3.1"
+    },
+    {
+      "id": "D2",
+      "severity": "high",
+      "location": {
+        "page": 12,
+        "row_positions": [
+          21,
+          22
+        ]
+      },
+      "call_made": "The double-headed arrow in 'Adverse event /Serious adverse event review' and 'Concomitant medication review' is recorded as one merged cell covering Day 1 to Day 11 (columns 4-14), and is distributed as '↔' to each of those 11 columns.",
+      "alternative": "Limit the arrow to the columns the drawn arrow physically crosses (tip-to-tip roughly Day 1 to Day 10) instead of the full merged cell.",
+      "report_section": "3.2"
+    },
+    {
+      "id": "D3",
+      "severity": "medium",
+      "location": {
+        "page": 9,
+        "row_positions": [
+          2,
+          3
+        ],
+        "column_position": 16
+      },
+      "call_made": "The Follow-Up column's text 'within 7 to 10 days after last dose', printed in a cell merged down across header rows 2-3, is stored on the study-day row (row 3); row 2 is left empty for that column.",
+      "alternative": "Store it as a separate visit-window property, or on row 2, since the source cell spans both rows.",
+      "report_section": "3.3"
+    },
+    {
+      "id": "D4",
+      "severity": "low",
+      "location": {
+        "page": 12
+      },
+      "call_made": "The abbreviation line under the table (CRU, ECG, ED, h; tail redacted as CCI) is not emitted as annotations, because none of these terms is printed as a marker; they only occur as ordinary words in labels and cells.",
+      "alternative": "Emit abbreviation annotations ab1-ab4 (CRU, ECG, ED, h) bound to the labels/cells where those words appear.",
+      "report_section": "3.4"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+ "schema_name": "soa-table-corrections",
+ "schema_version": "1.0",
+ "target_extraction": "NCT04184622_Table_02_extraction.json",
+ "corrections": [
+  {
+   "id": "corr-001",
+   "target": "annotations",
+   "op": "confirm",
+   "review_item": "D7",
+   "reason": "Accepted as extracted (Kerstin, 2026-09-27 16:57; sweep2-PHASE2-RESULTS batch B): the '*Please see table below' pointer is not emitted; its content is in n1-n27.",
+   "source_ref": {
+    "page": 24
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-09-27T19:30:00+02:00"
+  },
+  {
+   "id": "corr-002",
+   "target": "schedule_properties",
+   "op": "set",
+   "match": {
+    "row_position": 4
+   },
+   "set": {
+    "property_type": "visit_attribute",
+    "property_comment": "X marks visits at which the participant must attend fasting. A per-visit attribute, not a timing level; typed visit_attribute; does not distinguish columns, so hierarchical_level null."
+   },
+   "reason": "'Fasting visit' typed visit_attribute, the property type added in extraction schema 1.1 for a requirement on or attribute of a visit (inventory item 16). Replaces the interim typing as modality (2026-09-27 review session, group E), so the same visit attribute has one type across the corpus.",
+   "source_ref": {
+    "page": 22,
+    "row_position": 4
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-10-02T21:39:00+02:00"
+  },
+  {
+   "id": "corr-003",
+   "target": "table_metadata",
+   "op": "confirm",
+   "review_item": "D6",
+   "reason": "Kept as extracted (track 'Prediabetes'). Worked example of this type in the table-type taxonomy (v6). (Kerstin, 2026-09-27 review session, group B.)",
+   "source_ref": {
+    "page": 22
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-09-27T20:03:00+02:00"
+  },
+  {
+   "id": "corr-004",
+   "target": "schedule_properties",
+   "op": "set",
+   "match": {
+    "row_position": 3
+   },
+   "set": {
+    "hierarchical_level": null
+   },
+   "reason": "Window row 'Allowable Deviation (days)': hierarchical_level 3 -> null. No header row below it carries a level, so no other level changes. Prompt 3.9.2 §3 hierarchical_level: a window or tolerance row (the allowed deviation around each visit) is a qualifier of the columns, not a way to tell them apart: null, even where its values differ from column to column; the levels of the other rows stay consecutive. Inventory item 25g (decision Kerstin, 2026-09-28 13:16).",
+   "source_ref": {
+    "page": 22,
+    "row_position": 3
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-09-28T13:45:00+02:00"
+  }
+ ]
+}
