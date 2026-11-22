@@ -75,7 +75,7 @@
   "schema_version": "1.7",
   "protocol_id": "NCT04304508",
   "consolidation_metadata": {
-    "consolidated_at": "2026-11-22T19:51:43.989590+00:00",
+    "consolidated_at": "2026-11-22T20:03:57.697726+00:00",
     "consolidator": "soa_tables.consolidate v1.2",
     "source_tables": [
       {
@@ -144,6 +144,20 @@
             "property_type": "timepoint",
             "property_comment": "Within-visit sampling times relative to dosing: Predose, 0.5-1.5h Postdose, 2-4 h Postdose, 4-12 h postdose. Timepoints; name synthesised (empty label cell)."
           }
+        ],
+        "refines": [
+          {
+            "xact_id": "xact-020",
+            "correction_id": "ccorr-001"
+          },
+          {
+            "xact_id": "xact-021",
+            "correction_id": "ccorr-002"
+          },
+          {
+            "xact_id": "xact-023",
+            "correction_id": "ccorr-003"
+          }
         ]
       }
     ],
@@ -161,6 +175,7 @@
       "decided": 0,
       "near_matches": 0
     },
+    "corrections_applied": 3,
     "source_activity_count": 32,
     "unified_activity_count": 32,
     "compression_percent": 0,
@@ -717,6 +732,12 @@
       "display_order": 20,
       "qualified_key": "Laboratory assessments::Pharmacokinetic sample",
       "is_section_header": false,
+      "refined_by": [
+        {
+          "table_num": 2,
+          "correction_id": "ccorr-001"
+        }
+      ],
       "source_refs": [
         {
           "table_id": "table-001",
@@ -743,6 +764,12 @@
       "display_order": 21,
       "qualified_key": "Laboratory assessments::Pharmacodynamic sampling",
       "is_section_header": false,
+      "refined_by": [
+        {
+          "table_num": 2,
+          "correction_id": "ccorr-002"
+        }
+      ],
       "source_refs": [
         {
           "table_id": "table-001",
@@ -795,6 +822,12 @@
       "display_order": 23,
       "qualified_key": "Laboratory assessments::Biomarker sampling",
       "is_section_header": false,
+      "refined_by": [
+        {
+          "table_num": 2,
+          "correction_id": "ccorr-003"
+        }
+      ],
       "source_refs": [
         {
           "table_id": "table-001",

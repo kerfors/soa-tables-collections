@@ -1,0 +1,52 @@
+{
+  "schema_name": "soa-consolidation-corrections",
+  "schema_version": "1.0",
+  "protocol_id": "NCT04304508",
+  "corrections": [
+    {
+      "id": "ccorr-001",
+      "op": "refines",
+      "source": {
+        "table_number": 2
+      },
+      "target": {
+        "table_number": 1,
+        "activity_id": "act-020",
+        "activity_name": "Pharmacokinetic sample"
+      },
+      "reason": "Footnote l on this row ('Refer to Table 1–1 PK, PD and Biomarker sampling.') points to Table 1–1, which gives the within-visit sampling timepoints for the row; the table details the row, nothing is merged. Not recorded for 'Study drug intake at the site' (also marked l): Table 1–1 gives sampling timepoints, not an intake schedule.",
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-22T20:08:00Z"
+    },
+    {
+      "id": "ccorr-002",
+      "op": "refines",
+      "source": {
+        "table_number": 2
+      },
+      "target": {
+        "table_number": 1,
+        "activity_id": "act-021",
+        "activity_name": "Pharmacodynamic sampling"
+      },
+      "reason": "Footnote l on this row ('Refer to Table 1–1 PK, PD and Biomarker sampling.') points to Table 1–1, which gives the within-visit sampling timepoints for the row; the table details the row, nothing is merged. Not recorded for 'Study drug intake at the site' (also marked l): Table 1–1 gives sampling timepoints, not an intake schedule.",
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-22T20:08:00Z"
+    },
+    {
+      "id": "ccorr-003",
+      "op": "refines",
+      "source": {
+        "table_number": 2
+      },
+      "target": {
+        "table_number": 1,
+        "activity_id": "act-023",
+        "activity_name": "Biomarker sampling"
+      },
+      "reason": "Footnote l on this row ('Refer to Table 1–1 PK, PD and Biomarker sampling.') points to Table 1–1, which gives the within-visit sampling timepoints for the row; the table details the row, nothing is merged. Not recorded for 'Study drug intake at the site' (also marked l): Table 1–1 gives sampling timepoints, not an intake schedule.",
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-22T20:08:00Z"
+    }
+  ]
+}

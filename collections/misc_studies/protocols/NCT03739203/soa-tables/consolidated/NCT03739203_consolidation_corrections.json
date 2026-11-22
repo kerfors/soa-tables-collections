@@ -1,0 +1,58 @@
+{
+  "schema_name": "soa-consolidation-corrections",
+  "schema_version": "1.0",
+  "protocol_id": "NCT03739203",
+  "corrections": [
+    {
+      "id": "ccorr-001",
+      "op": "keep",
+      "source": {
+        "table_number": 2,
+        "activity_id": "act-023",
+        "activity_name": "Pharmacokinetic Sample (at any time during visit)"
+      },
+      "target": {
+        "table_number": 1,
+        "activity_id": "act-036",
+        "activity_name": "Pharmacokinetic Sample"
+      },
+      "reason": "Same activity: the Table 4 name adds only a parenthesised timing qualifier ('at any time during visit') to the Table 1 name.",
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-22T20:05:00Z"
+    },
+    {
+      "id": "ccorr-002",
+      "op": "keep",
+      "source": {
+        "table_number": 2,
+        "activity_id": "act-001",
+        "activity_name": "COVID-19 Informed Consent/Reconsent (where applicable)"
+      },
+      "target": {
+        "table_number": 1,
+        "activity_id": "act-001",
+        "activity_name": "Informed Consent"
+      },
+      "reason": "Not the same activity: the COVID-19 consent/reconsent to the modified procedures (where applicable) is a separate consent from the study informed consent at screening.",
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-22T20:05:00Z"
+    },
+    {
+      "id": "ccorr-003",
+      "op": "keep",
+      "source": {
+        "table_number": 2,
+        "activity_id": "act-022",
+        "activity_name": "IP Return"
+      },
+      "target": {
+        "table_number": 1,
+        "activity_id": "act-032",
+        "activity_name": "Drug Return and Compliance"
+      },
+      "reason": "Not the same activity: Table 4 splits return and compliance into 'IP Return' and 'IP Compliance and Accountability'; 'IP Return' is only one part of Table 1's 'Drug Return and Compliance'.",
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-22T20:05:00Z"
+    }
+  ]
+}

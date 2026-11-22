@@ -264,6 +264,27 @@
             <table class="comp-table">
                 <thead><tr><th>state</th><th>refining side</th><th></th><th>row</th><th>activity</th><th>draft</th></tr></thead>
                 <tbody><tr>
+            <td><span class='pill done'>stated · ccorr-001</span></td>
+            <td class="text-full">Table 2 (whole table)</td>
+            <td class="type">refines</td>
+            <td class="text-full"><span class='trace'>T1 act-020</span> Pharmacokinetic sample</td>
+            <td class="id"><a href="#xact-020">xact-020</a></td>
+            <td>Footnote l on this row (&#x27;Refer to Table 1–1 PK, PD and Biomarker sampling.&#x27;) points to Table 1–1, which gives the within-visit sampling timepoints for the row; the table details the row, nothing is merged. Not recorded for &#x27;Study drug intake at the site&#x27; (also marked l): Table 1–1 gives sampling timepoints, not an intake schedule. <span class='trace'>Kerstin Forsberg, 2026-11-22T20:08:00Z</span></td>
+        </tr><tr>
+            <td><span class='pill done'>stated · ccorr-002</span></td>
+            <td class="text-full">Table 2 (whole table)</td>
+            <td class="type">refines</td>
+            <td class="text-full"><span class='trace'>T1 act-021</span> Pharmacodynamic sampling</td>
+            <td class="id"><a href="#xact-021">xact-021</a></td>
+            <td>Footnote l on this row (&#x27;Refer to Table 1–1 PK, PD and Biomarker sampling.&#x27;) points to Table 1–1, which gives the within-visit sampling timepoints for the row; the table details the row, nothing is merged. Not recorded for &#x27;Study drug intake at the site&#x27; (also marked l): Table 1–1 gives sampling timepoints, not an intake schedule. <span class='trace'>Kerstin Forsberg, 2026-11-22T20:08:00Z</span></td>
+        </tr><tr>
+            <td><span class='pill done'>stated · ccorr-003</span></td>
+            <td class="text-full">Table 2 (whole table)</td>
+            <td class="type">refines</td>
+            <td class="text-full"><span class='trace'>T1 act-023</span> Biomarker sampling</td>
+            <td class="id"><a href="#xact-023">xact-023</a></td>
+            <td>Footnote l on this row (&#x27;Refer to Table 1–1 PK, PD and Biomarker sampling.&#x27;) points to Table 1–1, which gives the within-visit sampling timepoints for the row; the table details the row, nothing is merged. Not recorded for &#x27;Study drug intake at the site&#x27; (also marked l): Table 1–1 gives sampling timepoints, not an intake schedule. <span class='trace'>Kerstin Forsberg, 2026-11-22T20:08:00Z</span></td>
+        </tr><tr>
             <td><span class='pill'>source note</span></td>
             <td class="text-full"><a href="#xannot-012">12</a> “Refer to Table 1–1 PK, PD and Biomarker sampling.”</td>
             <td class="type">points from</td>
@@ -272,7 +293,7 @@
             <td><select data-k="0"><option value="">which table refines? (no draft)</option><option value="2">Table 2 — Table 1–1 PK, PD and Biomarker Sampling</option></select></td>
         </tr></tbody>
             </table>
-            <div class="comp-note">Draft — new file <code>consolidated/NCT04304508_consolidation_corrections.json</code>; replace each <code>&lt;why&gt;</code>, then re-run consolidation.
+            <div class="comp-note">Draft — entries to append to <code>consolidated/NCT04304508_consolidation_corrections.json</code>; replace each <code>&lt;why&gt;</code>, then re-run consolidation.
                 <input id="matches-by" placeholder="your name, as it should appear in the sidecar">
                 <textarea id="matches-draft" readonly placeholder="Choose a decision above to draft sidecar entries here."></textarea>
             </div>
@@ -280,7 +301,7 @@
     </div>
     <script>
     (function () {
-        const M = {"protocol_id": "NCT04304508", "sidecar": "NCT04304508_consolidation_corrections.json", "sidecar_exists": false, "next_id": 1, "items": [], "relations": [], "candidates": [{"xannot_id": "xannot-012", "text": "Refer to Table 1–1 PK, PD and Biomarker sampling.", "rows": [{"table_number": 1, "activity_id": "act-020", "activity_name": "Pharmacokinetic sample"}, {"table_number": 1, "activity_id": "act-021", "activity_name": "Pharmacodynamic sampling"}, {"table_number": 1, "activity_id": "act-023", "activity_name": "Biomarker sampling"}, {"table_number": 1, "activity_id": "act-026", "activity_name": "Study drug intake at the site"}], "tables": [{"table_number": 2, "table_title": "Table 1–1 PK, PD and Biomarker Sampling"}]}], "open": 0};
+        const M = {"protocol_id": "NCT04304508", "sidecar": "NCT04304508_consolidation_corrections.json", "sidecar_exists": true, "next_id": 4, "items": [], "relations": [{"target": {"table_number": 1, "activity_id": "act-020", "activity_name": "Pharmacokinetic sample"}, "target_xact_id": "xact-020", "source": {"table_number": 2}, "correction_id": "ccorr-001", "reason": "Footnote l on this row ('Refer to Table 1–1 PK, PD and Biomarker sampling.') points to Table 1–1, which gives the within-visit sampling timepoints for the row; the table details the row, nothing is merged. Not recorded for 'Study drug intake at the site' (also marked l): Table 1–1 gives sampling timepoints, not an intake schedule.", "by": "Kerstin Forsberg", "at": "2026-11-22T20:08:00Z"}, {"target": {"table_number": 1, "activity_id": "act-021", "activity_name": "Pharmacodynamic sampling"}, "target_xact_id": "xact-021", "source": {"table_number": 2}, "correction_id": "ccorr-002", "reason": "Footnote l on this row ('Refer to Table 1–1 PK, PD and Biomarker sampling.') points to Table 1–1, which gives the within-visit sampling timepoints for the row; the table details the row, nothing is merged. Not recorded for 'Study drug intake at the site' (also marked l): Table 1–1 gives sampling timepoints, not an intake schedule.", "by": "Kerstin Forsberg", "at": "2026-11-22T20:08:00Z"}, {"target": {"table_number": 1, "activity_id": "act-023", "activity_name": "Biomarker sampling"}, "target_xact_id": "xact-023", "source": {"table_number": 2}, "correction_id": "ccorr-003", "reason": "Footnote l on this row ('Refer to Table 1–1 PK, PD and Biomarker sampling.') points to Table 1–1, which gives the within-visit sampling timepoints for the row; the table details the row, nothing is merged. Not recorded for 'Study drug intake at the site' (also marked l): Table 1–1 gives sampling timepoints, not an intake schedule.", "by": "Kerstin Forsberg", "at": "2026-11-22T20:08:00Z"}], "candidates": [{"xannot_id": "xannot-012", "text": "Refer to Table 1–1 PK, PD and Biomarker sampling.", "rows": [{"table_number": 1, "activity_id": "act-020", "activity_name": "Pharmacokinetic sample"}, {"table_number": 1, "activity_id": "act-021", "activity_name": "Pharmacodynamic sampling"}, {"table_number": 1, "activity_id": "act-023", "activity_name": "Biomarker sampling"}, {"table_number": 1, "activity_id": "act-026", "activity_name": "Study drug intake at the site"}], "tables": [{"table_number": 2, "table_title": "Table 1–1 PK, PD and Biomarker Sampling"}]}], "open": 0};
         const choice = {}, picked = {};
         const body = document.getElementById('matches-body');
         const fmt = r => 'T' + r.table_number + (r.activity_id ? ' ' + r.activity_id : '');
@@ -330,7 +351,7 @@
             <span class="comp-desc">Process information</span>
         </div>
         <div class="comp-body">
-            <table class="comp-table"><tbody><tr><td class="field">consolidated_at</td><td><span class="data">2026-11-22T19:51:43.989590+00:00</span></td></tr><tr><td class="field">source_activity_count</td><td><span class="data">32</span></td></tr><tr><td class="field">unified_activity_count</td><td><span class="data">32</span></td></tr><tr><td class="field">compression_percent</td><td><span class="data">0</span></td></tr><tr><td class="field">match_stats</td><td>new: 32</td></tr></tbody></table>
+            <table class="comp-table"><tbody><tr><td class="field">consolidated_at</td><td><span class="data">2026-11-22T20:03:57.697726+00:00</span></td></tr><tr><td class="field">source_activity_count</td><td><span class="data">32</span></td></tr><tr><td class="field">unified_activity_count</td><td><span class="data">32</span></td></tr><tr><td class="field">compression_percent</td><td><span class="data">0</span></td></tr><tr><td class="field">match_stats</td><td>new: 32</td></tr></tbody></table>
         </div>
     </div>
     
@@ -577,6 +598,9 @@
             <td class="trace">1</td>
             <td class="trace">T1</td>
             <td class="type"></td>
+        </tr><tr class="refined-by">
+            <td></td>
+            <td class="text-full" colspan="6">↳ refined by Table 2 (whole table) <span class="trace">ccorr-001</span></td>
         </tr><tr id="xact-021" style="background: #ffffff;">
             <td class="id">xact-021</td>
             <td class="text-full">Pharmacodynamic sampling</td>
@@ -585,6 +609,9 @@
             <td class="trace">1</td>
             <td class="trace">T1</td>
             <td class="type"></td>
+        </tr><tr class="refined-by">
+            <td></td>
+            <td class="text-full" colspan="6">↳ refined by Table 2 (whole table) <span class="trace">ccorr-002</span></td>
         </tr><tr id="xact-022" style="background: #ffffff;">
             <td class="id">xact-022</td>
             <td class="text-full">Pharmacogenetic sample</td>
@@ -601,6 +628,9 @@
             <td class="trace">1</td>
             <td class="trace">T1</td>
             <td class="type"></td>
+        </tr><tr class="refined-by">
+            <td></td>
+            <td class="text-full" colspan="6">↳ refined by Table 2 (whole table) <span class="trace">ccorr-003</span></td>
         </tr><tr id="xact-024" style="background: #ffffff;">
             <td class="id">xact-024</td>
             <td class="text-full">Study drug administration</td>
