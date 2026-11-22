@@ -7,9 +7,9 @@
 <https://kerfors.github.io/soa-tables/id/sha256/da34454eedb01b990f98c8abe75b45c0cd44496bb0fabb20af1f0b5fb9e16a09/soa-tables-v1> {
     <https://kerfors.github.io/soa-tables/id/sha256/da34454eedb01b990f98c8abe75b45c0cd44496bb0fabb20af1f0b5fb9e16a09/soa-tables-v1> a st:Transcription ;
         st:aboutStudy <https://kerfors.github.io/soa-tables/id/study/NCT03861273> ;
-        st:codeCommit "51f8dc7552331a64cf57648341e27ac8a53aecfd" ;
-        st:collectionsCommit "9a8c9e4ee840a037cc8e80ae7cfc7aecac88c129" ;
-        st:consolidatedAt "2026-11-21T09:30:14.141417+00:00"^^xsd:dateTime ;
+        st:codeCommit "d6685151b379817a2976d7db687ecbcb9525c7c7" ;
+        st:collectionsCommit "4a9b8da56a167cd55939e4efa725cede256d4a0f" ;
+        st:consolidatedAt "2026-11-22T21:25:08.954885+00:00"^^xsd:dateTime ;
         st:consolidator "soa_tables.consolidate v1.2" ;
         st:ofFile <https://kerfors.github.io/soa-tables/id/sha256/da34454eedb01b990f98c8abe75b45c0cd44496bb0fabb20af1f0b5fb9e16a09> ;
         st:schemaVersion "1.7" .
@@ -1843,103 +1843,28 @@
             e:u-t01-n-x23-r005-d02 ;
         st:occurrence e:t01-n-x23-r005 ;
         st:refersToActivity e:u-t01-r005 ;
-        st:refersToCell e:m-t01-r005-t01-c004,
-            e:m-t01-r016-t01-c003,
-            e:m-t01-r017-t01-c003,
-            e:m-t01-r047-t01-c003,
-            e:m-t01-r047-t01-c004,
-            e:m-t01-r047-t01-c005,
-            e:m-t01-r047-t01-c006,
-            e:m-t01-r047-t01-c007,
-            e:m-t01-r047-t01-c008,
-            e:m-t01-r047-t01-c009,
-            e:m-t01-r047-t01-c010,
-            e:m-t01-r047-t01-c011,
-            e:m-t01-r047-t01-c012,
-            e:m-t01-r047-t01-c013,
-            e:m-t01-r047-t01-c014,
-            e:m-t01-r062-t01-c005,
-            e:m-t01-r062-t01-c006,
-            e:m-t01-r062-t01-c007,
-            e:m-t01-r062-t01-c008,
-            e:m-t01-r062-t01-c009,
-            e:m-t01-r062-t01-c010,
-            e:m-t01-r062-t01-c011,
-            e:m-t01-r062-t01-c012,
-            e:m-t01-r062-t01-c013,
-            e:m-t01-r062-t01-c014 ;
+        st:refersToCell e:m-t01-r005-t01-c004 ;
         st:text "Review and confirm eligibility (see Sections 5.1 & 5.2) prior to infusion (Infusion Center should confirm eligibility with study site)." .
 
     e:u-t01-n-x23-r016 a st:UnifiedAnnotation ;
         st:annotationType "footnote" ;
         st:occurrence e:t01-n-x23-r016 ;
         st:refersToActivity e:u-t01-r016 ;
-        st:refersToCell e:m-t01-r005-t01-c004,
-            e:m-t01-r016-t01-c003,
-            e:m-t01-r017-t01-c003,
-            e:m-t01-r047-t01-c003,
-            e:m-t01-r047-t01-c004,
-            e:m-t01-r047-t01-c005,
-            e:m-t01-r047-t01-c006,
-            e:m-t01-r047-t01-c007,
-            e:m-t01-r047-t01-c008,
-            e:m-t01-r047-t01-c009,
-            e:m-t01-r047-t01-c010,
-            e:m-t01-r047-t01-c011,
-            e:m-t01-r047-t01-c012,
-            e:m-t01-r047-t01-c013,
-            e:m-t01-r047-t01-c014,
-            e:m-t01-r062-t01-c005,
-            e:m-t01-r062-t01-c006,
-            e:m-t01-r062-t01-c007,
-            e:m-t01-r062-t01-c008,
-            e:m-t01-r062-t01-c009,
-            e:m-t01-r062-t01-c010,
-            e:m-t01-r062-t01-c011,
-            e:m-t01-r062-t01-c012,
-            e:m-t01-r062-t01-c013,
-            e:m-t01-r062-t01-c014 ;
+        st:refersToCell e:m-t01-r016-t01-c003 ;
         st:text "If this X-ray can’t be performed during the baseline period, it is acceptable to postpone this testing no later than Week 4/ Visit 6." .
 
     e:u-t01-n-x23-r017 a st:UnifiedAnnotation ;
         st:annotationType "footnote" ;
         st:occurrence e:t01-n-x23-r017 ;
         st:refersToActivity e:u-t01-r017 ;
-        st:refersToCell e:m-t01-r005-t01-c004,
-            e:m-t01-r016-t01-c003,
-            e:m-t01-r017-t01-c003,
-            e:m-t01-r047-t01-c003,
-            e:m-t01-r047-t01-c004,
-            e:m-t01-r047-t01-c005,
-            e:m-t01-r047-t01-c006,
-            e:m-t01-r047-t01-c007,
-            e:m-t01-r047-t01-c008,
-            e:m-t01-r047-t01-c009,
-            e:m-t01-r047-t01-c010,
-            e:m-t01-r047-t01-c011,
-            e:m-t01-r047-t01-c012,
-            e:m-t01-r047-t01-c013,
-            e:m-t01-r047-t01-c014,
-            e:m-t01-r062-t01-c005,
-            e:m-t01-r062-t01-c006,
-            e:m-t01-r062-t01-c007,
-            e:m-t01-r062-t01-c008,
-            e:m-t01-r062-t01-c009,
-            e:m-t01-r062-t01-c010,
-            e:m-t01-r062-t01-c011,
-            e:m-t01-r062-t01-c012,
-            e:m-t01-r062-t01-c013,
-            e:m-t01-r062-t01-c014 ;
+        st:refersToCell e:m-t01-r017-t01-c003 ;
         st:text "If this MRI can’t be performed during the baseline period, it is acceptable to postpone this testing no later than Week 4/ Visit 6." .
 
     e:u-t01-n-x23-r047 a st:UnifiedAnnotation ;
         st:annotationType "footnote" ;
         st:occurrence e:t01-n-x23-r047 ;
         st:refersToActivity e:u-t01-r047 ;
-        st:refersToCell e:m-t01-r005-t01-c004,
-            e:m-t01-r016-t01-c003,
-            e:m-t01-r017-t01-c003,
-            e:m-t01-r047-t01-c003,
+        st:refersToCell e:m-t01-r047-t01-c003,
             e:m-t01-r047-t01-c004,
             e:m-t01-r047-t01-c005,
             e:m-t01-r047-t01-c006,
@@ -1950,39 +1875,14 @@
             e:m-t01-r047-t01-c011,
             e:m-t01-r047-t01-c012,
             e:m-t01-r047-t01-c013,
-            e:m-t01-r047-t01-c014,
-            e:m-t01-r062-t01-c005,
-            e:m-t01-r062-t01-c006,
-            e:m-t01-r062-t01-c007,
-            e:m-t01-r062-t01-c008,
-            e:m-t01-r062-t01-c009,
-            e:m-t01-r062-t01-c010,
-            e:m-t01-r062-t01-c011,
-            e:m-t01-r062-t01-c012,
-            e:m-t01-r062-t01-c013,
-            e:m-t01-r062-t01-c014 ;
+            e:m-t01-r047-t01-c014 ;
         st:text "Infusion centers are not required to perform this activity on Visit 3; however, the study site is required to perform this review." .
 
     e:u-t01-n-x23-r062 a st:UnifiedAnnotation ;
         st:annotationType "footnote" ;
         st:occurrence e:t01-n-x23-r062 ;
         st:refersToActivity e:u-t01-r062 ;
-        st:refersToCell e:m-t01-r005-t01-c004,
-            e:m-t01-r016-t01-c003,
-            e:m-t01-r017-t01-c003,
-            e:m-t01-r047-t01-c003,
-            e:m-t01-r047-t01-c004,
-            e:m-t01-r047-t01-c005,
-            e:m-t01-r047-t01-c006,
-            e:m-t01-r047-t01-c007,
-            e:m-t01-r047-t01-c008,
-            e:m-t01-r047-t01-c009,
-            e:m-t01-r047-t01-c010,
-            e:m-t01-r047-t01-c011,
-            e:m-t01-r047-t01-c012,
-            e:m-t01-r047-t01-c013,
-            e:m-t01-r047-t01-c014,
-            e:m-t01-r062-t01-c005,
+        st:refersToCell e:m-t01-r062-t01-c005,
             e:m-t01-r062-t01-c006,
             e:m-t01-r062-t01-c007,
             e:m-t01-r062-t01-c008,
@@ -1997,17 +1897,6 @@
     e:u-t01-n-x2a-r002 a st:UnifiedAnnotation ;
         st:annotationType "footnote" ;
         st:occurrence e:t01-n-x2a-r002 ;
-        st:refersToActivity e:u-t01-r018,
-            e:u-t01-r032 ;
-        st:refersToCell e:m-t01-r005-t01-c002,
-            e:m-t01-r016-t01-c003,
-            e:m-t01-r017-t01-c003,
-            e:m-t01-r020-t01-c002,
-            e:m-t01-r024-t01-c002,
-            e:m-t01-r025-t01-c002,
-            e:m-t01-r042-t01-c005,
-            e:m-t01-r058-t01-c003,
-            e:m-t01-r062-t01-c004 ;
         st:refersToColumn e:u-t01-c005 ;
         st:text "Visit 4: The participant is not required to appear in person at this visit. Visit 4 study procedures are not required to be performed if the participant does not appear in person with the exception of all required laboratory specimens (eg, Immunology – Exploratory [IgG vs IgM antibody response], Vector Shedding Analysis by PCR, FIX Activity, Antigen and LFT) which can be obtained via mobile phlebotomy home health services. If participants physically attend this visit, all procedures are to be performed per SOA." .
 
@@ -2016,18 +1905,8 @@
         st:documentReference e:u-t01-n-x2a-r005-d01,
             e:u-t01-n-x2a-r005-d02 ;
         st:occurrence e:t01-n-x2a-r005 ;
-        st:refersToActivity e:u-t01-r018,
-            e:u-t01-r032 ;
-        st:refersToCell e:m-t01-r005-t01-c002,
-            e:m-t01-r016-t01-c003,
-            e:m-t01-r017-t01-c003,
-            e:m-t01-r020-t01-c002,
-            e:m-t01-r024-t01-c002,
-            e:m-t01-r025-t01-c002,
-            e:m-t01-r042-t01-c005,
-            e:m-t01-r058-t01-c003,
-            e:m-t01-r062-t01-c004 ;
-        st:refersToColumn e:u-t01-c005 ;
+        st:refersToActivity e:u-t01-r005 ;
+        st:refersToCell e:m-t01-r005-t01-c002 ;
         st:text "Review and confirm eligibility criteria (see Sections 5.1 & 5.2). This needs to be completed prior to ordering IP at the beginning of the Baseline Period." .
 
     e:u-t01-n-x2a-r016 a st:UnifiedAnnotation ;
@@ -2036,22 +1915,10 @@
             e:u-t01-n-x2a-r016-d02 ;
         st:occurrence e:t01-n-x2a-r016,
             e:t02-n-x2a-r006 ;
-        st:refersToActivity e:u-t01-r018,
-            e:u-t01-r032 ;
-        st:refersToCell e:m-t01-r005-t01-c002,
-            e:m-t01-r016-t01-c003,
+        st:refersToActivity e:u-t01-r016 ;
+        st:refersToCell e:m-t01-r016-t01-c003,
             e:m-t01-r016-t02-c005,
-            e:m-t01-r016-t02-c008,
-            e:m-t01-r017-t01-c003,
-            e:m-t01-r017-t02-c005,
-            e:m-t01-r017-t02-c008,
-            e:m-t01-r020-t01-c002,
-            e:m-t01-r024-t01-c002,
-            e:m-t01-r025-t01-c002,
-            e:m-t01-r042-t01-c005,
-            e:m-t01-r058-t01-c003,
-            e:m-t01-r062-t01-c004 ;
-        st:refersToColumn e:u-t01-c005 ;
+            e:m-t01-r016-t02-c008 ;
         st:text "Some participants (n~40), who consent to participate in an optional sub-study, will undergo X-ray for assessment of joints (Section 8.1.2.3). For German sites please refer to Germany Appendix (Section 10.11.2.4)." .
 
     e:u-t01-n-x2a-r017 a st:UnifiedAnnotation ;
@@ -2059,158 +1926,64 @@
         st:documentReference e:u-t01-n-x2a-r017-d01 ;
         st:occurrence e:t01-n-x2a-r017,
             e:t02-n-x2a-r007 ;
-        st:refersToActivity e:u-t01-r018,
-            e:u-t01-r032 ;
-        st:refersToCell e:m-t01-r005-t01-c002,
-            e:m-t01-r016-t01-c003,
-            e:m-t01-r016-t02-c005,
-            e:m-t01-r016-t02-c008,
-            e:m-t01-r017-t01-c003,
+        st:refersToActivity e:u-t01-r017 ;
+        st:refersToCell e:m-t01-r017-t01-c003,
             e:m-t01-r017-t02-c005,
-            e:m-t01-r017-t02-c008,
-            e:m-t01-r020-t01-c002,
-            e:m-t01-r024-t01-c002,
-            e:m-t01-r025-t01-c002,
-            e:m-t01-r042-t01-c005,
-            e:m-t01-r058-t01-c003,
-            e:m-t01-r062-t01-c004 ;
-        st:refersToColumn e:u-t01-c005 ;
+            e:m-t01-r017-t02-c008 ;
         st:text "Some participants (n~20), who consent to participate in an optional sub-study, will undergo joint MRIs (Section 8.1.2.2)." .
 
     e:u-t01-n-x2a-r018 a st:UnifiedAnnotation ;
         st:annotationType "footnote" ;
         st:occurrence e:t01-n-x2a-r018 ;
-        st:refersToActivity e:u-t01-r018,
-            e:u-t01-r032 ;
-        st:refersToCell e:m-t01-r005-t01-c002,
-            e:m-t01-r016-t01-c003,
-            e:m-t01-r017-t01-c003,
-            e:m-t01-r020-t01-c002,
-            e:m-t01-r024-t01-c002,
-            e:m-t01-r025-t01-c002,
-            e:m-t01-r042-t01-c005,
-            e:m-t01-r058-t01-c003,
-            e:m-t01-r062-t01-c004 ;
-        st:refersToColumn e:u-t01-c005 ;
+        st:refersToActivity e:u-t01-r018 ;
         st:text "FibroScan, if performed, would be performed locally." .
 
     e:u-t01-n-x2a-r020 a st:UnifiedAnnotation ;
         st:annotationType "footnote" ;
         st:occurrence e:t01-n-x2a-r020 ;
-        st:refersToActivity e:u-t01-r018,
-            e:u-t01-r032 ;
-        st:refersToCell e:m-t01-r005-t01-c002,
-            e:m-t01-r016-t01-c003,
-            e:m-t01-r017-t01-c003,
-            e:m-t01-r020-t01-c002,
-            e:m-t01-r024-t01-c002,
-            e:m-t01-r025-t01-c002,
-            e:m-t01-r042-t01-c005,
-            e:m-t01-r058-t01-c003,
-            e:m-t01-r062-t01-c004 ;
-        st:refersToColumn e:u-t01-c005 ;
+        st:refersToActivity e:u-t01-r020 ;
+        st:refersToCell e:m-t01-r020-t01-c002 ;
         st:text "Test to be performed if results are not available in the source documents." .
 
     e:u-t01-n-x2a-r024 a st:UnifiedAnnotation ;
         st:annotationType "footnote" ;
         st:occurrence e:t01-n-x2a-r024 ;
-        st:refersToActivity e:u-t01-r018,
-            e:u-t01-r032 ;
-        st:refersToCell e:m-t01-r005-t01-c002,
-            e:m-t01-r016-t01-c003,
-            e:m-t01-r017-t01-c003,
-            e:m-t01-r020-t01-c002,
-            e:m-t01-r024-t01-c002,
-            e:m-t01-r025-t01-c002,
-            e:m-t01-r042-t01-c005,
-            e:m-t01-r058-t01-c003,
-            e:m-t01-r062-t01-c004 ;
-        st:refersToColumn e:u-t01-c005 ;
+        st:refersToActivity e:u-t01-r024 ;
+        st:refersToCell e:m-t01-r024-t01-c002 ;
         st:text "Positive inhibitor testing as measured by the central laboratory ≥0.6 Bethesda Units (BU) at Visit 1 would be exclusionary." .
 
     e:u-t01-n-x2a-r025 a st:UnifiedAnnotation ;
         st:annotationType "footnote" ;
         st:occurrence e:t01-n-x2a-r025 ;
-        st:refersToActivity e:u-t01-r018,
-            e:u-t01-r032 ;
-        st:refersToCell e:m-t01-r005-t01-c002,
-            e:m-t01-r016-t01-c003,
-            e:m-t01-r017-t01-c003,
-            e:m-t01-r020-t01-c002,
-            e:m-t01-r024-t01-c002,
-            e:m-t01-r025-t01-c002,
-            e:m-t01-r042-t01-c005,
-            e:m-t01-r058-t01-c003,
-            e:m-t01-r062-t01-c004 ;
-        st:refersToColumn e:u-t01-c005 ;
+        st:refersToActivity e:u-t01-r025 ;
+        st:refersToCell e:m-t01-r025-t01-c002 ;
         st:text "Participants with Anti-AAV-Spark100 neutralizing antibodies (nAb) titer ≥ 1:1 (ie, positive for nAb) are to be excluded from the study." .
 
     e:u-t01-n-x2a-r032 a st:UnifiedAnnotation ;
         st:annotationType "footnote" ;
         st:occurrence e:t01-n-x2a-r032 ;
-        st:refersToActivity e:u-t01-r018,
-            e:u-t01-r032 ;
-        st:refersToCell e:m-t01-r005-t01-c002,
-            e:m-t01-r016-t01-c003,
-            e:m-t01-r017-t01-c003,
-            e:m-t01-r020-t01-c002,
-            e:m-t01-r024-t01-c002,
-            e:m-t01-r025-t01-c002,
-            e:m-t01-r042-t01-c005,
-            e:m-t01-r058-t01-c003,
-            e:m-t01-r062-t01-c004 ;
-        st:refersToColumn e:u-t01-c005 ;
+        st:refersToActivity e:u-t01-r032 ;
         st:text "FIX Activity and LFT testing will be conducted at local AND central lab for all time points and as clinically necessary (including samples drawn at the clinic and any mobile phlebotomy/ home health service visits). FIX Antigen testing will be conducted ONLY at central lab for all time points and as clinically necessary. Clinical decisions may be based on local and/ or central lab results." .
 
     e:u-t01-n-x2a-r042 a st:UnifiedAnnotation ;
         st:annotationType "footnote" ;
         st:occurrence e:t01-n-x2a-r042 ;
-        st:refersToActivity e:u-t01-r018,
-            e:u-t01-r032 ;
-        st:refersToCell e:m-t01-r005-t01-c002,
-            e:m-t01-r016-t01-c003,
-            e:m-t01-r017-t01-c003,
-            e:m-t01-r020-t01-c002,
-            e:m-t01-r024-t01-c002,
-            e:m-t01-r025-t01-c002,
-            e:m-t01-r042-t01-c005,
-            e:m-t01-r058-t01-c003,
-            e:m-t01-r062-t01-c004 ;
-        st:refersToColumn e:u-t01-c005 ;
+        st:refersToActivity e:u-t01-r042 ;
+        st:refersToCell e:m-t01-r042-t01-c005 ;
         st:text "Specimen is required at Visit 4 and can be obtained via mobile phlebotomy/ home health service." .
 
     e:u-t01-n-x2a-r058 a st:UnifiedAnnotation ;
         st:annotationType "footnote" ;
         st:occurrence e:t01-n-x2a-r058 ;
-        st:refersToActivity e:u-t01-r018,
-            e:u-t01-r032 ;
-        st:refersToCell e:m-t01-r005-t01-c002,
-            e:m-t01-r016-t01-c003,
-            e:m-t01-r017-t01-c003,
-            e:m-t01-r020-t01-c002,
-            e:m-t01-r024-t01-c002,
-            e:m-t01-r025-t01-c002,
-            e:m-t01-r042-t01-c005,
-            e:m-t01-r058-t01-c003,
-            e:m-t01-r062-t01-c004 ;
-        st:refersToColumn e:u-t01-c005 ;
+        st:refersToActivity e:u-t01-r058 ;
+        st:refersToCell e:m-t01-r058-t01-c003 ;
         st:text "PGIC-H is not completed at baseline visit." .
 
     e:u-t01-n-x2a-r062 a st:UnifiedAnnotation ;
         st:annotationType "footnote" ;
         st:occurrence e:t01-n-x2a-r062 ;
-        st:refersToActivity e:u-t01-r018,
-            e:u-t01-r032 ;
-        st:refersToCell e:m-t01-r005-t01-c002,
-            e:m-t01-r016-t01-c003,
-            e:m-t01-r017-t01-c003,
-            e:m-t01-r020-t01-c002,
-            e:m-t01-r024-t01-c002,
-            e:m-t01-r025-t01-c002,
-            e:m-t01-r042-t01-c005,
-            e:m-t01-r058-t01-c003,
-            e:m-t01-r062-t01-c004 ;
-        st:refersToColumn e:u-t01-c005 ;
+        st:refersToActivity e:u-t01-r062 ;
+        st:refersToCell e:m-t01-r062-t01-c004 ;
         st:text "Optional Vector Shedding Sub-study: Additional (2 hrs (±30 minutes), 24 hrs (±3 hrs), 72 hrs (±4 hrs) after completion of IP infusion and IV line flush on Day 1) samples (plasma, PBMC, saliva, semen, and urine) will be collected from some participants (n=12) who consent to participate in an optional sub-study. Utilize mobile phlebotomy/ home health services as needed." .
 
     e:u-t01-r001 a st:UnifiedProperty ;
@@ -2346,69 +2119,30 @@
         st:occurrence e:t02-n-x23-r006 ;
         st:refersToActivity e:u-t01-r016 ;
         st:refersToCell e:m-t01-r016-t02-c005,
-            e:m-t01-r016-t02-c008,
-            e:m-t01-r017-t02-c005,
-            e:m-t01-r017-t02-c008,
-            e:m-t01-r032-t02-c006,
-            e:m-t01-r032-t02-c007,
-            e:m-t01-r062-t02-c002,
-            e:m-t01-r062-t02-c003,
-            e:m-t01-r062-t02-c004,
-            e:m-t01-r062-t02-c005,
-            e:m-t01-r062-t02-c006,
-            e:m-t01-r062-t02-c007,
-            e:m-t01-r062-t02-c008 ;
+            e:m-t01-r016-t02-c008 ;
         st:text "If the baseline X-ray could not be performed ≤ Week 4/ Visit 6, the study participant does not need to do the 3 (Visit 17) and 6 year (Visit 20) follow-up X-rays." .
 
     e:u-t02-n-x23-r007 a st:UnifiedAnnotation ;
         st:annotationType "footnote" ;
         st:occurrence e:t02-n-x23-r007 ;
         st:refersToActivity e:u-t01-r017 ;
-        st:refersToCell e:m-t01-r016-t02-c005,
-            e:m-t01-r016-t02-c008,
-            e:m-t01-r017-t02-c005,
-            e:m-t01-r017-t02-c008,
-            e:m-t01-r032-t02-c006,
-            e:m-t01-r032-t02-c007,
-            e:m-t01-r062-t02-c002,
-            e:m-t01-r062-t02-c003,
-            e:m-t01-r062-t02-c004,
-            e:m-t01-r062-t02-c005,
-            e:m-t01-r062-t02-c006,
-            e:m-t01-r062-t02-c007,
-            e:m-t01-r062-t02-c008 ;
+        st:refersToCell e:m-t01-r017-t02-c005,
+            e:m-t01-r017-t02-c008 ;
         st:text "If the baseline MRI could not be performed ≤ Week 4/ Visit 6, the study participant does not need to do the 3 (Visit 17) and 6 (Visit 20) year follow-up MRIs." .
 
     e:u-t02-n-x23-r016 a st:UnifiedAnnotation ;
         st:annotationType "footnote" ;
         st:occurrence e:t02-n-x23-r016 ;
         st:refersToActivity e:u-t01-r032 ;
-        st:refersToCell e:m-t01-r016-t02-c005,
-            e:m-t01-r016-t02-c008,
-            e:m-t01-r017-t02-c005,
-            e:m-t01-r017-t02-c008,
-            e:m-t01-r032-t02-c006,
-            e:m-t01-r032-t02-c007,
-            e:m-t01-r062-t02-c002,
-            e:m-t01-r062-t02-c003,
-            e:m-t01-r062-t02-c004,
-            e:m-t01-r062-t02-c005,
-            e:m-t01-r062-t02-c006,
-            e:m-t01-r062-t02-c007,
-            e:m-t01-r062-t02-c008 ;
+        st:refersToCell e:m-t01-r032-t02-c006,
+            e:m-t01-r032-t02-c007 ;
         st:text "Samples should be taken at weeks: 182, 208 (Visit 18), 234, 260 (Visit 19) and 286." .
 
     e:u-t02-n-x23-r027 a st:UnifiedAnnotation ;
         st:annotationType "footnote" ;
         st:occurrence e:t02-n-x23-r027 ;
         st:refersToActivity e:u-t01-r062 ;
-        st:refersToCell e:m-t01-r016-t02-c005,
-            e:m-t01-r016-t02-c008,
-            e:m-t01-r017-t02-c005,
-            e:m-t01-r017-t02-c008,
-            e:m-t01-r032-t02-c006,
-            e:m-t01-r032-t02-c007,
-            e:m-t01-r062-t02-c002,
+        st:refersToCell e:m-t01-r062-t02-c002,
             e:m-t01-r062-t02-c003,
             e:m-t01-r062-t02-c004,
             e:m-t01-r062-t02-c005,
@@ -2431,10 +2165,6 @@
         st:annotationType "footnote" ;
         st:occurrence e:t02-n-x2a-r016 ;
         st:refersToActivity e:u-t01-r032 ;
-        st:refersToCell e:m-t01-r016-t02-c005,
-            e:m-t01-r016-t02-c008,
-            e:m-t01-r017-t02-c005,
-            e:m-t01-r017-t02-c008 ;
         st:text "FIX Activity and LFT testing will be conducted at local AND central lab for all time points and as clinically necessary (including samples drawn at the clinic and any mobile phlebotomy/ home health service visits). FIX Antigen testing will be conducted ONLY at central lab for all time points and as clinically necessary. Clinical decisions may be based on local and/or central lab results." .
 
     page:23 a st:Page ;
@@ -2449,6 +2179,18 @@
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/da34454eedb01b990f98c8abe75b45c0cd44496bb0fabb20af1f0b5fb9e16a09> ;
         st:pageNumber 28 .
 
+    e:m-t01-r005-t01-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r005-c002 ;
+        st:activity e:u-t01-r005 ;
+        st:column e:u-t01-c002 ;
+        st:value "X" .
+
+    e:m-t01-r005-t01-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r005-c004 ;
+        st:activity e:u-t01-r005 ;
+        st:column e:u-t01-c004 ;
+        st:value "X" .
+
     e:m-t01-r010-t01-c002 a st:ConsolidatedCell ;
         prov:wasDerivedFrom e:t01-r010-c002 ;
         st:activity e:u-t01-r010 ;
@@ -2459,6 +2201,24 @@
         prov:wasDerivedFrom e:t01-r010-c004 ;
         st:activity e:u-t01-r010 ;
         st:column e:u-t01-c004 ;
+        st:value "X" .
+
+    e:m-t01-r020-t01-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r020-c002 ;
+        st:activity e:u-t01-r020 ;
+        st:column e:u-t01-c002 ;
+        st:value "X" .
+
+    e:m-t01-r024-t01-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r024-c002 ;
+        st:activity e:u-t01-r024 ;
+        st:column e:u-t01-c002 ;
+        st:value "X" .
+
+    e:m-t01-r025-t01-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r025-c002 ;
+        st:activity e:u-t01-r025 ;
+        st:column e:u-t01-c002 ;
         st:value "X" .
 
     e:m-t01-r027-t01-c002 a st:ConsolidatedCell ;
@@ -2491,11 +2251,101 @@
         st:column e:u-t02-c005 ;
         st:value "Starting at Week 53, monitor once every 3 months" .
 
+    e:m-t01-r032-t02-c006 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r016-c006 ;
+        st:activity e:u-t01-r032 ;
+        st:column e:u-t02-c006 ;
+        st:value "Starting at Week 157, monitor once every 6 months" .
+
+    e:m-t01-r032-t02-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r016-c007 ;
+        st:activity e:u-t01-r032 ;
+        st:column e:u-t02-c007 ;
+        st:value "Starting at Week 157, monitor once every 6 months" .
+
     e:m-t01-r033-t01-c003 a st:ConsolidatedCell ;
         prov:wasDerivedFrom e:t01-r033-c003 ;
         st:activity e:u-t01-r033 ;
         st:column e:u-t01-c003 ;
         st:value "X" .
+
+    e:m-t01-r042-t01-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r042-c005 ;
+        st:activity e:u-t01-r042 ;
+        st:column e:u-t01-c005 ;
+        st:value "X" .
+
+    e:m-t01-r047-t01-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r047-c003 ;
+        st:activity e:u-t01-r047 ;
+        st:column e:u-t01-c003 ;
+        st:value "Ongoing (including unscheduled visits)" .
+
+    e:m-t01-r047-t01-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r047-c004 ;
+        st:activity e:u-t01-r047 ;
+        st:column e:u-t01-c004 ;
+        st:value "Ongoing (including unscheduled visits)" .
+
+    e:m-t01-r047-t01-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r047-c005 ;
+        st:activity e:u-t01-r047 ;
+        st:column e:u-t01-c005 ;
+        st:value "Ongoing (including unscheduled visits)" .
+
+    e:m-t01-r047-t01-c006 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r047-c006 ;
+        st:activity e:u-t01-r047 ;
+        st:column e:u-t01-c006 ;
+        st:value "Ongoing (including unscheduled visits)" .
+
+    e:m-t01-r047-t01-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r047-c007 ;
+        st:activity e:u-t01-r047 ;
+        st:column e:u-t01-c007 ;
+        st:value "Ongoing (including unscheduled visits)" .
+
+    e:m-t01-r047-t01-c008 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r047-c008 ;
+        st:activity e:u-t01-r047 ;
+        st:column e:u-t01-c008 ;
+        st:value "Ongoing (including unscheduled visits)" .
+
+    e:m-t01-r047-t01-c009 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r047-c009 ;
+        st:activity e:u-t01-r047 ;
+        st:column e:u-t01-c009 ;
+        st:value "Ongoing (including unscheduled visits)" .
+
+    e:m-t01-r047-t01-c010 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r047-c010 ;
+        st:activity e:u-t01-r047 ;
+        st:column e:u-t01-c010 ;
+        st:value "Ongoing (including unscheduled visits)" .
+
+    e:m-t01-r047-t01-c011 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r047-c011 ;
+        st:activity e:u-t01-r047 ;
+        st:column e:u-t01-c011 ;
+        st:value "Ongoing (including unscheduled visits)" .
+
+    e:m-t01-r047-t01-c012 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r047-c012 ;
+        st:activity e:u-t01-r047 ;
+        st:column e:u-t01-c012 ;
+        st:value "Ongoing (including unscheduled visits)" .
+
+    e:m-t01-r047-t01-c013 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r047-c013 ;
+        st:activity e:u-t01-r047 ;
+        st:column e:u-t01-c013 ;
+        st:value "Ongoing (including unscheduled visits)" .
+
+    e:m-t01-r047-t01-c014 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r047-c014 ;
+        st:activity e:u-t01-r047 ;
+        st:column e:u-t01-c014 ;
+        st:value "Ongoing (including unscheduled visits)" .
 
     e:m-t01-r051-t01-c004 a st:ConsolidatedCell ;
         prov:wasDerivedFrom e:t01-r051-c004 ;
@@ -2508,6 +2358,114 @@
         st:activity e:u-t01-r052 ;
         st:column e:u-t01-c004 ;
         st:value "X" .
+
+    e:m-t01-r062-t01-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r062-c004 ;
+        st:activity e:u-t01-r062 ;
+        st:column e:u-t01-c004 ;
+        st:value "X" .
+
+    e:m-t01-r062-t01-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r062-c005 ;
+        st:activity e:u-t01-r062 ;
+        st:column e:u-t01-c005 ;
+        st:value "Weekly, as needed Utilize mobile phlebotomy / home health services, as needed" .
+
+    e:m-t01-r062-t01-c006 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r062-c006 ;
+        st:activity e:u-t01-r062 ;
+        st:column e:u-t01-c006 ;
+        st:value "Weekly, as needed Utilize mobile phlebotomy / home health services, as needed" .
+
+    e:m-t01-r062-t01-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r062-c007 ;
+        st:activity e:u-t01-r062 ;
+        st:column e:u-t01-c007 ;
+        st:value "Weekly, as needed Utilize mobile phlebotomy / home health services, as needed" .
+
+    e:m-t01-r062-t01-c008 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r062-c008 ;
+        st:activity e:u-t01-r062 ;
+        st:column e:u-t01-c008 ;
+        st:value "Weekly, as needed Utilize mobile phlebotomy / home health services, as needed" .
+
+    e:m-t01-r062-t01-c009 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r062-c009 ;
+        st:activity e:u-t01-r062 ;
+        st:column e:u-t01-c009 ;
+        st:value "Weekly, as needed Utilize mobile phlebotomy / home health services, as needed" .
+
+    e:m-t01-r062-t01-c010 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r062-c010 ;
+        st:activity e:u-t01-r062 ;
+        st:column e:u-t01-c010 ;
+        st:value "Weekly, as needed Utilize mobile phlebotomy / home health services, as needed" .
+
+    e:m-t01-r062-t01-c011 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r062-c011 ;
+        st:activity e:u-t01-r062 ;
+        st:column e:u-t01-c011 ;
+        st:value "Weekly, as needed Utilize mobile phlebotomy / home health services, as needed" .
+
+    e:m-t01-r062-t01-c012 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r062-c012 ;
+        st:activity e:u-t01-r062 ;
+        st:column e:u-t01-c012 ;
+        st:value "Weekly, as needed Utilize mobile phlebotomy / home health services, as needed" .
+
+    e:m-t01-r062-t01-c013 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r062-c013 ;
+        st:activity e:u-t01-r062 ;
+        st:column e:u-t01-c013 ;
+        st:value "Weekly, as needed Utilize mobile phlebotomy / home health services, as needed" .
+
+    e:m-t01-r062-t01-c014 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r062-c014 ;
+        st:activity e:u-t01-r062 ;
+        st:column e:u-t01-c014 ;
+        st:value "Weekly, as needed Utilize mobile phlebotomy / home health services, as needed" .
+
+    e:m-t01-r062-t02-c002 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r027-c002 ;
+        st:activity e:u-t01-r062 ;
+        st:column e:u-t02-c002 ;
+        st:value "Weekly, as needed Utilize mobile phlebotomy/ home health services as needed" .
+
+    e:m-t01-r062-t02-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r027-c003 ;
+        st:activity e:u-t01-r062 ;
+        st:column e:u-t02-c003 ;
+        st:value "Weekly, as needed Utilize mobile phlebotomy/ home health services as needed" .
+
+    e:m-t01-r062-t02-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r027-c004 ;
+        st:activity e:u-t01-r062 ;
+        st:column e:u-t02-c004 ;
+        st:value "Weekly, as needed Utilize mobile phlebotomy/ home health services as needed" .
+
+    e:m-t01-r062-t02-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r027-c005 ;
+        st:activity e:u-t01-r062 ;
+        st:column e:u-t02-c005 ;
+        st:value "Weekly, as needed Utilize mobile phlebotomy/ home health services as needed" .
+
+    e:m-t01-r062-t02-c006 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r027-c006 ;
+        st:activity e:u-t01-r062 ;
+        st:column e:u-t02-c006 ;
+        st:value "Weekly, as needed Utilize mobile phlebotomy/ home health services as needed" .
+
+    e:m-t01-r062-t02-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r027-c007 ;
+        st:activity e:u-t01-r062 ;
+        st:column e:u-t02-c007 ;
+        st:value "Weekly, as needed Utilize mobile phlebotomy/ home health services as needed" .
+
+    e:m-t01-r062-t02-c008 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r027-c008 ;
+        st:activity e:u-t01-r062 ;
+        st:column e:u-t02-c008 ;
+        st:value "Weekly, as needed Utilize mobile phlebotomy/ home health services as needed" .
 
     e:m-t02-r032-t02-c008 a st:ConsolidatedCell ;
         prov:wasDerivedFrom e:t02-r032-c008 ;
@@ -4869,17 +4827,6 @@
         st:propertyName "Weeks after IP administration" ;
         st:propertyType "week" .
 
-    e:u-t01-r020 a st:UnifiedActivity ;
-        st:displayOrder 11 ;
-        st:hierarchyLevel 0 ;
-        st:isSectionHeader false ;
-        st:matchConfidence 1.0 ;
-        st:matchStatus "new" ;
-        st:member e:t01-r020 ;
-        st:name "FIX genetic testing (CL)" ;
-        st:parentName "" ;
-        st:qualifiedKey "::FIX genetic testing (CL)" .
-
     e:u-t02-c002-v01 a st:ColumnPropertyValue ;
         st:level 1 ;
         st:position 1 ;
@@ -5091,6 +5038,48 @@
         st:op "merge" ;
         st:reason "Same assay: 'AAV Spark 100' abbreviates 'adeno-associated virus (AAV)-Spark 100'." .
 
+    e:m-t01-r016-t01-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r016-c003 ;
+        st:activity e:u-t01-r016 ;
+        st:column e:u-t01-c003 ;
+        st:value "X" .
+
+    e:m-t01-r016-t02-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r006-c005 ;
+        st:activity e:u-t01-r016 ;
+        st:column e:u-t02-c005 ;
+        st:value "X" .
+
+    e:m-t01-r016-t02-c008 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r006-c008 ;
+        st:activity e:u-t01-r016 ;
+        st:column e:u-t02-c008 ;
+        st:value "X" .
+
+    e:m-t01-r017-t01-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r017-c003 ;
+        st:activity e:u-t01-r017 ;
+        st:column e:u-t01-c003 ;
+        st:value "X" .
+
+    e:m-t01-r017-t02-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r007-c005 ;
+        st:activity e:u-t01-r017 ;
+        st:column e:u-t02-c005 ;
+        st:value "X" .
+
+    e:m-t01-r017-t02-c008 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t02-r007-c008 ;
+        st:activity e:u-t01-r017 ;
+        st:column e:u-t02-c008 ;
+        st:value "X" .
+
+    e:m-t01-r058-t01-c003 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r058-c003 ;
+        st:activity e:u-t01-r058 ;
+        st:column e:u-t01-c003 ;
+        st:value "X" .
+
     e:t01-r004 a st:SourceActivityRow ;
         st:inTable e:t01 ;
         st:matchConfidence 1.0 ;
@@ -5228,6 +5217,17 @@
         st:parentName "" ;
         st:qualifiedKey "::Target Joint Assessment" .
 
+    e:u-t01-r020 a st:UnifiedActivity ;
+        st:displayOrder 11 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r020 ;
+        st:name "FIX genetic testing (CL)" ;
+        st:parentName "" ;
+        st:qualifiedKey "::FIX genetic testing (CL)" .
+
     e:u-t01-r046 a st:UnifiedActivity ;
         st:displayOrder 25 ;
         st:hierarchyLevel 0 ;
@@ -5353,16 +5353,16 @@
         st:onPage page:25 ;
         st:rowPosition 11 .
 
-    e:u-t01-r005 a st:UnifiedActivity ;
-        st:displayOrder 2 ;
+    e:u-t01-r018 a st:UnifiedActivity ;
+        st:displayOrder 9 ;
         st:hierarchyLevel 0 ;
         st:isSectionHeader false ;
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
-        st:member e:t01-r005 ;
-        st:name "Assess/ confirm eligibility" ;
+        st:member e:t01-r018 ;
+        st:name "HBcAB, HCV, CD4, human immunodeficiency virus (HIV) Serology, Liver fibrosis testing & Urinalysis (CL)" ;
         st:parentName "" ;
-        st:qualifiedKey "::Assess/ confirm eligibility" .
+        st:qualifiedKey "::HBcAB, HCV, CD4, human immunodeficiency virus (HIV) Serology, Liver fibrosis testing & Urinalysis (CL)" .
 
     e:u-t01-r028 a st:UnifiedActivity ;
         st:displayOrder 16 ;
@@ -5412,60 +5412,6 @@
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/da34454eedb01b990f98c8abe75b45c0cd44496bb0fabb20af1f0b5fb9e16a09> ;
         st:pageNumber 13 .
 
-    e:m-t01-r032-t02-c006 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r016-c006 ;
-        st:activity e:u-t01-r032 ;
-        st:column e:u-t02-c006 ;
-        st:value "Starting at Week 157, monitor once every 6 months" .
-
-    e:m-t01-r032-t02-c007 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r016-c007 ;
-        st:activity e:u-t01-r032 ;
-        st:column e:u-t02-c007 ;
-        st:value "Starting at Week 157, monitor once every 6 months" .
-
-    e:m-t01-r062-t02-c002 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r027-c002 ;
-        st:activity e:u-t01-r062 ;
-        st:column e:u-t02-c002 ;
-        st:value "Weekly, as needed Utilize mobile phlebotomy/ home health services as needed" .
-
-    e:m-t01-r062-t02-c003 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r027-c003 ;
-        st:activity e:u-t01-r062 ;
-        st:column e:u-t02-c003 ;
-        st:value "Weekly, as needed Utilize mobile phlebotomy/ home health services as needed" .
-
-    e:m-t01-r062-t02-c004 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r027-c004 ;
-        st:activity e:u-t01-r062 ;
-        st:column e:u-t02-c004 ;
-        st:value "Weekly, as needed Utilize mobile phlebotomy/ home health services as needed" .
-
-    e:m-t01-r062-t02-c005 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r027-c005 ;
-        st:activity e:u-t01-r062 ;
-        st:column e:u-t02-c005 ;
-        st:value "Weekly, as needed Utilize mobile phlebotomy/ home health services as needed" .
-
-    e:m-t01-r062-t02-c006 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r027-c006 ;
-        st:activity e:u-t01-r062 ;
-        st:column e:u-t02-c006 ;
-        st:value "Weekly, as needed Utilize mobile phlebotomy/ home health services as needed" .
-
-    e:m-t01-r062-t02-c007 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r027-c007 ;
-        st:activity e:u-t01-r062 ;
-        st:column e:u-t02-c007 ;
-        st:value "Weekly, as needed Utilize mobile phlebotomy/ home health services as needed" .
-
-    e:m-t01-r062-t02-c008 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r027-c008 ;
-        st:activity e:u-t01-r062 ;
-        st:column e:u-t02-c008 ;
-        st:value "Weekly, as needed Utilize mobile phlebotomy/ home health services as needed" .
-
     e:t01-r042 a st:SourceActivityRow ;
         st:inTable e:t01 ;
         st:matchConfidence 1.0 ;
@@ -5490,16 +5436,16 @@
         st:onPage page:27 ;
         st:rowPosition 26 .
 
-    e:u-t01-r042 a st:UnifiedActivity ;
-        st:displayOrder 21 ;
+    e:u-t01-r005 a st:UnifiedActivity ;
+        st:displayOrder 2 ;
         st:hierarchyLevel 0 ;
         st:isSectionHeader false ;
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
-        st:member e:t01-r042 ;
-        st:name "Immunology - Exploratory (binding IgG vs IgM antibody response) (CL)" ;
+        st:member e:t01-r005 ;
+        st:name "Assess/ confirm eligibility" ;
         st:parentName "" ;
-        st:qualifiedKey "::Immunology - Exploratory (binding IgG vs IgM antibody response) (CL)" .
+        st:qualifiedKey "::Assess/ confirm eligibility" .
 
     e:u-t02-r026 a st:UnifiedActivity ;
         st:displayOrder 36 ;
@@ -5520,144 +5466,6 @@
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/da34454eedb01b990f98c8abe75b45c0cd44496bb0fabb20af1f0b5fb9e16a09> ;
         st:pageNumber 16 .
 
-    e:m-t01-r005-t01-c004 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t01-r005-c004 ;
-        st:activity e:u-t01-r005 ;
-        st:column e:u-t01-c004 ;
-        st:value "X" .
-
-    e:m-t01-r047-t01-c003 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t01-r047-c003 ;
-        st:activity e:u-t01-r047 ;
-        st:column e:u-t01-c003 ;
-        st:value "Ongoing (including unscheduled visits)" .
-
-    e:m-t01-r047-t01-c004 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t01-r047-c004 ;
-        st:activity e:u-t01-r047 ;
-        st:column e:u-t01-c004 ;
-        st:value "Ongoing (including unscheduled visits)" .
-
-    e:m-t01-r047-t01-c005 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t01-r047-c005 ;
-        st:activity e:u-t01-r047 ;
-        st:column e:u-t01-c005 ;
-        st:value "Ongoing (including unscheduled visits)" .
-
-    e:m-t01-r047-t01-c006 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t01-r047-c006 ;
-        st:activity e:u-t01-r047 ;
-        st:column e:u-t01-c006 ;
-        st:value "Ongoing (including unscheduled visits)" .
-
-    e:m-t01-r047-t01-c007 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t01-r047-c007 ;
-        st:activity e:u-t01-r047 ;
-        st:column e:u-t01-c007 ;
-        st:value "Ongoing (including unscheduled visits)" .
-
-    e:m-t01-r047-t01-c008 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t01-r047-c008 ;
-        st:activity e:u-t01-r047 ;
-        st:column e:u-t01-c008 ;
-        st:value "Ongoing (including unscheduled visits)" .
-
-    e:m-t01-r047-t01-c009 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t01-r047-c009 ;
-        st:activity e:u-t01-r047 ;
-        st:column e:u-t01-c009 ;
-        st:value "Ongoing (including unscheduled visits)" .
-
-    e:m-t01-r047-t01-c010 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t01-r047-c010 ;
-        st:activity e:u-t01-r047 ;
-        st:column e:u-t01-c010 ;
-        st:value "Ongoing (including unscheduled visits)" .
-
-    e:m-t01-r047-t01-c011 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t01-r047-c011 ;
-        st:activity e:u-t01-r047 ;
-        st:column e:u-t01-c011 ;
-        st:value "Ongoing (including unscheduled visits)" .
-
-    e:m-t01-r047-t01-c012 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t01-r047-c012 ;
-        st:activity e:u-t01-r047 ;
-        st:column e:u-t01-c012 ;
-        st:value "Ongoing (including unscheduled visits)" .
-
-    e:m-t01-r047-t01-c013 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t01-r047-c013 ;
-        st:activity e:u-t01-r047 ;
-        st:column e:u-t01-c013 ;
-        st:value "Ongoing (including unscheduled visits)" .
-
-    e:m-t01-r047-t01-c014 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t01-r047-c014 ;
-        st:activity e:u-t01-r047 ;
-        st:column e:u-t01-c014 ;
-        st:value "Ongoing (including unscheduled visits)" .
-
-    e:m-t01-r062-t01-c005 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t01-r062-c005 ;
-        st:activity e:u-t01-r062 ;
-        st:column e:u-t01-c005 ;
-        st:value "Weekly, as needed Utilize mobile phlebotomy / home health services, as needed" .
-
-    e:m-t01-r062-t01-c006 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t01-r062-c006 ;
-        st:activity e:u-t01-r062 ;
-        st:column e:u-t01-c006 ;
-        st:value "Weekly, as needed Utilize mobile phlebotomy / home health services, as needed" .
-
-    e:m-t01-r062-t01-c007 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t01-r062-c007 ;
-        st:activity e:u-t01-r062 ;
-        st:column e:u-t01-c007 ;
-        st:value "Weekly, as needed Utilize mobile phlebotomy / home health services, as needed" .
-
-    e:m-t01-r062-t01-c008 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t01-r062-c008 ;
-        st:activity e:u-t01-r062 ;
-        st:column e:u-t01-c008 ;
-        st:value "Weekly, as needed Utilize mobile phlebotomy / home health services, as needed" .
-
-    e:m-t01-r062-t01-c009 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t01-r062-c009 ;
-        st:activity e:u-t01-r062 ;
-        st:column e:u-t01-c009 ;
-        st:value "Weekly, as needed Utilize mobile phlebotomy / home health services, as needed" .
-
-    e:m-t01-r062-t01-c010 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t01-r062-c010 ;
-        st:activity e:u-t01-r062 ;
-        st:column e:u-t01-c010 ;
-        st:value "Weekly, as needed Utilize mobile phlebotomy / home health services, as needed" .
-
-    e:m-t01-r062-t01-c011 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t01-r062-c011 ;
-        st:activity e:u-t01-r062 ;
-        st:column e:u-t01-c011 ;
-        st:value "Weekly, as needed Utilize mobile phlebotomy / home health services, as needed" .
-
-    e:m-t01-r062-t01-c012 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t01-r062-c012 ;
-        st:activity e:u-t01-r062 ;
-        st:column e:u-t01-c012 ;
-        st:value "Weekly, as needed Utilize mobile phlebotomy / home health services, as needed" .
-
-    e:m-t01-r062-t01-c013 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t01-r062-c013 ;
-        st:activity e:u-t01-r062 ;
-        st:column e:u-t01-c013 ;
-        st:value "Weekly, as needed Utilize mobile phlebotomy / home health services, as needed" .
-
-    e:m-t01-r062-t01-c014 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t01-r062-c014 ;
-        st:activity e:u-t01-r062 ;
-        st:column e:u-t01-c014 ;
-        st:value "Weekly, as needed Utilize mobile phlebotomy / home health services, as needed" .
-
     e:t01-r025 a st:SourceActivityRow ;
         st:inTable e:t01 ;
         st:matchConfidence 1.0 ;
@@ -5674,29 +5482,16 @@
         st:onPage page:21 ;
         st:rowPosition 58 .
 
-    e:u-t01-r016 a st:UnifiedActivity ;
-        st:displayOrder 7 ;
+    e:u-t01-r042 a st:UnifiedActivity ;
+        st:displayOrder 21 ;
         st:hierarchyLevel 0 ;
         st:isSectionHeader false ;
         st:matchConfidence 1.0 ;
-        st:matchStatus "exact" ;
-        st:member e:t01-r016,
-            e:t02-r006 ;
-        st:name "Joint X-ray" ;
+        st:matchStatus "new" ;
+        st:member e:t01-r042 ;
+        st:name "Immunology - Exploratory (binding IgG vs IgM antibody response) (CL)" ;
         st:parentName "" ;
-        st:qualifiedKey "::Joint X-ray" .
-
-    e:u-t01-r017 a st:UnifiedActivity ;
-        st:displayOrder 8 ;
-        st:hierarchyLevel 0 ;
-        st:isSectionHeader false ;
-        st:matchConfidence 1.0 ;
-        st:matchStatus "exact" ;
-        st:member e:t01-r017,
-            e:t02-r007 ;
-        st:name "Joint MRI" ;
-        st:parentName "" ;
-        st:qualifiedKey "::Joint MRI" .
+        st:qualifiedKey "::Immunology - Exploratory (binding IgG vs IgM antibody response) (CL)" .
 
     page:19 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/da34454eedb01b990f98c8abe75b45c0cd44496bb0fabb20af1f0b5fb9e16a09> ;
@@ -5738,6 +5533,30 @@
         st:onPage page:27 ;
         st:rowPosition 25 .
 
+    e:u-t01-r016 a st:UnifiedActivity ;
+        st:displayOrder 7 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "exact" ;
+        st:member e:t01-r016,
+            e:t02-r006 ;
+        st:name "Joint X-ray" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Joint X-ray" .
+
+    e:u-t01-r017 a st:UnifiedActivity ;
+        st:displayOrder 8 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "exact" ;
+        st:member e:t01-r017,
+            e:t02-r007 ;
+        st:name "Joint MRI" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Joint MRI" .
+
     e:u-t01-r026 a st:UnifiedActivity ;
         st:displayOrder 14 ;
         st:hierarchyLevel 0 ;
@@ -5750,30 +5569,6 @@
         st:parentName "" ;
         st:qualifiedKey "::Anti-Drug Antibody/ADA (CL)" .
 
-    e:m-t01-r016-t02-c005 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r006-c005 ;
-        st:activity e:u-t01-r016 ;
-        st:column e:u-t02-c005 ;
-        st:value "X" .
-
-    e:m-t01-r016-t02-c008 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r006-c008 ;
-        st:activity e:u-t01-r016 ;
-        st:column e:u-t02-c008 ;
-        st:value "X" .
-
-    e:m-t01-r017-t02-c005 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r007-c005 ;
-        st:activity e:u-t01-r017 ;
-        st:column e:u-t02-c005 ;
-        st:value "X" .
-
-    e:m-t01-r017-t02-c008 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r007-c008 ;
-        st:activity e:u-t01-r017 ;
-        st:column e:u-t02-c008 ;
-        st:value "X" .
-
     e:t01-r038 a st:SourceActivityRow ;
         st:inTable e:t01 ;
         st:matchConfidence 1.0 ;
@@ -5781,18 +5576,6 @@
         st:name "Immunology Exploratory (PBMC) (CL)" ;
         st:onPage page:18 ;
         st:rowPosition 38 .
-
-    e:u-t01-r025 a st:UnifiedActivity ;
-        st:displayOrder 13 ;
-        st:hierarchyLevel 0 ;
-        st:isSectionHeader false ;
-        st:matchConfidence 1.0 ;
-        st:matchStatus "decision" ;
-        st:member e:t01-r025,
-            e:t02-r010 ;
-        st:name "nAb Assay to adeno-associated virus (AAV)-Spark 100 (CL)" ;
-        st:parentName "" ;
-        st:qualifiedKey "::nAb Assay to adeno-associated virus (AAV)-Spark 100 (CL)" .
 
     e:u-t01-r038 a st:UnifiedActivity ;
         st:displayOrder 20 ;
@@ -5906,6 +5689,18 @@
         st:onPage page:27 ;
         st:rowPosition 30 .
 
+    e:u-t01-r025 a st:UnifiedActivity ;
+        st:displayOrder 13 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "decision" ;
+        st:member e:t01-r025,
+            e:t02-r010 ;
+        st:name "nAb Assay to adeno-associated virus (AAV)-Spark 100 (CL)" ;
+        st:parentName "" ;
+        st:qualifiedKey "::nAb Assay to adeno-associated virus (AAV)-Spark 100 (CL)" .
+
     e:u-t01-r044 a st:UnifiedActivity ;
         st:displayOrder 23 ;
         st:hierarchyLevel 0 ;
@@ -6000,6 +5795,14 @@
         st:onPage page:16 ;
         st:rowPosition 27 .
 
+    e:u-t01-c005 a st:UnifiedColumn ;
+        st:compositeLabel "Week 1-12 (± 2 days) / 4 / 1" ;
+        st:member e:t01-c005 ;
+        st:propertyValue e:u-t01-c005-v01,
+            e:u-t01-c005-v02,
+            e:u-t01-c005-v03 ;
+        st:segment "main" .
+
     e:u-t01-c010 a st:UnifiedColumn ;
         st:compositeLabel "Week 13-52 (±1 week) / 9 / 18" ;
         st:member e:t01-c010 ;
@@ -6023,42 +5826,6 @@
             e:u-t01-c013-v02,
             e:u-t01-c013-v03 ;
         st:segment "main" .
-
-    e:m-t01-r005-t01-c002 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t01-r005-c002 ;
-        st:activity e:u-t01-r005 ;
-        st:column e:u-t01-c002 ;
-        st:value "X" .
-
-    e:m-t01-r020-t01-c002 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t01-r020-c002 ;
-        st:activity e:u-t01-r020 ;
-        st:column e:u-t01-c002 ;
-        st:value "X" .
-
-    e:m-t01-r024-t01-c002 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t01-r024-c002 ;
-        st:activity e:u-t01-r024 ;
-        st:column e:u-t01-c002 ;
-        st:value "X" .
-
-    e:m-t01-r025-t01-c002 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t01-r025-c002 ;
-        st:activity e:u-t01-r025 ;
-        st:column e:u-t01-c002 ;
-        st:value "X" .
-
-    e:m-t01-r042-t01-c005 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t01-r042-c005 ;
-        st:activity e:u-t01-r042 ;
-        st:column e:u-t01-c005 ;
-        st:value "X" .
-
-    e:m-t01-r062-t01-c004 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t01-r062-c004 ;
-        st:activity e:u-t01-r062 ;
-        st:column e:u-t01-c004 ;
-        st:value "X" .
 
     e:t01-c004 a st:SourceColumn ;
         st:columnPosition 4 ;
@@ -6108,24 +5875,6 @@
             e:u-t01-c008-v03 ;
         st:segment "main" .
 
-    e:u-t01-r058 a st:UnifiedActivity ;
-        st:displayOrder 31 ;
-        st:hierarchyLevel 0 ;
-        st:isSectionHeader false ;
-        st:matchConfidence 1.0 ;
-        st:matchStatus "exact" ;
-        st:member e:t01-r058,
-            e:t02-r025 ;
-        st:name "Patient-Reported Outcomes (PROs)" ;
-        st:parentName "" ;
-        st:qualifiedKey "::Patient-Reported Outcomes (PROs)" .
-
-    e:m-t01-r058-t01-c003 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t01-r058-c003 ;
-        st:activity e:u-t01-r058 ;
-        st:column e:u-t01-c003 ;
-        st:value "X" .
-
     e:t01-c007 a st:SourceColumn ;
         st:columnPosition 7 ;
         st:inTable e:t01 .
@@ -6173,6 +5922,18 @@
             e:u-t01-c011-v02,
             e:u-t01-c011-v03 ;
         st:segment "main" .
+
+    e:u-t01-r058 a st:UnifiedActivity ;
+        st:displayOrder 31 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "exact" ;
+        st:member e:t01-r058,
+            e:t02-r025 ;
+        st:name "Patient-Reported Outcomes (PROs)" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Patient-Reported Outcomes (PROs)" .
 
     e:u-t02-c002 a st:UnifiedColumn ;
         st:compositeLabel "Week 53-156 (±2 weeks) / 14 / 78" ;
@@ -6258,17 +6019,6 @@
             e:u-t01-c004-v03 ;
         st:segment "main" .
 
-    e:u-t01-r018 a st:UnifiedActivity ;
-        st:displayOrder 9 ;
-        st:hierarchyLevel 0 ;
-        st:isSectionHeader false ;
-        st:matchConfidence 1.0 ;
-        st:matchStatus "new" ;
-        st:member e:t01-r018 ;
-        st:name "HBcAB, HCV, CD4, human immunodeficiency virus (HIV) Serology, Liver fibrosis testing & Urinalysis (CL)" ;
-        st:parentName "" ;
-        st:qualifiedKey "::HBcAB, HCV, CD4, human immunodeficiency virus (HIV) Serology, Liver fibrosis testing & Urinalysis (CL)" .
-
     e:t01-c003 a st:SourceColumn ;
         st:columnPosition 3 ;
         st:inTable e:t01 .
@@ -6292,18 +6042,6 @@
     <https://kerfors.github.io/soa-tables/id/sha256/da34454eedb01b990f98c8abe75b45c0cd44496bb0fabb20af1f0b5fb9e16a09> a st:File ;
         st:sha256 "da34454eedb01b990f98c8abe75b45c0cd44496bb0fabb20af1f0b5fb9e16a09" .
 
-    e:m-t01-r016-t01-c003 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t01-r016-c003 ;
-        st:activity e:u-t01-r016 ;
-        st:column e:u-t01-c003 ;
-        st:value "X" .
-
-    e:m-t01-r017-t01-c003 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t01-r017-c003 ;
-        st:activity e:u-t01-r017 ;
-        st:column e:u-t01-c003 ;
-        st:value "X" .
-
     e:u-t02-c003 a st:UnifiedColumn ;
         st:compositeLabel "Week 53-156 (±2 weeks) / 15 / 104" ;
         st:member e:t02-c003 ;
@@ -6315,18 +6053,6 @@
     e:t02-c003 a st:SourceColumn ;
         st:columnPosition 3 ;
         st:inTable e:t02 .
-
-    e:u-t01-r024 a st:UnifiedActivity ;
-        st:displayOrder 12 ;
-        st:hierarchyLevel 0 ;
-        st:isSectionHeader false ;
-        st:matchConfidence 1.0 ;
-        st:matchStatus "fuzzy_auto" ;
-        st:member e:t01-r024,
-            e:t02-r009 ;
-        st:name "FIX Inhibitor testing (CL, test in LL if clinically necessary)" ;
-        st:parentName "" ;
-        st:qualifiedKey "::FIX Inhibitor testing (CL, test in LL if clinically necessary)" .
 
     e:u-t02-c006 a st:UnifiedColumn ;
         st:compositeLabel "Week 157-260 (±3 weeks) / 18 / 208" ;
@@ -6351,6 +6077,18 @@
     e:t02-c007 a st:SourceColumn ;
         st:columnPosition 7 ;
         st:inTable e:t02 .
+
+    e:u-t01-r024 a st:UnifiedActivity ;
+        st:displayOrder 12 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "fuzzy_auto" ;
+        st:member e:t01-r024,
+            e:t02-r009 ;
+        st:name "FIX Inhibitor testing (CL, test in LL if clinically necessary)" ;
+        st:parentName "" ;
+        st:qualifiedKey "::FIX Inhibitor testing (CL, test in LL if clinically necessary)" .
 
     e:u-t01-r027 a st:UnifiedActivity ;
         st:displayOrder 15 ;
@@ -6424,14 +6162,6 @@
         st:columnPosition 5 ;
         st:inTable e:t02 .
 
-    e:u-t01-c005 a st:UnifiedColumn ;
-        st:compositeLabel "Week 1-12 (± 2 days) / 4 / 1" ;
-        st:member e:t01-c005 ;
-        st:propertyValue e:u-t01-c005-v01,
-            e:u-t01-c005-v02,
-            e:u-t01-c005-v03 ;
-        st:segment "main" .
-
     e:u-t01-r047 a st:UnifiedActivity ;
         st:displayOrder 26 ;
         st:hierarchyLevel 0 ;
@@ -6468,18 +6198,6 @@
         st:parentName "" ;
         st:qualifiedKey "::Concomitant Medications, Surgeries, and Procedures" .
 
-    e:u-t01-r062 a st:UnifiedActivity ;
-        st:displayOrder 32 ;
-        st:hierarchyLevel 0 ;
-        st:isSectionHeader false ;
-        st:matchConfidence 1.0 ;
-        st:matchStatus "exact" ;
-        st:member e:t01-r062,
-            e:t02-r027 ;
-        st:name "Vector Shedding Analysis by PCR (CL)" ;
-        st:parentName "" ;
-        st:qualifiedKey "::Vector Shedding Analysis by PCR (CL)" .
-
     e:u-t02-c008 a st:UnifiedColumn ;
         st:compositeLabel "EOS Week 312 (±3 weeks) / 20 / 312" ;
         st:member e:t02-c008 ;
@@ -6508,14 +6226,6 @@
         st:parentName "" ;
         st:qualifiedKey "::Physical Exam, Weight, and Vital Signs" .
 
-    e:u-t01-c002 a st:UnifiedColumn ;
-        st:compositeLabel "Screening Period / 1 / Week -6 to Week -3" ;
-        st:member e:t01-c002 ;
-        st:propertyValue e:u-t01-c002-v01,
-            e:u-t01-c002-v02,
-            e:u-t01-c002-v03 ;
-        st:segment "main" .
-
     e:u-t01-r032 a st:UnifiedActivity ;
         st:displayOrder 17 ;
         st:hierarchyLevel 0 ;
@@ -6527,6 +6237,26 @@
         st:name "FIX Activity, LFT (CL, LL) and FIX Antigen (CL)" ;
         st:parentName "" ;
         st:qualifiedKey "::FIX Activity, LFT (CL, LL) and FIX Antigen (CL)" .
+
+    e:u-t01-r062 a st:UnifiedActivity ;
+        st:displayOrder 32 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "exact" ;
+        st:member e:t01-r062,
+            e:t02-r027 ;
+        st:name "Vector Shedding Analysis by PCR (CL)" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Vector Shedding Analysis by PCR (CL)" .
+
+    e:u-t01-c002 a st:UnifiedColumn ;
+        st:compositeLabel "Screening Period / 1 / Week -6 to Week -3" ;
+        st:member e:t01-c002 ;
+        st:propertyValue e:u-t01-c002-v01,
+            e:u-t01-c002-v02,
+            e:u-t01-c002-v03 ;
+        st:segment "main" .
 
     e:t02 a st:SourceTable ;
         st:firstPage page:25 ;
