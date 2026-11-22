@@ -1,0 +1,31 @@
+{
+  "schema_name": "soa-table-corrections",
+  "schema_version": "1.0",
+  "target_extraction": "NCT03739203_Table_02_extraction.json",
+  "corrections": [
+    {
+      "id": "corr-001",
+      "target": "table_metadata",
+      "op": "confirm",
+      "review_item": "D1",
+      "reason": "Table 4 applies only under COVID-19 disruption and, per its title, only to randomized patients who have completed Visit 2: a branch only some participants take, so track (taxonomy). Not domain (largely the same activities as Table 1) and not main_soa (not a schedule every participant passes through).",
+      "source_ref": {
+        "page": 85
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-22T19:58:00Z"
+    },
+    {
+      "id": "corr-002",
+      "target": "annotations",
+      "op": "confirm",
+      "review_item": "D2",
+      "reason": "Footnote k is about pharmacogenetic consent and names no other row; the marker missing from the grid is a source defect (Table 1 carries h on the same row). The text_match binding to the Pharmacogenetic Consent row stands; unresolved would discard a binding the text makes plain.",
+      "source_ref": {
+        "page": 85
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-22T19:58:00Z"
+    }
+  ]
+}

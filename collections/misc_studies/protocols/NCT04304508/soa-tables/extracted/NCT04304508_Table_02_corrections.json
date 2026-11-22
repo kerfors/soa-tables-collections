@@ -1,0 +1,123 @@
+{
+  "schema_name": "soa-table-corrections",
+  "schema_version": "1.0",
+  "target_extraction": "NCT04304508_Table_02_extraction.json",
+  "corrections": [
+    {
+      "id": "corr-001",
+      "target": "annotations",
+      "op": "set",
+      "match": {
+        "annotation_marker": "g1"
+      },
+      "set": {
+        "annotation_marker": "n1",
+        "marker_locations": [
+          {
+            "table_number": 2,
+            "location_type": "activity_name",
+            "row_position": 3,
+            "method": "text_match"
+          },
+          {
+            "table_number": 2,
+            "location_type": "activity_name",
+            "row_position": 4,
+            "method": "text_match"
+          },
+          {
+            "table_number": 2,
+            "location_type": "activity_name",
+            "row_position": 5,
+            "method": "text_match"
+          },
+          {
+            "table_number": 2,
+            "location_type": "activity_name",
+            "row_position": 6,
+            "method": "text_match"
+          }
+        ]
+      },
+      "review_item": "D4",
+      "reason": "The note names the rows it governs: 'PK, PD and biomarker sampling' = PK, PD, Biomarkers Plasma and Biomarkers Serum; the drug-intake time is tied to 'the PK / PD sampling day'. Genetics is not named, so a table-wide note over-reaches. Bound by what the text names (prompt §6, Binding by what a note names), by word overlap, hence text_match; marker n1 (a note printed without a marker, bound to elements) instead of g1 (table-wide).",
+      "source_ref": {
+        "page": 15
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-22T19:55:00Z"
+    },
+    {
+      "id": "corr-002",
+      "target": "activities",
+      "op": "set",
+      "match": {
+        "row_position": 3
+      },
+      "set": {
+        "annotation_markers": "e,n1"
+      },
+      "review_item": "D4",
+      "reason": "Companion to corr-001: n1 on the PK row.",
+      "source_ref": {
+        "page": 15
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-22T19:55:00Z"
+    },
+    {
+      "id": "corr-003",
+      "target": "activities",
+      "op": "set",
+      "match": {
+        "row_position": 4
+      },
+      "set": {
+        "annotation_markers": "e,n1"
+      },
+      "review_item": "D4",
+      "reason": "Companion to corr-001: n1 on the PD row.",
+      "source_ref": {
+        "page": 15
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-22T19:55:00Z"
+    },
+    {
+      "id": "corr-004",
+      "target": "activities",
+      "op": "set",
+      "match": {
+        "row_position": 5
+      },
+      "set": {
+        "annotation_markers": "n1"
+      },
+      "review_item": "D4",
+      "reason": "Companion to corr-001: n1 on the Biomarkers Plasma row.",
+      "source_ref": {
+        "page": 15
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-22T19:55:00Z"
+    },
+    {
+      "id": "corr-005",
+      "target": "activities",
+      "op": "set",
+      "match": {
+        "row_position": 6
+      },
+      "set": {
+        "annotation_markers": "n1"
+      },
+      "review_item": "D4",
+      "reason": "Companion to corr-001: n1 on the Biomarkers Serum row.",
+      "source_ref": {
+        "page": 15
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-22T19:55:00Z"
+    }
+  ]
+}

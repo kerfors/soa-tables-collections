@@ -3,7 +3,7 @@
   "schema_version": "1.7",
   "protocol_id": "NCT04304508",
   "consolidation_metadata": {
-    "consolidated_at": "2026-11-22T19:30:56.169336+00:00",
+    "consolidated_at": "2026-11-22T19:51:43.989590+00:00",
     "consolidator": "soa_tables.consolidate v1.2",
     "source_tables": [
       {
@@ -25,27 +25,27 @@
           },
           {
             "hierarchical_level": 2,
-            "property_name": "Duration",
-            "property_type": "other",
-            "property_comment": "Duration line under each period: '(from RND until End of Treatment visit [EOT], 26 to 52 weeks)' spanning Visits 2-12, the 'Early termination (ET)' sub-band over Visit 12a, and '(14 days after EOT or ET)' printed as the second part of the Safety Follow-up cell. Mixes a period duration with a sub-period name (Early termination), so typed 'other'; given a level because the Early termination cell sets Visit 12a apart within the Intervention period (see Decision D1)."
-          },
-          {
-            "hierarchical_level": 3,
             "property_name": "Visit number",
             "property_type": "visit",
             "property_comment": "Visit numbers 1-13 incl. 12a (early termination visit). Visit identifiers, so 'visit'."
           },
           {
-            "hierarchical_level": 4,
-            "property_name": "Visit type",
-            "property_type": "modality",
-            "property_comment": "How each visit is conducted: 'site' or telephone symbol (phone call); Visit 13 '☎ (site)'. Modality of the visit (see Decision D3 for the level)."
-          },
-          {
-            "hierarchical_level": 5,
+            "hierarchical_level": 3,
             "property_name": "Week [W] Study day and allowed deviations",
             "property_type": "week",
             "property_comment": "One ruled header row whose cells print two lines: a week label (SCR, RND/W0, W2 ... W52/EOT, Any time, EOT or ET +2 weeks) and the study day with allowed deviation (-2 → 1, 1, 15±4 ... 379+7). Typed 'week' from the first printed line and the first part of the row label; both lines kept in the cell value (see Decision D2)."
+          },
+          {
+            "hierarchical_level": null,
+            "property_name": "Duration",
+            "property_type": "other",
+            "property_comment": "Duration line under each period: '(from RND until End of Treatment visit [EOT], 26 to 52 weeks)' spanning Visits 2-12, the 'Early termination (ET)' sub-band over Visit 12a, and '(14 days after EOT or ET)' printed as the second part of the Safety Follow-up cell. The label column prints it as '(Duration)' under 'Study periods': a qualifier of the periods row, so typed 'other' with no hierarchical level. 'Early termination' sits in this row for space; Visit 12a is told apart by its visit number (decision D1)."
+          },
+          {
+            "hierarchical_level": null,
+            "property_name": "Visit type",
+            "property_type": "modality",
+            "property_comment": "How each visit is conducted: 'site' or telephone symbol (phone call); Visit 13 '☎ (site)'. Modality of the visit: an attribute of each column, which Visit number already tells apart, so no hierarchical level (decision D3)."
           }
         ]
       },
@@ -112,32 +112,32 @@
       "property_comment": "Study periods: Screening (SCR), Intervention period (spanning Visits 2-12a), Safety Follow-up (SFU). The label cell 'Study periods / (Duration)' spans header rows 1-2 and is split by printed line (section 3); period names are epochs. The Screening and Safety Follow-up cells span rows 1-2; their period names are recorded here."
     },
     {
-      "property_id": "prop-002",
-      "property_type": "other",
-      "property_name": "Duration",
-      "hierarchical_level": 2,
-      "property_comment": "Duration line under each period: '(from RND until End of Treatment visit [EOT], 26 to 52 weeks)' spanning Visits 2-12, the 'Early termination (ET)' sub-band over Visit 12a, and '(14 days after EOT or ET)' printed as the second part of the Safety Follow-up cell. Mixes a period duration with a sub-period name (Early termination), so typed 'other'; given a level because the Early termination cell sets Visit 12a apart within the Intervention period (see Decision D1)."
-    },
-    {
       "property_id": "prop-003",
       "property_type": "visit",
       "property_name": "Visit number",
-      "hierarchical_level": 3,
+      "hierarchical_level": 2,
       "property_comment": "Visit numbers 1-13 incl. 12a (early termination visit). Visit identifiers, so 'visit'."
-    },
-    {
-      "property_id": "prop-004",
-      "property_type": "modality",
-      "property_name": "Visit type",
-      "hierarchical_level": 4,
-      "property_comment": "How each visit is conducted: 'site' or telephone symbol (phone call); Visit 13 '☎ (site)'. Modality of the visit (see Decision D3 for the level)."
     },
     {
       "property_id": "prop-005",
       "property_type": "week",
       "property_name": "Week [W] Study day and allowed deviations",
-      "hierarchical_level": 5,
+      "hierarchical_level": 3,
       "property_comment": "One ruled header row whose cells print two lines: a week label (SCR, RND/W0, W2 ... W52/EOT, Any time, EOT or ET +2 weeks) and the study day with allowed deviation (-2 → 1, 1, 15±4 ... 379+7). Typed 'week' from the first printed line and the first part of the row label; both lines kept in the cell value (see Decision D2)."
+    },
+    {
+      "property_id": "prop-002",
+      "property_type": "other",
+      "property_name": "Duration",
+      "hierarchical_level": null,
+      "property_comment": "Duration line under each period: '(from RND until End of Treatment visit [EOT], 26 to 52 weeks)' spanning Visits 2-12, the 'Early termination (ET)' sub-band over Visit 12a, and '(14 days after EOT or ET)' printed as the second part of the Safety Follow-up cell. The label column prints it as '(Duration)' under 'Study periods': a qualifier of the periods row, so typed 'other' with no hierarchical level. 'Early termination' sits in this row for space; Visit 12a is told apart by its visit number (decision D1)."
+    },
+    {
+      "property_id": "prop-004",
+      "property_type": "modality",
+      "property_name": "Visit type",
+      "hierarchical_level": null,
+      "property_comment": "How each visit is conducted: 'site' or telephone symbol (phone call); Visit 13 '☎ (site)'. Modality of the visit: an attribute of each column, which Visit number already tells apart, so no hierarchical level (decision D3)."
     }
   ],
   "review_queue": [],
@@ -991,27 +991,27 @@
           },
           {
             "level": 2,
-            "property_type": "other",
-            "property_name": "Duration",
-            "value": ""
-          },
-          {
-            "level": 3,
             "property_type": "visit",
             "property_name": "Visit number",
             "value": "1"
           },
           {
-            "level": 4,
-            "property_type": "modality",
-            "property_name": "Visit type",
-            "value": "site"
-          },
-          {
-            "level": 5,
+            "level": 3,
             "property_type": "week",
             "property_name": "Week [W] Study day and allowed deviations",
             "value": "SCR -2 → 1"
+          },
+          {
+            "level": null,
+            "property_type": "other",
+            "property_name": "Duration",
+            "value": ""
+          },
+          {
+            "level": null,
+            "property_type": "modality",
+            "property_name": "Visit type",
+            "value": "site"
           }
         ],
         "source_columns": [
@@ -1037,27 +1037,27 @@
           },
           {
             "level": 2,
-            "property_type": "other",
-            "property_name": "Duration",
-            "value": "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)"
-          },
-          {
-            "level": 3,
             "property_type": "visit",
             "property_name": "Visit number",
             "value": "2"
           },
           {
-            "level": 4,
-            "property_type": "modality",
-            "property_name": "Visit type",
-            "value": "site"
-          },
-          {
-            "level": 5,
+            "level": 3,
             "property_type": "week",
             "property_name": "Week [W] Study day and allowed deviations",
             "value": "RND/W0 1"
+          },
+          {
+            "level": null,
+            "property_type": "other",
+            "property_name": "Duration",
+            "value": "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)"
+          },
+          {
+            "level": null,
+            "property_type": "modality",
+            "property_name": "Visit type",
+            "value": "site"
           }
         ],
         "source_columns": [
@@ -1083,27 +1083,27 @@
           },
           {
             "level": 2,
-            "property_type": "other",
-            "property_name": "Duration",
-            "value": "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)"
-          },
-          {
-            "level": 3,
             "property_type": "visit",
             "property_name": "Visit number",
             "value": "3"
           },
           {
-            "level": 4,
-            "property_type": "modality",
-            "property_name": "Visit type",
-            "value": "☎"
-          },
-          {
-            "level": 5,
+            "level": 3,
             "property_type": "week",
             "property_name": "Week [W] Study day and allowed deviations",
             "value": "W2 15±4"
+          },
+          {
+            "level": null,
+            "property_type": "other",
+            "property_name": "Duration",
+            "value": "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)"
+          },
+          {
+            "level": null,
+            "property_type": "modality",
+            "property_name": "Visit type",
+            "value": "☎"
           }
         ],
         "source_columns": [
@@ -1129,27 +1129,27 @@
           },
           {
             "level": 2,
-            "property_type": "other",
-            "property_name": "Duration",
-            "value": "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)"
-          },
-          {
-            "level": 3,
             "property_type": "visit",
             "property_name": "Visit number",
             "value": "4"
           },
           {
-            "level": 4,
-            "property_type": "modality",
-            "property_name": "Visit type",
-            "value": "site"
-          },
-          {
-            "level": 5,
+            "level": 3,
             "property_type": "week",
             "property_name": "Week [W] Study day and allowed deviations",
             "value": "W4 29±4"
+          },
+          {
+            "level": null,
+            "property_type": "other",
+            "property_name": "Duration",
+            "value": "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)"
+          },
+          {
+            "level": null,
+            "property_type": "modality",
+            "property_name": "Visit type",
+            "value": "site"
           }
         ],
         "source_columns": [
@@ -1175,27 +1175,27 @@
           },
           {
             "level": 2,
-            "property_type": "other",
-            "property_name": "Duration",
-            "value": "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)"
-          },
-          {
-            "level": 3,
             "property_type": "visit",
             "property_name": "Visit number",
             "value": "5"
           },
           {
-            "level": 4,
-            "property_type": "modality",
-            "property_name": "Visit type",
-            "value": "☎"
-          },
-          {
-            "level": 5,
+            "level": 3,
             "property_type": "week",
             "property_name": "Week [W] Study day and allowed deviations",
             "value": "W8 57±4"
+          },
+          {
+            "level": null,
+            "property_type": "other",
+            "property_name": "Duration",
+            "value": "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)"
+          },
+          {
+            "level": null,
+            "property_type": "modality",
+            "property_name": "Visit type",
+            "value": "☎"
           }
         ],
         "source_columns": [
@@ -1221,27 +1221,27 @@
           },
           {
             "level": 2,
-            "property_type": "other",
-            "property_name": "Duration",
-            "value": "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)"
-          },
-          {
-            "level": 3,
             "property_type": "visit",
             "property_name": "Visit number",
             "value": "6"
           },
           {
-            "level": 4,
-            "property_type": "modality",
-            "property_name": "Visit type",
-            "value": "site"
-          },
-          {
-            "level": 5,
+            "level": 3,
             "property_type": "week",
             "property_name": "Week [W] Study day and allowed deviations",
             "value": "W13 92±4"
+          },
+          {
+            "level": null,
+            "property_type": "other",
+            "property_name": "Duration",
+            "value": "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)"
+          },
+          {
+            "level": null,
+            "property_type": "modality",
+            "property_name": "Visit type",
+            "value": "site"
           }
         ],
         "source_columns": [
@@ -1267,27 +1267,27 @@
           },
           {
             "level": 2,
-            "property_type": "other",
-            "property_name": "Duration",
-            "value": "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)"
-          },
-          {
-            "level": 3,
             "property_type": "visit",
             "property_name": "Visit number",
             "value": "7"
           },
           {
-            "level": 4,
-            "property_type": "modality",
-            "property_name": "Visit type",
-            "value": "☎"
-          },
-          {
-            "level": 5,
+            "level": 3,
             "property_type": "week",
             "property_name": "Week [W] Study day and allowed deviations",
             "value": "W20 141±4"
+          },
+          {
+            "level": null,
+            "property_type": "other",
+            "property_name": "Duration",
+            "value": "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)"
+          },
+          {
+            "level": null,
+            "property_type": "modality",
+            "property_name": "Visit type",
+            "value": "☎"
           }
         ],
         "source_columns": [
@@ -1313,27 +1313,27 @@
           },
           {
             "level": 2,
-            "property_type": "other",
-            "property_name": "Duration",
-            "value": "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)"
-          },
-          {
-            "level": 3,
             "property_type": "visit",
             "property_name": "Visit number",
             "value": "8"
           },
           {
-            "level": 4,
-            "property_type": "modality",
-            "property_name": "Visit type",
-            "value": "site"
-          },
-          {
-            "level": 5,
+            "level": 3,
             "property_type": "week",
             "property_name": "Week [W] Study day and allowed deviations",
             "value": "W26 183±4"
+          },
+          {
+            "level": null,
+            "property_type": "other",
+            "property_name": "Duration",
+            "value": "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)"
+          },
+          {
+            "level": null,
+            "property_type": "modality",
+            "property_name": "Visit type",
+            "value": "site"
           }
         ],
         "source_columns": [
@@ -1359,27 +1359,27 @@
           },
           {
             "level": 2,
-            "property_type": "other",
-            "property_name": "Duration",
-            "value": "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)"
-          },
-          {
-            "level": 3,
             "property_type": "visit",
             "property_name": "Visit number",
             "value": "9"
           },
           {
-            "level": 4,
-            "property_type": "modality",
-            "property_name": "Visit type",
-            "value": "☎"
-          },
-          {
-            "level": 5,
+            "level": 3,
             "property_type": "week",
             "property_name": "Week [W] Study day and allowed deviations",
             "value": "W32 225±4"
+          },
+          {
+            "level": null,
+            "property_type": "other",
+            "property_name": "Duration",
+            "value": "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)"
+          },
+          {
+            "level": null,
+            "property_type": "modality",
+            "property_name": "Visit type",
+            "value": "☎"
           }
         ],
         "source_columns": [
@@ -1405,27 +1405,27 @@
           },
           {
             "level": 2,
-            "property_type": "other",
-            "property_name": "Duration",
-            "value": "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)"
-          },
-          {
-            "level": 3,
             "property_type": "visit",
             "property_name": "Visit number",
             "value": "10"
           },
           {
-            "level": 4,
-            "property_type": "modality",
-            "property_name": "Visit type",
-            "value": "site"
-          },
-          {
-            "level": 5,
+            "level": 3,
             "property_type": "week",
             "property_name": "Week [W] Study day and allowed deviations",
             "value": "W39 274±4"
+          },
+          {
+            "level": null,
+            "property_type": "other",
+            "property_name": "Duration",
+            "value": "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)"
+          },
+          {
+            "level": null,
+            "property_type": "modality",
+            "property_name": "Visit type",
+            "value": "site"
           }
         ],
         "source_columns": [
@@ -1451,27 +1451,27 @@
           },
           {
             "level": 2,
-            "property_type": "other",
-            "property_name": "Duration",
-            "value": "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)"
-          },
-          {
-            "level": 3,
             "property_type": "visit",
             "property_name": "Visit number",
             "value": "11"
           },
           {
-            "level": 4,
-            "property_type": "modality",
-            "property_name": "Visit type",
-            "value": "☎"
-          },
-          {
-            "level": 5,
+            "level": 3,
             "property_type": "week",
             "property_name": "Week [W] Study day and allowed deviations",
             "value": "W46 323±4"
+          },
+          {
+            "level": null,
+            "property_type": "other",
+            "property_name": "Duration",
+            "value": "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)"
+          },
+          {
+            "level": null,
+            "property_type": "modality",
+            "property_name": "Visit type",
+            "value": "☎"
           }
         ],
         "source_columns": [
@@ -1497,27 +1497,27 @@
           },
           {
             "level": 2,
-            "property_type": "other",
-            "property_name": "Duration",
-            "value": "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)"
-          },
-          {
-            "level": 3,
             "property_type": "visit",
             "property_name": "Visit number",
             "value": "12"
           },
           {
-            "level": 4,
-            "property_type": "modality",
-            "property_name": "Visit type",
-            "value": "site"
-          },
-          {
-            "level": 5,
+            "level": 3,
             "property_type": "week",
             "property_name": "Week [W] Study day and allowed deviations",
             "value": "W52/EOT 365±4"
+          },
+          {
+            "level": null,
+            "property_type": "other",
+            "property_name": "Duration",
+            "value": "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)"
+          },
+          {
+            "level": null,
+            "property_type": "modality",
+            "property_name": "Visit type",
+            "value": "site"
           }
         ],
         "source_columns": [
@@ -1543,27 +1543,27 @@
           },
           {
             "level": 2,
-            "property_type": "other",
-            "property_name": "Duration",
-            "value": "Early termination (ET)"
-          },
-          {
-            "level": 3,
             "property_type": "visit",
             "property_name": "Visit number",
             "value": "12a"
           },
           {
-            "level": 4,
-            "property_type": "modality",
-            "property_name": "Visit type",
-            "value": "Site"
-          },
-          {
-            "level": 5,
+            "level": 3,
             "property_type": "week",
             "property_name": "Week [W] Study day and allowed deviations",
             "value": "Any time ET+7"
+          },
+          {
+            "level": null,
+            "property_type": "other",
+            "property_name": "Duration",
+            "value": "Early termination (ET)"
+          },
+          {
+            "level": null,
+            "property_type": "modality",
+            "property_name": "Visit type",
+            "value": "Site"
           }
         ],
         "source_columns": [
@@ -1589,27 +1589,27 @@
           },
           {
             "level": 2,
-            "property_type": "other",
-            "property_name": "Duration",
-            "value": "(14 days after EOT or ET)"
-          },
-          {
-            "level": 3,
             "property_type": "visit",
             "property_name": "Visit number",
             "value": "13"
           },
           {
-            "level": 4,
-            "property_type": "modality",
-            "property_name": "Visit type",
-            "value": "☎ (site)"
-          },
-          {
-            "level": 5,
+            "level": 3,
             "property_type": "week",
             "property_name": "Week [W] Study day and allowed deviations",
             "value": "EOT or ET +2 weeks 379+7"
+          },
+          {
+            "level": null,
+            "property_type": "other",
+            "property_name": "Duration",
+            "value": "(14 days after EOT or ET)"
+          },
+          {
+            "level": null,
+            "property_type": "modality",
+            "property_name": "Visit type",
+            "value": "☎ (site)"
           }
         ],
         "source_columns": [
@@ -3321,20 +3321,24 @@
       "xannot_id": "xannot-020",
       "annotation_type": "footnote",
       "annotation_text": "The exact times of PK, PD and biomarker sampling need to be recorded, as well as the time of the most recent study drug intake (i.e: on the PK / PD sampling day, as well as the day before that).",
-      "display_markers": "T2:g1",
+      "display_markers": "T2:n1",
       "source_occurrences": [
         {
           "table_num": 2,
-          "marker": "g1",
+          "marker": "n1",
           "annotation_id": "annot-006"
         }
       ],
-      "referenced_xacts": [],
+      "referenced_xacts": [
+        "xact-028",
+        "xact-029",
+        "xact-030",
+        "xact-031"
+      ],
       "referenced_xcols": [],
       "referenced_props": [],
       "cell_references": [],
-      "occurrence_count": 1,
-      "annotation_scope": "table"
+      "occurrence_count": 1
     }
   ],
   "review_items": [

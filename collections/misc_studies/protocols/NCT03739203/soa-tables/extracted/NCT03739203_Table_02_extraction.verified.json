@@ -1,0 +1,1722 @@
+{
+ "schema_name": "soa-table-extraction",
+ "schema_version": "1.1",
+ "extraction_metadata": {
+  "extracted_at": "2026-11-22T19:25:59+00:00",
+  "extractor": "Claude, PDF_TO_JSON_PROMPT single-pass",
+  "prompt_version": "3.9.4",
+  "source_document": {
+   "filename": "NCT03739203_soa.pdf",
+   "document_type": "protocol",
+   "document_version": "Protocol 3111-302-001 Amendment 3"
+  },
+  "extraction_status": "ready_for_resolution",
+  "model": "claude-opus-5-5"
+ },
+ "table_metadata": {
+  "table_number": 2,
+  "table_type": "track",
+  "track_label": "COVID-19 Modified",
+  "table_title": "COVID-19 Modified Schedule of Visits and Procedures (Applicable to Randomized Patients who have completed Visit 2)",
+  "table_purpose": "COVID-19 modified version of the visit schedule for randomized patients who have completed Visit 2",
+  "page_start": 85,
+  "page_end": 87,
+  "notes": "Source Table 4 (protocol numbering); table_number 2 in this extraction. Doc p.85 is a single full-page raster image with no text layer and no vector rules: grid read visually, rule lines recovered from the raster (200 dpi), marks confirmed by a near-black pixel-count detector. Doc pp.86-87 carry the '*' note, abbreviations (not emitted) and footnotes a-l only (no activity rows). Classification: same columns as Table 1, but the title restricts it to randomized patients who have completed Visit 2 under COVID-19 modifications, i.e. a schedule entered on a condition -> track (see review item D1). Columns 2 (Visit 1) and 3 (Visit 2) are each one grey cell merged vertically over all 25 activity rows, printing rotated pointer text 'Refer to Global Protocol or Country-Specific Amendment for Visit 1/2 Procedures'; per the vertical-merge rule the pointer is emitted on every activity row's cell in its column (not a whole-schedule cross-reference, since it covers only one column each). Pharmacogenetic Consent and Pharmacogenetic Sample each carry one X in a cell merged over columns 4-7 (Visit 3 to Visit 6/ET), source_range '4:7'. Footnote k has no printed marker in the grid (see D2)."
+ },
+ "schedule_properties": [
+  {
+   "table_number": 2,
+   "row_position": 1,
+   "property_name": "Study Period",
+   "property_name_source": {
+    "row_position": 1,
+    "column_position": 1,
+    "cell_value": "Study Period"
+   },
+   "property_type": "epoch",
+   "property_comment": "Study periods: Screening, Baseline, Double-blind Treatment (merged over Visits 3-6/ET), Safety Follow-up -> epoch. Read visually (page is an image).",
+   "hierarchical_level": 1
+  },
+  {
+   "table_number": 2,
+   "row_position": 2,
+   "property_name": "Visit",
+   "property_name_source": {
+    "row_position": 2,
+    "column_position": 1,
+    "cell_value": "Visit"
+   },
+   "property_type": "visit",
+   "property_comment": "Visit numbers 1-7 including '6/ET' -> visit. Read visually.",
+   "hierarchical_level": 2
+  },
+  {
+   "table_number": 2,
+   "row_position": 3,
+   "property_name": "Study Week",
+   "property_name_source": {
+    "row_position": 3,
+    "column_position": 1,
+    "cell_value": "Study Week"
+   },
+   "property_type": "week",
+   "property_comment": "Study week of each visit (Up to -2 ... 10) -> week. Read visually.",
+   "hierarchical_level": 3
+  },
+  {
+   "table_number": 2,
+   "row_position": 4,
+   "property_name": "Study Day",
+   "property_name_source": {
+    "row_position": 4,
+    "column_position": 1,
+    "cell_value": "Study Day*"
+   },
+   "property_type": "study_day",
+   "property_comment": "Study day of each visit (Up to -14 ... 71) -> study_day. Label printed 'Study Day*'; the '*' note on doc p.86 is recorded on this row. Read visually.",
+   "hierarchical_level": 4,
+   "annotation_markers": "*"
+  }
+ ],
+ "schedule_grid": [
+  {
+   "table_number": 2,
+   "row_position": 1,
+   "column_position": 2,
+   "cell_value": "Screening",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 1,
+   "column_position": 3,
+   "cell_value": "Baseline",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 1,
+   "column_position": 4,
+   "cell_value": "Double-blind Treatment",
+   "method": "visual_read",
+   "is_merged_cell": true,
+   "merged_cell_range": "4:7"
+  },
+  {
+   "table_number": 2,
+   "row_position": 1,
+   "column_position": 5,
+   "cell_value": "Double-blind Treatment",
+   "method": "visual_read",
+   "is_merged_cell": true,
+   "merged_cell_range": "4:7"
+  },
+  {
+   "table_number": 2,
+   "row_position": 1,
+   "column_position": 6,
+   "cell_value": "Double-blind Treatment",
+   "method": "visual_read",
+   "is_merged_cell": true,
+   "merged_cell_range": "4:7"
+  },
+  {
+   "table_number": 2,
+   "row_position": 1,
+   "column_position": 7,
+   "cell_value": "Double-blind Treatment",
+   "method": "visual_read",
+   "is_merged_cell": true,
+   "merged_cell_range": "4:7"
+  },
+  {
+   "table_number": 2,
+   "row_position": 1,
+   "column_position": 8,
+   "cell_value": "Safety Follow-up",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 2,
+   "column_position": 2,
+   "cell_value": "1",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 2,
+   "column_position": 3,
+   "cell_value": "2",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 2,
+   "column_position": 4,
+   "cell_value": "3",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 2,
+   "column_position": 5,
+   "cell_value": "4",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 2,
+   "column_position": 6,
+   "cell_value": "5",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 2,
+   "column_position": 7,
+   "cell_value": "6/ET",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 2,
+   "column_position": 8,
+   "cell_value": "7",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 3,
+   "column_position": 2,
+   "cell_value": "Up to -2",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 3,
+   "column_position": 3,
+   "cell_value": "0",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 3,
+   "column_position": 4,
+   "cell_value": "1",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 3,
+   "column_position": 5,
+   "cell_value": "2",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 3,
+   "column_position": 6,
+   "cell_value": "4",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 3,
+   "column_position": 7,
+   "cell_value": "6",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 3,
+   "column_position": 8,
+   "cell_value": "10",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 4,
+   "column_position": 2,
+   "cell_value": "Up to -14",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 4,
+   "column_position": 3,
+   "cell_value": "1",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 4,
+   "column_position": 4,
+   "cell_value": "8",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 4,
+   "column_position": 5,
+   "cell_value": "15",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 4,
+   "column_position": 6,
+   "cell_value": "29",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 4,
+   "column_position": 7,
+   "cell_value": "43",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 4,
+   "column_position": 8,
+   "cell_value": "71",
+   "method": "visual_read"
+  }
+ ],
+ "activities": [
+  {
+   "table_number": 2,
+   "row_position": 5,
+   "source_page": 85,
+   "activity_name": "COVID-19 Informed Consent/Reconsent (where applicable)",
+   "activity_name_source": {
+    "cell_text": "COVID-19 Informed Consent/Reconsent\n(where applicable)",
+    "indentation_level": 0,
+    "method": "visual_transcription",
+    "indentation_method": "visual_estimate"
+   }
+  },
+  {
+   "table_number": 2,
+   "row_position": 6,
+   "source_page": 85,
+   "activity_name": "Clinical Laboratory Tests",
+   "activity_name_source": {
+    "cell_text": "Clinical Laboratory Testsa",
+    "indentation_level": 0,
+    "method": "visual_transcription",
+    "indentation_method": "visual_estimate"
+   },
+   "annotation_markers": "a"
+  },
+  {
+   "table_number": 2,
+   "row_position": 7,
+   "source_page": 85,
+   "activity_name": "Serum Pregnancy Test",
+   "activity_name_source": {
+    "cell_text": "Serum Pregnancy Testa",
+    "indentation_level": 0,
+    "method": "visual_transcription",
+    "indentation_method": "visual_estimate"
+   },
+   "annotation_markers": "a"
+  },
+  {
+   "table_number": 2,
+   "row_position": 8,
+   "source_page": 85,
+   "activity_name": "Vital Signs",
+   "activity_name_source": {
+    "cell_text": "Vital Signsb",
+    "indentation_level": 0,
+    "method": "visual_transcription",
+    "indentation_method": "visual_estimate"
+   },
+   "annotation_markers": "b"
+  },
+  {
+   "table_number": 2,
+   "row_position": 9,
+   "source_page": 85,
+   "activity_name": "Electrocardiogram",
+   "activity_name_source": {
+    "cell_text": "Electrocardiogramc",
+    "indentation_level": 0,
+    "method": "visual_transcription",
+    "indentation_method": "visual_estimate"
+   },
+   "annotation_markers": "c"
+  },
+  {
+   "table_number": 2,
+   "row_position": 10,
+   "source_page": 85,
+   "activity_name": "Physical Examination",
+   "activity_name_source": {
+    "cell_text": "Physical Examinationc",
+    "indentation_level": 0,
+    "method": "visual_transcription",
+    "indentation_method": "visual_estimate"
+   },
+   "annotation_markers": "c"
+  },
+  {
+   "table_number": 2,
+   "row_position": 11,
+   "source_page": 85,
+   "activity_name": "HAMD-17",
+   "activity_name_source": {
+    "cell_text": "HAMD-17",
+    "indentation_level": 0,
+    "method": "visual_transcription",
+    "indentation_method": "visual_estimate"
+   }
+  },
+  {
+   "table_number": 2,
+   "row_position": 12,
+   "source_page": 85,
+   "activity_name": "YMRS",
+   "activity_name_source": {
+    "cell_text": "YMRS",
+    "indentation_level": 0,
+    "method": "visual_transcription",
+    "indentation_method": "visual_estimate"
+   }
+  },
+  {
+   "table_number": 2,
+   "row_position": 13,
+   "source_page": 85,
+   "activity_name": "MADRS",
+   "activity_name_source": {
+    "cell_text": "MADRS",
+    "indentation_level": 0,
+    "method": "visual_transcription",
+    "indentation_method": "visual_estimate"
+   }
+  },
+  {
+   "table_number": 2,
+   "row_position": 14,
+   "source_page": 85,
+   "activity_name": "CGI-S",
+   "activity_name_source": {
+    "cell_text": "CGI-S",
+    "indentation_level": 0,
+    "method": "visual_transcription",
+    "indentation_method": "visual_estimate"
+   }
+  },
+  {
+   "table_number": 2,
+   "row_position": 15,
+   "source_page": 85,
+   "activity_name": "CGI-I",
+   "activity_name_source": {
+    "cell_text": "CGI-I",
+    "indentation_level": 0,
+    "method": "visual_transcription",
+    "indentation_method": "visual_estimate"
+   }
+  },
+  {
+   "table_number": 2,
+   "row_position": 16,
+   "source_page": 85,
+   "activity_name": "HAM-A",
+   "activity_name_source": {
+    "cell_text": "HAM-A",
+    "indentation_level": 0,
+    "method": "visual_transcription",
+    "indentation_method": "visual_estimate"
+   }
+  },
+  {
+   "table_number": 2,
+   "row_position": 17,
+   "source_page": 85,
+   "activity_name": "SF-12",
+   "activity_name_source": {
+    "cell_text": "SF-12d",
+    "indentation_level": 0,
+    "method": "visual_transcription",
+    "indentation_method": "visual_estimate"
+   },
+   "annotation_markers": "d"
+  },
+  {
+   "table_number": 2,
+   "row_position": 18,
+   "source_page": 85,
+   "activity_name": "BARS/AIMS/SAS",
+   "activity_name_source": {
+    "cell_text": "BARS/AIMS/SASe",
+    "indentation_level": 0,
+    "method": "visual_transcription",
+    "indentation_method": "visual_estimate"
+   },
+   "annotation_markers": "e"
+  },
+  {
+   "table_number": 2,
+   "row_position": 19,
+   "source_page": 85,
+   "activity_name": "C-SSRS",
+   "activity_name_source": {
+    "cell_text": "C-SSRSf",
+    "indentation_level": 0,
+    "method": "visual_transcription",
+    "indentation_method": "visual_estimate"
+   },
+   "annotation_markers": "f"
+  },
+  {
+   "table_number": 2,
+   "row_position": 20,
+   "source_page": 85,
+   "activity_name": "Adverse Events",
+   "activity_name_source": {
+    "cell_text": "Adverse Events",
+    "indentation_level": 0,
+    "method": "visual_transcription",
+    "indentation_method": "visual_estimate"
+   }
+  },
+  {
+   "table_number": 2,
+   "row_position": 21,
+   "source_page": 85,
+   "activity_name": "Concomitant Medications",
+   "activity_name_source": {
+    "cell_text": "Concomitant Medications",
+    "indentation_level": 0,
+    "method": "visual_transcription",
+    "indentation_method": "visual_estimate"
+   }
+  },
+  {
+   "table_number": 2,
+   "row_position": 22,
+   "source_page": 85,
+   "activity_name": "Access IWRS for IP assignment",
+   "activity_name_source": {
+    "cell_text": "Access IWRS for IP assignment",
+    "indentation_level": 0,
+    "method": "visual_transcription",
+    "indentation_method": "visual_estimate"
+   }
+  },
+  {
+   "table_number": 2,
+   "row_position": 23,
+   "source_page": 85,
+   "activity_name": "Dispense IP",
+   "activity_name_source": {
+    "cell_text": "Dispense IPg",
+    "indentation_level": 0,
+    "method": "visual_transcription",
+    "indentation_method": "visual_estimate"
+   },
+   "annotation_markers": "g"
+  },
+  {
+   "table_number": 2,
+   "row_position": 24,
+   "source_page": 85,
+   "activity_name": "IP Compliance and Accountability",
+   "activity_name_source": {
+    "cell_text": "IP Compliance and Accountabilityh",
+    "indentation_level": 0,
+    "method": "visual_transcription",
+    "indentation_method": "visual_estimate"
+   },
+   "annotation_markers": "h"
+  },
+  {
+   "table_number": 2,
+   "row_position": 25,
+   "source_page": 85,
+   "activity_name": "ADT Compliance",
+   "activity_name_source": {
+    "cell_text": "ADT Complianceh",
+    "indentation_level": 0,
+    "method": "visual_transcription",
+    "indentation_method": "visual_estimate"
+   },
+   "annotation_markers": "h"
+  },
+  {
+   "table_number": 2,
+   "row_position": 26,
+   "source_page": 85,
+   "activity_name": "IP Return",
+   "activity_name_source": {
+    "cell_text": "IP Returni",
+    "indentation_level": 0,
+    "method": "visual_transcription",
+    "indentation_method": "visual_estimate"
+   },
+   "annotation_markers": "i"
+  },
+  {
+   "table_number": 2,
+   "row_position": 27,
+   "source_page": 85,
+   "activity_name": "Pharmacokinetic Sample (at any time during visit)",
+   "activity_name_source": {
+    "cell_text": "Pharmacokinetic Sample\n(at any time during visit)j",
+    "indentation_level": 0,
+    "method": "visual_transcription",
+    "indentation_method": "visual_estimate"
+   },
+   "annotation_markers": "j"
+  },
+  {
+   "table_number": 2,
+   "row_position": 28,
+   "source_page": 85,
+   "activity_name": "Pharmacogenetic Consent",
+   "activity_name_source": {
+    "cell_text": "Pharmacogenetic Consent",
+    "indentation_level": 0,
+    "method": "visual_transcription",
+    "indentation_method": "visual_estimate"
+   },
+   "annotation_markers": "k"
+  },
+  {
+   "table_number": 2,
+   "row_position": 29,
+   "source_page": 85,
+   "activity_name": "Pharmacogenetic Sample",
+   "activity_name_source": {
+    "cell_text": "Pharmacogenetic Samplel",
+    "indentation_level": 0,
+    "method": "visual_transcription",
+    "indentation_method": "visual_estimate"
+   },
+   "annotation_markers": "l"
+  }
+ ],
+ "activity_schedule": [
+  {
+   "table_number": 2,
+   "row_position": 5,
+   "column_position": 2,
+   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 5,
+   "column_position": 3,
+   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 5,
+   "column_position": 4,
+   "cell_value": "(X)",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 5,
+   "column_position": 5,
+   "cell_value": "(X)",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 5,
+   "column_position": 6,
+   "cell_value": "(X)",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 5,
+   "column_position": 7,
+   "cell_value": "(X)",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 5,
+   "column_position": 8,
+   "cell_value": "(X)",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 6,
+   "column_position": 2,
+   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 6,
+   "column_position": 3,
+   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 6,
+   "column_position": 7,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 7,
+   "column_position": 2,
+   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 7,
+   "column_position": 3,
+   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 7,
+   "column_position": 7,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 7,
+   "column_position": 8,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 8,
+   "column_position": 2,
+   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 8,
+   "column_position": 3,
+   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 8,
+   "column_position": 4,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 8,
+   "column_position": 5,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 8,
+   "column_position": 6,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 8,
+   "column_position": 7,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 8,
+   "column_position": 8,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 9,
+   "column_position": 2,
+   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 9,
+   "column_position": 3,
+   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 9,
+   "column_position": 7,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 10,
+   "column_position": 2,
+   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 10,
+   "column_position": 3,
+   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 10,
+   "column_position": 7,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 11,
+   "column_position": 2,
+   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 11,
+   "column_position": 3,
+   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 11,
+   "column_position": 7,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 12,
+   "column_position": 2,
+   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 12,
+   "column_position": 3,
+   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 12,
+   "column_position": 7,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 13,
+   "column_position": 2,
+   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 13,
+   "column_position": 3,
+   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 13,
+   "column_position": 4,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 13,
+   "column_position": 5,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 13,
+   "column_position": 6,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 13,
+   "column_position": 7,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 14,
+   "column_position": 2,
+   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 14,
+   "column_position": 3,
+   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 14,
+   "column_position": 4,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 14,
+   "column_position": 5,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 14,
+   "column_position": 6,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 14,
+   "column_position": 7,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 15,
+   "column_position": 2,
+   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 15,
+   "column_position": 3,
+   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 15,
+   "column_position": 4,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 15,
+   "column_position": 5,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 15,
+   "column_position": 6,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 15,
+   "column_position": 7,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 16,
+   "column_position": 2,
+   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 16,
+   "column_position": 3,
+   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 16,
+   "column_position": 5,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 16,
+   "column_position": 7,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 17,
+   "column_position": 2,
+   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 17,
+   "column_position": 3,
+   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 17,
+   "column_position": 7,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 18,
+   "column_position": 2,
+   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 18,
+   "column_position": 3,
+   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 18,
+   "column_position": 4,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 18,
+   "column_position": 5,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 18,
+   "column_position": 6,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 18,
+   "column_position": 7,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 19,
+   "column_position": 2,
+   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 19,
+   "column_position": 3,
+   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 19,
+   "column_position": 4,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 19,
+   "column_position": 5,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 19,
+   "column_position": 6,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 19,
+   "column_position": 7,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 19,
+   "column_position": 8,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 20,
+   "column_position": 2,
+   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 20,
+   "column_position": 3,
+   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 20,
+   "column_position": 4,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 20,
+   "column_position": 5,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 20,
+   "column_position": 6,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 20,
+   "column_position": 7,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 20,
+   "column_position": 8,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 21,
+   "column_position": 2,
+   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 21,
+   "column_position": 3,
+   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 21,
+   "column_position": 4,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 21,
+   "column_position": 5,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 21,
+   "column_position": 6,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 21,
+   "column_position": 7,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 21,
+   "column_position": 8,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 22,
+   "column_position": 2,
+   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 22,
+   "column_position": 3,
+   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 22,
+   "column_position": 4,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 22,
+   "column_position": 5,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 22,
+   "column_position": 6,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 23,
+   "column_position": 2,
+   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 23,
+   "column_position": 3,
+   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 23,
+   "column_position": 4,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 23,
+   "column_position": 5,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 23,
+   "column_position": 6,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 24,
+   "column_position": 2,
+   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 24,
+   "column_position": 3,
+   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 24,
+   "column_position": 4,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 24,
+   "column_position": 5,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 24,
+   "column_position": 6,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 24,
+   "column_position": 7,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 25,
+   "column_position": 2,
+   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 25,
+   "column_position": 3,
+   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 25,
+   "column_position": 4,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 25,
+   "column_position": 5,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 25,
+   "column_position": 6,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 25,
+   "column_position": 7,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 26,
+   "column_position": 2,
+   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 26,
+   "column_position": 3,
+   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 26,
+   "column_position": 4,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 26,
+   "column_position": 5,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 26,
+   "column_position": 6,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 26,
+   "column_position": 7,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 27,
+   "column_position": 2,
+   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 27,
+   "column_position": 3,
+   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 27,
+   "column_position": 5,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 27,
+   "column_position": 6,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 27,
+   "column_position": 7,
+   "cell_value": "X",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 28,
+   "column_position": 2,
+   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 28,
+   "column_position": 3,
+   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 28,
+   "column_position": 4,
+   "cell_value": "X",
+   "source_range": "4:7",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 28,
+   "column_position": 5,
+   "cell_value": "X",
+   "source_range": "4:7",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 28,
+   "column_position": 6,
+   "cell_value": "X",
+   "source_range": "4:7",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 28,
+   "column_position": 7,
+   "cell_value": "X",
+   "source_range": "4:7",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 29,
+   "column_position": 2,
+   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 29,
+   "column_position": 3,
+   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
+   "method": "visual_read"
+  },
+  {
+   "table_number": 2,
+   "row_position": 29,
+   "column_position": 4,
+   "cell_value": "X",
+   "source_range": "4:7",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 29,
+   "column_position": 5,
+   "cell_value": "X",
+   "source_range": "4:7",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 29,
+   "column_position": 6,
+   "cell_value": "X",
+   "source_range": "4:7",
+   "method": "raster_pixel_detection"
+  },
+  {
+   "table_number": 2,
+   "row_position": 29,
+   "column_position": 7,
+   "cell_value": "X",
+   "source_range": "4:7",
+   "method": "raster_pixel_detection"
+  }
+ ],
+ "annotations": [
+  {
+   "annotation_marker": "*",
+   "annotation_type": "footnote",
+   "annotation_text": "Note: If necessary, Visits 3 to 7 may be conducted up to 3 days before or after the scheduled visits. The visit windows for each scheduled visit are relative to Visit 2 for Visits 3 through 7. In extenuating circumstances, the visit window for Visits 3 to 7 (inclusive) may be extended an additional 4 days (ie, +7 days) from the scheduled visit. All attempts should be made to conduct the visit within the pre-defined ± 3 day window as well as to avoid a potential lapse in IP during the extension of a visit window.",
+   "marker_locations": [
+    {
+     "table_number": 2,
+     "location_type": "schedule_property",
+     "row_position": 4
+    }
+   ]
+  },
+  {
+   "annotation_marker": "a",
+   "annotation_type": "footnote",
+   "annotation_text": "Clinical laboratory assessments, including serum pregnancy testing (WOCBP only) may be performed at an off-site laboratory facility if needed. If patient is unable or unwilling to travel to an alternate laboratory facility, the laboratory assessment at the scheduled timepoint may be omitted. For WOCBP, study sites may provide urine pregnancy test kits for at-home testing. Study personnel should document the patient’s verbal confirmation of pregnancy test results in the source document. Patient should have clinical laboratory testing performed as an Unscheduled assessment during the Safety Follow-up period. Clinical findings upon termination must be followed until the condition returns to prestudy status or can be explained as unrelated to investigational product. If necessary, an additional follow-up visit should be scheduled.",
+   "marker_locations": [
+    {
+     "table_number": 2,
+     "location_type": "activity_name",
+     "row_position": 6
+    },
+    {
+     "table_number": 2,
+     "location_type": "activity_name",
+     "row_position": 7
+    }
+   ]
+  },
+  {
+   "annotation_marker": "b",
+   "annotation_type": "footnote",
+   "annotation_text": "If visit is being performed remotely, this assessment may be omitted. Vital signs should be obtained at the next scheduled in-home or in-person visit.",
+   "marker_locations": [
+    {
+     "table_number": 2,
+     "location_type": "activity_name",
+     "row_position": 8
+    }
+   ]
+  },
+  {
+   "annotation_marker": "c",
+   "annotation_type": "footnote",
+   "annotation_text": "If visit is being performed remotely, this assessment may be omitted at this timepoint. Patient should have this assessment performed as an Unscheduled assessment during the Safety Follow-up period. Clinical findings upon termination must be followed until the condition returns to prestudy status or can be explained as unrelated to investigational product. If necessary, an additional follow-up visit should be scheduled.",
+   "marker_locations": [
+    {
+     "table_number": 2,
+     "location_type": "activity_name",
+     "row_position": 9
+    },
+    {
+     "table_number": 2,
+     "location_type": "activity_name",
+     "row_position": 10
+    }
+   ]
+  },
+  {
+   "annotation_marker": "d",
+   "annotation_type": "footnote",
+   "annotation_text": "If visit is being performed remotely, study staff should verbally administer the Short-Form 12 (SF-12) to the patient and record the patient’s responses in the source.",
+   "marker_locations": [
+    {
+     "table_number": 2,
+     "location_type": "activity_name",
+     "row_position": 17
+    }
+   ]
+  },
+  {
+   "annotation_marker": "e",
+   "annotation_type": "footnote",
+   "annotation_text": "Movement scales may be conducted remotely if needed. Where possible, telemedicine virtual visits or video calls (without recording) should be used to conduct this assessment remotely. If a scale item cannot be assessed, the item may be skipped and the source should indicate the item could not be assessed. Movement scales may only be conducted by raters certified on the scale.",
+   "marker_locations": [
+    {
+     "table_number": 2,
+     "location_type": "activity_name",
+     "row_position": 18
+    }
+   ]
+  },
+  {
+   "annotation_marker": "f",
+   "annotation_type": "footnote",
+   "annotation_text": "C-SSRS may be assessed remotely if needed by a certified rater. Clinicians with a valid C-SSRS certification for another Allergan study may rate C-SSRS in the event the study-certified rater is unavailable to complete the assessment.",
+   "marker_locations": [
+    {
+     "table_number": 2,
+     "location_type": "activity_name",
+     "row_position": 19
+    }
+   ]
+  },
+  {
+   "annotation_marker": "g",
+   "annotation_type": "footnote",
+   "annotation_text": "As an alternative to in-person drug dispensing, IP may be dispensed via a secure delivery method (where permissible by local, statutory, federal/country law) and after approval by Sponsor.",
+   "marker_locations": [
+    {
+     "table_number": 2,
+     "location_type": "activity_name",
+     "row_position": 23
+    }
+   ]
+  },
+  {
+   "annotation_marker": "h",
+   "annotation_type": "footnote",
+   "annotation_text": "Assessment of compliance should be performed at each visit. For remote visits where a pill count by site staff may not be possible, patient reported compliance is to be documented. Patient reported verification of IP capsules remaining should be documented.",
+   "marker_locations": [
+    {
+     "table_number": 2,
+     "location_type": "activity_name",
+     "row_position": 24
+    },
+    {
+     "table_number": 2,
+     "location_type": "activity_name",
+     "row_position": 25
+    }
+   ]
+  },
+  {
+   "annotation_marker": "i",
+   "annotation_type": "footnote",
+   "annotation_text": "To minimize undue burden on the patient, IP return may be less frequent during the time that visits are being conducted remotely but should occur no less frequently than monthly.",
+   "marker_locations": [
+    {
+     "table_number": 2,
+     "location_type": "activity_name",
+     "row_position": 26
+    }
+   ]
+  },
+  {
+   "annotation_marker": "j",
+   "annotation_type": "footnote",
+   "annotation_text": "If visit is being performed remotely or at an alternate laboratory facility, this assessment may be omitted. In consideration of the processing time required, pharmacokinetic samples should not be collected during in-home visits.",
+   "marker_locations": [
+    {
+     "table_number": 2,
+     "location_type": "activity_name",
+     "row_position": 27
+    }
+   ]
+  },
+  {
+   "annotation_marker": "k",
+   "annotation_type": "footnote",
+   "annotation_text": "Pharmacogenetic consent may be obtained at any time between Visit 1(Screening) and Visit 6 (Week 6). Pharmacogenetic consent may not be obtained remotely.",
+   "marker_locations": [
+    {
+     "table_number": 2,
+     "location_type": "activity_name",
+     "row_position": 28,
+     "method": "text_match"
+    }
+   ]
+  },
+  {
+   "annotation_marker": "l",
+   "annotation_type": "footnote",
+   "annotation_text": "Pharmacogenetic sample (1 per patient for the entire study) may be obtained from randomized patients at any time between Visit 2 (Baseline) and Visit 6 (Week 6). To be omitted if sampling is not possible due to remote visits being completed.",
+   "marker_locations": [
+    {
+     "table_number": 2,
+     "location_type": "activity_name",
+     "row_position": 29
+    }
+   ]
+  }
+ ],
+ "review_items": [
+  {
+   "id": "D1",
+   "severity": "medium",
+   "location": {
+    "page": 85
+   },
+   "call_made": "Source Table 4 (COVID-19 modified schedule, applicable to randomized patients who have completed Visit 2) is typed as a 'track' with label 'COVID-19 Modified': an alternative schedule entered on a condition (COVID-19 disruption), not by every participant in sequence.",
+   "alternative": "Type it 'domain' (same columns and same participants as Table 1) or 'main_soa' (an amended version of the main schedule) so its columns join Table 1's without a separate population track.",
+   "report_section": "2.1"
+  },
+  {
+   "id": "D2",
+   "severity": "high",
+   "location": {
+    "page": 85,
+    "row_position": 28,
+    "annotation_marker": "k"
+   },
+   "call_made": "Footnote k (Pharmacogenetic consent may be obtained at any time between Visit 1 and Visit 6; not remotely) is defined below the table but no 'k' marker is printed in the grid. It is bound to the Pharmacogenetic Consent row by text match, and 'k' is added to that row's markers.",
+   "alternative": "Leave the binding unresolved (location_type 'unresolved'), since the source prints no marker for k anywhere in Table 4.",
+   "report_section": "2.4"
+  }
+ ]
+}

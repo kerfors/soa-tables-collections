@@ -1,5 +1,5 @@
 {
- "audited_at": "2026-11-22T19:31:34.706213+00:00",
+ "audited_at": "2026-11-22T19:51:45.891020+00:00",
  "collection": "misc_studies",
  "counts": {
   "protocols": 5,
@@ -194,7 +194,7 @@
     {
      "table_number": 2,
      "table_title": "COVID-19 Modified Schedule of Visits and Procedures (Applicable to Randomized Patients who have completed Visit 2)",
-     "source_file": "NCT03739203_Table_02_extraction.json",
+     "source_file": "NCT03739203_Table_02_extraction.verified.json",
      "declared_pages": [
       85,
       87
@@ -262,7 +262,7 @@
     {
      "table_number": 1,
      "table_title": "Schedule of Activities (SoA)",
-     "source_file": "NCT04304508_Table_01_extraction.json",
+     "source_file": "NCT04304508_Table_01_extraction.verified.json",
      "declared_pages": [
       12,
       13
@@ -299,7 +299,7 @@
     {
      "table_number": 2,
      "table_title": "Table 1–1 PK, PD and Biomarker Sampling",
-     "source_file": "NCT04304508_Table_02_extraction.json",
+     "source_file": "NCT04304508_Table_02_extraction.verified.json",
      "declared_pages": [
       15,
       15

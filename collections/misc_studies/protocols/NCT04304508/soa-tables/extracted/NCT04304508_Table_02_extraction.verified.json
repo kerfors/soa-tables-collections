@@ -1,0 +1,451 @@
+{
+ "schema_name": "soa-table-extraction",
+ "schema_version": "1.1",
+ "extraction_metadata": {
+  "extracted_at": "2026-11-22T19:27:05+00:00",
+  "extractor": "Claude, PDF_TO_JSON_PROMPT single-pass",
+  "prompt_version": "3.9.4",
+  "source_document": {
+   "filename": "NCT04304508_soa.pdf",
+   "document_type": "protocol",
+   "document_version": "1.0"
+  },
+  "extraction_status": "ready_for_resolution",
+  "extraction_notes": "Text layer and vector rule lines present; marks verified by pdftotext -bbox column binning. Mark case (X vs x) transcribed literally.",
+  "model": "claude-opus-5-5"
+ },
+ "table_metadata": {
+  "table_number": 2,
+  "table_type": "subsidiary",
+  "table_title": "Table 1–1 PK, PD and Biomarker Sampling",
+  "table_purpose": "Within-visit timing of PK, PD, biomarker and genetics samples at Visits 2, 4 (or later), 8 / ET",
+  "page_start": 15,
+  "page_end": 15,
+  "notes": "Typed subsidiary: gives finer (pre/post-dose) timing for the PK, PD, pharmacogenetic and biomarker sampling activities of Table 1 (Table 1 footnote l refers to Table 1-1); its columns are timepoints within Visits 2, 4, 8/ET rather than the visit grid. Rows are analytes, columns are timepoints (standard orientation, not row-oriented). One label column (L=1); data columns 2-7. Grey-shaded cells (not applicable) are empty and carry no entry. The 'Week 4 (Visit 4a)' header is one merged cell over columns 3-5; its marker a is recorded on each covered position."
+ },
+ "schedule_properties": [
+  {
+   "table_number": 2,
+   "row_position": 1,
+   "property_name": "Week",
+   "property_name_source": {
+    "row_position": 1,
+    "column_position": 1,
+    "cell_value": "",
+    "synthesized": true
+   },
+   "structure_method": "inferred_from_layout",
+   "property_type": "week",
+   "hierarchical_level": 1,
+   "property_comment": "Upper header band with no row label: 'Day 1 (Visit 2)', 'Week 4 (Visit 4)' (merged over three timepoint columns), 'Week 4 or later (Visit 4 or subsequent visit)', 'Week 26 (Visit 8) / ET'. Typed by the value spanning several columns ('Week 4 (Visit 4)') as 'week'; visit numbers kept as qualifiers in the values. Name synthesised."
+  },
+  {
+   "table_number": 2,
+   "row_position": 2,
+   "property_name": "Timepoint",
+   "property_name_source": {
+    "row_position": 2,
+    "column_position": 1,
+    "cell_value": "",
+    "synthesized": true
+   },
+   "structure_method": "inferred_from_layout",
+   "property_type": "timepoint",
+   "hierarchical_level": 2,
+   "property_comment": "Within-visit sampling times relative to dosing: Predose, 0.5-1.5h Postdose, 2-4 h Postdose, 4-12 h postdose. Timepoints; name synthesised (empty label cell)."
+  }
+ ],
+ "schedule_grid": [
+  {
+   "table_number": 2,
+   "row_position": 1,
+   "column_position": 2,
+   "cell_value": "Day 1 (Visit 2)"
+  },
+  {
+   "table_number": 2,
+   "row_position": 1,
+   "column_position": 3,
+   "cell_value": "Week 4 (Visit 4)",
+   "is_merged_cell": true,
+   "merged_cell_range": "3:5",
+   "annotation_markers": "a"
+  },
+  {
+   "table_number": 2,
+   "row_position": 1,
+   "column_position": 4,
+   "cell_value": "Week 4 (Visit 4)",
+   "is_merged_cell": true,
+   "merged_cell_range": "3:5",
+   "annotation_markers": "a"
+  },
+  {
+   "table_number": 2,
+   "row_position": 1,
+   "column_position": 5,
+   "cell_value": "Week 4 (Visit 4)",
+   "is_merged_cell": true,
+   "merged_cell_range": "3:5",
+   "annotation_markers": "a"
+  },
+  {
+   "table_number": 2,
+   "row_position": 1,
+   "column_position": 6,
+   "cell_value": "Week 4 or later (Visit 4 or subsequent visit)"
+  },
+  {
+   "table_number": 2,
+   "row_position": 1,
+   "column_position": 7,
+   "cell_value": "Week 26 (Visit 8) / ET",
+   "annotation_markers": "d"
+  },
+  {
+   "table_number": 2,
+   "row_position": 2,
+   "column_position": 2,
+   "cell_value": "Predose Day 1"
+  },
+  {
+   "table_number": 2,
+   "row_position": 2,
+   "column_position": 3,
+   "cell_value": "Predose"
+  },
+  {
+   "table_number": 2,
+   "row_position": 2,
+   "column_position": 4,
+   "cell_value": "0.5-1.5h Postdose"
+  },
+  {
+   "table_number": 2,
+   "row_position": 2,
+   "column_position": 5,
+   "cell_value": "2-4 h Postdose",
+   "annotation_markers": "b"
+  },
+  {
+   "table_number": 2,
+   "row_position": 2,
+   "column_position": 6,
+   "cell_value": "4-12 h postdose",
+   "annotation_markers": "b,c"
+  },
+  {
+   "table_number": 2,
+   "row_position": 2,
+   "column_position": 7,
+   "cell_value": "Predose"
+  }
+ ],
+ "activities": [
+  {
+   "table_number": 2,
+   "row_position": 3,
+   "source_page": 15,
+   "activity_name": "PK",
+   "activity_name_source": {
+    "cell_text": "PKe",
+    "indentation_level": 0,
+    "indentation_method": "assumed_flat",
+    "text_formatting": [
+     "bold"
+    ]
+   },
+   "annotation_markers": "e,n1"
+  },
+  {
+   "table_number": 2,
+   "row_position": 4,
+   "source_page": 15,
+   "activity_name": "PD",
+   "activity_name_source": {
+    "cell_text": "PDe",
+    "indentation_level": 0,
+    "indentation_method": "assumed_flat",
+    "text_formatting": [
+     "bold"
+    ]
+   },
+   "annotation_markers": "e,n1"
+  },
+  {
+   "table_number": 2,
+   "row_position": 5,
+   "source_page": 15,
+   "activity_name": "Biomarkers Plasma",
+   "activity_name_source": {
+    "cell_text": "Biomarke\nrs Plasma",
+    "indentation_level": 0,
+    "indentation_method": "assumed_flat",
+    "text_formatting": [
+     "bold"
+    ]
+   },
+   "annotation_markers": "n1"
+  },
+  {
+   "table_number": 2,
+   "row_position": 6,
+   "source_page": 15,
+   "activity_name": "Biomarkers Serum",
+   "activity_name_source": {
+    "cell_text": "Biomarke\nrs Serum",
+    "indentation_level": 0,
+    "indentation_method": "assumed_flat",
+    "text_formatting": [
+     "bold"
+    ]
+   },
+   "annotation_markers": "n1"
+  },
+  {
+   "table_number": 2,
+   "row_position": 7,
+   "source_page": 15,
+   "activity_name": "Genetics",
+   "activity_name_source": {
+    "cell_text": "Genetics",
+    "indentation_level": 0,
+    "indentation_method": "assumed_flat",
+    "text_formatting": [
+     "bold"
+    ]
+   }
+  }
+ ],
+ "activity_schedule": [
+  {
+   "table_number": 2,
+   "row_position": 3,
+   "column_position": 3,
+   "cell_value": "X"
+  },
+  {
+   "table_number": 2,
+   "row_position": 3,
+   "column_position": 4,
+   "cell_value": "x"
+  },
+  {
+   "table_number": 2,
+   "row_position": 3,
+   "column_position": 5,
+   "cell_value": "X"
+  },
+  {
+   "table_number": 2,
+   "row_position": 3,
+   "column_position": 6,
+   "cell_value": "x"
+  },
+  {
+   "table_number": 2,
+   "row_position": 3,
+   "column_position": 7,
+   "cell_value": "x"
+  },
+  {
+   "table_number": 2,
+   "row_position": 4,
+   "column_position": 2,
+   "cell_value": "x"
+  },
+  {
+   "table_number": 2,
+   "row_position": 4,
+   "column_position": 3,
+   "cell_value": "X"
+  },
+  {
+   "table_number": 2,
+   "row_position": 4,
+   "column_position": 4,
+   "cell_value": "x"
+  },
+  {
+   "table_number": 2,
+   "row_position": 4,
+   "column_position": 5,
+   "cell_value": "X"
+  },
+  {
+   "table_number": 2,
+   "row_position": 4,
+   "column_position": 6,
+   "cell_value": "x"
+  },
+  {
+   "table_number": 2,
+   "row_position": 4,
+   "column_position": 7,
+   "cell_value": "x"
+  },
+  {
+   "table_number": 2,
+   "row_position": 5,
+   "column_position": 2,
+   "cell_value": "x"
+  },
+  {
+   "table_number": 2,
+   "row_position": 5,
+   "column_position": 7,
+   "cell_value": "x"
+  },
+  {
+   "table_number": 2,
+   "row_position": 6,
+   "column_position": 2,
+   "cell_value": "x"
+  },
+  {
+   "table_number": 2,
+   "row_position": 6,
+   "column_position": 7,
+   "cell_value": "x"
+  },
+  {
+   "table_number": 2,
+   "row_position": 7,
+   "column_position": 2,
+   "cell_value": "x"
+  }
+ ],
+ "annotations": [
+  {
+   "annotation_marker": "a",
+   "annotation_type": "footnote",
+   "annotation_text": "At Visit 4: in order to collect pre-dose samples for PK and PD, participants should take their study drug at the site only after blood sampling. The investigator must record the time when the study drug is taken at the site. A phone call to remind the participants is recommended.",
+   "marker_locations": [
+    {
+     "table_number": 2,
+     "location_type": "schedule_cell",
+     "row_position": 1,
+     "column_position": 3
+    },
+    {
+     "table_number": 2,
+     "location_type": "schedule_cell",
+     "row_position": 1,
+     "column_position": 4
+    },
+    {
+     "table_number": 2,
+     "location_type": "schedule_cell",
+     "row_position": 1,
+     "column_position": 5
+    }
+   ]
+  },
+  {
+   "annotation_marker": "b",
+   "annotation_type": "footnote",
+   "annotation_text": "The minimum time between the 2-4 h post-dose and the 4-12 h post-dose samples, if collected the same day, should be at least 1 hour.",
+   "marker_locations": [
+    {
+     "table_number": 2,
+     "location_type": "schedule_cell",
+     "row_position": 2,
+     "column_position": 5
+    },
+    {
+     "table_number": 2,
+     "location_type": "schedule_cell",
+     "row_position": 2,
+     "column_position": 6
+    }
+   ]
+  },
+  {
+   "annotation_marker": "c",
+   "annotation_type": "footnote",
+   "annotation_text": "The late sample 4-12 hr post-dose can be taken at week 4 (visit 4) or at a later-on visit (e.g. Visit 6). The exact time of when the study drug was administered must be recorded as well as PK and PD post-dose sample collection time.",
+   "marker_locations": [
+    {
+     "table_number": 2,
+     "location_type": "schedule_cell",
+     "row_position": 2,
+     "column_position": 6
+    }
+   ]
+  },
+  {
+   "annotation_marker": "d",
+   "annotation_type": "footnote",
+   "annotation_text": "At Visit 8 (week 26) in order to collect pre-dose samples for PK and PD, participants should take their study drug at the site only after blood sampling. The investigator must record the time when the study drug is taken at the site. A phone call to remind the participants is recommended. However, in case Visit 8 is also the EOT visit as well as in case the sample is taken at ET visit, no study drug will be administered.",
+   "marker_locations": [
+    {
+     "table_number": 2,
+     "location_type": "schedule_cell",
+     "row_position": 1,
+     "column_position": 7
+    }
+   ]
+  },
+  {
+   "annotation_marker": "e",
+   "annotation_type": "footnote",
+   "annotation_text": "If study drug is temporarily stopped, PK / PD blood samples should only be obtained if study drug has been restarted and sustained for at least 4 days, see Section 7.1.1.",
+   "marker_locations": [
+    {
+     "table_number": 2,
+     "location_type": "activity_name",
+     "row_position": 3
+    },
+    {
+     "table_number": 2,
+     "location_type": "activity_name",
+     "row_position": 4
+    }
+   ]
+  },
+  {
+   "annotation_marker": "n1",
+   "annotation_type": "footnote",
+   "annotation_text": "The exact times of PK, PD and biomarker sampling need to be recorded, as well as the time of the most recent study drug intake (i.e: on the PK / PD sampling day, as well as the day before that).",
+   "marker_locations": [
+    {
+     "table_number": 2,
+     "location_type": "activity_name",
+     "row_position": 3,
+     "method": "text_match"
+    },
+    {
+     "table_number": 2,
+     "location_type": "activity_name",
+     "row_position": 4,
+     "method": "text_match"
+    },
+    {
+     "table_number": 2,
+     "location_type": "activity_name",
+     "row_position": 5,
+     "method": "text_match"
+    },
+    {
+     "table_number": 2,
+     "location_type": "activity_name",
+     "row_position": 6,
+     "method": "text_match"
+    }
+   ]
+  }
+ ],
+ "review_items": [
+  {
+   "id": "D4",
+   "severity": "high",
+   "location": {
+    "page": 15,
+    "annotation_marker": "g1"
+   },
+   "call_made": "The unmarked paragraph below Table 1-1 ('The exact times of PK, PD and biomarker sampling need to be recorded ...') is recorded as a table-wide note (marker g1), since it names sample types rather than visits or columns.",
+   "alternative": "Bind it to the rows it names - PK, PD, Biomarkers Plasma and Biomarkers Serum (not Genetics) - as a note on those activities (word-overlap binding).",
+   "report_section": "3.2"
+  }
+ ]
+}
