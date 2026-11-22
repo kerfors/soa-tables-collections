@@ -1,0 +1,1722 @@
+{
+  "schema_name": "soa-table-extraction",
+  "schema_version": "1.1",
+  "extraction_metadata": {
+    "extracted_at": "2026-11-22T19:24:29+00:00",
+    "extractor": "Claude, PDF_TO_JSON_PROMPT single-pass",
+    "prompt_version": "3.9.4",
+    "source_document": {
+      "filename": "NCT02701985_soa.pdf",
+      "document_type": "protocol",
+      "document_version": "Protocol BP30037, Version 3"
+    },
+    "extraction_status": "ready_for_resolution",
+    "extraction_notes": "Text-layer PDF with vector rule lines on both pages. Grid on doc p.90; doc p.91 is the footnote table ('Appendix 1 Schedule of Assessments (cont.)') holding notes 1-8, no activity rows. Mark matrix verified by pdftotext -bbox column binning against header centres plus vector rule-line geometry; agrees with the visual read except the merged Adverse Event / Concomitant Treatments cell, resolved from the rule lines. U+2010 hyphens and no-break spaces in header cells normalised to '-' and ' '.",
+    "model": "claude-opus-5-5"
+  },
+  "table_metadata": {
+    "table_number": 1,
+    "table_type": "main_soa",
+    "table_title": "Appendix 1 Schedule of Assessments",
+    "table_purpose": "Main schedule of assessments: screening, baseline, 12-week treatment period, follow-up and early termination",
+    "page_start": 90,
+    "page_end": 91,
+    "notes": "Single table; doc p.91 carries only the numbered footnotes (no activity rows). One label column (L=1), data columns at positions 2-9. Rows 34 (Adverse Event or Intercurrent Illness) and 35 (Previous and Concomitant Treatments) share one data cell ruled across columns 2-9 and both rows, holding a single 'x': distributed to both rows and all eight columns (source_range 2:9). The two label cells are separated by their own rule line."
+  },
+  "schedule_properties": [
+    {
+      "table_number": 1,
+      "row_position": 1,
+      "property_name": "Epoch",
+      "property_name_source": {
+        "row_position": 1,
+        "column_position": 1,
+        "cell_value": "",
+        "synthesized": true
+      },
+      "property_type": "epoch",
+      "hierarchical_level": 1,
+      "structure_method": "inferred_from_layout",
+      "property_comment": "Unlabelled top band; its only value 'Treatment Period' is a merged cell spanning the Week 2 to Week 12 columns (positions 4-7); the cells over Screening, Baseline, Follow-Up Visit and Early Termination Visit are blank. Typed epoch because the spanning value names a major study phase (§3); name synthesised as the fixed name of the type because the label cell is empty."
+    },
+    {
+      "table_number": 1,
+      "row_position": 2,
+      "property_name": "Visit",
+      "property_name_source": {
+        "row_position": 2,
+        "column_position": 1,
+        "cell_value": "Visit8"
+      },
+      "property_type": "visit",
+      "hierarchical_level": 2,
+      "annotation_markers": "8",
+      "property_comment": "Named visits (Screening, Baseline, Week 2, Week 6, Week 9, Week 12, Follow-Up Visit, Early Termination Visit); printed row label 'Visit' carries footnote 8 (visit schedule relative to Day 1), which applies to the whole row."
+    },
+    {
+      "table_number": 1,
+      "row_position": 3,
+      "property_name": "Days",
+      "property_name_source": {
+        "row_position": 3,
+        "column_position": 1,
+        "cell_value": "Days"
+      },
+      "property_type": "study_day",
+      "hierarchical_level": 3,
+      "property_comment": "Study days per visit relative to first study drug administration (Day 1): ranges for Screening (-28 to -8) and Baseline (-7 to -1), single target days with a printed window for later visits (e.g. '14 (± 7)'), and '(NA)' for Early Termination. The window qualifier is printed inside each cell and stays in the cell value (§3); typed study_day from the printed label and values."
+    }
+  ],
+  "schedule_grid": [
+    {
+      "table_number": 1,
+      "row_position": 1,
+      "column_position": 2,
+      "cell_value": ""
+    },
+    {
+      "table_number": 1,
+      "row_position": 1,
+      "column_position": 3,
+      "cell_value": ""
+    },
+    {
+      "table_number": 1,
+      "row_position": 1,
+      "column_position": 4,
+      "cell_value": "Treatment Period",
+      "is_merged_cell": true,
+      "merged_cell_range": "4:7"
+    },
+    {
+      "table_number": 1,
+      "row_position": 1,
+      "column_position": 5,
+      "cell_value": "Treatment Period",
+      "is_merged_cell": true,
+      "merged_cell_range": "4:7"
+    },
+    {
+      "table_number": 1,
+      "row_position": 1,
+      "column_position": 6,
+      "cell_value": "Treatment Period",
+      "is_merged_cell": true,
+      "merged_cell_range": "4:7"
+    },
+    {
+      "table_number": 1,
+      "row_position": 1,
+      "column_position": 7,
+      "cell_value": "Treatment Period",
+      "is_merged_cell": true,
+      "merged_cell_range": "4:7"
+    },
+    {
+      "table_number": 1,
+      "row_position": 1,
+      "column_position": 8,
+      "cell_value": ""
+    },
+    {
+      "table_number": 1,
+      "row_position": 1,
+      "column_position": 9,
+      "cell_value": ""
+    },
+    {
+      "table_number": 1,
+      "row_position": 2,
+      "column_position": 2,
+      "cell_value": "Screening"
+    },
+    {
+      "table_number": 1,
+      "row_position": 2,
+      "column_position": 3,
+      "cell_value": "Baseline",
+      "annotation_markers": "1"
+    },
+    {
+      "table_number": 1,
+      "row_position": 2,
+      "column_position": 4,
+      "cell_value": "Week 2"
+    },
+    {
+      "table_number": 1,
+      "row_position": 2,
+      "column_position": 5,
+      "cell_value": "Week 6"
+    },
+    {
+      "table_number": 1,
+      "row_position": 2,
+      "column_position": 6,
+      "cell_value": "Week 9"
+    },
+    {
+      "table_number": 1,
+      "row_position": 2,
+      "column_position": 7,
+      "cell_value": "Week 12"
+    },
+    {
+      "table_number": 1,
+      "row_position": 2,
+      "column_position": 8,
+      "cell_value": "Follow-Up Visit"
+    },
+    {
+      "table_number": 1,
+      "row_position": 2,
+      "column_position": 9,
+      "cell_value": "Early Termination Visit"
+    },
+    {
+      "table_number": 1,
+      "row_position": 3,
+      "column_position": 2,
+      "cell_value": "-28 to -8"
+    },
+    {
+      "table_number": 1,
+      "row_position": 3,
+      "column_position": 3,
+      "cell_value": "-7 to -1"
+    },
+    {
+      "table_number": 1,
+      "row_position": 3,
+      "column_position": 4,
+      "cell_value": "14 (± 7)"
+    },
+    {
+      "table_number": 1,
+      "row_position": 3,
+      "column_position": 5,
+      "cell_value": "42 (± 7)"
+    },
+    {
+      "table_number": 1,
+      "row_position": 3,
+      "column_position": 6,
+      "cell_value": "63 (± 7)"
+    },
+    {
+      "table_number": 1,
+      "row_position": 3,
+      "column_position": 7,
+      "cell_value": "84 (± 7)"
+    },
+    {
+      "table_number": 1,
+      "row_position": 3,
+      "column_position": 8,
+      "cell_value": "98 (± 7)"
+    },
+    {
+      "table_number": 1,
+      "row_position": 3,
+      "column_position": 9,
+      "cell_value": "(NA)"
+    }
+  ],
+  "activities": [
+    {
+      "table_number": 1,
+      "row_position": 4,
+      "source_page": 90,
+      "activity_name": "Informed Consent",
+      "activity_name_source": {
+        "cell_text": "Informed Consent",
+        "indentation_level": 0,
+        "text_formatting": [
+          "bold"
+        ],
+        "font_info": {
+          "font_name": "Arial,Bold",
+          "font_size": 7.0
+        },
+        "indentation_method": "assumed_flat"
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 5,
+      "source_page": 90,
+      "activity_name": "Randomization",
+      "activity_name_source": {
+        "cell_text": "Randomization",
+        "indentation_level": 0,
+        "text_formatting": [
+          "bold"
+        ],
+        "font_info": {
+          "font_name": "Arial,Bold",
+          "font_size": 7.0
+        },
+        "indentation_method": "assumed_flat"
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 6,
+      "source_page": 90,
+      "activity_name": "Study drug dispensing",
+      "activity_name_source": {
+        "cell_text": "Study drug dispensing",
+        "indentation_level": 0,
+        "text_formatting": [
+          "bold"
+        ],
+        "font_info": {
+          "font_name": "Arial,Bold",
+          "font_size": 7.0
+        },
+        "indentation_method": "assumed_flat"
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 7,
+      "source_page": 90,
+      "activity_name": "Study drug return",
+      "activity_name_source": {
+        "cell_text": "Study drug return",
+        "indentation_level": 0,
+        "text_formatting": [
+          "bold"
+        ],
+        "font_info": {
+          "font_name": "Arial,Bold",
+          "font_size": 7.0
+        },
+        "indentation_method": "assumed_flat"
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 8,
+      "source_page": 90,
+      "activity_name": "Entry criteria",
+      "activity_name_source": {
+        "cell_text": "Entry criteria",
+        "indentation_level": 0,
+        "text_formatting": [
+          "bold"
+        ],
+        "font_info": {
+          "font_name": "Arial,Bold",
+          "font_size": 7.0
+        },
+        "indentation_method": "assumed_flat"
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 9,
+      "source_page": 90,
+      "activity_name": "Demography",
+      "activity_name_source": {
+        "cell_text": "Demography",
+        "indentation_level": 0,
+        "text_formatting": [
+          "bold"
+        ],
+        "font_info": {
+          "font_name": "Arial,Bold",
+          "font_size": 7.0
+        },
+        "indentation_method": "assumed_flat"
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 10,
+      "source_page": 90,
+      "activity_name": "Medical History",
+      "activity_name_source": {
+        "cell_text": "Medical History",
+        "indentation_level": 0,
+        "text_formatting": [
+          "bold"
+        ],
+        "font_info": {
+          "font_name": "Arial,Bold",
+          "font_size": 7.0
+        },
+        "indentation_method": "assumed_flat"
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 11,
+      "source_page": 90,
+      "activity_name": "Physical Examination",
+      "activity_name_source": {
+        "cell_text": "Physical Examination2",
+        "indentation_level": 0,
+        "text_formatting": [
+          "bold"
+        ],
+        "font_info": {
+          "font_name": "Arial,Bold",
+          "font_size": 7.0
+        },
+        "indentation_method": "assumed_flat"
+      },
+      "annotation_markers": "2"
+    },
+    {
+      "table_number": 1,
+      "row_position": 12,
+      "source_page": 90,
+      "activity_name": "Pregnancy testing",
+      "activity_name_source": {
+        "cell_text": "Pregnancy testing3",
+        "indentation_level": 0,
+        "text_formatting": [
+          "bold"
+        ],
+        "font_info": {
+          "font_name": "Arial,Bold",
+          "font_size": 7.0
+        },
+        "indentation_method": "assumed_flat"
+      },
+      "annotation_markers": "3"
+    },
+    {
+      "table_number": 1,
+      "row_position": 13,
+      "source_page": 90,
+      "activity_name": "Tuberculosis testing",
+      "activity_name_source": {
+        "cell_text": "Tuberculosis testing",
+        "indentation_level": 0,
+        "text_formatting": [
+          "bold"
+        ],
+        "font_info": {
+          "font_name": "Arial,Bold",
+          "font_size": 7.0
+        },
+        "indentation_method": "assumed_flat"
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 14,
+      "source_page": 90,
+      "activity_name": "HIV, HBV and HCV testing",
+      "activity_name_source": {
+        "cell_text": "HIV, HBV and HCV testing",
+        "indentation_level": 0,
+        "text_formatting": [
+          "bold"
+        ],
+        "font_info": {
+          "font_name": "Arial,Bold",
+          "font_size": 7.0
+        },
+        "indentation_method": "assumed_flat"
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 15,
+      "source_page": 90,
+      "activity_name": "Clinical Genotyping",
+      "activity_name_source": {
+        "cell_text": "Clinical Genotyping",
+        "indentation_level": 0,
+        "text_formatting": [
+          "bold"
+        ],
+        "font_info": {
+          "font_name": "Arial,Bold",
+          "font_size": 7.0
+        },
+        "indentation_method": "assumed_flat"
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 16,
+      "source_page": 90,
+      "activity_name": "ESSDAI score",
+      "activity_name_source": {
+        "cell_text": "ESSDAI score",
+        "indentation_level": 0,
+        "text_formatting": [
+          "bold"
+        ],
+        "font_info": {
+          "font_name": "Arial,Bold",
+          "font_size": 7.0
+        },
+        "indentation_method": "assumed_flat"
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 17,
+      "source_page": 90,
+      "activity_name": "ESSPRI score",
+      "activity_name_source": {
+        "cell_text": "ESSPRI score",
+        "indentation_level": 0,
+        "text_formatting": [
+          "bold"
+        ],
+        "font_info": {
+          "font_name": "Arial,Bold",
+          "font_size": 7.0
+        },
+        "indentation_method": "assumed_flat"
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 18,
+      "source_page": 90,
+      "activity_name": "SF-36",
+      "activity_name_source": {
+        "cell_text": "SF-36 ",
+        "indentation_level": 0,
+        "text_formatting": [
+          "bold"
+        ],
+        "font_info": {
+          "font_name": "Arial,Bold",
+          "font_size": 7.0
+        },
+        "indentation_method": "assumed_flat"
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 19,
+      "source_page": 90,
+      "activity_name": "Salivary samples",
+      "activity_name_source": {
+        "cell_text": "Salivary samples4",
+        "indentation_level": 0,
+        "text_formatting": [
+          "bold"
+        ],
+        "font_info": {
+          "font_name": "Arial,Bold",
+          "font_size": 7.0
+        },
+        "indentation_method": "assumed_flat"
+      },
+      "annotation_markers": "4"
+    },
+    {
+      "table_number": 1,
+      "row_position": 20,
+      "source_page": 90,
+      "activity_name": "Saliva flow assessment",
+      "activity_name_source": {
+        "cell_text": "Saliva flow assessment",
+        "indentation_level": 0,
+        "text_formatting": [
+          "bold"
+        ],
+        "font_info": {
+          "font_name": "Arial,Bold",
+          "font_size": 7.0
+        },
+        "indentation_method": "assumed_flat"
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 21,
+      "source_page": 90,
+      "activity_name": "Tear samples",
+      "activity_name_source": {
+        "cell_text": "Tear samples4",
+        "indentation_level": 0,
+        "text_formatting": [
+          "bold"
+        ],
+        "font_info": {
+          "font_name": "Arial,Bold",
+          "font_size": 7.0
+        },
+        "indentation_method": "assumed_flat"
+      },
+      "annotation_markers": "4"
+    },
+    {
+      "table_number": 1,
+      "row_position": 22,
+      "source_page": 90,
+      "activity_name": "Tear flow assessment",
+      "activity_name_source": {
+        "cell_text": "Tear flow assessment",
+        "indentation_level": 0,
+        "text_formatting": [
+          "bold"
+        ],
+        "font_info": {
+          "font_name": "Arial,Bold",
+          "font_size": 7.0
+        },
+        "indentation_method": "assumed_flat"
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 23,
+      "source_page": 90,
+      "activity_name": "mRNA sample",
+      "activity_name_source": {
+        "cell_text": "mRNA sample",
+        "indentation_level": 0,
+        "text_formatting": [
+          "bold"
+        ],
+        "font_info": {
+          "font_name": "Arial,Bold",
+          "font_size": 7.0
+        },
+        "indentation_method": "assumed_flat"
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 24,
+      "source_page": 90,
+      "activity_name": "Autoantibodies",
+      "activity_name_source": {
+        "cell_text": "Autoantibodies",
+        "indentation_level": 0,
+        "text_formatting": [
+          "bold"
+        ],
+        "font_info": {
+          "font_name": "Arial,Bold",
+          "font_size": 7.0
+        },
+        "indentation_method": "assumed_flat"
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 25,
+      "source_page": 90,
+      "activity_name": "Soluble biomarkers",
+      "activity_name_source": {
+        "cell_text": "Soluble biomarkers",
+        "indentation_level": 0,
+        "text_formatting": [
+          "bold"
+        ],
+        "font_info": {
+          "font_name": "Arial,Bold",
+          "font_size": 7.0
+        },
+        "indentation_method": "assumed_flat"
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 26,
+      "source_page": 90,
+      "activity_name": "Immunophenotyping",
+      "activity_name_source": {
+        "cell_text": "Immunophenotyping",
+        "indentation_level": 0,
+        "text_formatting": [
+          "bold"
+        ],
+        "font_info": {
+          "font_name": "Arial,Bold",
+          "font_size": 7.0
+        },
+        "indentation_method": "assumed_flat"
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 27,
+      "source_page": 90,
+      "activity_name": "Cathepsin S activity/ mass",
+      "activity_name_source": {
+        "cell_text": "Cathepsin S activity/ mass",
+        "indentation_level": 0,
+        "text_formatting": [
+          "bold"
+        ],
+        "font_info": {
+          "font_name": "Arial,Bold",
+          "font_size": 7.0
+        },
+        "indentation_method": "assumed_flat"
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 28,
+      "source_page": 90,
+      "activity_name": "ESR test",
+      "activity_name_source": {
+        "cell_text": "ESR test",
+        "indentation_level": 0,
+        "text_formatting": [
+          "bold"
+        ],
+        "font_info": {
+          "font_name": "Arial,Bold",
+          "font_size": 7.0
+        },
+        "indentation_method": "assumed_flat"
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 29,
+      "source_page": 90,
+      "activity_name": "PK sample",
+      "activity_name_source": {
+        "cell_text": "PK sample",
+        "indentation_level": 0,
+        "text_formatting": [
+          "bold"
+        ],
+        "font_info": {
+          "font_name": "Arial,Bold",
+          "font_size": 7.0
+        },
+        "indentation_method": "assumed_flat"
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 30,
+      "source_page": 90,
+      "activity_name": "Safety laboratory assessments",
+      "activity_name_source": {
+        "cell_text": "Safety laboratory \nassessments6",
+        "indentation_level": 0,
+        "text_formatting": [
+          "bold"
+        ],
+        "font_info": {
+          "font_name": "Arial,Bold",
+          "font_size": 7.0
+        },
+        "indentation_method": "assumed_flat"
+      },
+      "annotation_markers": "6"
+    },
+    {
+      "table_number": 1,
+      "row_position": 31,
+      "source_page": 90,
+      "activity_name": "ECG - 12 Lead",
+      "activity_name_source": {
+        "cell_text": "ECG - 12 Lead",
+        "indentation_level": 0,
+        "text_formatting": [
+          "bold"
+        ],
+        "font_info": {
+          "font_name": "Arial,Bold",
+          "font_size": 7.0
+        },
+        "indentation_method": "assumed_flat"
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 32,
+      "source_page": 90,
+      "activity_name": "Vital Signs",
+      "activity_name_source": {
+        "cell_text": "Vital Signs",
+        "indentation_level": 0,
+        "text_formatting": [
+          "bold"
+        ],
+        "font_info": {
+          "font_name": "Arial,Bold",
+          "font_size": 7.0
+        },
+        "indentation_method": "assumed_flat"
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 33,
+      "source_page": 90,
+      "activity_name": "MSG biopsy (optional sub-study only)",
+      "activity_name_source": {
+        "cell_text": "MSG biopsy (optional sub-\nstudy only)",
+        "indentation_level": 0,
+        "text_formatting": [
+          "bold"
+        ],
+        "font_info": {
+          "font_name": "Arial,Bold",
+          "font_size": 7.0
+        },
+        "indentation_method": "assumed_flat"
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 34,
+      "source_page": 90,
+      "activity_name": "Adverse Event or Intercurrent Illness",
+      "activity_name_source": {
+        "cell_text": "Adverse Event or \nIntercurrent Illness",
+        "indentation_level": 0,
+        "text_formatting": [
+          "bold"
+        ],
+        "font_info": {
+          "font_name": "Arial,Bold",
+          "font_size": 7.0
+        },
+        "indentation_method": "assumed_flat"
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 35,
+      "source_page": 90,
+      "activity_name": "Previous and Concomitant Treatments",
+      "activity_name_source": {
+        "cell_text": "Previous and Concomitant \nTreatments",
+        "indentation_level": 0,
+        "text_formatting": [
+          "bold"
+        ],
+        "font_info": {
+          "font_name": "Arial,Bold",
+          "font_size": 7.0
+        },
+        "indentation_method": "assumed_flat"
+      }
+    }
+  ],
+  "activity_schedule": [
+    {
+      "table_number": 1,
+      "row_position": 4,
+      "column_position": 2,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 5,
+      "column_position": 3,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 6,
+      "column_position": 3,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 6,
+      "column_position": 4,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 6,
+      "column_position": 5,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 7,
+      "column_position": 5,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 7,
+      "column_position": 7,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 7,
+      "column_position": 9,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 8,
+      "column_position": 2,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 8,
+      "column_position": 3,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 9,
+      "column_position": 2,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 10,
+      "column_position": 2,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 11,
+      "column_position": 2,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 11,
+      "column_position": 8,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 11,
+      "column_position": 9,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 12,
+      "column_position": 2,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 12,
+      "column_position": 3,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 12,
+      "column_position": 4,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 12,
+      "column_position": 5,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 12,
+      "column_position": 6,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 12,
+      "column_position": 7,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 12,
+      "column_position": 8,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 12,
+      "column_position": 9,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 13,
+      "column_position": 2,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 14,
+      "column_position": 2,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 15,
+      "column_position": 3,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 16,
+      "column_position": 2,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 16,
+      "column_position": 3,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 16,
+      "column_position": 5,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 16,
+      "column_position": 7,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 16,
+      "column_position": 8,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 16,
+      "column_position": 9,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 17,
+      "column_position": 2,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 17,
+      "column_position": 3,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 17,
+      "column_position": 4,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 17,
+      "column_position": 5,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 17,
+      "column_position": 6,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 17,
+      "column_position": 7,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 17,
+      "column_position": 8,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 17,
+      "column_position": 9,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 18,
+      "column_position": 3,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 18,
+      "column_position": 5,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 18,
+      "column_position": 7,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 19,
+      "column_position": 3,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 19,
+      "column_position": 4,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 19,
+      "column_position": 5,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 19,
+      "column_position": 7,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 20,
+      "column_position": 3,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 20,
+      "column_position": 4,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 20,
+      "column_position": 5,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 20,
+      "column_position": 7,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 21,
+      "column_position": 3,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 21,
+      "column_position": 4,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 21,
+      "column_position": 5,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 21,
+      "column_position": 7,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 22,
+      "column_position": 3,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 22,
+      "column_position": 4,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 22,
+      "column_position": 5,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 22,
+      "column_position": 7,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 23,
+      "column_position": 3,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 23,
+      "column_position": 4,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 23,
+      "column_position": 5,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 23,
+      "column_position": 7,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 24,
+      "column_position": 2,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 24,
+      "column_position": 3,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 24,
+      "column_position": 5,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 24,
+      "column_position": 7,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 24,
+      "column_position": 8,
+      "cell_value": "x",
+      "annotation_markers": "5"
+    },
+    {
+      "table_number": 1,
+      "row_position": 24,
+      "column_position": 9,
+      "cell_value": "x",
+      "annotation_markers": "5"
+    },
+    {
+      "table_number": 1,
+      "row_position": 25,
+      "column_position": 3,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 25,
+      "column_position": 4,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 25,
+      "column_position": 5,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 25,
+      "column_position": 7,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 26,
+      "column_position": 3,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 26,
+      "column_position": 4,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 26,
+      "column_position": 5,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 26,
+      "column_position": 7,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 27,
+      "column_position": 3,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 27,
+      "column_position": 4,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 27,
+      "column_position": 5,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 27,
+      "column_position": 7,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 28,
+      "column_position": 3,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 28,
+      "column_position": 4,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 28,
+      "column_position": 5,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 28,
+      "column_position": 7,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 29,
+      "column_position": 4,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 29,
+      "column_position": 5,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 29,
+      "column_position": 7,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 30,
+      "column_position": 2,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 30,
+      "column_position": 3,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 30,
+      "column_position": 4,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 30,
+      "column_position": 5,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 30,
+      "column_position": 6,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 30,
+      "column_position": 7,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 30,
+      "column_position": 8,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 30,
+      "column_position": 9,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 31,
+      "column_position": 2,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 31,
+      "column_position": 3,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 31,
+      "column_position": 4,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 31,
+      "column_position": 5,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 31,
+      "column_position": 6,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 31,
+      "column_position": 7,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 31,
+      "column_position": 8,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 31,
+      "column_position": 9,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 32,
+      "column_position": 2,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 32,
+      "column_position": 3,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 32,
+      "column_position": 4,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 32,
+      "column_position": 5,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 32,
+      "column_position": 6,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 32,
+      "column_position": 7,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 32,
+      "column_position": 8,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 32,
+      "column_position": 9,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 33,
+      "column_position": 3,
+      "cell_value": "x"
+    },
+    {
+      "table_number": 1,
+      "row_position": 33,
+      "column_position": 7,
+      "cell_value": "x",
+      "annotation_markers": "7"
+    },
+    {
+      "table_number": 1,
+      "row_position": 34,
+      "column_position": 2,
+      "cell_value": "x",
+      "source_range": "2:9"
+    },
+    {
+      "table_number": 1,
+      "row_position": 34,
+      "column_position": 3,
+      "cell_value": "x",
+      "source_range": "2:9"
+    },
+    {
+      "table_number": 1,
+      "row_position": 34,
+      "column_position": 4,
+      "cell_value": "x",
+      "source_range": "2:9"
+    },
+    {
+      "table_number": 1,
+      "row_position": 34,
+      "column_position": 5,
+      "cell_value": "x",
+      "source_range": "2:9"
+    },
+    {
+      "table_number": 1,
+      "row_position": 34,
+      "column_position": 6,
+      "cell_value": "x",
+      "source_range": "2:9"
+    },
+    {
+      "table_number": 1,
+      "row_position": 34,
+      "column_position": 7,
+      "cell_value": "x",
+      "source_range": "2:9"
+    },
+    {
+      "table_number": 1,
+      "row_position": 34,
+      "column_position": 8,
+      "cell_value": "x",
+      "source_range": "2:9"
+    },
+    {
+      "table_number": 1,
+      "row_position": 34,
+      "column_position": 9,
+      "cell_value": "x",
+      "source_range": "2:9"
+    },
+    {
+      "table_number": 1,
+      "row_position": 35,
+      "column_position": 2,
+      "cell_value": "x",
+      "source_range": "2:9"
+    },
+    {
+      "table_number": 1,
+      "row_position": 35,
+      "column_position": 3,
+      "cell_value": "x",
+      "source_range": "2:9"
+    },
+    {
+      "table_number": 1,
+      "row_position": 35,
+      "column_position": 4,
+      "cell_value": "x",
+      "source_range": "2:9"
+    },
+    {
+      "table_number": 1,
+      "row_position": 35,
+      "column_position": 5,
+      "cell_value": "x",
+      "source_range": "2:9"
+    },
+    {
+      "table_number": 1,
+      "row_position": 35,
+      "column_position": 6,
+      "cell_value": "x",
+      "source_range": "2:9"
+    },
+    {
+      "table_number": 1,
+      "row_position": 35,
+      "column_position": 7,
+      "cell_value": "x",
+      "source_range": "2:9"
+    },
+    {
+      "table_number": 1,
+      "row_position": 35,
+      "column_position": 8,
+      "cell_value": "x",
+      "source_range": "2:9"
+    },
+    {
+      "table_number": 1,
+      "row_position": 35,
+      "column_position": 9,
+      "cell_value": "x",
+      "source_range": "2:9"
+    }
+  ],
+  "annotations": [
+    {
+      "annotation_marker": "1",
+      "annotation_type": "footnote",
+      "annotation_text": "First study drug administration should be one day after the last baseline assessment.",
+      "marker_locations": [
+        {
+          "table_number": 1,
+          "location_type": "schedule_cell",
+          "row_position": 2,
+          "column_position": 3
+        }
+      ]
+    },
+    {
+      "annotation_marker": "2",
+      "annotation_type": "footnote",
+      "annotation_text": "Physical examination includes weight, heart and respiratory rate, and body temperature.",
+      "marker_locations": [
+        {
+          "table_number": 1,
+          "location_type": "activity_name",
+          "row_position": 11
+        }
+      ]
+    },
+    {
+      "annotation_marker": "3",
+      "annotation_type": "footnote",
+      "annotation_text": "All women will have serum pregnancy tests performed at screening and baseline. A urine pregnancy test will also be done at baseline prior to randomization. All women of childbearing potential will have serum and urine pregnancy tests at each subsequent visit.",
+      "marker_locations": [
+        {
+          "table_number": 1,
+          "location_type": "activity_name",
+          "row_position": 12
+        }
+      ]
+    },
+    {
+      "annotation_marker": "4",
+      "annotation_type": "footnote",
+      "annotation_text": "The same salivary or tear sample is used for volume and biomarker assessments (see Section 4.6.1.3.4.).",
+      "marker_locations": [
+        {
+          "table_number": 1,
+          "location_type": "activity_name",
+          "row_position": 19
+        },
+        {
+          "table_number": 1,
+          "location_type": "activity_name",
+          "row_position": 21
+        }
+      ]
+    },
+    {
+      "annotation_marker": "5",
+      "annotation_type": "footnote",
+      "annotation_text": "Only markers required for ESSDAI scoring will be collected.",
+      "marker_locations": [
+        {
+          "table_number": 1,
+          "location_type": "schedule_cell",
+          "row_position": 24,
+          "column_position": 8
+        },
+        {
+          "table_number": 1,
+          "location_type": "schedule_cell",
+          "row_position": 24,
+          "column_position": 9
+        }
+      ]
+    },
+    {
+      "annotation_marker": "6",
+      "annotation_type": "footnote",
+      "annotation_text": "Safety laboratory assessment consists of hematology, blood chemistry, coagulation, lipids and urinalysis.",
+      "marker_locations": [
+        {
+          "table_number": 1,
+          "location_type": "activity_name",
+          "row_position": 30
+        }
+      ]
+    },
+    {
+      "annotation_marker": "7",
+      "annotation_type": "footnote",
+      "annotation_text": "MSG biopsies procedures for the optional substudy may be performed at separate study center visits providing the procedures are carried out within the windows specified for the main study.",
+      "marker_locations": [
+        {
+          "table_number": 1,
+          "location_type": "schedule_cell",
+          "row_position": 33,
+          "column_position": 7
+        }
+      ]
+    },
+    {
+      "annotation_marker": "8",
+      "annotation_type": "footnote",
+      "annotation_text": "Screening, baseline and on-treatment visit schedules are all relative to the first day of study drug administration (Day 1). The follow-up visit is scheduled relative to the Week 12 end-of-treatment visit (+14 days after the end-of-treatment visit [± 7 days]).",
+      "marker_locations": [
+        {
+          "table_number": 1,
+          "location_type": "schedule_property",
+          "row_position": 2
+        }
+      ]
+    }
+  ],
+  "review_items": []
+}

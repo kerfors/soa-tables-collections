@@ -1,0 +1,3575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>NCT04304508 · consolidated data · misc_studies</title>
+<style>
+    * { box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+           margin: 0; padding: 20px; background: #f8f9fa; color: #333; }
+    
+    .pnav { background: #fff; border: 1px solid #e0e0e0; border-radius: 8px;
+            padding: 8px 16px; margin-bottom: 14px; font-size: 12px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            color: #666; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+    .pnav a { color: #1F4788; text-decoration: none; }
+    .pnav a:hover { text-decoration: underline; }
+    .pnav-sep { color: #999; margin: 0 4px; }
+    .pnav-cur { font-weight: 600; color: #333; }
+    .pnav-sib { margin-top: 4px; }
+    .pnav-grp { color: #888; font-size: 11px; }
+
+    .toolbar { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; flex-wrap: wrap; }
+    .title { font-size: 16px; font-weight: 600; color: #1F4788; }
+    .raw-link { font-size: 11px; }
+    .raw-link a { color: #888; text-decoration: none; font-family: monospace; }
+    .raw-link a:hover { color: #555; text-decoration: underline; }
+    #search { padding: 6px 12px; border: 1px solid #ccc; border-radius: 4px; font-size: 12px;
+               width: 240px; margin-left: auto; }
+    #search:focus { outline: none; border-color: #2E75B6; box-shadow: 0 0 0 2px rgba(46,117,182,0.15); }
+    .stats { font-size: 11px; color: #888; }
+    
+    #json-container { background: white; border: 1px solid #e0e0e0; border-radius: 8px;
+                       padding: 20px; overflow: auto; max-height: calc(100vh - 120px);
+                       font-family: "SF Mono", "Fira Code", "Fira Mono", Menlo, Consolas, monospace;
+                       font-size: 12px; line-height: 1.6; }
+    
+    /* Syntax highlighting */
+    .json-key { color: #881391; font-weight: 500; }
+    .json-string { color: #1a6b2c; }
+    .json-number { color: #1750eb; }
+    .json-boolean { color: #d32f2f; font-weight: 500; }
+    .json-null { color: #888; font-style: italic; }
+    .json-bracket { color: #555; }
+    
+    /* Collapsible */
+    .json-toggle { cursor: pointer; user-select: none; position: relative; }
+    .json-toggle::before { content: "▼"; display: inline-block; width: 14px; font-size: 9px;
+                            color: #aaa; transition: transform 0.15s; }
+    .json-toggle.collapsed::before { transform: rotate(-90deg); }
+    .json-toggle:hover::before { color: #1F4788; }
+    .json-content { margin-left: 20px; }
+    .json-content.hidden { display: none; }
+    .json-ellipsis { display: none; color: #aaa; font-style: italic; font-size: 11px; }
+    .json-toggle.collapsed + .json-content + .json-ellipsis { display: inline; }
+    .json-comma { color: #555; }
+    
+    /* Search highlight */
+    .highlight { background: #fff3b0; border-radius: 2px; padding: 0 1px; }
+    .search-no-match { opacity: 0.2; }
+</style>
+</head>
+<body>
+    <nav class="pnav" aria-label="Breadcrumb"><div class="pnav-crumb"><a href="../../../../../../index.html">Collections</a><span class="pnav-sep">›</span><a href="../../../index.html">misc_studies</a><span class="pnav-sep">›</span><a href="../../../index.html#NCT04304508" title="This protocol's row on the collection index">NCT04304508</a><span class="pnav-sep">›</span><span class="pnav-cur">consolidated data</span></div><div class="pnav-sib"><span class="pnav-grp">extraction data:</span> <a href="../../soa-tables/extracted/NCT04304508_Table_01_extraction_viewer.html">T1</a> <a href="../../soa-tables/extracted/NCT04304508_Table_02_extraction_viewer.html">T2</a> <span class="pnav-sep">·</span> <span class="pnav-grp">resolved data:</span> <a href="../../soa-tables/resolved/NCT04304508_Table_01_resolved_viewer.html">T1</a> <a href="../../soa-tables/resolved/NCT04304508_Table_02_resolved_viewer.html">T2</a> <span class="pnav-sep">·</span> <a href="../../soa-tables/consolidated/NCT04304508_consolidated.html">consolidated</a> <span class="pnav-sep">·</span> <a href="../../soa-tables/extracted/NCT04304508_review.html">review</a> <span class="pnav-sep">·</span> <a href="../../soa-tables/extracted/NCT04304508_uncertainty_report.html">extraction log</a></div></nav>
+    <div class="toolbar">
+        <div class="title">NCT04304508 — consolidated data</div>
+        <div class="raw-link"><a href="NCT04304508_consolidated.json" download>raw json</a></div>
+        <div class="stats" id="stats"></div>
+        <input type="text" id="search" placeholder="Search keys and values…">
+    </div>
+    <div id="json-container"></div>
+    
+    <script>
+    const jsonData = {
+  "schema_name": "soa-tables-consolidated",
+  "schema_version": "1.7",
+  "protocol_id": "NCT04304508",
+  "consolidation_metadata": {
+    "consolidated_at": "2026-11-22T19:30:56.169336+00:00",
+    "consolidator": "soa_tables.consolidate v1.2",
+    "source_tables": [
+      {
+        "table_id": "table-001",
+        "table_num": 1,
+        "table_type": "main_soa",
+        "table_title": "Schedule of Activities (SoA)",
+        "table_purpose": "Main study schedule: screening, intervention period (Visits 2-12, early termination 12a) and safety follow-up (Visit 13)",
+        "track_label": null,
+        "activity_count": 27,
+        "column_count": 14,
+        "annotation_count": 14,
+        "property_hierarchy": [
+          {
+            "hierarchical_level": 1,
+            "property_name": "Study periods",
+            "property_type": "epoch",
+            "property_comment": "Study periods: Screening (SCR), Intervention period (spanning Visits 2-12a), Safety Follow-up (SFU). The label cell 'Study periods / (Duration)' spans header rows 1-2 and is split by printed line (section 3); period names are epochs. The Screening and Safety Follow-up cells span rows 1-2; their period names are recorded here."
+          },
+          {
+            "hierarchical_level": 2,
+            "property_name": "Duration",
+            "property_type": "other",
+            "property_comment": "Duration line under each period: '(from RND until End of Treatment visit [EOT], 26 to 52 weeks)' spanning Visits 2-12, the 'Early termination (ET)' sub-band over Visit 12a, and '(14 days after EOT or ET)' printed as the second part of the Safety Follow-up cell. Mixes a period duration with a sub-period name (Early termination), so typed 'other'; given a level because the Early termination cell sets Visit 12a apart within the Intervention period (see Decision D1)."
+          },
+          {
+            "hierarchical_level": 3,
+            "property_name": "Visit number",
+            "property_type": "visit",
+            "property_comment": "Visit numbers 1-13 incl. 12a (early termination visit). Visit identifiers, so 'visit'."
+          },
+          {
+            "hierarchical_level": 4,
+            "property_name": "Visit type",
+            "property_type": "modality",
+            "property_comment": "How each visit is conducted: 'site' or telephone symbol (phone call); Visit 13 '☎ (site)'. Modality of the visit (see Decision D3 for the level)."
+          },
+          {
+            "hierarchical_level": 5,
+            "property_name": "Week [W] Study day and allowed deviations",
+            "property_type": "week",
+            "property_comment": "One ruled header row whose cells print two lines: a week label (SCR, RND/W0, W2 ... W52/EOT, Any time, EOT or ET +2 weeks) and the study day with allowed deviation (-2 → 1, 1, 15±4 ... 379+7). Typed 'week' from the first printed line and the first part of the row label; both lines kept in the cell value (see Decision D2)."
+          }
+        ]
+      },
+      {
+        "table_id": "table-002",
+        "table_num": 2,
+        "table_type": "subsidiary",
+        "table_title": "Table 1–1 PK, PD and Biomarker Sampling",
+        "table_purpose": "Within-visit timing of PK, PD, biomarker and genetics samples at Visits 2, 4 (or later), 8 / ET",
+        "track_label": null,
+        "activity_count": 5,
+        "column_count": 6,
+        "annotation_count": 6,
+        "property_hierarchy": [
+          {
+            "hierarchical_level": 1,
+            "property_name": "Week",
+            "property_type": "week",
+            "property_comment": "Upper header band with no row label: 'Day 1 (Visit 2)', 'Week 4 (Visit 4)' (merged over three timepoint columns), 'Week 4 or later (Visit 4 or subsequent visit)', 'Week 26 (Visit 8) / ET'. Typed by the value spanning several columns ('Week 4 (Visit 4)') as 'week'; visit numbers kept as qualifiers in the values. Name synthesised."
+          },
+          {
+            "hierarchical_level": 2,
+            "property_name": "Timepoint",
+            "property_type": "timepoint",
+            "property_comment": "Within-visit sampling times relative to dosing: Predose, 0.5-1.5h Postdose, 2-4 h Postdose, 4-12 h postdose. Timepoints; name synthesised (empty label cell)."
+          }
+        ]
+      }
+    ],
+    "match_stats": {
+      "exact": 0,
+      "fuzzy_auto": 0,
+      "fuzzy_cross_parent": 0,
+      "fuzzy_review": 0,
+      "decision": 0,
+      "new": 32
+    },
+    "review_stats": {
+      "total": 0,
+      "open": 0,
+      "decided": 0,
+      "near_matches": 0
+    },
+    "source_activity_count": 32,
+    "unified_activity_count": 32,
+    "compression_percent": 0,
+    "annotation_stats": {
+      "source_annotation_count": 20,
+      "unified_annotation_count": 20,
+      "deduplicated_count": 0,
+      "deduplication_percent": 0,
+      "by_type": {
+        "footnote": 19,
+        "source_note": 1
+      }
+    }
+  },
+  "property_hierarchy": [
+    {
+      "property_id": "prop-001",
+      "property_type": "epoch",
+      "property_name": "Study periods",
+      "hierarchical_level": 1,
+      "property_comment": "Study periods: Screening (SCR), Intervention period (spanning Visits 2-12a), Safety Follow-up (SFU). The label cell 'Study periods / (Duration)' spans header rows 1-2 and is split by printed line (section 3); period names are epochs. The Screening and Safety Follow-up cells span rows 1-2; their period names are recorded here."
+    },
+    {
+      "property_id": "prop-002",
+      "property_type": "other",
+      "property_name": "Duration",
+      "hierarchical_level": 2,
+      "property_comment": "Duration line under each period: '(from RND until End of Treatment visit [EOT], 26 to 52 weeks)' spanning Visits 2-12, the 'Early termination (ET)' sub-band over Visit 12a, and '(14 days after EOT or ET)' printed as the second part of the Safety Follow-up cell. Mixes a period duration with a sub-period name (Early termination), so typed 'other'; given a level because the Early termination cell sets Visit 12a apart within the Intervention period (see Decision D1)."
+    },
+    {
+      "property_id": "prop-003",
+      "property_type": "visit",
+      "property_name": "Visit number",
+      "hierarchical_level": 3,
+      "property_comment": "Visit numbers 1-13 incl. 12a (early termination visit). Visit identifiers, so 'visit'."
+    },
+    {
+      "property_id": "prop-004",
+      "property_type": "modality",
+      "property_name": "Visit type",
+      "hierarchical_level": 4,
+      "property_comment": "How each visit is conducted: 'site' or telephone symbol (phone call); Visit 13 '☎ (site)'. Modality of the visit (see Decision D3 for the level)."
+    },
+    {
+      "property_id": "prop-005",
+      "property_type": "week",
+      "property_name": "Week [W] Study day and allowed deviations",
+      "hierarchical_level": 5,
+      "property_comment": "One ruled header row whose cells print two lines: a week label (SCR, RND/W0, W2 ... W52/EOT, Any time, EOT or ET +2 weeks) and the study day with allowed deviation (-2 → 1, 1, 15±4 ... 379+7). Typed 'week' from the first printed line and the first part of the row label; both lines kept in the cell value (see Decision D2)."
+    }
+  ],
+  "review_queue": [],
+  "unified_activities": [
+    {
+      "xact_id": "xact-001",
+      "activity_name": "Administrative procedures",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 1,
+      "qualified_key": "::Administrative procedures",
+      "is_section_header": true,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-001",
+          "row_position": 6,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Administrative procedures"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-002",
+      "activity_name": "Signed informed consent",
+      "parent_name": "Administrative procedures",
+      "parent_xact_id": "xact-001",
+      "hierarchy_level": 1,
+      "display_order": 2,
+      "qualified_key": "Administrative procedures::Signed informed consent",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-002",
+          "row_position": 7,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Signed informed consent"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-003",
+      "activity_name": "Pharmacogenetic consent",
+      "parent_name": "Administrative procedures",
+      "parent_xact_id": "xact-001",
+      "hierarchy_level": 1,
+      "display_order": 3,
+      "qualified_key": "Administrative procedures::Pharmacogenetic consent",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-003",
+          "row_position": 8,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Pharmacogenetic consent"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-004",
+      "activity_name": "Dispense study contact card",
+      "parent_name": "Administrative procedures",
+      "parent_xact_id": "xact-001",
+      "hierarchy_level": 1,
+      "display_order": 4,
+      "qualified_key": "Administrative procedures::Dispense study contact card",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-004",
+          "row_position": 9,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Dispense study contact card"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-005",
+      "activity_name": "Inclusion and exclusion criteria",
+      "parent_name": "Administrative procedures",
+      "parent_xact_id": "xact-001",
+      "hierarchy_level": 1,
+      "display_order": 5,
+      "qualified_key": "Administrative procedures::Inclusion and exclusion criteria",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-005",
+          "row_position": 10,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Inclusion and exclusion criteria"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-006",
+      "activity_name": "Demographics and biometrics",
+      "parent_name": "Administrative procedures",
+      "parent_xact_id": "xact-001",
+      "hierarchy_level": 1,
+      "display_order": 6,
+      "qualified_key": "Administrative procedures::Demographics and biometrics",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-006",
+          "row_position": 11,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Demographics and biometrics"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-007",
+      "activity_name": "Medical history",
+      "parent_name": "Administrative procedures",
+      "parent_xact_id": "xact-001",
+      "hierarchy_level": 1,
+      "display_order": 7,
+      "qualified_key": "Administrative procedures::Medical history",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-007",
+          "row_position": 12,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Medical history"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-008",
+      "activity_name": "Prior and Concomitant medication",
+      "parent_name": "Administrative procedures",
+      "parent_xact_id": "xact-001",
+      "hierarchy_level": 1,
+      "display_order": 8,
+      "qualified_key": "Administrative procedures::Prior and Concomitant medication",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-008",
+          "row_position": 13,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Prior and Concomitant medication"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-009",
+      "activity_name": "Clinical procedures / assessments",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 9,
+      "qualified_key": "::Clinical procedures / assessments",
+      "is_section_header": true,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-009",
+          "row_position": 14,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Clinical procedures / assessments"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-010",
+      "activity_name": "mRS, NIHSS assessment",
+      "parent_name": "Clinical procedures / assessments",
+      "parent_xact_id": null,
+      "hierarchy_level": 1,
+      "display_order": 10,
+      "qualified_key": "Clinical procedures / assessments::mRS, NIHSS assessment",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-010",
+          "row_position": 15,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "mRS, NIHSS assessment"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-011",
+      "activity_name": "12-lead ECG",
+      "parent_name": "Clinical procedures / assessments",
+      "parent_xact_id": null,
+      "hierarchy_level": 1,
+      "display_order": 11,
+      "qualified_key": "Clinical procedures / assessments::12-lead ECG",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-011",
+          "row_position": 16,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "12-lead ECG"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-012",
+      "activity_name": "Vital signs (BP and HR)",
+      "parent_name": "Clinical procedures / assessments",
+      "parent_xact_id": null,
+      "hierarchy_level": 1,
+      "display_order": 12,
+      "qualified_key": "Clinical procedures / assessments::Vital signs (BP and HR)",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-012",
+          "row_position": 17,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Vital signs (BP and HR)"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-013",
+      "activity_name": "Adverse events",
+      "parent_name": "Clinical procedures / assessments",
+      "parent_xact_id": null,
+      "hierarchy_level": 1,
+      "display_order": 13,
+      "qualified_key": "Clinical procedures / assessments::Adverse events",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-013",
+          "row_position": 18,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Adverse events"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-014",
+      "activity_name": "Outcome events",
+      "parent_name": "Clinical procedures / assessments",
+      "parent_xact_id": null,
+      "hierarchy_level": 1,
+      "display_order": 14,
+      "qualified_key": "Clinical procedures / assessments::Outcome events",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-014",
+          "row_position": 19,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Outcome events"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-015",
+      "activity_name": "bMRI [Part A and/or B] (study day and allowed time window)",
+      "parent_name": "Clinical procedures / assessments",
+      "parent_xact_id": null,
+      "hierarchy_level": 1,
+      "display_order": 15,
+      "qualified_key": "Clinical procedures / assessments::bMRI [Part A and/or B] (study day and allowed time window)",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-015",
+          "row_position": 20,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "bMRI [Part A and/or B] (study day and allowed time window)"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-016",
+      "activity_name": "IxRS",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 16,
+      "qualified_key": "::IxRS",
+      "is_section_header": true,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-016",
+          "row_position": 21,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "IxRS"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-017",
+      "activity_name": "Randomization / Visit registration via IxRS",
+      "parent_name": "IxRS",
+      "parent_xact_id": "xact-016",
+      "hierarchy_level": 1,
+      "display_order": 17,
+      "qualified_key": "IxRS::Randomization / Visit registration via IxRS",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-017",
+          "row_position": 22,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Randomization / Visit registration via IxRS"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-018",
+      "activity_name": "Laboratory assessments",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 18,
+      "qualified_key": "::Laboratory assessments",
+      "is_section_header": true,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-018",
+          "row_position": 23,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Laboratory assessments"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-019",
+      "activity_name": "Safety blood sample",
+      "parent_name": "Laboratory assessments",
+      "parent_xact_id": "xact-018",
+      "hierarchy_level": 1,
+      "display_order": 19,
+      "qualified_key": "Laboratory assessments::Safety blood sample",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-019",
+          "row_position": 24,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Safety blood sample"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-020",
+      "activity_name": "Pharmacokinetic sample",
+      "parent_name": "Laboratory assessments",
+      "parent_xact_id": "xact-018",
+      "hierarchy_level": 1,
+      "display_order": 20,
+      "qualified_key": "Laboratory assessments::Pharmacokinetic sample",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-020",
+          "row_position": 30,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Pharmacokinetic sample"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-021",
+      "activity_name": "Pharmacodynamic sampling",
+      "parent_name": "Laboratory assessments",
+      "parent_xact_id": "xact-018",
+      "hierarchy_level": 1,
+      "display_order": 21,
+      "qualified_key": "Laboratory assessments::Pharmacodynamic sampling",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-021",
+          "row_position": 31,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Pharmacodynamic sampling"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-022",
+      "activity_name": "Pharmacogenetic sample",
+      "parent_name": "Laboratory assessments",
+      "parent_xact_id": "xact-018",
+      "hierarchy_level": 1,
+      "display_order": 22,
+      "qualified_key": "Laboratory assessments::Pharmacogenetic sample",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-022",
+          "row_position": 32,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Pharmacogenetic sample"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-023",
+      "activity_name": "Biomarker sampling",
+      "parent_name": "Laboratory assessments",
+      "parent_xact_id": "xact-018",
+      "hierarchy_level": 1,
+      "display_order": 23,
+      "qualified_key": "Laboratory assessments::Biomarker sampling",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-023",
+          "row_position": 33,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Biomarker sampling"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-024",
+      "activity_name": "Study drug administration",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 24,
+      "qualified_key": "::Study drug administration",
+      "is_section_header": true,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-024",
+          "row_position": 34,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Study drug administration"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-025",
+      "activity_name": "Study drug dispensation",
+      "parent_name": "Study drug administration",
+      "parent_xact_id": "xact-024",
+      "hierarchy_level": 1,
+      "display_order": 25,
+      "qualified_key": "Study drug administration::Study drug dispensation",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-025",
+          "row_position": 35,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Study drug dispensation"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-026",
+      "activity_name": "Study drug intake at the site",
+      "parent_name": "Study drug administration",
+      "parent_xact_id": "xact-024",
+      "hierarchy_level": 1,
+      "display_order": 26,
+      "qualified_key": "Study drug administration::Study drug intake at the site",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-026",
+          "row_position": 36,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Study drug intake at the site"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-027",
+      "activity_name": "Stud drug collection and accountability",
+      "parent_name": "Study drug administration",
+      "parent_xact_id": "xact-024",
+      "hierarchy_level": 1,
+      "display_order": 27,
+      "qualified_key": "Study drug administration::Stud drug collection and accountability",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-001",
+          "table_num": 1,
+          "activity_id": "act-027",
+          "row_position": 37,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Stud drug collection and accountability"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-028",
+      "activity_name": "PK",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 28,
+      "qualified_key": "::PK",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-002",
+          "table_num": 2,
+          "activity_id": "act-001",
+          "row_position": 3,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "PK"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-029",
+      "activity_name": "PD",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 29,
+      "qualified_key": "::PD",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-002",
+          "table_num": 2,
+          "activity_id": "act-002",
+          "row_position": 4,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "PD"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-030",
+      "activity_name": "Biomarkers Plasma",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 30,
+      "qualified_key": "::Biomarkers Plasma",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-002",
+          "table_num": 2,
+          "activity_id": "act-003",
+          "row_position": 5,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Biomarkers Plasma"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-031",
+      "activity_name": "Biomarkers Serum",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 31,
+      "qualified_key": "::Biomarkers Serum",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-002",
+          "table_num": 2,
+          "activity_id": "act-004",
+          "row_position": 6,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Biomarkers Serum"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    },
+    {
+      "xact_id": "xact-032",
+      "activity_name": "Genetics",
+      "parent_name": "",
+      "parent_xact_id": null,
+      "hierarchy_level": 0,
+      "display_order": 32,
+      "qualified_key": "::Genetics",
+      "is_section_header": false,
+      "source_refs": [
+        {
+          "table_id": "table-002",
+          "table_num": 2,
+          "activity_id": "act-005",
+          "row_position": 7,
+          "match_status": "new",
+          "match_confidence": 1.0
+        }
+      ],
+      "name_variations": [
+        "Genetics"
+      ],
+      "match_status": "new",
+      "match_confidence": 1.0,
+      "table_count": 1
+    }
+  ],
+  "timeline_segments": {
+    "main": [
+      {
+        "xcol_id": "xcol-001",
+        "composite_label": "Screening (SCR) / 1 / site / SCR -2 → 1",
+        "segment": "main",
+        "population_track": null,
+        "property_values": [
+          {
+            "level": 1,
+            "property_type": "epoch",
+            "property_name": "Study periods",
+            "value": "Screening (SCR)"
+          },
+          {
+            "level": 2,
+            "property_type": "other",
+            "property_name": "Duration",
+            "value": ""
+          },
+          {
+            "level": 3,
+            "property_type": "visit",
+            "property_name": "Visit number",
+            "value": "1"
+          },
+          {
+            "level": 4,
+            "property_type": "modality",
+            "property_name": "Visit type",
+            "value": "site"
+          },
+          {
+            "level": 5,
+            "property_type": "week",
+            "property_name": "Week [W] Study day and allowed deviations",
+            "value": "SCR -2 → 1"
+          }
+        ],
+        "source_columns": [
+          {
+            "table_id": "table-001",
+            "table_num": 1,
+            "column_id": "col-002",
+            "column_position": 2
+          }
+        ]
+      },
+      {
+        "xcol_id": "xcol-002",
+        "composite_label": "Intervention period / (from RND until End of Treatment visit [EOT], 26 to 52 weeks) / 2 / site / RND/W0 1",
+        "segment": "main",
+        "population_track": null,
+        "property_values": [
+          {
+            "level": 1,
+            "property_type": "epoch",
+            "property_name": "Study periods",
+            "value": "Intervention period"
+          },
+          {
+            "level": 2,
+            "property_type": "other",
+            "property_name": "Duration",
+            "value": "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)"
+          },
+          {
+            "level": 3,
+            "property_type": "visit",
+            "property_name": "Visit number",
+            "value": "2"
+          },
+          {
+            "level": 4,
+            "property_type": "modality",
+            "property_name": "Visit type",
+            "value": "site"
+          },
+          {
+            "level": 5,
+            "property_type": "week",
+            "property_name": "Week [W] Study day and allowed deviations",
+            "value": "RND/W0 1"
+          }
+        ],
+        "source_columns": [
+          {
+            "table_id": "table-001",
+            "table_num": 1,
+            "column_id": "col-003",
+            "column_position": 3
+          }
+        ]
+      },
+      {
+        "xcol_id": "xcol-003",
+        "composite_label": "Intervention period / (from RND until End of Treatment visit [EOT], 26 to 52 weeks) / 3 / ☎ / W2 15±4",
+        "segment": "main",
+        "population_track": null,
+        "property_values": [
+          {
+            "level": 1,
+            "property_type": "epoch",
+            "property_name": "Study periods",
+            "value": "Intervention period"
+          },
+          {
+            "level": 2,
+            "property_type": "other",
+            "property_name": "Duration",
+            "value": "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)"
+          },
+          {
+            "level": 3,
+            "property_type": "visit",
+            "property_name": "Visit number",
+            "value": "3"
+          },
+          {
+            "level": 4,
+            "property_type": "modality",
+            "property_name": "Visit type",
+            "value": "☎"
+          },
+          {
+            "level": 5,
+            "property_type": "week",
+            "property_name": "Week [W] Study day and allowed deviations",
+            "value": "W2 15±4"
+          }
+        ],
+        "source_columns": [
+          {
+            "table_id": "table-001",
+            "table_num": 1,
+            "column_id": "col-004",
+            "column_position": 4
+          }
+        ]
+      },
+      {
+        "xcol_id": "xcol-004",
+        "composite_label": "Intervention period / (from RND until End of Treatment visit [EOT], 26 to 52 weeks) / 4 / site / W4 29±4",
+        "segment": "main",
+        "population_track": null,
+        "property_values": [
+          {
+            "level": 1,
+            "property_type": "epoch",
+            "property_name": "Study periods",
+            "value": "Intervention period"
+          },
+          {
+            "level": 2,
+            "property_type": "other",
+            "property_name": "Duration",
+            "value": "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)"
+          },
+          {
+            "level": 3,
+            "property_type": "visit",
+            "property_name": "Visit number",
+            "value": "4"
+          },
+          {
+            "level": 4,
+            "property_type": "modality",
+            "property_name": "Visit type",
+            "value": "site"
+          },
+          {
+            "level": 5,
+            "property_type": "week",
+            "property_name": "Week [W] Study day and allowed deviations",
+            "value": "W4 29±4"
+          }
+        ],
+        "source_columns": [
+          {
+            "table_id": "table-001",
+            "table_num": 1,
+            "column_id": "col-005",
+            "column_position": 5
+          }
+        ]
+      },
+      {
+        "xcol_id": "xcol-005",
+        "composite_label": "Intervention period / (from RND until End of Treatment visit [EOT], 26 to 52 weeks) / 5 / ☎ / W8 57±4",
+        "segment": "main",
+        "population_track": null,
+        "property_values": [
+          {
+            "level": 1,
+            "property_type": "epoch",
+            "property_name": "Study periods",
+            "value": "Intervention period"
+          },
+          {
+            "level": 2,
+            "property_type": "other",
+            "property_name": "Duration",
+            "value": "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)"
+          },
+          {
+            "level": 3,
+            "property_type": "visit",
+            "property_name": "Visit number",
+            "value": "5"
+          },
+          {
+            "level": 4,
+            "property_type": "modality",
+            "property_name": "Visit type",
+            "value": "☎"
+          },
+          {
+            "level": 5,
+            "property_type": "week",
+            "property_name": "Week [W] Study day and allowed deviations",
+            "value": "W8 57±4"
+          }
+        ],
+        "source_columns": [
+          {
+            "table_id": "table-001",
+            "table_num": 1,
+            "column_id": "col-006",
+            "column_position": 6
+          }
+        ]
+      },
+      {
+        "xcol_id": "xcol-006",
+        "composite_label": "Intervention period / (from RND until End of Treatment visit [EOT], 26 to 52 weeks) / 6 / site / W13 92±4",
+        "segment": "main",
+        "population_track": null,
+        "property_values": [
+          {
+            "level": 1,
+            "property_type": "epoch",
+            "property_name": "Study periods",
+            "value": "Intervention period"
+          },
+          {
+            "level": 2,
+            "property_type": "other",
+            "property_name": "Duration",
+            "value": "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)"
+          },
+          {
+            "level": 3,
+            "property_type": "visit",
+            "property_name": "Visit number",
+            "value": "6"
+          },
+          {
+            "level": 4,
+            "property_type": "modality",
+            "property_name": "Visit type",
+            "value": "site"
+          },
+          {
+            "level": 5,
+            "property_type": "week",
+            "property_name": "Week [W] Study day and allowed deviations",
+            "value": "W13 92±4"
+          }
+        ],
+        "source_columns": [
+          {
+            "table_id": "table-001",
+            "table_num": 1,
+            "column_id": "col-007",
+            "column_position": 7
+          }
+        ]
+      },
+      {
+        "xcol_id": "xcol-007",
+        "composite_label": "Intervention period / (from RND until End of Treatment visit [EOT], 26 to 52 weeks) / 7 / ☎ / W20 141±4",
+        "segment": "main",
+        "population_track": null,
+        "property_values": [
+          {
+            "level": 1,
+            "property_type": "epoch",
+            "property_name": "Study periods",
+            "value": "Intervention period"
+          },
+          {
+            "level": 2,
+            "property_type": "other",
+            "property_name": "Duration",
+            "value": "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)"
+          },
+          {
+            "level": 3,
+            "property_type": "visit",
+            "property_name": "Visit number",
+            "value": "7"
+          },
+          {
+            "level": 4,
+            "property_type": "modality",
+            "property_name": "Visit type",
+            "value": "☎"
+          },
+          {
+            "level": 5,
+            "property_type": "week",
+            "property_name": "Week [W] Study day and allowed deviations",
+            "value": "W20 141±4"
+          }
+        ],
+        "source_columns": [
+          {
+            "table_id": "table-001",
+            "table_num": 1,
+            "column_id": "col-008",
+            "column_position": 8
+          }
+        ]
+      },
+      {
+        "xcol_id": "xcol-008",
+        "composite_label": "Intervention period / (from RND until End of Treatment visit [EOT], 26 to 52 weeks) / 8 / site / W26 183±4",
+        "segment": "main",
+        "population_track": null,
+        "property_values": [
+          {
+            "level": 1,
+            "property_type": "epoch",
+            "property_name": "Study periods",
+            "value": "Intervention period"
+          },
+          {
+            "level": 2,
+            "property_type": "other",
+            "property_name": "Duration",
+            "value": "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)"
+          },
+          {
+            "level": 3,
+            "property_type": "visit",
+            "property_name": "Visit number",
+            "value": "8"
+          },
+          {
+            "level": 4,
+            "property_type": "modality",
+            "property_name": "Visit type",
+            "value": "site"
+          },
+          {
+            "level": 5,
+            "property_type": "week",
+            "property_name": "Week [W] Study day and allowed deviations",
+            "value": "W26 183±4"
+          }
+        ],
+        "source_columns": [
+          {
+            "table_id": "table-001",
+            "table_num": 1,
+            "column_id": "col-009",
+            "column_position": 9
+          }
+        ]
+      },
+      {
+        "xcol_id": "xcol-009",
+        "composite_label": "Intervention period / (from RND until End of Treatment visit [EOT], 26 to 52 weeks) / 9 / ☎ / W32 225±4",
+        "segment": "main",
+        "population_track": null,
+        "property_values": [
+          {
+            "level": 1,
+            "property_type": "epoch",
+            "property_name": "Study periods",
+            "value": "Intervention period"
+          },
+          {
+            "level": 2,
+            "property_type": "other",
+            "property_name": "Duration",
+            "value": "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)"
+          },
+          {
+            "level": 3,
+            "property_type": "visit",
+            "property_name": "Visit number",
+            "value": "9"
+          },
+          {
+            "level": 4,
+            "property_type": "modality",
+            "property_name": "Visit type",
+            "value": "☎"
+          },
+          {
+            "level": 5,
+            "property_type": "week",
+            "property_name": "Week [W] Study day and allowed deviations",
+            "value": "W32 225±4"
+          }
+        ],
+        "source_columns": [
+          {
+            "table_id": "table-001",
+            "table_num": 1,
+            "column_id": "col-010",
+            "column_position": 10
+          }
+        ]
+      },
+      {
+        "xcol_id": "xcol-010",
+        "composite_label": "Intervention period / (from RND until End of Treatment visit [EOT], 26 to 52 weeks) / 10 / site / W39 274±4",
+        "segment": "main",
+        "population_track": null,
+        "property_values": [
+          {
+            "level": 1,
+            "property_type": "epoch",
+            "property_name": "Study periods",
+            "value": "Intervention period"
+          },
+          {
+            "level": 2,
+            "property_type": "other",
+            "property_name": "Duration",
+            "value": "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)"
+          },
+          {
+            "level": 3,
+            "property_type": "visit",
+            "property_name": "Visit number",
+            "value": "10"
+          },
+          {
+            "level": 4,
+            "property_type": "modality",
+            "property_name": "Visit type",
+            "value": "site"
+          },
+          {
+            "level": 5,
+            "property_type": "week",
+            "property_name": "Week [W] Study day and allowed deviations",
+            "value": "W39 274±4"
+          }
+        ],
+        "source_columns": [
+          {
+            "table_id": "table-001",
+            "table_num": 1,
+            "column_id": "col-011",
+            "column_position": 11
+          }
+        ]
+      },
+      {
+        "xcol_id": "xcol-011",
+        "composite_label": "Intervention period / (from RND until End of Treatment visit [EOT], 26 to 52 weeks) / 11 / ☎ / W46 323±4",
+        "segment": "main",
+        "population_track": null,
+        "property_values": [
+          {
+            "level": 1,
+            "property_type": "epoch",
+            "property_name": "Study periods",
+            "value": "Intervention period"
+          },
+          {
+            "level": 2,
+            "property_type": "other",
+            "property_name": "Duration",
+            "value": "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)"
+          },
+          {
+            "level": 3,
+            "property_type": "visit",
+            "property_name": "Visit number",
+            "value": "11"
+          },
+          {
+            "level": 4,
+            "property_type": "modality",
+            "property_name": "Visit type",
+            "value": "☎"
+          },
+          {
+            "level": 5,
+            "property_type": "week",
+            "property_name": "Week [W] Study day and allowed deviations",
+            "value": "W46 323±4"
+          }
+        ],
+        "source_columns": [
+          {
+            "table_id": "table-001",
+            "table_num": 1,
+            "column_id": "col-012",
+            "column_position": 12
+          }
+        ]
+      },
+      {
+        "xcol_id": "xcol-012",
+        "composite_label": "Intervention period / (from RND until End of Treatment visit [EOT], 26 to 52 weeks) / 12 / site / W52/EOT 365±4",
+        "segment": "main",
+        "population_track": null,
+        "property_values": [
+          {
+            "level": 1,
+            "property_type": "epoch",
+            "property_name": "Study periods",
+            "value": "Intervention period"
+          },
+          {
+            "level": 2,
+            "property_type": "other",
+            "property_name": "Duration",
+            "value": "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)"
+          },
+          {
+            "level": 3,
+            "property_type": "visit",
+            "property_name": "Visit number",
+            "value": "12"
+          },
+          {
+            "level": 4,
+            "property_type": "modality",
+            "property_name": "Visit type",
+            "value": "site"
+          },
+          {
+            "level": 5,
+            "property_type": "week",
+            "property_name": "Week [W] Study day and allowed deviations",
+            "value": "W52/EOT 365±4"
+          }
+        ],
+        "source_columns": [
+          {
+            "table_id": "table-001",
+            "table_num": 1,
+            "column_id": "col-013",
+            "column_position": 13
+          }
+        ]
+      },
+      {
+        "xcol_id": "xcol-013",
+        "composite_label": "Intervention period / Early termination (ET) / 12a / Site / Any time ET+7",
+        "segment": "main",
+        "population_track": null,
+        "property_values": [
+          {
+            "level": 1,
+            "property_type": "epoch",
+            "property_name": "Study periods",
+            "value": "Intervention period"
+          },
+          {
+            "level": 2,
+            "property_type": "other",
+            "property_name": "Duration",
+            "value": "Early termination (ET)"
+          },
+          {
+            "level": 3,
+            "property_type": "visit",
+            "property_name": "Visit number",
+            "value": "12a"
+          },
+          {
+            "level": 4,
+            "property_type": "modality",
+            "property_name": "Visit type",
+            "value": "Site"
+          },
+          {
+            "level": 5,
+            "property_type": "week",
+            "property_name": "Week [W] Study day and allowed deviations",
+            "value": "Any time ET+7"
+          }
+        ],
+        "source_columns": [
+          {
+            "table_id": "table-001",
+            "table_num": 1,
+            "column_id": "col-014",
+            "column_position": 14
+          }
+        ]
+      },
+      {
+        "xcol_id": "xcol-014",
+        "composite_label": "Safety Follow-up (SFU) / (14 days after EOT or ET) / 13 / ☎ (site) / EOT or ET +2 weeks 379+7",
+        "segment": "main",
+        "population_track": null,
+        "property_values": [
+          {
+            "level": 1,
+            "property_type": "epoch",
+            "property_name": "Study periods",
+            "value": "Safety Follow-up (SFU)"
+          },
+          {
+            "level": 2,
+            "property_type": "other",
+            "property_name": "Duration",
+            "value": "(14 days after EOT or ET)"
+          },
+          {
+            "level": 3,
+            "property_type": "visit",
+            "property_name": "Visit number",
+            "value": "13"
+          },
+          {
+            "level": 4,
+            "property_type": "modality",
+            "property_name": "Visit type",
+            "value": "☎ (site)"
+          },
+          {
+            "level": 5,
+            "property_type": "week",
+            "property_name": "Week [W] Study day and allowed deviations",
+            "value": "EOT or ET +2 weeks 379+7"
+          }
+        ],
+        "source_columns": [
+          {
+            "table_id": "table-001",
+            "table_num": 1,
+            "column_id": "col-015",
+            "column_position": 15
+          }
+        ]
+      }
+    ],
+    "subsidiary": [
+      {
+        "xcol_id": "xcol-015",
+        "composite_label": "Day 1 (Visit 2) / Predose Day 1",
+        "segment": "subsidiary",
+        "population_track": null,
+        "property_values": [
+          {
+            "level": 1,
+            "property_type": "week",
+            "property_name": "Week",
+            "value": "Day 1 (Visit 2)"
+          },
+          {
+            "level": 2,
+            "property_type": "timepoint",
+            "property_name": "Timepoint",
+            "value": "Predose Day 1"
+          }
+        ],
+        "source_columns": [
+          {
+            "table_id": "table-002",
+            "table_num": 2,
+            "column_id": "col-002",
+            "column_position": 2
+          }
+        ]
+      },
+      {
+        "xcol_id": "xcol-016",
+        "composite_label": "Week 4 (Visit 4) / Predose",
+        "segment": "subsidiary",
+        "population_track": null,
+        "property_values": [
+          {
+            "level": 1,
+            "property_type": "week",
+            "property_name": "Week",
+            "value": "Week 4 (Visit 4)"
+          },
+          {
+            "level": 2,
+            "property_type": "timepoint",
+            "property_name": "Timepoint",
+            "value": "Predose"
+          }
+        ],
+        "source_columns": [
+          {
+            "table_id": "table-002",
+            "table_num": 2,
+            "column_id": "col-003",
+            "column_position": 3
+          }
+        ]
+      },
+      {
+        "xcol_id": "xcol-017",
+        "composite_label": "Week 4 (Visit 4) / 0.5-1.5h Postdose",
+        "segment": "subsidiary",
+        "population_track": null,
+        "property_values": [
+          {
+            "level": 1,
+            "property_type": "week",
+            "property_name": "Week",
+            "value": "Week 4 (Visit 4)"
+          },
+          {
+            "level": 2,
+            "property_type": "timepoint",
+            "property_name": "Timepoint",
+            "value": "0.5-1.5h Postdose"
+          }
+        ],
+        "source_columns": [
+          {
+            "table_id": "table-002",
+            "table_num": 2,
+            "column_id": "col-004",
+            "column_position": 4
+          }
+        ]
+      },
+      {
+        "xcol_id": "xcol-018",
+        "composite_label": "Week 4 (Visit 4) / 2-4 h Postdose",
+        "segment": "subsidiary",
+        "population_track": null,
+        "property_values": [
+          {
+            "level": 1,
+            "property_type": "week",
+            "property_name": "Week",
+            "value": "Week 4 (Visit 4)"
+          },
+          {
+            "level": 2,
+            "property_type": "timepoint",
+            "property_name": "Timepoint",
+            "value": "2-4 h Postdose"
+          }
+        ],
+        "source_columns": [
+          {
+            "table_id": "table-002",
+            "table_num": 2,
+            "column_id": "col-005",
+            "column_position": 5
+          }
+        ]
+      },
+      {
+        "xcol_id": "xcol-019",
+        "composite_label": "Week 4 or later (Visit 4 or subsequent visit) / 4-12 h postdose",
+        "segment": "subsidiary",
+        "population_track": null,
+        "property_values": [
+          {
+            "level": 1,
+            "property_type": "week",
+            "property_name": "Week",
+            "value": "Week 4 or later (Visit 4 or subsequent visit)"
+          },
+          {
+            "level": 2,
+            "property_type": "timepoint",
+            "property_name": "Timepoint",
+            "value": "4-12 h postdose"
+          }
+        ],
+        "source_columns": [
+          {
+            "table_id": "table-002",
+            "table_num": 2,
+            "column_id": "col-006",
+            "column_position": 6
+          }
+        ]
+      },
+      {
+        "xcol_id": "xcol-020",
+        "composite_label": "Week 26 (Visit 8) / ET / Predose",
+        "segment": "subsidiary",
+        "population_track": null,
+        "property_values": [
+          {
+            "level": 1,
+            "property_type": "week",
+            "property_name": "Week",
+            "value": "Week 26 (Visit 8) / ET"
+          },
+          {
+            "level": 2,
+            "property_type": "timepoint",
+            "property_name": "Timepoint",
+            "value": "Predose"
+          }
+        ],
+        "source_columns": [
+          {
+            "table_id": "table-002",
+            "table_num": 2,
+            "column_id": "col-007",
+            "column_position": 7
+          }
+        ]
+      }
+    ]
+  },
+  "schedule_matrix": [
+    {
+      "xact_id": "xact-002",
+      "xcol_id": "xcol-001",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-003",
+      "xcol_id": "xcol-001",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-004",
+      "xcol_id": "xcol-001",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-005",
+      "xcol_id": "xcol-001",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-005",
+      "xcol_id": "xcol-002",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-006",
+      "xcol_id": "xcol-001",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-007",
+      "xcol_id": "xcol-001",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-008",
+      "xcol_id": "xcol-001",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-008",
+      "xcol_id": "xcol-002",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-008",
+      "xcol_id": "xcol-003",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-008",
+      "xcol_id": "xcol-004",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-008",
+      "xcol_id": "xcol-005",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-008",
+      "xcol_id": "xcol-006",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-008",
+      "xcol_id": "xcol-007",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-008",
+      "xcol_id": "xcol-008",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-008",
+      "xcol_id": "xcol-009",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-008",
+      "xcol_id": "xcol-010",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-008",
+      "xcol_id": "xcol-011",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-008",
+      "xcol_id": "xcol-012",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-008",
+      "xcol_id": "xcol-013",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-008",
+      "xcol_id": "xcol-014",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-010",
+      "xcol_id": "xcol-001",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-010",
+      "xcol_id": "xcol-002",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-010",
+      "xcol_id": "xcol-006",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-010",
+      "xcol_id": "xcol-008",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-010",
+      "xcol_id": "xcol-012",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-010",
+      "xcol_id": "xcol-013",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-011",
+      "xcol_id": "xcol-001",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-011",
+      "xcol_id": "xcol-002",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-011",
+      "xcol_id": "xcol-006",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-011",
+      "xcol_id": "xcol-012",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-011",
+      "xcol_id": "xcol-013",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-012",
+      "xcol_id": "xcol-001",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-012",
+      "xcol_id": "xcol-002",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-012",
+      "xcol_id": "xcol-004",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-012",
+      "xcol_id": "xcol-006",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-012",
+      "xcol_id": "xcol-008",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-012",
+      "xcol_id": "xcol-010",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-012",
+      "xcol_id": "xcol-012",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-012",
+      "xcol_id": "xcol-013",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-013",
+      "xcol_id": "xcol-002",
+      "consolidated_value": "← continuously →",
+      "source_values": {
+        "1": "← continuously →"
+      }
+    },
+    {
+      "xact_id": "xact-013",
+      "xcol_id": "xcol-003",
+      "consolidated_value": "← continuously →",
+      "source_values": {
+        "1": "← continuously →"
+      }
+    },
+    {
+      "xact_id": "xact-013",
+      "xcol_id": "xcol-004",
+      "consolidated_value": "← continuously →",
+      "source_values": {
+        "1": "← continuously →"
+      }
+    },
+    {
+      "xact_id": "xact-013",
+      "xcol_id": "xcol-005",
+      "consolidated_value": "← continuously →",
+      "source_values": {
+        "1": "← continuously →"
+      }
+    },
+    {
+      "xact_id": "xact-013",
+      "xcol_id": "xcol-006",
+      "consolidated_value": "← continuously →",
+      "source_values": {
+        "1": "← continuously →"
+      }
+    },
+    {
+      "xact_id": "xact-013",
+      "xcol_id": "xcol-007",
+      "consolidated_value": "← continuously →",
+      "source_values": {
+        "1": "← continuously →"
+      }
+    },
+    {
+      "xact_id": "xact-013",
+      "xcol_id": "xcol-008",
+      "consolidated_value": "← continuously →",
+      "source_values": {
+        "1": "← continuously →"
+      }
+    },
+    {
+      "xact_id": "xact-013",
+      "xcol_id": "xcol-009",
+      "consolidated_value": "← continuously →",
+      "source_values": {
+        "1": "← continuously →"
+      }
+    },
+    {
+      "xact_id": "xact-013",
+      "xcol_id": "xcol-010",
+      "consolidated_value": "← continuously →",
+      "source_values": {
+        "1": "← continuously →"
+      }
+    },
+    {
+      "xact_id": "xact-013",
+      "xcol_id": "xcol-011",
+      "consolidated_value": "← continuously →",
+      "source_values": {
+        "1": "← continuously →"
+      }
+    },
+    {
+      "xact_id": "xact-013",
+      "xcol_id": "xcol-012",
+      "consolidated_value": "← continuously →",
+      "source_values": {
+        "1": "← continuously →"
+      }
+    },
+    {
+      "xact_id": "xact-013",
+      "xcol_id": "xcol-013",
+      "consolidated_value": "← continuously →",
+      "source_values": {
+        "1": "← continuously →"
+      }
+    },
+    {
+      "xact_id": "xact-013",
+      "xcol_id": "xcol-014",
+      "consolidated_value": "← continuously →",
+      "source_values": {
+        "1": "← continuously →"
+      }
+    },
+    {
+      "xact_id": "xact-014",
+      "xcol_id": "xcol-002",
+      "consolidated_value": "← continuously →",
+      "source_values": {
+        "1": "← continuously →"
+      }
+    },
+    {
+      "xact_id": "xact-014",
+      "xcol_id": "xcol-003",
+      "consolidated_value": "← continuously →",
+      "source_values": {
+        "1": "← continuously →"
+      }
+    },
+    {
+      "xact_id": "xact-014",
+      "xcol_id": "xcol-004",
+      "consolidated_value": "← continuously →",
+      "source_values": {
+        "1": "← continuously →"
+      }
+    },
+    {
+      "xact_id": "xact-014",
+      "xcol_id": "xcol-005",
+      "consolidated_value": "← continuously →",
+      "source_values": {
+        "1": "← continuously →"
+      }
+    },
+    {
+      "xact_id": "xact-014",
+      "xcol_id": "xcol-006",
+      "consolidated_value": "← continuously →",
+      "source_values": {
+        "1": "← continuously →"
+      }
+    },
+    {
+      "xact_id": "xact-014",
+      "xcol_id": "xcol-007",
+      "consolidated_value": "← continuously →",
+      "source_values": {
+        "1": "← continuously →"
+      }
+    },
+    {
+      "xact_id": "xact-014",
+      "xcol_id": "xcol-008",
+      "consolidated_value": "← continuously →",
+      "source_values": {
+        "1": "← continuously →"
+      }
+    },
+    {
+      "xact_id": "xact-014",
+      "xcol_id": "xcol-009",
+      "consolidated_value": "← continuously →",
+      "source_values": {
+        "1": "← continuously →"
+      }
+    },
+    {
+      "xact_id": "xact-014",
+      "xcol_id": "xcol-010",
+      "consolidated_value": "← continuously →",
+      "source_values": {
+        "1": "← continuously →"
+      }
+    },
+    {
+      "xact_id": "xact-014",
+      "xcol_id": "xcol-011",
+      "consolidated_value": "← continuously →",
+      "source_values": {
+        "1": "← continuously →"
+      }
+    },
+    {
+      "xact_id": "xact-014",
+      "xcol_id": "xcol-012",
+      "consolidated_value": "← continuously →",
+      "source_values": {
+        "1": "← continuously →"
+      }
+    },
+    {
+      "xact_id": "xact-014",
+      "xcol_id": "xcol-013",
+      "consolidated_value": "← continuously →",
+      "source_values": {
+        "1": "← continuously →"
+      }
+    },
+    {
+      "xact_id": "xact-014",
+      "xcol_id": "xcol-014",
+      "consolidated_value": "← continuously →",
+      "source_values": {
+        "1": "← continuously →"
+      }
+    },
+    {
+      "xact_id": "xact-015",
+      "xcol_id": "xcol-002",
+      "consolidated_value": "A,B (-2→+3)",
+      "source_values": {
+        "1": "A,B (-2→+3)"
+      }
+    },
+    {
+      "xact_id": "xact-015",
+      "xcol_id": "xcol-006",
+      "consolidated_value": "A (±7)",
+      "source_values": {
+        "1": "A (±7)"
+      }
+    },
+    {
+      "xact_id": "xact-015",
+      "xcol_id": "xcol-008",
+      "consolidated_value": "A,B (±7)",
+      "source_values": {
+        "1": "A,B (±7)"
+      }
+    },
+    {
+      "xact_id": "xact-015",
+      "xcol_id": "xcol-013",
+      "consolidated_value": "A,B (+7)",
+      "source_values": {
+        "1": "A,B (+7)"
+      }
+    },
+    {
+      "xact_id": "xact-017",
+      "xcol_id": "xcol-001",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-017",
+      "xcol_id": "xcol-002",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-017",
+      "xcol_id": "xcol-006",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-017",
+      "xcol_id": "xcol-008",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-017",
+      "xcol_id": "xcol-010",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-017",
+      "xcol_id": "xcol-012",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-017",
+      "xcol_id": "xcol-013",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-019",
+      "xcol_id": "xcol-001",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-019",
+      "xcol_id": "xcol-002",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-019",
+      "xcol_id": "xcol-004",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-019",
+      "xcol_id": "xcol-006",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-019",
+      "xcol_id": "xcol-008",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-019",
+      "xcol_id": "xcol-010",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-019",
+      "xcol_id": "xcol-012",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-019",
+      "xcol_id": "xcol-013",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-020",
+      "xcol_id": "xcol-004",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-020",
+      "xcol_id": "xcol-008",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-020",
+      "xcol_id": "xcol-013",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-021",
+      "xcol_id": "xcol-002",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-021",
+      "xcol_id": "xcol-004",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-021",
+      "xcol_id": "xcol-008",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-021",
+      "xcol_id": "xcol-013",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-022",
+      "xcol_id": "xcol-002",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-023",
+      "xcol_id": "xcol-002",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-023",
+      "xcol_id": "xcol-008",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-023",
+      "xcol_id": "xcol-013",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-025",
+      "xcol_id": "xcol-002",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-025",
+      "xcol_id": "xcol-006",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-025",
+      "xcol_id": "xcol-008",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-025",
+      "xcol_id": "xcol-010",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-026",
+      "xcol_id": "xcol-002",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-026",
+      "xcol_id": "xcol-004",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-026",
+      "xcol_id": "xcol-008",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-026",
+      "xcol_id": "xcol-012",
+      "consolidated_value": "no intake",
+      "source_values": {
+        "1": "no intake"
+      }
+    },
+    {
+      "xact_id": "xact-027",
+      "xcol_id": "xcol-006",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-027",
+      "xcol_id": "xcol-008",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-027",
+      "xcol_id": "xcol-010",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-027",
+      "xcol_id": "xcol-012",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-027",
+      "xcol_id": "xcol-013",
+      "consolidated_value": "X",
+      "source_values": {
+        "1": "X"
+      }
+    },
+    {
+      "xact_id": "xact-028",
+      "xcol_id": "xcol-016",
+      "consolidated_value": "X",
+      "source_values": {
+        "2": "X"
+      }
+    },
+    {
+      "xact_id": "xact-028",
+      "xcol_id": "xcol-017",
+      "consolidated_value": "x",
+      "source_values": {
+        "2": "x"
+      }
+    },
+    {
+      "xact_id": "xact-028",
+      "xcol_id": "xcol-018",
+      "consolidated_value": "X",
+      "source_values": {
+        "2": "X"
+      }
+    },
+    {
+      "xact_id": "xact-028",
+      "xcol_id": "xcol-019",
+      "consolidated_value": "x",
+      "source_values": {
+        "2": "x"
+      }
+    },
+    {
+      "xact_id": "xact-028",
+      "xcol_id": "xcol-020",
+      "consolidated_value": "x",
+      "source_values": {
+        "2": "x"
+      }
+    },
+    {
+      "xact_id": "xact-029",
+      "xcol_id": "xcol-015",
+      "consolidated_value": "x",
+      "source_values": {
+        "2": "x"
+      }
+    },
+    {
+      "xact_id": "xact-029",
+      "xcol_id": "xcol-016",
+      "consolidated_value": "X",
+      "source_values": {
+        "2": "X"
+      }
+    },
+    {
+      "xact_id": "xact-029",
+      "xcol_id": "xcol-017",
+      "consolidated_value": "x",
+      "source_values": {
+        "2": "x"
+      }
+    },
+    {
+      "xact_id": "xact-029",
+      "xcol_id": "xcol-018",
+      "consolidated_value": "X",
+      "source_values": {
+        "2": "X"
+      }
+    },
+    {
+      "xact_id": "xact-029",
+      "xcol_id": "xcol-019",
+      "consolidated_value": "x",
+      "source_values": {
+        "2": "x"
+      }
+    },
+    {
+      "xact_id": "xact-029",
+      "xcol_id": "xcol-020",
+      "consolidated_value": "x",
+      "source_values": {
+        "2": "x"
+      }
+    },
+    {
+      "xact_id": "xact-030",
+      "xcol_id": "xcol-015",
+      "consolidated_value": "x",
+      "source_values": {
+        "2": "x"
+      }
+    },
+    {
+      "xact_id": "xact-030",
+      "xcol_id": "xcol-020",
+      "consolidated_value": "x",
+      "source_values": {
+        "2": "x"
+      }
+    },
+    {
+      "xact_id": "xact-031",
+      "xcol_id": "xcol-015",
+      "consolidated_value": "x",
+      "source_values": {
+        "2": "x"
+      }
+    },
+    {
+      "xact_id": "xact-031",
+      "xcol_id": "xcol-020",
+      "consolidated_value": "x",
+      "source_values": {
+        "2": "x"
+      }
+    },
+    {
+      "xact_id": "xact-032",
+      "xcol_id": "xcol-015",
+      "consolidated_value": "x",
+      "source_values": {
+        "2": "x"
+      }
+    }
+  ],
+  "unified_annotations": [
+    {
+      "xannot_id": "xannot-001",
+      "annotation_type": "footnote",
+      "annotation_text": "Screening, randomization and intake of first study drug must occur within 48 hours of symptom onset.",
+      "display_markers": "T1:a",
+      "source_occurrences": [
+        {
+          "table_num": 1,
+          "marker": "a",
+          "annotation_id": "annot-001"
+        }
+      ],
+      "referenced_xacts": [],
+      "referenced_xcols": [
+        "xcol-001"
+      ],
+      "referenced_props": [],
+      "cell_references": [],
+      "occurrence_count": 1
+    },
+    {
+      "xannot_id": "xannot-002",
+      "annotation_type": "footnote",
+      "annotation_text": "The visit can be performed at a later time point if participant on inpatient rehabilitation facility and this visit cannot be arranged.",
+      "display_markers": "T1:b",
+      "source_occurrences": [
+        {
+          "table_num": 1,
+          "marker": "b",
+          "annotation_id": "annot-002"
+        }
+      ],
+      "referenced_xacts": [],
+      "referenced_xcols": [
+        "xcol-013"
+      ],
+      "referenced_props": [],
+      "cell_references": [],
+      "occurrence_count": 1
+    },
+    {
+      "xannot_id": "xannot-003",
+      "annotation_type": "footnote",
+      "annotation_text": "Participants will perform their safety follow-up phone call 2 weeks after the EOT visit or the ET visit whichever occurs earlier. (i.e. in case of Early Termination 2 weeks after last study drug intake).",
+      "display_markers": "T1:c",
+      "source_occurrences": [
+        {
+          "table_num": 1,
+          "marker": "c",
+          "annotation_id": "annot-003"
+        }
+      ],
+      "referenced_xacts": [
+        "xact-011"
+      ],
+      "referenced_xcols": [
+        "xcol-014"
+      ],
+      "referenced_props": [],
+      "cell_references": [
+        {
+          "xact_id": "xact-011",
+          "xcol_id": "xcol-001"
+        }
+      ],
+      "occurrence_count": 1
+    },
+    {
+      "xannot_id": "xannot-004",
+      "annotation_type": "footnote",
+      "annotation_text": "In case screening and randomization are performed on the same day, this procedure does not need to be repeated.",
+      "display_markers": "T1:d",
+      "source_occurrences": [
+        {
+          "table_num": 1,
+          "marker": "d",
+          "annotation_id": "annot-004"
+        }
+      ],
+      "referenced_xacts": [
+        "xact-005",
+        "xact-008",
+        "xact-010",
+        "xact-011",
+        "xact-012",
+        "xact-019"
+      ],
+      "referenced_xcols": [],
+      "referenced_props": [],
+      "cell_references": [
+        {
+          "xact_id": "xact-005",
+          "xcol_id": "xcol-002"
+        },
+        {
+          "xact_id": "xact-008",
+          "xcol_id": "xcol-002"
+        },
+        {
+          "xact_id": "xact-010",
+          "xcol_id": "xcol-002"
+        },
+        {
+          "xact_id": "xact-011",
+          "xcol_id": "xcol-002"
+        },
+        {
+          "xact_id": "xact-012",
+          "xcol_id": "xcol-002"
+        },
+        {
+          "xact_id": "xact-019",
+          "xcol_id": "xcol-002"
+        }
+      ],
+      "occurrence_count": 1
+    },
+    {
+      "xannot_id": "xannot-005",
+      "annotation_type": "footnote",
+      "annotation_text": "At Visit 3, 5, 7, 9 and 11: any new concomitant medication and AEs or outcome event will be captured during the calls.",
+      "display_markers": "T1:e",
+      "source_occurrences": [
+        {
+          "table_num": 1,
+          "marker": "e",
+          "annotation_id": "annot-005"
+        }
+      ],
+      "referenced_xacts": [
+        "xact-008"
+      ],
+      "referenced_xcols": [],
+      "referenced_props": [],
+      "cell_references": [
+        {
+          "xact_id": "xact-008",
+          "xcol_id": "xcol-003"
+        },
+        {
+          "xact_id": "xact-008",
+          "xcol_id": "xcol-005"
+        },
+        {
+          "xact_id": "xact-008",
+          "xcol_id": "xcol-007"
+        },
+        {
+          "xact_id": "xact-008",
+          "xcol_id": "xcol-009"
+        },
+        {
+          "xact_id": "xact-008",
+          "xcol_id": "xcol-011"
+        }
+      ],
+      "occurrence_count": 1
+    },
+    {
+      "xannot_id": "xannot-006",
+      "annotation_type": "footnote",
+      "annotation_text": "modified Ranking Score (mRS) (Section 10.10) and NIHSS (Section 10.11) should be assessed as follows: Index event: at time of screening and time of randomization (NIHSS), day 7 after the event (or at hospital discharge, if this occurs before day 7; NIHSS and mRS), at 3, 6 and 12 months visits (mRS). For recurrent stroke events: maximum score during hospitalization (NIHSS), day 7 after the event (or at hospital discharge, if this occurs before day 7: NIHSS and mRS); visit closest to 3 months after recurrent stroke (mRS).",
+      "display_markers": "T1:f",
+      "source_occurrences": [
+        {
+          "table_num": 1,
+          "marker": "f",
+          "annotation_id": "annot-006"
+        }
+      ],
+      "referenced_xacts": [
+        "xact-010"
+      ],
+      "referenced_xcols": [],
+      "referenced_props": [],
+      "cell_references": [
+        {
+          "xact_id": "xact-010",
+          "xcol_id": "xcol-006"
+        }
+      ],
+      "occurrence_count": 1,
+      "document_references": [
+        {
+          "kind": "section",
+          "target": "10.10"
+        },
+        {
+          "kind": "section",
+          "target": "10.11"
+        }
+      ]
+    },
+    {
+      "xannot_id": "xannot-007",
+      "annotation_type": "footnote",
+      "annotation_text": "ECG machine that automatically calculates the heart rate and measures PR, QRS, QT and QTc intervals should be used.",
+      "display_markers": "T1:g",
+      "source_occurrences": [
+        {
+          "table_num": 1,
+          "marker": "g",
+          "annotation_id": "annot-007"
+        }
+      ],
+      "referenced_xacts": [
+        "xact-011"
+      ],
+      "referenced_xcols": [
+        "xcol-004"
+      ],
+      "referenced_props": [],
+      "cell_references": [],
+      "occurrence_count": 1
+    },
+    {
+      "xannot_id": "xannot-008",
+      "annotation_type": "footnote",
+      "annotation_text": "outcome events including all bleeding, death, MI, recurrent stroke and systemic embolism as well as events indicative of a potential outcome (Section 10.1.5.4) need to be reported on dedicated forms in the eCRF on an ongoing basis, even if the participant is permanently discontinued from study treatment.",
+      "display_markers": "T1:h",
+      "source_occurrences": [
+        {
+          "table_num": 1,
+          "marker": "h",
+          "annotation_id": "annot-008"
+        }
+      ],
+      "referenced_xacts": [
+        "xact-014"
+      ],
+      "referenced_xcols": [],
+      "referenced_props": [],
+      "cell_references": [],
+      "occurrence_count": 1,
+      "document_references": [
+        {
+          "kind": "section",
+          "target": "10.1.5.4"
+        }
+      ]
+    },
+    {
+      "xannot_id": "xannot-009",
+      "annotation_type": "footnote",
+      "annotation_text": "MRI is required before or latest within 72 after randomization.",
+      "display_markers": "T1:i",
+      "source_occurrences": [
+        {
+          "table_num": 1,
+          "marker": "i",
+          "annotation_id": "annot-009"
+        }
+      ],
+      "referenced_xacts": [
+        "xact-015"
+      ],
+      "referenced_xcols": [],
+      "referenced_props": [],
+      "cell_references": [],
+      "occurrence_count": 1
+    },
+    {
+      "xannot_id": "xannot-010",
+      "annotation_type": "footnote",
+      "annotation_text": "For part A only until Part B starts.",
+      "display_markers": "T1:j",
+      "source_occurrences": [
+        {
+          "table_num": 1,
+          "marker": "j",
+          "annotation_id": "annot-010"
+        }
+      ],
+      "referenced_xacts": [
+        "xact-015"
+      ],
+      "referenced_xcols": [],
+      "referenced_props": [],
+      "cell_references": [
+        {
+          "xact_id": "xact-015",
+          "xcol_id": "xcol-006"
+        }
+      ],
+      "occurrence_count": 1
+    },
+    {
+      "xannot_id": "xannot-011",
+      "annotation_type": "footnote",
+      "annotation_text": "Creatinine, eGFR results, AST and ALT values measured in the local laboratory for screening. Current local laboratory results available for the index hospitalization for the stroke can be used. Full safety laboratory assessments to be done at randomization in the central laboratory.",
+      "display_markers": "T1:k",
+      "source_occurrences": [
+        {
+          "table_num": 1,
+          "marker": "k",
+          "annotation_id": "annot-011"
+        }
+      ],
+      "referenced_xacts": [
+        "xact-019"
+      ],
+      "referenced_xcols": [],
+      "referenced_props": [],
+      "cell_references": [
+        {
+          "xact_id": "xact-019",
+          "xcol_id": "xcol-001"
+        },
+        {
+          "xact_id": "xact-019",
+          "xcol_id": "xcol-002"
+        }
+      ],
+      "occurrence_count": 1
+    },
+    {
+      "xannot_id": "xannot-012",
+      "annotation_type": "source_note",
+      "annotation_text": "Refer to Table 1–1 PK, PD and Biomarker sampling.",
+      "display_markers": "T1:l",
+      "source_occurrences": [
+        {
+          "table_num": 1,
+          "marker": "l",
+          "annotation_id": "annot-012"
+        }
+      ],
+      "referenced_xacts": [
+        "xact-020",
+        "xact-021",
+        "xact-023",
+        "xact-026"
+      ],
+      "referenced_xcols": [],
+      "referenced_props": [],
+      "cell_references": [],
+      "occurrence_count": 1,
+      "document_references": [
+        {
+          "kind": "table",
+          "target": "1–1",
+          "table_num": 2
+        }
+      ]
+    },
+    {
+      "xannot_id": "xannot-013",
+      "annotation_type": "footnote",
+      "annotation_text": "“Study drug” refers to “study intervention’ as defined in Section 6.1.",
+      "display_markers": "T1:m",
+      "source_occurrences": [
+        {
+          "table_num": 1,
+          "marker": "m",
+          "annotation_id": "annot-013"
+        }
+      ],
+      "referenced_xacts": [
+        "xact-024",
+        "xact-025",
+        "xact-026",
+        "xact-027"
+      ],
+      "referenced_xcols": [],
+      "referenced_props": [],
+      "cell_references": [],
+      "occurrence_count": 1,
+      "document_references": [
+        {
+          "kind": "section",
+          "target": "6.1"
+        }
+      ]
+    },
+    {
+      "xannot_id": "xannot-014",
+      "annotation_type": "footnote",
+      "annotation_text": "At each contact, participants should be again instructed regarding study drug compliance.",
+      "display_markers": "T1:n",
+      "source_occurrences": [
+        {
+          "table_num": 1,
+          "marker": "n",
+          "annotation_id": "annot-014"
+        }
+      ],
+      "referenced_xacts": [
+        "xact-025"
+      ],
+      "referenced_xcols": [],
+      "referenced_props": [],
+      "cell_references": [
+        {
+          "xact_id": "xact-025",
+          "xcol_id": "xcol-002"
+        },
+        {
+          "xact_id": "xact-025",
+          "xcol_id": "xcol-006"
+        },
+        {
+          "xact_id": "xact-025",
+          "xcol_id": "xcol-008"
+        },
+        {
+          "xact_id": "xact-025",
+          "xcol_id": "xcol-010"
+        }
+      ],
+      "occurrence_count": 1
+    },
+    {
+      "xannot_id": "xannot-015",
+      "annotation_type": "footnote",
+      "annotation_text": "At Visit 4: in order to collect pre-dose samples for PK and PD, participants should take their study drug at the site only after blood sampling. The investigator must record the time when the study drug is taken at the site. A phone call to remind the participants is recommended.",
+      "display_markers": "T2:a",
+      "source_occurrences": [
+        {
+          "table_num": 2,
+          "marker": "a",
+          "annotation_id": "annot-001"
+        }
+      ],
+      "referenced_xacts": [],
+      "referenced_xcols": [
+        "xcol-016",
+        "xcol-017",
+        "xcol-018"
+      ],
+      "referenced_props": [],
+      "cell_references": [],
+      "occurrence_count": 1
+    },
+    {
+      "xannot_id": "xannot-016",
+      "annotation_type": "footnote",
+      "annotation_text": "The minimum time between the 2-4 h post-dose and the 4-12 h post-dose samples, if collected the same day, should be at least 1 hour.",
+      "display_markers": "T2:b",
+      "source_occurrences": [
+        {
+          "table_num": 2,
+          "marker": "b",
+          "annotation_id": "annot-002"
+        }
+      ],
+      "referenced_xacts": [],
+      "referenced_xcols": [
+        "xcol-018",
+        "xcol-019"
+      ],
+      "referenced_props": [],
+      "cell_references": [],
+      "occurrence_count": 1
+    },
+    {
+      "xannot_id": "xannot-017",
+      "annotation_type": "footnote",
+      "annotation_text": "The late sample 4-12 hr post-dose can be taken at week 4 (visit 4) or at a later-on visit (e.g. Visit 6). The exact time of when the study drug was administered must be recorded as well as PK and PD post-dose sample collection time.",
+      "display_markers": "T2:c",
+      "source_occurrences": [
+        {
+          "table_num": 2,
+          "marker": "c",
+          "annotation_id": "annot-003"
+        }
+      ],
+      "referenced_xacts": [],
+      "referenced_xcols": [
+        "xcol-019"
+      ],
+      "referenced_props": [],
+      "cell_references": [],
+      "occurrence_count": 1
+    },
+    {
+      "xannot_id": "xannot-018",
+      "annotation_type": "footnote",
+      "annotation_text": "At Visit 8 (week 26) in order to collect pre-dose samples for PK and PD, participants should take their study drug at the site only after blood sampling. The investigator must record the time when the study drug is taken at the site. A phone call to remind the participants is recommended. However, in case Visit 8 is also the EOT visit as well as in case the sample is taken at ET visit, no study drug will be administered.",
+      "display_markers": "T2:d",
+      "source_occurrences": [
+        {
+          "table_num": 2,
+          "marker": "d",
+          "annotation_id": "annot-004"
+        }
+      ],
+      "referenced_xacts": [],
+      "referenced_xcols": [
+        "xcol-020"
+      ],
+      "referenced_props": [],
+      "cell_references": [],
+      "occurrence_count": 1
+    },
+    {
+      "xannot_id": "xannot-019",
+      "annotation_type": "footnote",
+      "annotation_text": "If study drug is temporarily stopped, PK / PD blood samples should only be obtained if study drug has been restarted and sustained for at least 4 days, see Section 7.1.1.",
+      "display_markers": "T2:e",
+      "source_occurrences": [
+        {
+          "table_num": 2,
+          "marker": "e",
+          "annotation_id": "annot-005"
+        }
+      ],
+      "referenced_xacts": [
+        "xact-028",
+        "xact-029"
+      ],
+      "referenced_xcols": [],
+      "referenced_props": [],
+      "cell_references": [],
+      "occurrence_count": 1,
+      "document_references": [
+        {
+          "kind": "section",
+          "target": "7.1.1"
+        }
+      ]
+    },
+    {
+      "xannot_id": "xannot-020",
+      "annotation_type": "footnote",
+      "annotation_text": "The exact times of PK, PD and biomarker sampling need to be recorded, as well as the time of the most recent study drug intake (i.e: on the PK / PD sampling day, as well as the day before that).",
+      "display_markers": "T2:g1",
+      "source_occurrences": [
+        {
+          "table_num": 2,
+          "marker": "g1",
+          "annotation_id": "annot-006"
+        }
+      ],
+      "referenced_xacts": [],
+      "referenced_xcols": [],
+      "referenced_props": [],
+      "cell_references": [],
+      "occurrence_count": 1,
+      "annotation_scope": "table"
+    }
+  ],
+  "review_items": [
+    {
+      "table_number": 1,
+      "id": "D1",
+      "severity": "medium",
+      "location": {
+        "page": 12,
+        "row_position": 2
+      },
+      "call_made": "Header row 2 '(Duration)' is typed 'other' (a duration line that also carries the 'Early termination (ET)' sub-band over Visit 12a) and given hierarchy level 2, because the Early termination cell sets Visit 12a apart within the Intervention period.",
+      "alternative": "Type the row 'period' (Early termination as a sub-period of the Intervention period), or treat it as a duration qualifier that restates the periods and give it no hierarchy level (null).",
+      "report_section": "3.1"
+    },
+    {
+      "table_number": 1,
+      "id": "D2",
+      "severity": "medium",
+      "location": {
+        "page": 12,
+        "row_position": 5
+      },
+      "call_made": "The 'Week [W] / Study day and allowed deviations' header is one ruled row, kept as one header row typed 'week' with both printed lines in each cell value (e.g. 'W2 15±4').",
+      "alternative": "Split it into two header rows: a 'week' row (SCR, RND/W0, W2 ...) and a 'study_day' row with windows (-2 → 1, 1, 15±4 ...).",
+      "report_section": "3.1"
+    },
+    {
+      "table_number": 1,
+      "id": "D3",
+      "severity": "low",
+      "location": {
+        "page": 12,
+        "row_position": 4
+      },
+      "call_made": "The 'Visit type' row (site / phone) is typed 'modality' and given hierarchy level 4, as a column attribute that is part of the header hierarchy.",
+      "alternative": "Give the Visit type row no hierarchy level (null), since Visit number alone tells every column apart and modality is an attribute of the visit.",
+      "report_section": "3.1"
+    },
+    {
+      "table_number": 2,
+      "id": "D4",
+      "severity": "high",
+      "location": {
+        "page": 15,
+        "annotation_marker": "g1"
+      },
+      "call_made": "The unmarked paragraph below Table 1-1 ('The exact times of PK, PD and biomarker sampling need to be recorded ...') is recorded as a table-wide note (marker g1), since it names sample types rather than visits or columns.",
+      "alternative": "Bind it to the rows it names - PK, PD, Biomarkers Plasma and Biomarkers Serum (not Genetics) - as a note on those activities (word-overlap binding).",
+      "report_section": "3.2"
+    }
+  ]
+};
+    
+    function escHtml(s) {
+        return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    }
+    
+    function renderJson(data, indent, isLast) {
+        const comma = isLast ? '' : '<span class="json-comma">,</span>';
+        if (data === null) return `<span class="json-null">null</span>${comma}`;
+        if (typeof data === 'boolean') return `<span class="json-boolean">${data}</span>${comma}`;
+        if (typeof data === 'number') return `<span class="json-number">${data}</span>${comma}`;
+        if (typeof data === 'string') return `<span class="json-string">"${escHtml(data)}"</span>${comma}`;
+        
+        const isArray = Array.isArray(data);
+        const entries = isArray ? data.map((v, i) => [i, v]) : Object.entries(data);
+        const open = isArray ? '[' : '{';
+        const close = isArray ? ']' : '}';
+        
+        if (entries.length === 0) {
+            return `<span class="json-bracket">${open}${close}</span>${comma}`;
+        }
+        
+        const id = 'n' + Math.random().toString(36).substr(2, 8);
+        let html = `<span class="json-toggle" data-target="${id}" onclick="toggleNode(this)">`;
+        html += `<span class="json-bracket">${open}</span></span>`;
+        html += `<div class="json-content" id="${id}">`;
+        
+        entries.forEach(([key, val], i) => {
+            const last = i === entries.length - 1;
+            const keyHtml = isArray ? '' : `<span class="json-key">"${escHtml(key)}"</span>: `;
+            html += `<div class="json-line">${keyHtml}${renderJson(val, indent + 1, last)}</div>`;
+        });
+        
+        html += `</div><span class="json-ellipsis"> ${entries.length} items… </span>`;
+        html += `<span class="json-bracket">${close}</span>${comma}`;
+        return html;
+    }
+    
+    function toggleNode(el) {
+        el.classList.toggle('collapsed');
+        const target = document.getElementById(el.dataset.target);
+        target.classList.toggle('hidden');
+    }
+    
+    // Render
+    const container = document.getElementById('json-container');
+    container.innerHTML = renderJson(jsonData, 0, true);
+    
+    // Stats
+    const jsonStr = JSON.stringify(jsonData);
+    const kb = (jsonStr.length / 1024).toFixed(1);
+    document.getElementById('stats').textContent = `${kb} KB`;
+    
+    // Auto-collapse large arrays/objects at depth > 1
+    document.querySelectorAll('.json-toggle').forEach(el => {
+        const content = document.getElementById(el.dataset.target);
+        if (content && content.children.length > 20) {
+            el.classList.add('collapsed');
+            content.classList.add('hidden');
+        }
+    });
+    
+    // Search
+    const searchInput = document.getElementById('search');
+    let searchTimeout;
+    searchInput.addEventListener('input', function() {
+        clearTimeout(searchTimeout);
+        searchTimeout = setTimeout(doSearch, 200);
+    });
+    
+    function doSearch() {
+        const term = searchInput.value.trim().toLowerCase();
+        const lines = container.querySelectorAll('.json-line');
+        
+        // Clear previous highlights
+        container.querySelectorAll('.highlight').forEach(el => {
+            el.outerHTML = el.textContent;
+        });
+        lines.forEach(l => l.classList.remove('search-no-match'));
+        
+        if (!term) return;
+        
+        // Expand all first
+        container.querySelectorAll('.json-toggle.collapsed').forEach(el => {
+            el.classList.remove('collapsed');
+            document.getElementById(el.dataset.target).classList.remove('hidden');
+        });
+        
+        lines.forEach(line => {
+            const text = line.textContent.toLowerCase();
+            if (text.includes(term)) {
+                // Highlight matches in text nodes
+                const walker = document.createTreeWalker(line, NodeFilter.SHOW_TEXT);
+                const textNodes = [];
+                while (walker.nextNode()) textNodes.push(walker.currentNode);
+                textNodes.forEach(node => {
+                    const idx = node.textContent.toLowerCase().indexOf(term);
+                    if (idx >= 0) {
+                        const span = document.createElement('span');
+                        span.className = 'highlight';
+                        const range = document.createRange();
+                        range.setStart(node, idx);
+                        range.setEnd(node, idx + term.length);
+                        range.surroundContents(span);
+                    }
+                });
+            } else {
+                line.classList.add('search-no-match');
+            }
+        });
+    }
+    </script>
+</body>
+</html>

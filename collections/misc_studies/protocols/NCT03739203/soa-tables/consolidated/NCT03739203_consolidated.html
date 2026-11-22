@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCT03739203 · Consolidated SoA · misc_studies</title>
+    <style>
+        :root { --blue:#1F4788; --blue2:#2E75B6; --ink:#1f2933; --muted:#5f6b7a;
+                 --line:#d9dee5; --bg:#f5f7fa; --head:#fafbfc; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font: 13px/1.45 -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            color: var(--ink); background: var(--bg);
+        }
+
+        
+    .pnav { background: #fff; border: 1px solid #e0e0e0; border-radius: 8px;
+            padding: 8px 16px; margin-bottom: 14px; font-size: 12px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            color: #666; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+    .pnav a { color: #1F4788; text-decoration: none; }
+    .pnav a:hover { text-decoration: underline; }
+    .pnav-sep { color: #999; margin: 0 4px; }
+    .pnav-cur { font-weight: 600; color: #333; }
+    .pnav-sib { margin-top: 4px; }
+    .pnav-grp { color: #888; font-size: 11px; }
+
+        /* nav: the review page's full-bleed bar (markup shared, skin local) */
+        .pnav { border: 0; border-bottom: 1px solid var(--line); border-radius: 0; box-shadow: none;
+                 margin: 0; padding: 8px 22px; color: var(--muted); }
+        .pnav a { color: var(--blue2); }
+        .pnav-cur { color: var(--ink); }
+        .pnav-sep { color: #9aa4af; }
+        .pnav-grp { color: #8a94a0; }
+
+        .header { background: var(--blue); color: #fff; padding: 14px 22px; }
+        .header h1 { font-size: 20px; font-weight: 600; }
+        .header .sub { font-size: 13px; opacity: .85; margin-top: 3px; }
+        .content { padding: 14px 22px 20px; }
+
+        .toolbar {
+            background: #fff; border: 1px solid var(--line); border-radius: 6px;
+            padding: 8px 12px; margin-bottom: 10px; display: flex; gap: 6px; flex-wrap: wrap; align-items: center;
+        }
+        .toolbar button {
+            font: inherit; font-size: 12px; padding: 3px 9px; border: 1px solid var(--line);
+            border-radius: 4px; background: #fff; color: var(--ink); cursor: pointer;
+        }
+        .toolbar button:hover { border-color: var(--blue2); }
+
+        .comp, .section {
+            background: #fff; border: 1px solid var(--line); border-radius: 6px;
+            margin-bottom: 14px; overflow: hidden;
+        }
+        /* section bars: one neutral panel heading (inline per-section colours are overridden) */
+        .comp-header, .section-title {
+            background: var(--head) !important; color: var(--ink);
+            border-bottom: 1px solid var(--line); padding: 9px 12px; cursor: pointer; user-select: none;
+        }
+        .comp-header { display: flex; justify-content: space-between; align-items: center; }
+        .comp-header:hover, .section-title:hover { background: #f0f4f9 !important; }
+        .comp-title, .section-title { font-weight: 600; font-size: 13px; }
+        .comp-desc { font-size: 12px; color: var(--muted); }
+        .toggle-icon { display: inline-block; transition: transform 0.2s; margin-right: 8px; color: var(--muted); }
+        .comp.collapsed .toggle-icon { transform: rotate(-90deg); }
+        .comp.collapsed .comp-header { border-bottom: 0; }
+        .comp-body { overflow: hidden; transition: max-height 0.3s; padding: 0; }
+        .comp.collapsed .comp-body { max-height: 0 !important; }
+        .comp-note { padding: 10px 12px; color: var(--muted); font-size: 12px; border-bottom: 1px solid var(--line); background: var(--head); }
+
+        .comp-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+        .comp-table th {
+            background: var(--head); padding: 6px 10px; text-align: left;
+            font-weight: 600; border-bottom: 1px solid var(--line); white-space: nowrap;
+        }
+        .comp-table td {
+            padding: 5px 10px; border-bottom: 1px solid #eef1f4;
+            vertical-align: top; word-wrap: break-word;
+        }
+        .comp-table tr:hover { background: #eef4fb; }
+        .comp-table tr.refined-by td { color: var(--muted); padding-left: 28px; }
+        .comp-table tr.group-row td { background: var(--head); }
+        mark.diff { background: #fff1c2; color: inherit; padding: 0 2px; border-radius: 2px; }
+        .pill { display: inline-block; font-size: 10px; padding: 1px 7px; border-radius: 9px; border: 1px solid var(--line); color: var(--muted); white-space: nowrap; }
+        .pill.open { border-color: #c77700; color: #8a5300; background: #fff6e5; }
+        .pill.done { border-color: #2e7d32; color: #1b5e20; background: #edf7ee; }
+        #matches button, #matches select { font-size: 11px; padding: 2px 8px; border: 1px solid var(--line); border-radius: 4px; background: #fff; cursor: pointer; }
+        #matches button.on { background: var(--blue2); border-color: var(--blue2); color: #fff; }
+        #matches-by { display: block; width: 320px; margin: 8px 0 4px; font-size: 12px; padding: 3px 6px; border: 1px solid var(--line); border-radius: 4px; }
+        #matches-draft { display: block; width: 100%; height: 200px; font: 11px/1.35 ui-monospace, Menlo, Consolas, monospace; border: 1px solid var(--line); border-radius: 4px; padding: 6px; }
+
+        .prop-comparison th.table-col { text-align: center; min-width: 320px; }
+        .prop-comparison .track-small { font-size: 10px; font-weight: normal; color: var(--muted); }
+        .prop-comparison .level-cell { font-weight: 600; text-align: center; width: 60px; font-size: 12px; }
+        .prop-comparison .prop-data { text-align: left; vertical-align: top; padding: 10px 12px !important; }
+        .prop-comparison .prop-empty { text-align: center; color: #ccc; background: var(--head); font-size: 12px; }
+        .prop-cell-content { }
+        .prop-cell-content .prop-name { font-weight: 600; font-size: 12px; margin-bottom: 2px; }
+        .prop-cell-content .prop-type { font-size: 11px; opacity: 0.85; margin-bottom: 6px; }
+        .prop-cell-content .prop-comment { font-size: 11px; opacity: 0.9; font-style: normal; line-height: 1.4; border-top: 1px solid rgba(255,255,255,0.3); padding-top: 6px; margin-top: 4px; }
+
+        .title-full { max-width: 600px; }
+        .purpose-text { font-size: 11px; color: var(--muted); font-style: italic; }
+
+        .conclusion-col { min-width: 120px; text-align: center; }
+        .conclusion-cell { text-align: center; font-size: 12px; background: var(--head); padding: 10px !important; }
+        .conc-match { color: #2e7d32; font-weight: 600; }
+        .conc-similar { color: #0277bd; font-weight: 600; }
+        .conc-differ { color: #c62828; font-weight: 600; }
+        .conc-partial { color: #c77700; font-weight: 600; }
+        .conc-empty { color: #ccc; }
+
+        .id { font-family: ui-monospace, 'SF Mono', Menlo, monospace; font-size: 11px; color: var(--blue); }
+        .field { font-weight: 600; color: var(--ink); white-space: nowrap; }
+        .type { font-size: 11px; color: var(--muted); }
+        .trace { color: #8a94a0; font-size: 11px; }
+        .bool { font-size: 11px; }
+        .text-full { max-width: 400px; }
+        .variations { font-size: 10px; color: var(--muted); font-style: italic; }
+        .track-label { padding: 1px 7px; border-radius: 9px; font-size: 11px; font-weight: 500; }
+        .data.null { color: #8a94a0; font-style: italic; }
+        .data.bool { color: var(--blue2); }
+
+        .annot-section { margin: 0 0 12px; }
+        .annot-type-header {
+            background: var(--head) !important; color: var(--ink); padding: 7px 12px;
+            font-size: 12px; font-weight: 600; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+        }
+
+        .scope-acts { color: #C65911; }
+        .scope-cols { color: #0277bd; font-style: italic; }
+        .scope-props { color: #6a1b9a; font-style: italic; }
+        .scope-cells { color: #2e7d32; }
+        .scope-table { color: #8a94a0; font-style: italic; }
+
+        .section-title .toggle-icon {
+            display: inline-block; transition: transform 0.2s; margin-right: 8px;
+        }
+        .collapsible-section.collapsed .toggle-icon { transform: rotate(-90deg); }
+        .collapsible-section.collapsed .section-title { border-bottom: 0; }
+        .collapsible-section.collapsed .grid-container { display: none; }
+        .grid-container { overflow-x: auto; padding: 10px; }
+
+        .table-border { border-left: 2px solid var(--muted) !important; }
+
+        .grid-table { border-collapse: separate; border-spacing: 0; font-size: 12px; }
+        .grid-table th, .grid-table td { border: 1px solid #e4e8ed; padding: 2px 6px; }
+        .grid-table th { background: var(--head); font-weight: 600; font-size: 11px; }
+        .grid-table th.activity-header { text-align: left; }
+
+        .frozen-col1 {
+            position: sticky;
+            left: 0;
+            z-index: 2;
+            min-width: 340px;
+            max-width: 340px;
+            background: var(--head);
+            border-right: 1px solid var(--line) !important;
+        }
+        .frozen-col2 {
+            position: sticky;
+            left: 340px;
+            z-index: 2;
+            min-width: 60px;
+            max-width: 60px;
+            background: var(--head);
+            border-right: 1px solid var(--line) !important;
+            text-align: center;
+        }
+        .grid-table th.frozen-col1,
+        .grid-table th.frozen-col2 {
+            z-index: 3;
+        }
+        .frozen-col2::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -6px;
+            bottom: 0;
+            width: 6px;
+            background: linear-gradient(to right, rgba(0,0,0,0.06), transparent);
+            pointer-events: none;
+        }
+
+        .activity-name { text-align: left; white-space: normal; }
+        .grid-table th.table-run { background: var(--blue); color: #fff; font-size: 11px; text-align: center; }
+        sup.mk { font-size: 9px; margin-left: 2px; font-weight: 600; }
+        sup.mk a { color: #6a1b9a; text-decoration: none; }
+        sup.mk a:hover { text-decoration: underline; }
+        .grid-table th[style*="color: white"] sup.mk a, .grid-table td[style*="color: white"] sup.mk a { color: #f3e5ff; }
+        span.mk { color: #6a1b9a; font-weight: 600; margin-left: 4px; }
+        tr:target td { background: #fff3d6 !important; }
+        .ingrid { color: var(--blue2); text-decoration: none; }
+        .ingrid .ico { vertical-align: -2px; }
+        a.ingrid:hover { color: var(--blue); }
+        .grid-table .hit { outline: 2px solid #ffb300; outline-offset: -2px; box-shadow: inset 0 0 0 40px rgba(255,179,0,.25); }
+        .activity-name.section-header { font-weight: 600; }
+        .activity-name.child { padding-left: 15px; }
+
+        .legend {
+            background: #fff; border: 1px solid var(--line); border-radius: 6px; padding: 8px 12px;
+            margin-bottom: 14px; display: flex; gap: 14px; flex-wrap: wrap; align-items: center;
+            font-size: 12px; color: var(--muted);
+        }
+        .legend-item { display: flex; align-items: center; gap: 6px; }
+        .legend-color { width: 16px; height: 12px; border-radius: 2px; border: 1px solid var(--line); }
+        .legend-section { font-weight: 600; color: var(--ink); margin-left: 6px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>NCT03739203 — consolidated Schedule of Activities</h1>
+        <div class="sub">misc_studies · 2 tables · 40 activities (34% compression) · 14 columns · soa-tables-consolidated v1.7 · Layer 3</div>
+    </div>
+    <nav class="pnav" aria-label="Breadcrumb"><div class="pnav-crumb"><a href="../../../../../../index.html">Collections</a><span class="pnav-sep">›</span><a href="../../../index.html">misc_studies</a><span class="pnav-sep">›</span><a href="../../../index.html#NCT03739203" title="This protocol's row on the collection index">NCT03739203</a><span class="pnav-sep">›</span><span class="pnav-cur">Consolidated SoA</span></div><div class="pnav-sib"><span class="pnav-grp">extraction data:</span> <a href="../../soa-tables/extracted/NCT03739203_Table_01_extraction_viewer.html">T1</a> <a href="../../soa-tables/extracted/NCT03739203_Table_02_extraction_viewer.html">T2</a> <span class="pnav-sep">·</span> <span class="pnav-grp">resolved data:</span> <a href="../../soa-tables/resolved/NCT03739203_Table_01_resolved_viewer.html">T1</a> <a href="../../soa-tables/resolved/NCT03739203_Table_02_resolved_viewer.html">T2</a> <span class="pnav-sep">·</span> <span class="pnav-cur">consolidated</span> <span class="pnav-sep">·</span> <a href="../../soa-tables/extracted/NCT03739203_review.html">review</a> <span class="pnav-sep">·</span> <a href="../../soa-tables/extracted/NCT03739203_uncertainty_report.html">extraction log</a></div></nav>
+    <div class="content">
+    
+    <div class="toolbar">
+        <button onclick="expandAll()">▼ Expand All</button>
+        <button onclick="collapseAll()">▶ Collapse All</button>
+    </div>
+    
+    <div class="legend">
+        <span class="legend-section">Activities:</span>
+        <div class="legend-item"><div class="legend-color" style="background:#e1f2fb;"></div>Near match across tables</div>
+        <div class="legend-item"><div class="legend-color" style="background:#f1e7f7;"></div>Near match, different parent</div>
+        <span class="legend-section">|</span>
+        <span class="legend-section">Annotations:</span>
+        <div class="legend-item"><sup class="mk"><a>3</a></sup>&nbsp;click for the text</div>
+        <div class="legend-item"><span class="ingrid"><svg class="ico" width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="8" cy="8" r="1.8" fill="currentColor"/></svg></span>&nbsp;in Unified Annotations: show where it applies</div>
+        <span class="legend-section">|</span>
+        <span class="legend-section">Cells:</span>
+        <div class="legend-item"><div class="legend-color" style="background:#BDD7EE;"></div>Common</div>
+        <div class="legend-item"><div class="legend-color" style="background:#d4edda; border-color:#28a745;"></div>COVID-19 Modified only</div>
+    </div>
+    
+    
+    <div class="section collapsible-section">
+        <div class="section-title" style="background: #1F4788;" onclick="toggleGrid(this)">
+            <span class="toggle-icon">▼</span> Main Schedule (7 columns)
+        </div>
+        <div class="grid-container">
+            <table class="grid-table"><tr><th class="frozen-col1 activity-header">Activity</th><th class="frozen-col2">In</th><th colspan="7" class="table-run">Table 1</th></tr><tr><th class="frozen-col1" style="background: #1F4788; color: white; text-align: left; font-size: 9px;">Study Period<br/><span style="font-size: 8px; opacity: 0.8;">[epoch] L1</span></th><th class="frozen-col2" style="background: #1F4788;"></th><td class="" style="background: #1F4788; color: white; text-align: center; font-size: 9px;">Screening<sup class="mk"><a href="#xannot-011" title="May be up to an additional 7 days (up to 21 days) if needed with Sponsor approval.">11</a></sup></td><td class="" style="background: #1F4788; color: white; text-align: center; font-size: 9px;">Baseline<sup class="mk"><a href="#xannot-011" title="May be up to an additional 7 days (up to 21 days) if needed with Sponsor approval.">11</a></sup></td><td class="" style="background: #1F4788; color: white; text-align: center; font-size: 9px;">Double-blind Treatment</td><td class="" style="background: #1F4788; color: white; text-align: center; font-size: 9px;">Double-blind Treatment</td><td class="" style="background: #1F4788; color: white; text-align: center; font-size: 9px;">Double-blind Treatment</td><td class="" style="background: #1F4788; color: white; text-align: center; font-size: 9px;">Double-blind Treatment<sup class="mk"><a href="#xannot-001" title="Performed for all patients, including those prematurely discontinued after randomization (Visit 2).">1</a>,<a href="#xannot-002" title="Clinical findings upon termination must be followed until the condition returns to prestudy status or can be explained as unrelated to investigational product. If necessary, an additional follow-up visit should be scheduled.">2</a></sup></td><td class="" style="background: #1F4788; color: white; text-align: center; font-size: 9px;">Safety Follow-up</td></tr><tr><th class="frozen-col1" style="background: #2E75B6; color: white; text-align: left; font-size: 9px;">Visit<br/><span style="font-size: 8px; opacity: 0.8;">[visit] L2</span></th><th class="frozen-col2" style="background: #2E75B6;"></th><td class="" style="background: #2E75B6; color: white; text-align: center; font-size: 9px;">1</td><td class="" style="background: #2E75B6; color: white; text-align: center; font-size: 9px;">2</td><td class="" style="background: #2E75B6; color: white; text-align: center; font-size: 9px;">3</td><td class="" style="background: #2E75B6; color: white; text-align: center; font-size: 9px;">4</td><td class="" style="background: #2E75B6; color: white; text-align: center; font-size: 9px;">5</td><td class="" style="background: #2E75B6; color: white; text-align: center; font-size: 9px;">6/ET</td><td class="" style="background: #2E75B6; color: white; text-align: center; font-size: 9px;">7</td></tr><tr><th class="frozen-col1" style="background: #6A9BD1; color: #333; text-align: left; font-size: 9px;">Study Week<br/><span style="font-size: 8px; opacity: 0.8;">[week] L3</span></th><th class="frozen-col2" style="background: #6A9BD1;"></th><td class="" style="background: #6A9BD1; color: #333; text-align: center; font-size: 9px;">Up to -2</td><td class="" style="background: #6A9BD1; color: #333; text-align: center; font-size: 9px;">0</td><td class="" style="background: #6A9BD1; color: #333; text-align: center; font-size: 9px;">1</td><td class="" style="background: #6A9BD1; color: #333; text-align: center; font-size: 9px;">2</td><td class="" style="background: #6A9BD1; color: #333; text-align: center; font-size: 9px;">4</td><td class="" style="background: #6A9BD1; color: #333; text-align: center; font-size: 9px;">6</td><td class="" style="background: #6A9BD1; color: #333; text-align: center; font-size: 9px;">10</td></tr><tr><th class="frozen-col1" style="background: #A9C6E6; color: #333; text-align: left; font-size: 9px;">Study Day<sup class="mk"><a href="#xannot-013" title="Note: If necessary, Visits 3 to 7 may be conducted up to 3 days before or after the scheduled visits. The visit windows for each scheduled visit are relative to Visit 2 for Visits 3 through 7. In extenuating circumstances, the visit window for Visits 3 to 7 (inclusive) may be extended an additional ">13</a></sup><br/><span style="font-size: 8px; opacity: 0.8;">[study_day] L4</span></th><th class="frozen-col2" style="background: #A9C6E6;"></th><td class="" style="background: #A9C6E6; color: #333; text-align: center; font-size: 9px;">Up to -14</td><td class="" style="background: #A9C6E6; color: #333; text-align: center; font-size: 9px;">1</td><td class="" style="background: #A9C6E6; color: #333; text-align: center; font-size: 9px;">8</td><td class="" style="background: #A9C6E6; color: #333; text-align: center; font-size: 9px;">15</td><td class="" style="background: #A9C6E6; color: #333; text-align: center; font-size: 9px;">29</td><td class="" style="background: #A9C6E6; color: #333; text-align: center; font-size: 9px;">43</td><td class="" style="background: #A9C6E6; color: #333; text-align: center; font-size: 9px;">71</td></tr><tr><th class="frozen-col1" style="background: #f5f5f5; color: #666; text-align: left; font-size: 9px;">Visit Windows<br/><span style="font-size: 8px; opacity: 0.8;">[window]</span></th><th class="frozen-col2" style="background: #f5f5f5;"></th><td class="" style="background: #f5f5f5; color: #666; text-align: center; font-size: 9px;"></td><td class="" style="background: #f5f5f5; color: #666; text-align: center; font-size: 9px;">(within 14 days of start of screening procedures)</td><td class="" style="background: #f5f5f5; color: #666; text-align: center; font-size: 9px;">± 3 Days</td><td class="" style="background: #f5f5f5; color: #666; text-align: center; font-size: 9px;">± 3 Days</td><td class="" style="background: #f5f5f5; color: #666; text-align: center; font-size: 9px;">± 3 Days</td><td class="" style="background: #f5f5f5; color: #666; text-align: center; font-size: 9px;">± 3 Days</td><td class="" style="background: #f5f5f5; color: #666; text-align: center; font-size: 9px;">± 3 Days</td></tr><tr id="xact-001"><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::Informed Consent">Informed Consent</td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr id="xact-002"><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::Verified Clinical Trials Check">Verified Clinical Trials Check<sup class="mk"><a href="#xannot-003" title="Verified Clinical Trials database check to be performed, where applicable.">3</a></sup></td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr id="xact-003"><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::Medical and Psychiatric Histories">Medical and Psychiatric Histories</td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr id="xact-004"><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::Prior Medication History">Prior Medication History</td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr id="xact-005"><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::Inclusion/Exclusion Criteria">Inclusion/Exclusion Criteria</td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr id="xact-006"><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::Randomization">Randomization</td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1</td><td class=""></td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr id="xact-007"><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::Clinical Laboratory Tests">Clinical Laboratory Tests<sup class="mk"><a href="#xannot-004" title="Clinical laboratory tests include hematology, serum chemistry, urinalysis (including urine myoglobin in patients with creatine phosphokinase levels &gt; 1000 U/L or as clinically indicated for any rise in creatine phosphokinase levels or as necessitated by symptoms), as well as serum pregnancy test in ">4</a>,<a href="#xannot-005" title="Urine drug screen, blood alcohol concentration (by Breathalyzer), and serum pregnancy test can be repeated at random at request of investigator.">5</a>,<a href="#xannot-014" title="Clinical laboratory assessments, including serum pregnancy testing (WOCBP only) may be performed at an off-site laboratory facility if needed. If patient is unable or unwilling to travel to an alternate laboratory facility, the laboratory assessment at the scheduled timepoint may be omitted. For WOC">14</a></sup></td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1,T2</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td></tr><tr id="xact-008"><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::Serum Pregnancy Test">Serum Pregnancy Test<sup class="mk"><a href="#xannot-004" title="Clinical laboratory tests include hematology, serum chemistry, urinalysis (including urine myoglobin in patients with creatine phosphokinase levels &gt; 1000 U/L or as clinically indicated for any rise in creatine phosphokinase levels or as necessitated by symptoms), as well as serum pregnancy test in ">4</a>,<a href="#xannot-005" title="Urine drug screen, blood alcohol concentration (by Breathalyzer), and serum pregnancy test can be repeated at random at request of investigator.">5</a>,<a href="#xannot-014" title="Clinical laboratory assessments, including serum pregnancy testing (WOCBP only) may be performed at an off-site laboratory facility if needed. If patient is unable or unwilling to travel to an alternate laboratory facility, the laboratory assessment at the scheduled timepoint may be omitted. For WOC">14</a></sup></td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1,T2</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td></tr><tr id="xact-009"><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::Hepatitis Serology">Hepatitis Serology</td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr id="xact-010"><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::Hemoglobin A1c">Hemoglobin A1c</td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr id="xact-011"><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::Urine Drug Screen">Urine Drug Screen<sup class="mk"><a href="#xannot-005" title="Urine drug screen, blood alcohol concentration (by Breathalyzer), and serum pregnancy test can be repeated at random at request of investigator.">5</a></sup></td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr id="xact-012"><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::Blood Alcohol Concentration (by Breathalyzer)">Blood Alcohol Concentration (by Breathalyzer)<sup class="mk"><a href="#xannot-005" title="Urine drug screen, blood alcohol concentration (by Breathalyzer), and serum pregnancy test can be repeated at random at request of investigator.">5</a></sup></td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr id="xact-013"><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::Vital Signs">Vital Signs<sup class="mk"><a href="#xannot-006" title="Height will be measured only at Visit 1 (Screening). Waist circumference will be measured at Visits 2 and 6/ET.">6</a>,<a href="#xannot-015" title="If visit is being performed remotely, this assessment may be omitted. Vital signs should be obtained at the next scheduled in-home or in-person visit.">15</a></sup></td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1,T2</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td></tr><tr id="xact-014"><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::Electrocardiogram">Electrocardiogram<sup class="mk"><a href="#xannot-016" title="If visit is being performed remotely, this assessment may be omitted at this timepoint. Patient should have this assessment performed as an Unscheduled assessment during the Safety Follow-up period. Clinical findings upon termination must be followed until the condition returns to prestudy status or">16</a></sup></td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1,T2</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td></tr><tr id="xact-015"><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::Physical Examination">Physical Examination<sup class="mk"><a href="#xannot-016" title="If visit is being performed remotely, this assessment may be omitted at this timepoint. Patient should have this assessment performed as an Unscheduled assessment during the Safety Follow-up period. Clinical findings upon termination must be followed until the condition returns to prestudy status or">16</a></sup></td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1,T2</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td></tr><tr id="xact-016"><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::SCID-5">SCID-5</td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr id="xact-017"><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::SAFER Remote Telephone Interview">SAFER Remote Telephone Interview<sup class="mk"><a href="#xannot-007" title="SAFER/remote telephone interview will be scheduled and implemented before Visit 2 (Baseline) for patients who meet the screening criteria at Visit 1. The patient’s SAFER evaluation score should be reviewed before Visit 2 to confirm eligibility.">7</a></sup></td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr id="xact-018"><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::Evaluate SAFER Score Qualification">Evaluate SAFER Score Qualification<sup class="mk"><a href="#xannot-007" title="SAFER/remote telephone interview will be scheduled and implemented before Visit 2 (Baseline) for patients who meet the screening criteria at Visit 1. The patient’s SAFER evaluation score should be reviewed before Visit 2 to confirm eligibility.">7</a></sup></td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1</td><td class=""></td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr id="xact-019"><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::Modified ATRQ">Modified ATRQ</td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td><td class=""></td></tr><tr id="xact-020"><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::HAMD-17">HAMD-17</td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1,T2</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td><td class=""></td><td class=""></td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td></tr><tr id="xact-021"><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::YMRS">YMRS</td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1,T2</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td><td class=""></td><td class=""></td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td></tr><tr id="xact-022"><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::MADRS">MADRS</td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1,T2</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td></tr><tr id="xact-023"><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::CGI-S">CGI-S</td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1,T2</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td></tr><tr id="xact-024"><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::CGI-I">CGI-I</td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1,T2</td><td class=""></td><td class=""></td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td></tr><tr id="xact-025"><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::HAM-A">HAM-A</td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1,T2</td><td class=""></td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td></tr><tr id="xact-026"><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::SF-12">SF-12<sup class="mk"><a href="#xannot-017" title="If visit is being performed remotely, study staff should verbally administer the Short-Form 12 (SF-12) to the patient and record the patient’s responses in the source.">17</a></sup></td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1,T2</td><td class=""></td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td><td class=""></td><td class=""></td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td></tr><tr id="xact-027"><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::BARS/AIMS/SAS">BARS/AIMS/SAS<sup class="mk"><a href="#xannot-018" title="Movement scales may be conducted remotely if needed. Where possible, telemedicine virtual visits or video calls (without recording) should be used to conduct this assessment remotely. If a scale item cannot be assessed, the item may be skipped and the source should indicate the item could not be ass">18</a></sup></td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1,T2</td><td class=""></td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td></tr><tr id="xact-028"><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::C-SSRS">C-SSRS<sup class="mk"><a href="#xannot-019" title="C-SSRS may be assessed remotely if needed by a certified rater. Clinicians with a valid C-SSRS certification for another Allergan study may rate C-SSRS in the event the study-certified rater is unavailable to complete the assessment.">19</a></sup></td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1,T2</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td></tr><tr id="xact-029"><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::Adverse Events">Adverse Events</td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1,T2</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td></tr><tr id="xact-030"><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::Concomitant Medications">Concomitant Medications</td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1,T2</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td></tr><tr id="xact-031"><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::Dispense IP">Dispense IP<sup class="mk"><a href="#xannot-020" title="As an alternative to in-person drug dispensing, IP may be dispensed via a secure delivery method (where permissible by local, statutory, federal/country law) and after approval by Sponsor.">20</a></sup></td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1,T2</td><td class=""></td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td><td class=""></td></tr><tr id="xact-032"><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::Drug Return and Compliance">Drug Return and Compliance</td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1</td><td class=""></td><td class=""></td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td></tr><tr id="xact-033"><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::ADT Compliance">ADT Compliance<sup class="mk"><a href="#xannot-021" title="Assessment of compliance should be performed at each visit. For remote visits where a pill count by site staff may not be possible, patient reported compliance is to be documented. Patient reported verification of IP capsules remaining should be documented.">21</a></sup></td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1,T2</td><td class=""></td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td></tr><tr id="xact-034"><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::Pharmacogenetic Consent">Pharmacogenetic Consent<sup class="mk"><a href="#xannot-008" title="Pharmacogenetic consent may be obtained at any time between Visit 1 (Screening) and Visit 6 (Week 6).">8</a>,<a href="#xannot-024" title="Pharmacogenetic consent may be obtained at any time between Visit 1(Screening) and Visit 6 (Week 6). Pharmacogenetic consent may not be obtained remotely.">24</a></sup></td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1,T2</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td></tr><tr id="xact-035"><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::Pharmacogenetic Sample">Pharmacogenetic Sample<sup class="mk"><a href="#xannot-009" title="Pharmacogenetic sample (1 per patient for the entire study) may be obtained from randomized patients at any time between Visit 2 (Baseline) and Visit 6 (Week 6).">9</a>,<a href="#xannot-025" title="Pharmacogenetic sample (1 per patient for the entire study) may be obtained from randomized patients at any time between Visit 2 (Baseline) and Visit 6 (Week 6). To be omitted if sampling is not possible due to remote visits being completed.">25</a></sup></td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1,T2</td><td class=""></td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td></tr><tr id="xact-036"><td class="frozen-col1 activity-name " style="background: #e1f2fb;" title="::Pharmacokinetic Sample">Pharmacokinetic Sample<sup class="mk"><a href="#xannot-010" title="Can be taken at any time during visits 4, 5 and 6/ET.">10</a>,<a href="#xannot-023" title="If visit is being performed remotely or at an alternate laboratory facility, this assessment may be omitted. In consideration of the processing time required, pharmacokinetic samples should not be collected during in-home visits.">23</a></sup></td><td class="frozen-col2" style="background: #e1f2fb; font-size: 8px;">T1,T2</td><td class=""></td><td class=""></td><td class=""></td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td></tr></table>
+        </div>
+    </div>
+    <div class="section collapsible-section">
+        <div class="section-title" style="background: #7030A0;" onclick="toggleGrid(this)">
+            <span class="toggle-icon">▼</span> Track Timelines: COVID-19 Modified (7 columns)
+        </div>
+        <div class="grid-container">
+            <table class="grid-table"><tr><th class="frozen-col1 activity-header">Activity</th><th class="frozen-col2">In</th><th colspan="7" class="table-run">Table 2</th></tr><tr><th class="frozen-col1"></th><th class="frozen-col2"></th><th class="" style="background: #28a745; color: white; font-size: 8px; white-space: normal; word-wrap: break-word; max-width: 80px;">COVID-19 Modified</th><th class="" style="background: #28a745; color: white; font-size: 8px; white-space: normal; word-wrap: break-word; max-width: 80px;">COVID-19 Modified</th><th class="" style="background: #28a745; color: white; font-size: 8px; white-space: normal; word-wrap: break-word; max-width: 80px;">COVID-19 Modified</th><th class="" style="background: #28a745; color: white; font-size: 8px; white-space: normal; word-wrap: break-word; max-width: 80px;">COVID-19 Modified</th><th class="" style="background: #28a745; color: white; font-size: 8px; white-space: normal; word-wrap: break-word; max-width: 80px;">COVID-19 Modified</th><th class="" style="background: #28a745; color: white; font-size: 8px; white-space: normal; word-wrap: break-word; max-width: 80px;">COVID-19 Modified</th><th class="" style="background: #28a745; color: white; font-size: 8px; white-space: normal; word-wrap: break-word; max-width: 80px;">COVID-19 Modified</th></tr><tr><th class="frozen-col1" style="background: #1F4788; color: white; text-align: left; font-size: 9px;">Study Period<br/><span style="font-size: 8px; opacity: 0.8;">[epoch] L1</span></th><th class="frozen-col2" style="background: #1F4788;"></th><td class="" style="background: #1F4788; color: white; text-align: center; font-size: 9px;">Screening</td><td class="" style="background: #1F4788; color: white; text-align: center; font-size: 9px;">Baseline</td><td class="" style="background: #1F4788; color: white; text-align: center; font-size: 9px;">Double-blind Treatment</td><td class="" style="background: #1F4788; color: white; text-align: center; font-size: 9px;">Double-blind Treatment</td><td class="" style="background: #1F4788; color: white; text-align: center; font-size: 9px;">Double-blind Treatment</td><td class="" style="background: #1F4788; color: white; text-align: center; font-size: 9px;">Double-blind Treatment</td><td class="" style="background: #1F4788; color: white; text-align: center; font-size: 9px;">Safety Follow-up</td></tr><tr><th class="frozen-col1" style="background: #2E75B6; color: white; text-align: left; font-size: 9px;">Visit<br/><span style="font-size: 8px; opacity: 0.8;">[visit] L2</span></th><th class="frozen-col2" style="background: #2E75B6;"></th><td class="" style="background: #2E75B6; color: white; text-align: center; font-size: 9px;">1</td><td class="" style="background: #2E75B6; color: white; text-align: center; font-size: 9px;">2</td><td class="" style="background: #2E75B6; color: white; text-align: center; font-size: 9px;">3</td><td class="" style="background: #2E75B6; color: white; text-align: center; font-size: 9px;">4</td><td class="" style="background: #2E75B6; color: white; text-align: center; font-size: 9px;">5</td><td class="" style="background: #2E75B6; color: white; text-align: center; font-size: 9px;">6/ET</td><td class="" style="background: #2E75B6; color: white; text-align: center; font-size: 9px;">7</td></tr><tr><th class="frozen-col1" style="background: #6A9BD1; color: #333; text-align: left; font-size: 9px;">Study Week<br/><span style="font-size: 8px; opacity: 0.8;">[week] L3</span></th><th class="frozen-col2" style="background: #6A9BD1;"></th><td class="" style="background: #6A9BD1; color: #333; text-align: center; font-size: 9px;">Up to -2</td><td class="" style="background: #6A9BD1; color: #333; text-align: center; font-size: 9px;">0</td><td class="" style="background: #6A9BD1; color: #333; text-align: center; font-size: 9px;">1</td><td class="" style="background: #6A9BD1; color: #333; text-align: center; font-size: 9px;">2</td><td class="" style="background: #6A9BD1; color: #333; text-align: center; font-size: 9px;">4</td><td class="" style="background: #6A9BD1; color: #333; text-align: center; font-size: 9px;">6</td><td class="" style="background: #6A9BD1; color: #333; text-align: center; font-size: 9px;">10</td></tr><tr><th class="frozen-col1" style="background: #A9C6E6; color: #333; text-align: left; font-size: 9px;">Study Day<sup class="mk"><a href="#xannot-013" title="Note: If necessary, Visits 3 to 7 may be conducted up to 3 days before or after the scheduled visits. The visit windows for each scheduled visit are relative to Visit 2 for Visits 3 through 7. In extenuating circumstances, the visit window for Visits 3 to 7 (inclusive) may be extended an additional ">13</a></sup><br/><span style="font-size: 8px; opacity: 0.8;">[study_day] L4</span></th><th class="frozen-col2" style="background: #A9C6E6;"></th><td class="" style="background: #A9C6E6; color: #333; text-align: center; font-size: 9px;">Up to -14</td><td class="" style="background: #A9C6E6; color: #333; text-align: center; font-size: 9px;">1</td><td class="" style="background: #A9C6E6; color: #333; text-align: center; font-size: 9px;">8</td><td class="" style="background: #A9C6E6; color: #333; text-align: center; font-size: 9px;">15</td><td class="" style="background: #A9C6E6; color: #333; text-align: center; font-size: 9px;">29</td><td class="" style="background: #A9C6E6; color: #333; text-align: center; font-size: 9px;">43</td><td class="" style="background: #A9C6E6; color: #333; text-align: center; font-size: 9px;">71</td></tr><tr><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::Clinical Laboratory Tests">Clinical Laboratory Tests<sup class="mk"><a href="#xannot-004" title="Clinical laboratory tests include hematology, serum chemistry, urinalysis (including urine myoglobin in patients with creatine phosphokinase levels &gt; 1000 U/L or as clinically indicated for any rise in creatine phosphokinase levels or as necessitated by symptoms), as well as serum pregnancy test in ">4</a>,<a href="#xannot-005" title="Urine drug screen, blood alcohol concentration (by Breathalyzer), and serum pregnancy test can be repeated at random at request of investigator.">5</a>,<a href="#xannot-014" title="Clinical laboratory assessments, including serum pregnancy testing (WOCBP only) may be performed at an off-site laboratory facility if needed. If patient is unable or unwilling to travel to an alternate laboratory facility, the laboratory assessment at the scheduled timepoint may be omitted. For WOC">14</a></sup></td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1,T2</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures</td><td class=""></td><td class=""></td><td class=""></td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td></tr><tr><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::Serum Pregnancy Test">Serum Pregnancy Test<sup class="mk"><a href="#xannot-004" title="Clinical laboratory tests include hematology, serum chemistry, urinalysis (including urine myoglobin in patients with creatine phosphokinase levels &gt; 1000 U/L or as clinically indicated for any rise in creatine phosphokinase levels or as necessitated by symptoms), as well as serum pregnancy test in ">4</a>,<a href="#xannot-005" title="Urine drug screen, blood alcohol concentration (by Breathalyzer), and serum pregnancy test can be repeated at random at request of investigator.">5</a>,<a href="#xannot-014" title="Clinical laboratory assessments, including serum pregnancy testing (WOCBP only) may be performed at an off-site laboratory facility if needed. If patient is unable or unwilling to travel to an alternate laboratory facility, the laboratory assessment at the scheduled timepoint may be omitted. For WOC">14</a></sup></td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1,T2</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures</td><td class=""></td><td class=""></td><td class=""></td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td></tr><tr><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::Vital Signs">Vital Signs<sup class="mk"><a href="#xannot-006" title="Height will be measured only at Visit 1 (Screening). Waist circumference will be measured at Visits 2 and 6/ET.">6</a>,<a href="#xannot-015" title="If visit is being performed remotely, this assessment may be omitted. Vital signs should be obtained at the next scheduled in-home or in-person visit.">15</a></sup></td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1,T2</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td></tr><tr><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::Electrocardiogram">Electrocardiogram<sup class="mk"><a href="#xannot-016" title="If visit is being performed remotely, this assessment may be omitted at this timepoint. Patient should have this assessment performed as an Unscheduled assessment during the Safety Follow-up period. Clinical findings upon termination must be followed until the condition returns to prestudy status or">16</a></sup></td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1,T2</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures</td><td class=""></td><td class=""></td><td class=""></td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td></tr><tr><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::Physical Examination">Physical Examination<sup class="mk"><a href="#xannot-016" title="If visit is being performed remotely, this assessment may be omitted at this timepoint. Patient should have this assessment performed as an Unscheduled assessment during the Safety Follow-up period. Clinical findings upon termination must be followed until the condition returns to prestudy status or">16</a></sup></td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1,T2</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures</td><td class=""></td><td class=""></td><td class=""></td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td></tr><tr><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::HAMD-17">HAMD-17</td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1,T2</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures</td><td class=""></td><td class=""></td><td class=""></td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td></tr><tr><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::YMRS">YMRS</td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1,T2</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures</td><td class=""></td><td class=""></td><td class=""></td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td></tr><tr><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::MADRS">MADRS</td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1,T2</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td></tr><tr><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::CGI-S">CGI-S</td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1,T2</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td></tr><tr><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::CGI-I">CGI-I</td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1,T2</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td></tr><tr><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::HAM-A">HAM-A</td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1,T2</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures</td><td class=""></td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td></tr><tr><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::SF-12">SF-12<sup class="mk"><a href="#xannot-017" title="If visit is being performed remotely, study staff should verbally administer the Short-Form 12 (SF-12) to the patient and record the patient’s responses in the source.">17</a></sup></td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1,T2</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures</td><td class=""></td><td class=""></td><td class=""></td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td></tr><tr><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::BARS/AIMS/SAS">BARS/AIMS/SAS<sup class="mk"><a href="#xannot-018" title="Movement scales may be conducted remotely if needed. Where possible, telemedicine virtual visits or video calls (without recording) should be used to conduct this assessment remotely. If a scale item cannot be assessed, the item may be skipped and the source should indicate the item could not be ass">18</a></sup></td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1,T2</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td></tr><tr><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::C-SSRS">C-SSRS<sup class="mk"><a href="#xannot-019" title="C-SSRS may be assessed remotely if needed by a certified rater. Clinicians with a valid C-SSRS certification for another Allergan study may rate C-SSRS in the event the study-certified rater is unavailable to complete the assessment.">19</a></sup></td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1,T2</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td></tr><tr><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::Adverse Events">Adverse Events</td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1,T2</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td></tr><tr><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::Concomitant Medications">Concomitant Medications</td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1,T2</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td></tr><tr><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::Dispense IP">Dispense IP<sup class="mk"><a href="#xannot-020" title="As an alternative to in-person drug dispensing, IP may be dispensed via a secure delivery method (where permissible by local, statutory, federal/country law) and after approval by Sponsor.">20</a></sup></td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1,T2</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td><td class=""></td></tr><tr><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::ADT Compliance">ADT Compliance<sup class="mk"><a href="#xannot-021" title="Assessment of compliance should be performed at each visit. For remote visits where a pill count by site staff may not be possible, patient reported compliance is to be documented. Patient reported verification of IP capsules remaining should be documented.">21</a></sup></td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1,T2</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td></tr><tr><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::Pharmacogenetic Consent">Pharmacogenetic Consent<sup class="mk"><a href="#xannot-008" title="Pharmacogenetic consent may be obtained at any time between Visit 1 (Screening) and Visit 6 (Week 6).">8</a>,<a href="#xannot-024" title="Pharmacogenetic consent may be obtained at any time between Visit 1(Screening) and Visit 6 (Week 6). Pharmacogenetic consent may not be obtained remotely.">24</a></sup></td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1,T2</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td></tr><tr><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::Pharmacogenetic Sample">Pharmacogenetic Sample<sup class="mk"><a href="#xannot-009" title="Pharmacogenetic sample (1 per patient for the entire study) may be obtained from randomized patients at any time between Visit 2 (Baseline) and Visit 6 (Week 6).">9</a>,<a href="#xannot-025" title="Pharmacogenetic sample (1 per patient for the entire study) may be obtained from randomized patients at any time between Visit 2 (Baseline) and Visit 6 (Week 6). To be omitted if sampling is not possible due to remote visits being completed.">25</a></sup></td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T1,T2</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td></tr><tr><td class="frozen-col1 activity-name " style="background: #e1f2fb;" title="::Pharmacokinetic Sample">Pharmacokinetic Sample<sup class="mk"><a href="#xannot-010" title="Can be taken at any time during visits 4, 5 and 6/ET.">10</a>,<a href="#xannot-023" title="If visit is being performed remotely or at an alternate laboratory facility, this assessment may be omitted. In consideration of the processing time required, pharmacokinetic samples should not be collected during in-home visits.">23</a></sup></td><td class="frozen-col2" style="background: #e1f2fb; font-size: 8px;">T1,T2</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures</td><td class=""></td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td></tr><tr id="xact-037"><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::COVID-19 Informed Consent/Reconsent (where applicable)">COVID-19 Informed Consent/Reconsent (where applicable)</td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T2</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">(X)</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">(X)</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">(X)</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">(X)</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">(X)</td></tr><tr id="xact-038"><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::Access IWRS for IP assignment">Access IWRS for IP assignment</td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T2</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td><td class=""></td></tr><tr id="xact-039"><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::IP Compliance and Accountability">IP Compliance and Accountability<sup class="mk"><a href="#xannot-021" title="Assessment of compliance should be performed at each visit. For remote visits where a pill count by site staff may not be possible, patient reported compliance is to be documented. Patient reported verification of IP capsules remaining should be documented.">21</a></sup></td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T2</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td></tr><tr id="xact-040"><td class="frozen-col1 activity-name " style="background: #ffffff;" title="::IP Return">IP Return<sup class="mk"><a href="#xannot-022" title="To minimize undue burden on the patient, IP return may be less frequent during the time that visits are being conducted remotely but should occur no less frequently than monthly.">22</a></sup></td><td class="frozen-col2" style="background: #ffffff; font-size: 8px;">T2</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class="" style="background: #BDD7EE; color: #1F4788; font-weight: bold; text-align: center;">X</td><td class=""></td></tr></table>
+        </div>
+    </div>
+    
+    <div class="comp start-open" id="matches">
+        <div class="comp-header collapsible" style="background: #C65911;" onclick="toggleSection(this)">
+            <span class="comp-title"><span class="toggle-icon">▼</span> Matches across tables</span>
+            <span class="comp-desc">3 open of 3</span>
+        </div>
+        <div class="comp-body" id="matches-body">
+            <div class="comp-note">Rows that consolidation merged on name similarity, or kept separate from a near match. Whether two rows are the same activity is the reviewer's call: choosing drafts an entry for <code>NCT03739203_consolidation_corrections.json</code> below; nothing is saved from here. Rows merged on an identical name are not listed. Words that only one of the two names prints are marked; the score ignores case, hyphens, slashes, text in parentheses and plural endings.</div>
+            <table class="comp-table">
+                <thead><tr><th>state</th><th>row</th><th>consolidation</th><th>other row</th><th>activity</th><th>decision</th></tr></thead>
+                <tbody><tr>
+            <td><span class='pill open'>open</span></td>
+            <td class="text-full"><span class='trace'>T2 act-023</span> Pharmacokinetic Sample <mark class='diff'>(at</mark> <mark class='diff'>any</mark> <mark class='diff'>time</mark> <mark class='diff'>during</mark> <mark class='diff'>visit)</mark></td>
+            <td class="type">merged with <span class='trace'>1.00</span></td>
+            <td class="text-full"><span class='trace'>T1 act-036</span> Pharmacokinetic Sample</td>
+            <td class="id"><a href="#xact-036">xact-036</a></td>
+            <td><button data-i="0" data-op="keep">keep the merge</button> <button data-i="0" data-op="split">split</button></td>
+        </tr><tr>
+            <td><span class='pill open'>open</span></td>
+            <td class="text-full"><span class='trace'>T2 act-001</span> <mark class='diff'>COVID-19</mark> Informed <mark class='diff'>Consent/Reconsent</mark> <mark class='diff'>(where</mark> <mark class='diff'>applicable)</mark></td>
+            <td class="type">kept separate from <span class='trace'>0.80</span></td>
+            <td class="text-full"><span class='trace'>T1 act-001</span> Informed <mark class='diff'>Consent</mark></td>
+            <td class="id"><a href="#xact-037">xact-037</a></td>
+            <td><button data-i="1" data-op="keep">keep separate</button> <button data-i="1" data-op="merge">merge</button></td>
+        </tr><tr>
+            <td><span class='pill open'>open</span></td>
+            <td class="text-full"><span class='trace'>T2 act-022</span> <mark class='diff'>IP</mark> Return</td>
+            <td class="type">kept separate from <span class='trace'>0.70</span></td>
+            <td class="text-full"><span class='trace'>T1 act-032</span> <mark class='diff'>Drug</mark> Return <mark class='diff'>and</mark> <mark class='diff'>Compliance</mark></td>
+            <td class="id"><a href="#xact-040">xact-040</a></td>
+            <td><button data-i="2" data-op="keep">keep separate</button> <button data-i="2" data-op="merge">merge</button></td>
+        </tr></tbody>
+            </table>
+            
+            <div class="comp-note">Draft — new file <code>consolidated/NCT03739203_consolidation_corrections.json</code>; replace each <code>&lt;why&gt;</code>, then re-run consolidation.
+                <input id="matches-by" placeholder="your name, as it should appear in the sidecar">
+                <textarea id="matches-draft" readonly placeholder="Choose a decision above to draft sidecar entries here."></textarea>
+            </div>
+        </div>
+    </div>
+    <script>
+    (function () {
+        const M = {"protocol_id": "NCT03739203", "sidecar": "NCT03739203_consolidation_corrections.json", "sidecar_exists": false, "next_id": 1, "items": [{"kind": "merged", "xact_id": "xact-036", "source": {"table_number": 2, "activity_id": "act-023", "activity_name": "Pharmacokinetic Sample (at any time during visit)"}, "target": {"table_number": 1, "activity_id": "act-036", "activity_name": "Pharmacokinetic Sample"}, "status": "fuzzy_auto", "score": 1.0, "decision": null}, {"kind": "separate", "xact_id": "xact-037", "source": {"table_number": 2, "activity_id": "act-001", "activity_name": "COVID-19 Informed Consent/Reconsent (where applicable)"}, "target": {"table_number": 1, "activity_id": "act-001", "activity_name": "Informed Consent"}, "target_xact_id": "xact-001", "status": "near_match", "score": 0.8, "decision": null}, {"kind": "separate", "xact_id": "xact-040", "source": {"table_number": 2, "activity_id": "act-022", "activity_name": "IP Return"}, "target": {"table_number": 1, "activity_id": "act-032", "activity_name": "Drug Return and Compliance"}, "target_xact_id": "xact-032", "status": "near_match", "score": 0.7, "decision": null}], "relations": [], "candidates": [], "open": 3};
+        const choice = {}, picked = {};
+        const body = document.getElementById('matches-body');
+        const fmt = r => 'T' + r.table_number + (r.activity_id ? ' ' + r.activity_id : '');
+        function entries() {
+            const by = document.getElementById('matches-by').value || '<reviewer>';
+            const at = new Date().toISOString().slice(0, 19) + 'Z';
+            const out = []; let n = M.next_id;
+            const id = () => 'ccorr-' + String(n++).padStart(3, '0');
+            M.items.forEach((it, i) => {
+                if (!choice[i]) return;
+                out.push({id: id(), op: choice[i], source: it.source, target: it.target,
+                          reason: '<why>', by: by, at: at});
+            });
+            M.candidates.forEach((c, k) => {
+                if (!picked[k]) return;
+                c.rows.forEach(r => out.push({id: id(), op: 'refines', source: {table_number: picked[k]},
+                                              target: r, reason: '<why>', by: by, at: at}));
+            });
+            return out;
+        }
+        function render() {
+            const e = entries(), el = document.getElementById('matches-draft');
+            if (!e.length) { el.value = ''; return; }
+            el.value = JSON.stringify(M.sidecar_exists ? e : {schema_name: 'soa-consolidation-corrections',
+                schema_version: '1.0', protocol_id: M.protocol_id, corrections: e}, null, 2);
+        }
+        function choose(i, op) {
+            choice[i] = choice[i] === op ? null : op;
+            body.querySelectorAll('button[data-i="' + i + '"]').forEach(
+                b => b.classList.toggle('on', b.dataset.op === choice[i]));
+        }
+        body.querySelectorAll('button[data-i]').forEach(b => b.onclick = () => { choose(+b.dataset.i, b.dataset.op); render(); });
+        body.querySelectorAll('button[data-group]').forEach(b => b.onclick = () => {
+            b.dataset.group.split(',').forEach(i => { if (choice[+i] !== b.dataset.op) choose(+i, b.dataset.op); });
+            render();
+        });
+        body.querySelectorAll('select[data-k]').forEach(sel => sel.onchange = () => {
+            picked[+sel.dataset.k] = sel.value ? +sel.value : null; render();
+        });
+        document.getElementById('matches-by').oninput = render;
+    })();
+    </script>
+    
+    <div class="comp">
+        <div class="comp-header collapsible" style="background: #1F4788;" onclick="toggleSection(this)">
+            <span class="comp-title"><span class="toggle-icon">▼</span> Consolidation Metadata</span>
+            <span class="comp-desc">Process information</span>
+        </div>
+        <div class="comp-body">
+            <table class="comp-table"><tbody><tr><td class="field">consolidated_at</td><td><span class="data">2026-11-22T19:30:55.706077+00:00</span></td></tr><tr><td class="field">source_activity_count</td><td><span class="data">61</span></td></tr><tr><td class="field">unified_activity_count</td><td><span class="data">40</span></td></tr><tr><td class="field">compression_percent</td><td><span class="data">34</span></td></tr><tr><td class="field">match_stats</td><td>exact: 20, fuzzy_auto: 1, new: 40</td></tr></tbody></table>
+        </div>
+    </div>
+    
+    <div class="comp">
+        <div class="comp-header collapsible" style="background: #5B9BD5;" onclick="toggleSection(this)">
+            <span class="comp-title"><span class="toggle-icon">▼</span> Source Tables</span>
+            <span class="comp-desc">2 tables</span>
+        </div>
+        <div class="comp-body">
+            <table class="comp-table">
+                <thead><tr>
+                    <th>table</th><th>type</th><th>track</th><th>title / purpose</th><th>acts</th><th>cols</th><th>props</th>
+                </tr></thead>
+                <tbody><tr>
+            <td class="id">T1</td>
+            <td class="type">main_soa</td>
+            <td></td>
+            <td class="title-full">Schedule of Visits and Procedures<br/><span class='purpose-text'>Main study schedule (screening through safety follow-up)</span></td>
+            <td class="trace">36</td>
+            <td class="trace">7</td>
+            <td class="trace">5</td>
+        </tr><tr>
+            <td class="id">T2</td>
+            <td class="type">track</td>
+            <td><span class="track-label" style="background: #28a745; color: white;">COVID-19 Modified</span></td>
+            <td class="title-full">COVID-19 Modified Schedule of Visits and Procedures (Applicable to Randomized Patients who have completed Visit 2)<br/><span class='purpose-text'>COVID-19 modified version of the visit schedule for randomized patients who have completed Visit 2</span></td>
+            <td class="trace">25</td>
+            <td class="trace">7</td>
+            <td class="trace">4</td>
+        </tr></tbody>
+            </table>
+        </div>
+    </div>
+    
+    
+    <div class="comp">
+        <div class="comp-header collapsible" style="background: #C65911;" onclick="toggleSection(this)">
+            <span class="comp-title"><span class="toggle-icon">▼</span> Unified Activities</span>
+            <span class="comp-desc">40 activities</span>
+        </div>
+        <div class="comp-body">
+            <table class="comp-table">
+                <thead><tr>
+                    <th>xact_id</th><th>activity_name (variations)</th><th>parent</th><th>match</th><th>#</th><th>tables</th><th>row kind</th>
+                </tr></thead>
+                <tbody><tr id="xact-001" style="background: #ffffff;">
+            <td class="id">xact-001</td>
+            <td class="text-full">Informed Consent</td>
+            <td class="trace"></td>
+            <td class="type" title="match_status: new">one table</td>
+            <td class="trace">1</td>
+            <td class="trace">T1</td>
+            <td class="type"></td>
+        </tr><tr id="xact-002" style="background: #ffffff;">
+            <td class="id">xact-002</td>
+            <td class="text-full">Verified Clinical Trials Check</td>
+            <td class="trace"></td>
+            <td class="type" title="match_status: new">one table</td>
+            <td class="trace">1</td>
+            <td class="trace">T1</td>
+            <td class="type"></td>
+        </tr><tr id="xact-003" style="background: #ffffff;">
+            <td class="id">xact-003</td>
+            <td class="text-full">Medical and Psychiatric Histories</td>
+            <td class="trace"></td>
+            <td class="type" title="match_status: new">one table</td>
+            <td class="trace">1</td>
+            <td class="trace">T1</td>
+            <td class="type"></td>
+        </tr><tr id="xact-004" style="background: #ffffff;">
+            <td class="id">xact-004</td>
+            <td class="text-full">Prior Medication History</td>
+            <td class="trace"></td>
+            <td class="type" title="match_status: new">one table</td>
+            <td class="trace">1</td>
+            <td class="trace">T1</td>
+            <td class="type"></td>
+        </tr><tr id="xact-005" style="background: #ffffff;">
+            <td class="id">xact-005</td>
+            <td class="text-full">Inclusion/Exclusion Criteria</td>
+            <td class="trace"></td>
+            <td class="type" title="match_status: new">one table</td>
+            <td class="trace">1</td>
+            <td class="trace">T1</td>
+            <td class="type"></td>
+        </tr><tr id="xact-006" style="background: #ffffff;">
+            <td class="id">xact-006</td>
+            <td class="text-full">Randomization</td>
+            <td class="trace"></td>
+            <td class="type" title="match_status: new">one table</td>
+            <td class="trace">1</td>
+            <td class="trace">T1</td>
+            <td class="type"></td>
+        </tr><tr id="xact-007" style="background: #ffffff;">
+            <td class="id">xact-007</td>
+            <td class="text-full">Clinical Laboratory Tests</td>
+            <td class="trace"></td>
+            <td class="type" title="match_status: exact">same name</td>
+            <td class="trace">2</td>
+            <td class="trace">T1, T2</td>
+            <td class="type"></td>
+        </tr><tr id="xact-008" style="background: #ffffff;">
+            <td class="id">xact-008</td>
+            <td class="text-full">Serum Pregnancy Test</td>
+            <td class="trace"></td>
+            <td class="type" title="match_status: exact">same name</td>
+            <td class="trace">2</td>
+            <td class="trace">T1, T2</td>
+            <td class="type"></td>
+        </tr><tr id="xact-009" style="background: #ffffff;">
+            <td class="id">xact-009</td>
+            <td class="text-full">Hepatitis Serology</td>
+            <td class="trace"></td>
+            <td class="type" title="match_status: new">one table</td>
+            <td class="trace">1</td>
+            <td class="trace">T1</td>
+            <td class="type"></td>
+        </tr><tr id="xact-010" style="background: #ffffff;">
+            <td class="id">xact-010</td>
+            <td class="text-full">Hemoglobin A1c</td>
+            <td class="trace"></td>
+            <td class="type" title="match_status: new">one table</td>
+            <td class="trace">1</td>
+            <td class="trace">T1</td>
+            <td class="type"></td>
+        </tr><tr id="xact-011" style="background: #ffffff;">
+            <td class="id">xact-011</td>
+            <td class="text-full">Urine Drug Screen</td>
+            <td class="trace"></td>
+            <td class="type" title="match_status: new">one table</td>
+            <td class="trace">1</td>
+            <td class="trace">T1</td>
+            <td class="type"></td>
+        </tr><tr id="xact-012" style="background: #ffffff;">
+            <td class="id">xact-012</td>
+            <td class="text-full">Blood Alcohol Concentration (by Breathalyzer)</td>
+            <td class="trace"></td>
+            <td class="type" title="match_status: new">one table</td>
+            <td class="trace">1</td>
+            <td class="trace">T1</td>
+            <td class="type"></td>
+        </tr><tr id="xact-013" style="background: #ffffff;">
+            <td class="id">xact-013</td>
+            <td class="text-full">Vital Signs</td>
+            <td class="trace"></td>
+            <td class="type" title="match_status: exact">same name</td>
+            <td class="trace">2</td>
+            <td class="trace">T1, T2</td>
+            <td class="type"></td>
+        </tr><tr id="xact-014" style="background: #ffffff;">
+            <td class="id">xact-014</td>
+            <td class="text-full">Electrocardiogram</td>
+            <td class="trace"></td>
+            <td class="type" title="match_status: exact">same name</td>
+            <td class="trace">2</td>
+            <td class="trace">T1, T2</td>
+            <td class="type"></td>
+        </tr><tr id="xact-015" style="background: #ffffff;">
+            <td class="id">xact-015</td>
+            <td class="text-full">Physical Examination</td>
+            <td class="trace"></td>
+            <td class="type" title="match_status: exact">same name</td>
+            <td class="trace">2</td>
+            <td class="trace">T1, T2</td>
+            <td class="type"></td>
+        </tr><tr id="xact-016" style="background: #ffffff;">
+            <td class="id">xact-016</td>
+            <td class="text-full">SCID-5</td>
+            <td class="trace"></td>
+            <td class="type" title="match_status: new">one table</td>
+            <td class="trace">1</td>
+            <td class="trace">T1</td>
+            <td class="type"></td>
+        </tr><tr id="xact-017" style="background: #ffffff;">
+            <td class="id">xact-017</td>
+            <td class="text-full">SAFER Remote Telephone Interview</td>
+            <td class="trace"></td>
+            <td class="type" title="match_status: new">one table</td>
+            <td class="trace">1</td>
+            <td class="trace">T1</td>
+            <td class="type"></td>
+        </tr><tr id="xact-018" style="background: #ffffff;">
+            <td class="id">xact-018</td>
+            <td class="text-full">Evaluate SAFER Score Qualification</td>
+            <td class="trace"></td>
+            <td class="type" title="match_status: new">one table</td>
+            <td class="trace">1</td>
+            <td class="trace">T1</td>
+            <td class="type"></td>
+        </tr><tr id="xact-019" style="background: #ffffff;">
+            <td class="id">xact-019</td>
+            <td class="text-full">Modified ATRQ</td>
+            <td class="trace"></td>
+            <td class="type" title="match_status: new">one table</td>
+            <td class="trace">1</td>
+            <td class="trace">T1</td>
+            <td class="type"></td>
+        </tr><tr id="xact-020" style="background: #ffffff;">
+            <td class="id">xact-020</td>
+            <td class="text-full">HAMD-17</td>
+            <td class="trace"></td>
+            <td class="type" title="match_status: exact">same name</td>
+            <td class="trace">2</td>
+            <td class="trace">T1, T2</td>
+            <td class="type"></td>
+        </tr><tr id="xact-021" style="background: #ffffff;">
+            <td class="id">xact-021</td>
+            <td class="text-full">YMRS</td>
+            <td class="trace"></td>
+            <td class="type" title="match_status: exact">same name</td>
+            <td class="trace">2</td>
+            <td class="trace">T1, T2</td>
+            <td class="type"></td>
+        </tr><tr id="xact-022" style="background: #ffffff;">
+            <td class="id">xact-022</td>
+            <td class="text-full">MADRS</td>
+            <td class="trace"></td>
+            <td class="type" title="match_status: exact">same name</td>
+            <td class="trace">2</td>
+            <td class="trace">T1, T2</td>
+            <td class="type"></td>
+        </tr><tr id="xact-023" style="background: #ffffff;">
+            <td class="id">xact-023</td>
+            <td class="text-full">CGI-S</td>
+            <td class="trace"></td>
+            <td class="type" title="match_status: exact">same name</td>
+            <td class="trace">2</td>
+            <td class="trace">T1, T2</td>
+            <td class="type"></td>
+        </tr><tr id="xact-024" style="background: #ffffff;">
+            <td class="id">xact-024</td>
+            <td class="text-full">CGI-I</td>
+            <td class="trace"></td>
+            <td class="type" title="match_status: exact">same name</td>
+            <td class="trace">2</td>
+            <td class="trace">T1, T2</td>
+            <td class="type"></td>
+        </tr><tr id="xact-025" style="background: #ffffff;">
+            <td class="id">xact-025</td>
+            <td class="text-full">HAM-A</td>
+            <td class="trace"></td>
+            <td class="type" title="match_status: exact">same name</td>
+            <td class="trace">2</td>
+            <td class="trace">T1, T2</td>
+            <td class="type"></td>
+        </tr><tr id="xact-026" style="background: #ffffff;">
+            <td class="id">xact-026</td>
+            <td class="text-full">SF-12</td>
+            <td class="trace"></td>
+            <td class="type" title="match_status: exact">same name</td>
+            <td class="trace">2</td>
+            <td class="trace">T1, T2</td>
+            <td class="type"></td>
+        </tr><tr id="xact-027" style="background: #ffffff;">
+            <td class="id">xact-027</td>
+            <td class="text-full">BARS/AIMS/SAS</td>
+            <td class="trace"></td>
+            <td class="type" title="match_status: exact">same name</td>
+            <td class="trace">2</td>
+            <td class="trace">T1, T2</td>
+            <td class="type"></td>
+        </tr><tr id="xact-028" style="background: #ffffff;">
+            <td class="id">xact-028</td>
+            <td class="text-full">C-SSRS</td>
+            <td class="trace"></td>
+            <td class="type" title="match_status: exact">same name</td>
+            <td class="trace">2</td>
+            <td class="trace">T1, T2</td>
+            <td class="type"></td>
+        </tr><tr id="xact-029" style="background: #ffffff;">
+            <td class="id">xact-029</td>
+            <td class="text-full">Adverse Events</td>
+            <td class="trace"></td>
+            <td class="type" title="match_status: exact">same name</td>
+            <td class="trace">2</td>
+            <td class="trace">T1, T2</td>
+            <td class="type"></td>
+        </tr><tr id="xact-030" style="background: #ffffff;">
+            <td class="id">xact-030</td>
+            <td class="text-full">Concomitant Medications</td>
+            <td class="trace"></td>
+            <td class="type" title="match_status: exact">same name</td>
+            <td class="trace">2</td>
+            <td class="trace">T1, T2</td>
+            <td class="type"></td>
+        </tr><tr id="xact-031" style="background: #ffffff;">
+            <td class="id">xact-031</td>
+            <td class="text-full">Dispense IP</td>
+            <td class="trace"></td>
+            <td class="type" title="match_status: exact">same name</td>
+            <td class="trace">2</td>
+            <td class="trace">T1, T2</td>
+            <td class="type"></td>
+        </tr><tr id="xact-032" style="background: #ffffff;">
+            <td class="id">xact-032</td>
+            <td class="text-full">Drug Return and Compliance</td>
+            <td class="trace"></td>
+            <td class="type" title="match_status: new">one table</td>
+            <td class="trace">1</td>
+            <td class="trace">T1</td>
+            <td class="type"></td>
+        </tr><tr id="xact-033" style="background: #ffffff;">
+            <td class="id">xact-033</td>
+            <td class="text-full">ADT Compliance</td>
+            <td class="trace"></td>
+            <td class="type" title="match_status: exact">same name</td>
+            <td class="trace">2</td>
+            <td class="trace">T1, T2</td>
+            <td class="type"></td>
+        </tr><tr id="xact-034" style="background: #ffffff;">
+            <td class="id">xact-034</td>
+            <td class="text-full">Pharmacogenetic Consent</td>
+            <td class="trace"></td>
+            <td class="type" title="match_status: exact">same name</td>
+            <td class="trace">2</td>
+            <td class="trace">T1, T2</td>
+            <td class="type"></td>
+        </tr><tr id="xact-035" style="background: #ffffff;">
+            <td class="id">xact-035</td>
+            <td class="text-full">Pharmacogenetic Sample</td>
+            <td class="trace"></td>
+            <td class="type" title="match_status: exact">same name</td>
+            <td class="trace">2</td>
+            <td class="trace">T1, T2</td>
+            <td class="type"></td>
+        </tr><tr id="xact-036" style="background: #e1f2fb;">
+            <td class="id">xact-036</td>
+            <td class="text-full"><strong>Pharmacokinetic Sample</strong><br/><span class='variations'>≈ Pharmacokinetic Sample (at any time during visit)</span></td>
+            <td class="trace"></td>
+            <td class="type" title="match_status: fuzzy_auto">near match, accepted</td>
+            <td class="trace">2</td>
+            <td class="trace">T1, T2</td>
+            <td class="type"></td>
+        </tr><tr id="xact-037" style="background: #ffffff;">
+            <td class="id">xact-037</td>
+            <td class="text-full">COVID-19 Informed Consent/Reconsent (where applicable)</td>
+            <td class="trace"></td>
+            <td class="type" title="match_status: new">one table</td>
+            <td class="trace">1</td>
+            <td class="trace">T2</td>
+            <td class="type"></td>
+        </tr><tr id="xact-038" style="background: #ffffff;">
+            <td class="id">xact-038</td>
+            <td class="text-full">Access IWRS for IP assignment</td>
+            <td class="trace"></td>
+            <td class="type" title="match_status: new">one table</td>
+            <td class="trace">1</td>
+            <td class="trace">T2</td>
+            <td class="type"></td>
+        </tr><tr id="xact-039" style="background: #ffffff;">
+            <td class="id">xact-039</td>
+            <td class="text-full">IP Compliance and Accountability</td>
+            <td class="trace"></td>
+            <td class="type" title="match_status: new">one table</td>
+            <td class="trace">1</td>
+            <td class="trace">T2</td>
+            <td class="type"></td>
+        </tr><tr id="xact-040" style="background: #ffffff;">
+            <td class="id">xact-040</td>
+            <td class="text-full">IP Return</td>
+            <td class="trace"></td>
+            <td class="type" title="match_status: new">one table</td>
+            <td class="trace">1</td>
+            <td class="trace">T2</td>
+            <td class="type"></td>
+        </tr></tbody>
+            </table>
+        </div>
+    </div>
+    
+    <div class="comp">
+        <div class="comp-header collapsible" style="background: #6c757d;" onclick="toggleSection(this)">
+            <span class="comp-title"><span class="toggle-icon">▼</span> Unified Annotations</span>
+            <span class="comp-desc">25 annotations (0% dedup from 25)</span>
+        </div>
+        <div class="comp-body">
+            
+            <div class="annot-section">
+                <div class="annot-type-header" style="background: #5a6268;">Footnote (25)</div>
+                <table class="comp-table">
+                    <thead><tr>
+                        <th>xannot_id</th><th>markers</th><th>#</th><th>text</th><th>scope</th><th title="The numbered section, appendix, attachment, table or figure of the protocol that the text points at">points to</th>
+                    </tr></thead>
+                    <tbody><tr id="xannot-001" style="background: #f3e8f8;">
+                <td class="id">xannot-001 <span class="mk">1</span> <a class="ingrid" href="#" onclick="showInGrid(&quot;xannot-001&quot;); return false;" title="Show where this annotation applies in the schedule" aria-label="Show where this annotation applies in the schedule"><svg class="ico" width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="8" cy="8" r="1.8" fill="currentColor"/></svg></a></td>
+                <td class="trace">T1:a</td>
+                <td class="trace">1</td>
+                <td class="text-full" title="Performed for all patients, including those prematurely discontinued after randomization (Visit 2).">Performed for all patients, including those prematurely discontinued after randomization (Visit 2).</td>
+                <td class="trace"><span class="scope-cols" title="Timeline columns: 1 total">6/ET</span></td>
+                <td class="type"></td>
+            </tr><tr id="xannot-002" style="background: #f3e8f8;">
+                <td class="id">xannot-002 <span class="mk">2</span> <a class="ingrid" href="#" onclick="showInGrid(&quot;xannot-002&quot;); return false;" title="Show where this annotation applies in the schedule" aria-label="Show where this annotation applies in the schedule"><svg class="ico" width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="8" cy="8" r="1.8" fill="currentColor"/></svg></a></td>
+                <td class="trace">T1:b</td>
+                <td class="trace">1</td>
+                <td class="text-full" title="Clinical findings upon termination must be followed until the condition returns to prestudy status or can be explained as unrelated to investigational product. If necessary, an additional follow-up visit should be scheduled.">Clinical findings upon termination must be followed until the condition returns to prestudy status or can be explained as unrelated to investigational product. If necessary, an additional follow-up visit should be scheduled.</td>
+                <td class="trace"><span class="scope-cols" title="Timeline columns: 1 total">6/ET</span></td>
+                <td class="type"></td>
+            </tr><tr id="xannot-003" style="background: #fff;">
+                <td class="id">xannot-003 <span class="mk">3</span> <a class="ingrid" href="#" onclick="showInGrid(&quot;xannot-003&quot;); return false;" title="Show where this annotation applies in the schedule" aria-label="Show where this annotation applies in the schedule"><svg class="ico" width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="8" cy="8" r="1.8" fill="currentColor"/></svg></a></td>
+                <td class="trace">T1:c</td>
+                <td class="trace">1</td>
+                <td class="text-full" title="Verified Clinical Trials database check to be performed, where applicable.">Verified Clinical Trials database check to be performed, where applicable.</td>
+                <td class="trace"><span class="scope-acts" title="Activities">Verified Clinical Trials Check</span></td>
+                <td class="type"></td>
+            </tr><tr id="xannot-004" style="background: #fff;">
+                <td class="id">xannot-004 <span class="mk">4</span> <a class="ingrid" href="#" onclick="showInGrid(&quot;xannot-004&quot;); return false;" title="Show where this annotation applies in the schedule" aria-label="Show where this annotation applies in the schedule"><svg class="ico" width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="8" cy="8" r="1.8" fill="currentColor"/></svg></a></td>
+                <td class="trace">T1:d</td>
+                <td class="trace">1</td>
+                <td class="text-full" title="Clinical laboratory tests include hematology, serum chemistry, urinalysis (including urine myoglobin in patients with creatine phosphokinase levels &gt; 1000 U/L or as clinically indicated for any rise in creatine phosphokinase levels or as necessitated by symptoms), as well as serum pregnancy test in women of childbearing potential.">Clinical laboratory tests include hematology, serum chemistry, urinalysis (including urine myoglobin in patients with creatine phosphokinase levels &gt; 1000 U/L or as clinically indicated for any rise in creatine phosphokinase levels or as necessitated by symptoms), as well as serum pregnancy test in women of childbearing potential.</td>
+                <td class="trace"><span class="scope-acts" title="Activities">Clinical Laboratory Tests | Serum Pregnancy Test</span></td>
+                <td class="type"></td>
+            </tr><tr id="xannot-005" style="background: #fff;">
+                <td class="id">xannot-005 <span class="mk">5</span> <a class="ingrid" href="#" onclick="showInGrid(&quot;xannot-005&quot;); return false;" title="Show where this annotation applies in the schedule" aria-label="Show where this annotation applies in the schedule"><svg class="ico" width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="8" cy="8" r="1.8" fill="currentColor"/></svg></a></td>
+                <td class="trace">T1:e</td>
+                <td class="trace">1</td>
+                <td class="text-full" title="Urine drug screen, blood alcohol concentration (by Breathalyzer), and serum pregnancy test can be repeated at random at request of investigator.">Urine drug screen, blood alcohol concentration (by Breathalyzer), and serum pregnancy test can be repeated at random at request of investigator.</td>
+                <td class="trace"><span class="scope-acts" title="Activities">Clinical Laboratory Tests | Serum Pregnancy Test | Urine Drug Screen (+1)</span></td>
+                <td class="type"></td>
+            </tr><tr id="xannot-006" style="background: #fff;">
+                <td class="id">xannot-006 <span class="mk">6</span> <a class="ingrid" href="#" onclick="showInGrid(&quot;xannot-006&quot;); return false;" title="Show where this annotation applies in the schedule" aria-label="Show where this annotation applies in the schedule"><svg class="ico" width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="8" cy="8" r="1.8" fill="currentColor"/></svg></a></td>
+                <td class="trace">T1:f</td>
+                <td class="trace">1</td>
+                <td class="text-full" title="Height will be measured only at Visit 1 (Screening). Waist circumference will be measured at Visits 2 and 6/ET.">Height will be measured only at Visit 1 (Screening). Waist circumference will be measured at Visits 2 and 6/ET.</td>
+                <td class="trace"><span class="scope-acts" title="Activities">Vital Signs</span></td>
+                <td class="type"></td>
+            </tr><tr id="xannot-007" style="background: #fff;">
+                <td class="id">xannot-007 <span class="mk">7</span> <a class="ingrid" href="#" onclick="showInGrid(&quot;xannot-007&quot;); return false;" title="Show where this annotation applies in the schedule" aria-label="Show where this annotation applies in the schedule"><svg class="ico" width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="8" cy="8" r="1.8" fill="currentColor"/></svg></a></td>
+                <td class="trace">T1:g</td>
+                <td class="trace">1</td>
+                <td class="text-full" title="SAFER/remote telephone interview will be scheduled and implemented before Visit 2 (Baseline) for patients who meet the screening criteria at Visit 1. The patient’s SAFER evaluation score should be reviewed before Visit 2 to confirm eligibility.">SAFER/remote telephone interview will be scheduled and implemented before Visit 2 (Baseline) for patients who meet the screening criteria at Visit 1. The patient’s SAFER evaluation score should be reviewed before Visit 2 to confirm eligibility.</td>
+                <td class="trace"><span class="scope-acts" title="Activities">SAFER Remote Telephone Interview | Evaluate SAFER Score Qualification</span></td>
+                <td class="type"></td>
+            </tr><tr id="xannot-008" style="background: #fff;">
+                <td class="id">xannot-008 <span class="mk">8</span> <a class="ingrid" href="#" onclick="showInGrid(&quot;xannot-008&quot;); return false;" title="Show where this annotation applies in the schedule" aria-label="Show where this annotation applies in the schedule"><svg class="ico" width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="8" cy="8" r="1.8" fill="currentColor"/></svg></a></td>
+                <td class="trace">T1:h</td>
+                <td class="trace">1</td>
+                <td class="text-full" title="Pharmacogenetic consent may be obtained at any time between Visit 1 (Screening) and Visit 6 (Week 6).">Pharmacogenetic consent may be obtained at any time between Visit 1 (Screening) and Visit 6 (Week 6).</td>
+                <td class="trace"><span class="scope-acts" title="Activities">Pharmacogenetic Consent</span></td>
+                <td class="type"></td>
+            </tr><tr id="xannot-009" style="background: #fff;">
+                <td class="id">xannot-009 <span class="mk">9</span> <a class="ingrid" href="#" onclick="showInGrid(&quot;xannot-009&quot;); return false;" title="Show where this annotation applies in the schedule" aria-label="Show where this annotation applies in the schedule"><svg class="ico" width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="8" cy="8" r="1.8" fill="currentColor"/></svg></a></td>
+                <td class="trace">T1:i</td>
+                <td class="trace">1</td>
+                <td class="text-full" title="Pharmacogenetic sample (1 per patient for the entire study) may be obtained from randomized patients at any time between Visit 2 (Baseline) and Visit 6 (Week 6).">Pharmacogenetic sample (1 per patient for the entire study) may be obtained from randomized patients at any time between Visit 2 (Baseline) and Visit 6 (Week 6).</td>
+                <td class="trace"><span class="scope-acts" title="Activities">Pharmacogenetic Sample</span></td>
+                <td class="type"></td>
+            </tr><tr id="xannot-010" style="background: #fff;">
+                <td class="id">xannot-010 <span class="mk">10</span> <a class="ingrid" href="#" onclick="showInGrid(&quot;xannot-010&quot;); return false;" title="Show where this annotation applies in the schedule" aria-label="Show where this annotation applies in the schedule"><svg class="ico" width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="8" cy="8" r="1.8" fill="currentColor"/></svg></a></td>
+                <td class="trace">T1:j</td>
+                <td class="trace">1</td>
+                <td class="text-full" title="Can be taken at any time during visits 4, 5 and 6/ET.">Can be taken at any time during visits 4, 5 and 6/ET.</td>
+                <td class="trace"><span class="scope-acts" title="Activities">Pharmacokinetic Sample</span></td>
+                <td class="type"></td>
+            </tr><tr id="xannot-011" style="background: #f3e8f8;">
+                <td class="id">xannot-011 <span class="mk">11</span> <a class="ingrid" href="#" onclick="showInGrid(&quot;xannot-011&quot;); return false;" title="Show where this annotation applies in the schedule" aria-label="Show where this annotation applies in the schedule"><svg class="ico" width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="8" cy="8" r="1.8" fill="currentColor"/></svg></a></td>
+                <td class="trace">T1:k</td>
+                <td class="trace">1</td>
+                <td class="text-full" title="May be up to an additional 7 days (up to 21 days) if needed with Sponsor approval.">May be up to an additional 7 days (up to 21 days) if needed with Sponsor approval.</td>
+                <td class="trace"><span class="scope-cols" title="Timeline columns: 2 total">1 | 2</span></td>
+                <td class="type"></td>
+            </tr><tr id="xannot-012" style="background: #fff;">
+                <td class="id">xannot-012 <span class="mk">12</span></td>
+                <td class="trace">T1:g1</td>
+                <td class="trace">1</td>
+                <td class="text-full" title="Note: After completion of Visit 6/ET, patients will be treated at the discretion of the investigator or designee.">Note: After completion of Visit 6/ET, patients will be treated at the discretion of the investigator or designee.</td>
+                <td class="trace"><span class="scope-table" title="Table-level">table</span></td>
+                <td class="type"></td>
+            </tr><tr id="xannot-013" style="background: #fff;">
+                <td class="id">xannot-013 <span class="mk">13</span> <a class="ingrid" href="#" onclick="showInGrid(&quot;xannot-013&quot;); return false;" title="Show where this annotation applies in the schedule" aria-label="Show where this annotation applies in the schedule"><svg class="ico" width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="8" cy="8" r="1.8" fill="currentColor"/></svg></a></td>
+                <td class="trace">T2:*</td>
+                <td class="trace">1</td>
+                <td class="text-full" title="Note: If necessary, Visits 3 to 7 may be conducted up to 3 days before or after the scheduled visits. The visit windows for each scheduled visit are relative to Visit 2 for Visits 3 through 7. In extenuating circumstances, the visit window for Visits 3 to 7 (inclusive) may be extended an additional 4 days (ie, +7 days) from the scheduled visit. All attempts should be made to conduct the visit within the pre-defined ± 3 day window as well as to avoid a potential lapse in IP during the extension of a visit window.">Note: If necessary, Visits 3 to 7 may be conducted up to 3 days before or after the scheduled visits. The visit windows for each scheduled visit are relative to Visit 2 for Visits 3 through 7. In extenuating circumstances, the visit window for Visits 3 to 7 (inclusive) may be extended an additional 4 days (ie, +7 days) from the scheduled visit. All attempts should be made to conduct the visit within the pre-defined ± 3 day window as well as to avoid a potential lapse in IP during the extension of a visit window.</td>
+                <td class="trace"><span class="scope-props" title="Schedule properties">Study Day</span></td>
+                <td class="type"></td>
+            </tr><tr id="xannot-014" style="background: #fff;">
+                <td class="id">xannot-014 <span class="mk">14</span> <a class="ingrid" href="#" onclick="showInGrid(&quot;xannot-014&quot;); return false;" title="Show where this annotation applies in the schedule" aria-label="Show where this annotation applies in the schedule"><svg class="ico" width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="8" cy="8" r="1.8" fill="currentColor"/></svg></a></td>
+                <td class="trace">T2:a</td>
+                <td class="trace">1</td>
+                <td class="text-full" title="Clinical laboratory assessments, including serum pregnancy testing (WOCBP only) may be performed at an off-site laboratory facility if needed. If patient is unable or unwilling to travel to an alternate laboratory facility, the laboratory assessment at the scheduled timepoint may be omitted. For WOCBP, study sites may provide urine pregnancy test kits for at-home testing. Study personnel should document the patient’s verbal confirmation of pregnancy test results in the source document. Patient should have clinical laboratory testing performed as an Unscheduled assessment during the Safety Follow-up period. Clinical findings upon termination must be followed until the condition returns to prestudy status or can be explained as unrelated to investigational product. If necessary, an additional follow-up visit should be scheduled.">Clinical laboratory assessments, including serum pregnancy testing (WOCBP only) may be performed at an off-site laboratory facility if needed. If patient is unable or unwilling to travel to an alternate laboratory facility, the laboratory assessment at the scheduled timepoint may be omitted. For WOCBP, study sites may provide urine pregnancy test kits for at-home testing. Study personnel should document the patient’s verbal confirmation of pregnancy test results in the source document. Patient should have clinical laboratory testing performed as an Unscheduled assessment during the Safety Follow-up period. Clinical findings upon termination must be followed until the condition returns to prestudy status or can be explained as unrelated to investigational product. If necessary, an additional follow-up visit should be scheduled.</td>
+                <td class="trace"><span class="scope-acts" title="Activities">Clinical Laboratory Tests | Serum Pregnancy Test</span></td>
+                <td class="type"></td>
+            </tr><tr id="xannot-015" style="background: #fff;">
+                <td class="id">xannot-015 <span class="mk">15</span> <a class="ingrid" href="#" onclick="showInGrid(&quot;xannot-015&quot;); return false;" title="Show where this annotation applies in the schedule" aria-label="Show where this annotation applies in the schedule"><svg class="ico" width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="8" cy="8" r="1.8" fill="currentColor"/></svg></a></td>
+                <td class="trace">T2:b</td>
+                <td class="trace">1</td>
+                <td class="text-full" title="If visit is being performed remotely, this assessment may be omitted. Vital signs should be obtained at the next scheduled in-home or in-person visit.">If visit is being performed remotely, this assessment may be omitted. Vital signs should be obtained at the next scheduled in-home or in-person visit.</td>
+                <td class="trace"><span class="scope-acts" title="Activities">Vital Signs</span></td>
+                <td class="type"></td>
+            </tr><tr id="xannot-016" style="background: #fff;">
+                <td class="id">xannot-016 <span class="mk">16</span> <a class="ingrid" href="#" onclick="showInGrid(&quot;xannot-016&quot;); return false;" title="Show where this annotation applies in the schedule" aria-label="Show where this annotation applies in the schedule"><svg class="ico" width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="8" cy="8" r="1.8" fill="currentColor"/></svg></a></td>
+                <td class="trace">T2:c</td>
+                <td class="trace">1</td>
+                <td class="text-full" title="If visit is being performed remotely, this assessment may be omitted at this timepoint. Patient should have this assessment performed as an Unscheduled assessment during the Safety Follow-up period. Clinical findings upon termination must be followed until the condition returns to prestudy status or can be explained as unrelated to investigational product. If necessary, an additional follow-up visit should be scheduled.">If visit is being performed remotely, this assessment may be omitted at this timepoint. Patient should have this assessment performed as an Unscheduled assessment during the Safety Follow-up period. Clinical findings upon termination must be followed until the condition returns to prestudy status or can be explained as unrelated to investigational product. If necessary, an additional follow-up visit should be scheduled.</td>
+                <td class="trace"><span class="scope-acts" title="Activities">Electrocardiogram | Physical Examination</span></td>
+                <td class="type"></td>
+            </tr><tr id="xannot-017" style="background: #fff;">
+                <td class="id">xannot-017 <span class="mk">17</span> <a class="ingrid" href="#" onclick="showInGrid(&quot;xannot-017&quot;); return false;" title="Show where this annotation applies in the schedule" aria-label="Show where this annotation applies in the schedule"><svg class="ico" width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="8" cy="8" r="1.8" fill="currentColor"/></svg></a></td>
+                <td class="trace">T2:d</td>
+                <td class="trace">1</td>
+                <td class="text-full" title="If visit is being performed remotely, study staff should verbally administer the Short-Form 12 (SF-12) to the patient and record the patient’s responses in the source.">If visit is being performed remotely, study staff should verbally administer the Short-Form 12 (SF-12) to the patient and record the patient’s responses in the source.</td>
+                <td class="trace"><span class="scope-acts" title="Activities">SF-12</span></td>
+                <td class="type"></td>
+            </tr><tr id="xannot-018" style="background: #fff;">
+                <td class="id">xannot-018 <span class="mk">18</span> <a class="ingrid" href="#" onclick="showInGrid(&quot;xannot-018&quot;); return false;" title="Show where this annotation applies in the schedule" aria-label="Show where this annotation applies in the schedule"><svg class="ico" width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="8" cy="8" r="1.8" fill="currentColor"/></svg></a></td>
+                <td class="trace">T2:e</td>
+                <td class="trace">1</td>
+                <td class="text-full" title="Movement scales may be conducted remotely if needed. Where possible, telemedicine virtual visits or video calls (without recording) should be used to conduct this assessment remotely. If a scale item cannot be assessed, the item may be skipped and the source should indicate the item could not be assessed. Movement scales may only be conducted by raters certified on the scale.">Movement scales may be conducted remotely if needed. Where possible, telemedicine virtual visits or video calls (without recording) should be used to conduct this assessment remotely. If a scale item cannot be assessed, the item may be skipped and the source should indicate the item could not be assessed. Movement scales may only be conducted by raters certified on the scale.</td>
+                <td class="trace"><span class="scope-acts" title="Activities">BARS/AIMS/SAS</span></td>
+                <td class="type"></td>
+            </tr><tr id="xannot-019" style="background: #fff;">
+                <td class="id">xannot-019 <span class="mk">19</span> <a class="ingrid" href="#" onclick="showInGrid(&quot;xannot-019&quot;); return false;" title="Show where this annotation applies in the schedule" aria-label="Show where this annotation applies in the schedule"><svg class="ico" width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="8" cy="8" r="1.8" fill="currentColor"/></svg></a></td>
+                <td class="trace">T2:f</td>
+                <td class="trace">1</td>
+                <td class="text-full" title="C-SSRS may be assessed remotely if needed by a certified rater. Clinicians with a valid C-SSRS certification for another Allergan study may rate C-SSRS in the event the study-certified rater is unavailable to complete the assessment.">C-SSRS may be assessed remotely if needed by a certified rater. Clinicians with a valid C-SSRS certification for another Allergan study may rate C-SSRS in the event the study-certified rater is unavailable to complete the assessment.</td>
+                <td class="trace"><span class="scope-acts" title="Activities">C-SSRS</span></td>
+                <td class="type"></td>
+            </tr><tr id="xannot-020" style="background: #fff;">
+                <td class="id">xannot-020 <span class="mk">20</span> <a class="ingrid" href="#" onclick="showInGrid(&quot;xannot-020&quot;); return false;" title="Show where this annotation applies in the schedule" aria-label="Show where this annotation applies in the schedule"><svg class="ico" width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="8" cy="8" r="1.8" fill="currentColor"/></svg></a></td>
+                <td class="trace">T2:g</td>
+                <td class="trace">1</td>
+                <td class="text-full" title="As an alternative to in-person drug dispensing, IP may be dispensed via a secure delivery method (where permissible by local, statutory, federal/country law) and after approval by Sponsor.">As an alternative to in-person drug dispensing, IP may be dispensed via a secure delivery method (where permissible by local, statutory, federal/country law) and after approval by Sponsor.</td>
+                <td class="trace"><span class="scope-acts" title="Activities">Dispense IP</span></td>
+                <td class="type"></td>
+            </tr><tr id="xannot-021" style="background: #fff;">
+                <td class="id">xannot-021 <span class="mk">21</span> <a class="ingrid" href="#" onclick="showInGrid(&quot;xannot-021&quot;); return false;" title="Show where this annotation applies in the schedule" aria-label="Show where this annotation applies in the schedule"><svg class="ico" width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="8" cy="8" r="1.8" fill="currentColor"/></svg></a></td>
+                <td class="trace">T2:h</td>
+                <td class="trace">1</td>
+                <td class="text-full" title="Assessment of compliance should be performed at each visit. For remote visits where a pill count by site staff may not be possible, patient reported compliance is to be documented. Patient reported verification of IP capsules remaining should be documented.">Assessment of compliance should be performed at each visit. For remote visits where a pill count by site staff may not be possible, patient reported compliance is to be documented. Patient reported verification of IP capsules remaining should be documented.</td>
+                <td class="trace"><span class="scope-acts" title="Activities">IP Compliance and Accountability | ADT Compliance</span></td>
+                <td class="type"></td>
+            </tr><tr id="xannot-022" style="background: #fff;">
+                <td class="id">xannot-022 <span class="mk">22</span> <a class="ingrid" href="#" onclick="showInGrid(&quot;xannot-022&quot;); return false;" title="Show where this annotation applies in the schedule" aria-label="Show where this annotation applies in the schedule"><svg class="ico" width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="8" cy="8" r="1.8" fill="currentColor"/></svg></a></td>
+                <td class="trace">T2:i</td>
+                <td class="trace">1</td>
+                <td class="text-full" title="To minimize undue burden on the patient, IP return may be less frequent during the time that visits are being conducted remotely but should occur no less frequently than monthly.">To minimize undue burden on the patient, IP return may be less frequent during the time that visits are being conducted remotely but should occur no less frequently than monthly.</td>
+                <td class="trace"><span class="scope-acts" title="Activities">IP Return</span></td>
+                <td class="type"></td>
+            </tr><tr id="xannot-023" style="background: #fff;">
+                <td class="id">xannot-023 <span class="mk">23</span> <a class="ingrid" href="#" onclick="showInGrid(&quot;xannot-023&quot;); return false;" title="Show where this annotation applies in the schedule" aria-label="Show where this annotation applies in the schedule"><svg class="ico" width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="8" cy="8" r="1.8" fill="currentColor"/></svg></a></td>
+                <td class="trace">T2:j</td>
+                <td class="trace">1</td>
+                <td class="text-full" title="If visit is being performed remotely or at an alternate laboratory facility, this assessment may be omitted. In consideration of the processing time required, pharmacokinetic samples should not be collected during in-home visits.">If visit is being performed remotely or at an alternate laboratory facility, this assessment may be omitted. In consideration of the processing time required, pharmacokinetic samples should not be collected during in-home visits.</td>
+                <td class="trace"><span class="scope-acts" title="Activities">Pharmacokinetic Sample</span></td>
+                <td class="type"></td>
+            </tr><tr id="xannot-024" style="background: #fff;">
+                <td class="id">xannot-024 <span class="mk">24</span> <a class="ingrid" href="#" onclick="showInGrid(&quot;xannot-024&quot;); return false;" title="Show where this annotation applies in the schedule" aria-label="Show where this annotation applies in the schedule"><svg class="ico" width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="8" cy="8" r="1.8" fill="currentColor"/></svg></a></td>
+                <td class="trace">T2:k</td>
+                <td class="trace">1</td>
+                <td class="text-full" title="Pharmacogenetic consent may be obtained at any time between Visit 1(Screening) and Visit 6 (Week 6). Pharmacogenetic consent may not be obtained remotely.">Pharmacogenetic consent may be obtained at any time between Visit 1(Screening) and Visit 6 (Week 6). Pharmacogenetic consent may not be obtained remotely.</td>
+                <td class="trace"><span class="scope-acts" title="Activities">Pharmacogenetic Consent</span></td>
+                <td class="type"></td>
+            </tr><tr id="xannot-025" style="background: #fff;">
+                <td class="id">xannot-025 <span class="mk">25</span> <a class="ingrid" href="#" onclick="showInGrid(&quot;xannot-025&quot;); return false;" title="Show where this annotation applies in the schedule" aria-label="Show where this annotation applies in the schedule"><svg class="ico" width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="8" cy="8" r="1.8" fill="currentColor"/></svg></a></td>
+                <td class="trace">T2:l</td>
+                <td class="trace">1</td>
+                <td class="text-full" title="Pharmacogenetic sample (1 per patient for the entire study) may be obtained from randomized patients at any time between Visit 2 (Baseline) and Visit 6 (Week 6). To be omitted if sampling is not possible due to remote visits being completed.">Pharmacogenetic sample (1 per patient for the entire study) may be obtained from randomized patients at any time between Visit 2 (Baseline) and Visit 6 (Week 6). To be omitted if sampling is not possible due to remote visits being completed.</td>
+                <td class="trace"><span class="scope-acts" title="Activities">Pharmacogenetic Sample</span></td>
+                <td class="type"></td>
+            </tr></tbody>
+                </table>
+            </div>
+        
+        </div>
+    </div>
+
+    </div>
+    <script>
+        function toggleSection(header) {
+            const comp = header.closest('.comp');
+            comp.classList.toggle('collapsed');
+        }
+        function toggleGrid(title) {
+            const section = title.closest('.collapsible-section');
+            section.classList.toggle('collapsed');
+        }
+        function expandAll() {
+            document.querySelectorAll('.comp, .collapsible-section').forEach(c => c.classList.remove('collapsed'));
+        }
+        function collapseAll() {
+            document.querySelectorAll('.comp, .collapsible-section').forEach(c => c.classList.add('collapsed'));
+        }
+        // Start with component sections collapsed, grids expanded
+        document.querySelectorAll('.comp:not(.start-open)').forEach(c => c.classList.add('collapsed'));
+        // Note markers link to #xannot-NNN: open its section, then scroll to the row
+        function showNote() {
+            const row = location.hash && document.getElementById(location.hash.slice(1));
+            if (!row) return;
+            const comp = row.closest('.comp');
+            if (comp) comp.classList.remove('collapsed');
+            row.scrollIntoView({block: 'center'});
+        }
+        window.addEventListener('hashchange', showNote);
+        showNote();
+        // And back: highlight every grid place carrying this note's marker, scroll to the first
+        function showInGrid(xid) {
+            document.querySelectorAll('.hit').forEach(e => e.classList.remove('hit'));
+            const places = [...document.querySelectorAll('.grid-table sup.mk a[href="#' + xid + '"]')]
+                .map(a => a.closest('td, th'));
+            places.forEach(e => {
+                e.classList.add('hit');
+                const sec = e.closest('.collapsible-section');
+                if (sec) sec.classList.remove('collapsed');
+            });
+            if (places.length) places[0].scrollIntoView({block: 'center', inline: 'center'});
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,1930 @@
+{
+  "schema_name": "soa-table-extraction",
+  "schema_version": "1.1",
+  "extraction_metadata": {
+    "extracted_at": "2026-11-22T19:27:05+00:00",
+    "extractor": "Claude, PDF_TO_JSON_PROMPT single-pass",
+    "prompt_version": "3.9.4",
+    "source_document": {
+      "filename": "NCT04304508_soa.pdf",
+      "document_type": "protocol",
+      "document_version": "1.0"
+    },
+    "extraction_status": "ready_for_resolution",
+    "extraction_notes": "Single printed table over doc pp.12-13 (header reprinted on p.13, rows 25-29 left out, not renumbered); footnotes a-g on p.13 and h-n on p.14. Text layer present, vector rule lines present; marks verified by pdftotext -bbox column binning. Wingdings private-use glyphs restored: U+F028 -> ☎, U+F0AE -> →, U+F0DF/U+F0E0 -> ←/→.",
+    "model": "claude-opus-5-5"
+  },
+  "table_metadata": {
+    "table_number": 1,
+    "table_type": "main_soa",
+    "table_title": "Schedule of Activities (SoA)",
+    "table_purpose": "Main study schedule: screening, intervention period (Visits 2-12, early termination 12a) and safety follow-up (Visit 13)",
+    "page_start": 12,
+    "page_end": 13,
+    "notes": "Title taken from section heading '1.3 Schedule of Activities (SoA)'; no table caption printed. One label column (L=1); data columns 2-15 = Visits 1,2,3,4,5,6,7,8,9,10,11,12,12a,13. The table continues onto p.13 under a reprinted header (one printed table, not a continuation). On the p.13 reprint the Screening cell prints '(SCR)*' instead of '(SCR)a' and Visit 4 has no superscript g; reprinted header not recorded. Adverse events / Outcome events: one merged cell spanning columns 3-15 with a double-headed arrow and 'continuously' (the run of '=' characters is collapsed in cell_value). Grey-printed marks in the Early termination column (12a) transcribed as X; colour not recorded."
+  },
+  "schedule_properties": [
+    {
+      "row_position": 1,
+      "property_name": "Study periods",
+      "property_name_source": {
+        "row_position": 1,
+        "column_position": 1,
+        "cell_value": "Study periods"
+      },
+      "property_type": "epoch",
+      "hierarchical_level": 1,
+      "property_comment": "Study periods: Screening (SCR), Intervention period (spanning Visits 2-12a), Safety Follow-up (SFU). The label cell 'Study periods / (Duration)' spans header rows 1-2 and is split by printed line (section 3); period names are epochs. The Screening and Safety Follow-up cells span rows 1-2; their period names are recorded here.",
+      "table_number": 1
+    },
+    {
+      "row_position": 2,
+      "property_name": "Duration",
+      "property_name_source": {
+        "row_position": 2,
+        "column_position": 1,
+        "cell_value": "(Duration)"
+      },
+      "property_type": "other",
+      "hierarchical_level": 2,
+      "property_comment": "Duration line under each period: '(from RND until End of Treatment visit [EOT], 26 to 52 weeks)' spanning Visits 2-12, the 'Early termination (ET)' sub-band over Visit 12a, and '(14 days after EOT or ET)' printed as the second part of the Safety Follow-up cell. Mixes a period duration with a sub-period name (Early termination), so typed 'other'; given a level because the Early termination cell sets Visit 12a apart within the Intervention period (see Decision D1).",
+      "table_number": 1
+    },
+    {
+      "row_position": 3,
+      "property_name": "Visit number",
+      "property_name_source": {
+        "row_position": 3,
+        "column_position": 1,
+        "cell_value": "Visit number"
+      },
+      "property_type": "visit",
+      "hierarchical_level": 3,
+      "property_comment": "Visit numbers 1-13 incl. 12a (early termination visit). Visit identifiers, so 'visit'.",
+      "table_number": 1
+    },
+    {
+      "row_position": 4,
+      "property_name": "Visit type",
+      "property_name_source": {
+        "row_position": 4,
+        "column_position": 1,
+        "cell_value": "Visit type"
+      },
+      "property_type": "modality",
+      "hierarchical_level": 4,
+      "property_comment": "How each visit is conducted: 'site' or telephone symbol (phone call); Visit 13 '☎ (site)'. Modality of the visit (see Decision D3 for the level).",
+      "table_number": 1
+    },
+    {
+      "row_position": 5,
+      "property_name": "Week [W] Study day and allowed deviations",
+      "property_name_source": {
+        "row_position": 5,
+        "column_position": 1,
+        "cell_value": "Week [W]\nStudy day and allowed\ndeviations"
+      },
+      "property_type": "week",
+      "hierarchical_level": 5,
+      "property_comment": "One ruled header row whose cells print two lines: a week label (SCR, RND/W0, W2 ... W52/EOT, Any time, EOT or ET +2 weeks) and the study day with allowed deviation (-2 → 1, 1, 15±4 ... 379+7). Typed 'week' from the first printed line and the first part of the row label; both lines kept in the cell value (see Decision D2).",
+      "table_number": 1
+    }
+  ],
+  "schedule_grid": [
+    {
+      "table_number": 1,
+      "row_position": 1,
+      "column_position": 2,
+      "cell_value": "Screening (SCR)",
+      "annotation_markers": "a"
+    },
+    {
+      "table_number": 1,
+      "row_position": 1,
+      "column_position": 3,
+      "cell_value": "Intervention period",
+      "is_merged_cell": true,
+      "merged_cell_range": "3:14"
+    },
+    {
+      "table_number": 1,
+      "row_position": 1,
+      "column_position": 4,
+      "cell_value": "Intervention period",
+      "is_merged_cell": true,
+      "merged_cell_range": "3:14"
+    },
+    {
+      "table_number": 1,
+      "row_position": 1,
+      "column_position": 5,
+      "cell_value": "Intervention period",
+      "is_merged_cell": true,
+      "merged_cell_range": "3:14"
+    },
+    {
+      "table_number": 1,
+      "row_position": 1,
+      "column_position": 6,
+      "cell_value": "Intervention period",
+      "is_merged_cell": true,
+      "merged_cell_range": "3:14"
+    },
+    {
+      "table_number": 1,
+      "row_position": 1,
+      "column_position": 7,
+      "cell_value": "Intervention period",
+      "is_merged_cell": true,
+      "merged_cell_range": "3:14"
+    },
+    {
+      "table_number": 1,
+      "row_position": 1,
+      "column_position": 8,
+      "cell_value": "Intervention period",
+      "is_merged_cell": true,
+      "merged_cell_range": "3:14"
+    },
+    {
+      "table_number": 1,
+      "row_position": 1,
+      "column_position": 9,
+      "cell_value": "Intervention period",
+      "is_merged_cell": true,
+      "merged_cell_range": "3:14"
+    },
+    {
+      "table_number": 1,
+      "row_position": 1,
+      "column_position": 10,
+      "cell_value": "Intervention period",
+      "is_merged_cell": true,
+      "merged_cell_range": "3:14"
+    },
+    {
+      "table_number": 1,
+      "row_position": 1,
+      "column_position": 11,
+      "cell_value": "Intervention period",
+      "is_merged_cell": true,
+      "merged_cell_range": "3:14"
+    },
+    {
+      "table_number": 1,
+      "row_position": 1,
+      "column_position": 12,
+      "cell_value": "Intervention period",
+      "is_merged_cell": true,
+      "merged_cell_range": "3:14"
+    },
+    {
+      "table_number": 1,
+      "row_position": 1,
+      "column_position": 13,
+      "cell_value": "Intervention period",
+      "is_merged_cell": true,
+      "merged_cell_range": "3:14"
+    },
+    {
+      "table_number": 1,
+      "row_position": 1,
+      "column_position": 14,
+      "cell_value": "Intervention period",
+      "is_merged_cell": true,
+      "merged_cell_range": "3:14"
+    },
+    {
+      "table_number": 1,
+      "row_position": 1,
+      "column_position": 15,
+      "cell_value": "Safety Follow-up (SFU)"
+    },
+    {
+      "table_number": 1,
+      "row_position": 2,
+      "column_position": 2,
+      "cell_value": ""
+    },
+    {
+      "table_number": 1,
+      "row_position": 2,
+      "column_position": 3,
+      "cell_value": "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)",
+      "is_merged_cell": true,
+      "merged_cell_range": "3:13"
+    },
+    {
+      "table_number": 1,
+      "row_position": 2,
+      "column_position": 4,
+      "cell_value": "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)",
+      "is_merged_cell": true,
+      "merged_cell_range": "3:13"
+    },
+    {
+      "table_number": 1,
+      "row_position": 2,
+      "column_position": 5,
+      "cell_value": "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)",
+      "is_merged_cell": true,
+      "merged_cell_range": "3:13"
+    },
+    {
+      "table_number": 1,
+      "row_position": 2,
+      "column_position": 6,
+      "cell_value": "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)",
+      "is_merged_cell": true,
+      "merged_cell_range": "3:13"
+    },
+    {
+      "table_number": 1,
+      "row_position": 2,
+      "column_position": 7,
+      "cell_value": "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)",
+      "is_merged_cell": true,
+      "merged_cell_range": "3:13"
+    },
+    {
+      "table_number": 1,
+      "row_position": 2,
+      "column_position": 8,
+      "cell_value": "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)",
+      "is_merged_cell": true,
+      "merged_cell_range": "3:13"
+    },
+    {
+      "table_number": 1,
+      "row_position": 2,
+      "column_position": 9,
+      "cell_value": "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)",
+      "is_merged_cell": true,
+      "merged_cell_range": "3:13"
+    },
+    {
+      "table_number": 1,
+      "row_position": 2,
+      "column_position": 10,
+      "cell_value": "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)",
+      "is_merged_cell": true,
+      "merged_cell_range": "3:13"
+    },
+    {
+      "table_number": 1,
+      "row_position": 2,
+      "column_position": 11,
+      "cell_value": "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)",
+      "is_merged_cell": true,
+      "merged_cell_range": "3:13"
+    },
+    {
+      "table_number": 1,
+      "row_position": 2,
+      "column_position": 12,
+      "cell_value": "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)",
+      "is_merged_cell": true,
+      "merged_cell_range": "3:13"
+    },
+    {
+      "table_number": 1,
+      "row_position": 2,
+      "column_position": 13,
+      "cell_value": "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)",
+      "is_merged_cell": true,
+      "merged_cell_range": "3:13"
+    },
+    {
+      "table_number": 1,
+      "row_position": 2,
+      "column_position": 14,
+      "cell_value": "Early termination (ET)",
+      "annotation_markers": "b"
+    },
+    {
+      "table_number": 1,
+      "row_position": 2,
+      "column_position": 15,
+      "cell_value": "(14 days after EOT or ET)"
+    },
+    {
+      "table_number": 1,
+      "row_position": 3,
+      "column_position": 2,
+      "cell_value": "1"
+    },
+    {
+      "table_number": 1,
+      "row_position": 3,
+      "column_position": 3,
+      "cell_value": "2"
+    },
+    {
+      "table_number": 1,
+      "row_position": 3,
+      "column_position": 4,
+      "cell_value": "3"
+    },
+    {
+      "table_number": 1,
+      "row_position": 3,
+      "column_position": 5,
+      "cell_value": "4",
+      "annotation_markers": "g"
+    },
+    {
+      "table_number": 1,
+      "row_position": 3,
+      "column_position": 6,
+      "cell_value": "5"
+    },
+    {
+      "table_number": 1,
+      "row_position": 3,
+      "column_position": 7,
+      "cell_value": "6"
+    },
+    {
+      "table_number": 1,
+      "row_position": 3,
+      "column_position": 8,
+      "cell_value": "7"
+    },
+    {
+      "table_number": 1,
+      "row_position": 3,
+      "column_position": 9,
+      "cell_value": "8"
+    },
+    {
+      "table_number": 1,
+      "row_position": 3,
+      "column_position": 10,
+      "cell_value": "9"
+    },
+    {
+      "table_number": 1,
+      "row_position": 3,
+      "column_position": 11,
+      "cell_value": "10"
+    },
+    {
+      "table_number": 1,
+      "row_position": 3,
+      "column_position": 12,
+      "cell_value": "11"
+    },
+    {
+      "table_number": 1,
+      "row_position": 3,
+      "column_position": 13,
+      "cell_value": "12"
+    },
+    {
+      "table_number": 1,
+      "row_position": 3,
+      "column_position": 14,
+      "cell_value": "12a"
+    },
+    {
+      "table_number": 1,
+      "row_position": 3,
+      "column_position": 15,
+      "cell_value": "13"
+    },
+    {
+      "table_number": 1,
+      "row_position": 4,
+      "column_position": 2,
+      "cell_value": "site"
+    },
+    {
+      "table_number": 1,
+      "row_position": 4,
+      "column_position": 3,
+      "cell_value": "site"
+    },
+    {
+      "table_number": 1,
+      "row_position": 4,
+      "column_position": 4,
+      "cell_value": "☎"
+    },
+    {
+      "table_number": 1,
+      "row_position": 4,
+      "column_position": 5,
+      "cell_value": "site"
+    },
+    {
+      "table_number": 1,
+      "row_position": 4,
+      "column_position": 6,
+      "cell_value": "☎"
+    },
+    {
+      "table_number": 1,
+      "row_position": 4,
+      "column_position": 7,
+      "cell_value": "site"
+    },
+    {
+      "table_number": 1,
+      "row_position": 4,
+      "column_position": 8,
+      "cell_value": "☎"
+    },
+    {
+      "table_number": 1,
+      "row_position": 4,
+      "column_position": 9,
+      "cell_value": "site"
+    },
+    {
+      "table_number": 1,
+      "row_position": 4,
+      "column_position": 10,
+      "cell_value": "☎"
+    },
+    {
+      "table_number": 1,
+      "row_position": 4,
+      "column_position": 11,
+      "cell_value": "site"
+    },
+    {
+      "table_number": 1,
+      "row_position": 4,
+      "column_position": 12,
+      "cell_value": "☎"
+    },
+    {
+      "table_number": 1,
+      "row_position": 4,
+      "column_position": 13,
+      "cell_value": "site"
+    },
+    {
+      "table_number": 1,
+      "row_position": 4,
+      "column_position": 14,
+      "cell_value": "Site"
+    },
+    {
+      "table_number": 1,
+      "row_position": 4,
+      "column_position": 15,
+      "cell_value": "☎ (site)"
+    },
+    {
+      "table_number": 1,
+      "row_position": 5,
+      "column_position": 2,
+      "cell_value": "SCR -2 → 1"
+    },
+    {
+      "table_number": 1,
+      "row_position": 5,
+      "column_position": 3,
+      "cell_value": "RND/W0 1"
+    },
+    {
+      "table_number": 1,
+      "row_position": 5,
+      "column_position": 4,
+      "cell_value": "W2 15±4"
+    },
+    {
+      "table_number": 1,
+      "row_position": 5,
+      "column_position": 5,
+      "cell_value": "W4 29±4"
+    },
+    {
+      "table_number": 1,
+      "row_position": 5,
+      "column_position": 6,
+      "cell_value": "W8 57±4"
+    },
+    {
+      "table_number": 1,
+      "row_position": 5,
+      "column_position": 7,
+      "cell_value": "W13 92±4"
+    },
+    {
+      "table_number": 1,
+      "row_position": 5,
+      "column_position": 8,
+      "cell_value": "W20 141±4"
+    },
+    {
+      "table_number": 1,
+      "row_position": 5,
+      "column_position": 9,
+      "cell_value": "W26 183±4"
+    },
+    {
+      "table_number": 1,
+      "row_position": 5,
+      "column_position": 10,
+      "cell_value": "W32 225±4"
+    },
+    {
+      "table_number": 1,
+      "row_position": 5,
+      "column_position": 11,
+      "cell_value": "W39 274±4"
+    },
+    {
+      "table_number": 1,
+      "row_position": 5,
+      "column_position": 12,
+      "cell_value": "W46 323±4"
+    },
+    {
+      "table_number": 1,
+      "row_position": 5,
+      "column_position": 13,
+      "cell_value": "W52/EOT 365±4"
+    },
+    {
+      "table_number": 1,
+      "row_position": 5,
+      "column_position": 14,
+      "cell_value": "Any time ET+7"
+    },
+    {
+      "table_number": 1,
+      "row_position": 5,
+      "column_position": 15,
+      "cell_value": "EOT or ET +2 weeks 379+7",
+      "annotation_markers": "c"
+    }
+  ],
+  "activities": [
+    {
+      "table_number": 1,
+      "row_position": 6,
+      "source_page": 12,
+      "activity_name": "Administrative procedures",
+      "activity_name_source": {
+        "cell_text": "Administrative procedures",
+        "indentation_level": 0,
+        "indentation_method": "font_signal",
+        "text_formatting": [
+          "bold"
+        ]
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 7,
+      "source_page": 12,
+      "activity_name": "Signed informed consent",
+      "activity_name_source": {
+        "cell_text": "Signed informed consent",
+        "indentation_level": 1,
+        "indentation_method": "font_signal"
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 8,
+      "source_page": 12,
+      "activity_name": "Pharmacogenetic consent",
+      "activity_name_source": {
+        "cell_text": "Pharmacogenetic consent",
+        "indentation_level": 1,
+        "indentation_method": "font_signal"
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 9,
+      "source_page": 12,
+      "activity_name": "Dispense study contact card",
+      "activity_name_source": {
+        "cell_text": "Dispense study contact card",
+        "indentation_level": 1,
+        "indentation_method": "font_signal"
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 10,
+      "source_page": 12,
+      "activity_name": "Inclusion and exclusion criteria",
+      "activity_name_source": {
+        "cell_text": "Inclusion and exclusion\ncriteria",
+        "indentation_level": 1,
+        "indentation_method": "font_signal"
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 11,
+      "source_page": 12,
+      "activity_name": "Demographics and biometrics",
+      "activity_name_source": {
+        "cell_text": "Demographics and\nbiometrics",
+        "indentation_level": 1,
+        "indentation_method": "font_signal"
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 12,
+      "source_page": 12,
+      "activity_name": "Medical history",
+      "activity_name_source": {
+        "cell_text": "Medical history",
+        "indentation_level": 1,
+        "indentation_method": "font_signal"
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 13,
+      "source_page": 12,
+      "activity_name": "Prior and Concomitant medication",
+      "activity_name_source": {
+        "cell_text": "Prior and Concomitant\nmedication",
+        "indentation_level": 1,
+        "indentation_method": "font_signal"
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 14,
+      "source_page": 12,
+      "activity_name": "Clinical procedures / assessments",
+      "activity_name_source": {
+        "cell_text": "Clinical procedures / assessments",
+        "indentation_level": 0,
+        "indentation_method": "font_signal",
+        "text_formatting": [
+          "bold"
+        ]
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 15,
+      "source_page": 12,
+      "activity_name": "mRS, NIHSS assessment",
+      "activity_name_source": {
+        "cell_text": "mRSf, NIHSS assessment",
+        "indentation_level": 1,
+        "indentation_method": "font_signal"
+      },
+      "annotation_markers": "f"
+    },
+    {
+      "table_number": 1,
+      "row_position": 16,
+      "source_page": 12,
+      "activity_name": "12-lead ECG",
+      "activity_name_source": {
+        "cell_text": "12-lead ECGg",
+        "indentation_level": 1,
+        "indentation_method": "font_signal"
+      },
+      "annotation_markers": "g"
+    },
+    {
+      "table_number": 1,
+      "row_position": 17,
+      "source_page": 12,
+      "activity_name": "Vital signs (BP and HR)",
+      "activity_name_source": {
+        "cell_text": "Vital signs (BP and HR)",
+        "indentation_level": 1,
+        "indentation_method": "font_signal"
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 18,
+      "source_page": 12,
+      "activity_name": "Adverse events",
+      "activity_name_source": {
+        "cell_text": "Adverse events",
+        "indentation_level": 1,
+        "indentation_method": "font_signal"
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 19,
+      "source_page": 12,
+      "activity_name": "Outcome events",
+      "activity_name_source": {
+        "cell_text": "Outcome eventsh",
+        "indentation_level": 1,
+        "indentation_method": "font_signal"
+      },
+      "annotation_markers": "h"
+    },
+    {
+      "table_number": 1,
+      "row_position": 20,
+      "source_page": 12,
+      "activity_name": "bMRI [Part A and/or B] (study day and allowed time window)",
+      "activity_name_source": {
+        "cell_text": "bMRIi [Part A and/or B]\n(study day and\nallowed time window)",
+        "indentation_level": 1,
+        "indentation_method": "font_signal"
+      },
+      "annotation_markers": "i"
+    },
+    {
+      "table_number": 1,
+      "row_position": 21,
+      "source_page": 12,
+      "activity_name": "IxRS",
+      "activity_name_source": {
+        "cell_text": "IxRS",
+        "indentation_level": 0,
+        "indentation_method": "font_signal",
+        "text_formatting": [
+          "bold"
+        ]
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 22,
+      "source_page": 12,
+      "activity_name": "Randomization / Visit registration via IxRS",
+      "activity_name_source": {
+        "cell_text": "Randomization / Visit\nregistration via IxRS",
+        "indentation_level": 1,
+        "indentation_method": "font_signal"
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 23,
+      "source_page": 12,
+      "activity_name": "Laboratory assessments",
+      "activity_name_source": {
+        "cell_text": "Laboratory assessments",
+        "indentation_level": 0,
+        "indentation_method": "font_signal",
+        "text_formatting": [
+          "bold"
+        ]
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 24,
+      "source_page": 12,
+      "activity_name": "Safety blood sample",
+      "activity_name_source": {
+        "cell_text": "Safety blood sample",
+        "indentation_level": 1,
+        "indentation_method": "font_signal"
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 30,
+      "source_page": 13,
+      "activity_name": "Pharmacokinetic sample",
+      "activity_name_source": {
+        "cell_text": "Pharmacokinetic samplel",
+        "indentation_level": 1,
+        "indentation_method": "font_signal"
+      },
+      "annotation_markers": "l"
+    },
+    {
+      "table_number": 1,
+      "row_position": 31,
+      "source_page": 13,
+      "activity_name": "Pharmacodynamic sampling",
+      "activity_name_source": {
+        "cell_text": "Pharmacodynamic samplingl",
+        "indentation_level": 1,
+        "indentation_method": "font_signal"
+      },
+      "annotation_markers": "l"
+    },
+    {
+      "table_number": 1,
+      "row_position": 32,
+      "source_page": 13,
+      "activity_name": "Pharmacogenetic sample",
+      "activity_name_source": {
+        "cell_text": "Pharmacogenetic sample",
+        "indentation_level": 1,
+        "indentation_method": "font_signal"
+      }
+    },
+    {
+      "table_number": 1,
+      "row_position": 33,
+      "source_page": 13,
+      "activity_name": "Biomarker sampling",
+      "activity_name_source": {
+        "cell_text": "Biomarker samplingl",
+        "indentation_level": 1,
+        "indentation_method": "font_signal"
+      },
+      "annotation_markers": "l"
+    },
+    {
+      "table_number": 1,
+      "row_position": 34,
+      "source_page": 13,
+      "activity_name": "Study drug administration",
+      "activity_name_source": {
+        "cell_text": "Study drugm administration",
+        "indentation_level": 0,
+        "indentation_method": "font_signal",
+        "text_formatting": [
+          "bold"
+        ]
+      },
+      "annotation_markers": "m"
+    },
+    {
+      "table_number": 1,
+      "row_position": 35,
+      "source_page": 13,
+      "activity_name": "Study drug dispensation",
+      "activity_name_source": {
+        "cell_text": "Study drugm dispensation",
+        "indentation_level": 1,
+        "indentation_method": "font_signal"
+      },
+      "annotation_markers": "m"
+    },
+    {
+      "table_number": 1,
+      "row_position": 36,
+      "source_page": 13,
+      "activity_name": "Study drug intake at the site",
+      "activity_name_source": {
+        "cell_text": "Study drug m intake at the\nsitel",
+        "indentation_level": 1,
+        "indentation_method": "font_signal"
+      },
+      "annotation_markers": "m,l"
+    },
+    {
+      "table_number": 1,
+      "row_position": 37,
+      "source_page": 13,
+      "activity_name": "Stud drug collection and accountability",
+      "activity_name_source": {
+        "cell_text": "Stud drug m collection and\naccountability",
+        "indentation_level": 1,
+        "indentation_method": "font_signal"
+      },
+      "annotation_markers": "m"
+    }
+  ],
+  "activity_schedule": [
+    {
+      "table_number": 1,
+      "row_position": 7,
+      "column_position": 2,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 8,
+      "column_position": 2,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 9,
+      "column_position": 2,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 10,
+      "column_position": 2,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 10,
+      "column_position": 3,
+      "cell_value": "X",
+      "annotation_markers": "d"
+    },
+    {
+      "table_number": 1,
+      "row_position": 11,
+      "column_position": 2,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 12,
+      "column_position": 2,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 13,
+      "column_position": 2,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 13,
+      "column_position": 3,
+      "cell_value": "X",
+      "annotation_markers": "d"
+    },
+    {
+      "table_number": 1,
+      "row_position": 13,
+      "column_position": 4,
+      "cell_value": "X",
+      "annotation_markers": "e"
+    },
+    {
+      "table_number": 1,
+      "row_position": 13,
+      "column_position": 5,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 13,
+      "column_position": 6,
+      "cell_value": "X",
+      "annotation_markers": "e"
+    },
+    {
+      "table_number": 1,
+      "row_position": 13,
+      "column_position": 7,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 13,
+      "column_position": 8,
+      "cell_value": "X",
+      "annotation_markers": "e"
+    },
+    {
+      "table_number": 1,
+      "row_position": 13,
+      "column_position": 9,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 13,
+      "column_position": 10,
+      "cell_value": "X",
+      "annotation_markers": "e"
+    },
+    {
+      "table_number": 1,
+      "row_position": 13,
+      "column_position": 11,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 13,
+      "column_position": 12,
+      "cell_value": "X",
+      "annotation_markers": "e"
+    },
+    {
+      "table_number": 1,
+      "row_position": 13,
+      "column_position": 13,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 13,
+      "column_position": 14,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 13,
+      "column_position": 15,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 15,
+      "column_position": 2,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 15,
+      "column_position": 3,
+      "cell_value": "X",
+      "annotation_markers": "d"
+    },
+    {
+      "table_number": 1,
+      "row_position": 15,
+      "column_position": 7,
+      "cell_value": "X",
+      "annotation_markers": "f"
+    },
+    {
+      "table_number": 1,
+      "row_position": 15,
+      "column_position": 9,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 15,
+      "column_position": 13,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 15,
+      "column_position": 14,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 16,
+      "column_position": 2,
+      "cell_value": "X",
+      "annotation_markers": "c"
+    },
+    {
+      "table_number": 1,
+      "row_position": 16,
+      "column_position": 3,
+      "cell_value": "X",
+      "annotation_markers": "d"
+    },
+    {
+      "table_number": 1,
+      "row_position": 16,
+      "column_position": 7,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 16,
+      "column_position": 13,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 16,
+      "column_position": 14,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 17,
+      "column_position": 2,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 17,
+      "column_position": 3,
+      "cell_value": "X",
+      "annotation_markers": "d"
+    },
+    {
+      "table_number": 1,
+      "row_position": 17,
+      "column_position": 5,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 17,
+      "column_position": 7,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 17,
+      "column_position": 9,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 17,
+      "column_position": 11,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 17,
+      "column_position": 13,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 17,
+      "column_position": 14,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 18,
+      "column_position": 3,
+      "cell_value": "← continuously →",
+      "source_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 18,
+      "column_position": 4,
+      "cell_value": "← continuously →",
+      "source_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 18,
+      "column_position": 5,
+      "cell_value": "← continuously →",
+      "source_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 18,
+      "column_position": 6,
+      "cell_value": "← continuously →",
+      "source_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 18,
+      "column_position": 7,
+      "cell_value": "← continuously →",
+      "source_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 18,
+      "column_position": 8,
+      "cell_value": "← continuously →",
+      "source_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 18,
+      "column_position": 9,
+      "cell_value": "← continuously →",
+      "source_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 18,
+      "column_position": 10,
+      "cell_value": "← continuously →",
+      "source_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 18,
+      "column_position": 11,
+      "cell_value": "← continuously →",
+      "source_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 18,
+      "column_position": 12,
+      "cell_value": "← continuously →",
+      "source_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 18,
+      "column_position": 13,
+      "cell_value": "← continuously →",
+      "source_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 18,
+      "column_position": 14,
+      "cell_value": "← continuously →",
+      "source_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 18,
+      "column_position": 15,
+      "cell_value": "← continuously →",
+      "source_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 19,
+      "column_position": 3,
+      "cell_value": "← continuously →",
+      "source_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 19,
+      "column_position": 4,
+      "cell_value": "← continuously →",
+      "source_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 19,
+      "column_position": 5,
+      "cell_value": "← continuously →",
+      "source_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 19,
+      "column_position": 6,
+      "cell_value": "← continuously →",
+      "source_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 19,
+      "column_position": 7,
+      "cell_value": "← continuously →",
+      "source_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 19,
+      "column_position": 8,
+      "cell_value": "← continuously →",
+      "source_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 19,
+      "column_position": 9,
+      "cell_value": "← continuously →",
+      "source_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 19,
+      "column_position": 10,
+      "cell_value": "← continuously →",
+      "source_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 19,
+      "column_position": 11,
+      "cell_value": "← continuously →",
+      "source_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 19,
+      "column_position": 12,
+      "cell_value": "← continuously →",
+      "source_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 19,
+      "column_position": 13,
+      "cell_value": "← continuously →",
+      "source_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 19,
+      "column_position": 14,
+      "cell_value": "← continuously →",
+      "source_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 19,
+      "column_position": 15,
+      "cell_value": "← continuously →",
+      "source_range": "3:15"
+    },
+    {
+      "table_number": 1,
+      "row_position": 20,
+      "column_position": 3,
+      "cell_value": "A,B (-2→+3)"
+    },
+    {
+      "table_number": 1,
+      "row_position": 20,
+      "column_position": 7,
+      "cell_value": "A (±7)",
+      "annotation_markers": "j"
+    },
+    {
+      "table_number": 1,
+      "row_position": 20,
+      "column_position": 9,
+      "cell_value": "A,B (±7)"
+    },
+    {
+      "table_number": 1,
+      "row_position": 20,
+      "column_position": 14,
+      "cell_value": "A,B (+7)"
+    },
+    {
+      "table_number": 1,
+      "row_position": 22,
+      "column_position": 2,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 22,
+      "column_position": 3,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 22,
+      "column_position": 7,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 22,
+      "column_position": 9,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 22,
+      "column_position": 11,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 22,
+      "column_position": 13,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 22,
+      "column_position": 14,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 24,
+      "column_position": 2,
+      "cell_value": "X",
+      "annotation_markers": "k"
+    },
+    {
+      "table_number": 1,
+      "row_position": 24,
+      "column_position": 3,
+      "cell_value": "X",
+      "annotation_markers": "d,k"
+    },
+    {
+      "table_number": 1,
+      "row_position": 24,
+      "column_position": 5,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 24,
+      "column_position": 7,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 24,
+      "column_position": 9,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 24,
+      "column_position": 11,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 24,
+      "column_position": 13,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 24,
+      "column_position": 14,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 30,
+      "column_position": 5,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 30,
+      "column_position": 9,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 30,
+      "column_position": 14,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 31,
+      "column_position": 3,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 31,
+      "column_position": 5,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 31,
+      "column_position": 9,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 31,
+      "column_position": 14,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 32,
+      "column_position": 3,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 33,
+      "column_position": 3,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 33,
+      "column_position": 9,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 33,
+      "column_position": 14,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 35,
+      "column_position": 3,
+      "cell_value": "X",
+      "annotation_markers": "n"
+    },
+    {
+      "table_number": 1,
+      "row_position": 35,
+      "column_position": 7,
+      "cell_value": "X",
+      "annotation_markers": "n"
+    },
+    {
+      "table_number": 1,
+      "row_position": 35,
+      "column_position": 9,
+      "cell_value": "X",
+      "annotation_markers": "n"
+    },
+    {
+      "table_number": 1,
+      "row_position": 35,
+      "column_position": 11,
+      "cell_value": "X",
+      "annotation_markers": "n"
+    },
+    {
+      "table_number": 1,
+      "row_position": 36,
+      "column_position": 3,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 36,
+      "column_position": 5,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 36,
+      "column_position": 9,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 36,
+      "column_position": 13,
+      "cell_value": "no intake"
+    },
+    {
+      "table_number": 1,
+      "row_position": 37,
+      "column_position": 7,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 37,
+      "column_position": 9,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 37,
+      "column_position": 11,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 37,
+      "column_position": 13,
+      "cell_value": "X"
+    },
+    {
+      "table_number": 1,
+      "row_position": 37,
+      "column_position": 14,
+      "cell_value": "X"
+    }
+  ],
+  "annotations": [
+    {
+      "annotation_marker": "a",
+      "annotation_type": "footnote",
+      "annotation_text": "Screening, randomization and intake of first study drug must occur within 48 hours of symptom onset.",
+      "marker_locations": [
+        {
+          "table_number": 1,
+          "location_type": "schedule_cell",
+          "row_position": 1,
+          "column_position": 2
+        }
+      ]
+    },
+    {
+      "annotation_marker": "b",
+      "annotation_type": "footnote",
+      "annotation_text": "The visit can be performed at a later time point if participant on inpatient rehabilitation facility and this visit cannot be arranged.",
+      "marker_locations": [
+        {
+          "table_number": 1,
+          "location_type": "schedule_cell",
+          "row_position": 2,
+          "column_position": 14
+        }
+      ]
+    },
+    {
+      "annotation_marker": "c",
+      "annotation_type": "footnote",
+      "annotation_text": "Participants will perform their safety follow-up phone call 2 weeks after the EOT visit or the ET visit whichever occurs earlier. (i.e. in case of Early Termination 2 weeks after last study drug intake).",
+      "marker_locations": [
+        {
+          "table_number": 1,
+          "location_type": "schedule_cell",
+          "row_position": 5,
+          "column_position": 15
+        },
+        {
+          "table_number": 1,
+          "location_type": "schedule_cell",
+          "row_position": 16,
+          "column_position": 2
+        }
+      ]
+    },
+    {
+      "annotation_marker": "d",
+      "annotation_type": "footnote",
+      "annotation_text": "In case screening and randomization are performed on the same day, this procedure does not need to be repeated.",
+      "marker_locations": [
+        {
+          "table_number": 1,
+          "location_type": "schedule_cell",
+          "row_position": 10,
+          "column_position": 3
+        },
+        {
+          "table_number": 1,
+          "location_type": "schedule_cell",
+          "row_position": 13,
+          "column_position": 3
+        },
+        {
+          "table_number": 1,
+          "location_type": "schedule_cell",
+          "row_position": 15,
+          "column_position": 3
+        },
+        {
+          "table_number": 1,
+          "location_type": "schedule_cell",
+          "row_position": 16,
+          "column_position": 3
+        },
+        {
+          "table_number": 1,
+          "location_type": "schedule_cell",
+          "row_position": 17,
+          "column_position": 3
+        },
+        {
+          "table_number": 1,
+          "location_type": "schedule_cell",
+          "row_position": 24,
+          "column_position": 3
+        }
+      ]
+    },
+    {
+      "annotation_marker": "e",
+      "annotation_type": "footnote",
+      "annotation_text": "At Visit 3, 5, 7, 9 and 11: any new concomitant medication and AEs or outcome event will be captured during the calls.",
+      "marker_locations": [
+        {
+          "table_number": 1,
+          "location_type": "schedule_cell",
+          "row_position": 13,
+          "column_position": 4
+        },
+        {
+          "table_number": 1,
+          "location_type": "schedule_cell",
+          "row_position": 13,
+          "column_position": 6
+        },
+        {
+          "table_number": 1,
+          "location_type": "schedule_cell",
+          "row_position": 13,
+          "column_position": 8
+        },
+        {
+          "table_number": 1,
+          "location_type": "schedule_cell",
+          "row_position": 13,
+          "column_position": 10
+        },
+        {
+          "table_number": 1,
+          "location_type": "schedule_cell",
+          "row_position": 13,
+          "column_position": 12
+        }
+      ]
+    },
+    {
+      "annotation_marker": "f",
+      "annotation_type": "footnote",
+      "annotation_text": "modified Ranking Score (mRS) (Section 10.10) and NIHSS (Section 10.11) should be assessed as follows: Index event: at time of screening and time of randomization (NIHSS), day 7 after the event (or at hospital discharge, if this occurs before day 7; NIHSS and mRS), at 3, 6 and 12 months visits (mRS). For recurrent stroke events: maximum score during hospitalization (NIHSS), day 7 after the event (or at hospital discharge, if this occurs before day 7: NIHSS and mRS); visit closest to 3 months after recurrent stroke (mRS).",
+      "marker_locations": [
+        {
+          "table_number": 1,
+          "location_type": "activity_name",
+          "row_position": 15
+        },
+        {
+          "table_number": 1,
+          "location_type": "schedule_cell",
+          "row_position": 15,
+          "column_position": 7
+        }
+      ]
+    },
+    {
+      "annotation_marker": "g",
+      "annotation_type": "footnote",
+      "annotation_text": "ECG machine that automatically calculates the heart rate and measures PR, QRS, QT and QTc intervals should be used.",
+      "marker_locations": [
+        {
+          "table_number": 1,
+          "location_type": "schedule_cell",
+          "row_position": 3,
+          "column_position": 5
+        },
+        {
+          "table_number": 1,
+          "location_type": "activity_name",
+          "row_position": 16
+        }
+      ]
+    },
+    {
+      "annotation_marker": "h",
+      "annotation_type": "footnote",
+      "annotation_text": "outcome events including all bleeding, death, MI, recurrent stroke and systemic embolism as well as events indicative of a potential outcome (Section 10.1.5.4) need to be reported on dedicated forms in the eCRF on an ongoing basis, even if the participant is permanently discontinued from study treatment.",
+      "marker_locations": [
+        {
+          "table_number": 1,
+          "location_type": "activity_name",
+          "row_position": 19
+        }
+      ]
+    },
+    {
+      "annotation_marker": "i",
+      "annotation_type": "footnote",
+      "annotation_text": "MRI is required before or latest within 72 after randomization.",
+      "marker_locations": [
+        {
+          "table_number": 1,
+          "location_type": "activity_name",
+          "row_position": 20
+        }
+      ]
+    },
+    {
+      "annotation_marker": "j",
+      "annotation_type": "footnote",
+      "annotation_text": "For part A only until Part B starts.",
+      "marker_locations": [
+        {
+          "table_number": 1,
+          "location_type": "schedule_cell",
+          "row_position": 20,
+          "column_position": 7
+        }
+      ]
+    },
+    {
+      "annotation_marker": "k",
+      "annotation_type": "footnote",
+      "annotation_text": "Creatinine, eGFR results, AST and ALT values measured in the local laboratory for screening. Current local laboratory results available for the index hospitalization for the stroke can be used. Full safety laboratory assessments to be done at randomization in the central laboratory.",
+      "marker_locations": [
+        {
+          "table_number": 1,
+          "location_type": "schedule_cell",
+          "row_position": 24,
+          "column_position": 2
+        },
+        {
+          "table_number": 1,
+          "location_type": "schedule_cell",
+          "row_position": 24,
+          "column_position": 3
+        }
+      ]
+    },
+    {
+      "annotation_marker": "l",
+      "annotation_type": "source_note",
+      "annotation_text": "Refer to Table 1–1 PK, PD and Biomarker sampling.",
+      "marker_locations": [
+        {
+          "table_number": 1,
+          "location_type": "activity_name",
+          "row_position": 30
+        },
+        {
+          "table_number": 1,
+          "location_type": "activity_name",
+          "row_position": 31
+        },
+        {
+          "table_number": 1,
+          "location_type": "activity_name",
+          "row_position": 33
+        },
+        {
+          "table_number": 1,
+          "location_type": "activity_name",
+          "row_position": 36
+        }
+      ]
+    },
+    {
+      "annotation_marker": "m",
+      "annotation_type": "footnote",
+      "annotation_text": "“Study drug” refers to “study intervention’ as defined in Section 6.1.",
+      "marker_locations": [
+        {
+          "table_number": 1,
+          "location_type": "activity_name",
+          "row_position": 34
+        },
+        {
+          "table_number": 1,
+          "location_type": "activity_name",
+          "row_position": 35
+        },
+        {
+          "table_number": 1,
+          "location_type": "activity_name",
+          "row_position": 36
+        },
+        {
+          "table_number": 1,
+          "location_type": "activity_name",
+          "row_position": 37
+        }
+      ]
+    },
+    {
+      "annotation_marker": "n",
+      "annotation_type": "footnote",
+      "annotation_text": "At each contact, participants should be again instructed regarding study drug compliance.",
+      "marker_locations": [
+        {
+          "table_number": 1,
+          "location_type": "schedule_cell",
+          "row_position": 35,
+          "column_position": 3
+        },
+        {
+          "table_number": 1,
+          "location_type": "schedule_cell",
+          "row_position": 35,
+          "column_position": 7
+        },
+        {
+          "table_number": 1,
+          "location_type": "schedule_cell",
+          "row_position": 35,
+          "column_position": 9
+        },
+        {
+          "table_number": 1,
+          "location_type": "schedule_cell",
+          "row_position": 35,
+          "column_position": 11
+        }
+      ]
+    }
+  ],
+  "review_items": [
+    {
+      "id": "D1",
+      "severity": "medium",
+      "location": {
+        "page": 12,
+        "row_position": 2
+      },
+      "call_made": "Header row 2 '(Duration)' is typed 'other' (a duration line that also carries the 'Early termination (ET)' sub-band over Visit 12a) and given hierarchy level 2, because the Early termination cell sets Visit 12a apart within the Intervention period.",
+      "alternative": "Type the row 'period' (Early termination as a sub-period of the Intervention period), or treat it as a duration qualifier that restates the periods and give it no hierarchy level (null).",
+      "report_section": "3.1"
+    },
+    {
+      "id": "D2",
+      "severity": "medium",
+      "location": {
+        "page": 12,
+        "row_position": 5
+      },
+      "call_made": "The 'Week [W] / Study day and allowed deviations' header is one ruled row, kept as one header row typed 'week' with both printed lines in each cell value (e.g. 'W2 15±4').",
+      "alternative": "Split it into two header rows: a 'week' row (SCR, RND/W0, W2 ...) and a 'study_day' row with windows (-2 → 1, 1, 15±4 ...).",
+      "report_section": "3.1"
+    },
+    {
+      "id": "D3",
+      "severity": "low",
+      "location": {
+        "page": 12,
+        "row_position": 4
+      },
+      "call_made": "The 'Visit type' row (site / phone) is typed 'modality' and given hierarchy level 4, as a column attribute that is part of the header hierarchy.",
+      "alternative": "Give the Visit type row no hierarchy level (null), since Visit number alone tells every column apart and modality is an attribute of the visit.",
+      "report_section": "3.1"
+    }
+  ]
+}

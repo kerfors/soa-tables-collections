@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>NCT02701985 · Extraction log · misc_studies</title>
+<style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+           max-width: 960px; margin: 40px auto; padding: 0 20px; color: #333; line-height: 1.6; }
+    
+    .pnav { background: #fff; border: 1px solid #e0e0e0; border-radius: 8px;
+            padding: 8px 16px; margin-bottom: 14px; font-size: 12px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            color: #666; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+    .pnav a { color: #1F4788; text-decoration: none; }
+    .pnav a:hover { text-decoration: underline; }
+    .pnav-sep { color: #999; margin: 0 4px; }
+    .pnav-cur { font-weight: 600; color: #333; }
+    .pnav-sib { margin-top: 4px; }
+    .pnav-grp { color: #888; font-size: 11px; }
+
+    h1 { color: #1F4788; border-bottom: 2px solid #1F4788; padding-bottom: 8px; font-size: 22px; }
+    h2 { color: #2E75B6; border-bottom: 1px solid #ddd; padding-bottom: 4px; margin-top: 32px; font-size: 17px; }
+    h3 { color: #444; margin-top: 24px; font-size: 14px; }
+    table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 12px; }
+    th { background: #f0f0f0; padding: 8px 10px; text-align: left; border: 1px solid #ddd; font-weight: 600; }
+    td { padding: 6px 10px; border: 1px solid #eee; vertical-align: top; }
+    tr:hover { background: #f8f9fa; }
+    code { background: #f4f4f4; padding: 2px 5px; border-radius: 3px; font-size: 12px; }
+    pre { background: #f8f8f8; padding: 16px; border-radius: 6px; overflow-x: auto; font-size: 12px; }
+    pre code { background: none; padding: 0; }
+    blockquote { border-left: 3px solid #6a1b9a; margin: 16px 0; padding: 8px 16px; background: #faf5fc; color: #555; }
+    strong { color: #222; }
+    hr { border: none; border-top: 1px solid #ddd; margin: 24px 0; }
+</style>
+</head>
+<body>
+    <nav class="pnav" aria-label="Breadcrumb"><div class="pnav-crumb"><a href="../../../../../../index.html">Collections</a><span class="pnav-sep">›</span><a href="../../../index.html">misc_studies</a><span class="pnav-sep">›</span><a href="../../../index.html#NCT02701985" title="This protocol's row on the collection index">NCT02701985</a><span class="pnav-sep">›</span><span class="pnav-cur">Extraction log</span></div><div class="pnav-sib"><span class="pnav-grp">extraction data:</span> <a href="../../soa-tables/extracted/NCT02701985_Table_01_extraction_viewer.html">T1</a> <span class="pnav-sep">·</span> <span class="pnav-grp">resolved data:</span> <a href="../../soa-tables/resolved/NCT02701985_Table_01_resolved_viewer.html">T1</a> <span class="pnav-sep">·</span> <a href="../../soa-tables/consolidated/NCT02701985_consolidated.html">consolidated</a> <span class="pnav-sep">·</span> <a href="../../soa-tables/extracted/NCT02701985_review.html">review</a> <span class="pnav-sep">·</span> <span class="pnav-cur">extraction log</span></div></nav>
+    <h1>NCT02701985 — Uncertainty report (PDF_TO_JSON_PROMPT v3.9.4)</h1>
+<h2>Decisions needed (0)</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>where</th>
+<th>call made</th>
+<th>alternative</th>
+<th>detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>None. Every judgement call in this extraction is decided by a stated rule (next block).</p>
+<h2>Recorded, not open (11)</h2>
+<ul>
+<li>§2 <strong>Tables — classify before extracting</strong>: one table, <code>main_soa</code>. Doc p.91 ("Appendix 1 Schedule of Assessments (cont.)") is the footnote table for p.90. Its rows are the numbered notes 1-8 keyed to markers in the grid, so they are extracted as annotations, not as a table (taxonomy, <code>reference</code> note).</li>
+<li>§5 <strong>Leading label columns are excluded</strong>: L = 1 (activity-name column, which also carries the header-row labels "Visit" / "Days"). The first data column is position 2. Data columns run 2-9.</li>
+<li>§5 <strong>Vertically-merged marks</strong> + §5 <strong>Merged marks — distribute, never centre</strong>: rows 34 (Adverse Event or Intercurrent Illness) and 35 (Previous and Concomitant Treatments) share one data cell. Its rule lines enclose columns 2-9 and both rows: the label column has its own rule at y=576.1, but the data area has no internal vertical or horizontal rule between y=557.7 and 597.8. The single 'x' goes on both rows × columns 2-9, <code>source_range</code> "2:9" (16 entries).</li>
+<li>§3 <strong>Header bands — typing</strong> / §3 <strong>property_type</strong>: row 1 is an unlabelled band. Its only value, "Treatment Period", is merged across positions 4-7 (Week 2 to Week 12). Typed <code>epoch</code>. The blank cells over Screening, Baseline, Follow-Up and Early Termination stay "" (§5 <strong>Empty cells</strong>).</li>
+<li>§3 synthesised name: row 1 <code>property_name</code> "Epoch", synthesised, <code>structure_method: inferred_from_layout</code>.</li>
+<li>§3 <strong>Header cells over several rows</strong> / qualifier: the Days row keeps the printed window inside each cell ("14 (± 7)") and the "(NA)" for Early Termination. No separate window row was created.</li>
+<li>§3 <strong>hierarchical_level</strong>: Epoch 1, Visit 2, Days 3. The Days values do not follow from the visit labels (the Screening and Baseline ranges cannot be derived from them), so the row is not nulled.</li>
+<li>§6 <strong>Header-cell footnotes</strong>: Baseline¹ → marker "1" on the <code>schedule_grid</code> cell (row 2, col 3). Visit⁸ sits on the row label, so marker "8" goes on the <code>schedule_property</code> row 2.</li>
+<li>§6 <strong>annotation_type</strong>: footnote 4 points ("see Section 4.6.1.3.4.") and also explains, so it stays a <code>footnote</code>. All 8 annotations are <code>footnote</code>.</li>
+<li>§4 <strong>Hierarchy — printed signals only</strong>: the table is flat. Every label is Arial Bold 7 pt at the same x (109.6), with no indent and no shading. All rows are level 0 (<code>indentation_method: assumed_flat</code>).</li>
+<li>§1c <strong>Symbol-font glyphs</strong>: header cells use U+2010 hyphens ("‐28 to ‐8", "Follow‐Up") and no-break spaces. They are written as '-' and ' '.</li>
+</ul>
+<h2>Per table</h2>
+<p><strong>Table 01</strong>: <code>main_soa</code>, "Appendix 1 Schedule of Assessments", doc pp. 90-91.
+- 9 columns: 1 label column plus 8 data columns (Screening, Baseline, Week 2, Week 6, Week 9, Week 12, Follow-Up Visit, Early Termination Visit).
+- 3 header rows, 32 activities, 130 marks, 8 annotations.
+- Activity rows per page: p.90 = 32; p.91 = 0. Page 91 is the footnote table, with notes 1-8 only and no activity rows. This is expected, not a skipped page.</p>
+<h2>Merged-mark decisions</h2>
+<ul>
+<li>Rows 34 and 35, columns 2:9: one 'x' in a cell that is merged both vertically and horizontally, distributed to both rows (see Recorded).</li>
+<li>Header: "Treatment Period" merged 4:7 (<code>merged_cell_range</code> "4:7" on each covered grid cell).</li>
+</ul>
+<h2>Synthesised</h2>
+<ul>
+<li><code>property_name</code> "Epoch" (row 1).</li>
+<li>No synthesised annotation markers. Every note has a printed numeric marker.</li>
+</ul>
+<h2>Mechanical mark-check</h2>
+<ul>
+<li>Method: §1b bbox column-binning. <code>pdftotext -bbox</code> mark tokens (<code>^[Xx]…</code>) were binned to the header x-centres. Row bands came from the vector horizontal rule lines (the page has full vector rules; all vertical and horizontal rules were extracted with pymupdf drawings).</li>
+<li>Result: matches the visual read cell for cell on rows 4-33, which hold 114 marks.</li>
+<li>One disagreement, resolved by rule-line geometry: the bbox binned the single merged 'x' (glyph at y 575-582, straddling the label-column rule) to row 35 col 6 only, and nothing to row 34. The rule lines show one cell spanning rows 34-35 × cols 2-9, so the final grid has 16 marks there.</li>
+<li>Footnoted marks tokenise as a separate superscript token ('x' + '5', 'x' + '7'). They were reattached as cell markers at (24,8), (24,9) and (33,7).</li>
+<li>Glyph case: all marks are lowercase 'x'. The Screening mark on ECG - 12 Lead is in Arial rather than Calibri and renders slightly larger, but it is still 'x' in the text layer, so it was transcribed as 'x'.</li>
+</ul>
+<h2>Annotation text integrity</h2>
+<ul>
+<li>The text layer is not glyph-spread, so no reconstruction was needed.</li>
+<li>Note text comes from the ruled footnote table on p.91. Each note is one rule-bounded cell.</li>
+<li>The markdown renders note 1 with italic-underscore artefacts ("the_last_baseline_assessment_"). The PDF text layer reads "the last baseline assessment." and that is what the JSON holds.</li>
+<li>No containment or overlap pairs between notes.</li>
+</ul>
+<h2>Low-confidence calls / PDF–markdown disagreements</h2>
+<ul>
+<li>Markdown places the merged 'x' under Week 9 for "Previous and Concomitant Treatments" only, and leaves "Adverse Event or Intercurrent Illness" empty. The PDF rule lines show a 2-row × 8-column merged cell, and the PDF is followed.</li>
+<li>Markdown splits "MSG biopsy (optional sub-" / "study only)" across two rows. The PDF shows one ruled label cell, joined per §4 <strong>Whitespace</strong> as "MSG biopsy (optional sub-study only)".</li>
+<li>The Baseline column (Days -7 to -1) lies outside the "Treatment Period" band. This is transcribed as printed.</li>
+</ul>
+<h2>Orphan risk</h2>
+<ul>
+<li>None. Every annotation has at least one <code>marker_location</code>, and every location's marker is present in that row's <code>annotation_markers</code> (checked by script).</li>
+</ul>
+<h2>Method provenance</h2>
+<ul>
+<li>Row 1 <code>structure_method: inferred_from_layout</code> (unlabelled band typed from its spanning value).</li>
+<li><code>indentation_method: assumed_flat</code> on all 32 activities.</li>
+<li>No <code>unresolved</code> locations, no proximity-bounded text, and no visual-read or raster cells.</li>
+</ul>
+</body>
+</html>
