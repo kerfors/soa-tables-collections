@@ -2,11 +2,12 @@
   "study": "NCT04529096",
   "dpi": 150,
   "strip_px": 38,
-  "note": "document page = sequence position in the source protocol PDF; printed page footers are not used. The caption strip below each page bitmap is synthetic; the page bitmap above it is verbatim pdftoppm output.",
+  "note": "document page = the page number the transcript uses (table page_start/page_end, source_page), from the declared SoA range in studies_protocols.xlsx; printed page footers are not used. physical_page = the same page's position in the file of record (<study>.pdf), added by tools/page_map.py --physical. The caption strip below each page bitmap is synthetic; the page bitmap above it is verbatim pdftoppm output.",
   "pages": [
     {
       "pdf_page": 1,
       "doc_page": 9,
+      "physical_page": 9,
       "file": "p01.png",
       "width_px": 1275,
       "height_px": 1689,
@@ -15,6 +16,7 @@
     {
       "pdf_page": 2,
       "doc_page": 10,
+      "physical_page": 10,
       "file": "p02.png",
       "width_px": 1651,
       "height_px": 1313,
@@ -23,6 +25,7 @@
     {
       "pdf_page": 3,
       "doc_page": 11,
+      "physical_page": 11,
       "file": "p03.png",
       "width_px": 1651,
       "height_px": 1313,
@@ -31,6 +34,7 @@
     {
       "pdf_page": 4,
       "doc_page": 12,
+      "physical_page": 12,
       "file": "p04.png",
       "width_px": 1651,
       "height_px": 1313,

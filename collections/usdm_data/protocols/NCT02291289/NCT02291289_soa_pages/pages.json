@@ -2,11 +2,12 @@
   "study": "NCT02291289",
   "dpi": 150,
   "strip_px": 38,
-  "note": "document page = sequence position in the source protocol PDF; printed page footers are not used. The caption strip below each page bitmap is synthetic; the page bitmap above it is verbatim pdftoppm output.",
+  "note": "document page = the page number the transcript uses (table page_start/page_end, source_page), from the declared SoA range in studies_protocols.xlsx; printed page footers are not used. physical_page = the same page's position in the file of record (<study>.pdf), added by tools/page_map.py --physical. The caption strip below each page bitmap is synthetic; the page bitmap above it is verbatim pdftoppm output.",
   "pages": [
     {
       "pdf_page": 1,
       "doc_page": 169,
+      "physical_page": 170,
       "file": "p01.png",
       "width_px": 1754,
       "height_px": 1279,
@@ -15,6 +16,7 @@
     {
       "pdf_page": 2,
       "doc_page": 170,
+      "physical_page": 171,
       "file": "p02.png",
       "width_px": 1754,
       "height_px": 1279,
@@ -23,6 +25,7 @@
     {
       "pdf_page": 3,
       "doc_page": 171,
+      "physical_page": 172,
       "file": "p03.png",
       "width_px": 1754,
       "height_px": 1279,
@@ -31,6 +34,7 @@
     {
       "pdf_page": 4,
       "doc_page": 172,
+      "physical_page": 173,
       "file": "p04.png",
       "width_px": 1754,
       "height_px": 1279,
@@ -39,6 +43,7 @@
     {
       "pdf_page": 5,
       "doc_page": 173,
+      "physical_page": 174,
       "file": "p05.png",
       "width_px": 1754,
       "height_px": 1279,
@@ -47,6 +52,7 @@
     {
       "pdf_page": 6,
       "doc_page": 174,
+      "physical_page": 175,
       "file": "p06.png",
       "width_px": 1754,
       "height_px": 1279,
@@ -55,6 +61,7 @@
     {
       "pdf_page": 7,
       "doc_page": 175,
+      "physical_page": 176,
       "file": "p07.png",
       "width_px": 1754,
       "height_px": 1279,
@@ -63,6 +70,7 @@
     {
       "pdf_page": 8,
       "doc_page": 176,
+      "physical_page": 177,
       "file": "p08.png",
       "width_px": 1754,
       "height_px": 1279,
@@ -71,6 +79,7 @@
     {
       "pdf_page": 9,
       "doc_page": 177,
+      "physical_page": 178,
       "file": "p09.png",
       "width_px": 1754,
       "height_px": 1279,
@@ -79,6 +88,7 @@
     {
       "pdf_page": 10,
       "doc_page": 178,
+      "physical_page": 179,
       "file": "p10.png",
       "width_px": 1754,
       "height_px": 1279,
@@ -87,6 +97,7 @@
     {
       "pdf_page": 11,
       "doc_page": 179,
+      "physical_page": 180,
       "file": "p11.png",
       "width_px": 1754,
       "height_px": 1279,
@@ -95,6 +106,7 @@
     {
       "pdf_page": 12,
       "doc_page": 180,
+      "physical_page": 181,
       "file": "p12.png",
       "width_px": 1754,
       "height_px": 1279,
@@ -103,6 +115,7 @@
     {
       "pdf_page": 13,
       "doc_page": 181,
+      "physical_page": 182,
       "file": "p13.png",
       "width_px": 1754,
       "height_px": 1279,
@@ -111,6 +124,7 @@
     {
       "pdf_page": 14,
       "doc_page": 182,
+      "physical_page": 183,
       "file": "p14.png",
       "width_px": 1754,
       "height_px": 1279,
@@ -119,6 +133,7 @@
     {
       "pdf_page": 15,
       "doc_page": 183,
+      "physical_page": 184,
       "file": "p15.png",
       "width_px": 1754,
       "height_px": 1279,
@@ -127,6 +142,7 @@
     {
       "pdf_page": 16,
       "doc_page": 184,
+      "physical_page": 185,
       "file": "p16.png",
       "width_px": 1754,
       "height_px": 1279,
@@ -135,6 +151,7 @@
     {
       "pdf_page": 17,
       "doc_page": 185,
+      "physical_page": 186,
       "file": "p17.png",
       "width_px": 1754,
       "height_px": 1279,
@@ -143,6 +160,7 @@
     {
       "pdf_page": 18,
       "doc_page": 186,
+      "physical_page": 187,
       "file": "p18.png",
       "width_px": 1754,
       "height_px": 1279,
@@ -151,6 +169,7 @@
     {
       "pdf_page": 19,
       "doc_page": 187,
+      "physical_page": 188,
       "file": "p19.png",
       "width_px": 1754,
       "height_px": 1279,
@@ -159,6 +178,7 @@
     {
       "pdf_page": 20,
       "doc_page": 188,
+      "physical_page": 189,
       "file": "p20.png",
       "width_px": 1754,
       "height_px": 1279,
@@ -167,6 +187,7 @@
     {
       "pdf_page": 21,
       "doc_page": 189,
+      "physical_page": 190,
       "file": "p21.png",
       "width_px": 1754,
       "height_px": 1279,
@@ -175,6 +196,7 @@
     {
       "pdf_page": 22,
       "doc_page": 190,
+      "physical_page": 191,
       "file": "p22.png",
       "width_px": 1754,
       "height_px": 1279,
@@ -183,6 +205,7 @@
     {
       "pdf_page": 23,
       "doc_page": 191,
+      "physical_page": 192,
       "file": "p23.png",
       "width_px": 1754,
       "height_px": 1279,
@@ -191,6 +214,7 @@
     {
       "pdf_page": 24,
       "doc_page": 192,
+      "physical_page": 193,
       "file": "p24.png",
       "width_px": 1754,
       "height_px": 1279,
@@ -199,6 +223,7 @@
     {
       "pdf_page": 25,
       "doc_page": 193,
+      "physical_page": 194,
       "file": "p25.png",
       "width_px": 1754,
       "height_px": 1279,
@@ -207,6 +232,7 @@
     {
       "pdf_page": 26,
       "doc_page": 194,
+      "physical_page": 195,
       "file": "p26.png",
       "width_px": 1241,
       "height_px": 1792,

@@ -2,11 +2,12 @@
   "study": "NCT04320615",
   "dpi": 150,
   "strip_px": 38,
-  "note": "document page = sequence position in the source protocol PDF; printed page footers are not used. The caption strip below each page bitmap is synthetic; the page bitmap above it is verbatim pdftoppm output.",
+  "note": "document page = the page number the transcript uses (table page_start/page_end, source_page), from the declared SoA range in studies_protocols.xlsx; printed page footers are not used. physical_page = the same page's position in the file of record (<study>.pdf), added by tools/page_map.py --physical. The caption strip below each page bitmap is synthetic; the page bitmap above it is verbatim pdftoppm output.",
   "pages": [
     {
       "pdf_page": 1,
       "doc_page": 77,
+      "physical_page": 77,
       "file": "p01.png",
       "width_px": 1651,
       "height_px": 1313,
@@ -15,6 +16,7 @@
     {
       "pdf_page": 2,
       "doc_page": 78,
+      "physical_page": 78,
       "file": "p02.png",
       "width_px": 1651,
       "height_px": 1313,
@@ -23,6 +25,7 @@
     {
       "pdf_page": 3,
       "doc_page": 79,
+      "physical_page": 79,
       "file": "p03.png",
       "width_px": 1651,
       "height_px": 1313,
@@ -31,6 +34,7 @@
     {
       "pdf_page": 4,
       "doc_page": 80,
+      "physical_page": 80,
       "file": "p04.png",
       "width_px": 1651,
       "height_px": 1313,
@@ -39,6 +43,7 @@
     {
       "pdf_page": 5,
       "doc_page": 81,
+      "physical_page": 81,
       "file": "p05.png",
       "width_px": 1651,
       "height_px": 1313,
@@ -47,6 +52,7 @@
     {
       "pdf_page": 6,
       "doc_page": 82,
+      "physical_page": 82,
       "file": "p06.png",
       "width_px": 1651,
       "height_px": 1313,
@@ -55,6 +61,7 @@
     {
       "pdf_page": 7,
       "doc_page": 83,
+      "physical_page": 83,
       "file": "p07.png",
       "width_px": 1651,
       "height_px": 1313,
@@ -63,6 +70,7 @@
     {
       "pdf_page": 8,
       "doc_page": 84,
+      "physical_page": 84,
       "file": "p08.png",
       "width_px": 1651,
       "height_px": 1313,
@@ -71,6 +79,7 @@
     {
       "pdf_page": 9,
       "doc_page": 85,
+      "physical_page": 85,
       "file": "p09.png",
       "width_px": 1651,
       "height_px": 1313,
