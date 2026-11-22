@@ -8,8 +8,8 @@
     <https://kerfors.github.io/soa-tables/id/sha256/a3ead0a3d5aba97ddcc503b9effb4f100c905662818ebfec846e9b2361cfb816/soa-tables-v1> a st:Transcription ;
         st:aboutStudy <https://kerfors.github.io/soa-tables/id/study/NCT04304508> ;
         st:codeCommit "534d7931b4d62ac7935444b848579770ab403602" ;
-        st:collectionsCommit "f74ca6dd95738cba1e3d634781915090f1c9bd86" ;
-        st:consolidatedAt "2026-11-22T19:30:56.169336+00:00"^^xsd:dateTime ;
+        st:collectionsCommit "f093befed4c284c9d1460b9882511766b0c8ad6f" ;
+        st:consolidatedAt "2026-11-22T19:51:43.989590+00:00"^^xsd:dateTime ;
         st:consolidator "soa_tables.consolidate v1.2" ;
         st:ofFile <https://kerfors.github.io/soa-tables/id/sha256/a3ead0a3d5aba97ddcc503b9effb4f100c905662818ebfec846e9b2361cfb816> ;
         st:schemaVersion "1.7" .
@@ -780,26 +780,24 @@
         st:propertyType "epoch" .
 
     e:u-t01-r002 a st:UnifiedProperty ;
-        st:level 2 ;
-        st:member e:t01-r002,
-            e:t02-r002 ;
+        st:member e:t01-r002 ;
         st:propertyName "Duration" ;
         st:propertyType "other" .
 
     e:u-t01-r003 a st:UnifiedProperty ;
-        st:level 3 ;
-        st:member e:t01-r003 ;
+        st:level 2 ;
+        st:member e:t01-r003,
+            e:t02-r002 ;
         st:propertyName "Visit number" ;
         st:propertyType "visit" .
 
     e:u-t01-r004 a st:UnifiedProperty ;
-        st:level 4 ;
         st:member e:t01-r004 ;
         st:propertyName "Visit type" ;
         st:propertyType "modality" .
 
     e:u-t01-r005 a st:UnifiedProperty ;
-        st:level 5 ;
+        st:level 3 ;
         st:member e:t01-r005 ;
         st:propertyName "Week [W] Study day and allowed deviations" ;
         st:propertyType "week" .
@@ -850,10 +848,13 @@
             e:u-t02-r004 ;
         st:text "If study drug is temporarily stopped, PK / PD blood samples should only be obtained if study drug has been restarted and sustained for at least 4 days, see Section 7.1.1." .
 
-    e:u-t02-n-g1 a st:UnifiedAnnotation ;
-        st:annotationScope "table" ;
+    e:u-t02-n-n1 a st:UnifiedAnnotation ;
         st:annotationType "footnote" ;
-        st:occurrence e:t02-n-g1 ;
+        st:occurrence e:t02-n-n1 ;
+        st:refersToActivity e:u-t02-r003,
+            e:u-t02-r004,
+            e:u-t02-r005,
+            e:u-t02-r006 ;
         st:text "The exact times of PK, PD and biomarker sampling need to be recorded, as well as the time of the most recent study drug intake (i.e: on the PK / PD sampling day, as well as the day before that)." .
 
     e:m-t01-r010-t01-c003 a st:ConsolidatedCell ;
@@ -1029,33 +1030,31 @@
         st:rowPosition 1 .
 
     e:t01-r002 a st:SourcePropertyRow ;
-        st:hierarchyPosition 2 ;
+        st:hierarchyPosition 4 ;
         st:inTable e:t01 ;
-        st:level 2 ;
         st:propertyName "Duration" ;
         st:propertyType "other" ;
         st:rowPosition 2 .
 
     e:t01-r003 a st:SourcePropertyRow ;
-        st:hierarchyPosition 3 ;
+        st:hierarchyPosition 2 ;
         st:inTable e:t01 ;
-        st:level 3 ;
+        st:level 2 ;
         st:propertyName "Visit number" ;
         st:propertyType "visit" ;
         st:rowPosition 3 .
 
     e:t01-r004 a st:SourcePropertyRow ;
-        st:hierarchyPosition 4 ;
+        st:hierarchyPosition 5 ;
         st:inTable e:t01 ;
-        st:level 4 ;
         st:propertyName "Visit type" ;
         st:propertyType "modality" ;
         st:rowPosition 4 .
 
     e:t01-r005 a st:SourcePropertyRow ;
-        st:hierarchyPosition 5 ;
+        st:hierarchyPosition 3 ;
         st:inTable e:t01 ;
-        st:level 5 ;
+        st:level 3 ;
         st:propertyName "Week [W] Study day and allowed deviations" ;
         st:propertyType "week" ;
         st:rowPosition 5 .
@@ -1665,9 +1664,9 @@
         st:inTable e:t02 ;
         st:marker "e" .
 
-    e:t02-n-g1 a st:SourceAnnotation ;
+    e:t02-n-n1 a st:SourceAnnotation ;
         st:inTable e:t02 ;
-        st:marker "g1" .
+        st:marker "n1" .
 
     e:t02-r001 a st:SourcePropertyRow ;
         st:hierarchyPosition 1 ;
@@ -1775,30 +1774,28 @@
     e:u-t01-c002-v02 a st:ColumnPropertyValue ;
         st:level 2 ;
         st:position 2 ;
-        st:propertyName "Duration" ;
-        st:propertyType "other" ;
-        st:value "" .
-
-    e:u-t01-c002-v03 a st:ColumnPropertyValue ;
-        st:level 3 ;
-        st:position 3 ;
         st:propertyName "Visit number" ;
         st:propertyType "visit" ;
         st:value "1" .
 
-    e:u-t01-c002-v04 a st:ColumnPropertyValue ;
-        st:level 4 ;
-        st:position 4 ;
-        st:propertyName "Visit type" ;
-        st:propertyType "modality" ;
-        st:value "site" .
-
-    e:u-t01-c002-v05 a st:ColumnPropertyValue ;
-        st:level 5 ;
-        st:position 5 ;
+    e:u-t01-c002-v03 a st:ColumnPropertyValue ;
+        st:level 3 ;
+        st:position 3 ;
         st:propertyName "Week [W] Study day and allowed deviations" ;
         st:propertyType "week" ;
         st:value "SCR -2 → 1" .
+
+    e:u-t01-c002-v04 a st:ColumnPropertyValue ;
+        st:position 4 ;
+        st:propertyName "Duration" ;
+        st:propertyType "other" ;
+        st:value "" .
+
+    e:u-t01-c002-v05 a st:ColumnPropertyValue ;
+        st:position 5 ;
+        st:propertyName "Visit type" ;
+        st:propertyType "modality" ;
+        st:value "site" .
 
     e:u-t01-c003-v01 a st:ColumnPropertyValue ;
         st:level 1 ;
@@ -1810,30 +1807,28 @@
     e:u-t01-c003-v02 a st:ColumnPropertyValue ;
         st:level 2 ;
         st:position 2 ;
-        st:propertyName "Duration" ;
-        st:propertyType "other" ;
-        st:value "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)" .
-
-    e:u-t01-c003-v03 a st:ColumnPropertyValue ;
-        st:level 3 ;
-        st:position 3 ;
         st:propertyName "Visit number" ;
         st:propertyType "visit" ;
         st:value "2" .
 
-    e:u-t01-c003-v04 a st:ColumnPropertyValue ;
-        st:level 4 ;
-        st:position 4 ;
-        st:propertyName "Visit type" ;
-        st:propertyType "modality" ;
-        st:value "site" .
-
-    e:u-t01-c003-v05 a st:ColumnPropertyValue ;
-        st:level 5 ;
-        st:position 5 ;
+    e:u-t01-c003-v03 a st:ColumnPropertyValue ;
+        st:level 3 ;
+        st:position 3 ;
         st:propertyName "Week [W] Study day and allowed deviations" ;
         st:propertyType "week" ;
         st:value "RND/W0 1" .
+
+    e:u-t01-c003-v04 a st:ColumnPropertyValue ;
+        st:position 4 ;
+        st:propertyName "Duration" ;
+        st:propertyType "other" ;
+        st:value "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)" .
+
+    e:u-t01-c003-v05 a st:ColumnPropertyValue ;
+        st:position 5 ;
+        st:propertyName "Visit type" ;
+        st:propertyType "modality" ;
+        st:value "site" .
 
     e:u-t01-c004-v01 a st:ColumnPropertyValue ;
         st:level 1 ;
@@ -1845,30 +1840,28 @@
     e:u-t01-c004-v02 a st:ColumnPropertyValue ;
         st:level 2 ;
         st:position 2 ;
-        st:propertyName "Duration" ;
-        st:propertyType "other" ;
-        st:value "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)" .
-
-    e:u-t01-c004-v03 a st:ColumnPropertyValue ;
-        st:level 3 ;
-        st:position 3 ;
         st:propertyName "Visit number" ;
         st:propertyType "visit" ;
         st:value "3" .
 
-    e:u-t01-c004-v04 a st:ColumnPropertyValue ;
-        st:level 4 ;
-        st:position 4 ;
-        st:propertyName "Visit type" ;
-        st:propertyType "modality" ;
-        st:value "☎" .
-
-    e:u-t01-c004-v05 a st:ColumnPropertyValue ;
-        st:level 5 ;
-        st:position 5 ;
+    e:u-t01-c004-v03 a st:ColumnPropertyValue ;
+        st:level 3 ;
+        st:position 3 ;
         st:propertyName "Week [W] Study day and allowed deviations" ;
         st:propertyType "week" ;
         st:value "W2 15±4" .
+
+    e:u-t01-c004-v04 a st:ColumnPropertyValue ;
+        st:position 4 ;
+        st:propertyName "Duration" ;
+        st:propertyType "other" ;
+        st:value "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)" .
+
+    e:u-t01-c004-v05 a st:ColumnPropertyValue ;
+        st:position 5 ;
+        st:propertyName "Visit type" ;
+        st:propertyType "modality" ;
+        st:value "☎" .
 
     e:u-t01-c005-v01 a st:ColumnPropertyValue ;
         st:level 1 ;
@@ -1880,30 +1873,28 @@
     e:u-t01-c005-v02 a st:ColumnPropertyValue ;
         st:level 2 ;
         st:position 2 ;
-        st:propertyName "Duration" ;
-        st:propertyType "other" ;
-        st:value "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)" .
-
-    e:u-t01-c005-v03 a st:ColumnPropertyValue ;
-        st:level 3 ;
-        st:position 3 ;
         st:propertyName "Visit number" ;
         st:propertyType "visit" ;
         st:value "4" .
 
-    e:u-t01-c005-v04 a st:ColumnPropertyValue ;
-        st:level 4 ;
-        st:position 4 ;
-        st:propertyName "Visit type" ;
-        st:propertyType "modality" ;
-        st:value "site" .
-
-    e:u-t01-c005-v05 a st:ColumnPropertyValue ;
-        st:level 5 ;
-        st:position 5 ;
+    e:u-t01-c005-v03 a st:ColumnPropertyValue ;
+        st:level 3 ;
+        st:position 3 ;
         st:propertyName "Week [W] Study day and allowed deviations" ;
         st:propertyType "week" ;
         st:value "W4 29±4" .
+
+    e:u-t01-c005-v04 a st:ColumnPropertyValue ;
+        st:position 4 ;
+        st:propertyName "Duration" ;
+        st:propertyType "other" ;
+        st:value "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)" .
+
+    e:u-t01-c005-v05 a st:ColumnPropertyValue ;
+        st:position 5 ;
+        st:propertyName "Visit type" ;
+        st:propertyType "modality" ;
+        st:value "site" .
 
     e:u-t01-c006-v01 a st:ColumnPropertyValue ;
         st:level 1 ;
@@ -1915,30 +1906,28 @@
     e:u-t01-c006-v02 a st:ColumnPropertyValue ;
         st:level 2 ;
         st:position 2 ;
-        st:propertyName "Duration" ;
-        st:propertyType "other" ;
-        st:value "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)" .
-
-    e:u-t01-c006-v03 a st:ColumnPropertyValue ;
-        st:level 3 ;
-        st:position 3 ;
         st:propertyName "Visit number" ;
         st:propertyType "visit" ;
         st:value "5" .
 
-    e:u-t01-c006-v04 a st:ColumnPropertyValue ;
-        st:level 4 ;
-        st:position 4 ;
-        st:propertyName "Visit type" ;
-        st:propertyType "modality" ;
-        st:value "☎" .
-
-    e:u-t01-c006-v05 a st:ColumnPropertyValue ;
-        st:level 5 ;
-        st:position 5 ;
+    e:u-t01-c006-v03 a st:ColumnPropertyValue ;
+        st:level 3 ;
+        st:position 3 ;
         st:propertyName "Week [W] Study day and allowed deviations" ;
         st:propertyType "week" ;
         st:value "W8 57±4" .
+
+    e:u-t01-c006-v04 a st:ColumnPropertyValue ;
+        st:position 4 ;
+        st:propertyName "Duration" ;
+        st:propertyType "other" ;
+        st:value "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)" .
+
+    e:u-t01-c006-v05 a st:ColumnPropertyValue ;
+        st:position 5 ;
+        st:propertyName "Visit type" ;
+        st:propertyType "modality" ;
+        st:value "☎" .
 
     e:u-t01-c007-v01 a st:ColumnPropertyValue ;
         st:level 1 ;
@@ -1950,30 +1939,28 @@
     e:u-t01-c007-v02 a st:ColumnPropertyValue ;
         st:level 2 ;
         st:position 2 ;
-        st:propertyName "Duration" ;
-        st:propertyType "other" ;
-        st:value "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)" .
-
-    e:u-t01-c007-v03 a st:ColumnPropertyValue ;
-        st:level 3 ;
-        st:position 3 ;
         st:propertyName "Visit number" ;
         st:propertyType "visit" ;
         st:value "6" .
 
-    e:u-t01-c007-v04 a st:ColumnPropertyValue ;
-        st:level 4 ;
-        st:position 4 ;
-        st:propertyName "Visit type" ;
-        st:propertyType "modality" ;
-        st:value "site" .
-
-    e:u-t01-c007-v05 a st:ColumnPropertyValue ;
-        st:level 5 ;
-        st:position 5 ;
+    e:u-t01-c007-v03 a st:ColumnPropertyValue ;
+        st:level 3 ;
+        st:position 3 ;
         st:propertyName "Week [W] Study day and allowed deviations" ;
         st:propertyType "week" ;
         st:value "W13 92±4" .
+
+    e:u-t01-c007-v04 a st:ColumnPropertyValue ;
+        st:position 4 ;
+        st:propertyName "Duration" ;
+        st:propertyType "other" ;
+        st:value "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)" .
+
+    e:u-t01-c007-v05 a st:ColumnPropertyValue ;
+        st:position 5 ;
+        st:propertyName "Visit type" ;
+        st:propertyType "modality" ;
+        st:value "site" .
 
     e:u-t01-c008-v01 a st:ColumnPropertyValue ;
         st:level 1 ;
@@ -1985,30 +1972,28 @@
     e:u-t01-c008-v02 a st:ColumnPropertyValue ;
         st:level 2 ;
         st:position 2 ;
-        st:propertyName "Duration" ;
-        st:propertyType "other" ;
-        st:value "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)" .
-
-    e:u-t01-c008-v03 a st:ColumnPropertyValue ;
-        st:level 3 ;
-        st:position 3 ;
         st:propertyName "Visit number" ;
         st:propertyType "visit" ;
         st:value "7" .
 
-    e:u-t01-c008-v04 a st:ColumnPropertyValue ;
-        st:level 4 ;
-        st:position 4 ;
-        st:propertyName "Visit type" ;
-        st:propertyType "modality" ;
-        st:value "☎" .
-
-    e:u-t01-c008-v05 a st:ColumnPropertyValue ;
-        st:level 5 ;
-        st:position 5 ;
+    e:u-t01-c008-v03 a st:ColumnPropertyValue ;
+        st:level 3 ;
+        st:position 3 ;
         st:propertyName "Week [W] Study day and allowed deviations" ;
         st:propertyType "week" ;
         st:value "W20 141±4" .
+
+    e:u-t01-c008-v04 a st:ColumnPropertyValue ;
+        st:position 4 ;
+        st:propertyName "Duration" ;
+        st:propertyType "other" ;
+        st:value "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)" .
+
+    e:u-t01-c008-v05 a st:ColumnPropertyValue ;
+        st:position 5 ;
+        st:propertyName "Visit type" ;
+        st:propertyType "modality" ;
+        st:value "☎" .
 
     e:u-t01-c009-v01 a st:ColumnPropertyValue ;
         st:level 1 ;
@@ -2020,30 +2005,28 @@
     e:u-t01-c009-v02 a st:ColumnPropertyValue ;
         st:level 2 ;
         st:position 2 ;
-        st:propertyName "Duration" ;
-        st:propertyType "other" ;
-        st:value "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)" .
-
-    e:u-t01-c009-v03 a st:ColumnPropertyValue ;
-        st:level 3 ;
-        st:position 3 ;
         st:propertyName "Visit number" ;
         st:propertyType "visit" ;
         st:value "8" .
 
-    e:u-t01-c009-v04 a st:ColumnPropertyValue ;
-        st:level 4 ;
-        st:position 4 ;
-        st:propertyName "Visit type" ;
-        st:propertyType "modality" ;
-        st:value "site" .
-
-    e:u-t01-c009-v05 a st:ColumnPropertyValue ;
-        st:level 5 ;
-        st:position 5 ;
+    e:u-t01-c009-v03 a st:ColumnPropertyValue ;
+        st:level 3 ;
+        st:position 3 ;
         st:propertyName "Week [W] Study day and allowed deviations" ;
         st:propertyType "week" ;
         st:value "W26 183±4" .
+
+    e:u-t01-c009-v04 a st:ColumnPropertyValue ;
+        st:position 4 ;
+        st:propertyName "Duration" ;
+        st:propertyType "other" ;
+        st:value "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)" .
+
+    e:u-t01-c009-v05 a st:ColumnPropertyValue ;
+        st:position 5 ;
+        st:propertyName "Visit type" ;
+        st:propertyType "modality" ;
+        st:value "site" .
 
     e:u-t01-c010-v01 a st:ColumnPropertyValue ;
         st:level 1 ;
@@ -2055,30 +2038,28 @@
     e:u-t01-c010-v02 a st:ColumnPropertyValue ;
         st:level 2 ;
         st:position 2 ;
-        st:propertyName "Duration" ;
-        st:propertyType "other" ;
-        st:value "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)" .
-
-    e:u-t01-c010-v03 a st:ColumnPropertyValue ;
-        st:level 3 ;
-        st:position 3 ;
         st:propertyName "Visit number" ;
         st:propertyType "visit" ;
         st:value "9" .
 
-    e:u-t01-c010-v04 a st:ColumnPropertyValue ;
-        st:level 4 ;
-        st:position 4 ;
-        st:propertyName "Visit type" ;
-        st:propertyType "modality" ;
-        st:value "☎" .
-
-    e:u-t01-c010-v05 a st:ColumnPropertyValue ;
-        st:level 5 ;
-        st:position 5 ;
+    e:u-t01-c010-v03 a st:ColumnPropertyValue ;
+        st:level 3 ;
+        st:position 3 ;
         st:propertyName "Week [W] Study day and allowed deviations" ;
         st:propertyType "week" ;
         st:value "W32 225±4" .
+
+    e:u-t01-c010-v04 a st:ColumnPropertyValue ;
+        st:position 4 ;
+        st:propertyName "Duration" ;
+        st:propertyType "other" ;
+        st:value "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)" .
+
+    e:u-t01-c010-v05 a st:ColumnPropertyValue ;
+        st:position 5 ;
+        st:propertyName "Visit type" ;
+        st:propertyType "modality" ;
+        st:value "☎" .
 
     e:u-t01-c011-v01 a st:ColumnPropertyValue ;
         st:level 1 ;
@@ -2090,30 +2071,28 @@
     e:u-t01-c011-v02 a st:ColumnPropertyValue ;
         st:level 2 ;
         st:position 2 ;
-        st:propertyName "Duration" ;
-        st:propertyType "other" ;
-        st:value "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)" .
-
-    e:u-t01-c011-v03 a st:ColumnPropertyValue ;
-        st:level 3 ;
-        st:position 3 ;
         st:propertyName "Visit number" ;
         st:propertyType "visit" ;
         st:value "10" .
 
-    e:u-t01-c011-v04 a st:ColumnPropertyValue ;
-        st:level 4 ;
-        st:position 4 ;
-        st:propertyName "Visit type" ;
-        st:propertyType "modality" ;
-        st:value "site" .
-
-    e:u-t01-c011-v05 a st:ColumnPropertyValue ;
-        st:level 5 ;
-        st:position 5 ;
+    e:u-t01-c011-v03 a st:ColumnPropertyValue ;
+        st:level 3 ;
+        st:position 3 ;
         st:propertyName "Week [W] Study day and allowed deviations" ;
         st:propertyType "week" ;
         st:value "W39 274±4" .
+
+    e:u-t01-c011-v04 a st:ColumnPropertyValue ;
+        st:position 4 ;
+        st:propertyName "Duration" ;
+        st:propertyType "other" ;
+        st:value "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)" .
+
+    e:u-t01-c011-v05 a st:ColumnPropertyValue ;
+        st:position 5 ;
+        st:propertyName "Visit type" ;
+        st:propertyType "modality" ;
+        st:value "site" .
 
     e:u-t01-c012-v01 a st:ColumnPropertyValue ;
         st:level 1 ;
@@ -2125,30 +2104,28 @@
     e:u-t01-c012-v02 a st:ColumnPropertyValue ;
         st:level 2 ;
         st:position 2 ;
-        st:propertyName "Duration" ;
-        st:propertyType "other" ;
-        st:value "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)" .
-
-    e:u-t01-c012-v03 a st:ColumnPropertyValue ;
-        st:level 3 ;
-        st:position 3 ;
         st:propertyName "Visit number" ;
         st:propertyType "visit" ;
         st:value "11" .
 
-    e:u-t01-c012-v04 a st:ColumnPropertyValue ;
-        st:level 4 ;
-        st:position 4 ;
-        st:propertyName "Visit type" ;
-        st:propertyType "modality" ;
-        st:value "☎" .
-
-    e:u-t01-c012-v05 a st:ColumnPropertyValue ;
-        st:level 5 ;
-        st:position 5 ;
+    e:u-t01-c012-v03 a st:ColumnPropertyValue ;
+        st:level 3 ;
+        st:position 3 ;
         st:propertyName "Week [W] Study day and allowed deviations" ;
         st:propertyType "week" ;
         st:value "W46 323±4" .
+
+    e:u-t01-c012-v04 a st:ColumnPropertyValue ;
+        st:position 4 ;
+        st:propertyName "Duration" ;
+        st:propertyType "other" ;
+        st:value "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)" .
+
+    e:u-t01-c012-v05 a st:ColumnPropertyValue ;
+        st:position 5 ;
+        st:propertyName "Visit type" ;
+        st:propertyType "modality" ;
+        st:value "☎" .
 
     e:u-t01-c013-v01 a st:ColumnPropertyValue ;
         st:level 1 ;
@@ -2160,30 +2137,28 @@
     e:u-t01-c013-v02 a st:ColumnPropertyValue ;
         st:level 2 ;
         st:position 2 ;
-        st:propertyName "Duration" ;
-        st:propertyType "other" ;
-        st:value "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)" .
-
-    e:u-t01-c013-v03 a st:ColumnPropertyValue ;
-        st:level 3 ;
-        st:position 3 ;
         st:propertyName "Visit number" ;
         st:propertyType "visit" ;
         st:value "12" .
 
-    e:u-t01-c013-v04 a st:ColumnPropertyValue ;
-        st:level 4 ;
-        st:position 4 ;
-        st:propertyName "Visit type" ;
-        st:propertyType "modality" ;
-        st:value "site" .
-
-    e:u-t01-c013-v05 a st:ColumnPropertyValue ;
-        st:level 5 ;
-        st:position 5 ;
+    e:u-t01-c013-v03 a st:ColumnPropertyValue ;
+        st:level 3 ;
+        st:position 3 ;
         st:propertyName "Week [W] Study day and allowed deviations" ;
         st:propertyType "week" ;
         st:value "W52/EOT 365±4" .
+
+    e:u-t01-c013-v04 a st:ColumnPropertyValue ;
+        st:position 4 ;
+        st:propertyName "Duration" ;
+        st:propertyType "other" ;
+        st:value "(from RND until End of Treatment visit [EOT], 26 to 52 weeks)" .
+
+    e:u-t01-c013-v05 a st:ColumnPropertyValue ;
+        st:position 5 ;
+        st:propertyName "Visit type" ;
+        st:propertyType "modality" ;
+        st:value "site" .
 
     e:u-t01-c014-v01 a st:ColumnPropertyValue ;
         st:level 1 ;
@@ -2195,30 +2170,28 @@
     e:u-t01-c014-v02 a st:ColumnPropertyValue ;
         st:level 2 ;
         st:position 2 ;
-        st:propertyName "Duration" ;
-        st:propertyType "other" ;
-        st:value "Early termination (ET)" .
-
-    e:u-t01-c014-v03 a st:ColumnPropertyValue ;
-        st:level 3 ;
-        st:position 3 ;
         st:propertyName "Visit number" ;
         st:propertyType "visit" ;
         st:value "12a" .
 
-    e:u-t01-c014-v04 a st:ColumnPropertyValue ;
-        st:level 4 ;
-        st:position 4 ;
-        st:propertyName "Visit type" ;
-        st:propertyType "modality" ;
-        st:value "Site" .
-
-    e:u-t01-c014-v05 a st:ColumnPropertyValue ;
-        st:level 5 ;
-        st:position 5 ;
+    e:u-t01-c014-v03 a st:ColumnPropertyValue ;
+        st:level 3 ;
+        st:position 3 ;
         st:propertyName "Week [W] Study day and allowed deviations" ;
         st:propertyType "week" ;
         st:value "Any time ET+7" .
+
+    e:u-t01-c014-v04 a st:ColumnPropertyValue ;
+        st:position 4 ;
+        st:propertyName "Duration" ;
+        st:propertyType "other" ;
+        st:value "Early termination (ET)" .
+
+    e:u-t01-c014-v05 a st:ColumnPropertyValue ;
+        st:position 5 ;
+        st:propertyName "Visit type" ;
+        st:propertyType "modality" ;
+        st:value "Site" .
 
     e:u-t01-c015-v01 a st:ColumnPropertyValue ;
         st:level 1 ;
@@ -2230,30 +2203,28 @@
     e:u-t01-c015-v02 a st:ColumnPropertyValue ;
         st:level 2 ;
         st:position 2 ;
-        st:propertyName "Duration" ;
-        st:propertyType "other" ;
-        st:value "(14 days after EOT or ET)" .
-
-    e:u-t01-c015-v03 a st:ColumnPropertyValue ;
-        st:level 3 ;
-        st:position 3 ;
         st:propertyName "Visit number" ;
         st:propertyType "visit" ;
         st:value "13" .
 
-    e:u-t01-c015-v04 a st:ColumnPropertyValue ;
-        st:level 4 ;
-        st:position 4 ;
-        st:propertyName "Visit type" ;
-        st:propertyType "modality" ;
-        st:value "☎ (site)" .
-
-    e:u-t01-c015-v05 a st:ColumnPropertyValue ;
-        st:level 5 ;
-        st:position 5 ;
+    e:u-t01-c015-v03 a st:ColumnPropertyValue ;
+        st:level 3 ;
+        st:position 3 ;
         st:propertyName "Week [W] Study day and allowed deviations" ;
         st:propertyType "week" ;
         st:value "EOT or ET +2 weeks 379+7" .
+
+    e:u-t01-c015-v04 a st:ColumnPropertyValue ;
+        st:position 4 ;
+        st:propertyName "Duration" ;
+        st:propertyType "other" ;
+        st:value "(14 days after EOT or ET)" .
+
+    e:u-t01-c015-v05 a st:ColumnPropertyValue ;
+        st:position 5 ;
+        st:propertyName "Visit type" ;
+        st:propertyType "modality" ;
+        st:value "☎ (site)" .
 
     e:u-t01-n-f-d01 a st:DocumentReference ;
         st:position 1 ;
@@ -2529,28 +2500,6 @@
         st:onPage page:15 ;
         st:rowPosition 7 .
 
-    e:u-t02-r005 a st:UnifiedActivity ;
-        st:displayOrder 30 ;
-        st:hierarchyLevel 0 ;
-        st:isSectionHeader false ;
-        st:matchConfidence 1.0 ;
-        st:matchStatus "new" ;
-        st:member e:t02-r005 ;
-        st:name "Biomarkers Plasma" ;
-        st:parentName "" ;
-        st:qualifiedKey "::Biomarkers Plasma" .
-
-    e:u-t02-r006 a st:UnifiedActivity ;
-        st:displayOrder 31 ;
-        st:hierarchyLevel 0 ;
-        st:isSectionHeader false ;
-        st:matchConfidence 1.0 ;
-        st:matchStatus "new" ;
-        st:member e:t02-r006 ;
-        st:name "Biomarkers Serum" ;
-        st:parentName "" ;
-        st:qualifiedKey "::Biomarkers Serum" .
-
     e:t01-r010 a st:SourceActivityRow ;
         st:inTable e:t01 ;
         st:matchConfidence 1.0 ;
@@ -2666,6 +2615,28 @@
         st:propertyValue e:u-t02-c004-v01,
             e:u-t02-c004-v02 ;
         st:segment "subsidiary" .
+
+    e:u-t02-r005 a st:UnifiedActivity ;
+        st:displayOrder 30 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t02-r005 ;
+        st:name "Biomarkers Plasma" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Biomarkers Plasma" .
+
+    e:u-t02-r006 a st:UnifiedActivity ;
+        st:displayOrder 31 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t02-r006 ;
+        st:name "Biomarkers Serum" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Biomarkers Serum" .
 
     <https://kerfors.github.io/soa-tables/id/sha256/a3ead0a3d5aba97ddcc503b9effb4f100c905662818ebfec846e9b2361cfb816> a st:File ;
         st:sha256 "a3ead0a3d5aba97ddcc503b9effb4f100c905662818ebfec846e9b2361cfb816" .
@@ -2917,17 +2888,6 @@
         st:parentName "Study drug administration" ;
         st:qualifiedKey "Study drug administration::Stud drug collection and accountability" .
 
-    e:u-t02-r003 a st:UnifiedActivity ;
-        st:displayOrder 28 ;
-        st:hierarchyLevel 0 ;
-        st:isSectionHeader false ;
-        st:matchConfidence 1.0 ;
-        st:matchStatus "new" ;
-        st:member e:t02-r003 ;
-        st:name "PK" ;
-        st:parentName "" ;
-        st:qualifiedKey "::PK" .
-
     page:15 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/a3ead0a3d5aba97ddcc503b9effb4f100c905662818ebfec846e9b2361cfb816> ;
         st:pageNumber 15 .
@@ -2971,16 +2931,16 @@
         st:parentName "IxRS" ;
         st:qualifiedKey "IxRS::Randomization / Visit registration via IxRS" .
 
-    e:u-t02-r004 a st:UnifiedActivity ;
-        st:displayOrder 29 ;
+    e:u-t02-r003 a st:UnifiedActivity ;
+        st:displayOrder 28 ;
         st:hierarchyLevel 0 ;
         st:isSectionHeader false ;
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
-        st:member e:t02-r004 ;
-        st:name "PD" ;
+        st:member e:t02-r003 ;
+        st:name "PK" ;
         st:parentName "" ;
-        st:qualifiedKey "::PD" .
+        st:qualifiedKey "::PK" .
 
     e:t01-r022 a st:SourceActivityRow ;
         st:inTable e:t01 ;
@@ -3021,6 +2981,17 @@
         st:name "12-lead ECG" ;
         st:parentName "Clinical procedures / assessments" ;
         st:qualifiedKey "Clinical procedures / assessments::12-lead ECG" .
+
+    e:u-t02-r004 a st:UnifiedActivity ;
+        st:displayOrder 29 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t02-r004 ;
+        st:name "PD" ;
+        st:parentName "" ;
+        st:qualifiedKey "::PD" .
 
     page:13 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/a3ead0a3d5aba97ddcc503b9effb4f100c905662818ebfec846e9b2361cfb816> ;
