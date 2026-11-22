@@ -8,11 +8,35 @@
     <https://kerfors.github.io/soa-tables/id/sha256/a3ead0a3d5aba97ddcc503b9effb4f100c905662818ebfec846e9b2361cfb816/soa-tables-v1> a st:Transcription ;
         st:aboutStudy <https://kerfors.github.io/soa-tables/id/study/NCT04304508> ;
         st:codeCommit "534d7931b4d62ac7935444b848579770ab403602" ;
-        st:collectionsCommit "f093befed4c284c9d1460b9882511766b0c8ad6f" ;
-        st:consolidatedAt "2026-11-22T19:51:43.989590+00:00"^^xsd:dateTime ;
+        st:collectionsCommit "09d2bc56afd9283dcc7a52616aca73fabaef2a84" ;
+        st:consolidatedAt "2026-11-22T20:03:57.697726+00:00"^^xsd:dateTime ;
         st:consolidator "soa_tables.consolidate v1.2" ;
         st:ofFile <https://kerfors.github.io/soa-tables/id/sha256/a3ead0a3d5aba97ddcc503b9effb4f100c905662818ebfec846e9b2361cfb816> ;
         st:schemaVersion "1.7" .
+
+    e:decision-ccorr-001 a st:Decision ;
+        st:decidedAt "2026-11-22T20:08:00Z"^^xsd:dateTime ;
+        st:decidedByPerson "Kerstin Forsberg" ;
+        st:decisionSource e:t02 ;
+        st:decisionTarget e:u-t01-r030 ;
+        st:op "refines" ;
+        st:reason "Footnote l on this row ('Refer to Table 1–1 PK, PD and Biomarker sampling.') points to Table 1–1, which gives the within-visit sampling timepoints for the row; the table details the row, nothing is merged. Not recorded for 'Study drug intake at the site' (also marked l): Table 1–1 gives sampling timepoints, not an intake schedule." .
+
+    e:decision-ccorr-002 a st:Decision ;
+        st:decidedAt "2026-11-22T20:08:00Z"^^xsd:dateTime ;
+        st:decidedByPerson "Kerstin Forsberg" ;
+        st:decisionSource e:t02 ;
+        st:decisionTarget e:u-t01-r031 ;
+        st:op "refines" ;
+        st:reason "Footnote l on this row ('Refer to Table 1–1 PK, PD and Biomarker sampling.') points to Table 1–1, which gives the within-visit sampling timepoints for the row; the table details the row, nothing is merged. Not recorded for 'Study drug intake at the site' (also marked l): Table 1–1 gives sampling timepoints, not an intake schedule." .
+
+    e:decision-ccorr-003 a st:Decision ;
+        st:decidedAt "2026-11-22T20:08:00Z"^^xsd:dateTime ;
+        st:decidedByPerson "Kerstin Forsberg" ;
+        st:decisionSource e:t02 ;
+        st:decisionTarget e:u-t01-r033 ;
+        st:op "refines" ;
+        st:reason "Footnote l on this row ('Refer to Table 1–1 PK, PD and Biomarker sampling.') points to Table 1–1, which gives the within-visit sampling timepoints for the row; the table details the row, nothing is merged. Not recorded for 'Study drug intake at the site' (also marked l): Table 1–1 gives sampling timepoints, not an intake schedule." .
 
     e:m-t01-r007-t01-c002 a st:ConsolidatedCell ;
         prov:wasDerivedFrom e:t01-r007-c002 ;
@@ -2691,30 +2715,6 @@
             e:u-t01-c015-v05 ;
         st:segment "main" .
 
-    e:u-t01-r030 a st:UnifiedActivity ;
-        st:displayOrder 20 ;
-        st:hierarchyLevel 1 ;
-        st:isSectionHeader false ;
-        st:matchConfidence 1.0 ;
-        st:matchStatus "new" ;
-        st:member e:t01-r030 ;
-        st:name "Pharmacokinetic sample" ;
-        st:parent e:u-t01-r023 ;
-        st:parentName "Laboratory assessments" ;
-        st:qualifiedKey "Laboratory assessments::Pharmacokinetic sample" .
-
-    e:u-t01-r033 a st:UnifiedActivity ;
-        st:displayOrder 23 ;
-        st:hierarchyLevel 1 ;
-        st:isSectionHeader false ;
-        st:matchConfidence 1.0 ;
-        st:matchStatus "new" ;
-        st:member e:t01-r033 ;
-        st:name "Biomarker sampling" ;
-        st:parent e:u-t01-r023 ;
-        st:parentName "Laboratory assessments" ;
-        st:qualifiedKey "Laboratory assessments::Biomarker sampling" .
-
     e:u-t01-r034 a st:UnifiedActivity ;
         st:displayOrder 24 ;
         st:hierarchyLevel 0 ;
@@ -2798,17 +2798,29 @@
         st:parentName "" ;
         st:qualifiedKey "::Laboratory assessments" .
 
-    e:u-t01-r031 a st:UnifiedActivity ;
-        st:displayOrder 21 ;
+    e:u-t01-r030 a st:UnifiedActivity ;
+        st:displayOrder 20 ;
         st:hierarchyLevel 1 ;
         st:isSectionHeader false ;
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
-        st:member e:t01-r031 ;
-        st:name "Pharmacodynamic sampling" ;
+        st:member e:t01-r030 ;
+        st:name "Pharmacokinetic sample" ;
         st:parent e:u-t01-r023 ;
         st:parentName "Laboratory assessments" ;
-        st:qualifiedKey "Laboratory assessments::Pharmacodynamic sampling" .
+        st:qualifiedKey "Laboratory assessments::Pharmacokinetic sample" .
+
+    e:u-t01-r033 a st:UnifiedActivity ;
+        st:displayOrder 23 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r033 ;
+        st:name "Biomarker sampling" ;
+        st:parent e:u-t01-r023 ;
+        st:parentName "Laboratory assessments" ;
+        st:qualifiedKey "Laboratory assessments::Biomarker sampling" .
 
     e:u-t02-c007 a st:UnifiedColumn ;
         st:compositeLabel "Week 26 (Visit 8) / ET / Predose" ;
@@ -2851,6 +2863,18 @@
         st:name "bMRI [Part A and/or B] (study day and allowed time window)" ;
         st:parentName "Clinical procedures / assessments" ;
         st:qualifiedKey "Clinical procedures / assessments::bMRI [Part A and/or B] (study day and allowed time window)" .
+
+    e:u-t01-r031 a st:UnifiedActivity ;
+        st:displayOrder 21 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r031 ;
+        st:name "Pharmacodynamic sampling" ;
+        st:parent e:u-t01-r023 ;
+        st:parentName "Laboratory assessments" ;
+        st:qualifiedKey "Laboratory assessments::Pharmacodynamic sampling" .
 
     e:u-t01-r035 a st:UnifiedActivity ;
         st:displayOrder 25 ;
@@ -3196,6 +3220,10 @@
         st:parentName "Administrative procedures" ;
         st:qualifiedKey "Administrative procedures::Prior and Concomitant medication" .
 
+    page:12 a st:Page ;
+        st:inFile <https://kerfors.github.io/soa-tables/id/sha256/a3ead0a3d5aba97ddcc503b9effb4f100c905662818ebfec846e9b2361cfb816> ;
+        st:pageNumber 12 .
+
     e:t02 a st:SourceTable ;
         st:firstPage page:15 ;
         st:lastPage page:15 ;
@@ -3203,10 +3231,6 @@
         st:tableNumber 2 ;
         st:tableType "subsidiary" ;
         st:title "Table 1–1 PK, PD and Biomarker Sampling" .
-
-    page:12 a st:Page ;
-        st:inFile <https://kerfors.github.io/soa-tables/id/sha256/a3ead0a3d5aba97ddcc503b9effb4f100c905662818ebfec846e9b2361cfb816> ;
-        st:pageNumber 12 .
 
     e:t01 a st:SourceTable ;
         st:firstPage page:12 ;

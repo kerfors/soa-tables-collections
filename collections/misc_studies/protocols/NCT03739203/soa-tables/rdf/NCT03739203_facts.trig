@@ -8,8 +8,8 @@
     <https://kerfors.github.io/soa-tables/id/sha256/dc5e2ae3233f1b83841dfee437e3105001fb2cd63479b6edb30b0a9b9fce92c5/soa-tables-v1> a st:Transcription ;
         st:aboutStudy <https://kerfors.github.io/soa-tables/id/study/NCT03739203> ;
         st:codeCommit "534d7931b4d62ac7935444b848579770ab403602" ;
-        st:collectionsCommit "f093befed4c284c9d1460b9882511766b0c8ad6f" ;
-        st:consolidatedAt "2026-11-22T19:30:55.706077+00:00"^^xsd:dateTime ;
+        st:collectionsCommit "09d2bc56afd9283dcc7a52616aca73fabaef2a84" ;
+        st:consolidatedAt "2026-11-22T20:03:57.168409+00:00"^^xsd:dateTime ;
         st:consolidator "soa_tables.consolidate v1.2" ;
         st:ofFile <https://kerfors.github.io/soa-tables/id/sha256/dc5e2ae3233f1b83841dfee437e3105001fb2cd63479b6edb30b0a9b9fce92c5> ;
         st:schemaVersion "1.7" .
@@ -1461,24 +1461,27 @@
         st:value "X" .
 
     e:match-t01-r006--t02-r005 a st:Match ;
+        st:decidedBy e:decision-ccorr-002 ;
         st:matchKind "separate" ;
         st:matchedRow e:t01-r006,
             e:t02-r005 ;
-        st:reviewStatus "open" ;
+        st:reviewStatus "decided" ;
         st:score 0.8 .
 
     e:match-t01-r042--t02-r026 a st:Match ;
+        st:decidedBy e:decision-ccorr-003 ;
         st:matchKind "separate" ;
         st:matchedRow e:t01-r042,
             e:t02-r026 ;
-        st:reviewStatus "open" ;
+        st:reviewStatus "decided" ;
         st:score 0.7 .
 
     e:match-t01-r046--t02-r027 a st:Match ;
+        st:decidedBy e:decision-ccorr-001 ;
         st:matchKind "merged" ;
         st:matchedRow e:t01-r046,
             e:t02-r027 ;
-        st:reviewStatus "open" ;
+        st:reviewStatus "decided" ;
         st:score 1.0 .
 
     e:u-t01-n-a a st:UnifiedAnnotation ;
@@ -1673,6 +1676,22 @@
     page:87 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/dc5e2ae3233f1b83841dfee437e3105001fb2cd63479b6edb30b0a9b9fce92c5> ;
         st:pageNumber 87 .
+
+    e:decision-ccorr-002 a st:Decision ;
+        st:decidedAt "2026-11-22T20:05:00Z"^^xsd:dateTime ;
+        st:decidedByPerson "Kerstin Forsberg" ;
+        st:decisionSource e:t02-r005 ;
+        st:decisionTarget e:t01-r006 ;
+        st:op "keep" ;
+        st:reason "Not the same activity: the COVID-19 consent/reconsent to the modified procedures (where applicable) is a separate consent from the study informed consent at screening." .
+
+    e:decision-ccorr-003 a st:Decision ;
+        st:decidedAt "2026-11-22T20:05:00Z"^^xsd:dateTime ;
+        st:decidedByPerson "Kerstin Forsberg" ;
+        st:decisionSource e:t02-r026 ;
+        st:decisionTarget e:t01-r042 ;
+        st:op "keep" ;
+        st:reason "Not the same activity: Table 4 splits return and compliance into 'IP Return' and 'IP Compliance and Accountability'; 'IP Return' is only one part of Table 1's 'Drug Return and Compliance'." .
 
     e:t01-n-a a st:SourceAnnotation ;
         st:inTable e:t01 ;
@@ -3582,6 +3601,14 @@
     <https://kerfors.github.io/soa-tables/id/study/NCT03739203> a st:Study ;
         st:studyKey "NCT03739203" .
 
+    e:decision-ccorr-001 a st:Decision ;
+        st:decidedAt "2026-11-22T20:05:00Z"^^xsd:dateTime ;
+        st:decidedByPerson "Kerstin Forsberg" ;
+        st:decisionSource e:t02-r027 ;
+        st:decisionTarget e:t01-r046 ;
+        st:op "keep" ;
+        st:reason "Same activity: the Table 4 name adds only a parenthesised timing qualifier ('at any time during visit') to the Table 1 name." .
+
     e:t01-r007 a st:SourceActivityRow ;
         st:inTable e:t01 ;
         st:matchConfidence 1.0 ;
@@ -3744,14 +3771,6 @@
         st:parentName "" ;
         st:qualifiedKey "::Evaluate SAFER Score Qualification" .
 
-    e:t01-r006 a st:SourceActivityRow ;
-        st:inTable e:t01 ;
-        st:matchConfidence 1.0 ;
-        st:matchStatus "new" ;
-        st:name "Informed Consent" ;
-        st:onPage page:16 ;
-        st:rowPosition 6 .
-
     e:t01-r010 a st:SourceActivityRow ;
         st:inTable e:t01 ;
         st:matchConfidence 1.0 ;
@@ -3791,6 +3810,14 @@
         st:name "SF-12" ;
         st:onPage page:17 ;
         st:rowPosition 36 .
+
+    e:t01-r006 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Informed Consent" ;
+        st:onPage page:16 ;
+        st:rowPosition 6 .
 
     e:t01-r013 a st:SourceActivityRow ;
         st:inTable e:t01 ;
@@ -3899,14 +3926,6 @@
         st:onPage page:17 ;
         st:rowPosition 41 .
 
-    e:t01-r046 a st:SourceActivityRow ;
-        st:inTable e:t01 ;
-        st:matchConfidence 1.0 ;
-        st:matchStatus "new" ;
-        st:name "Pharmacokinetic Sample" ;
-        st:onPage page:17 ;
-        st:rowPosition 46 .
-
     e:t02-r007 a st:SourceActivityRow ;
         st:inTable e:t02 ;
         st:matchConfidence 1.0 ;
@@ -3959,14 +3978,6 @@
         st:onPage page:17 ;
         st:rowPosition 37 .
 
-    e:t01-r042 a st:SourceActivityRow ;
-        st:inTable e:t01 ;
-        st:matchConfidence 1.0 ;
-        st:matchStatus "new" ;
-        st:name "Drug Return and Compliance" ;
-        st:onPage page:17 ;
-        st:rowPosition 42 .
-
     e:t01-r043 a st:SourceActivityRow ;
         st:inTable e:t01 ;
         st:matchConfidence 1.0 ;
@@ -3982,6 +3993,14 @@
         st:name "Pharmacogenetic Sample" ;
         st:onPage page:17 ;
         st:rowPosition 45 .
+
+    e:t01-r046 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Pharmacokinetic Sample" ;
+        st:onPage page:17 ;
+        st:rowPosition 46 .
 
     e:t02-r022 a st:SourceActivityRow ;
         st:inTable e:t02 ;
@@ -4085,6 +4104,14 @@
         st:onPage page:16 ;
         st:rowPosition 28 .
 
+    e:t01-r042 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Drug Return and Compliance" ;
+        st:onPage page:17 ;
+        st:rowPosition 42 .
+
     e:t01-r044 a st:SourceActivityRow ;
         st:inTable e:t01 ;
         st:matchConfidence 1.0 ;
@@ -4144,14 +4171,6 @@
         st:name "ADT Compliance" ;
         st:onPage page:85 ;
         st:rowPosition 25 .
-
-    e:t02-r027 a st:SourceActivityRow ;
-        st:inTable e:t02 ;
-        st:matchConfidence 1.0 ;
-        st:matchStatus "fuzzy_auto" ;
-        st:name "Pharmacokinetic Sample (at any time during visit)" ;
-        st:onPage page:85 ;
-        st:rowPosition 27 .
 
     e:t02-r028 a st:SourceActivityRow ;
         st:inTable e:t02 ;
@@ -4278,13 +4297,14 @@
         st:onPage page:85 ;
         st:rowPosition 21 .
 
-    e:t02-r026 a st:SourceActivityRow ;
+    e:t02-r027 a st:SourceActivityRow ;
         st:inTable e:t02 ;
         st:matchConfidence 1.0 ;
-        st:matchStatus "new" ;
-        st:name "IP Return" ;
+        st:matchDecision e:decision-ccorr-001 ;
+        st:matchStatus "fuzzy_auto" ;
+        st:name "Pharmacokinetic Sample (at any time during visit)" ;
         st:onPage page:85 ;
-        st:rowPosition 26 .
+        st:rowPosition 27 .
 
     e:u-t01-r012 a st:UnifiedActivity ;
         st:displayOrder 7 ;
@@ -4297,6 +4317,14 @@
         st:name "Clinical Laboratory Tests" ;
         st:parentName "" ;
         st:qualifiedKey "::Clinical Laboratory Tests" .
+
+    e:t02-r026 a st:SourceActivityRow ;
+        st:inTable e:t02 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "IP Return" ;
+        st:onPage page:85 ;
+        st:rowPosition 26 .
 
     e:t02-r005 a st:SourceActivityRow ;
         st:inTable e:t02 ;
