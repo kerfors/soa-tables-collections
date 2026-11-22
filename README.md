@@ -36,6 +36,22 @@ Full protocol PDFs are not stored here. `register.csv` names each file of record
 its sha256 and source address; the RDF identifies the file by the same hash. The RDF interface is described in
 soa-tables [`documents/rdf-interface.md`](https://github.com/kerfors/soa-tables/blob/main/documents/rdf-interface.md).
 
+## RDF
+
+One TriG file per protocol, holding one named graph (the protocol's transcription). The vocabulary is the SHACL file
+[`schemas/rdf/soa-tables-facts.shacl.ttl`](https://github.com/kerfors/soa-tables/blob/main/schemas/rdf/soa-tables-facts.shacl.ttl)
+in soa-tables. To load every protocol into one dataset (Python, rdflib), from the repository root:
+
+```python
+from pathlib import Path
+from rdflib import Dataset
+
+ds = Dataset()
+for f in sorted(Path("collections").glob("*/protocols/*/soa-tables/rdf/*_facts.trig")):
+    ds.parse(f, format="trig")
+ds.serialize("soa-tables-facts.nq", format="nquads")  # optional: all protocols as one N-Quads file (about 64 MB)
+```
+
 ## License
 
 Derived content is shared under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) (see [LICENSE-CONTENT](LICENSE-CONTENT)). Any code in this repo is under the [MIT License](LICENSE). Source protocol documents remain the property of their respective sponsors. Full protocols are not redistributed here; the SoA page excerpts are included for review.

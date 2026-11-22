@@ -71,6 +71,25 @@
      list, per-layer pipeline status, and links to each protocol's source, extraction data, consolidated SoA,
      review page and extraction log.</p>
 
+  <h2>Data</h2>
+  <div class="panel">
+  <ul>
+    <li><strong>RDF:</strong> one TriG file per protocol, holding one named graph &mdash; the protocol's
+        transcription. Each collection index links its protocols' files; the path is
+        <code>collections/&lt;collection&gt;/protocols/&lt;protocol&gt;/soa-tables/rdf/&lt;protocol&gt;_facts.trig</code>.
+        To load all protocols into one dataset, see the
+        <a href="https://github.com/kerfors/soa-tables-collections#rdf">README</a>.</li>
+    <li><strong><a href="register.csv">register.csv</a>:</strong> one row per protocol &mdash; study IRI, the file of
+        record's sha256 and IRI, its source address, and the reason when a protocol is excluded.</li>
+    <li><strong>Vocabulary:</strong>
+        <a href="https://github.com/kerfors/soa-tables/blob/main/schemas/rdf/soa-tables-facts.shacl.ttl">soa-tables-facts.shacl.ttl</a>
+        (terms and closed shapes); described in
+        <a href="https://github.com/kerfors/soa-tables/blob/main/documents/rdf-interface.md">rdf-interface.md</a>.</li>
+    <li><strong>Licence:</strong> derived content under CC-BY-4.0 (<a href="LICENSE-CONTENT">LICENSE-CONTENT</a>);
+        the SoA page excerpts are not covered.</li>
+  </ul>
+  </div>
+
   <h2>Pipeline layers</h2>
   <div class="panel">
   <ul>
@@ -91,7 +110,7 @@
   </main>
 
   <footer>
-    Generated 2026-11-21 14:53 UTC by <code>soa_tables.collections_index</code>.
+    Generated 2026-11-22 18:27 UTC by <code>soa_tables.collections_index</code>.
     Built iteratively with Claude (Anthropic). Derived content under CC-BY-4.0; code under MIT.
   </footer>
 </body>
