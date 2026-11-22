@@ -7,8 +7,8 @@
 <https://kerfors.github.io/soa-tables/id/sha256/a94c35b9e940b3cd1b7dc326c11ab004f88f8cea4e0df2fa20d4b28b4be16eba/soa-tables-v1> {
     <https://kerfors.github.io/soa-tables/id/sha256/a94c35b9e940b3cd1b7dc326c11ab004f88f8cea4e0df2fa20d4b28b4be16eba/soa-tables-v1> a st:Transcription ;
         st:aboutStudy <https://kerfors.github.io/soa-tables/id/study/NCT03421379> ;
-        st:codeCommit "bbb9ab3dac8c9fe153c293d6515e6f7fb78f7184" ;
-        st:collectionsCommit "1c7dc79b2ed7cf92259168673da2ab1deafd28b9" ;
+        st:codeCommit "51f8dc7552331a64cf57648341e27ac8a53aecfd" ;
+        st:collectionsCommit "9a8c9e4ee840a037cc8e80ae7cfc7aecac88c129" ;
         st:consolidatedAt "2026-11-21T09:30:38.798859+00:00"^^xsd:dateTime ;
         st:consolidator "soa_tables.consolidate v1.2" ;
         st:ofFile <https://kerfors.github.io/soa-tables/id/sha256/a94c35b9e940b3cd1b7dc326c11ab004f88f8cea4e0df2fa20d4b28b4be16eba> ;
@@ -803,7 +803,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Clinical Assessments" ;
-        st:onPage page:11 ;
+        st:onPage page:12 ;
         st:rowPosition 3 .
 
     e:t01-r004-c002 a st:SourceCell ;
@@ -1066,7 +1066,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Laboratory Tests" ;
-        st:onPage page:14 ;
+        st:onPage page:15 ;
         st:rowPosition 23 .
 
     e:t01-r024-c002 a st:SourceCell ;
@@ -1194,7 +1194,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Health Outcome Instruments" ;
-        st:onPage page:17 ;
+        st:onPage page:18 ;
         st:rowPosition 35 .
 
     e:t01-r036-c003 a st:SourceCell ;
@@ -1405,16 +1405,16 @@
     <https://kerfors.github.io/soa-tables/id/study/NCT03421379> a st:Study ;
         st:studyKey "NCT03421379" .
 
-    page:18 a st:Page ;
+    page:19 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/a94c35b9e940b3cd1b7dc326c11ab004f88f8cea4e0df2fa20d4b28b4be16eba> ;
-        st:pageNumber 18 .
+        st:pageNumber 19 .
 
     e:t01-r004 a st:SourceActivityRow ;
         st:inTable e:t01 ;
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Informed Consent" ;
-        st:onPage page:11 ;
+        st:onPage page:12 ;
         st:rowPosition 4 .
 
     e:t01-r005 a st:SourceActivityRow ;
@@ -1422,7 +1422,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Randomization" ;
-        st:onPage page:11 ;
+        st:onPage page:12 ;
         st:rowPosition 5 .
 
     e:t01-r008 a st:SourceActivityRow ;
@@ -1430,7 +1430,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Medical History" ;
-        st:onPage page:11 ;
+        st:onPage page:12 ;
         st:rowPosition 8 .
 
     e:t01-r024 a st:SourceActivityRow ;
@@ -1438,7 +1438,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Clinical Serology Tests" ;
-        st:onPage page:14 ;
+        st:onPage page:15 ;
         st:rowPosition 24 .
 
     e:t01-r028 a st:SourceActivityRow ;
@@ -1446,7 +1446,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "FSH (Female patients only)" ;
-        st:onPage page:15 ;
+        st:onPage page:16 ;
         st:rowPosition 28 .
 
     e:t01-r029 a st:SourceActivityRow ;
@@ -1454,7 +1454,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Ethanol Testing" ;
-        st:onPage page:15 ;
+        st:onPage page:16 ;
         st:rowPosition 29 .
 
     e:t01-r030 a st:SourceActivityRow ;
@@ -1462,7 +1462,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Urine Drug Screen" ;
-        st:onPage page:16 ;
+        st:onPage page:17 ;
         st:rowPosition 30 .
 
     e:t01-r033 a st:SourceActivityRow ;
@@ -1470,7 +1470,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Genetic Sample (Stored)" ;
-        st:onPage page:16 ;
+        st:onPage page:17 ;
         st:rowPosition 33 .
 
     e:t01-r036 a st:SourceActivityRow ;
@@ -1478,7 +1478,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Clarke Hypoglycemia Awareness Survey" ;
-        st:onPage page:17 ;
+        st:onPage page:18 ;
         st:rowPosition 36 .
 
     e:u-t01-c005 a st:UnifiedColumn ;
@@ -1560,9 +1560,9 @@
         st:parentName "Laboratory Tests" ;
         st:qualifiedKey "Laboratory Tests::Genetic Sample (Stored)" .
 
-    page:13 a st:Page ;
+    page:14 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/a94c35b9e940b3cd1b7dc326c11ab004f88f8cea4e0df2fa20d4b28b4be16eba> ;
-        st:pageNumber 13 .
+        st:pageNumber 14 .
 
     e:t01-c005 a st:SourceColumn ;
         st:columnPosition 5 ;
@@ -1577,7 +1577,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Admission to CRU" ;
-        st:onPage page:11 ;
+        st:onPage page:12 ;
         st:rowPosition 6 .
 
     e:t01-r007 a st:SourceActivityRow ;
@@ -1585,7 +1585,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Discharge from CRU" ;
-        st:onPage page:11 ;
+        st:onPage page:12 ;
         st:rowPosition 7 .
 
     e:t01-r012 a st:SourceActivityRow ;
@@ -1593,7 +1593,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Collect Hypoglycemic Events" ;
-        st:onPage page:12 ;
+        st:onPage page:13 ;
         st:rowPosition 12 .
 
     e:t01-r014 a st:SourceActivityRow ;
@@ -1601,7 +1601,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Meal" ;
-        st:onPage page:12 ;
+        st:onPage page:13 ;
         st:rowPosition 14 .
 
     e:t01-r015 a st:SourceActivityRow ;
@@ -1609,7 +1609,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Insulin infusion to Induce Hypoglycemia" ;
-        st:onPage page:13 ;
+        st:onPage page:14 ;
         st:rowPosition 15 .
 
     e:t01-r016 a st:SourceActivityRow ;
@@ -1617,7 +1617,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Bedside PG Monitoring for Safety" ;
-        st:onPage page:13 ;
+        st:onPage page:14 ;
         st:rowPosition 16 .
 
     e:t01-r017 a st:SourceActivityRow ;
@@ -1625,7 +1625,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Study Treatment Administration" ;
-        st:onPage page:13 ;
+        st:onPage page:14 ;
         st:rowPosition 17 .
 
     e:t01-r018 a st:SourceActivityRow ;
@@ -1633,7 +1633,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Injection-Site Assessment" ;
-        st:onPage page:14 ;
+        st:onPage page:15 ;
         st:rowPosition 18 .
 
     e:t01-r019 a st:SourceActivityRow ;
@@ -1641,7 +1641,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Nasal Inspection" ;
-        st:onPage page:14 ;
+        st:onPage page:15 ;
         st:rowPosition 19 .
 
     e:t01-r021 a st:SourceActivityRow ;
@@ -1649,7 +1649,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Single 12-lead ECG (Local)" ;
-        st:onPage page:14 ;
+        st:onPage page:15 ;
         st:rowPosition 21 .
 
     e:t01-r022 a st:SourceActivityRow ;
@@ -1657,7 +1657,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Triplicate 12-lead ECG (Central)" ;
-        st:onPage page:14 ;
+        st:onPage page:15 ;
         st:rowPosition 22 .
 
     e:t01-r026 a st:SourceActivityRow ;
@@ -1665,7 +1665,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "HbA1c" ;
-        st:onPage page:15 ;
+        st:onPage page:16 ;
         st:rowPosition 26 .
 
     e:t01-r032 a st:SourceActivityRow ;
@@ -1673,7 +1673,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Plasma Glucose for PD" ;
-        st:onPage page:16 ;
+        st:onPage page:17 ;
         st:rowPosition 32 .
 
     e:t01-r037 a st:SourceActivityRow ;
@@ -1681,7 +1681,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Nasal and Non-nasal Score Questionnaire" ;
-        st:onPage page:17 ;
+        st:onPage page:18 ;
         st:rowPosition 37 .
 
     e:t01-r038 a st:SourceActivityRow ;
@@ -1689,7 +1689,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Edinburgh Hypoglycemia Scale: Experimental Hypoglycemia" ;
-        st:onPage page:18 ;
+        st:onPage page:19 ;
         st:rowPosition 38 .
 
     e:u-t01-c009 a st:UnifiedColumn ;
@@ -1878,24 +1878,24 @@
         st:parentName "Health Outcome Instruments" ;
         st:qualifiedKey "Health Outcome Instruments::Edinburgh Hypoglycemia Scale: Experimental Hypoglycemia" .
 
-    page:12 a st:Page ;
+    page:13 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/a94c35b9e940b3cd1b7dc326c11ab004f88f8cea4e0df2fa20d4b28b4be16eba> ;
-        st:pageNumber 12 .
-
-    page:16 a st:Page ;
-        st:inFile <https://kerfors.github.io/soa-tables/id/sha256/a94c35b9e940b3cd1b7dc326c11ab004f88f8cea4e0df2fa20d4b28b4be16eba> ;
-        st:pageNumber 16 .
+        st:pageNumber 13 .
 
     page:17 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/a94c35b9e940b3cd1b7dc326c11ab004f88f8cea4e0df2fa20d4b28b4be16eba> ;
         st:pageNumber 17 .
+
+    page:18 a st:Page ;
+        st:inFile <https://kerfors.github.io/soa-tables/id/sha256/a94c35b9e940b3cd1b7dc326c11ab004f88f8cea4e0df2fa20d4b28b4be16eba> ;
+        st:pageNumber 18 .
 
     e:t01-r034 a st:SourceActivityRow ;
         st:inTable e:t01 ;
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Anti-glucagon Antibodies" ;
-        st:onPage page:17 ;
+        st:onPage page:18 ;
         st:rowPosition 34 .
 
     e:u-t01-c006 a st:UnifiedColumn ;
@@ -1917,9 +1917,9 @@
         st:parentName "Laboratory Tests" ;
         st:qualifiedKey "Laboratory Tests::Anti-glucagon Antibodies" .
 
-    page:15 a st:Page ;
+    page:16 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/a94c35b9e940b3cd1b7dc326c11ab004f88f8cea4e0df2fa20d4b28b4be16eba> ;
-        st:pageNumber 15 .
+        st:pageNumber 16 .
 
     e:t01-c006 a st:SourceColumn ;
         st:columnPosition 6 ;
@@ -1930,7 +1930,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Physical Exam" ;
-        st:onPage page:11 ;
+        st:onPage page:12 ;
         st:rowPosition 10 .
 
     e:t01-r011 a st:SourceActivityRow ;
@@ -1938,7 +1938,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Height and Weight" ;
-        st:onPage page:12 ;
+        st:onPage page:13 ;
         st:rowPosition 11 .
 
     e:t01-r020 a st:SourceActivityRow ;
@@ -1946,7 +1946,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Vital Signs (Supine Blood Pressure, Pulse Rate, and Body Temperature)" ;
-        st:onPage page:14 ;
+        st:onPage page:15 ;
         st:rowPosition 20 .
 
     e:t01-r025 a st:SourceActivityRow ;
@@ -1954,7 +1954,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Clinical Lab Tests (Hematology, Clinical Chemistry, and Urinalysis)" ;
-        st:onPage page:15 ;
+        st:onPage page:16 ;
         st:rowPosition 25 .
 
     e:t01-r027 a st:SourceActivityRow ;
@@ -1962,7 +1962,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Pregnancy Test (Female patients of childbearing potential only)" ;
-        st:onPage page:15 ;
+        st:onPage page:16 ;
         st:rowPosition 27 .
 
     e:t01-r031 a st:SourceActivityRow ;
@@ -1970,7 +1970,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "PK (Glucagon)" ;
-        st:onPage page:16 ;
+        st:onPage page:17 ;
         st:rowPosition 31 .
 
     e:u-t01-r010 a st:UnifiedActivity ;
@@ -2052,9 +2052,9 @@
             e:u-t01-c003-v02 ;
         st:segment "main" .
 
-    page:14 a st:Page ;
+    page:15 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/a94c35b9e940b3cd1b7dc326c11ab004f88f8cea4e0df2fa20d4b28b4be16eba> ;
-        st:pageNumber 14 .
+        st:pageNumber 15 .
 
     e:t01-c003 a st:SourceColumn ;
         st:columnPosition 3 ;
@@ -2077,7 +2077,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Collect Pre-existing Conditions and Adverse Events" ;
-        st:onPage page:11 ;
+        st:onPage page:12 ;
         st:rowPosition 9 .
 
     e:t01-r013 a st:SourceActivityRow ;
@@ -2085,7 +2085,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Collect Concomitant Medications" ;
-        st:onPage page:12 ;
+        st:onPage page:13 ;
         st:rowPosition 13 .
 
     e:u-t01-r013 a st:UnifiedActivity ;
@@ -2103,9 +2103,9 @@
     <https://kerfors.github.io/soa-tables/id/sha256/a94c35b9e940b3cd1b7dc326c11ab004f88f8cea4e0df2fa20d4b28b4be16eba> a st:File ;
         st:sha256 "a94c35b9e940b3cd1b7dc326c11ab004f88f8cea4e0df2fa20d4b28b4be16eba" .
 
-    page:11 a st:Page ;
+    page:12 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/a94c35b9e940b3cd1b7dc326c11ab004f88f8cea4e0df2fa20d4b28b4be16eba> ;
-        st:pageNumber 11 .
+        st:pageNumber 12 .
 
     e:u-t01-c008 a st:UnifiedColumn ;
         st:compositeLabel "Follow-up/ED / Within 28±2 days after last study treatment" ;
@@ -2174,8 +2174,8 @@
         st:inTable e:t01 .
 
     e:t01 a st:SourceTable ;
-        st:firstPage page:11 ;
-        st:lastPage page:18 ;
+        st:firstPage page:12 ;
+        st:lastPage page:19 ;
         st:purpose "Main study schedule: screening, two crossover dosing periods with washout, follow-up/ED and additional TE ADA follow-up" ;
         st:tableNumber 1 ;
         st:tableType "main_soa" ;

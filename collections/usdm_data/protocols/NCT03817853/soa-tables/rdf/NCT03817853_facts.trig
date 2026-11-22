@@ -7,8 +7,8 @@
 <https://kerfors.github.io/soa-tables/id/sha256/e9f6bfc9cbacdd9c89d8bae22e6462a11f77742f0deca376c76aab77eb9abfdf/soa-tables-v1> {
     <https://kerfors.github.io/soa-tables/id/sha256/e9f6bfc9cbacdd9c89d8bae22e6462a11f77742f0deca376c76aab77eb9abfdf/soa-tables-v1> a st:Transcription ;
         st:aboutStudy <https://kerfors.github.io/soa-tables/id/study/NCT03817853> ;
-        st:codeCommit "bbb9ab3dac8c9fe153c293d6515e6f7fb78f7184" ;
-        st:collectionsCommit "1c7dc79b2ed7cf92259168673da2ab1deafd28b9" ;
+        st:codeCommit "51f8dc7552331a64cf57648341e27ac8a53aecfd" ;
+        st:collectionsCommit "9a8c9e4ee840a037cc8e80ae7cfc7aecac88c129" ;
         st:consolidatedAt "2026-11-21T09:30:41.979808+00:00"^^xsd:dateTime ;
         st:consolidator "soa_tables.consolidate v1.2" ;
         st:ofFile <https://kerfors.github.io/soa-tables/id/sha256/e9f6bfc9cbacdd9c89d8bae22e6462a11f77742f0deca376c76aab77eb9abfdf> ;
@@ -682,9 +682,9 @@
         st:propertyName "Day" ;
         st:propertyType "study_day" .
 
-    page:102 a st:Page ;
+    page:103 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/e9f6bfc9cbacdd9c89d8bae22e6462a11f77742f0deca376c76aab77eb9abfdf> ;
-        st:pageNumber 102 .
+        st:pageNumber 103 .
 
     e:m-t01-r005-t01-c002 a st:ConsolidatedCell ;
         prov:wasDerivedFrom e:t01-r005-c002 ;
@@ -1154,7 +1154,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Study drug administration" ;
-        st:onPage page:100 ;
+        st:onPage page:101 ;
         st:rowPosition 24 .
 
     e:t01-r025-c004 a st:SourceCell ;
@@ -1806,7 +1806,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Informed consent" ;
-        st:onPage page:100 ;
+        st:onPage page:101 ;
         st:rowPosition 5 .
 
     e:t01-r006 a st:SourceActivityRow ;
@@ -1814,7 +1814,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Demographic data" ;
-        st:onPage page:100 ;
+        st:onPage page:101 ;
         st:rowPosition 6 .
 
     e:t01-r007 a st:SourceActivityRow ;
@@ -1822,7 +1822,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Medical history and baseline conditions" ;
-        st:onPage page:100 ;
+        st:onPage page:101 ;
         st:rowPosition 7 .
 
     e:t01-r008 a st:SourceActivityRow ;
@@ -1830,7 +1830,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Ann Arbor, FLIPI, and FLIPI2" ;
-        st:onPage page:100 ;
+        st:onPage page:101 ;
         st:rowPosition 8 .
 
     e:t01-r009 a st:SourceActivityRow ;
@@ -1838,7 +1838,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "ECOG performance status" ;
-        st:onPage page:100 ;
+        st:onPage page:101 ;
         st:rowPosition 9 .
 
     e:t01-r011 a st:SourceActivityRow ;
@@ -1846,7 +1846,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Weight" ;
-        st:onPage page:100 ;
+        st:onPage page:101 ;
         st:rowPosition 11 .
 
     e:t01-r012 a st:SourceActivityRow ;
@@ -1854,7 +1854,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Height" ;
-        st:onPage page:100 ;
+        st:onPage page:101 ;
         st:rowPosition 12 .
 
     e:t01-r013 a st:SourceActivityRow ;
@@ -1862,7 +1862,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "ECG" ;
-        st:onPage page:100 ;
+        st:onPage page:101 ;
         st:rowPosition 13 .
 
     e:t01-r014 a st:SourceActivityRow ;
@@ -1870,7 +1870,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "LVEF (echocardiography or MUGA scan)" ;
-        st:onPage page:100 ;
+        st:onPage page:101 ;
         st:rowPosition 14 .
 
     e:t01-r017 a st:SourceActivityRow ;
@@ -1878,7 +1878,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "B symptoms" ;
-        st:onPage page:100 ;
+        st:onPage page:101 ;
         st:rowPosition 17 .
 
     e:t01-r020 a st:SourceActivityRow ;
@@ -1886,7 +1886,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Pregnancy test" ;
-        st:onPage page:100 ;
+        st:onPage page:101 ;
         st:rowPosition 20 .
 
     e:t01-r021 a st:SourceActivityRow ;
@@ -1894,7 +1894,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Coagulation INR, aPTT or PTT and PT" ;
-        st:onPage page:100 ;
+        st:onPage page:101 ;
         st:rowPosition 21 .
 
     e:t01-r023 a st:SourceActivityRow ;
@@ -1902,7 +1902,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "HIV, HTLV-1, Hep B / C testing" ;
-        st:onPage page:100 ;
+        st:onPage page:101 ;
         st:rowPosition 23 .
 
     e:t01-r030 a st:SourceActivityRow ;
@@ -1910,7 +1910,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Provider-reported measures" ;
-        st:onPage page:100 ;
+        st:onPage page:101 ;
         st:rowPosition 30 .
 
     e:u-t01-r005 a st:UnifiedActivity ;
@@ -1998,7 +1998,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Complete physical examination" ;
-        st:onPage page:100 ;
+        st:onPage page:101 ;
         st:rowPosition 15 .
 
     e:t01-r016 a st:SourceActivityRow ;
@@ -2006,7 +2006,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Targeted physical examination" ;
-        st:onPage page:100 ;
+        st:onPage page:101 ;
         st:rowPosition 16 .
 
     e:t01-r022 a st:SourceActivityRow ;
@@ -2014,7 +2014,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Urinalysis" ;
-        st:onPage page:100 ;
+        st:onPage page:101 ;
         st:rowPosition 22 .
 
     e:t01-r026 a st:SourceActivityRow ;
@@ -2022,7 +2022,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "chemotherapy" ;
-        st:onPage page:100 ;
+        st:onPage page:101 ;
         st:rowPosition 26 .
 
     e:t01-r027 a st:SourceActivityRow ;
@@ -2030,7 +2030,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Tumor assessment" ;
-        st:onPage page:100 ;
+        st:onPage page:101 ;
         st:rowPosition 27 .
 
     e:u-t01-r015 a st:UnifiedActivity ;
@@ -2115,7 +2115,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "obinutuzumab" ;
-        st:onPage page:100 ;
+        st:onPage page:101 ;
         st:rowPosition 25 .
 
     e:u-t01-c005 a st:UnifiedColumn ;
@@ -2153,7 +2153,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Patient-reported measures" ;
-        st:onPage page:100 ;
+        st:onPage page:101 ;
         st:rowPosition 31 .
 
     e:u-t01-c003 a st:UnifiedColumn ;
@@ -2203,7 +2203,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Chemistry" ;
-        st:onPage page:100 ;
+        st:onPage page:101 ;
         st:rowPosition 19 .
 
     e:u-t01-c007 a st:UnifiedColumn ;
@@ -2273,7 +2273,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Hematology" ;
-        st:onPage page:100 ;
+        st:onPage page:101 ;
         st:rowPosition 18 .
 
     e:u-t01-c008 a st:UnifiedColumn ;
@@ -2301,7 +2301,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Vital signs" ;
-        st:onPage page:100 ;
+        st:onPage page:101 ;
         st:rowPosition 10 .
 
     e:u-t01-r010 a st:UnifiedActivity ;
@@ -2320,7 +2320,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Concomitant medications" ;
-        st:onPage page:100 ;
+        st:onPage page:101 ;
         st:rowPosition 28 .
 
     e:t01-r029 a st:SourceActivityRow ;
@@ -2328,7 +2328,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Adverse events" ;
-        st:onPage page:100 ;
+        st:onPage page:101 ;
         st:rowPosition 29 .
 
     e:u-t01-r029 a st:UnifiedActivity ;
@@ -2366,13 +2366,13 @@
             e:u-t01-c002-v04 ;
         st:segment "main" .
 
-    page:100 a st:Page ;
+    page:101 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/e9f6bfc9cbacdd9c89d8bae22e6462a11f77742f0deca376c76aab77eb9abfdf> ;
-        st:pageNumber 100 .
+        st:pageNumber 101 .
 
     e:t01 a st:SourceTable ;
-        st:firstPage page:100 ;
-        st:lastPage page:102 ;
+        st:firstPage page:101 ;
+        st:lastPage page:103 ;
         st:purpose "Main study schedule: screening, induction (G-chemo), end of induction, maintenance, end of maintenance and safety follow-up" ;
         st:tableNumber 1 ;
         st:tableType "main_soa" ;

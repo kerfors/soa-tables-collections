@@ -7,8 +7,8 @@
 <https://kerfors.github.io/soa-tables/id/sha256/e6d23e99854c9432cf0596096e669a006b2602eb4ca2c8bf72e95d5264238852/soa-tables-v1> {
     <https://kerfors.github.io/soa-tables/id/sha256/e6d23e99854c9432cf0596096e669a006b2602eb4ca2c8bf72e95d5264238852/soa-tables-v1> a st:Transcription ;
         st:aboutStudy <https://kerfors.github.io/soa-tables/id/study/NCT02107703> ;
-        st:codeCommit "bbb9ab3dac8c9fe153c293d6515e6f7fb78f7184" ;
-        st:collectionsCommit "1c7dc79b2ed7cf92259168673da2ab1deafd28b9" ;
+        st:codeCommit "51f8dc7552331a64cf57648341e27ac8a53aecfd" ;
+        st:collectionsCommit "9a8c9e4ee840a037cc8e80ae7cfc7aecac88c129" ;
         st:consolidatedAt "2026-11-21T09:30:34.636327+00:00"^^xsd:dateTime ;
         st:consolidator "soa_tables.consolidate v1.2" ;
         st:ofFile <https://kerfors.github.io/soa-tables/id/sha256/e6d23e99854c9432cf0596096e669a006b2602eb4ca2c8bf72e95d5264238852> ;
@@ -727,9 +727,9 @@
         st:propertyName "Duration (days)" ;
         st:propertyType "other" .
 
-    page:77 a st:Page ;
+    page:78 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/e6d23e99854c9432cf0596096e669a006b2602eb4ca2c8bf72e95d5264238852> ;
-        st:pageNumber 77 .
+        st:pageNumber 78 .
 
     e:m-t01-r008-t01-c004 a st:ConsolidatedCell ;
         prov:wasDerivedFrom e:t01-r008-c004 ;
@@ -1315,7 +1315,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Study Entry /Enrollment" ;
-        st:onPage page:73 ;
+        st:onPage page:74 ;
         st:rowPosition 7 .
 
     e:t01-r008-c004 a st:SourceCell ;
@@ -1338,7 +1338,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Medical History" ;
-        st:onPage page:73 ;
+        st:onPage page:74 ;
         st:rowPosition 10 .
 
     e:t01-r011-c005 a st:SourceCell ;
@@ -1361,7 +1361,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Physical Examination" ;
-        st:onPage page:73 ;
+        st:onPage page:74 ;
         st:rowPosition 14 .
 
     e:t01-r015-c005 a st:SourceCell ;
@@ -1464,7 +1464,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Tumor Assessment" ;
-        st:onPage page:73 ;
+        st:onPage page:74 ;
         st:rowPosition 19 .
 
     e:t01-r020-c004 a st:SourceCell ;
@@ -1662,7 +1662,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Lab/Diagnostic Tests" ;
-        st:onPage page:74 ;
+        st:onPage page:75 ;
         st:rowPosition 27 .
 
     e:t01-r028-c005 a st:SourceCell ;
@@ -1795,7 +1795,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Study Drug" ;
-        st:onPage page:75 ;
+        st:onPage page:76 ;
         st:rowPosition 37 .
 
     e:t01-r038-c006 a st:SourceCell ;
@@ -1843,7 +1843,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Health Outcomes" ;
-        st:onPage page:75 ;
+        st:onPage page:76 ;
         st:rowPosition 40 .
 
     e:t01-r041-c005 a st:SourceCell ;
@@ -2005,7 +2005,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Study Drug" ;
-        st:onPage page:78 ;
+        st:onPage page:79 ;
         st:rowPosition 8 .
 
     e:t02-r009-c004 a st:SourceCell ;
@@ -2540,7 +2540,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Inclusion/Exclusion evaluation" ;
-        st:onPage page:73 ;
+        st:onPage page:74 ;
         st:rowPosition 9 .
 
     e:t01-r011 a st:SourceActivityRow ;
@@ -2548,7 +2548,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Medical History" ;
-        st:onPage page:73 ;
+        st:onPage page:74 ;
         st:rowPosition 11 .
 
     e:t01-r012 a st:SourceActivityRow ;
@@ -2556,7 +2556,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Historical illnesses" ;
-        st:onPage page:73 ;
+        st:onPage page:74 ;
         st:rowPosition 12 .
 
     e:t01-r013 a st:SourceActivityRow ;
@@ -2564,7 +2564,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Habits assessment" ;
-        st:onPage page:73 ;
+        st:onPage page:74 ;
         st:rowPosition 13 .
 
     e:t01-r015 a st:SourceActivityRow ;
@@ -2572,7 +2572,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Height" ;
-        st:onPage page:73 ;
+        st:onPage page:74 ;
         st:rowPosition 15 .
 
     e:t01-r030 a st:SourceActivityRow ;
@@ -2580,7 +2580,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Local FSH and estradiol levels" ;
-        st:onPage page:74 ;
+        st:onPage page:75 ;
         st:rowPosition 30 .
 
     e:t01-r031 a st:SourceActivityRow ;
@@ -2588,7 +2588,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Local serum pregnancy test" ;
-        st:onPage page:74 ;
+        st:onPage page:75 ;
         st:rowPosition 31 .
 
     e:t01-r033 a st:SourceActivityRow ;
@@ -2596,7 +2596,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Pharmacogenetic blood sample" ;
-        st:onPage page:74 ;
+        st:onPage page:75 ;
         st:rowPosition 33 .
 
     e:t01-r034 a st:SourceActivityRow ;
@@ -2604,7 +2604,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Biomarker plasma sample" ;
-        st:onPage page:74 ;
+        st:onPage page:75 ;
         st:rowPosition 34 .
 
     e:t01-r036 a st:SourceActivityRow ;
@@ -2612,7 +2612,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Archived Tumor Sample" ;
-        st:onPage page:74 ;
+        st:onPage page:75 ;
         st:rowPosition 36 .
 
     e:t02-c006 a st:SourceColumn ;
@@ -2741,7 +2741,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Informed Consent Form signed" ;
-        st:onPage page:73 ;
+        st:onPage page:74 ;
         st:rowPosition 8 .
 
     e:t01-r024 a st:SourceActivityRow ;
@@ -2749,7 +2749,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Survival Information" ;
-        st:onPage page:74 ;
+        st:onPage page:75 ;
         st:rowPosition 24 .
 
     e:t02-c005 a st:SourceColumn ;
@@ -2761,7 +2761,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Fulvestrant Therapy" ;
-        st:onPage page:78 ;
+        st:onPage page:79 ;
         st:rowPosition 9 .
 
     e:t02-r010 a st:SourceActivityRow ;
@@ -2769,7 +2769,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "LY2835219 Therapy" ;
-        st:onPage page:78 ;
+        st:onPage page:79 ;
         st:rowPosition 10 .
 
     e:u-t01-r010 a st:UnifiedActivity ;
@@ -2835,7 +2835,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Central pharmacokinetic (PK) sampling" ;
-        st:onPage page:74 ;
+        st:onPage page:75 ;
         st:rowPosition 32 .
 
     e:t02-c004 a st:SourceColumn ;
@@ -2903,7 +2903,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Fulvestrant Therapy" ;
-        st:onPage page:75 ;
+        st:onPage page:76 ;
         st:rowPosition 38 .
 
     e:t01-r039 a st:SourceActivityRow ;
@@ -2911,7 +2911,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "LY2835219 Therapy" ;
-        st:onPage page:75 ;
+        st:onPage page:76 ;
         st:rowPosition 39 .
 
     e:t01-r041 a st:SourceActivityRow ;
@@ -2919,7 +2919,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "BPI, EORTC QLQ-C30, EORTC BR23, EQ-5D 5L" ;
-        st:onPage page:75 ;
+        st:onPage page:76 ;
         st:rowPosition 41 .
 
     e:t01-r043 a st:SourceActivityRow ;
@@ -2927,7 +2927,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Hospitalization" ;
-        st:onPage page:75 ;
+        st:onPage page:76 ;
         st:rowPosition 43 .
 
     e:t01-r044 a st:SourceActivityRow ;
@@ -2935,7 +2935,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Transfusion" ;
-        st:onPage page:75 ;
+        st:onPage page:76 ;
         st:rowPosition 44 .
 
     e:t02-r007 a st:SourceActivityRow ;
@@ -2944,7 +2944,7 @@
         st:matchDecision e:decision-ccorr-001 ;
         st:matchStatus "fuzzy_auto" ;
         st:name "Adverse Events Collection/CTCAE Grading" ;
-        st:onPage page:78 ;
+        st:onPage page:79 ;
         st:rowPosition 7 .
 
     e:u-t01-c004 a st:UnifiedColumn ;
@@ -2996,9 +2996,9 @@
     <https://kerfors.github.io/soa-tables/id/sha256/e6d23e99854c9432cf0596096e669a006b2602eb4ca2c8bf72e95d5264238852> a st:File ;
         st:sha256 "e6d23e99854c9432cf0596096e669a006b2602eb4ca2c8bf72e95d5264238852" .
 
-    page:78 a st:Page ;
+    page:79 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/e6d23e99854c9432cf0596096e669a006b2602eb4ca2c8bf72e95d5264238852> ;
-        st:pageNumber 78 .
+        st:pageNumber 79 .
 
     e:t01-c004 a st:SourceColumn ;
         st:columnPosition 4 ;
@@ -3009,7 +3009,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Bone Scintigraphy" ;
-        st:onPage page:73 ;
+        st:onPage page:74 ;
         st:rowPosition 22 .
 
     e:t01-r035 a st:SourceActivityRow ;
@@ -3017,7 +3017,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Local ECG" ;
-        st:onPage page:74 ;
+        st:onPage page:75 ;
         st:rowPosition 35 .
 
     e:t01-r042 a st:SourceActivityRow ;
@@ -3025,7 +3025,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Skeletal-Related Events assessment" ;
-        st:onPage page:75 ;
+        st:onPage page:76 ;
         st:rowPosition 42 .
 
     e:u-t01-r041 a st:UnifiedActivity ;
@@ -3045,7 +3045,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Weight" ;
-        st:onPage page:73 ;
+        st:onPage page:74 ;
         st:rowPosition 16 .
 
     e:t01-r017 a st:SourceActivityRow ;
@@ -3053,7 +3053,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Vital Signs (Temp, BP, HR, RR)" ;
-        st:onPage page:73 ;
+        st:onPage page:74 ;
         st:rowPosition 17 .
 
     e:t01-r018 a st:SourceActivityRow ;
@@ -3061,7 +3061,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "ECOG performance status" ;
-        st:onPage page:73 ;
+        st:onPage page:74 ;
         st:rowPosition 18 .
 
     e:t01-r020 a st:SourceActivityRow ;
@@ -3069,7 +3069,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Tumor measurement (palpable or visible)" ;
-        st:onPage page:73 ;
+        st:onPage page:74 ;
         st:rowPosition 20 .
 
     e:t01-r021 a st:SourceActivityRow ;
@@ -3077,7 +3077,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Radiologic imaging according to RECIST" ;
-        st:onPage page:73 ;
+        st:onPage page:74 ;
         st:rowPosition 21 .
 
     e:t01-r023 a st:SourceActivityRow ;
@@ -3085,7 +3085,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "X-ray or CT scan with bone windows or MRI" ;
-        st:onPage page:73 ;
+        st:onPage page:74 ;
         st:rowPosition 23 .
 
     e:t01-r026 a st:SourceActivityRow ;
@@ -3093,7 +3093,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Concomitant Medications (with analgesics)" ;
-        st:onPage page:74 ;
+        st:onPage page:75 ;
         st:rowPosition 26 .
 
     e:t01-r028 a st:SourceActivityRow ;
@@ -3101,7 +3101,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Central hematology" ;
-        st:onPage page:74 ;
+        st:onPage page:75 ;
         st:rowPosition 28 .
 
     e:t01-r029 a st:SourceActivityRow ;
@@ -3109,7 +3109,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Central serum chemistry" ;
-        st:onPage page:74 ;
+        st:onPage page:75 ;
         st:rowPosition 29 .
 
     e:u-t01-r016 a st:UnifiedActivity ;
@@ -3195,9 +3195,9 @@
         st:parentName "Health Outcomes" ;
         st:qualifiedKey "Health Outcomes::Skeletal-Related Events assessment" .
 
-    page:75 a st:Page ;
+    page:76 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/e6d23e99854c9432cf0596096e669a006b2602eb4ca2c8bf72e95d5264238852> ;
-        st:pageNumber 75 .
+        st:pageNumber 76 .
 
     e:t01-c011 a st:SourceColumn ;
         st:columnPosition 11 ;
@@ -3289,7 +3289,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Adverse Event Collection/CTCAE Grading" ;
-        st:onPage page:74 ;
+        st:onPage page:75 ;
         st:rowPosition 25 .
 
     e:u-t01-r038 a st:UnifiedActivity ;
@@ -3344,9 +3344,9 @@
         st:parentName "" ;
         st:qualifiedKey "::Adverse Event Collection/CTCAE Grading" .
 
-    page:74 a st:Page ;
+    page:75 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/e6d23e99854c9432cf0596096e669a006b2602eb4ca2c8bf72e95d5264238852> ;
-        st:pageNumber 74 .
+        st:pageNumber 75 .
 
     e:u-t01-c006 a st:UnifiedColumn ;
         st:compositeLabel "Patients on Study Treatment / 1 / 1 / 28 / 1" ;
@@ -3363,17 +3363,17 @@
         st:inTable e:t01 .
 
     e:t02 a st:SourceTable ;
-        st:firstPage page:78 ;
-        st:lastPage page:78 ;
+        st:firstPage page:79 ;
+        st:lastPage page:79 ;
         st:purpose "Schedule for patients continuing study treatment in the extension period after study completion" ;
         st:tableNumber 2 ;
         st:tableType "track" ;
         st:title "Study Schedule for the extension period only, Protocol I3Y-MC-JPBL" ;
         st:trackLabel "Extension period" .
 
-    page:73 a st:Page ;
+    page:74 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/e6d23e99854c9432cf0596096e669a006b2602eb4ca2c8bf72e95d5264238852> ;
-        st:pageNumber 73 .
+        st:pageNumber 74 .
 
     e:t01-c008 a st:SourceColumn ;
         st:columnPosition 8 ;
@@ -3432,8 +3432,8 @@
         st:inTable e:t01 .
 
     e:t01 a st:SourceTable ;
-        st:firstPage page:73 ;
-        st:lastPage page:77 ;
+        st:firstPage page:74 ;
+        st:lastPage page:78 ;
         st:purpose "Main study schedule: baseline, on-treatment cycles and postdiscontinuation follow-up" ;
         st:tableNumber 1 ;
         st:tableType "main_soa" ;

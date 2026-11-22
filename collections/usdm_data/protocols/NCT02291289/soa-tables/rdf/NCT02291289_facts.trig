@@ -7,8 +7,8 @@
 <https://kerfors.github.io/soa-tables/id/sha256/f0729bca632e18b26d88ee02fb7c7b33313396cf2e00f6bf1924b38f61c017f6/soa-tables-v1> {
     <https://kerfors.github.io/soa-tables/id/sha256/f0729bca632e18b26d88ee02fb7c7b33313396cf2e00f6bf1924b38f61c017f6/soa-tables-v1> a st:Transcription ;
         st:aboutStudy <https://kerfors.github.io/soa-tables/id/study/NCT02291289> ;
-        st:codeCommit "bbb9ab3dac8c9fe153c293d6515e6f7fb78f7184" ;
-        st:collectionsCommit "1c7dc79b2ed7cf92259168673da2ab1deafd28b9" ;
+        st:codeCommit "51f8dc7552331a64cf57648341e27ac8a53aecfd" ;
+        st:collectionsCommit "9a8c9e4ee840a037cc8e80ae7cfc7aecac88c129" ;
         st:consolidatedAt "2026-11-21T09:30:35.396027+00:00"^^xsd:dateTime ;
         st:consolidator "soa_tables.consolidate v1.2" ;
         st:ofFile <https://kerfors.github.io/soa-tables/id/sha256/f0729bca632e18b26d88ee02fb7c7b33313396cf2e00f6bf1924b38f61c017f6> ;
@@ -1977,29 +1977,29 @@
         st:refersToActivity e:u-t01-r022 ;
         st:text "Patients in the experimental arm will receive cobimetinib 60 mg orally once daily for 3 weeks followed by a 1 week treatment break (21/7 schedule). Treatment cycle length in this arm is 2 weeks. Cobimetinib will be administered daily every day of each odd numbered 2-week treatment cycle, and for the first 7 days only of each even numbered 2-week treatment cycle. Atezolizumab will be administered at a fixed dose of 840 mg administered via 60-minute IV infusion on Day 1 of every 2-week cycle (if initial infusion is well tolerated, subsequent infusions will be done over a 30-minute time period). Patients in the control arm will receive: 5-FU or capecitabine, dose and schedule will be according to local label, where applicable, or otherwise will be determined per the Investigator’s discretion, with bevacizumab 5 mg/kg via 15 – 30 minute IV infusion on Day 1 of every 2-week cycle. If a control arm patient receives capecitabine administered according to a 3- week cycle, timing of all study procedures and assessments scheduled according to 2-week treatment cycles (e.g. ECOG performance status) will be defined by the treatment cycles of concurrently administered bevacizumab." .
 
-    page:173 a st:Page ;
+    page:174 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/f0729bca632e18b26d88ee02fb7c7b33313396cf2e00f6bf1924b38f61c017f6> ;
-        st:pageNumber 173 .
+        st:pageNumber 174 .
 
-    page:176 a st:Page ;
+    page:177 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/f0729bca632e18b26d88ee02fb7c7b33313396cf2e00f6bf1924b38f61c017f6> ;
-        st:pageNumber 176 .
+        st:pageNumber 177 .
 
-    page:178 a st:Page ;
+    page:179 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/f0729bca632e18b26d88ee02fb7c7b33313396cf2e00f6bf1924b38f61c017f6> ;
-        st:pageNumber 178 .
+        st:pageNumber 179 .
 
-    page:183 a st:Page ;
+    page:184 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/f0729bca632e18b26d88ee02fb7c7b33313396cf2e00f6bf1924b38f61c017f6> ;
-        st:pageNumber 183 .
+        st:pageNumber 184 .
 
-    page:188 a st:Page ;
+    page:189 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/f0729bca632e18b26d88ee02fb7c7b33313396cf2e00f6bf1924b38f61c017f6> ;
-        st:pageNumber 188 .
+        st:pageNumber 189 .
 
-    page:193 a st:Page ;
+    page:194 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/f0729bca632e18b26d88ee02fb7c7b33313396cf2e00f6bf1924b38f61c017f6> ;
-        st:pageNumber 193 .
+        st:pageNumber 194 .
 
     e:decision-ccorr-001 a st:Decision ;
         st:decidedAt "2026-10-04T08:20:00Z"^^xsd:dateTime ;
@@ -4152,24 +4152,24 @@
     <https://kerfors.github.io/soa-tables/id/study/NCT02291289> a st:Study ;
         st:studyKey "NCT02291289" .
 
-    page:171 a st:Page ;
+    page:172 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/f0729bca632e18b26d88ee02fb7c7b33313396cf2e00f6bf1924b38f61c017f6> ;
-        st:pageNumber 171 .
+        st:pageNumber 172 .
 
-    page:181 a st:Page ;
+    page:182 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/f0729bca632e18b26d88ee02fb7c7b33313396cf2e00f6bf1924b38f61c017f6> ;
-        st:pageNumber 181 .
+        st:pageNumber 182 .
 
-    page:191 a st:Page ;
+    page:192 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/f0729bca632e18b26d88ee02fb7c7b33313396cf2e00f6bf1924b38f61c017f6> ;
-        st:pageNumber 191 .
+        st:pageNumber 192 .
 
     e:t01-r006 a st:SourceActivityRow ;
         st:inTable e:t01 ;
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Demographics and medical history" ;
-        st:onPage page:169 ;
+        st:onPage page:170 ;
         st:rowPosition 6 .
 
     e:t01-r016 a st:SourceActivityRow ;
@@ -4177,7 +4177,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Archival primary tumour tissue for biomarker assessment" ;
-        st:onPage page:170 ;
+        st:onPage page:171 ;
         st:rowPosition 16 .
 
     e:t01-r018 a st:SourceActivityRow ;
@@ -4185,7 +4185,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Whole blood sample" ;
-        st:onPage page:170 ;
+        st:onPage page:171 ;
         st:rowPosition 18 .
 
     e:t01-r023 a st:SourceActivityRow ;
@@ -4193,7 +4193,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Subsequent anti-cancer therapies" ;
-        st:onPage page:171 ;
+        st:onPage page:172 ;
         st:rowPosition 23 .
 
     e:t02-r003 a st:SourceActivityRow ;
@@ -4201,7 +4201,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Assignment of cohort" ;
-        st:onPage page:174 ;
+        st:onPage page:175 ;
         st:rowPosition 3 .
 
     e:t02-r005 a st:SourceActivityRow ;
@@ -4209,7 +4209,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Confirmation of cohort-specific eligibility" ;
-        st:onPage page:174 ;
+        st:onPage page:175 ;
         st:rowPosition 5 .
 
     e:t02-r006 a st:SourceActivityRow ;
@@ -4217,7 +4217,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Randomisation" ;
-        st:onPage page:174 ;
+        st:onPage page:175 ;
         st:rowPosition 6 .
 
     e:t02-r017 a st:SourceActivityRow ;
@@ -4225,7 +4225,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "INR, aPTT (select patients)" ;
-        st:onPage page:175 ;
+        st:onPage page:176 ;
         st:rowPosition 17 .
 
     e:t02-r019 a st:SourceActivityRow ;
@@ -4233,7 +4233,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Pregnancy test" ;
-        st:onPage page:175 ;
+        st:onPage page:176 ;
         st:rowPosition 19 .
 
     e:t02-r025 a st:SourceActivityRow ;
@@ -4241,7 +4241,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Study medication administration" ;
-        st:onPage page:175 ;
+        st:onPage page:176 ;
         st:rowPosition 25 .
 
     e:t02-r026 a st:SourceActivityRow ;
@@ -4249,7 +4249,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Subsequent anti-cancer therapies" ;
-        st:onPage page:175 ;
+        st:onPage page:176 ;
         st:rowPosition 26 .
 
     e:t03-r003 a st:SourceActivityRow ;
@@ -4257,7 +4257,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Assignment of cohort" ;
-        st:onPage page:179 ;
+        st:onPage page:180 ;
         st:rowPosition 3 .
 
     e:t03-r004 a st:SourceActivityRow ;
@@ -4265,7 +4265,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Cohort-specific informed consent" ;
-        st:onPage page:179 ;
+        st:onPage page:180 ;
         st:rowPosition 4 .
 
     e:t03-r005 a st:SourceActivityRow ;
@@ -4273,7 +4273,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Confirmation of cohort-specific eligibility" ;
-        st:onPage page:179 ;
+        st:onPage page:180 ;
         st:rowPosition 5 .
 
     e:t03-r006 a st:SourceActivityRow ;
@@ -4281,7 +4281,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Randomisation" ;
-        st:onPage page:179 ;
+        st:onPage page:180 ;
         st:rowPosition 6 .
 
     e:t03-r012 a st:SourceActivityRow ;
@@ -4289,7 +4289,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "INR, aPTT (select patients)" ;
-        st:onPage page:179 ;
+        st:onPage page:180 ;
         st:rowPosition 12 .
 
     e:t03-r014 a st:SourceActivityRow ;
@@ -4297,7 +4297,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Pregnancy test" ;
-        st:onPage page:179 ;
+        st:onPage page:180 ;
         st:rowPosition 14 .
 
     e:t03-r017 a st:SourceActivityRow ;
@@ -4305,7 +4305,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Tuberculosis test" ;
-        st:onPage page:180 ;
+        st:onPage page:181 ;
         st:rowPosition 17 .
 
     e:t03-r018 a st:SourceActivityRow ;
@@ -4313,7 +4313,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "HIV, HBV, HCV serology" ;
-        st:onPage page:180 ;
+        st:onPage page:181 ;
         st:rowPosition 18 .
 
     e:t03-r024 a st:SourceActivityRow ;
@@ -4321,7 +4321,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Study medication administration" ;
-        st:onPage page:180 ;
+        st:onPage page:181 ;
         st:rowPosition 24 .
 
     e:t03-r025 a st:SourceActivityRow ;
@@ -4329,7 +4329,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Subsequent anti-cancer therapies" ;
-        st:onPage page:181 ;
+        st:onPage page:182 ;
         st:rowPosition 25 .
 
     e:t04-r003 a st:SourceActivityRow ;
@@ -4337,7 +4337,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Assignment of cohort" ;
-        st:onPage page:184 ;
+        st:onPage page:185 ;
         st:rowPosition 3 .
 
     e:t04-r004 a st:SourceActivityRow ;
@@ -4345,7 +4345,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Cohort-specific informed consent" ;
-        st:onPage page:184 ;
+        st:onPage page:185 ;
         st:rowPosition 4 .
 
     e:t04-r005 a st:SourceActivityRow ;
@@ -4353,7 +4353,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Confirmation of cohort-specific eligibility" ;
-        st:onPage page:184 ;
+        st:onPage page:185 ;
         st:rowPosition 5 .
 
     e:t04-r006 a st:SourceActivityRow ;
@@ -4361,7 +4361,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Randomisation" ;
-        st:onPage page:184 ;
+        st:onPage page:185 ;
         st:rowPosition 6 .
 
     e:t04-r012 a st:SourceActivityRow ;
@@ -4369,7 +4369,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "INR, aPTT (select patients)" ;
-        st:onPage page:184 ;
+        st:onPage page:185 ;
         st:rowPosition 12 .
 
     e:t04-r015 a st:SourceActivityRow ;
@@ -4377,7 +4377,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "HIV, HBV, HCV serology" ;
-        st:onPage page:184 ;
+        st:onPage page:185 ;
         st:rowPosition 15 .
 
     e:t04-r022 a st:SourceActivityRow ;
@@ -4385,7 +4385,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Study medication administration" ;
-        st:onPage page:185 ;
+        st:onPage page:186 ;
         st:rowPosition 22 .
 
     e:t04-r023 a st:SourceActivityRow ;
@@ -4393,7 +4393,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Subsequent anti-cancer therapies" ;
-        st:onPage page:185 ;
+        st:onPage page:186 ;
         st:rowPosition 23 .
 
     e:t05-r003 a st:SourceActivityRow ;
@@ -4401,7 +4401,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Assignment of cohort" ;
-        st:onPage page:189 ;
+        st:onPage page:190 ;
         st:rowPosition 3 .
 
     e:t05-r004 a st:SourceActivityRow ;
@@ -4409,7 +4409,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Cohort-specific informed consent" ;
-        st:onPage page:189 ;
+        st:onPage page:190 ;
         st:rowPosition 4 .
 
     e:t05-r005 a st:SourceActivityRow ;
@@ -4417,7 +4417,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Confirmation of cohort-specific eligibility" ;
-        st:onPage page:189 ;
+        st:onPage page:190 ;
         st:rowPosition 5 .
 
     e:t05-r006 a st:SourceActivityRow ;
@@ -4425,7 +4425,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Randomisation" ;
-        st:onPage page:189 ;
+        st:onPage page:190 ;
         st:rowPosition 6 .
 
     e:t05-r012 a st:SourceActivityRow ;
@@ -4433,7 +4433,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "INR, aPTT (select patients)" ;
-        st:onPage page:189 ;
+        st:onPage page:190 ;
         st:rowPosition 12 .
 
     e:t05-r014 a st:SourceActivityRow ;
@@ -4441,7 +4441,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Pregnancy test" ;
-        st:onPage page:189 ;
+        st:onPage page:190 ;
         st:rowPosition 14 .
 
     e:t05-r017 a st:SourceActivityRow ;
@@ -4449,7 +4449,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Tuberculosis test" ;
-        st:onPage page:189 ;
+        st:onPage page:190 ;
         st:rowPosition 17 .
 
     e:t05-r018 a st:SourceActivityRow ;
@@ -4457,7 +4457,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "HIV, HBV, HCV serology" ;
-        st:onPage page:189 ;
+        st:onPage page:190 ;
         st:rowPosition 18 .
 
     e:t05-r026 a st:SourceActivityRow ;
@@ -4465,7 +4465,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Study medication administration" ;
-        st:onPage page:190 ;
+        st:onPage page:191 ;
         st:rowPosition 26 .
 
     e:t05-r027 a st:SourceActivityRow ;
@@ -4473,7 +4473,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Subsequent anti-cancer therapies" ;
-        st:onPage page:191 ;
+        st:onPage page:192 ;
         st:rowPosition 27 .
 
     e:u-t01-r004 a st:UnifiedActivity ;
@@ -4525,7 +4525,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "INR, aPTT (select patients)" ;
-        st:onPage page:169 ;
+        st:onPage page:170 ;
         st:rowPosition 12 .
 
     e:t01-r014 a st:SourceActivityRow ;
@@ -4533,7 +4533,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Pregnancy test" ;
-        st:onPage page:169 ;
+        st:onPage page:170 ;
         st:rowPosition 14 .
 
     e:t01-r017 a st:SourceActivityRow ;
@@ -4541,7 +4541,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Metastatic tumour tissue for exploratory biomarker assessment" ;
-        st:onPage page:170 ;
+        st:onPage page:171 ;
         st:rowPosition 17 .
 
     e:t01-r020 a st:SourceActivityRow ;
@@ -4549,7 +4549,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Stool sample" ;
-        st:onPage page:170 ;
+        st:onPage page:171 ;
         st:rowPosition 20 .
 
     e:t01-r022 a st:SourceActivityRow ;
@@ -4557,7 +4557,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Study medication administration" ;
-        st:onPage page:170 ;
+        st:onPage page:171 ;
         st:rowPosition 22 .
 
     e:t01-r024 a st:SourceActivityRow ;
@@ -4565,7 +4565,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Patient survival" ;
-        st:onPage page:171 ;
+        st:onPage page:172 ;
         st:rowPosition 24 .
 
     e:t02-r007 a st:SourceActivityRow ;
@@ -4573,7 +4573,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Vital signs and weight" ;
-        st:onPage page:174 ;
+        st:onPage page:175 ;
         st:rowPosition 7 .
 
     e:t02-r008 a st:SourceActivityRow ;
@@ -4581,7 +4581,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Physical examination" ;
-        st:onPage page:174 ;
+        st:onPage page:175 ;
         st:rowPosition 8 .
 
     e:t02-r012 a st:SourceActivityRow ;
@@ -4589,7 +4589,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Anal and pelvic exam" ;
-        st:onPage page:174 ;
+        st:onPage page:175 ;
         st:rowPosition 12 .
 
     e:t02-r013 a st:SourceActivityRow ;
@@ -4597,7 +4597,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "ECOG performance status" ;
-        st:onPage page:174 ;
+        st:onPage page:175 ;
         st:rowPosition 13 .
 
     e:t02-r015 a st:SourceActivityRow ;
@@ -4605,7 +4605,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Concomitant medications" ;
-        st:onPage page:174 ;
+        st:onPage page:175 ;
         st:rowPosition 15 .
 
     e:t02-r016 a st:SourceActivityRow ;
@@ -4613,7 +4613,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Haematology and blood chemistry" ;
-        st:onPage page:174 ;
+        st:onPage page:175 ;
         st:rowPosition 16 .
 
     e:t02-r018 a st:SourceActivityRow ;
@@ -4621,7 +4621,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Urinalysis (dipstick)" ;
-        st:onPage page:175 ;
+        st:onPage page:176 ;
         st:rowPosition 18 .
 
     e:t02-r020 a st:SourceActivityRow ;
@@ -4629,7 +4629,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Tumour assessments" ;
-        st:onPage page:175 ;
+        st:onPage page:176 ;
         st:rowPosition 20 .
 
     e:t02-r021 a st:SourceActivityRow ;
@@ -4637,7 +4637,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Metastatic tumour tissue for exploratory biomarker assessment" ;
-        st:onPage page:175 ;
+        st:onPage page:176 ;
         st:rowPosition 21 .
 
     e:t02-r022 a st:SourceActivityRow ;
@@ -4645,7 +4645,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Plasma samples" ;
-        st:onPage page:175 ;
+        st:onPage page:176 ;
         st:rowPosition 22 .
 
     e:t02-r023 a st:SourceActivityRow ;
@@ -4653,7 +4653,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Stool sample" ;
-        st:onPage page:175 ;
+        st:onPage page:176 ;
         st:rowPosition 23 .
 
     e:t02-r027 a st:SourceActivityRow ;
@@ -4661,7 +4661,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Patient survival" ;
-        st:onPage page:176 ;
+        st:onPage page:177 ;
         st:rowPosition 27 .
 
     e:t03-r007 a st:SourceActivityRow ;
@@ -4669,7 +4669,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Vital signs and weight" ;
-        st:onPage page:179 ;
+        st:onPage page:180 ;
         st:rowPosition 7 .
 
     e:t03-r008 a st:SourceActivityRow ;
@@ -4677,7 +4677,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Physical examination" ;
-        st:onPage page:179 ;
+        st:onPage page:180 ;
         st:rowPosition 8 .
 
     e:t03-r009 a st:SourceActivityRow ;
@@ -4685,7 +4685,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "ECOG performance status" ;
-        st:onPage page:179 ;
+        st:onPage page:180 ;
         st:rowPosition 9 .
 
     e:t03-r010 a st:SourceActivityRow ;
@@ -4693,7 +4693,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Concomitant medications" ;
-        st:onPage page:179 ;
+        st:onPage page:180 ;
         st:rowPosition 10 .
 
     e:t03-r011 a st:SourceActivityRow ;
@@ -4701,7 +4701,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Haematology and blood chemistry" ;
-        st:onPage page:179 ;
+        st:onPage page:180 ;
         st:rowPosition 11 .
 
     e:t03-r013 a st:SourceActivityRow ;
@@ -4709,7 +4709,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Urinalysis (dipstick)" ;
-        st:onPage page:179 ;
+        st:onPage page:180 ;
         st:rowPosition 13 .
 
     e:t03-r015 a st:SourceActivityRow ;
@@ -4717,7 +4717,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "TSH, free or total T3, free or total T4" ;
-        st:onPage page:179 ;
+        st:onPage page:180 ;
         st:rowPosition 15 .
 
     e:t03-r016 a st:SourceActivityRow ;
@@ -4725,7 +4725,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Pulse oximetry" ;
-        st:onPage page:179 ;
+        st:onPage page:180 ;
         st:rowPosition 16 .
 
     e:t03-r019 a st:SourceActivityRow ;
@@ -4733,7 +4733,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Tumour assessments" ;
-        st:onPage page:180 ;
+        st:onPage page:181 ;
         st:rowPosition 19 .
 
     e:t03-r020 a st:SourceActivityRow ;
@@ -4741,7 +4741,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Metastatic tumour tissue for exploratory biomarker assessment" ;
-        st:onPage page:180 ;
+        st:onPage page:181 ;
         st:rowPosition 20 .
 
     e:t03-r021 a st:SourceActivityRow ;
@@ -4749,7 +4749,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Plasma samples" ;
-        st:onPage page:180 ;
+        st:onPage page:181 ;
         st:rowPosition 21 .
 
     e:t03-r022 a st:SourceActivityRow ;
@@ -4757,7 +4757,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Stool sample" ;
-        st:onPage page:180 ;
+        st:onPage page:181 ;
         st:rowPosition 22 .
 
     e:t03-r026 a st:SourceActivityRow ;
@@ -4765,7 +4765,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Patient survival" ;
-        st:onPage page:181 ;
+        st:onPage page:182 ;
         st:rowPosition 26 .
 
     e:t04-r007 a st:SourceActivityRow ;
@@ -4773,7 +4773,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Vital signs and weight" ;
-        st:onPage page:184 ;
+        st:onPage page:185 ;
         st:rowPosition 7 .
 
     e:t04-r008 a st:SourceActivityRow ;
@@ -4781,7 +4781,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Physical examination" ;
-        st:onPage page:184 ;
+        st:onPage page:185 ;
         st:rowPosition 8 .
 
     e:t04-r009 a st:SourceActivityRow ;
@@ -4789,7 +4789,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "ECOG performance status" ;
-        st:onPage page:184 ;
+        st:onPage page:185 ;
         st:rowPosition 9 .
 
     e:t04-r010 a st:SourceActivityRow ;
@@ -4797,7 +4797,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Concomitant medications" ;
-        st:onPage page:184 ;
+        st:onPage page:185 ;
         st:rowPosition 10 .
 
     e:t04-r011 a st:SourceActivityRow ;
@@ -4805,7 +4805,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Haematology and blood chemistry" ;
-        st:onPage page:184 ;
+        st:onPage page:185 ;
         st:rowPosition 11 .
 
     e:t04-r013 a st:SourceActivityRow ;
@@ -4813,7 +4813,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Urinalysis (dipstick)" ;
-        st:onPage page:184 ;
+        st:onPage page:185 ;
         st:rowPosition 13 .
 
     e:t04-r017 a st:SourceActivityRow ;
@@ -4821,7 +4821,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Tumour assessments" ;
-        st:onPage page:185 ;
+        st:onPage page:186 ;
         st:rowPosition 17 .
 
     e:t04-r018 a st:SourceActivityRow ;
@@ -4829,7 +4829,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Metastatic tumour tissue for exploratory biomarker assessment" ;
-        st:onPage page:185 ;
+        st:onPage page:186 ;
         st:rowPosition 18 .
 
     e:t04-r019 a st:SourceActivityRow ;
@@ -4837,7 +4837,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Plasma samples" ;
-        st:onPage page:185 ;
+        st:onPage page:186 ;
         st:rowPosition 19 .
 
     e:t04-r020 a st:SourceActivityRow ;
@@ -4845,7 +4845,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Stool sample" ;
-        st:onPage page:185 ;
+        st:onPage page:186 ;
         st:rowPosition 20 .
 
     e:t04-r024 a st:SourceActivityRow ;
@@ -4853,7 +4853,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Patient survival" ;
-        st:onPage page:185 ;
+        st:onPage page:186 ;
         st:rowPosition 24 .
 
     e:t05-r007 a st:SourceActivityRow ;
@@ -4861,7 +4861,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Vital signs and weight" ;
-        st:onPage page:189 ;
+        st:onPage page:190 ;
         st:rowPosition 7 .
 
     e:t05-r008 a st:SourceActivityRow ;
@@ -4869,7 +4869,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Physical examination" ;
-        st:onPage page:189 ;
+        st:onPage page:190 ;
         st:rowPosition 8 .
 
     e:t05-r009 a st:SourceActivityRow ;
@@ -4877,7 +4877,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "ECOG performance status" ;
-        st:onPage page:189 ;
+        st:onPage page:190 ;
         st:rowPosition 9 .
 
     e:t05-r010 a st:SourceActivityRow ;
@@ -4885,7 +4885,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Concomitant medications" ;
-        st:onPage page:189 ;
+        st:onPage page:190 ;
         st:rowPosition 10 .
 
     e:t05-r011 a st:SourceActivityRow ;
@@ -4893,7 +4893,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Haematology and blood chemistry" ;
-        st:onPage page:189 ;
+        st:onPage page:190 ;
         st:rowPosition 11 .
 
     e:t05-r013 a st:SourceActivityRow ;
@@ -4901,7 +4901,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Urinalysis (dipstick)" ;
-        st:onPage page:189 ;
+        st:onPage page:190 ;
         st:rowPosition 13 .
 
     e:t05-r015 a st:SourceActivityRow ;
@@ -4909,7 +4909,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "TSH, free or total T3, free or total T4" ;
-        st:onPage page:189 ;
+        st:onPage page:190 ;
         st:rowPosition 15 .
 
     e:t05-r016 a st:SourceActivityRow ;
@@ -4917,7 +4917,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Pulse oximetry" ;
-        st:onPage page:189 ;
+        st:onPage page:190 ;
         st:rowPosition 16 .
 
     e:t05-r021 a st:SourceActivityRow ;
@@ -4925,7 +4925,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Tumour assessments" ;
-        st:onPage page:190 ;
+        st:onPage page:191 ;
         st:rowPosition 21 .
 
     e:t05-r022 a st:SourceActivityRow ;
@@ -4933,7 +4933,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Metastatic tumour tissue for exploratory biomarker assessment" ;
-        st:onPage page:190 ;
+        st:onPage page:191 ;
         st:rowPosition 22 .
 
     e:t05-r023 a st:SourceActivityRow ;
@@ -4941,7 +4941,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Plasma samples" ;
-        st:onPage page:190 ;
+        st:onPage page:191 ;
         st:rowPosition 23 .
 
     e:t05-r024 a st:SourceActivityRow ;
@@ -4949,7 +4949,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Stool sample" ;
-        st:onPage page:190 ;
+        st:onPage page:191 ;
         st:rowPosition 24 .
 
     e:t05-r028 a st:SourceActivityRow ;
@@ -4957,7 +4957,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Patient survival" ;
-        st:onPage page:191 ;
+        st:onPage page:192 ;
         st:rowPosition 28 .
 
     e:t01-r004 a st:SourceActivityRow ;
@@ -4965,7 +4965,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Informed consent" ;
-        st:onPage page:169 ;
+        st:onPage page:170 ;
         st:rowPosition 4 .
 
     e:t01-r005 a st:SourceActivityRow ;
@@ -4973,7 +4973,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Confirmation of general eligibility" ;
-        st:onPage page:169 ;
+        st:onPage page:170 ;
         st:rowPosition 5 .
 
     e:t01-r011 a st:SourceActivityRow ;
@@ -4981,7 +4981,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Haematology and blood chemistry" ;
-        st:onPage page:169 ;
+        st:onPage page:170 ;
         st:rowPosition 11 .
 
     e:t01-r013 a st:SourceActivityRow ;
@@ -4989,7 +4989,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Urinalysis (dipstick)" ;
-        st:onPage page:169 ;
+        st:onPage page:170 ;
         st:rowPosition 13 .
 
     e:t01-r015 a st:SourceActivityRow ;
@@ -4997,7 +4997,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Tumour assessments" ;
-        st:onPage page:169 ;
+        st:onPage page:170 ;
         st:rowPosition 15 .
 
     e:t01-r019 a st:SourceActivityRow ;
@@ -5005,7 +5005,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Plasma samples" ;
-        st:onPage page:170 ;
+        st:onPage page:171 ;
         st:rowPosition 19 .
 
     e:t02-r004 a st:SourceActivityRow ;
@@ -5013,7 +5013,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Cohort-specific informed consent" ;
-        st:onPage page:174 ;
+        st:onPage page:175 ;
         st:rowPosition 4 .
 
     e:t02-r009 a st:SourceActivityRow ;
@@ -5021,7 +5021,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Head and neck assessment for SCC" ;
-        st:onPage page:174 ;
+        st:onPage page:175 ;
         st:rowPosition 9 .
 
     e:t02-r010 a st:SourceActivityRow ;
@@ -5029,7 +5029,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Chest CT assessment for SCC" ;
-        st:onPage page:174 ;
+        st:onPage page:175 ;
         st:rowPosition 10 .
 
     e:t02-r011 a st:SourceActivityRow ;
@@ -5037,7 +5037,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Dermatology evaluation" ;
-        st:onPage page:174 ;
+        st:onPage page:175 ;
         st:rowPosition 11 .
 
     e:t02-r014 a st:SourceActivityRow ;
@@ -5045,7 +5045,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "12-lead ECG" ;
-        st:onPage page:174 ;
+        st:onPage page:175 ;
         st:rowPosition 14 .
 
     e:t02-r024 a st:SourceActivityRow ;
@@ -5053,7 +5053,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Adverse events (including SAEs)" ;
-        st:onPage page:175 ;
+        st:onPage page:176 ;
         st:rowPosition 24 .
 
     e:t03-r023 a st:SourceActivityRow ;
@@ -5061,7 +5061,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Adverse events (including SAEs)" ;
-        st:onPage page:180 ;
+        st:onPage page:181 ;
         st:rowPosition 23 .
 
     e:t04-r016 a st:SourceActivityRow ;
@@ -5069,7 +5069,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "LVEF" ;
-        st:onPage page:185 ;
+        st:onPage page:186 ;
         st:rowPosition 16 .
 
     e:t04-r021 a st:SourceActivityRow ;
@@ -5077,7 +5077,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Adverse events (including SAEs)" ;
-        st:onPage page:185 ;
+        st:onPage page:186 ;
         st:rowPosition 21 .
 
     e:t05-r019 a st:SourceActivityRow ;
@@ -5085,7 +5085,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "LVEF" ;
-        st:onPage page:190 ;
+        st:onPage page:191 ;
         st:rowPosition 19 .
 
     e:t05-r020 a st:SourceActivityRow ;
@@ -5093,7 +5093,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Ophthalmology exam" ;
-        st:onPage page:190 ;
+        st:onPage page:191 ;
         st:rowPosition 20 .
 
     e:t05-r025 a st:SourceActivityRow ;
@@ -5101,7 +5101,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Adverse events (including SAEs)" ;
-        st:onPage page:190 ;
+        st:onPage page:191 ;
         st:rowPosition 25 .
 
     e:u-t01-r005 a st:UnifiedActivity ;
@@ -5179,7 +5179,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Physical examination" ;
-        st:onPage page:169 ;
+        st:onPage page:170 ;
         st:rowPosition 8 .
 
     e:t01-r009 a st:SourceActivityRow ;
@@ -5187,7 +5187,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "ECOG performance status" ;
-        st:onPage page:169 ;
+        st:onPage page:170 ;
         st:rowPosition 9 .
 
     e:t04-r014 a st:SourceActivityRow ;
@@ -5195,7 +5195,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Pregnancy test" ;
-        st:onPage page:184 ;
+        st:onPage page:185 ;
         st:rowPosition 14 .
 
     e:u-t02-r005 a st:UnifiedActivity ;
@@ -5292,7 +5292,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Vital signs and weight" ;
-        st:onPage page:169 ;
+        st:onPage page:170 ;
         st:rowPosition 7 .
 
     e:t01-r010 a st:SourceActivityRow ;
@@ -5300,7 +5300,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Concomitant medications" ;
-        st:onPage page:169 ;
+        st:onPage page:170 ;
         st:rowPosition 10 .
 
     e:t03-c005 a st:SourceColumn ;
@@ -5346,16 +5346,16 @@
             e:u-t05-c005-v02 ;
         st:segment "track" .
 
-    page:170 a st:Page ;
+    page:171 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/f0729bca632e18b26d88ee02fb7c7b33313396cf2e00f6bf1924b38f61c017f6> ;
-        st:pageNumber 170 .
+        st:pageNumber 171 .
 
     e:t01-r021 a st:SourceActivityRow ;
         st:inTable e:t01 ;
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Adverse events (including SAEs)" ;
-        st:onPage page:170 ;
+        st:onPage page:171 ;
         st:rowPosition 21 .
 
     e:t04-c005 a st:SourceColumn ;
@@ -5386,13 +5386,13 @@
             e:u-t03-c005-v02 ;
         st:segment "track" .
 
-    page:180 a st:Page ;
+    page:181 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/f0729bca632e18b26d88ee02fb7c7b33313396cf2e00f6bf1924b38f61c017f6> ;
-        st:pageNumber 180 .
+        st:pageNumber 181 .
 
-    page:190 a st:Page ;
+    page:191 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/f0729bca632e18b26d88ee02fb7c7b33313396cf2e00f6bf1924b38f61c017f6> ;
-        st:pageNumber 190 .
+        st:pageNumber 191 .
 
     e:t02-c002 a st:SourceColumn ;
         st:columnPosition 2 ;
@@ -5441,9 +5441,9 @@
         st:parentName "" ;
         st:qualifiedKey "::LVEF" .
 
-    page:185 a st:Page ;
+    page:186 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/f0729bca632e18b26d88ee02fb7c7b33313396cf2e00f6bf1924b38f61c017f6> ;
-        st:pageNumber 185 .
+        st:pageNumber 186 .
 
     e:t01-c004 a st:SourceColumn ;
         st:columnPosition 4 ;
@@ -5489,9 +5489,9 @@
             e:u-t04-c002-v02 ;
         st:segment "track" .
 
-    page:175 a st:Page ;
+    page:176 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/f0729bca632e18b26d88ee02fb7c7b33313396cf2e00f6bf1924b38f61c017f6> ;
-        st:pageNumber 175 .
+        st:pageNumber 176 .
 
     e:t01-c003 a st:SourceColumn ;
         st:columnPosition 3 ;
@@ -5621,13 +5621,13 @@
             e:u-t04-c004-v02 ;
         st:segment "track" .
 
-    page:169 a st:Page ;
+    page:170 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/f0729bca632e18b26d88ee02fb7c7b33313396cf2e00f6bf1924b38f61c017f6> ;
-        st:pageNumber 169 .
+        st:pageNumber 170 .
 
-    page:184 a st:Page ;
+    page:185 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/f0729bca632e18b26d88ee02fb7c7b33313396cf2e00f6bf1924b38f61c017f6> ;
-        st:pageNumber 184 .
+        st:pageNumber 185 .
 
     e:t05-c004 a st:SourceColumn ;
         st:columnPosition 4 ;
@@ -5701,13 +5701,13 @@
             e:u-t05-c004-v02 ;
         st:segment "track" .
 
-    page:174 a st:Page ;
+    page:175 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/f0729bca632e18b26d88ee02fb7c7b33313396cf2e00f6bf1924b38f61c017f6> ;
-        st:pageNumber 174 .
+        st:pageNumber 175 .
 
-    page:179 a st:Page ;
+    page:180 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/f0729bca632e18b26d88ee02fb7c7b33313396cf2e00f6bf1924b38f61c017f6> ;
-        st:pageNumber 179 .
+        st:pageNumber 180 .
 
     e:t01-c005 a st:SourceColumn ;
         st:columnPosition 5 ;
@@ -5832,9 +5832,9 @@
             e:u-t03-c003-v02 ;
         st:segment "track" .
 
-    page:189 a st:Page ;
+    page:190 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/f0729bca632e18b26d88ee02fb7c7b33313396cf2e00f6bf1924b38f61c017f6> ;
-        st:pageNumber 189 .
+        st:pageNumber 190 .
 
     e:t05-c003 a st:SourceColumn ;
         st:columnPosition 3 ;
@@ -5894,8 +5894,8 @@
         st:qualifiedKey "::Adverse events (including SAEs)" .
 
     e:t04 a st:SourceTable ;
-        st:firstPage page:184 ;
-        st:lastPage page:188 ;
+        st:firstPage page:185 ;
+        st:lastPage page:189 ;
         st:purpose "Maintenance Treatment Phase schedule for patients assigned to Cohort 3" ;
         st:tableNumber 4 ;
         st:tableType "track" ;
@@ -5903,16 +5903,16 @@
         st:trackLabel "Cohort 3" .
 
     e:t01 a st:SourceTable ;
-        st:firstPage page:169 ;
-        st:lastPage page:173 ;
+        st:firstPage page:170 ;
+        st:lastPage page:174 ;
         st:purpose "Screening/Baseline and Induction Treatment Phase schedule for all patients, with Study Treatment Discontinuation Visit and Post-Treatment Follow-up for patients not entering maintenance" ;
         st:tableNumber 1 ;
         st:tableType "main_soa" ;
         st:title "Appendix 1 Schedule of Assessments for All Patients (Screening / Baseline and Induction Treatment Phase)" .
 
     e:t03 a st:SourceTable ;
-        st:firstPage page:179 ;
-        st:lastPage page:183 ;
+        st:firstPage page:180 ;
+        st:lastPage page:184 ;
         st:purpose "Maintenance Treatment Phase schedule for patients assigned to Cohort 2" ;
         st:tableNumber 3 ;
         st:tableType "track" ;
@@ -5920,8 +5920,8 @@
         st:trackLabel "Cohort 2" .
 
     e:t02 a st:SourceTable ;
-        st:firstPage page:174 ;
-        st:lastPage page:178 ;
+        st:firstPage page:175 ;
+        st:lastPage page:179 ;
         st:purpose "Maintenance Treatment Phase schedule for patients assigned to Cohort 1" ;
         st:tableNumber 2 ;
         st:tableType "track" ;
@@ -5929,8 +5929,8 @@
         st:trackLabel "Cohort 1" .
 
     e:t05 a st:SourceTable ;
-        st:firstPage page:189 ;
-        st:lastPage page:193 ;
+        st:firstPage page:190 ;
+        st:lastPage page:194 ;
         st:purpose "Maintenance Treatment Phase schedule for patients assigned to Cohort 4" ;
         st:tableNumber 5 ;
         st:tableType "track" ;

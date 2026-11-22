@@ -7,8 +7,8 @@
 <https://kerfors.github.io/soa-tables/id/sha256/80a4257e556962554bcd68d0135af958330e29b5fbb001a59a632792bcce8456/soa-tables-v1> {
     <https://kerfors.github.io/soa-tables/id/sha256/80a4257e556962554bcd68d0135af958330e29b5fbb001a59a632792bcce8456/soa-tables-v1> a st:Transcription ;
         st:aboutStudy <https://kerfors.github.io/soa-tables/id/study/NCT05324124> ;
-        st:codeCommit "bbb9ab3dac8c9fe153c293d6515e6f7fb78f7184" ;
-        st:collectionsCommit "1c7dc79b2ed7cf92259168673da2ab1deafd28b9" ;
+        st:codeCommit "51f8dc7552331a64cf57648341e27ac8a53aecfd" ;
+        st:collectionsCommit "9a8c9e4ee840a037cc8e80ae7cfc7aecac88c129" ;
         st:consolidatedAt "2026-11-21T09:30:54.209008+00:00"^^xsd:dateTime ;
         st:consolidator "soa_tables.consolidate v1.2" ;
         st:ofFile <https://kerfors.github.io/soa-tables/id/sha256/80a4257e556962554bcd68d0135af958330e29b5fbb001a59a632792bcce8456> ;
@@ -1012,7 +1012,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "CCI" ;
-        st:onPage page:12 ;
+        st:onPage page:13 ;
         st:rowPosition 23 .
 
     e:u-t01-c002-v01 a st:ColumnPropertyValue ;
@@ -1427,7 +1427,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Informed consent" ;
-        st:onPage page:9 ;
+        st:onPage page:10 ;
         st:rowPosition 4 .
 
     e:t01-r005 a st:SourceActivityRow ;
@@ -1435,7 +1435,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Inclusion and exclusion criteria" ;
-        st:onPage page:9 ;
+        st:onPage page:10 ;
         st:rowPosition 5 .
 
     e:t01-r006 a st:SourceActivityRow ;
@@ -1443,7 +1443,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Demography" ;
-        st:onPage page:9 ;
+        st:onPage page:10 ;
         st:rowPosition 6 .
 
     e:t01-r007 a st:SourceActivityRow ;
@@ -1451,7 +1451,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Participant admission to CRU" ;
-        st:onPage page:9 ;
+        st:onPage page:10 ;
         st:rowPosition 7 .
 
     e:t01-r008 a st:SourceActivityRow ;
@@ -1459,7 +1459,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Participant discharge from CRU" ;
-        st:onPage page:9 ;
+        st:onPage page:10 ;
         st:rowPosition 8 .
 
     e:t01-r009 a st:SourceActivityRow ;
@@ -1467,7 +1467,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Outpatient visit" ;
-        st:onPage page:9 ;
+        st:onPage page:10 ;
         st:rowPosition 9 .
 
     e:t01-r010 a st:SourceActivityRow ;
@@ -1475,7 +1475,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Medical history" ;
-        st:onPage page:10 ;
+        st:onPage page:11 ;
         st:rowPosition 10 .
 
     e:t01-r014 a st:SourceActivityRow ;
@@ -1483,7 +1483,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Follicle-stimulating hormone (women of non-childbearing potential only)" ;
-        st:onPage page:11 ;
+        st:onPage page:12 ;
         st:rowPosition 14 .
 
     e:t01-r015 a st:SourceActivityRow ;
@@ -1491,7 +1491,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Human immunodeficiency virus, hepatitis B and C screen" ;
-        st:onPage page:11 ;
+        st:onPage page:12 ;
         st:rowPosition 15 .
 
     e:t01-r019 a st:SourceActivityRow ;
@@ -1499,7 +1499,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Genetic sample" ;
-        st:onPage page:12 ;
+        st:onPage page:13 ;
         st:rowPosition 19 .
 
     e:u-t01-c008 a st:UnifiedColumn ;
@@ -1537,9 +1537,9 @@
         st:parentName "" ;
         st:qualifiedKey "::Participant discharge from CRU" .
 
-    page:10 a st:Page ;
+    page:11 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/80a4257e556962554bcd68d0135af958330e29b5fbb001a59a632792bcce8456> ;
-        st:pageNumber 10 .
+        st:pageNumber 11 .
 
     e:t01-c008 a st:SourceColumn ;
         st:columnPosition 8 ;
@@ -1558,7 +1558,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Selpercatinib administration" ;
-        st:onPage page:12 ;
+        st:onPage page:13 ;
         st:rowPosition 20 .
 
     e:u-t01-r020 a st:UnifiedActivity ;
@@ -1577,7 +1577,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Height and weight" ;
-        st:onPage page:10 ;
+        st:onPage page:11 ;
         st:rowPosition 12 .
 
     e:u-t01-c003 a st:UnifiedColumn ;
@@ -1671,7 +1671,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Serum or urine pregnancy test (women of childbearing potential only)" ;
-        st:onPage page:11 ;
+        st:onPage page:12 ;
         st:rowPosition 13 .
 
     e:u-t01-r013 a st:UnifiedActivity ;
@@ -1685,20 +1685,20 @@
         st:parentName "" ;
         st:qualifiedKey "::Serum or urine pregnancy test (women of childbearing potential only)" .
 
-    page:11 a st:Page ;
-        st:inFile <https://kerfors.github.io/soa-tables/id/sha256/80a4257e556962554bcd68d0135af958330e29b5fbb001a59a632792bcce8456> ;
-        st:pageNumber 11 .
-
     page:12 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/80a4257e556962554bcd68d0135af958330e29b5fbb001a59a632792bcce8456> ;
         st:pageNumber 12 .
+
+    page:13 a st:Page ;
+        st:inFile <https://kerfors.github.io/soa-tables/id/sha256/80a4257e556962554bcd68d0135af958330e29b5fbb001a59a632792bcce8456> ;
+        st:pageNumber 13 .
 
     e:t01-r011 a st:SourceActivityRow ;
         st:inTable e:t01 ;
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Medical assessment" ;
-        st:onPage page:10 ;
+        st:onPage page:11 ;
         st:rowPosition 11 .
 
     e:u-t01-r011 a st:UnifiedActivity ;
@@ -1712,9 +1712,9 @@
         st:parentName "" ;
         st:qualifiedKey "::Medical assessment" .
 
-    page:9 a st:Page ;
+    page:10 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/80a4257e556962554bcd68d0135af958330e29b5fbb001a59a632792bcce8456> ;
-        st:pageNumber 9 .
+        st:pageNumber 10 .
 
     e:u-t01-c011 a st:UnifiedColumn ;
         st:compositeLabel "Treatment Period / Days / 8" ;
@@ -1733,7 +1733,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "12-lead ECG" ;
-        st:onPage page:11 ;
+        st:onPage page:12 ;
         st:rowPosition 16 .
 
     e:u-t01-c004 a st:UnifiedColumn ;
@@ -1776,7 +1776,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Clinical laboratory tests" ;
-        st:onPage page:11 ;
+        st:onPage page:12 ;
         st:rowPosition 18 .
 
     e:u-t01-c014 a st:UnifiedColumn ;
@@ -1807,7 +1807,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Vital signs (supine), pulse rate, and blood pressure" ;
-        st:onPage page:11 ;
+        st:onPage page:12 ;
         st:rowPosition 17 .
 
     e:u-t01-r017 a st:UnifiedActivity ;
@@ -1837,7 +1837,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Adverse event /Serious adverse event review" ;
-        st:onPage page:12 ;
+        st:onPage page:13 ;
         st:rowPosition 21 .
 
     e:t01-r022 a st:SourceActivityRow ;
@@ -1845,7 +1845,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Concomitant medication review" ;
-        st:onPage page:12 ;
+        st:onPage page:13 ;
         st:rowPosition 22 .
 
     e:u-t01-c002 a st:UnifiedColumn ;
@@ -1872,8 +1872,8 @@
         st:inTable e:t01 .
 
     e:t01 a st:SourceTable ;
-        st:firstPage page:9 ;
-        st:lastPage page:12 ;
+        st:firstPage page:10 ;
+        st:lastPage page:13 ;
         st:purpose "Main study schedule: screening, 11-day inpatient treatment period, ED and follow-up phone call" ;
         st:tableNumber 1 ;
         st:tableType "main_soa" ;

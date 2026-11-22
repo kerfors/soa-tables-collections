@@ -7,8 +7,8 @@
 <https://kerfors.github.io/soa-tables/id/sha256/1ab18db01952c3ed464ff5e4c19e0af30c2d90066edc02e05ff8d443dbf54a58/soa-tables-v1> {
     <https://kerfors.github.io/soa-tables/id/sha256/1ab18db01952c3ed464ff5e4c19e0af30c2d90066edc02e05ff8d443dbf54a58/soa-tables-v1> a st:Transcription ;
         st:aboutStudy <https://kerfors.github.io/soa-tables/id/study/NCT04557384> ;
-        st:codeCommit "bbb9ab3dac8c9fe153c293d6515e6f7fb78f7184" ;
-        st:collectionsCommit "1c7dc79b2ed7cf92259168673da2ab1deafd28b9" ;
+        st:codeCommit "51f8dc7552331a64cf57648341e27ac8a53aecfd" ;
+        st:collectionsCommit "9a8c9e4ee840a037cc8e80ae7cfc7aecac88c129" ;
         st:consolidatedAt "2026-11-21T09:30:44.469323+00:00"^^xsd:dateTime ;
         st:consolidator "soa_tables.consolidate v1.2" ;
         st:ofFile <https://kerfors.github.io/soa-tables/id/sha256/1ab18db01952c3ed464ff5e4c19e0af30c2d90066edc02e05ff8d443dbf54a58> ;
@@ -3637,7 +3637,7 @@ ECGs will be obtained:
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "PK, IG, and exploratory hypersensitivity" ;
-        st:onPage page:23 ;
+        st:onPage page:24 ;
         st:rowPosition 6 .
 
     e:t02-r007-c002 a st:SourceCell ;
@@ -4642,9 +4642,9 @@ ECGs will be obtained:
     <https://kerfors.github.io/soa-tables/id/study/NCT04557384> a st:Study ;
         st:studyKey "NCT04557384" .
 
-    page:17 a st:Page ;
+    page:18 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/1ab18db01952c3ed464ff5e4c19e0af30c2d90066edc02e05ff8d443dbf54a58> ;
-        st:pageNumber 17 .
+        st:pageNumber 18 .
 
     e:decision-ccorr-001 a st:Decision ;
         st:decidedAt "2026-10-04T08:20:00Z"^^xsd:dateTime ;
@@ -4659,7 +4659,7 @@ ECGs will be obtained:
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Informed consent" ;
-        st:onPage page:16 ;
+        st:onPage page:17 ;
         st:rowPosition 8 .
 
     e:t01-r009 a st:SourceActivityRow ;
@@ -4667,7 +4667,7 @@ ECGs will be obtained:
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Inclusion/Exclusion criteria" ;
-        st:onPage page:16 ;
+        st:onPage page:17 ;
         st:rowPosition 9 .
 
     e:t01-r010 a st:SourceActivityRow ;
@@ -4675,7 +4675,7 @@ ECGs will be obtained:
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Medical history" ;
-        st:onPage page:16 ;
+        st:onPage page:17 ;
         st:rowPosition 10 .
 
     e:t01-r011 a st:SourceActivityRow ;
@@ -4683,7 +4683,7 @@ ECGs will be obtained:
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Cancer treatment history" ;
-        st:onPage page:16 ;
+        st:onPage page:17 ;
         st:rowPosition 11 .
 
     e:t02-c003 a st:SourceColumn ;
@@ -4695,7 +4695,7 @@ ECGs will be obtained:
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Administer ramucirumab" ;
-        st:onPage page:23 ;
+        st:onPage page:24 ;
         st:rowPosition 7 .
 
     e:u-t01-r008 a st:UnifiedActivity ;
@@ -4747,20 +4747,20 @@ ECGs will be obtained:
             e:u-t02-c003-v02 ;
         st:segment "track" .
 
-    page:19 a st:Page ;
+    page:20 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/1ab18db01952c3ed464ff5e4c19e0af30c2d90066edc02e05ff8d443dbf54a58> ;
-        st:pageNumber 19 .
+        st:pageNumber 20 .
 
-    page:22 a st:Page ;
+    page:23 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/1ab18db01952c3ed464ff5e4c19e0af30c2d90066edc02e05ff8d443dbf54a58> ;
-        st:pageNumber 22 .
+        st:pageNumber 23 .
 
     e:t01-r019 a st:SourceActivityRow ;
         st:inTable e:t01 ;
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Coagulation" ;
-        st:onPage page:18 ;
+        st:onPage page:19 ;
         st:rowPosition 19 .
 
     e:t02-c002 a st:SourceColumn ;
@@ -4805,7 +4805,7 @@ ECGs will be obtained:
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "End of treatment" ;
-        st:onPage page:24 ;
+        st:onPage page:25 ;
         st:rowPosition 16 .
 
     e:u-t03-r003 a st:UnifiedActivity ;
@@ -4918,13 +4918,13 @@ ECGs will be obtained:
         st:parentName "" ;
         st:qualifiedKey "::Sample 14" .
 
-    page:21 a st:Page ;
+    page:22 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/1ab18db01952c3ed464ff5e4c19e0af30c2d90066edc02e05ff8d443dbf54a58> ;
-        st:pageNumber 21 .
+        st:pageNumber 22 .
 
-    page:23 a st:Page ;
+    page:24 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/1ab18db01952c3ed464ff5e4c19e0af30c2d90066edc02e05ff8d443dbf54a58> ;
-        st:pageNumber 23 .
+        st:pageNumber 24 .
 
     e:t02-r005 a st:SourceActivityRow ;
         st:inTable e:t02 ;
@@ -4932,7 +4932,7 @@ ECGs will be obtained:
         st:matchDecision e:decision-ccorr-001 ;
         st:matchStatus "fuzzy_auto" ;
         st:name "AE Collection" ;
-        st:onPage page:23 ;
+        st:onPage page:24 ;
         st:rowPosition 5 .
 
     e:u-t03-c006 a st:UnifiedColumn ;
@@ -4990,7 +4990,7 @@ ECGs will be obtained:
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "ECOG PS" ;
-        st:onPage page:18 ;
+        st:onPage page:19 ;
         st:rowPosition 16 .
 
     e:t03-c006 a st:SourceColumn ;
@@ -5018,13 +5018,13 @@ ECGs will be obtained:
         st:parentName "" ;
         st:qualifiedKey "::ECOG PS" .
 
-    page:16 a st:Page ;
+    page:17 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/1ab18db01952c3ed464ff5e4c19e0af30c2d90066edc02e05ff8d443dbf54a58> ;
-        st:pageNumber 16 .
+        st:pageNumber 17 .
 
-    page:18 a st:Page ;
+    page:19 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/1ab18db01952c3ed464ff5e4c19e0af30c2d90066edc02e05ff8d443dbf54a58> ;
-        st:pageNumber 18 .
+        st:pageNumber 19 .
 
     e:t01-c003 a st:SourceColumn ;
         st:columnPosition 3 ;
@@ -5035,7 +5035,7 @@ ECGs will be obtained:
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Sample 2" ;
-        st:onPage page:24 ;
+        st:onPage page:25 ;
         st:rowPosition 3 .
 
     e:t03-r004 a st:SourceActivityRow ;
@@ -5043,7 +5043,7 @@ ECGs will be obtained:
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Sample 3" ;
-        st:onPage page:24 ;
+        st:onPage page:25 ;
         st:rowPosition 4 .
 
     e:t03-r005 a st:SourceActivityRow ;
@@ -5051,7 +5051,7 @@ ECGs will be obtained:
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Sample 4" ;
-        st:onPage page:24 ;
+        st:onPage page:25 ;
         st:rowPosition 5 .
 
     e:t03-r007 a st:SourceActivityRow ;
@@ -5059,7 +5059,7 @@ ECGs will be obtained:
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Sample 6" ;
-        st:onPage page:24 ;
+        st:onPage page:25 ;
         st:rowPosition 7 .
 
     e:t03-r008 a st:SourceActivityRow ;
@@ -5067,7 +5067,7 @@ ECGs will be obtained:
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Sample 7" ;
-        st:onPage page:24 ;
+        st:onPage page:25 ;
         st:rowPosition 8 .
 
     e:t03-r010 a st:SourceActivityRow ;
@@ -5075,7 +5075,7 @@ ECGs will be obtained:
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Sample 9" ;
-        st:onPage page:24 ;
+        st:onPage page:25 ;
         st:rowPosition 10 .
 
     e:t03-r011 a st:SourceActivityRow ;
@@ -5083,7 +5083,7 @@ ECGs will be obtained:
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Sample 10" ;
-        st:onPage page:24 ;
+        st:onPage page:25 ;
         st:rowPosition 11 .
 
     e:t03-r012 a st:SourceActivityRow ;
@@ -5091,7 +5091,7 @@ ECGs will be obtained:
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Sample 11" ;
-        st:onPage page:24 ;
+        st:onPage page:25 ;
         st:rowPosition 12 .
 
     e:t03-r013 a st:SourceActivityRow ;
@@ -5099,7 +5099,7 @@ ECGs will be obtained:
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Sample 12" ;
-        st:onPage page:24 ;
+        st:onPage page:25 ;
         st:rowPosition 13 .
 
     e:t03-r015 a st:SourceActivityRow ;
@@ -5107,7 +5107,7 @@ ECGs will be obtained:
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Sample 14" ;
-        st:onPage page:24 ;
+        st:onPage page:25 ;
         st:rowPosition 15 .
 
     e:u-t01-r013 a st:UnifiedActivity ;
@@ -5126,7 +5126,7 @@ ECGs will be obtained:
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Physical examination" ;
-        st:onPage page:16 ;
+        st:onPage page:17 ;
         st:rowPosition 13 .
 
     e:t03-r002 a st:SourceActivityRow ;
@@ -5134,7 +5134,7 @@ ECGs will be obtained:
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Sample 1" ;
-        st:onPage page:24 ;
+        st:onPage page:25 ;
         st:rowPosition 2 .
 
     e:t03-r006 a st:SourceActivityRow ;
@@ -5142,7 +5142,7 @@ ECGs will be obtained:
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Sample 5" ;
-        st:onPage page:24 ;
+        st:onPage page:25 ;
         st:rowPosition 6 .
 
     e:t03-r009 a st:SourceActivityRow ;
@@ -5150,7 +5150,7 @@ ECGs will be obtained:
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Sample 8" ;
-        st:onPage page:24 ;
+        st:onPage page:25 ;
         st:rowPosition 9 .
 
     e:t03-r014 a st:SourceActivityRow ;
@@ -5158,7 +5158,7 @@ ECGs will be obtained:
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Sample 13" ;
-        st:onPage page:24 ;
+        st:onPage page:25 ;
         st:rowPosition 14 .
 
     <https://kerfors.github.io/soa-tables/id/sha256/1ab18db01952c3ed464ff5e4c19e0af30c2d90066edc02e05ff8d443dbf54a58> a st:File ;
@@ -5169,7 +5169,7 @@ ECGs will be obtained:
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Hematology" ;
-        st:onPage page:18 ;
+        st:onPage page:19 ;
         st:rowPosition 18 .
 
     e:t01-r020 a st:SourceActivityRow ;
@@ -5177,12 +5177,12 @@ ECGs will be obtained:
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Clinical chemistry" ;
-        st:onPage page:18 ;
+        st:onPage page:19 ;
         st:rowPosition 20 .
 
     e:t02 a st:SourceTable ;
-        st:firstPage page:23 ;
-        st:lastPage page:23 ;
+        st:firstPage page:24 ;
+        st:lastPage page:24 ;
         st:purpose "Schedule for participants in the continued-access period" ;
         st:tableNumber 2 ;
         st:tableType "track" ;
@@ -5230,7 +5230,7 @@ ECGs will be obtained:
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Administer combination medications, if applicable (Cohorts B and C only)" ;
-        st:onPage page:22 ;
+        st:onPage page:23 ;
         st:rowPosition 32 .
 
     e:u-t01-r029 a st:UnifiedActivity ;
@@ -5273,7 +5273,7 @@ ECGs will be obtained:
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Injection site assessments (solicited)" ;
-        st:onPage page:19 ;
+        st:onPage page:20 ;
         st:rowPosition 25 .
 
     e:t01-r026 a st:SourceActivityRow ;
@@ -5281,7 +5281,7 @@ ECGs will be obtained:
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Injection site assessments (spontaneous)" ;
-        st:onPage page:21 ;
+        st:onPage page:22 ;
         st:rowPosition 26 .
 
     e:t01-r027 a st:SourceActivityRow ;
@@ -5289,7 +5289,7 @@ ECGs will be obtained:
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Participant diary" ;
-        st:onPage page:21 ;
+        st:onPage page:22 ;
         st:rowPosition 27 .
 
     e:t01-r029 a st:SourceActivityRow ;
@@ -5297,7 +5297,7 @@ ECGs will be obtained:
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "PK" ;
-        st:onPage page:21 ;
+        st:onPage page:22 ;
         st:rowPosition 29 .
 
     e:t01-r030 a st:SourceActivityRow ;
@@ -5305,7 +5305,7 @@ ECGs will be obtained:
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "IG" ;
-        st:onPage page:21 ;
+        st:onPage page:22 ;
         st:rowPosition 30 .
 
     e:t01-r031 a st:SourceActivityRow ;
@@ -5313,7 +5313,7 @@ ECGs will be obtained:
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Administer ramucirumab" ;
-        st:onPage page:22 ;
+        st:onPage page:23 ;
         st:rowPosition 31 .
 
     e:u-t01-r025 a st:UnifiedActivity ;
@@ -5358,7 +5358,7 @@ ECGs will be obtained:
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Concomitant medication" ;
-        st:onPage page:16 ;
+        st:onPage page:17 ;
         st:rowPosition 12 .
 
     e:u-t01-c016 a st:UnifiedColumn ;
@@ -5399,7 +5399,7 @@ ECGs will be obtained:
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Vital signs" ;
-        st:onPage page:17 ;
+        st:onPage page:18 ;
         st:rowPosition 14 .
 
     e:t01-r017 a st:SourceActivityRow ;
@@ -5407,7 +5407,7 @@ ECGs will be obtained:
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "ECG" ;
-        st:onPage page:18 ;
+        st:onPage page:19 ;
         st:rowPosition 17 .
 
     e:t01-r021 a st:SourceActivityRow ;
@@ -5415,7 +5415,7 @@ ECGs will be obtained:
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Urinalysis" ;
-        st:onPage page:18 ;
+        st:onPage page:19 ;
         st:rowPosition 21 .
 
     e:t01-r022 a st:SourceActivityRow ;
@@ -5423,7 +5423,7 @@ ECGs will be obtained:
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Pregnancy test" ;
-        st:onPage page:18 ;
+        st:onPage page:19 ;
         st:rowPosition 22 .
 
     e:t01-r023 a st:SourceActivityRow ;
@@ -5431,7 +5431,7 @@ ECGs will be obtained:
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Thyroid panel" ;
-        st:onPage page:19 ;
+        st:onPage page:20 ;
         st:rowPosition 23 .
 
     e:t01-r024 a st:SourceActivityRow ;
@@ -5439,7 +5439,7 @@ ECGs will be obtained:
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Radiologic imaging and measurement of palpable or visible lesions" ;
-        st:onPage page:19 ;
+        st:onPage page:20 ;
         st:rowPosition 24 .
 
     e:t03-c002 a st:SourceColumn ;
@@ -5604,9 +5604,9 @@ ECGs will be obtained:
             e:u-t01-c015-v05 ;
         st:segment "main" .
 
-    page:24 a st:Page ;
+    page:25 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/1ab18db01952c3ed464ff5e4c19e0af30c2d90066edc02e05ff8d443dbf54a58> ;
-        st:pageNumber 24 .
+        st:pageNumber 25 .
 
     e:t01-c011 a st:SourceColumn ;
         st:columnPosition 11 ;
@@ -5617,7 +5617,7 @@ ECGs will be obtained:
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "AE collection" ;
-        st:onPage page:17 ;
+        st:onPage page:18 ;
         st:rowPosition 15 .
 
     e:u-t01-c004 a st:UnifiedColumn ;
@@ -5741,8 +5741,8 @@ ECGs will be obtained:
         st:inTable e:t01 .
 
     e:t03 a st:SourceTable ;
-        st:firstPage page:24 ;
-        st:lastPage page:24 ;
+        st:firstPage page:25 ;
+        st:lastPage page:25 ;
         st:purpose "Detailed PK and immunogenicity sample timing (Section 1.3.1) for the 'Sample collection: PK / IG' rows of Table 1" ;
         st:tableNumber 3 ;
         st:tableType "subsidiary" ;
@@ -5753,12 +5753,12 @@ ECGs will be obtained:
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Sample collection" ;
-        st:onPage page:21 ;
+        st:onPage page:22 ;
         st:rowPosition 28 .
 
     e:t01 a st:SourceTable ;
-        st:firstPage page:16 ;
-        st:lastPage page:22 ;
+        st:firstPage page:17 ;
+        st:lastPage page:23 ;
         st:purpose "Main schedule: screening, on-treatment cycles, and short-term follow-up" ;
         st:tableNumber 1 ;
         st:tableType "main_soa" ;

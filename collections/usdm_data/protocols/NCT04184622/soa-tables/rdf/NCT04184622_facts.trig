@@ -7,8 +7,8 @@
 <https://kerfors.github.io/soa-tables/id/sha256/72806f12307e19c01ad6c3f741c3960090bde30f1ce4eb5c3aa9b2b0105d9e04/soa-tables-v1> {
     <https://kerfors.github.io/soa-tables/id/sha256/72806f12307e19c01ad6c3f741c3960090bde30f1ce4eb5c3aa9b2b0105d9e04/soa-tables-v1> a st:Transcription ;
         st:aboutStudy <https://kerfors.github.io/soa-tables/id/study/NCT04184622> ;
-        st:codeCommit "bbb9ab3dac8c9fe153c293d6515e6f7fb78f7184" ;
-        st:collectionsCommit "1c7dc79b2ed7cf92259168673da2ab1deafd28b9" ;
+        st:codeCommit "51f8dc7552331a64cf57648341e27ac8a53aecfd" ;
+        st:collectionsCommit "9a8c9e4ee840a037cc8e80ae7cfc7aecac88c129" ;
         st:consolidatedAt "2026-11-21T09:30:42.693897+00:00"^^xsd:dateTime ;
         st:consolidator "soa_tables.consolidate v1.2" ;
         st:ofFile <https://kerfors.github.io/soa-tables/id/sha256/72806f12307e19c01ad6c3f741c3960090bde30f1ce4eb5c3aa9b2b0105d9e04> ;
@@ -4924,7 +4924,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Clinical Assessments" ;
-        st:onPage page:18 ;
+        st:onPage page:19 ;
         st:rowPosition 9 .
 
     e:t01-r010-c002 a st:SourceCell ;
@@ -5442,7 +5442,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Participant Education and Assessment" ;
-        st:onPage page:18 ;
+        st:onPage page:19 ;
         st:rowPosition 19 .
 
     e:t01-r020-c004 a st:SourceCell ;
@@ -5850,7 +5850,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Laboratory Tests" ;
-        st:onPage page:19 ;
+        st:onPage page:20 ;
         st:rowPosition 28 .
 
     e:t01-r029-c002 a st:SourceCell ;
@@ -6413,7 +6413,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Mental Health Questionnaires" ;
-        st:onPage page:21 ;
+        st:onPage page:22 ;
         st:rowPosition 49 .
 
     e:t01-r050-c002 a st:SourceCell ;
@@ -6836,7 +6836,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Patient Reported Outcomes" ;
-        st:onPage page:21 ;
+        st:onPage page:22 ;
         st:rowPosition 55 .
 
     e:t01-r056-c004 a st:SourceCell ;
@@ -7108,7 +7108,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Clinical Assessments" ;
-        st:onPage page:22 ;
+        st:onPage page:23 ;
         st:rowPosition 7 .
 
     e:t02-r008-c003 a st:SourceCell ;
@@ -7486,7 +7486,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Participant Education and Assessment" ;
-        st:onPage page:22 ;
+        st:onPage page:23 ;
         st:rowPosition 14 .
 
     e:t02-r015-c003 a st:SourceCell ;
@@ -7824,7 +7824,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Laboratory Tests" ;
-        st:onPage page:23 ;
+        st:onPage page:24 ;
         st:rowPosition 21 .
 
     e:t02-r022-c003 a st:SourceCell ;
@@ -8192,7 +8192,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Mental Health Questionnaires" ;
-        st:onPage page:23 ;
+        st:onPage page:24 ;
         st:rowPosition 35 .
 
     e:t02-r036-c003 a st:SourceCell ;
@@ -8540,7 +8540,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "PROs" ;
-        st:onPage page:24 ;
+        st:onPage page:25 ;
         st:rowPosition 40 .
 
     e:t02-r041-c009 a st:SourceCell ;
@@ -10135,7 +10135,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Informed consent" ;
-        st:onPage page:18 ;
+        st:onPage page:19 ;
         st:rowPosition 6 .
 
     e:t01-r007 a st:SourceActivityRow ;
@@ -10143,7 +10143,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Randomization" ;
-        st:onPage page:18 ;
+        st:onPage page:19 ;
         st:rowPosition 7 .
 
     e:t01-r010 a st:SourceActivityRow ;
@@ -10151,7 +10151,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Medical history" ;
-        st:onPage page:18 ;
+        st:onPage page:19 ;
         st:rowPosition 10 .
 
     e:t01-r011 a st:SourceActivityRow ;
@@ -10159,7 +10159,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Physical examination" ;
-        st:onPage page:18 ;
+        st:onPage page:19 ;
         st:rowPosition 11 .
 
     e:t01-r012 a st:SourceActivityRow ;
@@ -10167,7 +10167,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Height" ;
-        st:onPage page:18 ;
+        st:onPage page:19 ;
         st:rowPosition 12 .
 
     e:t01-r024 a st:SourceActivityRow ;
@@ -10175,7 +10175,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Injection training with autoinjector demonstration device" ;
-        st:onPage page:19 ;
+        st:onPage page:20 ;
         st:rowPosition 24 .
 
     e:t01-r026 a st:SourceActivityRow ;
@@ -10183,7 +10183,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Observe participant administer study drug" ;
-        st:onPage page:19 ;
+        st:onPage page:20 ;
         st:rowPosition 26 .
 
     e:t01-r029 a st:SourceActivityRow ;
@@ -10191,7 +10191,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Serum pregnancy test" ;
-        st:onPage page:19 ;
+        st:onPage page:20 ;
         st:rowPosition 29 .
 
     e:t01-r031 a st:SourceActivityRow ;
@@ -10199,7 +10199,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Follicle-stimulating hormone test" ;
-        st:onPage page:19 ;
+        st:onPage page:20 ;
         st:rowPosition 31 .
 
     e:t01-r044 a st:SourceActivityRow ;
@@ -10207,7 +10207,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Thyroid-stimulating hormone" ;
-        st:onPage page:20 ;
+        st:onPage page:21 ;
         st:rowPosition 44 .
 
     e:t01-r047 a st:SourceActivityRow ;
@@ -10215,7 +10215,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Pharmacogenetic stored sample" ;
-        st:onPage page:20 ;
+        st:onPage page:21 ;
         st:rowPosition 47 .
 
     e:t01-r051 a st:SourceActivityRow ;
@@ -10223,7 +10223,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "C-SSRS (Baseline/Screening) Version)" ;
-        st:onPage page:21 ;
+        st:onPage page:22 ;
         st:rowPosition 51 .
 
     e:u-t01-r010 a st:UnifiedActivity ;
@@ -10315,7 +10315,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "TZP PK" ;
-        st:onPage page:20 ;
+        st:onPage page:21 ;
         st:rowPosition 46 .
 
     e:t01-r056 a st:SourceActivityRow ;
@@ -10323,7 +10323,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "PGIS" ;
-        st:onPage page:21 ;
+        st:onPage page:22 ;
         st:rowPosition 56 .
 
     e:t01-r059 a st:SourceActivityRow ;
@@ -10331,7 +10331,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "EQ-5D-5L" ;
-        st:onPage page:21 ;
+        st:onPage page:22 ;
         st:rowPosition 59 .
 
     e:t02-r041 a st:SourceActivityRow ;
@@ -10339,7 +10339,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "PGIS" ;
-        st:onPage page:24 ;
+        st:onPage page:25 ;
         st:rowPosition 41 .
 
     e:t02-r044 a st:SourceActivityRow ;
@@ -10347,7 +10347,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "EQ-5D-5L" ;
-        st:onPage page:24 ;
+        st:onPage page:25 ;
         st:rowPosition 44 .
 
     e:u-t01-r046 a st:UnifiedActivity ;
@@ -10378,7 +10378,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Electrocardiogram" ;
-        st:onPage page:22 ;
+        st:onPage page:23 ;
         st:rowPosition 10 .
 
     e:t02-r025 a st:SourceActivityRow ;
@@ -10386,7 +10386,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Lipid panel" ;
-        st:onPage page:23 ;
+        st:onPage page:24 ;
         st:rowPosition 25 .
 
     e:t02-r026 a st:SourceActivityRow ;
@@ -10394,7 +10394,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Free fatty acids" ;
-        st:onPage page:23 ;
+        st:onPage page:24 ;
         st:rowPosition 26 .
 
     e:t02-r028 a st:SourceActivityRow ;
@@ -10402,7 +10402,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Cystatin-c" ;
-        st:onPage page:23 ;
+        st:onPage page:24 ;
         st:rowPosition 28 .
 
     e:t02-r029 a st:SourceActivityRow ;
@@ -10410,7 +10410,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Calcitonin" ;
-        st:onPage page:23 ;
+        st:onPage page:24 ;
         st:rowPosition 29 .
 
     e:t02-r030 a st:SourceActivityRow ;
@@ -10418,7 +10418,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Hematology" ;
-        st:onPage page:23 ;
+        st:onPage page:24 ;
         st:rowPosition 30 .
 
     e:t02-r032 a st:SourceActivityRow ;
@@ -10426,7 +10426,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Pancreatic amylase, lipase" ;
-        st:onPage page:23 ;
+        st:onPage page:24 ;
         st:rowPosition 32 .
 
     e:t02-r034 a st:SourceActivityRow ;
@@ -10434,7 +10434,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Nonpharmacogenetic stored sample" ;
-        st:onPage page:23 ;
+        st:onPage page:24 ;
         st:rowPosition 34 .
 
     e:u-t01-r049 a st:UnifiedActivity ;
@@ -10454,7 +10454,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "2-hour oral glucose tolerance test (includes glucose, insulin, c-peptide at each timepoint)" ;
-        st:onPage page:20 ;
+        st:onPage page:21 ;
         st:rowPosition 32 .
 
     e:t01-r039 a st:SourceActivityRow ;
@@ -10462,7 +10462,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Cystatin-c" ;
-        st:onPage page:20 ;
+        st:onPage page:21 ;
         st:rowPosition 39 .
 
     e:t01-r057 a st:SourceActivityRow ;
@@ -10470,7 +10470,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "SF-36, version 2, acute form" ;
-        st:onPage page:21 ;
+        st:onPage page:22 ;
         st:rowPosition 57 .
 
     e:t01-r058 a st:SourceActivityRow ;
@@ -10478,7 +10478,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "IWQOL-Lite CT" ;
-        st:onPage page:21 ;
+        st:onPage page:22 ;
         st:rowPosition 58 .
 
     e:t02-r042 a st:SourceActivityRow ;
@@ -10487,7 +10487,7 @@
         st:matchDecision e:decision-ccorr-006 ;
         st:matchStatus "fuzzy_cross_parent" ;
         st:name "SF-36, version 2 acute" ;
-        st:onPage page:24 ;
+        st:onPage page:25 ;
         st:rowPosition 42 .
 
     e:t02-r043 a st:SourceActivityRow ;
@@ -10496,7 +10496,7 @@
         st:matchDecision e:decision-ccorr-007 ;
         st:matchStatus "fuzzy_cross_parent" ;
         st:name "IWQOL-Lite -CT" ;
-        st:onPage page:24 ;
+        st:onPage page:25 ;
         st:rowPosition 43 .
 
     e:u-t01-r056 a st:UnifiedActivity ;
@@ -10556,7 +10556,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Lipid panel" ;
-        st:onPage page:20 ;
+        st:onPage page:21 ;
         st:rowPosition 34 .
 
     e:t01-r037 a st:SourceActivityRow ;
@@ -10564,7 +10564,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Free fatty acids" ;
-        st:onPage page:20 ;
+        st:onPage page:21 ;
         st:rowPosition 37 .
 
     e:t01-r040 a st:SourceActivityRow ;
@@ -10572,7 +10572,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Calcitonin" ;
-        st:onPage page:20 ;
+        st:onPage page:21 ;
         st:rowPosition 40 .
 
     e:t01-r041 a st:SourceActivityRow ;
@@ -10580,7 +10580,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Hematology" ;
-        st:onPage page:20 ;
+        st:onPage page:21 ;
         st:rowPosition 41 .
 
     e:t02-r027 a st:SourceActivityRow ;
@@ -10589,7 +10589,7 @@
         st:matchDecision e:decision-ccorr-005 ;
         st:matchStatus "fuzzy_auto" ;
         st:name "Urinary albumin/creatinine ratio" ;
-        st:onPage page:23 ;
+        st:onPage page:24 ;
         st:rowPosition 27 .
 
     e:t02-r033 a st:SourceActivityRow ;
@@ -10597,7 +10597,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Immunogenicity (includes PK sample)" ;
-        st:onPage page:23 ;
+        st:onPage page:24 ;
         st:rowPosition 33 .
 
     e:u-t01-c003 a st:UnifiedColumn ;
@@ -10622,7 +10622,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Hand out diary, instruct in use" ;
-        st:onPage page:18 ;
+        st:onPage page:19 ;
         st:rowPosition 20 .
 
     e:t01-r038 a st:SourceActivityRow ;
@@ -10630,7 +10630,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Urinary albumin/creatinine" ;
-        st:onPage page:20 ;
+        st:onPage page:21 ;
         st:rowPosition 38 .
 
     e:t01-r043 a st:SourceActivityRow ;
@@ -10638,7 +10638,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Pancreatic amylase, lipase" ;
-        st:onPage page:20 ;
+        st:onPage page:21 ;
         st:rowPosition 43 .
 
     e:t01-r048 a st:SourceActivityRow ;
@@ -10646,7 +10646,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Nonpharmacogenetic stored sample" ;
-        st:onPage page:21 ;
+        st:onPage page:22 ;
         st:rowPosition 48 .
 
     e:t02-r015 a st:SourceActivityRow ;
@@ -10654,7 +10654,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Hand out diary, instruct in use" ;
-        st:onPage page:22 ;
+        st:onPage page:23 ;
         st:rowPosition 15 .
 
     e:t02-r019 a st:SourceActivityRow ;
@@ -10662,7 +10662,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Dispense study drug" ;
-        st:onPage page:22 ;
+        st:onPage page:23 ;
         st:rowPosition 19 .
 
     e:t02-r023 a st:SourceActivityRow ;
@@ -10671,7 +10671,7 @@
         st:matchDecision e:decision-ccorr-003 ;
         st:matchStatus "fuzzy_auto" ;
         st:name "2 hour oral glucose tolerance test (includes glucose, insulin, c-peptide)" ;
-        st:onPage page:23 ;
+        st:onPage page:24 ;
         st:rowPosition 23 .
 
     e:u-t01-c011 a st:UnifiedColumn ;
@@ -10878,9 +10878,9 @@
             e:u-t02-c016-v05 ;
         st:segment "track" .
 
-    page:24 a st:Page ;
+    page:25 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/72806f12307e19c01ad6c3f741c3960090bde30f1ce4eb5c3aa9b2b0105d9e04> ;
-        st:pageNumber 24 .
+        st:pageNumber 25 .
 
     e:t01-c011 a st:SourceColumn ;
         st:columnPosition 11 ;
@@ -10919,7 +10919,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Electrocardiogram" ;
-        st:onPage page:18 ;
+        st:onPage page:19 ;
         st:rowPosition 15 .
 
     e:t01-r035 a st:SourceActivityRow ;
@@ -10927,7 +10927,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Fasting insulin" ;
-        st:onPage page:20 ;
+        st:onPage page:21 ;
         st:rowPosition 35 .
 
     e:t01-r036 a st:SourceActivityRow ;
@@ -10935,7 +10935,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "C-peptide" ;
-        st:onPage page:20 ;
+        st:onPage page:21 ;
         st:rowPosition 36 .
 
     e:t01-r045 a st:SourceActivityRow ;
@@ -10943,7 +10943,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Immunogenicity (includes PK sample)" ;
-        st:onPage page:20 ;
+        st:onPage page:21 ;
         st:rowPosition 45 .
 
     e:t02-c002 a st:SourceColumn ;
@@ -11008,7 +11008,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Urine pregnancy test" ;
-        st:onPage page:19 ;
+        st:onPage page:20 ;
         st:rowPosition 30 .
 
     e:t02-r017 a st:SourceActivityRow ;
@@ -11016,7 +11016,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Lifestyle Program instructions" ;
-        st:onPage page:22 ;
+        st:onPage page:23 ;
         st:rowPosition 17 .
 
     e:t02-r020 a st:SourceActivityRow ;
@@ -11024,7 +11024,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Participant returns study drugs and injection supplies" ;
-        st:onPage page:23 ;
+        st:onPage page:24 ;
         st:rowPosition 20 .
 
     e:t02-r022 a st:SourceActivityRow ;
@@ -11032,7 +11032,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Urine pregnancy test" ;
-        st:onPage page:23 ;
+        st:onPage page:24 ;
         st:rowPosition 22 .
 
     e:u-t01-r034 a st:UnifiedActivity ;
@@ -11087,9 +11087,9 @@
         st:parentName "Laboratory Tests" ;
         st:qualifiedKey "Laboratory Tests::Cystatin-c" .
 
-    page:19 a st:Page ;
+    page:20 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/72806f12307e19c01ad6c3f741c3960090bde30f1ce4eb5c3aa9b2b0105d9e04> ;
-        st:pageNumber 19 .
+        st:pageNumber 20 .
 
     e:t01-c023 a st:SourceColumn ;
         st:columnPosition 23 ;
@@ -11100,7 +11100,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Lifestyle Program instructions" ;
-        st:onPage page:19 ;
+        st:onPage page:20 ;
         st:rowPosition 22 .
 
     e:t01-r042 a st:SourceActivityRow ;
@@ -11108,7 +11108,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "HbA1c" ;
-        st:onPage page:20 ;
+        st:onPage page:21 ;
         st:rowPosition 42 .
 
     e:t02-c018 a st:SourceColumn ;
@@ -11120,7 +11120,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Vital signs (3 sitting BP and HR)" ;
-        st:onPage page:22 ;
+        st:onPage page:23 ;
         st:rowPosition 11 .
 
     e:t02-r031 a st:SourceActivityRow ;
@@ -11128,7 +11128,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "HbA1c" ;
-        st:onPage page:23 ;
+        st:onPage page:24 ;
         st:rowPosition 31 .
 
     e:u-t01-c023 a st:UnifiedColumn ;
@@ -11209,7 +11209,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Dispense study drug" ;
-        st:onPage page:19 ;
+        st:onPage page:20 ;
         st:rowPosition 25 .
 
     e:t01-r027 a st:SourceActivityRow ;
@@ -11217,7 +11217,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Participant returns study drugs and injection supplies" ;
-        st:onPage page:19 ;
+        st:onPage page:20 ;
         st:rowPosition 27 .
 
     e:t01-r050 a st:SourceActivityRow ;
@@ -11225,7 +11225,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "PHQ-9" ;
-        st:onPage page:21 ;
+        st:onPage page:22 ;
         st:rowPosition 50 .
 
     e:t02-r008 a st:SourceActivityRow ;
@@ -11233,7 +11233,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Weight" ;
-        st:onPage page:22 ;
+        st:onPage page:23 ;
         st:rowPosition 8 .
 
     e:t02-r009 a st:SourceActivityRow ;
@@ -11241,7 +11241,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Waist circumference" ;
-        st:onPage page:22 ;
+        st:onPage page:23 ;
         st:rowPosition 9 .
 
     e:t02-r036 a st:SourceActivityRow ;
@@ -11249,19 +11249,19 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "PHQ-9" ;
-        st:onPage page:23 ;
+        st:onPage page:24 ;
         st:rowPosition 36 .
 
-    page:21 a st:Page ;
+    page:22 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/72806f12307e19c01ad6c3f741c3960090bde30f1ce4eb5c3aa9b2b0105d9e04> ;
-        st:pageNumber 21 .
+        st:pageNumber 22 .
 
     e:t01-r033 a st:SourceActivityRow ;
         st:inTable e:t01 ;
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Chemistry panel (include Cr for eGFR calculation and glucose)" ;
-        st:onPage page:20 ;
+        st:onPage page:21 ;
         st:rowPosition 33 .
 
     e:t02-r024 a st:SourceActivityRow ;
@@ -11270,7 +11270,7 @@
         st:matchDecision e:decision-ccorr-004 ;
         st:matchStatus "fuzzy_auto" ;
         st:name "Chemistry panel (includes Cr for eGFR calculation and glucose)" ;
-        st:onPage page:23 ;
+        st:onPage page:24 ;
         st:rowPosition 24 .
 
     e:u-t01-c009 a st:UnifiedColumn ;
@@ -11300,16 +11300,16 @@
         st:columnPosition 9 ;
         st:inTable e:t01 .
 
-    page:22 a st:Page ;
+    page:23 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/72806f12307e19c01ad6c3f741c3960090bde30f1ce4eb5c3aa9b2b0105d9e04> ;
-        st:pageNumber 22 .
+        st:pageNumber 23 .
 
     e:t01-r014 a st:SourceActivityRow ;
         st:inTable e:t01 ;
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Waist circumference" ;
-        st:onPage page:18 ;
+        st:onPage page:19 ;
         st:rowPosition 14 .
 
     e:t01-r016 a st:SourceActivityRow ;
@@ -11317,7 +11317,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Vital signs (3 sitting BP and HR)" ;
-        st:onPage page:18 ;
+        st:onPage page:19 ;
         st:rowPosition 16 .
 
     e:u-t01-c005 a st:UnifiedColumn ;
@@ -11366,13 +11366,13 @@
         st:parentName "Laboratory Tests" ;
         st:qualifiedKey "Laboratory Tests::Immunogenicity (includes PK sample)" .
 
-    page:18 a st:Page ;
+    page:19 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/72806f12307e19c01ad6c3f741c3960090bde30f1ce4eb5c3aa9b2b0105d9e04> ;
-        st:pageNumber 18 .
+        st:pageNumber 19 .
 
-    page:20 a st:Page ;
+    page:21 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/72806f12307e19c01ad6c3f741c3960090bde30f1ce4eb5c3aa9b2b0105d9e04> ;
-        st:pageNumber 20 .
+        st:pageNumber 21 .
 
     e:t01-c005 a st:SourceColumn ;
         st:columnPosition 5 ;
@@ -11387,7 +11387,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Weight" ;
-        st:onPage page:18 ;
+        st:onPage page:19 ;
         st:rowPosition 13 .
 
     e:u-t01-c006 a st:UnifiedColumn ;
@@ -11400,9 +11400,9 @@
             e:u-t01-c006-v05 ;
         st:segment "main" .
 
-    page:23 a st:Page ;
+    page:24 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/72806f12307e19c01ad6c3f741c3960090bde30f1ce4eb5c3aa9b2b0105d9e04> ;
-        st:pageNumber 23 .
+        st:pageNumber 24 .
 
     e:t01-c006 a st:SourceColumn ;
         st:columnPosition 6 ;
@@ -11413,7 +11413,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Review diet and exercise goals" ;
-        st:onPage page:22 ;
+        st:onPage page:23 ;
         st:rowPosition 18 .
 
     e:u-t01-r025 a st:UnifiedActivity ;
@@ -11507,7 +11507,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Register study visit in IWRS" ;
-        st:onPage page:22 ;
+        st:onPage page:23 ;
         st:rowPosition 6 .
 
     e:t02-r013 a st:SourceActivityRow ;
@@ -11515,7 +11515,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Concomitant medications" ;
-        st:onPage page:22 ;
+        st:onPage page:23 ;
         st:rowPosition 13 .
 
     e:t02-r016 a st:SourceActivityRow ;
@@ -11524,7 +11524,7 @@
         st:matchDecision e:decision-ccorr-002 ;
         st:matchStatus "fuzzy_auto" ;
         st:name "Review study participant diary, including study drug compliance" ;
-        st:onPage page:22 ;
+        st:onPage page:23 ;
         st:rowPosition 16 .
 
     e:t02-r037 a st:SourceActivityRow ;
@@ -11532,7 +11532,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "C-SSRS (Since Last Visit Version)" ;
-        st:onPage page:24 ;
+        st:onPage page:25 ;
         st:rowPosition 37 .
 
     e:t02-r038 a st:SourceActivityRow ;
@@ -11540,7 +11540,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Self-Harm Supplement Form" ;
-        st:onPage page:24 ;
+        st:onPage page:25 ;
         st:rowPosition 38 .
 
     e:t02-r039 a st:SourceActivityRow ;
@@ -11548,7 +11548,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "exact" ;
         st:name "Self-Harm Follow-up Form" ;
-        st:onPage page:24 ;
+        st:onPage page:25 ;
         st:rowPosition 39 .
 
     e:u-t01-r022 a st:UnifiedActivity ;
@@ -11629,7 +11629,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Review diet and exercise goals" ;
-        st:onPage page:19 ;
+        st:onPage page:20 ;
         st:rowPosition 23 .
 
     e:t02-c005 a st:SourceColumn ;
@@ -11672,7 +11672,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Review study participant diary, including study-drug compliance" ;
-        st:onPage page:19 ;
+        st:onPage page:20 ;
         st:rowPosition 21 .
 
     e:t02-r012 a st:SourceActivityRow ;
@@ -11681,7 +11681,7 @@
         st:matchDecision e:decision-ccorr-001 ;
         st:matchStatus "fuzzy_auto" ;
         st:name "Adverse events/Product Complaints" ;
-        st:onPage page:22 ;
+        st:onPage page:23 ;
         st:rowPosition 12 .
 
     e:u-t01-c013 a st:UnifiedColumn ;
@@ -11730,7 +11730,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "C-SSRS (Since Last Visit Version)" ;
-        st:onPage page:21 ;
+        st:onPage page:22 ;
         st:rowPosition 52 .
 
     e:t02-c020 a st:SourceColumn ;
@@ -11757,7 +11757,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Register study visit in IWRS" ;
-        st:onPage page:18 ;
+        st:onPage page:19 ;
         st:rowPosition 8 .
 
     e:t01-r018 a st:SourceActivityRow ;
@@ -11765,7 +11765,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Concomitant medications" ;
-        st:onPage page:18 ;
+        st:onPage page:19 ;
         st:rowPosition 18 .
 
     e:t01-r053 a st:SourceActivityRow ;
@@ -11773,7 +11773,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Self-Harm Supplement Form" ;
-        st:onPage page:21 ;
+        st:onPage page:22 ;
         st:rowPosition 53 .
 
     e:t01-r054 a st:SourceActivityRow ;
@@ -11781,7 +11781,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Self-Harm Follow-up Form" ;
-        st:onPage page:21 ;
+        st:onPage page:22 ;
         st:rowPosition 54 .
 
     e:u-t01-c002 a st:UnifiedColumn ;
@@ -11853,7 +11853,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Adverse events and product complaints" ;
-        st:onPage page:18 ;
+        st:onPage page:19 ;
         st:rowPosition 17 .
 
     e:u-t01-r013 a st:UnifiedActivity ;
@@ -12074,8 +12074,8 @@
         st:qualifiedKey "Mental Health Questionnaires::Self-Harm Follow-up Form" .
 
     e:t02 a st:SourceTable ;
-        st:firstPage page:22 ;
-        st:lastPage page:24 ;
+        st:firstPage page:23 ;
+        st:lastPage page:25 ;
         st:purpose "Additional 2-year treatment period (Weeks 78-176, Visits 101-116, 199, ED, 802) for participants with prediabetes at randomization only." ;
         st:tableNumber 2 ;
         st:tableType "track" ;
@@ -12083,8 +12083,8 @@
         st:trackLabel "Prediabetes" .
 
     e:t01 a st:SourceTable ;
-        st:firstPage page:18 ;
-        st:lastPage page:21 ;
+        st:firstPage page:19 ;
+        st:lastPage page:22 ;
         st:purpose "Main 72-week treatment schedule (screening, treatment to primary endpoint at Week 72, Visit 99, early discontinuation and safety follow-up Visit 801) for all participants." ;
         st:tableNumber 1 ;
         st:tableType "main_soa" ;

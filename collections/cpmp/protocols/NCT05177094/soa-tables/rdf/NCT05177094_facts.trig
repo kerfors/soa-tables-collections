@@ -7,8 +7,8 @@
 <https://kerfors.github.io/soa-tables/id/sha256/27419ab1d0be88a891c6d470ed3e9cae64d015d3437b2b6b17cf27c8a585c7ab/soa-tables-v1> {
     <https://kerfors.github.io/soa-tables/id/sha256/27419ab1d0be88a891c6d470ed3e9cae64d015d3437b2b6b17cf27c8a585c7ab/soa-tables-v1> a st:Transcription ;
         st:aboutStudy <https://kerfors.github.io/soa-tables/id/study/NCT05177094> ;
-        st:codeCommit "bbb9ab3dac8c9fe153c293d6515e6f7fb78f7184" ;
-        st:collectionsCommit "1c7dc79b2ed7cf92259168673da2ab1deafd28b9" ;
+        st:codeCommit "51f8dc7552331a64cf57648341e27ac8a53aecfd" ;
+        st:collectionsCommit "9a8c9e4ee840a037cc8e80ae7cfc7aecac88c129" ;
         st:consolidatedAt "2026-11-21T09:30:27.572113+00:00"^^xsd:dateTime ;
         st:consolidator "soa_tables.consolidate v1.2" ;
         st:ofFile <https://kerfors.github.io/soa-tables/id/sha256/27419ab1d0be88a891c6d470ed3e9cae64d015d3437b2b6b17cf27c8a585c7ab> ;

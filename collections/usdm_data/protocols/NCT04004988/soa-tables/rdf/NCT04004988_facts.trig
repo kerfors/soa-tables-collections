@@ -7,8 +7,8 @@
 <https://kerfors.github.io/soa-tables/id/sha256/7b7562ff9e4e731c94fb6b2b9c9f0a9e64069e39e65fb0045a00009f7fa89a34/soa-tables-v1> {
     <https://kerfors.github.io/soa-tables/id/sha256/7b7562ff9e4e731c94fb6b2b9c9f0a9e64069e39e65fb0045a00009f7fa89a34/soa-tables-v1> a st:Transcription ;
         st:aboutStudy <https://kerfors.github.io/soa-tables/id/study/NCT04004988> ;
-        st:codeCommit "bbb9ab3dac8c9fe153c293d6515e6f7fb78f7184" ;
-        st:collectionsCommit "1c7dc79b2ed7cf92259168673da2ab1deafd28b9" ;
+        st:codeCommit "51f8dc7552331a64cf57648341e27ac8a53aecfd" ;
+        st:collectionsCommit "9a8c9e4ee840a037cc8e80ae7cfc7aecac88c129" ;
         st:consolidatedAt "2026-11-21T09:30:42.242585+00:00"^^xsd:dateTime ;
         st:consolidator "soa_tables.consolidate v1.2" ;
         st:ofFile <https://kerfors.github.io/soa-tables/id/sha256/7b7562ff9e4e731c94fb6b2b9c9f0a9e64069e39e65fb0045a00009f7fa89a34> ;
@@ -2498,9 +2498,9 @@
         st:parentName "" ;
         st:qualifiedKey "::Pharmacogenetic Sample" .
 
-    page:11 a st:Page ;
+    page:12 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/7b7562ff9e4e731c94fb6b2b9c9f0a9e64069e39e65fb0045a00009f7fa89a34> ;
-        st:pageNumber 11 .
+        st:pageNumber 12 .
 
     e:u-t01-c003 a st:UnifiedColumn ;
         st:compositeLabel "Periods 1 and 2 Study Days – at least 35 days washout between Day 1 doses / D-1" ;
@@ -2705,7 +2705,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Informed Consent" ;
-        st:onPage page:10 ;
+        st:onPage page:11 ;
         st:rowPosition 3 .
 
     e:t01-r004 a st:SourceActivityRow ;
@@ -2713,7 +2713,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Subject Admission to CRU" ;
-        st:onPage page:10 ;
+        st:onPage page:11 ;
         st:rowPosition 4 .
 
     e:t01-r005 a st:SourceActivityRow ;
@@ -2721,7 +2721,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Tirzepatide Dosing" ;
-        st:onPage page:10 ;
+        st:onPage page:11 ;
         st:rowPosition 5 .
 
     e:t01-r006 a st:SourceActivityRow ;
@@ -2729,7 +2729,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Subject Discharge from CRU" ;
-        st:onPage page:10 ;
+        st:onPage page:11 ;
         st:rowPosition 6 .
 
     e:t01-r007 a st:SourceActivityRow ;
@@ -2737,7 +2737,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Outpatient Visit" ;
-        st:onPage page:10 ;
+        st:onPage page:11 ;
         st:rowPosition 7 .
 
     e:t01-r008 a st:SourceActivityRow ;
@@ -2745,7 +2745,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Medical History and Demographics" ;
-        st:onPage page:10 ;
+        st:onPage page:11 ;
         st:rowPosition 8 .
 
     e:t01-r009 a st:SourceActivityRow ;
@@ -2753,7 +2753,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Physical Examination /Medical Assessment" ;
-        st:onPage page:10 ;
+        st:onPage page:11 ;
         st:rowPosition 9 .
 
     e:t01-r010 a st:SourceActivityRow ;
@@ -2761,7 +2761,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Weight" ;
-        st:onPage page:10 ;
+        st:onPage page:11 ;
         st:rowPosition 10 .
 
     e:t01-r011 a st:SourceActivityRow ;
@@ -2769,7 +2769,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Height" ;
-        st:onPage page:10 ;
+        st:onPage page:11 ;
         st:rowPosition 11 .
 
     e:t01-r012 a st:SourceActivityRow ;
@@ -2777,7 +2777,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Temperature" ;
-        st:onPage page:10 ;
+        st:onPage page:11 ;
         st:rowPosition 12 .
 
     e:t01-r013 a st:SourceActivityRow ;
@@ -2785,7 +2785,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Safety 12-lead ECG" ;
-        st:onPage page:10 ;
+        st:onPage page:11 ;
         st:rowPosition 13 .
 
     e:t01-r014 a st:SourceActivityRow ;
@@ -2793,7 +2793,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Supine Vital Signs (hours)" ;
-        st:onPage page:10 ;
+        st:onPage page:11 ;
         st:rowPosition 14 .
 
     e:t01-r015 a st:SourceActivityRow ;
@@ -2801,7 +2801,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Clinical Laboratory Tests" ;
-        st:onPage page:10 ;
+        st:onPage page:11 ;
         st:rowPosition 15 .
 
     e:t01-r016 a st:SourceActivityRow ;
@@ -2809,7 +2809,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Pregnancy Test" ;
-        st:onPage page:10 ;
+        st:onPage page:11 ;
         st:rowPosition 16 .
 
     e:t01-r017 a st:SourceActivityRow ;
@@ -2817,7 +2817,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "FSH test, if applicable" ;
-        st:onPage page:10 ;
+        st:onPage page:11 ;
         st:rowPosition 17 .
 
     e:t01-r018 a st:SourceActivityRow ;
@@ -2825,7 +2825,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "AEs/Concomitant Medications" ;
-        st:onPage page:10 ;
+        st:onPage page:11 ;
         st:rowPosition 18 .
 
     e:t01-r019 a st:SourceActivityRow ;
@@ -2833,7 +2833,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Pharmacogenetic Sample" ;
-        st:onPage page:10 ;
+        st:onPage page:11 ;
         st:rowPosition 19 .
 
     e:t01-r020 a st:SourceActivityRow ;
@@ -2841,7 +2841,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Immunogenicity" ;
-        st:onPage page:11 ;
+        st:onPage page:12 ;
         st:rowPosition 20 .
 
     e:t01-r021 a st:SourceActivityRow ;
@@ -2849,7 +2849,7 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "Blood glucose monitoring (hours)" ;
-        st:onPage page:11 ;
+        st:onPage page:12 ;
         st:rowPosition 21 .
 
     e:t01-r022 a st:SourceActivityRow ;
@@ -2857,12 +2857,12 @@
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
         st:name "PK Sampling (hours)" ;
-        st:onPage page:11 ;
+        st:onPage page:12 ;
         st:rowPosition 22 .
 
-    page:10 a st:Page ;
+    page:11 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/7b7562ff9e4e731c94fb6b2b9c9f0a9e64069e39e65fb0045a00009f7fa89a34> ;
-        st:pageNumber 10 .
+        st:pageNumber 11 .
 
     e:t01-c002 a st:SourceColumn ;
         st:columnPosition 2 ;
@@ -2921,8 +2921,8 @@
         st:inTable e:t01 .
 
     e:t01 a st:SourceTable ;
-        st:firstPage page:10 ;
-        st:lastPage page:11 ;
+        st:firstPage page:11 ;
+        st:lastPage page:12 ;
         st:purpose "Main schedule: screening, Periods 1 and 2 (crossover periods sharing one day grid, >=35 days washout between Day 1 doses) and early discontinuation" ;
         st:tableNumber 1 ;
         st:tableType "main_soa" ;
