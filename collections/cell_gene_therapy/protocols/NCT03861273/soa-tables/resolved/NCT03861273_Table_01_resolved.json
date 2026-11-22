@@ -2,7 +2,7 @@
   "schema_name": "soa-table-resolved",
   "schema_version": "1.3",
   "resolution_metadata": {
-    "resolved_at": "2026-11-21T09:30:14.113974+00:00",
+    "resolved_at": "2026-11-22T21:25:08.935343+00:00",
     "resolver": "soa_tables.resolve v1.0",
     "source_extraction": {
       "schema_name": "soa-table-extraction",
@@ -241,18 +241,7 @@
       ],
       "composite_label": "Week 1-12 (± 2 days) / 4 / 1",
       "linked_annotation_ids": [
-        "annot-007",
-        "annot-013",
-        "annot-021",
-        "annot-023",
-        "annot-026",
-        "annot-028",
-        "annot-030",
-        "annot-031",
-        "annot-037",
-        "annot-043",
-        "annot-057",
-        "annot-061"
+        "annot-007"
       ]
     },
     {
@@ -680,19 +669,8 @@
       "has_schedule_data": true,
       "annotation_markers": "n14,*",
       "linked_annotation_ids": [
-        "annot-007",
-        "annot-013",
-        "annot-021",
-        "annot-023",
         "annot-025",
-        "annot-026",
-        "annot-028",
-        "annot-030",
-        "annot-031",
-        "annot-037",
-        "annot-043",
-        "annot-057",
-        "annot-061"
+        "annot-026"
       ]
     },
     {
@@ -848,19 +826,8 @@
       "has_schedule_data": true,
       "annotation_markers": "n21,*",
       "linked_annotation_ids": [
-        "annot-007",
-        "annot-013",
-        "annot-021",
-        "annot-023",
-        "annot-026",
-        "annot-028",
-        "annot-030",
-        "annot-031",
         "annot-036",
-        "annot-037",
-        "annot-043",
-        "annot-057",
-        "annot-061"
+        "annot-037"
       ]
     },
     {
@@ -1246,18 +1213,7 @@
       "source_range": "",
       "annotation_markers": "*",
       "linked_annotation_ids": [
-        "annot-007",
-        "annot-013",
-        "annot-021",
-        "annot-023",
-        "annot-026",
-        "annot-028",
-        "annot-030",
-        "annot-031",
-        "annot-037",
-        "annot-043",
-        "annot-057",
-        "annot-061"
+        "annot-013"
       ]
     },
     {
@@ -1270,11 +1226,7 @@
       "source_range": "",
       "annotation_markers": "#",
       "linked_annotation_ids": [
-        "annot-014",
-        "annot-022",
-        "annot-024",
-        "annot-049",
-        "annot-059"
+        "annot-014"
       ]
     },
     {
@@ -1478,23 +1430,8 @@
       "source_range": "",
       "annotation_markers": "*,#",
       "linked_annotation_ids": [
-        "annot-007",
-        "annot-013",
-        "annot-014",
         "annot-021",
-        "annot-022",
-        "annot-023",
-        "annot-024",
-        "annot-026",
-        "annot-028",
-        "annot-030",
-        "annot-031",
-        "annot-037",
-        "annot-043",
-        "annot-049",
-        "annot-057",
-        "annot-059",
-        "annot-061"
+        "annot-022"
       ]
     },
     {
@@ -1507,23 +1444,8 @@
       "source_range": "",
       "annotation_markers": "*,#",
       "linked_annotation_ids": [
-        "annot-007",
-        "annot-013",
-        "annot-014",
-        "annot-021",
-        "annot-022",
         "annot-023",
-        "annot-024",
-        "annot-026",
-        "annot-028",
-        "annot-030",
-        "annot-031",
-        "annot-037",
-        "annot-043",
-        "annot-049",
-        "annot-057",
-        "annot-059",
-        "annot-061"
+        "annot-024"
       ]
     },
     {
@@ -1569,18 +1491,7 @@
       "source_range": "",
       "annotation_markers": "*",
       "linked_annotation_ids": [
-        "annot-007",
-        "annot-013",
-        "annot-021",
-        "annot-023",
-        "annot-026",
-        "annot-028",
-        "annot-030",
-        "annot-031",
-        "annot-037",
-        "annot-043",
-        "annot-057",
-        "annot-061"
+        "annot-028"
       ]
     },
     {
@@ -1593,18 +1504,7 @@
       "source_range": "",
       "annotation_markers": "*",
       "linked_annotation_ids": [
-        "annot-007",
-        "annot-013",
-        "annot-021",
-        "annot-023",
-        "annot-026",
-        "annot-028",
-        "annot-030",
-        "annot-031",
-        "annot-037",
-        "annot-043",
-        "annot-057",
-        "annot-061"
+        "annot-030"
       ]
     },
     {
@@ -1716,18 +1616,7 @@
       "source_range": "",
       "annotation_markers": "*",
       "linked_annotation_ids": [
-        "annot-007",
-        "annot-013",
-        "annot-021",
-        "annot-023",
-        "annot-026",
-        "annot-028",
-        "annot-030",
-        "annot-031",
-        "annot-037",
-        "annot-043",
-        "annot-057",
-        "annot-061"
+        "annot-031"
       ]
     },
     {
@@ -2239,18 +2128,7 @@
       "source_range": "",
       "annotation_markers": "*",
       "linked_annotation_ids": [
-        "annot-007",
-        "annot-013",
-        "annot-021",
-        "annot-023",
-        "annot-026",
-        "annot-028",
-        "annot-030",
-        "annot-031",
-        "annot-037",
-        "annot-043",
-        "annot-057",
-        "annot-061"
+        "annot-043"
       ]
     },
     {
@@ -2472,11 +2350,7 @@
       "source_range": "3:14",
       "annotation_markers": "#",
       "linked_annotation_ids": [
-        "annot-014",
-        "annot-022",
-        "annot-024",
-        "annot-049",
-        "annot-059"
+        "annot-049"
       ]
     },
     {
@@ -2489,11 +2363,7 @@
       "source_range": "3:14",
       "annotation_markers": "#",
       "linked_annotation_ids": [
-        "annot-014",
-        "annot-022",
-        "annot-024",
-        "annot-049",
-        "annot-059"
+        "annot-049"
       ]
     },
     {
@@ -2506,11 +2376,7 @@
       "source_range": "3:14",
       "annotation_markers": "#",
       "linked_annotation_ids": [
-        "annot-014",
-        "annot-022",
-        "annot-024",
-        "annot-049",
-        "annot-059"
+        "annot-049"
       ]
     },
     {
@@ -2523,11 +2389,7 @@
       "source_range": "3:14",
       "annotation_markers": "#",
       "linked_annotation_ids": [
-        "annot-014",
-        "annot-022",
-        "annot-024",
-        "annot-049",
-        "annot-059"
+        "annot-049"
       ]
     },
     {
@@ -2540,11 +2402,7 @@
       "source_range": "3:14",
       "annotation_markers": "#",
       "linked_annotation_ids": [
-        "annot-014",
-        "annot-022",
-        "annot-024",
-        "annot-049",
-        "annot-059"
+        "annot-049"
       ]
     },
     {
@@ -2557,11 +2415,7 @@
       "source_range": "3:14",
       "annotation_markers": "#",
       "linked_annotation_ids": [
-        "annot-014",
-        "annot-022",
-        "annot-024",
-        "annot-049",
-        "annot-059"
+        "annot-049"
       ]
     },
     {
@@ -2574,11 +2428,7 @@
       "source_range": "3:14",
       "annotation_markers": "#",
       "linked_annotation_ids": [
-        "annot-014",
-        "annot-022",
-        "annot-024",
-        "annot-049",
-        "annot-059"
+        "annot-049"
       ]
     },
     {
@@ -2591,11 +2441,7 @@
       "source_range": "3:14",
       "annotation_markers": "#",
       "linked_annotation_ids": [
-        "annot-014",
-        "annot-022",
-        "annot-024",
-        "annot-049",
-        "annot-059"
+        "annot-049"
       ]
     },
     {
@@ -2608,11 +2454,7 @@
       "source_range": "3:14",
       "annotation_markers": "#",
       "linked_annotation_ids": [
-        "annot-014",
-        "annot-022",
-        "annot-024",
-        "annot-049",
-        "annot-059"
+        "annot-049"
       ]
     },
     {
@@ -2625,11 +2467,7 @@
       "source_range": "3:14",
       "annotation_markers": "#",
       "linked_annotation_ids": [
-        "annot-014",
-        "annot-022",
-        "annot-024",
-        "annot-049",
-        "annot-059"
+        "annot-049"
       ]
     },
     {
@@ -2642,11 +2480,7 @@
       "source_range": "3:14",
       "annotation_markers": "#",
       "linked_annotation_ids": [
-        "annot-014",
-        "annot-022",
-        "annot-024",
-        "annot-049",
-        "annot-059"
+        "annot-049"
       ]
     },
     {
@@ -2659,11 +2493,7 @@
       "source_range": "3:14",
       "annotation_markers": "#",
       "linked_annotation_ids": [
-        "annot-014",
-        "annot-022",
-        "annot-024",
-        "annot-049",
-        "annot-059"
+        "annot-049"
       ]
     },
     {
@@ -2746,19 +2576,8 @@
       "source_range": "",
       "annotation_markers": "*,n39",
       "linked_annotation_ids": [
-        "annot-007",
-        "annot-013",
-        "annot-021",
-        "annot-023",
-        "annot-026",
-        "annot-028",
-        "annot-030",
-        "annot-031",
-        "annot-037",
-        "annot-043",
         "annot-057",
-        "annot-058",
-        "annot-061"
+        "annot-058"
       ]
     },
     {
@@ -2815,17 +2634,6 @@
       "source_range": "",
       "annotation_markers": "*",
       "linked_annotation_ids": [
-        "annot-007",
-        "annot-013",
-        "annot-021",
-        "annot-023",
-        "annot-026",
-        "annot-028",
-        "annot-030",
-        "annot-031",
-        "annot-037",
-        "annot-043",
-        "annot-057",
         "annot-061"
       ]
     },
@@ -2839,10 +2647,6 @@
       "source_range": "5:14",
       "annotation_markers": "#",
       "linked_annotation_ids": [
-        "annot-014",
-        "annot-022",
-        "annot-024",
-        "annot-049",
         "annot-059"
       ]
     },
@@ -2856,10 +2660,6 @@
       "source_range": "5:14",
       "annotation_markers": "#",
       "linked_annotation_ids": [
-        "annot-014",
-        "annot-022",
-        "annot-024",
-        "annot-049",
         "annot-059"
       ]
     },
@@ -2873,10 +2673,6 @@
       "source_range": "5:14",
       "annotation_markers": "#",
       "linked_annotation_ids": [
-        "annot-014",
-        "annot-022",
-        "annot-024",
-        "annot-049",
         "annot-059"
       ]
     },
@@ -2890,10 +2686,6 @@
       "source_range": "5:14",
       "annotation_markers": "#",
       "linked_annotation_ids": [
-        "annot-014",
-        "annot-022",
-        "annot-024",
-        "annot-049",
         "annot-059"
       ]
     },
@@ -2907,10 +2699,6 @@
       "source_range": "5:14",
       "annotation_markers": "#",
       "linked_annotation_ids": [
-        "annot-014",
-        "annot-022",
-        "annot-024",
-        "annot-049",
         "annot-059"
       ]
     },
@@ -2924,10 +2712,6 @@
       "source_range": "5:14",
       "annotation_markers": "#",
       "linked_annotation_ids": [
-        "annot-014",
-        "annot-022",
-        "annot-024",
-        "annot-049",
         "annot-059"
       ]
     },
@@ -2941,10 +2725,6 @@
       "source_range": "5:14",
       "annotation_markers": "#",
       "linked_annotation_ids": [
-        "annot-014",
-        "annot-022",
-        "annot-024",
-        "annot-049",
         "annot-059"
       ]
     },
@@ -2958,10 +2738,6 @@
       "source_range": "5:14",
       "annotation_markers": "#",
       "linked_annotation_ids": [
-        "annot-014",
-        "annot-022",
-        "annot-024",
-        "annot-049",
         "annot-059"
       ]
     },
@@ -2975,10 +2751,6 @@
       "source_range": "5:14",
       "annotation_markers": "#",
       "linked_annotation_ids": [
-        "annot-014",
-        "annot-022",
-        "annot-024",
-        "annot-049",
         "annot-059"
       ]
     },
@@ -2992,10 +2764,6 @@
       "source_range": "5:14",
       "annotation_markers": "#",
       "linked_annotation_ids": [
-        "annot-014",
-        "annot-022",
-        "annot-024",
-        "annot-049",
         "annot-059"
       ]
     },
@@ -3613,54 +3381,14 @@
       "annotation_marker": "*",
       "annotation_type": "footnote",
       "annotation_text": "Visit 4: The participant is not required to appear in person at this visit. Visit 4 study procedures are not required to be performed if the participant does not appear in person with the exception of all required laboratory specimens (eg, Immunology – Exploratory [IgG vs IgM antibody response], Vector Shedding Analysis by PCR, FIX Activity, Antigen and LFT) which can be obtained via mobile phlebotomy home health services. If participants physically attend this visit, all procedures are to be performed per SOA.",
-      "annotation_scope": "multiple",
+      "annotation_scope": "column",
       "referenced_elements": {
         "property_ids": [],
         "column_ids": [
           "col-005"
         ],
-        "activity_ids": [
-          "act-009",
-          "act-017"
-        ],
-        "cell_references": [
-          {
-            "activity_id": "act-002",
-            "column_id": "col-002"
-          },
-          {
-            "activity_id": "act-007",
-            "column_id": "col-003"
-          },
-          {
-            "activity_id": "act-008",
-            "column_id": "col-003"
-          },
-          {
-            "activity_id": "act-011",
-            "column_id": "col-002"
-          },
-          {
-            "activity_id": "act-012",
-            "column_id": "col-002"
-          },
-          {
-            "activity_id": "act-013",
-            "column_id": "col-002"
-          },
-          {
-            "activity_id": "act-021",
-            "column_id": "col-005"
-          },
-          {
-            "activity_id": "act-031",
-            "column_id": "col-003"
-          },
-          {
-            "activity_id": "act-032",
-            "column_id": "col-004"
-          }
-        ]
+        "activity_ids": [],
+        "cell_references": []
       },
       "marker_locations": [
         {
@@ -3791,52 +3519,15 @@
       "annotation_marker": "*",
       "annotation_type": "footnote",
       "annotation_text": "Review and confirm eligibility criteria (see Sections 5.1 & 5.2). This needs to be completed prior to ordering IP at the beginning of the Baseline Period.",
-      "annotation_scope": "multiple",
+      "annotation_scope": "cell",
       "referenced_elements": {
         "property_ids": [],
-        "column_ids": [
-          "col-005"
-        ],
-        "activity_ids": [
-          "act-009",
-          "act-017"
-        ],
+        "column_ids": [],
+        "activity_ids": [],
         "cell_references": [
           {
             "activity_id": "act-002",
             "column_id": "col-002"
-          },
-          {
-            "activity_id": "act-007",
-            "column_id": "col-003"
-          },
-          {
-            "activity_id": "act-008",
-            "column_id": "col-003"
-          },
-          {
-            "activity_id": "act-011",
-            "column_id": "col-002"
-          },
-          {
-            "activity_id": "act-012",
-            "column_id": "col-002"
-          },
-          {
-            "activity_id": "act-013",
-            "column_id": "col-002"
-          },
-          {
-            "activity_id": "act-021",
-            "column_id": "col-005"
-          },
-          {
-            "activity_id": "act-031",
-            "column_id": "col-003"
-          },
-          {
-            "activity_id": "act-032",
-            "column_id": "col-004"
           }
         ]
       },
@@ -3874,102 +3565,6 @@
           {
             "activity_id": "act-002",
             "column_id": "col-004"
-          },
-          {
-            "activity_id": "act-007",
-            "column_id": "col-003"
-          },
-          {
-            "activity_id": "act-008",
-            "column_id": "col-003"
-          },
-          {
-            "activity_id": "act-026",
-            "column_id": "col-003"
-          },
-          {
-            "activity_id": "act-026",
-            "column_id": "col-004"
-          },
-          {
-            "activity_id": "act-026",
-            "column_id": "col-005"
-          },
-          {
-            "activity_id": "act-026",
-            "column_id": "col-006"
-          },
-          {
-            "activity_id": "act-026",
-            "column_id": "col-007"
-          },
-          {
-            "activity_id": "act-026",
-            "column_id": "col-008"
-          },
-          {
-            "activity_id": "act-026",
-            "column_id": "col-009"
-          },
-          {
-            "activity_id": "act-026",
-            "column_id": "col-010"
-          },
-          {
-            "activity_id": "act-026",
-            "column_id": "col-011"
-          },
-          {
-            "activity_id": "act-026",
-            "column_id": "col-012"
-          },
-          {
-            "activity_id": "act-026",
-            "column_id": "col-013"
-          },
-          {
-            "activity_id": "act-026",
-            "column_id": "col-014"
-          },
-          {
-            "activity_id": "act-032",
-            "column_id": "col-005"
-          },
-          {
-            "activity_id": "act-032",
-            "column_id": "col-006"
-          },
-          {
-            "activity_id": "act-032",
-            "column_id": "col-007"
-          },
-          {
-            "activity_id": "act-032",
-            "column_id": "col-008"
-          },
-          {
-            "activity_id": "act-032",
-            "column_id": "col-009"
-          },
-          {
-            "activity_id": "act-032",
-            "column_id": "col-010"
-          },
-          {
-            "activity_id": "act-032",
-            "column_id": "col-011"
-          },
-          {
-            "activity_id": "act-032",
-            "column_id": "col-012"
-          },
-          {
-            "activity_id": "act-032",
-            "column_id": "col-013"
-          },
-          {
-            "activity_id": "act-032",
-            "column_id": "col-014"
           }
         ]
       },
@@ -4178,52 +3773,15 @@
       "annotation_marker": "*",
       "annotation_type": "footnote",
       "annotation_text": "Some participants (n~40), who consent to participate in an optional sub-study, will undergo X-ray for assessment of joints (Section 8.1.2.3). For German sites please refer to Germany Appendix (Section 10.11.2.4).",
-      "annotation_scope": "multiple",
+      "annotation_scope": "cell",
       "referenced_elements": {
         "property_ids": [],
-        "column_ids": [
-          "col-005"
-        ],
-        "activity_ids": [
-          "act-009",
-          "act-017"
-        ],
+        "column_ids": [],
+        "activity_ids": [],
         "cell_references": [
-          {
-            "activity_id": "act-002",
-            "column_id": "col-002"
-          },
           {
             "activity_id": "act-007",
             "column_id": "col-003"
-          },
-          {
-            "activity_id": "act-008",
-            "column_id": "col-003"
-          },
-          {
-            "activity_id": "act-011",
-            "column_id": "col-002"
-          },
-          {
-            "activity_id": "act-012",
-            "column_id": "col-002"
-          },
-          {
-            "activity_id": "act-013",
-            "column_id": "col-002"
-          },
-          {
-            "activity_id": "act-021",
-            "column_id": "col-005"
-          },
-          {
-            "activity_id": "act-031",
-            "column_id": "col-003"
-          },
-          {
-            "activity_id": "act-032",
-            "column_id": "col-004"
           }
         ]
       },
@@ -4259,104 +3817,8 @@
         "activity_ids": [],
         "cell_references": [
           {
-            "activity_id": "act-002",
-            "column_id": "col-004"
-          },
-          {
             "activity_id": "act-007",
             "column_id": "col-003"
-          },
-          {
-            "activity_id": "act-008",
-            "column_id": "col-003"
-          },
-          {
-            "activity_id": "act-026",
-            "column_id": "col-003"
-          },
-          {
-            "activity_id": "act-026",
-            "column_id": "col-004"
-          },
-          {
-            "activity_id": "act-026",
-            "column_id": "col-005"
-          },
-          {
-            "activity_id": "act-026",
-            "column_id": "col-006"
-          },
-          {
-            "activity_id": "act-026",
-            "column_id": "col-007"
-          },
-          {
-            "activity_id": "act-026",
-            "column_id": "col-008"
-          },
-          {
-            "activity_id": "act-026",
-            "column_id": "col-009"
-          },
-          {
-            "activity_id": "act-026",
-            "column_id": "col-010"
-          },
-          {
-            "activity_id": "act-026",
-            "column_id": "col-011"
-          },
-          {
-            "activity_id": "act-026",
-            "column_id": "col-012"
-          },
-          {
-            "activity_id": "act-026",
-            "column_id": "col-013"
-          },
-          {
-            "activity_id": "act-026",
-            "column_id": "col-014"
-          },
-          {
-            "activity_id": "act-032",
-            "column_id": "col-005"
-          },
-          {
-            "activity_id": "act-032",
-            "column_id": "col-006"
-          },
-          {
-            "activity_id": "act-032",
-            "column_id": "col-007"
-          },
-          {
-            "activity_id": "act-032",
-            "column_id": "col-008"
-          },
-          {
-            "activity_id": "act-032",
-            "column_id": "col-009"
-          },
-          {
-            "activity_id": "act-032",
-            "column_id": "col-010"
-          },
-          {
-            "activity_id": "act-032",
-            "column_id": "col-011"
-          },
-          {
-            "activity_id": "act-032",
-            "column_id": "col-012"
-          },
-          {
-            "activity_id": "act-032",
-            "column_id": "col-013"
-          },
-          {
-            "activity_id": "act-032",
-            "column_id": "col-014"
           }
         ]
       },
@@ -4375,52 +3837,15 @@
       "annotation_marker": "*",
       "annotation_type": "footnote",
       "annotation_text": "Some participants (n~20), who consent to participate in an optional sub-study, will undergo joint MRIs (Section 8.1.2.2).",
-      "annotation_scope": "multiple",
+      "annotation_scope": "cell",
       "referenced_elements": {
         "property_ids": [],
-        "column_ids": [
-          "col-005"
-        ],
-        "activity_ids": [
-          "act-009",
-          "act-017"
-        ],
+        "column_ids": [],
+        "activity_ids": [],
         "cell_references": [
-          {
-            "activity_id": "act-002",
-            "column_id": "col-002"
-          },
-          {
-            "activity_id": "act-007",
-            "column_id": "col-003"
-          },
           {
             "activity_id": "act-008",
             "column_id": "col-003"
-          },
-          {
-            "activity_id": "act-011",
-            "column_id": "col-002"
-          },
-          {
-            "activity_id": "act-012",
-            "column_id": "col-002"
-          },
-          {
-            "activity_id": "act-013",
-            "column_id": "col-002"
-          },
-          {
-            "activity_id": "act-021",
-            "column_id": "col-005"
-          },
-          {
-            "activity_id": "act-031",
-            "column_id": "col-003"
-          },
-          {
-            "activity_id": "act-032",
-            "column_id": "col-004"
           }
         ]
       },
@@ -4452,104 +3877,8 @@
         "activity_ids": [],
         "cell_references": [
           {
-            "activity_id": "act-002",
-            "column_id": "col-004"
-          },
-          {
-            "activity_id": "act-007",
-            "column_id": "col-003"
-          },
-          {
             "activity_id": "act-008",
             "column_id": "col-003"
-          },
-          {
-            "activity_id": "act-026",
-            "column_id": "col-003"
-          },
-          {
-            "activity_id": "act-026",
-            "column_id": "col-004"
-          },
-          {
-            "activity_id": "act-026",
-            "column_id": "col-005"
-          },
-          {
-            "activity_id": "act-026",
-            "column_id": "col-006"
-          },
-          {
-            "activity_id": "act-026",
-            "column_id": "col-007"
-          },
-          {
-            "activity_id": "act-026",
-            "column_id": "col-008"
-          },
-          {
-            "activity_id": "act-026",
-            "column_id": "col-009"
-          },
-          {
-            "activity_id": "act-026",
-            "column_id": "col-010"
-          },
-          {
-            "activity_id": "act-026",
-            "column_id": "col-011"
-          },
-          {
-            "activity_id": "act-026",
-            "column_id": "col-012"
-          },
-          {
-            "activity_id": "act-026",
-            "column_id": "col-013"
-          },
-          {
-            "activity_id": "act-026",
-            "column_id": "col-014"
-          },
-          {
-            "activity_id": "act-032",
-            "column_id": "col-005"
-          },
-          {
-            "activity_id": "act-032",
-            "column_id": "col-006"
-          },
-          {
-            "activity_id": "act-032",
-            "column_id": "col-007"
-          },
-          {
-            "activity_id": "act-032",
-            "column_id": "col-008"
-          },
-          {
-            "activity_id": "act-032",
-            "column_id": "col-009"
-          },
-          {
-            "activity_id": "act-032",
-            "column_id": "col-010"
-          },
-          {
-            "activity_id": "act-032",
-            "column_id": "col-011"
-          },
-          {
-            "activity_id": "act-032",
-            "column_id": "col-012"
-          },
-          {
-            "activity_id": "act-032",
-            "column_id": "col-013"
-          },
-          {
-            "activity_id": "act-032",
-            "column_id": "col-014"
           }
         ]
       },
@@ -4592,54 +3921,14 @@
       "annotation_marker": "*",
       "annotation_type": "footnote",
       "annotation_text": "FibroScan, if performed, would be performed locally.",
-      "annotation_scope": "multiple",
+      "annotation_scope": "activity",
       "referenced_elements": {
         "property_ids": [],
-        "column_ids": [
-          "col-005"
-        ],
+        "column_ids": [],
         "activity_ids": [
-          "act-009",
-          "act-017"
+          "act-009"
         ],
-        "cell_references": [
-          {
-            "activity_id": "act-002",
-            "column_id": "col-002"
-          },
-          {
-            "activity_id": "act-007",
-            "column_id": "col-003"
-          },
-          {
-            "activity_id": "act-008",
-            "column_id": "col-003"
-          },
-          {
-            "activity_id": "act-011",
-            "column_id": "col-002"
-          },
-          {
-            "activity_id": "act-012",
-            "column_id": "col-002"
-          },
-          {
-            "activity_id": "act-013",
-            "column_id": "col-002"
-          },
-          {
-            "activity_id": "act-021",
-            "column_id": "col-005"
-          },
-          {
-            "activity_id": "act-031",
-            "column_id": "col-003"
-          },
-          {
-            "activity_id": "act-032",
-            "column_id": "col-004"
-          }
-        ]
+        "cell_references": []
       },
       "marker_locations": [
         {
@@ -4679,52 +3968,15 @@
       "annotation_marker": "*",
       "annotation_type": "footnote",
       "annotation_text": "Test to be performed if results are not available in the source documents.",
-      "annotation_scope": "multiple",
+      "annotation_scope": "cell",
       "referenced_elements": {
         "property_ids": [],
-        "column_ids": [
-          "col-005"
-        ],
-        "activity_ids": [
-          "act-009",
-          "act-017"
-        ],
+        "column_ids": [],
+        "activity_ids": [],
         "cell_references": [
-          {
-            "activity_id": "act-002",
-            "column_id": "col-002"
-          },
-          {
-            "activity_id": "act-007",
-            "column_id": "col-003"
-          },
-          {
-            "activity_id": "act-008",
-            "column_id": "col-003"
-          },
           {
             "activity_id": "act-011",
             "column_id": "col-002"
-          },
-          {
-            "activity_id": "act-012",
-            "column_id": "col-002"
-          },
-          {
-            "activity_id": "act-013",
-            "column_id": "col-002"
-          },
-          {
-            "activity_id": "act-021",
-            "column_id": "col-005"
-          },
-          {
-            "activity_id": "act-031",
-            "column_id": "col-003"
-          },
-          {
-            "activity_id": "act-032",
-            "column_id": "col-004"
           }
         ]
       },
@@ -4767,52 +4019,15 @@
       "annotation_marker": "*",
       "annotation_type": "footnote",
       "annotation_text": "Positive inhibitor testing as measured by the central laboratory ≥0.6 Bethesda Units (BU) at Visit 1 would be exclusionary.",
-      "annotation_scope": "multiple",
+      "annotation_scope": "cell",
       "referenced_elements": {
         "property_ids": [],
-        "column_ids": [
-          "col-005"
-        ],
-        "activity_ids": [
-          "act-009",
-          "act-017"
-        ],
+        "column_ids": [],
+        "activity_ids": [],
         "cell_references": [
-          {
-            "activity_id": "act-002",
-            "column_id": "col-002"
-          },
-          {
-            "activity_id": "act-007",
-            "column_id": "col-003"
-          },
-          {
-            "activity_id": "act-008",
-            "column_id": "col-003"
-          },
-          {
-            "activity_id": "act-011",
-            "column_id": "col-002"
-          },
           {
             "activity_id": "act-012",
             "column_id": "col-002"
-          },
-          {
-            "activity_id": "act-013",
-            "column_id": "col-002"
-          },
-          {
-            "activity_id": "act-021",
-            "column_id": "col-005"
-          },
-          {
-            "activity_id": "act-031",
-            "column_id": "col-003"
-          },
-          {
-            "activity_id": "act-032",
-            "column_id": "col-004"
           }
         ]
       },
@@ -4831,52 +4046,15 @@
       "annotation_marker": "*",
       "annotation_type": "footnote",
       "annotation_text": "Participants with Anti-AAV-Spark100 neutralizing antibodies (nAb) titer ≥ 1:1 (ie, positive for nAb) are to be excluded from the study.",
-      "annotation_scope": "multiple",
+      "annotation_scope": "cell",
       "referenced_elements": {
         "property_ids": [],
-        "column_ids": [
-          "col-005"
-        ],
-        "activity_ids": [
-          "act-009",
-          "act-017"
-        ],
+        "column_ids": [],
+        "activity_ids": [],
         "cell_references": [
-          {
-            "activity_id": "act-002",
-            "column_id": "col-002"
-          },
-          {
-            "activity_id": "act-007",
-            "column_id": "col-003"
-          },
-          {
-            "activity_id": "act-008",
-            "column_id": "col-003"
-          },
-          {
-            "activity_id": "act-011",
-            "column_id": "col-002"
-          },
-          {
-            "activity_id": "act-012",
-            "column_id": "col-002"
-          },
           {
             "activity_id": "act-013",
             "column_id": "col-002"
-          },
-          {
-            "activity_id": "act-021",
-            "column_id": "col-005"
-          },
-          {
-            "activity_id": "act-031",
-            "column_id": "col-003"
-          },
-          {
-            "activity_id": "act-032",
-            "column_id": "col-004"
           }
         ]
       },
@@ -5025,54 +4203,14 @@
       "annotation_marker": "*",
       "annotation_type": "footnote",
       "annotation_text": "FIX Activity and LFT testing will be conducted at local AND central lab for all time points and as clinically necessary (including samples drawn at the clinic and any mobile phlebotomy/ home health service visits). FIX Antigen testing will be conducted ONLY at central lab for all time points and as clinically necessary. Clinical decisions may be based on local and/ or central lab results.",
-      "annotation_scope": "multiple",
+      "annotation_scope": "activity",
       "referenced_elements": {
         "property_ids": [],
-        "column_ids": [
-          "col-005"
-        ],
+        "column_ids": [],
         "activity_ids": [
-          "act-009",
           "act-017"
         ],
-        "cell_references": [
-          {
-            "activity_id": "act-002",
-            "column_id": "col-002"
-          },
-          {
-            "activity_id": "act-007",
-            "column_id": "col-003"
-          },
-          {
-            "activity_id": "act-008",
-            "column_id": "col-003"
-          },
-          {
-            "activity_id": "act-011",
-            "column_id": "col-002"
-          },
-          {
-            "activity_id": "act-012",
-            "column_id": "col-002"
-          },
-          {
-            "activity_id": "act-013",
-            "column_id": "col-002"
-          },
-          {
-            "activity_id": "act-021",
-            "column_id": "col-005"
-          },
-          {
-            "activity_id": "act-031",
-            "column_id": "col-003"
-          },
-          {
-            "activity_id": "act-032",
-            "column_id": "col-004"
-          }
-        ]
+        "cell_references": []
       },
       "marker_locations": [
         {
@@ -5222,52 +4360,15 @@
       "annotation_marker": "*",
       "annotation_type": "footnote",
       "annotation_text": "Specimen is required at Visit 4 and can be obtained via mobile phlebotomy/ home health service.",
-      "annotation_scope": "multiple",
+      "annotation_scope": "cell",
       "referenced_elements": {
         "property_ids": [],
-        "column_ids": [
-          "col-005"
-        ],
-        "activity_ids": [
-          "act-009",
-          "act-017"
-        ],
+        "column_ids": [],
+        "activity_ids": [],
         "cell_references": [
-          {
-            "activity_id": "act-002",
-            "column_id": "col-002"
-          },
-          {
-            "activity_id": "act-007",
-            "column_id": "col-003"
-          },
-          {
-            "activity_id": "act-008",
-            "column_id": "col-003"
-          },
-          {
-            "activity_id": "act-011",
-            "column_id": "col-002"
-          },
-          {
-            "activity_id": "act-012",
-            "column_id": "col-002"
-          },
-          {
-            "activity_id": "act-013",
-            "column_id": "col-002"
-          },
           {
             "activity_id": "act-021",
             "column_id": "col-005"
-          },
-          {
-            "activity_id": "act-031",
-            "column_id": "col-003"
-          },
-          {
-            "activity_id": "act-032",
-            "column_id": "col-004"
           }
         ]
       },
@@ -5431,18 +4532,6 @@
         "activity_ids": [],
         "cell_references": [
           {
-            "activity_id": "act-002",
-            "column_id": "col-004"
-          },
-          {
-            "activity_id": "act-007",
-            "column_id": "col-003"
-          },
-          {
-            "activity_id": "act-008",
-            "column_id": "col-003"
-          },
-          {
             "activity_id": "act-026",
             "column_id": "col-003"
           },
@@ -5488,46 +4577,6 @@
           },
           {
             "activity_id": "act-026",
-            "column_id": "col-014"
-          },
-          {
-            "activity_id": "act-032",
-            "column_id": "col-005"
-          },
-          {
-            "activity_id": "act-032",
-            "column_id": "col-006"
-          },
-          {
-            "activity_id": "act-032",
-            "column_id": "col-007"
-          },
-          {
-            "activity_id": "act-032",
-            "column_id": "col-008"
-          },
-          {
-            "activity_id": "act-032",
-            "column_id": "col-009"
-          },
-          {
-            "activity_id": "act-032",
-            "column_id": "col-010"
-          },
-          {
-            "activity_id": "act-032",
-            "column_id": "col-011"
-          },
-          {
-            "activity_id": "act-032",
-            "column_id": "col-012"
-          },
-          {
-            "activity_id": "act-032",
-            "column_id": "col-013"
-          },
-          {
-            "activity_id": "act-032",
             "column_id": "col-014"
           }
         ]
@@ -5811,52 +4860,15 @@
       "annotation_marker": "*",
       "annotation_type": "footnote",
       "annotation_text": "PGIC-H is not completed at baseline visit.",
-      "annotation_scope": "multiple",
+      "annotation_scope": "cell",
       "referenced_elements": {
         "property_ids": [],
-        "column_ids": [
-          "col-005"
-        ],
-        "activity_ids": [
-          "act-009",
-          "act-017"
-        ],
+        "column_ids": [],
+        "activity_ids": [],
         "cell_references": [
-          {
-            "activity_id": "act-002",
-            "column_id": "col-002"
-          },
-          {
-            "activity_id": "act-007",
-            "column_id": "col-003"
-          },
-          {
-            "activity_id": "act-008",
-            "column_id": "col-003"
-          },
-          {
-            "activity_id": "act-011",
-            "column_id": "col-002"
-          },
-          {
-            "activity_id": "act-012",
-            "column_id": "col-002"
-          },
-          {
-            "activity_id": "act-013",
-            "column_id": "col-002"
-          },
-          {
-            "activity_id": "act-021",
-            "column_id": "col-005"
-          },
           {
             "activity_id": "act-031",
             "column_id": "col-003"
-          },
-          {
-            "activity_id": "act-032",
-            "column_id": "col-004"
           }
         ]
       },
@@ -5909,66 +4921,6 @@
         "column_ids": [],
         "activity_ids": [],
         "cell_references": [
-          {
-            "activity_id": "act-002",
-            "column_id": "col-004"
-          },
-          {
-            "activity_id": "act-007",
-            "column_id": "col-003"
-          },
-          {
-            "activity_id": "act-008",
-            "column_id": "col-003"
-          },
-          {
-            "activity_id": "act-026",
-            "column_id": "col-003"
-          },
-          {
-            "activity_id": "act-026",
-            "column_id": "col-004"
-          },
-          {
-            "activity_id": "act-026",
-            "column_id": "col-005"
-          },
-          {
-            "activity_id": "act-026",
-            "column_id": "col-006"
-          },
-          {
-            "activity_id": "act-026",
-            "column_id": "col-007"
-          },
-          {
-            "activity_id": "act-026",
-            "column_id": "col-008"
-          },
-          {
-            "activity_id": "act-026",
-            "column_id": "col-009"
-          },
-          {
-            "activity_id": "act-026",
-            "column_id": "col-010"
-          },
-          {
-            "activity_id": "act-026",
-            "column_id": "col-011"
-          },
-          {
-            "activity_id": "act-026",
-            "column_id": "col-012"
-          },
-          {
-            "activity_id": "act-026",
-            "column_id": "col-013"
-          },
-          {
-            "activity_id": "act-026",
-            "column_id": "col-014"
-          },
           {
             "activity_id": "act-032",
             "column_id": "col-005"
@@ -6104,49 +5056,12 @@
       "annotation_marker": "*",
       "annotation_type": "footnote",
       "annotation_text": "Optional Vector Shedding Sub-study: Additional (2 hrs (±30 minutes), 24 hrs (±3 hrs), 72 hrs (±4 hrs) after completion of IP infusion and IV line flush on Day 1) samples (plasma, PBMC, saliva, semen, and urine) will be collected from some participants (n=12) who consent to participate in an optional sub-study. Utilize mobile phlebotomy/ home health services as needed.",
-      "annotation_scope": "multiple",
+      "annotation_scope": "cell",
       "referenced_elements": {
         "property_ids": [],
-        "column_ids": [
-          "col-005"
-        ],
-        "activity_ids": [
-          "act-009",
-          "act-017"
-        ],
+        "column_ids": [],
+        "activity_ids": [],
         "cell_references": [
-          {
-            "activity_id": "act-002",
-            "column_id": "col-002"
-          },
-          {
-            "activity_id": "act-007",
-            "column_id": "col-003"
-          },
-          {
-            "activity_id": "act-008",
-            "column_id": "col-003"
-          },
-          {
-            "activity_id": "act-011",
-            "column_id": "col-002"
-          },
-          {
-            "activity_id": "act-012",
-            "column_id": "col-002"
-          },
-          {
-            "activity_id": "act-013",
-            "column_id": "col-002"
-          },
-          {
-            "activity_id": "act-021",
-            "column_id": "col-005"
-          },
-          {
-            "activity_id": "act-031",
-            "column_id": "col-003"
-          },
           {
             "activity_id": "act-032",
             "column_id": "col-004"

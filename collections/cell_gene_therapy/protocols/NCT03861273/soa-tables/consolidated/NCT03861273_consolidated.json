@@ -3,7 +3,7 @@
   "schema_version": "1.7",
   "protocol_id": "NCT03861273",
   "consolidation_metadata": {
-    "consolidated_at": "2026-11-21T09:30:14.141417+00:00",
+    "consolidated_at": "2026-11-22T21:25:08.954885+00:00",
     "consolidator": "soa_tables.consolidate v1.2",
     "source_tables": [
       {
@@ -4509,52 +4509,12 @@
           "annotation_id": "annot-007"
         }
       ],
-      "referenced_xacts": [
-        "xact-009",
-        "xact-017"
-      ],
+      "referenced_xacts": [],
       "referenced_xcols": [
         "xcol-004"
       ],
       "referenced_props": [],
-      "cell_references": [
-        {
-          "xact_id": "xact-002",
-          "xcol_id": "xcol-001"
-        },
-        {
-          "xact_id": "xact-007",
-          "xcol_id": "xcol-002"
-        },
-        {
-          "xact_id": "xact-008",
-          "xcol_id": "xcol-002"
-        },
-        {
-          "xact_id": "xact-011",
-          "xcol_id": "xcol-001"
-        },
-        {
-          "xact_id": "xact-012",
-          "xcol_id": "xcol-001"
-        },
-        {
-          "xact_id": "xact-013",
-          "xcol_id": "xcol-001"
-        },
-        {
-          "xact_id": "xact-021",
-          "xcol_id": "xcol-004"
-        },
-        {
-          "xact_id": "xact-031",
-          "xcol_id": "xcol-002"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-003"
-        }
-      ],
+      "cell_references": [],
       "occurrence_count": 1
     },
     {
@@ -4672,49 +4632,14 @@
         }
       ],
       "referenced_xacts": [
-        "xact-009",
-        "xact-017"
+        "xact-002"
       ],
-      "referenced_xcols": [
-        "xcol-004"
-      ],
+      "referenced_xcols": [],
       "referenced_props": [],
       "cell_references": [
         {
           "xact_id": "xact-002",
           "xcol_id": "xcol-001"
-        },
-        {
-          "xact_id": "xact-007",
-          "xcol_id": "xcol-002"
-        },
-        {
-          "xact_id": "xact-008",
-          "xcol_id": "xcol-002"
-        },
-        {
-          "xact_id": "xact-011",
-          "xcol_id": "xcol-001"
-        },
-        {
-          "xact_id": "xact-012",
-          "xcol_id": "xcol-001"
-        },
-        {
-          "xact_id": "xact-013",
-          "xcol_id": "xcol-001"
-        },
-        {
-          "xact_id": "xact-021",
-          "xcol_id": "xcol-004"
-        },
-        {
-          "xact_id": "xact-031",
-          "xcol_id": "xcol-002"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-003"
         }
       ],
       "occurrence_count": 1,
@@ -4750,102 +4675,6 @@
         {
           "xact_id": "xact-002",
           "xcol_id": "xcol-003"
-        },
-        {
-          "xact_id": "xact-007",
-          "xcol_id": "xcol-002"
-        },
-        {
-          "xact_id": "xact-008",
-          "xcol_id": "xcol-002"
-        },
-        {
-          "xact_id": "xact-026",
-          "xcol_id": "xcol-002"
-        },
-        {
-          "xact_id": "xact-026",
-          "xcol_id": "xcol-003"
-        },
-        {
-          "xact_id": "xact-026",
-          "xcol_id": "xcol-004"
-        },
-        {
-          "xact_id": "xact-026",
-          "xcol_id": "xcol-005"
-        },
-        {
-          "xact_id": "xact-026",
-          "xcol_id": "xcol-006"
-        },
-        {
-          "xact_id": "xact-026",
-          "xcol_id": "xcol-007"
-        },
-        {
-          "xact_id": "xact-026",
-          "xcol_id": "xcol-008"
-        },
-        {
-          "xact_id": "xact-026",
-          "xcol_id": "xcol-009"
-        },
-        {
-          "xact_id": "xact-026",
-          "xcol_id": "xcol-010"
-        },
-        {
-          "xact_id": "xact-026",
-          "xcol_id": "xcol-011"
-        },
-        {
-          "xact_id": "xact-026",
-          "xcol_id": "xcol-012"
-        },
-        {
-          "xact_id": "xact-026",
-          "xcol_id": "xcol-013"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-004"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-005"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-006"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-007"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-008"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-009"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-010"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-011"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-012"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-013"
         }
       ],
       "occurrence_count": 1,
@@ -5041,49 +4870,14 @@
         }
       ],
       "referenced_xacts": [
-        "xact-009",
-        "xact-017"
+        "xact-007"
       ],
-      "referenced_xcols": [
-        "xcol-004"
-      ],
+      "referenced_xcols": [],
       "referenced_props": [],
       "cell_references": [
         {
-          "xact_id": "xact-002",
-          "xcol_id": "xcol-001"
-        },
-        {
           "xact_id": "xact-007",
           "xcol_id": "xcol-002"
-        },
-        {
-          "xact_id": "xact-008",
-          "xcol_id": "xcol-002"
-        },
-        {
-          "xact_id": "xact-011",
-          "xcol_id": "xcol-001"
-        },
-        {
-          "xact_id": "xact-012",
-          "xcol_id": "xcol-001"
-        },
-        {
-          "xact_id": "xact-013",
-          "xcol_id": "xcol-001"
-        },
-        {
-          "xact_id": "xact-021",
-          "xcol_id": "xcol-004"
-        },
-        {
-          "xact_id": "xact-031",
-          "xcol_id": "xcol-002"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-003"
         },
         {
           "xact_id": "xact-007",
@@ -5091,14 +4885,6 @@
         },
         {
           "xact_id": "xact-007",
-          "xcol_id": "xcol-020"
-        },
-        {
-          "xact_id": "xact-008",
-          "xcol_id": "xcol-017"
-        },
-        {
-          "xact_id": "xact-008",
           "xcol_id": "xcol-020"
         }
       ],
@@ -5133,104 +4919,8 @@
       "referenced_props": [],
       "cell_references": [
         {
-          "xact_id": "xact-002",
-          "xcol_id": "xcol-003"
-        },
-        {
           "xact_id": "xact-007",
           "xcol_id": "xcol-002"
-        },
-        {
-          "xact_id": "xact-008",
-          "xcol_id": "xcol-002"
-        },
-        {
-          "xact_id": "xact-026",
-          "xcol_id": "xcol-002"
-        },
-        {
-          "xact_id": "xact-026",
-          "xcol_id": "xcol-003"
-        },
-        {
-          "xact_id": "xact-026",
-          "xcol_id": "xcol-004"
-        },
-        {
-          "xact_id": "xact-026",
-          "xcol_id": "xcol-005"
-        },
-        {
-          "xact_id": "xact-026",
-          "xcol_id": "xcol-006"
-        },
-        {
-          "xact_id": "xact-026",
-          "xcol_id": "xcol-007"
-        },
-        {
-          "xact_id": "xact-026",
-          "xcol_id": "xcol-008"
-        },
-        {
-          "xact_id": "xact-026",
-          "xcol_id": "xcol-009"
-        },
-        {
-          "xact_id": "xact-026",
-          "xcol_id": "xcol-010"
-        },
-        {
-          "xact_id": "xact-026",
-          "xcol_id": "xcol-011"
-        },
-        {
-          "xact_id": "xact-026",
-          "xcol_id": "xcol-012"
-        },
-        {
-          "xact_id": "xact-026",
-          "xcol_id": "xcol-013"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-004"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-005"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-006"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-007"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-008"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-009"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-010"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-011"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-012"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-013"
         }
       ],
       "occurrence_count": 1
@@ -5253,57 +4943,14 @@
         }
       ],
       "referenced_xacts": [
-        "xact-009",
-        "xact-017"
+        "xact-008"
       ],
-      "referenced_xcols": [
-        "xcol-004"
-      ],
+      "referenced_xcols": [],
       "referenced_props": [],
       "cell_references": [
         {
-          "xact_id": "xact-002",
-          "xcol_id": "xcol-001"
-        },
-        {
-          "xact_id": "xact-007",
-          "xcol_id": "xcol-002"
-        },
-        {
           "xact_id": "xact-008",
           "xcol_id": "xcol-002"
-        },
-        {
-          "xact_id": "xact-011",
-          "xcol_id": "xcol-001"
-        },
-        {
-          "xact_id": "xact-012",
-          "xcol_id": "xcol-001"
-        },
-        {
-          "xact_id": "xact-013",
-          "xcol_id": "xcol-001"
-        },
-        {
-          "xact_id": "xact-021",
-          "xcol_id": "xcol-004"
-        },
-        {
-          "xact_id": "xact-031",
-          "xcol_id": "xcol-002"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-003"
-        },
-        {
-          "xact_id": "xact-007",
-          "xcol_id": "xcol-017"
-        },
-        {
-          "xact_id": "xact-007",
-          "xcol_id": "xcol-020"
         },
         {
           "xact_id": "xact-008",
@@ -5341,104 +4988,8 @@
       "referenced_props": [],
       "cell_references": [
         {
-          "xact_id": "xact-002",
-          "xcol_id": "xcol-003"
-        },
-        {
-          "xact_id": "xact-007",
-          "xcol_id": "xcol-002"
-        },
-        {
           "xact_id": "xact-008",
           "xcol_id": "xcol-002"
-        },
-        {
-          "xact_id": "xact-026",
-          "xcol_id": "xcol-002"
-        },
-        {
-          "xact_id": "xact-026",
-          "xcol_id": "xcol-003"
-        },
-        {
-          "xact_id": "xact-026",
-          "xcol_id": "xcol-004"
-        },
-        {
-          "xact_id": "xact-026",
-          "xcol_id": "xcol-005"
-        },
-        {
-          "xact_id": "xact-026",
-          "xcol_id": "xcol-006"
-        },
-        {
-          "xact_id": "xact-026",
-          "xcol_id": "xcol-007"
-        },
-        {
-          "xact_id": "xact-026",
-          "xcol_id": "xcol-008"
-        },
-        {
-          "xact_id": "xact-026",
-          "xcol_id": "xcol-009"
-        },
-        {
-          "xact_id": "xact-026",
-          "xcol_id": "xcol-010"
-        },
-        {
-          "xact_id": "xact-026",
-          "xcol_id": "xcol-011"
-        },
-        {
-          "xact_id": "xact-026",
-          "xcol_id": "xcol-012"
-        },
-        {
-          "xact_id": "xact-026",
-          "xcol_id": "xcol-013"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-004"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-005"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-006"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-007"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-008"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-009"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-010"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-011"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-012"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-013"
         }
       ],
       "occurrence_count": 1
@@ -5476,51 +5027,11 @@
         }
       ],
       "referenced_xacts": [
-        "xact-009",
-        "xact-017"
+        "xact-009"
       ],
-      "referenced_xcols": [
-        "xcol-004"
-      ],
+      "referenced_xcols": [],
       "referenced_props": [],
-      "cell_references": [
-        {
-          "xact_id": "xact-002",
-          "xcol_id": "xcol-001"
-        },
-        {
-          "xact_id": "xact-007",
-          "xcol_id": "xcol-002"
-        },
-        {
-          "xact_id": "xact-008",
-          "xcol_id": "xcol-002"
-        },
-        {
-          "xact_id": "xact-011",
-          "xcol_id": "xcol-001"
-        },
-        {
-          "xact_id": "xact-012",
-          "xcol_id": "xcol-001"
-        },
-        {
-          "xact_id": "xact-013",
-          "xcol_id": "xcol-001"
-        },
-        {
-          "xact_id": "xact-021",
-          "xcol_id": "xcol-004"
-        },
-        {
-          "xact_id": "xact-031",
-          "xcol_id": "xcol-002"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-003"
-        }
-      ],
+      "cell_references": [],
       "occurrence_count": 1
     },
     {
@@ -5561,49 +5072,14 @@
         }
       ],
       "referenced_xacts": [
-        "xact-009",
-        "xact-017"
+        "xact-011"
       ],
-      "referenced_xcols": [
-        "xcol-004"
-      ],
+      "referenced_xcols": [],
       "referenced_props": [],
       "cell_references": [
         {
-          "xact_id": "xact-002",
-          "xcol_id": "xcol-001"
-        },
-        {
-          "xact_id": "xact-007",
-          "xcol_id": "xcol-002"
-        },
-        {
-          "xact_id": "xact-008",
-          "xcol_id": "xcol-002"
-        },
-        {
           "xact_id": "xact-011",
           "xcol_id": "xcol-001"
-        },
-        {
-          "xact_id": "xact-012",
-          "xcol_id": "xcol-001"
-        },
-        {
-          "xact_id": "xact-013",
-          "xcol_id": "xcol-001"
-        },
-        {
-          "xact_id": "xact-021",
-          "xcol_id": "xcol-004"
-        },
-        {
-          "xact_id": "xact-031",
-          "xcol_id": "xcol-002"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-003"
         }
       ],
       "occurrence_count": 1
@@ -5641,49 +5117,14 @@
         }
       ],
       "referenced_xacts": [
-        "xact-009",
-        "xact-017"
+        "xact-012"
       ],
-      "referenced_xcols": [
-        "xcol-004"
-      ],
+      "referenced_xcols": [],
       "referenced_props": [],
       "cell_references": [
         {
-          "xact_id": "xact-002",
-          "xcol_id": "xcol-001"
-        },
-        {
-          "xact_id": "xact-007",
-          "xcol_id": "xcol-002"
-        },
-        {
-          "xact_id": "xact-008",
-          "xcol_id": "xcol-002"
-        },
-        {
-          "xact_id": "xact-011",
-          "xcol_id": "xcol-001"
-        },
-        {
           "xact_id": "xact-012",
           "xcol_id": "xcol-001"
-        },
-        {
-          "xact_id": "xact-013",
-          "xcol_id": "xcol-001"
-        },
-        {
-          "xact_id": "xact-021",
-          "xcol_id": "xcol-004"
-        },
-        {
-          "xact_id": "xact-031",
-          "xcol_id": "xcol-002"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-003"
         }
       ],
       "occurrence_count": 1
@@ -5701,49 +5142,14 @@
         }
       ],
       "referenced_xacts": [
-        "xact-009",
-        "xact-017"
+        "xact-013"
       ],
-      "referenced_xcols": [
-        "xcol-004"
-      ],
+      "referenced_xcols": [],
       "referenced_props": [],
       "cell_references": [
         {
-          "xact_id": "xact-002",
-          "xcol_id": "xcol-001"
-        },
-        {
-          "xact_id": "xact-007",
-          "xcol_id": "xcol-002"
-        },
-        {
-          "xact_id": "xact-008",
-          "xcol_id": "xcol-002"
-        },
-        {
-          "xact_id": "xact-011",
-          "xcol_id": "xcol-001"
-        },
-        {
-          "xact_id": "xact-012",
-          "xcol_id": "xcol-001"
-        },
-        {
           "xact_id": "xact-013",
           "xcol_id": "xcol-001"
-        },
-        {
-          "xact_id": "xact-021",
-          "xcol_id": "xcol-004"
-        },
-        {
-          "xact_id": "xact-031",
-          "xcol_id": "xcol-002"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-003"
         }
       ],
       "occurrence_count": 1
@@ -5872,51 +5278,11 @@
         }
       ],
       "referenced_xacts": [
-        "xact-009",
         "xact-017"
       ],
-      "referenced_xcols": [
-        "xcol-004"
-      ],
+      "referenced_xcols": [],
       "referenced_props": [],
-      "cell_references": [
-        {
-          "xact_id": "xact-002",
-          "xcol_id": "xcol-001"
-        },
-        {
-          "xact_id": "xact-007",
-          "xcol_id": "xcol-002"
-        },
-        {
-          "xact_id": "xact-008",
-          "xcol_id": "xcol-002"
-        },
-        {
-          "xact_id": "xact-011",
-          "xcol_id": "xcol-001"
-        },
-        {
-          "xact_id": "xact-012",
-          "xcol_id": "xcol-001"
-        },
-        {
-          "xact_id": "xact-013",
-          "xcol_id": "xcol-001"
-        },
-        {
-          "xact_id": "xact-021",
-          "xcol_id": "xcol-004"
-        },
-        {
-          "xact_id": "xact-031",
-          "xcol_id": "xcol-002"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-003"
-        }
-      ],
+      "cell_references": [],
       "occurrence_count": 1
     },
     {
@@ -6047,49 +5413,14 @@
         }
       ],
       "referenced_xacts": [
-        "xact-009",
-        "xact-017"
+        "xact-021"
       ],
-      "referenced_xcols": [
-        "xcol-004"
-      ],
+      "referenced_xcols": [],
       "referenced_props": [],
       "cell_references": [
         {
-          "xact_id": "xact-002",
-          "xcol_id": "xcol-001"
-        },
-        {
-          "xact_id": "xact-007",
-          "xcol_id": "xcol-002"
-        },
-        {
-          "xact_id": "xact-008",
-          "xcol_id": "xcol-002"
-        },
-        {
-          "xact_id": "xact-011",
-          "xcol_id": "xcol-001"
-        },
-        {
-          "xact_id": "xact-012",
-          "xcol_id": "xcol-001"
-        },
-        {
-          "xact_id": "xact-013",
-          "xcol_id": "xcol-001"
-        },
-        {
           "xact_id": "xact-021",
           "xcol_id": "xcol-004"
-        },
-        {
-          "xact_id": "xact-031",
-          "xcol_id": "xcol-002"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-003"
         }
       ],
       "occurrence_count": 1
@@ -6241,18 +5572,6 @@
       "referenced_props": [],
       "cell_references": [
         {
-          "xact_id": "xact-002",
-          "xcol_id": "xcol-003"
-        },
-        {
-          "xact_id": "xact-007",
-          "xcol_id": "xcol-002"
-        },
-        {
-          "xact_id": "xact-008",
-          "xcol_id": "xcol-002"
-        },
-        {
           "xact_id": "xact-026",
           "xcol_id": "xcol-002"
         },
@@ -6298,46 +5617,6 @@
         },
         {
           "xact_id": "xact-026",
-          "xcol_id": "xcol-013"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-004"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-005"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-006"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-007"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-008"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-009"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-010"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-011"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-012"
-        },
-        {
-          "xact_id": "xact-032",
           "xcol_id": "xcol-013"
         }
       ],
@@ -6528,49 +5807,14 @@
         }
       ],
       "referenced_xacts": [
-        "xact-009",
-        "xact-017"
+        "xact-031"
       ],
-      "referenced_xcols": [
-        "xcol-004"
-      ],
+      "referenced_xcols": [],
       "referenced_props": [],
       "cell_references": [
         {
-          "xact_id": "xact-002",
-          "xcol_id": "xcol-001"
-        },
-        {
-          "xact_id": "xact-007",
-          "xcol_id": "xcol-002"
-        },
-        {
-          "xact_id": "xact-008",
-          "xcol_id": "xcol-002"
-        },
-        {
-          "xact_id": "xact-011",
-          "xcol_id": "xcol-001"
-        },
-        {
-          "xact_id": "xact-012",
-          "xcol_id": "xcol-001"
-        },
-        {
-          "xact_id": "xact-013",
-          "xcol_id": "xcol-001"
-        },
-        {
-          "xact_id": "xact-021",
-          "xcol_id": "xcol-004"
-        },
-        {
           "xact_id": "xact-031",
           "xcol_id": "xcol-002"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-003"
         }
       ],
       "occurrence_count": 1
@@ -6618,66 +5862,6 @@
       "referenced_xcols": [],
       "referenced_props": [],
       "cell_references": [
-        {
-          "xact_id": "xact-002",
-          "xcol_id": "xcol-003"
-        },
-        {
-          "xact_id": "xact-007",
-          "xcol_id": "xcol-002"
-        },
-        {
-          "xact_id": "xact-008",
-          "xcol_id": "xcol-002"
-        },
-        {
-          "xact_id": "xact-026",
-          "xcol_id": "xcol-002"
-        },
-        {
-          "xact_id": "xact-026",
-          "xcol_id": "xcol-003"
-        },
-        {
-          "xact_id": "xact-026",
-          "xcol_id": "xcol-004"
-        },
-        {
-          "xact_id": "xact-026",
-          "xcol_id": "xcol-005"
-        },
-        {
-          "xact_id": "xact-026",
-          "xcol_id": "xcol-006"
-        },
-        {
-          "xact_id": "xact-026",
-          "xcol_id": "xcol-007"
-        },
-        {
-          "xact_id": "xact-026",
-          "xcol_id": "xcol-008"
-        },
-        {
-          "xact_id": "xact-026",
-          "xcol_id": "xcol-009"
-        },
-        {
-          "xact_id": "xact-026",
-          "xcol_id": "xcol-010"
-        },
-        {
-          "xact_id": "xact-026",
-          "xcol_id": "xcol-011"
-        },
-        {
-          "xact_id": "xact-026",
-          "xcol_id": "xcol-012"
-        },
-        {
-          "xact_id": "xact-026",
-          "xcol_id": "xcol-013"
-        },
         {
           "xact_id": "xact-032",
           "xcol_id": "xcol-004"
@@ -6754,46 +5938,11 @@
         }
       ],
       "referenced_xacts": [
-        "xact-009",
-        "xact-017"
+        "xact-032"
       ],
-      "referenced_xcols": [
-        "xcol-004"
-      ],
+      "referenced_xcols": [],
       "referenced_props": [],
       "cell_references": [
-        {
-          "xact_id": "xact-002",
-          "xcol_id": "xcol-001"
-        },
-        {
-          "xact_id": "xact-007",
-          "xcol_id": "xcol-002"
-        },
-        {
-          "xact_id": "xact-008",
-          "xcol_id": "xcol-002"
-        },
-        {
-          "xact_id": "xact-011",
-          "xcol_id": "xcol-001"
-        },
-        {
-          "xact_id": "xact-012",
-          "xcol_id": "xcol-001"
-        },
-        {
-          "xact_id": "xact-013",
-          "xcol_id": "xcol-001"
-        },
-        {
-          "xact_id": "xact-021",
-          "xcol_id": "xcol-004"
-        },
-        {
-          "xact_id": "xact-031",
-          "xcol_id": "xcol-002"
-        },
         {
           "xact_id": "xact-032",
           "xcol_id": "xcol-003"
@@ -7005,50 +6154,6 @@
         {
           "xact_id": "xact-007",
           "xcol_id": "xcol-020"
-        },
-        {
-          "xact_id": "xact-008",
-          "xcol_id": "xcol-017"
-        },
-        {
-          "xact_id": "xact-008",
-          "xcol_id": "xcol-020"
-        },
-        {
-          "xact_id": "xact-017",
-          "xcol_id": "xcol-018"
-        },
-        {
-          "xact_id": "xact-017",
-          "xcol_id": "xcol-019"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-014"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-015"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-016"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-017"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-018"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-019"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-020"
         }
       ],
       "occurrence_count": 1
@@ -7072,55 +6177,11 @@
       "referenced_props": [],
       "cell_references": [
         {
-          "xact_id": "xact-007",
-          "xcol_id": "xcol-017"
-        },
-        {
-          "xact_id": "xact-007",
-          "xcol_id": "xcol-020"
-        },
-        {
           "xact_id": "xact-008",
           "xcol_id": "xcol-017"
         },
         {
           "xact_id": "xact-008",
-          "xcol_id": "xcol-020"
-        },
-        {
-          "xact_id": "xact-017",
-          "xcol_id": "xcol-018"
-        },
-        {
-          "xact_id": "xact-017",
-          "xcol_id": "xcol-019"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-014"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-015"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-016"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-017"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-018"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-019"
-        },
-        {
-          "xact_id": "xact-032",
           "xcol_id": "xcol-020"
         }
       ],
@@ -7223,24 +6284,7 @@
       ],
       "referenced_xcols": [],
       "referenced_props": [],
-      "cell_references": [
-        {
-          "xact_id": "xact-007",
-          "xcol_id": "xcol-017"
-        },
-        {
-          "xact_id": "xact-007",
-          "xcol_id": "xcol-020"
-        },
-        {
-          "xact_id": "xact-008",
-          "xcol_id": "xcol-017"
-        },
-        {
-          "xact_id": "xact-008",
-          "xcol_id": "xcol-020"
-        }
-      ],
+      "cell_references": [],
       "occurrence_count": 1
     },
     {
@@ -7299,56 +6343,12 @@
       "referenced_props": [],
       "cell_references": [
         {
-          "xact_id": "xact-007",
-          "xcol_id": "xcol-017"
-        },
-        {
-          "xact_id": "xact-007",
-          "xcol_id": "xcol-020"
-        },
-        {
-          "xact_id": "xact-008",
-          "xcol_id": "xcol-017"
-        },
-        {
-          "xact_id": "xact-008",
-          "xcol_id": "xcol-020"
-        },
-        {
           "xact_id": "xact-017",
           "xcol_id": "xcol-018"
         },
         {
           "xact_id": "xact-017",
           "xcol_id": "xcol-019"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-014"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-015"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-016"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-017"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-018"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-019"
-        },
-        {
-          "xact_id": "xact-032",
-          "xcol_id": "xcol-020"
         }
       ],
       "occurrence_count": 1
@@ -7483,30 +6483,6 @@
       "referenced_xcols": [],
       "referenced_props": [],
       "cell_references": [
-        {
-          "xact_id": "xact-007",
-          "xcol_id": "xcol-017"
-        },
-        {
-          "xact_id": "xact-007",
-          "xcol_id": "xcol-020"
-        },
-        {
-          "xact_id": "xact-008",
-          "xcol_id": "xcol-017"
-        },
-        {
-          "xact_id": "xact-008",
-          "xcol_id": "xcol-020"
-        },
-        {
-          "xact_id": "xact-017",
-          "xcol_id": "xcol-018"
-        },
-        {
-          "xact_id": "xact-017",
-          "xcol_id": "xcol-019"
-        },
         {
           "xact_id": "xact-032",
           "xcol_id": "xcol-014"
