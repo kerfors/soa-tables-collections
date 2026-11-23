@@ -7,9 +7,9 @@
 <https://kerfors.github.io/soa-tables/id/sha256/ef1eecd8014f634357c4a3b52ee138f5b298483f9cc9dde36f323551dc4a46f0/soa-tables-v1> {
     <https://kerfors.github.io/soa-tables/id/sha256/ef1eecd8014f634357c4a3b52ee138f5b298483f9cc9dde36f323551dc4a46f0/soa-tables-v1> a st:Transcription ;
         st:aboutStudy <https://kerfors.github.io/soa-tables/id/study/NCT05051579> ;
-        st:codeCommit "51f8dc7552331a64cf57648341e27ac8a53aecfd" ;
-        st:collectionsCommit "9a8c9e4ee840a037cc8e80ae7cfc7aecac88c129" ;
-        st:consolidatedAt "2026-11-21T09:30:11.126849+00:00"^^xsd:dateTime ;
+        st:codeCommit "2b9f55952582c24a27f5e323bdd93b0b9b154de8" ;
+        st:collectionsCommit "e0f4efed468f91af82b23595f4314df21345f874" ;
+        st:consolidatedAt "2026-11-23T15:12:11.451063+00:00"^^xsd:dateTime ;
         st:consolidator "soa_tables.consolidate v1.2" ;
         st:ofFile <https://kerfors.github.io/soa-tables/id/sha256/ef1eecd8014f634357c4a3b52ee138f5b298483f9cc9dde36f323551dc4a46f0> ;
         st:schemaVersion "1.7" .
@@ -2000,84 +2000,6 @@
         st:column e:u-t01-c004 ;
         st:value "X" .
 
-    e:m-t01-r075-t01-c004 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t01-r075-c004 ;
-        st:activity e:u-t01-r075 ;
-        st:column e:u-t01-c004 ;
-        st:value "X" .
-
-    e:m-t01-r075-t01-c005 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t01-r075-c005 ;
-        st:activity e:u-t01-r075 ;
-        st:column e:u-t01-c005 ;
-        st:value "X" .
-
-    e:m-t01-r075-t01-c006 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t01-r075-c006 ;
-        st:activity e:u-t01-r075 ;
-        st:column e:u-t01-c006 ;
-        st:value "X" .
-
-    e:m-t01-r075-t01-c007 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t01-r075-c007 ;
-        st:activity e:u-t01-r075 ;
-        st:column e:u-t01-c007 ;
-        st:value "X" .
-
-    e:m-t01-r075-t01-c008 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t01-r075-c008 ;
-        st:activity e:u-t01-r075 ;
-        st:column e:u-t01-c008 ;
-        st:value "X" .
-
-    e:m-t01-r075-t01-c009 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t01-r075-c009 ;
-        st:activity e:u-t01-r075 ;
-        st:column e:u-t01-c009 ;
-        st:value "X" .
-
-    e:m-t01-r075-t01-c010 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t01-r075-c010 ;
-        st:activity e:u-t01-r075 ;
-        st:column e:u-t01-c010 ;
-        st:value "X" .
-
-    e:m-t01-r075-t01-c011 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t01-r075-c011 ;
-        st:activity e:u-t01-r075 ;
-        st:column e:u-t01-c011 ;
-        st:value "X" .
-
-    e:m-t01-r075-t01-c013 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t01-r075-c013 ;
-        st:activity e:u-t01-r075 ;
-        st:column e:u-t01-c013 ;
-        st:value "X" .
-
-    e:m-t01-r075-t01-c014 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t01-r075-c014 ;
-        st:activity e:u-t01-r075 ;
-        st:column e:u-t01-c014 ;
-        st:value "X" .
-
-    e:m-t01-r075-t01-c015 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t01-r075-c015 ;
-        st:activity e:u-t01-r075 ;
-        st:column e:u-t01-c015 ;
-        st:value "X" .
-
-    e:m-t01-r075-t01-c017 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t01-r075-c017 ;
-        st:activity e:u-t01-r075 ;
-        st:column e:u-t01-c017 ;
-        st:value "X" .
-
-    e:m-t01-r075-t01-c018 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t01-r075-c018 ;
-        st:activity e:u-t01-r075 ;
-        st:column e:u-t01-c018 ;
-        st:value "X" .
-
     e:m-t01-r076-t01-c005 a st:ConsolidatedCell ;
         prov:wasDerivedFrom e:t01-r076-c005 ;
         st:activity e:u-t01-r076 ;
@@ -2240,26 +2162,25 @@
         st:column e:u-t01-c020 ;
         st:value "X" .
 
+    e:u-t01-n-g1 a st:UnifiedAnnotation ;
+        st:annotationScope "table" ;
+        st:annotationType "footnote" ;
+        st:documentReference e:u-t01-n-g1-d01,
+            e:u-t01-n-g1-d02 ;
+        st:occurrence e:t01-n-g1 ;
+        st:text "The Schedule of Activities described below should be followed for all participants enrolled in Study GZGI. However, for those participants whose participation in this study is affected by exceptional circumstances, such as pandemics or natural disasters, please refer to Section 10.11 (Appendix 11) for additional guidance." .
+
+    e:u-t01-n-g2 a st:UnifiedAnnotation ;
+        st:annotationScope "table" ;
+        st:annotationType "footnote" ;
+        st:occurrence e:t01-n-g2 ;
+        st:text "Shaded columns represent the dose escalation period Weeks 0-16." .
+
     e:u-t01-n-n1 a st:UnifiedAnnotation ;
         st:annotationType "footnote" ;
         st:occurrence e:t01-n-n1 ;
-        st:refersToColumn e:u-t01-c004,
-            e:u-t01-c005,
-            e:u-t01-c006,
-            e:u-t01-c007,
-            e:u-t01-c008,
-            e:u-t01-c009,
-            e:u-t01-c010,
-            e:u-t01-c011,
-            e:u-t01-c012,
-            e:u-t01-c013,
-            e:u-t01-c014,
-            e:u-t01-c015,
-            e:u-t01-c016,
-            e:u-t01-c017,
-            e:u-t01-c018,
-            e:u-t01-c019 ;
-        st:text "For early terminations that occur before the last visit in treatment period, see the activities listed for ET in this table. Shaded columns represent the dose escalation period Weeks 0-16." .
+        st:refersToColumn e:u-t01-c020 ;
+        st:text "For early terminations that occur before the last visit in treatment period, see the activities listed for ET in this table." .
 
     e:u-t01-n-n10 a st:UnifiedAnnotation ;
         st:annotationType "footnote" ;
@@ -2279,8 +2200,7 @@
     e:u-t01-n-n12 a st:UnifiedAnnotation ;
         st:annotationType "footnote" ;
         st:occurrence e:t01-n-n12 ;
-        st:refersToActivity e:u-t01-r068,
-            e:u-t01-r069 ;
+        st:refersToActivity e:u-t01-r067 ;
         st:text """PK predose sample should be collected predose (~up to 1 hour predose).
 PK postdose sample time windows: 3-6 hours postdose (Week 4); 6-12 hours postdose (Week 8), 1-3 hours postdose (Week 16), 3-6 hours postdose (Week 26).
 Participants may need to return to clinical site for additional PK-specific visits to provide postdose PK samples.""" .
@@ -2289,6 +2209,19 @@ Participants may need to return to clinical site for additional PK-specific visi
         st:annotationType "footnote" ;
         st:occurrence e:t01-n-n13 ;
         st:refersToActivity e:u-t01-r075 ;
+        st:refersToCell e:m-t01-r075-t01-c004,
+            e:m-t01-r075-t01-c005,
+            e:m-t01-r075-t01-c006,
+            e:m-t01-r075-t01-c007,
+            e:m-t01-r075-t01-c008,
+            e:m-t01-r075-t01-c009,
+            e:m-t01-r075-t01-c010,
+            e:m-t01-r075-t01-c011,
+            e:m-t01-r075-t01-c013,
+            e:m-t01-r075-t01-c014,
+            e:m-t01-r075-t01-c015,
+            e:m-t01-r075-t01-c017,
+            e:m-t01-r075-t01-c018 ;
         st:text "One bottle of capsules is to be dispensed at Visit 3 and at Visit 4. Two bottles of capsules are to be dispensed at Visits 5-9 (during the rest of the dose escalation period). The site pharmacy should clearly label which bottle to take first. At Visits 10-17, 4 bottles of capsules should be dispensed." .
 
     e:u-t01-n-n2 a st:UnifiedAnnotation ;
@@ -2380,6 +2313,92 @@ Participants may need to return to clinical site for additional PK-specific visi
         st:activity e:u-t01-r037 ;
         st:column e:u-t01-c020 ;
         st:value "X" .
+
+    e:m-t01-r075-t01-c004 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r075-c004 ;
+        st:activity e:u-t01-r075 ;
+        st:column e:u-t01-c004 ;
+        st:value "X" .
+
+    e:m-t01-r075-t01-c005 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r075-c005 ;
+        st:activity e:u-t01-r075 ;
+        st:column e:u-t01-c005 ;
+        st:value "X" .
+
+    e:m-t01-r075-t01-c006 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r075-c006 ;
+        st:activity e:u-t01-r075 ;
+        st:column e:u-t01-c006 ;
+        st:value "X" .
+
+    e:m-t01-r075-t01-c007 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r075-c007 ;
+        st:activity e:u-t01-r075 ;
+        st:column e:u-t01-c007 ;
+        st:value "X" .
+
+    e:m-t01-r075-t01-c008 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r075-c008 ;
+        st:activity e:u-t01-r075 ;
+        st:column e:u-t01-c008 ;
+        st:value "X" .
+
+    e:m-t01-r075-t01-c009 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r075-c009 ;
+        st:activity e:u-t01-r075 ;
+        st:column e:u-t01-c009 ;
+        st:value "X" .
+
+    e:m-t01-r075-t01-c010 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r075-c010 ;
+        st:activity e:u-t01-r075 ;
+        st:column e:u-t01-c010 ;
+        st:value "X" .
+
+    e:m-t01-r075-t01-c011 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r075-c011 ;
+        st:activity e:u-t01-r075 ;
+        st:column e:u-t01-c011 ;
+        st:value "X" .
+
+    e:m-t01-r075-t01-c013 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r075-c013 ;
+        st:activity e:u-t01-r075 ;
+        st:column e:u-t01-c013 ;
+        st:value "X" .
+
+    e:m-t01-r075-t01-c014 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r075-c014 ;
+        st:activity e:u-t01-r075 ;
+        st:column e:u-t01-c014 ;
+        st:value "X" .
+
+    e:m-t01-r075-t01-c015 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r075-c015 ;
+        st:activity e:u-t01-r075 ;
+        st:column e:u-t01-c015 ;
+        st:value "X" .
+
+    e:m-t01-r075-t01-c017 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r075-c017 ;
+        st:activity e:u-t01-r075 ;
+        st:column e:u-t01-c017 ;
+        st:value "X" .
+
+    e:m-t01-r075-t01-c018 a st:ConsolidatedCell ;
+        prov:wasDerivedFrom e:t01-r075-c018 ;
+        st:activity e:u-t01-r075 ;
+        st:column e:u-t01-c018 ;
+        st:value "X" .
+
+    e:t01-n-g1 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "g1" .
+
+    e:t01-n-g2 a st:SourceAnnotation ;
+        st:inTable e:t01 ;
+        st:marker "g2" .
 
     e:t01-n-n1 a st:SourceAnnotation ;
         st:inTable e:t01 ;
@@ -5219,6 +5238,16 @@ Participants may need to return to clinical site for additional PK-specific visi
         st:propertyType "visit_attribute" ;
         st:value "X" .
 
+    e:u-t01-n-g1-d01 a st:DocumentReference ;
+        st:position 1 ;
+        st:referenceKind "section" ;
+        st:target "10.11" .
+
+    e:u-t01-n-g1-d02 a st:DocumentReference ;
+        st:position 2 ;
+        st:referenceKind "appendix" ;
+        st:target "11" .
+
     e:u-t01-n-n2-d01 a st:DocumentReference ;
         st:position 1 ;
         st:referenceKind "section" ;
@@ -5665,18 +5694,6 @@ Participants may need to return to clinical site for additional PK-specific visi
         st:parentName "Laboratory Tests and Sample Collections" ;
         st:qualifiedKey "Laboratory Tests and Sample Collections::Cytokeratin 18" .
 
-    e:u-t01-r067 a st:UnifiedActivity ;
-        st:displayOrder 61 ;
-        st:hierarchyLevel 1 ;
-        st:isSectionHeader false ;
-        st:matchConfidence 1.0 ;
-        st:matchStatus "new" ;
-        st:member e:t01-r067 ;
-        st:name "Pharmacokinetic (PK) sample" ;
-        st:parent e:u-t01-r042 ;
-        st:parentName "Laboratory Tests and Sample Collections" ;
-        st:qualifiedKey "Laboratory Tests and Sample Collections::Pharmacokinetic (PK) sample" .
-
     e:t01-r009 a st:SourceActivityRow ;
         st:inTable e:t01 ;
         st:matchConfidence 1.0 ;
@@ -5840,6 +5857,18 @@ Participants may need to return to clinical site for additional PK-specific visi
         st:parentName "Laboratory Tests and Sample Collections" ;
         st:qualifiedKey "Laboratory Tests and Sample Collections::Pro-C3" .
 
+    e:u-t01-r067 a st:UnifiedActivity ;
+        st:displayOrder 61 ;
+        st:hierarchyLevel 1 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r067 ;
+        st:name "Pharmacokinetic (PK) sample" ;
+        st:parent e:u-t01-r042 ;
+        st:parentName "Laboratory Tests and Sample Collections" ;
+        st:qualifiedKey "Laboratory Tests and Sample Collections::Pharmacokinetic (PK) sample" .
+
     e:t01-r060 a st:SourceActivityRow ;
         st:inTable e:t01 ;
         st:matchConfidence 1.0 ;
@@ -5946,6 +5975,30 @@ Participants may need to return to clinical site for additional PK-specific visi
         st:parent e:u-t01-r042 ;
         st:parentName "Laboratory Tests and Sample Collections" ;
         st:qualifiedKey "Laboratory Tests and Sample Collections::Urinalysis" .
+
+    e:u-t01-r068 a st:UnifiedActivity ;
+        st:displayOrder 62 ;
+        st:hierarchyLevel 2 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r068 ;
+        st:name "Predose" ;
+        st:parent e:u-t01-r067 ;
+        st:parentName "Pharmacokinetic (PK) sample" ;
+        st:qualifiedKey "Pharmacokinetic (PK) sample::Predose" .
+
+    e:u-t01-r069 a st:UnifiedActivity ;
+        st:displayOrder 63 ;
+        st:hierarchyLevel 2 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t01-r069 ;
+        st:name "Postdose" ;
+        st:parent e:u-t01-r067 ;
+        st:parentName "Pharmacokinetic (PK) sample" ;
+        st:qualifiedKey "Pharmacokinetic (PK) sample::Postdose" .
 
     e:u-t01-r071 a st:UnifiedActivity ;
         st:displayOrder 65 ;
@@ -6126,30 +6179,6 @@ Participants may need to return to clinical site for additional PK-specific visi
         st:parentName "Laboratory Tests and Sample Collections" ;
         st:qualifiedKey "Laboratory Tests and Sample Collections::Lipase" .
 
-    e:u-t01-r068 a st:UnifiedActivity ;
-        st:displayOrder 62 ;
-        st:hierarchyLevel 2 ;
-        st:isSectionHeader false ;
-        st:matchConfidence 1.0 ;
-        st:matchStatus "new" ;
-        st:member e:t01-r068 ;
-        st:name "Predose" ;
-        st:parent e:u-t01-r067 ;
-        st:parentName "Pharmacokinetic (PK) sample" ;
-        st:qualifiedKey "Pharmacokinetic (PK) sample::Predose" .
-
-    e:u-t01-r069 a st:UnifiedActivity ;
-        st:displayOrder 63 ;
-        st:hierarchyLevel 2 ;
-        st:isSectionHeader false ;
-        st:matchConfidence 1.0 ;
-        st:matchStatus "new" ;
-        st:member e:t01-r069 ;
-        st:name "Postdose" ;
-        st:parent e:u-t01-r067 ;
-        st:parentName "Pharmacokinetic (PK) sample" ;
-        st:qualifiedKey "Pharmacokinetic (PK) sample::Postdose" .
-
     <https://kerfors.github.io/soa-tables/id/sha256/ef1eecd8014f634357c4a3b52ee138f5b298483f9cc9dde36f323551dc4a46f0> a st:File ;
         st:sha256 "ef1eecd8014f634357c4a3b52ee138f5b298483f9cc9dde36f323551dc4a46f0" .
 
@@ -6244,6 +6273,17 @@ Participants may need to return to clinical site for additional PK-specific visi
         st:onPage page:16 ;
         st:rowPosition 46 .
 
+    e:u-t01-c012 a st:UnifiedColumn ;
+        st:compositeLabel "Study Period II Treatment Period / Study Period II Treatment Period / 11 / 13 / ±3 / X" ;
+        st:member e:t01-c012 ;
+        st:propertyValue e:u-t01-c012-v01,
+            e:u-t01-c012-v02,
+            e:u-t01-c012-v03,
+            e:u-t01-c012-v04,
+            e:u-t01-c012-v05,
+            e:u-t01-c012-v06 ;
+        st:segment "main" .
+
     e:u-t01-r045 a st:UnifiedActivity ;
         st:displayOrder 39 ;
         st:hierarchyLevel 1 ;
@@ -6281,17 +6321,6 @@ Participants may need to return to clinical site for additional PK-specific visi
             e:u-t01-c003-v04,
             e:u-t01-c003-v05,
             e:u-t01-c003-v06 ;
-        st:segment "main" .
-
-    e:u-t01-c012 a st:UnifiedColumn ;
-        st:compositeLabel "Study Period II Treatment Period / Study Period II Treatment Period / 11 / 13 / ±3 / X" ;
-        st:member e:t01-c012 ;
-        st:propertyValue e:u-t01-c012-v01,
-            e:u-t01-c012-v02,
-            e:u-t01-c012-v03,
-            e:u-t01-c012-v04,
-            e:u-t01-c012-v05,
-            e:u-t01-c012-v06 ;
         st:segment "main" .
 
     page:14 a st:Page ;
@@ -6352,6 +6381,39 @@ Participants may need to return to clinical site for additional PK-specific visi
         st:parentName "" ;
         st:qualifiedKey "::Physical Evaluation" .
 
+    e:u-t01-c006 a st:UnifiedColumn ;
+        st:compositeLabel "Study Period II Treatment Period / Study Period II Treatment Period / 5 / 2 / ±3 / X" ;
+        st:member e:t01-c006 ;
+        st:propertyValue e:u-t01-c006-v01,
+            e:u-t01-c006-v02,
+            e:u-t01-c006-v03,
+            e:u-t01-c006-v04,
+            e:u-t01-c006-v05,
+            e:u-t01-c006-v06 ;
+        st:segment "main" .
+
+    e:u-t01-c010 a st:UnifiedColumn ;
+        st:compositeLabel "Study Period II Treatment Period / Study Period II Treatment Period / 9 / 10 / ±3 / X" ;
+        st:member e:t01-c010 ;
+        st:propertyValue e:u-t01-c010-v01,
+            e:u-t01-c010-v02,
+            e:u-t01-c010-v03,
+            e:u-t01-c010-v04,
+            e:u-t01-c010-v05,
+            e:u-t01-c010-v06 ;
+        st:segment "main" .
+
+    e:u-t01-c017 a st:UnifiedColumn ;
+        st:compositeLabel "Study Period II Treatment Period / Study Period II Treatment Period / 16 / 28 / ±3 / X" ;
+        st:member e:t01-c017 ;
+        st:propertyValue e:u-t01-c017-v01,
+            e:u-t01-c017-v02,
+            e:u-t01-c017-v03,
+            e:u-t01-c017-v04,
+            e:u-t01-c017-v05,
+            e:u-t01-c017-v06 ;
+        st:segment "main" .
+
     e:u-t01-r018 a st:UnifiedActivity ;
         st:displayOrder 12 ;
         st:hierarchyLevel 1 ;
@@ -6388,37 +6450,48 @@ Participants may need to return to clinical site for additional PK-specific visi
         st:onPage page:13 ;
         st:rowPosition 18 .
 
-    e:u-t01-c006 a st:UnifiedColumn ;
-        st:compositeLabel "Study Period II Treatment Period / Study Period II Treatment Period / 5 / 2 / ±3 / X" ;
-        st:member e:t01-c006 ;
-        st:propertyValue e:u-t01-c006-v01,
-            e:u-t01-c006-v02,
-            e:u-t01-c006-v03,
-            e:u-t01-c006-v04,
-            e:u-t01-c006-v05,
-            e:u-t01-c006-v06 ;
+    e:u-t01-c005 a st:UnifiedColumn ;
+        st:compositeLabel "Study Period II Treatment Period / Study Period II Treatment Period / 4 / 1 / ±3 / X" ;
+        st:member e:t01-c005 ;
+        st:propertyValue e:u-t01-c005-v01,
+            e:u-t01-c005-v02,
+            e:u-t01-c005-v03,
+            e:u-t01-c005-v04,
+            e:u-t01-c005-v05,
+            e:u-t01-c005-v06 ;
         st:segment "main" .
 
-    e:u-t01-c010 a st:UnifiedColumn ;
-        st:compositeLabel "Study Period II Treatment Period / Study Period II Treatment Period / 9 / 10 / ±3 / X" ;
-        st:member e:t01-c010 ;
-        st:propertyValue e:u-t01-c010-v01,
-            e:u-t01-c010-v02,
-            e:u-t01-c010-v03,
-            e:u-t01-c010-v04,
-            e:u-t01-c010-v05,
-            e:u-t01-c010-v06 ;
+    e:u-t01-c008 a st:UnifiedColumn ;
+        st:compositeLabel "Study Period II Treatment Period / Study Period II Treatment Period / 7 / 6 / ±3 / X" ;
+        st:member e:t01-c008 ;
+        st:propertyValue e:u-t01-c008-v01,
+            e:u-t01-c008-v02,
+            e:u-t01-c008-v03,
+            e:u-t01-c008-v04,
+            e:u-t01-c008-v05,
+            e:u-t01-c008-v06 ;
         st:segment "main" .
 
-    e:u-t01-c017 a st:UnifiedColumn ;
-        st:compositeLabel "Study Period II Treatment Period / Study Period II Treatment Period / 16 / 28 / ±3 / X" ;
-        st:member e:t01-c017 ;
-        st:propertyValue e:u-t01-c017-v01,
-            e:u-t01-c017-v02,
-            e:u-t01-c017-v03,
-            e:u-t01-c017-v04,
-            e:u-t01-c017-v05,
-            e:u-t01-c017-v06 ;
+    e:u-t01-c015 a st:UnifiedColumn ;
+        st:compositeLabel "Study Period II Treatment Period / Study Period II Treatment Period / 14 / 24 / ±3 / X" ;
+        st:member e:t01-c015 ;
+        st:propertyValue e:u-t01-c015-v01,
+            e:u-t01-c015-v02,
+            e:u-t01-c015-v03,
+            e:u-t01-c015-v04,
+            e:u-t01-c015-v05,
+            e:u-t01-c015-v06 ;
+        st:segment "main" .
+
+    e:u-t01-c018 a st:UnifiedColumn ;
+        st:compositeLabel "Study Period II Treatment Period / Study Period II Treatment Period / 17 / 32 / ±3 / X" ;
+        st:member e:t01-c018 ;
+        st:propertyValue e:u-t01-c018-v01,
+            e:u-t01-c018-v02,
+            e:u-t01-c018-v03,
+            e:u-t01-c018-v04,
+            e:u-t01-c018-v05,
+            e:u-t01-c018-v06 ;
         st:segment "main" .
 
     e:u-t01-r076 a st:UnifiedActivity ;
@@ -6477,50 +6550,6 @@ Participants may need to return to clinical site for additional PK-specific visi
         st:onPage page:18 ;
         st:rowPosition 76 .
 
-    e:u-t01-c005 a st:UnifiedColumn ;
-        st:compositeLabel "Study Period II Treatment Period / Study Period II Treatment Period / 4 / 1 / ±3 / X" ;
-        st:member e:t01-c005 ;
-        st:propertyValue e:u-t01-c005-v01,
-            e:u-t01-c005-v02,
-            e:u-t01-c005-v03,
-            e:u-t01-c005-v04,
-            e:u-t01-c005-v05,
-            e:u-t01-c005-v06 ;
-        st:segment "main" .
-
-    e:u-t01-c008 a st:UnifiedColumn ;
-        st:compositeLabel "Study Period II Treatment Period / Study Period II Treatment Period / 7 / 6 / ±3 / X" ;
-        st:member e:t01-c008 ;
-        st:propertyValue e:u-t01-c008-v01,
-            e:u-t01-c008-v02,
-            e:u-t01-c008-v03,
-            e:u-t01-c008-v04,
-            e:u-t01-c008-v05,
-            e:u-t01-c008-v06 ;
-        st:segment "main" .
-
-    e:u-t01-c015 a st:UnifiedColumn ;
-        st:compositeLabel "Study Period II Treatment Period / Study Period II Treatment Period / 14 / 24 / ±3 / X" ;
-        st:member e:t01-c015 ;
-        st:propertyValue e:u-t01-c015-v01,
-            e:u-t01-c015-v02,
-            e:u-t01-c015-v03,
-            e:u-t01-c015-v04,
-            e:u-t01-c015-v05,
-            e:u-t01-c015-v06 ;
-        st:segment "main" .
-
-    e:u-t01-c018 a st:UnifiedColumn ;
-        st:compositeLabel "Study Period II Treatment Period / Study Period II Treatment Period / 17 / 32 / ±3 / X" ;
-        st:member e:t01-c018 ;
-        st:propertyValue e:u-t01-c018-v01,
-            e:u-t01-c018-v02,
-            e:u-t01-c018-v03,
-            e:u-t01-c018-v04,
-            e:u-t01-c018-v05,
-            e:u-t01-c018-v06 ;
-        st:segment "main" .
-
     e:u-t01-r031 a st:UnifiedActivity ;
         st:displayOrder 25 ;
         st:hierarchyLevel 1 ;
@@ -6565,6 +6594,17 @@ Participants may need to return to clinical site for additional PK-specific visi
         st:onPage page:18 ;
         st:rowPosition 77 .
 
+    e:u-t01-c014 a st:UnifiedColumn ;
+        st:compositeLabel "Study Period II Treatment Period / Study Period II Treatment Period / 13 / 20 / ±3 / X" ;
+        st:member e:t01-c014 ;
+        st:propertyValue e:u-t01-c014-v01,
+            e:u-t01-c014-v02,
+            e:u-t01-c014-v03,
+            e:u-t01-c014-v04,
+            e:u-t01-c014-v05,
+            e:u-t01-c014-v06 ;
+        st:segment "main" .
+
     e:u-t01-r032 a st:UnifiedActivity ;
         st:displayOrder 26 ;
         st:hierarchyLevel 1 ;
@@ -6593,21 +6633,6 @@ Participants may need to return to clinical site for additional PK-specific visi
         st:onPage page:15 ;
         st:rowPosition 32 .
 
-    e:u-t01-c014 a st:UnifiedColumn ;
-        st:compositeLabel "Study Period II Treatment Period / Study Period II Treatment Period / 13 / 20 / ±3 / X" ;
-        st:member e:t01-c014 ;
-        st:propertyValue e:u-t01-c014-v01,
-            e:u-t01-c014-v02,
-            e:u-t01-c014-v03,
-            e:u-t01-c014-v04,
-            e:u-t01-c014-v05,
-            e:u-t01-c014-v06 ;
-        st:segment "main" .
-
-    e:t01-c009 a st:SourceColumn ;
-        st:columnPosition 9 ;
-        st:inTable e:t01 .
-
     e:u-t01-c009 a st:UnifiedColumn ;
         st:compositeLabel "Study Period II Treatment Period / Study Period II Treatment Period / 8 / 8 / ±3 / X" ;
         st:member e:t01-c009 ;
@@ -6618,6 +6643,10 @@ Participants may need to return to clinical site for additional PK-specific visi
             e:u-t01-c009-v05,
             e:u-t01-c009-v06 ;
         st:segment "main" .
+
+    e:t01-c009 a st:SourceColumn ;
+        st:columnPosition 9 ;
+        st:inTable e:t01 .
 
     e:u-t01-r041 a st:UnifiedActivity ;
         st:displayOrder 35 ;
@@ -6646,6 +6675,28 @@ Participants may need to return to clinical site for additional PK-specific visi
         st:name "C-SSRS since last visit" ;
         st:onPage page:16 ;
         st:rowPosition 41 .
+
+    e:u-t01-c007 a st:UnifiedColumn ;
+        st:compositeLabel "Study Period II Treatment Period / Study Period II Treatment Period / 6 / 4 / ±3 / X" ;
+        st:member e:t01-c007 ;
+        st:propertyValue e:u-t01-c007-v01,
+            e:u-t01-c007-v02,
+            e:u-t01-c007-v03,
+            e:u-t01-c007-v04,
+            e:u-t01-c007-v05,
+            e:u-t01-c007-v06 ;
+        st:segment "main" .
+
+    e:u-t01-c013 a st:UnifiedColumn ;
+        st:compositeLabel "Study Period II Treatment Period / Study Period II Treatment Period / 12 / 16 / ±3 / X" ;
+        st:member e:t01-c013 ;
+        st:propertyValue e:u-t01-c013-v01,
+            e:u-t01-c013-v02,
+            e:u-t01-c013-v03,
+            e:u-t01-c013-v04,
+            e:u-t01-c013-v05,
+            e:u-t01-c013-v06 ;
+        st:segment "main" .
 
     e:u-t01-r017 a st:UnifiedActivity ;
         st:displayOrder 11 ;
@@ -6686,28 +6737,6 @@ Participants may need to return to clinical site for additional PK-specific visi
         st:name "Weight" ;
         st:onPage page:13 ;
         st:rowPosition 17 .
-
-    e:u-t01-c007 a st:UnifiedColumn ;
-        st:compositeLabel "Study Period II Treatment Period / Study Period II Treatment Period / 6 / 4 / ±3 / X" ;
-        st:member e:t01-c007 ;
-        st:propertyValue e:u-t01-c007-v01,
-            e:u-t01-c007-v02,
-            e:u-t01-c007-v03,
-            e:u-t01-c007-v04,
-            e:u-t01-c007-v05,
-            e:u-t01-c007-v06 ;
-        st:segment "main" .
-
-    e:u-t01-c013 a st:UnifiedColumn ;
-        st:compositeLabel "Study Period II Treatment Period / Study Period II Treatment Period / 12 / 16 / ±3 / X" ;
-        st:member e:t01-c013 ;
-        st:propertyValue e:u-t01-c013-v01,
-            e:u-t01-c013-v02,
-            e:u-t01-c013-v03,
-            e:u-t01-c013-v04,
-            e:u-t01-c013-v05,
-            e:u-t01-c013-v06 ;
-        st:segment "main" .
 
     e:u-t01-r012 a st:UnifiedActivity ;
         st:displayOrder 6 ;
@@ -6789,17 +6818,6 @@ Participants may need to return to clinical site for additional PK-specific visi
         st:parentName "Physical Evaluation" ;
         st:qualifiedKey "Physical Evaluation::Vital signs (2 sitting BP and PR measurements)" .
 
-    e:u-t01-c020 a st:UnifiedColumn ;
-        st:compositeLabel "ET / - / - / X" ;
-        st:member e:t01-c020 ;
-        st:propertyValue e:u-t01-c020-v01,
-            e:u-t01-c020-v02,
-            e:u-t01-c020-v03,
-            e:u-t01-c020-v04,
-            e:u-t01-c020-v05,
-            e:u-t01-c020-v06 ;
-        st:segment "main" .
-
     e:u-t01-r042 a st:UnifiedActivity ;
         st:displayOrder 36 ;
         st:hierarchyLevel 0 ;
@@ -6815,10 +6833,6 @@ Participants may need to return to clinical site for additional PK-specific visi
         st:columnPosition 20 ;
         st:inTable e:t01 .
 
-    e:t01-c011 a st:SourceColumn ;
-        st:columnPosition 11 ;
-        st:inTable e:t01 .
-
     e:u-t01-c011 a st:UnifiedColumn ;
         st:compositeLabel "Study Period II Treatment Period / Study Period II Treatment Period / 10 / 12 / ±3 / X" ;
         st:member e:t01-c011 ;
@@ -6830,6 +6844,21 @@ Participants may need to return to clinical site for additional PK-specific visi
             e:u-t01-c011-v06 ;
         st:segment "main" .
 
+    e:u-t01-c020 a st:UnifiedColumn ;
+        st:compositeLabel "ET / - / - / X" ;
+        st:member e:t01-c020 ;
+        st:propertyValue e:u-t01-c020-v01,
+            e:u-t01-c020-v02,
+            e:u-t01-c020-v03,
+            e:u-t01-c020-v04,
+            e:u-t01-c020-v05,
+            e:u-t01-c020-v06 ;
+        st:segment "main" .
+
+    e:t01-c011 a st:SourceColumn ;
+        st:columnPosition 11 ;
+        st:inTable e:t01 .
+
     e:u-t01-c002 a st:UnifiedColumn ;
         st:compositeLabel "Study Period I Screening/Lead-in / Screening / 1 / -2 / X" ;
         st:member e:t01-c002 ;
@@ -6840,18 +6869,6 @@ Participants may need to return to clinical site for additional PK-specific visi
             e:u-t01-c002-v05,
             e:u-t01-c002-v06 ;
         st:segment "main" .
-
-    e:t01-c002 a st:SourceColumn ;
-        st:columnPosition 2 ;
-        st:inTable e:t01 .
-
-    e:t01-c016 a st:SourceColumn ;
-        st:columnPosition 16 ;
-        st:inTable e:t01 .
-
-    e:t01-c019 a st:SourceColumn ;
-        st:columnPosition 19 ;
-        st:inTable e:t01 .
 
     e:u-t01-c016 a st:UnifiedColumn ;
         st:compositeLabel "Study Period II Treatment Period / Study Period II Treatment Period / 15 / 26 / ±3 / X" ;
@@ -6875,8 +6892,16 @@ Participants may need to return to clinical site for additional PK-specific visi
             e:u-t01-c019-v06 ;
         st:segment "main" .
 
-    e:t01-c004 a st:SourceColumn ;
-        st:columnPosition 4 ;
+    e:t01-c002 a st:SourceColumn ;
+        st:columnPosition 2 ;
+        st:inTable e:t01 .
+
+    e:t01-c016 a st:SourceColumn ;
+        st:columnPosition 16 ;
+        st:inTable e:t01 .
+
+    e:t01-c019 a st:SourceColumn ;
+        st:columnPosition 19 ;
         st:inTable e:t01 .
 
     e:u-t01-c004 a st:UnifiedColumn ;
@@ -6889,6 +6914,10 @@ Participants may need to return to clinical site for additional PK-specific visi
             e:u-t01-c004-v05,
             e:u-t01-c004-v06 ;
         st:segment "main" .
+
+    e:t01-c004 a st:SourceColumn ;
+        st:columnPosition 4 ;
+        st:inTable e:t01 .
 
     e:t01 a st:SourceTable ;
         st:firstPage page:13 ;
