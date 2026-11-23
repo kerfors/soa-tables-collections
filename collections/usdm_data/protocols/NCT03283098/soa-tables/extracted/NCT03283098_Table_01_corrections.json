@@ -76,6 +76,60 @@
    },
    "by": "Kerstin Forsberg",
    "at": "2026-10-19T23:15:00+02:00"
+  },
+  {
+   "id": "corr-005",
+   "target": "annotations",
+   "op": "set",
+   "match": {
+    "annotation_marker": "a"
+   },
+   "set": {
+    "marker_locations": [
+     {
+      "table_number": 1,
+      "location_type": "schedule_cell",
+      "row_position": 2,
+      "column_position": 18
+     }
+    ]
+   },
+   "reason": "B43 (decided 2026-11-23, rule test): a marker printed in a header cell is located as a schedule_cell (prompt §6); the verified file had schedule_property with a column_position. Same row and column; only location_type changes. The 3.9.6 run gives this location.",
+   "source_ref": {
+    "page": 32,
+    "row_position": 2,
+    "column_position": 18,
+    "cell_value": "29/ET (HD)"
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-11-23T18:15:00+01:00"
+  },
+  {
+   "id": "corr-006",
+   "target": "annotations",
+   "op": "set",
+   "match": {
+    "annotation_marker": "h"
+   },
+   "set": {
+    "marker_locations": [
+     {
+      "table_number": 1,
+      "location_type": "schedule_cell",
+      "row_position": 2,
+      "column_position": 18
+     }
+    ]
+   },
+   "reason": "B43 (decided 2026-11-23, rule test): a marker printed in a header cell is located as a schedule_cell (prompt §6); the verified file had schedule_property with a column_position. Same row and column; only location_type changes. The 3.9.6 run gives this location.",
+   "source_ref": {
+    "page": 32,
+    "row_position": 2,
+    "column_position": 18,
+    "cell_value": "29/ET (HD)"
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-11-23T18:15:00+01:00"
   }
  ]
 }

@@ -129,6 +129,33 @@
    "reason": "Layer 1 hygiene (reflection 2026-11-07 §3.5a, decided by Kerstin): this marker has no protocol text behind it; typed placeholder (the definition is not printed in the source). The text that is not protocol text moves to review_note. Raw extraction unchanged. Prepared by Claude.",
    "by": "Kerstin Forsberg",
    "at": "2026-11-07T17:30:00+01:00"
+  },
+  {
+   "id": "corr-009",
+   "target": "annotations",
+   "op": "set",
+   "match": {
+    "annotation_marker": "a"
+   },
+   "set": {
+    "marker_locations": [
+     {
+      "table_number": 3,
+      "location_type": "schedule_cell",
+      "row_position": 2,
+      "column_position": 19
+     }
+    ]
+   },
+   "reason": "B43 (decided 2026-11-23, rule test): a marker printed in a header cell is located as a schedule_cell (prompt §6); the verified file had schedule_property with a column_position. Same row and column; only location_type changes. The 3.9.6 run gives this location.",
+   "source_ref": {
+    "page": 36,
+    "row_position": 2,
+    "column_position": 19,
+    "cell_value": "29/ET (HD)"
+   },
+   "by": "Kerstin Forsberg",
+   "at": "2026-11-23T18:15:00+01:00"
   }
  ]
 }

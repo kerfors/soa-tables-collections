@@ -1063,6 +1063,42 @@
       },
       "by": "Kerstin Forsberg",
       "at": "2026-11-23T16:20:00+01:00"
+    },
+    {
+      "id": "corr-056",
+      "target": "schedule_properties",
+      "op": "set",
+      "match": {
+        "row_position": 1
+      },
+      "set": {
+        "property_name": "Epoch"
+      },
+      "reason": "B44 (decided 2026-11-23, rule test): a synthesised name is the fixed name of the row's property_type (prompt §3). Replaces the 3.8.1 name 'Study Period'. The 3.9.5 and 3.9.6 runs give 'Epoch'.",
+      "source_ref": {
+        "page": 13,
+        "row_position": 1
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-23T18:15:00+01:00"
+    },
+    {
+      "id": "corr-057",
+      "target": "schedule_properties",
+      "op": "set",
+      "match": {
+        "row_position": 2
+      },
+      "set": {
+        "property_name": "Period"
+      },
+      "reason": "B44 (decided 2026-11-23, rule test): a synthesised name is the fixed name of the row's property_type (prompt §3). Replaces the 3.8.1 name 'Screening/Lead-in sub-period'. The 3.9.5 and 3.9.6 runs give 'Period'.",
+      "source_ref": {
+        "page": 13,
+        "row_position": 2
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-23T18:15:00+01:00"
     }
   ]
 }

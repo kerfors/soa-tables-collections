@@ -2,7 +2,7 @@
   "schema_name": "soa-table-resolved",
   "schema_version": "1.3",
   "resolution_metadata": {
-    "resolved_at": "2026-11-23T15:12:11.441578+00:00",
+    "resolved_at": "2026-11-23T17:08:40.261733+00:00",
     "resolver": "soa_tables.resolve v1.0",
     "source_extraction": {
       "schema_name": "soa-table-extraction",
@@ -60,7 +60,7 @@
       "property_id": "prop-001",
       "table_id": "table-001",
       "row_position": 1,
-      "property_name": "Study Period",
+      "property_name": "Epoch",
       "property_name_source": {
         "row_position": 1,
         "column_position": 1,
@@ -81,7 +81,7 @@
       "property_id": "prop-002",
       "table_id": "table-001",
       "row_position": 2,
-      "property_name": "Screening/Lead-in sub-period",
+      "property_name": "Period",
       "property_name_source": {
         "row_position": 2,
         "column_position": 1,

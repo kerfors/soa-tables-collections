@@ -26,7 +26,7 @@
  "schedule_properties": [
   {
    "row_position": 1,
-   "property_name": "Study Period",
+   "property_name": "Epoch",
    "property_name_source": {
     "row_position": 1,
     "column_position": 1,
@@ -41,7 +41,7 @@
   },
   {
    "row_position": 2,
-   "property_name": "Screening/Lead-in sub-period",
+   "property_name": "Period",
    "property_name_source": {
     "row_position": 2,
     "column_position": 1,

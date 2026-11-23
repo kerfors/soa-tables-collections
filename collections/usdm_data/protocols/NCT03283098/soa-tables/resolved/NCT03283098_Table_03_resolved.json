@@ -2,7 +2,7 @@
   "schema_name": "soa-table-resolved",
   "schema_version": "1.3",
   "resolution_metadata": {
-    "resolved_at": "2026-11-21T09:30:37.979201+00:00",
+    "resolved_at": "2026-11-23T17:08:39.842255+00:00",
     "resolver": "soa_tables.resolve v1.0",
     "source_extraction": {
       "schema_name": "soa-table-extraction",
@@ -809,7 +809,7 @@
       "marker_locations": [
         {
           "table_number": 3,
-          "location_type": "schedule_property",
+          "location_type": "schedule_cell",
           "row_position": 2,
           "column_position": 19
         }

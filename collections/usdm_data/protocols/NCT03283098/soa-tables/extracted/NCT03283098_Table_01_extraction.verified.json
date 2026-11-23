@@ -996,7 +996,7 @@
    "marker_locations": [
     {
      "table_number": 1,
-     "location_type": "schedule_property",
+     "location_type": "schedule_cell",
      "row_position": 2,
      "column_position": 18
     }
@@ -1091,7 +1091,7 @@
    "marker_locations": [
     {
      "table_number": 1,
-     "location_type": "schedule_property",
+     "location_type": "schedule_cell",
      "row_position": 2,
      "column_position": 18
     }
