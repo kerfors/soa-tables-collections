@@ -1,5 +1,5 @@
 {
- "audited_at": "2026-11-22T19:51:45.891020+00:00",
+ "audited_at": "2026-11-23T08:26:44.001920+00:00",
  "collection": "misc_studies",
  "counts": {
   "protocols": 5,
@@ -7,7 +7,7 @@
   "tables": 7,
   "tables_without_pages": 1,
   "pages_not_in_any_extraction": 0,
-  "on_page_not_extracted": 1,
+  "on_page_not_extracted": 0,
   "extracted_not_on_page": 25
  },
  "protocols": [
@@ -56,6 +56,7 @@
        "text": "a: ≤ 4 weeks of randomization; ifb: ≤ 7 days prior to the start of C1D1.c: +/- 72 hour window allowed priorbad weather or other unforeseend: In the event of grade 3 or 4hematologic recovery.e: +/- 72 hours prior to Cycle 2treatment.f: All patients should be screenedpositive medical history per SectionHBsAg are treated prophylacticallyshould continue throughout the entireg: Patients on antiviral prophylaxisto D1 of each subsequent cycle toh: Patients with positive HCVPCR testing performed on ≤ 7 daysdiscontinued if HCV flare is confirmedi: Tumor measurements may be(every 3 months). Imaging will includerepeated once disease progressionj: Adverse events related toeverolimus/placebo) or until ≤ gradedose of fulvestrant and/or"
       }
      ],
+     "below_frame": [],
      "declared_page_count": 3,
      "page_count_agrees": false
     }
@@ -126,6 +127,7 @@
       "Visit"
      ],
      "note_bands": [],
+     "below_frame": [],
      "declared_page_count": 2,
      "page_count_agrees": true,
      "doc_page_offset": 89
@@ -188,6 +190,7 @@
      "on_page_not_extracted": [],
      "extracted_not_on_page": [],
      "note_bands": [],
+     "below_frame": [],
      "declared_page_count": 3,
      "page_count_agrees": false
     },
@@ -292,6 +295,7 @@
       "Duration"
      ],
      "note_bands": [],
+     "below_frame": [],
      "declared_page_count": 2,
      "page_count_agrees": true,
      "doc_page_offset": 11
@@ -318,15 +322,7 @@
        "matched": 6
       }
      ],
-     "on_page_not_extracted": [
-      {
-       "page": 4,
-       "row": 10,
-       "y": 503.6,
-       "column": 0,
-       "text": "most recent"
-      }
-     ],
+     "on_page_not_extracted": [],
      "extracted_not_on_page": [
       "Timepoint",
       "Week"
@@ -345,6 +341,15 @@
        "y": 434.5,
        "column": 0,
        "text": "Abbreviations:At Visit 4: indrug at thedrug is takenThe minimumsame day,The late sampleThe exactpost-doseAt Visit 8their studythe studyHowever,study drugIf study drugbeen restartedThe exact times"
+      }
+     ],
+     "below_frame": [
+      {
+       "page": 4,
+       "row": 10,
+       "y": 503.6,
+       "column": 0,
+       "text": "most recent"
       }
      ],
      "declared_page_count": 1,
@@ -463,6 +468,7 @@
       "eGFR (CKD-EPI)"
      ],
      "note_bands": [],
+     "below_frame": [],
      "declared_page_count": 6,
      "page_count_agrees": true,
      "doc_page_offset": 12
