@@ -3,7 +3,7 @@
   "schema_version": "1.7",
   "protocol_id": "NCT05051579",
   "consolidation_metadata": {
-    "consolidated_at": "2026-11-21T09:30:11.126849+00:00",
+    "consolidated_at": "2026-11-23T15:12:11.451063+00:00",
     "consolidator": "soa_tables.consolidate v1.2",
     "source_tables": [
       {
@@ -15,7 +15,7 @@
         "track_label": null,
         "activity_count": 71,
         "column_count": 20,
-        "annotation_count": 13,
+        "annotation_count": 15,
         "property_hierarchy": [
           {
             "hierarchical_level": 1,
@@ -74,12 +74,12 @@
     "unified_activity_count": 71,
     "compression_percent": 0,
     "annotation_stats": {
-      "source_annotation_count": 13,
-      "unified_annotation_count": 13,
+      "source_annotation_count": 15,
+      "unified_annotation_count": 15,
       "deduplicated_count": 0,
       "deduplication_percent": 0,
       "by_type": {
-        "footnote": 13
+        "footnote": 15
       }
     }
   },
@@ -6002,7 +6002,7 @@
     {
       "xannot_id": "xannot-001",
       "annotation_type": "footnote",
-      "annotation_text": "For early terminations that occur before the last visit in treatment period, see the activities listed for ET in this table. Shaded columns represent the dose escalation period Weeks 0-16.",
+      "annotation_text": "For early terminations that occur before the last visit in treatment period, see the activities listed for ET in this table.",
       "display_markers": "T1:n1",
       "source_occurrences": [
         {
@@ -6013,22 +6013,7 @@
       ],
       "referenced_xacts": [],
       "referenced_xcols": [
-        "xcol-003",
-        "xcol-004",
-        "xcol-005",
-        "xcol-006",
-        "xcol-007",
-        "xcol-008",
-        "xcol-009",
-        "xcol-010",
-        "xcol-011",
-        "xcol-012",
-        "xcol-013",
-        "xcol-014",
-        "xcol-015",
-        "xcol-016",
-        "xcol-017",
-        "xcol-018"
+        "xcol-019"
       ],
       "referenced_props": [],
       "cell_references": [],
@@ -6266,8 +6251,7 @@
         }
       ],
       "referenced_xacts": [
-        "xact-062",
-        "xact-063"
+        "xact-061"
       ],
       "referenced_xcols": [],
       "referenced_props": [],
@@ -6291,8 +6275,109 @@
       ],
       "referenced_xcols": [],
       "referenced_props": [],
-      "cell_references": [],
+      "cell_references": [
+        {
+          "xact_id": "xact-069",
+          "xcol_id": "xcol-003"
+        },
+        {
+          "xact_id": "xact-069",
+          "xcol_id": "xcol-004"
+        },
+        {
+          "xact_id": "xact-069",
+          "xcol_id": "xcol-005"
+        },
+        {
+          "xact_id": "xact-069",
+          "xcol_id": "xcol-006"
+        },
+        {
+          "xact_id": "xact-069",
+          "xcol_id": "xcol-007"
+        },
+        {
+          "xact_id": "xact-069",
+          "xcol_id": "xcol-008"
+        },
+        {
+          "xact_id": "xact-069",
+          "xcol_id": "xcol-009"
+        },
+        {
+          "xact_id": "xact-069",
+          "xcol_id": "xcol-010"
+        },
+        {
+          "xact_id": "xact-069",
+          "xcol_id": "xcol-012"
+        },
+        {
+          "xact_id": "xact-069",
+          "xcol_id": "xcol-013"
+        },
+        {
+          "xact_id": "xact-069",
+          "xcol_id": "xcol-014"
+        },
+        {
+          "xact_id": "xact-069",
+          "xcol_id": "xcol-016"
+        },
+        {
+          "xact_id": "xact-069",
+          "xcol_id": "xcol-017"
+        }
+      ],
       "occurrence_count": 1
+    },
+    {
+      "xannot_id": "xannot-014",
+      "annotation_type": "footnote",
+      "annotation_text": "The Schedule of Activities described below should be followed for all participants enrolled in Study GZGI. However, for those participants whose participation in this study is affected by exceptional circumstances, such as pandemics or natural disasters, please refer to Section 10.11 (Appendix 11) for additional guidance.",
+      "display_markers": "T1:g1",
+      "source_occurrences": [
+        {
+          "table_num": 1,
+          "marker": "g1",
+          "annotation_id": "annot-014"
+        }
+      ],
+      "referenced_xacts": [],
+      "referenced_xcols": [],
+      "referenced_props": [],
+      "cell_references": [],
+      "occurrence_count": 1,
+      "annotation_scope": "table",
+      "document_references": [
+        {
+          "kind": "section",
+          "target": "10.11"
+        },
+        {
+          "kind": "appendix",
+          "target": "11"
+        }
+      ]
+    },
+    {
+      "xannot_id": "xannot-015",
+      "annotation_type": "footnote",
+      "annotation_text": "Shaded columns represent the dose escalation period Weeks 0-16.",
+      "display_markers": "T1:g2",
+      "source_occurrences": [
+        {
+          "table_num": 1,
+          "marker": "g2",
+          "annotation_id": "annot-015"
+        }
+      ],
+      "referenced_xacts": [],
+      "referenced_xcols": [],
+      "referenced_props": [],
+      "cell_references": [],
+      "occurrence_count": 1,
+      "annotation_scope": "table"
     }
   ],
   "review_items": [

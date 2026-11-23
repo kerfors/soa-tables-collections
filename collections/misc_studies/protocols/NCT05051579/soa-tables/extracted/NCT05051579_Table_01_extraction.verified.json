@@ -131,7 +131,7 @@
    "cell_value": "Study Period II Treatment Period",
    "is_merged_cell": true,
    "merged_cell_range": "4:19",
-   "annotation_markers": "n1"
+   "annotation_markers": ""
   },
   {
    "table_number": 1,
@@ -140,7 +140,7 @@
    "cell_value": "Study Period II Treatment Period",
    "is_merged_cell": true,
    "merged_cell_range": "4:19",
-   "annotation_markers": "n1"
+   "annotation_markers": ""
   },
   {
    "table_number": 1,
@@ -149,7 +149,7 @@
    "cell_value": "Study Period II Treatment Period",
    "is_merged_cell": true,
    "merged_cell_range": "4:19",
-   "annotation_markers": "n1"
+   "annotation_markers": ""
   },
   {
    "table_number": 1,
@@ -158,7 +158,7 @@
    "cell_value": "Study Period II Treatment Period",
    "is_merged_cell": true,
    "merged_cell_range": "4:19",
-   "annotation_markers": "n1"
+   "annotation_markers": ""
   },
   {
    "table_number": 1,
@@ -167,7 +167,7 @@
    "cell_value": "Study Period II Treatment Period",
    "is_merged_cell": true,
    "merged_cell_range": "4:19",
-   "annotation_markers": "n1"
+   "annotation_markers": ""
   },
   {
    "table_number": 1,
@@ -176,7 +176,7 @@
    "cell_value": "Study Period II Treatment Period",
    "is_merged_cell": true,
    "merged_cell_range": "4:19",
-   "annotation_markers": "n1"
+   "annotation_markers": ""
   },
   {
    "table_number": 1,
@@ -185,7 +185,7 @@
    "cell_value": "Study Period II Treatment Period",
    "is_merged_cell": true,
    "merged_cell_range": "4:19",
-   "annotation_markers": "n1"
+   "annotation_markers": ""
   },
   {
    "table_number": 1,
@@ -194,7 +194,7 @@
    "cell_value": "Study Period II Treatment Period",
    "is_merged_cell": true,
    "merged_cell_range": "4:19",
-   "annotation_markers": "n1"
+   "annotation_markers": ""
   },
   {
    "table_number": 1,
@@ -203,7 +203,7 @@
    "cell_value": "Study Period II Treatment Period",
    "is_merged_cell": true,
    "merged_cell_range": "4:19",
-   "annotation_markers": "n1"
+   "annotation_markers": ""
   },
   {
    "table_number": 1,
@@ -212,7 +212,7 @@
    "cell_value": "Study Period II Treatment Period",
    "is_merged_cell": true,
    "merged_cell_range": "4:19",
-   "annotation_markers": "n1"
+   "annotation_markers": ""
   },
   {
    "table_number": 1,
@@ -221,7 +221,7 @@
    "cell_value": "Study Period II Treatment Period",
    "is_merged_cell": true,
    "merged_cell_range": "4:19",
-   "annotation_markers": "n1"
+   "annotation_markers": ""
   },
   {
    "table_number": 1,
@@ -230,7 +230,7 @@
    "cell_value": "Study Period II Treatment Period",
    "is_merged_cell": true,
    "merged_cell_range": "4:19",
-   "annotation_markers": "n1"
+   "annotation_markers": ""
   },
   {
    "table_number": 1,
@@ -239,7 +239,7 @@
    "cell_value": "Study Period II Treatment Period",
    "is_merged_cell": true,
    "merged_cell_range": "4:19",
-   "annotation_markers": "n1"
+   "annotation_markers": ""
   },
   {
    "table_number": 1,
@@ -248,7 +248,7 @@
    "cell_value": "Study Period II Treatment Period",
    "is_merged_cell": true,
    "merged_cell_range": "4:19",
-   "annotation_markers": "n1"
+   "annotation_markers": ""
   },
   {
    "table_number": 1,
@@ -257,7 +257,7 @@
    "cell_value": "Study Period II Treatment Period",
    "is_merged_cell": true,
    "merged_cell_range": "4:19",
-   "annotation_markers": "n1"
+   "annotation_markers": ""
   },
   {
    "table_number": 1,
@@ -266,7 +266,7 @@
    "cell_value": "Study Period II Treatment Period",
    "is_merged_cell": true,
    "merged_cell_range": "4:19",
-   "annotation_markers": "n1"
+   "annotation_markers": ""
   },
   {
    "table_number": 1,
@@ -544,7 +544,8 @@
    "table_number": 1,
    "row_position": 3,
    "column_position": 20,
-   "cell_value": "ET"
+   "cell_value": "ET",
+   "annotation_markers": "n1"
   },
   {
    "table_number": 1,
@@ -1616,7 +1617,8 @@
     "cell_text": "Pharmacokinetic (PK)\nsample",
     "indentation_level": 1,
     "indentation_method": "visual_estimate"
-   }
+   },
+   "annotation_markers": "n12"
   },
   {
    "table_number": 1,
@@ -1628,7 +1630,7 @@
     "indentation_level": 2,
     "indentation_method": "visual_estimate"
    },
-   "annotation_markers": "n12"
+   "annotation_markers": ""
   },
   {
    "table_number": 1,
@@ -1640,7 +1642,7 @@
     "indentation_level": 2,
     "indentation_method": "visual_estimate"
    },
-   "annotation_markers": "n12"
+   "annotation_markers": ""
   },
   {
    "table_number": 1,
@@ -1713,7 +1715,7 @@
     "indentation_level": 1,
     "indentation_method": "visual_estimate"
    },
-   "annotation_markers": "n13"
+   "annotation_markers": ""
   },
   {
    "table_number": 1,
@@ -3736,79 +3738,92 @@
    "table_number": 1,
    "row_position": 75,
    "column_position": 4,
-   "cell_value": "X"
+   "cell_value": "X",
+   "annotation_markers": "n13"
   },
   {
    "table_number": 1,
    "row_position": 75,
    "column_position": 5,
-   "cell_value": "X"
+   "cell_value": "X",
+   "annotation_markers": "n13"
   },
   {
    "table_number": 1,
    "row_position": 75,
    "column_position": 6,
-   "cell_value": "X"
+   "cell_value": "X",
+   "annotation_markers": "n13"
   },
   {
    "table_number": 1,
    "row_position": 75,
    "column_position": 7,
-   "cell_value": "X"
+   "cell_value": "X",
+   "annotation_markers": "n13"
   },
   {
    "table_number": 1,
    "row_position": 75,
    "column_position": 8,
-   "cell_value": "X"
+   "cell_value": "X",
+   "annotation_markers": "n13"
   },
   {
    "table_number": 1,
    "row_position": 75,
    "column_position": 9,
-   "cell_value": "X"
+   "cell_value": "X",
+   "annotation_markers": "n13"
   },
   {
    "table_number": 1,
    "row_position": 75,
    "column_position": 10,
-   "cell_value": "X"
+   "cell_value": "X",
+   "annotation_markers": "n13"
   },
   {
    "table_number": 1,
    "row_position": 75,
    "column_position": 11,
-   "cell_value": "X"
+   "cell_value": "X",
+   "annotation_markers": "n13"
   },
   {
    "table_number": 1,
    "row_position": 75,
    "column_position": 13,
-   "cell_value": "X"
+   "cell_value": "X",
+   "annotation_markers": "n13"
   },
   {
    "table_number": 1,
    "row_position": 75,
    "column_position": 14,
-   "cell_value": "X"
+   "cell_value": "X",
+   "annotation_markers": "n13"
   },
   {
    "table_number": 1,
    "row_position": 75,
    "column_position": 15,
-   "cell_value": "X"
+   "cell_value": "X",
+   "annotation_markers": "n13"
   },
   {
    "table_number": 1,
    "row_position": 75,
    "column_position": 17,
-   "cell_value": "X"
+   "cell_value": "X",
+   "annotation_markers": "n13"
   },
   {
    "table_number": 1,
    "row_position": 75,
    "column_position": 18,
-   "cell_value": "X"
+   "cell_value": "X",
+   "annotation_markers": "n13"
   },
   {
    "table_number": 1,
@@ -3977,119 +3992,14 @@
   {
    "annotation_marker": "n1",
    "annotation_type": "footnote",
-   "annotation_text": "For early terminations that occur before the last visit in treatment period, see the activities listed for ET in this table. Shaded columns represent the dose escalation period Weeks 0-16.",
+   "annotation_text": "For early terminations that occur before the last visit in treatment period, see the activities listed for ET in this table.",
    "marker_locations": [
     {
      "table_number": 1,
      "location_type": "schedule_cell",
-     "row_position": 1,
-     "column_position": 4,
-     "method": "synthesized"
-    },
-    {
-     "table_number": 1,
-     "location_type": "schedule_cell",
-     "row_position": 1,
-     "column_position": 5,
-     "method": "synthesized"
-    },
-    {
-     "table_number": 1,
-     "location_type": "schedule_cell",
-     "row_position": 1,
-     "column_position": 6,
-     "method": "synthesized"
-    },
-    {
-     "table_number": 1,
-     "location_type": "schedule_cell",
-     "row_position": 1,
-     "column_position": 7,
-     "method": "synthesized"
-    },
-    {
-     "table_number": 1,
-     "location_type": "schedule_cell",
-     "row_position": 1,
-     "column_position": 8,
-     "method": "synthesized"
-    },
-    {
-     "table_number": 1,
-     "location_type": "schedule_cell",
-     "row_position": 1,
-     "column_position": 9,
-     "method": "synthesized"
-    },
-    {
-     "table_number": 1,
-     "location_type": "schedule_cell",
-     "row_position": 1,
-     "column_position": 10,
-     "method": "synthesized"
-    },
-    {
-     "table_number": 1,
-     "location_type": "schedule_cell",
-     "row_position": 1,
-     "column_position": 11,
-     "method": "synthesized"
-    },
-    {
-     "table_number": 1,
-     "location_type": "schedule_cell",
-     "row_position": 1,
-     "column_position": 12,
-     "method": "synthesized"
-    },
-    {
-     "table_number": 1,
-     "location_type": "schedule_cell",
-     "row_position": 1,
-     "column_position": 13,
-     "method": "synthesized"
-    },
-    {
-     "table_number": 1,
-     "location_type": "schedule_cell",
-     "row_position": 1,
-     "column_position": 14,
-     "method": "synthesized"
-    },
-    {
-     "table_number": 1,
-     "location_type": "schedule_cell",
-     "row_position": 1,
-     "column_position": 15,
-     "method": "synthesized"
-    },
-    {
-     "table_number": 1,
-     "location_type": "schedule_cell",
-     "row_position": 1,
-     "column_position": 16,
-     "method": "synthesized"
-    },
-    {
-     "table_number": 1,
-     "location_type": "schedule_cell",
-     "row_position": 1,
-     "column_position": 17,
-     "method": "synthesized"
-    },
-    {
-     "table_number": 1,
-     "location_type": "schedule_cell",
-     "row_position": 1,
-     "column_position": 18,
-     "method": "synthesized"
-    },
-    {
-     "table_number": 1,
-     "location_type": "schedule_cell",
-     "row_position": 1,
-     "column_position": 19,
-     "method": "synthesized"
+     "row_position": 3,
+     "column_position": 20,
+     "method": "text_match"
     }
    ]
   },
@@ -4244,13 +4154,7 @@
     {
      "table_number": 1,
      "location_type": "activity_name",
-     "row_position": 68,
-     "method": "synthesized"
-    },
-    {
-     "table_number": 1,
-     "location_type": "activity_name",
-     "row_position": 69,
+     "row_position": 67,
      "method": "synthesized"
     }
    ]
@@ -4262,8 +4166,119 @@
    "marker_locations": [
     {
      "table_number": 1,
-     "location_type": "activity_name",
+     "location_type": "schedule_cell",
      "row_position": 75,
+     "column_position": 4,
+     "method": "text_match"
+    },
+    {
+     "table_number": 1,
+     "location_type": "schedule_cell",
+     "row_position": 75,
+     "column_position": 5,
+     "method": "text_match"
+    },
+    {
+     "table_number": 1,
+     "location_type": "schedule_cell",
+     "row_position": 75,
+     "column_position": 6,
+     "method": "text_match"
+    },
+    {
+     "table_number": 1,
+     "location_type": "schedule_cell",
+     "row_position": 75,
+     "column_position": 7,
+     "method": "text_match"
+    },
+    {
+     "table_number": 1,
+     "location_type": "schedule_cell",
+     "row_position": 75,
+     "column_position": 8,
+     "method": "text_match"
+    },
+    {
+     "table_number": 1,
+     "location_type": "schedule_cell",
+     "row_position": 75,
+     "column_position": 9,
+     "method": "text_match"
+    },
+    {
+     "table_number": 1,
+     "location_type": "schedule_cell",
+     "row_position": 75,
+     "column_position": 10,
+     "method": "text_match"
+    },
+    {
+     "table_number": 1,
+     "location_type": "schedule_cell",
+     "row_position": 75,
+     "column_position": 11,
+     "method": "text_match"
+    },
+    {
+     "table_number": 1,
+     "location_type": "schedule_cell",
+     "row_position": 75,
+     "column_position": 13,
+     "method": "text_match"
+    },
+    {
+     "table_number": 1,
+     "location_type": "schedule_cell",
+     "row_position": 75,
+     "column_position": 14,
+     "method": "text_match"
+    },
+    {
+     "table_number": 1,
+     "location_type": "schedule_cell",
+     "row_position": 75,
+     "column_position": 15,
+     "method": "text_match"
+    },
+    {
+     "table_number": 1,
+     "location_type": "schedule_cell",
+     "row_position": 75,
+     "column_position": 17,
+     "method": "text_match"
+    },
+    {
+     "table_number": 1,
+     "location_type": "schedule_cell",
+     "row_position": 75,
+     "column_position": 18,
+     "method": "text_match"
+    }
+   ]
+  },
+  {
+   "annotation_marker": "g1",
+   "annotation_type": "footnote",
+   "annotation_text": "The Schedule of Activities described below should be followed for all participants enrolled in Study GZGI. However, for those participants whose participation in this study is affected by exceptional circumstances, such as pandemics or natural disasters, please refer to Section 10.11 (Appendix 11) for additional guidance.",
+   "marker_locations": [
+    {
+     "table_number": 1,
+     "location_type": "schedule_property",
+     "row_position": 1,
+     "method": "synthesized"
+    }
+   ]
+  },
+  {
+   "annotation_marker": "g2",
+   "annotation_type": "footnote",
+   "annotation_text": "Shaded columns represent the dose escalation period Weeks 0-16.",
+   "marker_locations": [
+    {
+     "table_number": 1,
+     "location_type": "schedule_property",
+     "row_position": 1,
      "method": "synthesized"
     }
    ]

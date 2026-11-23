@@ -165,6 +165,904 @@
       },
       "by": "Kerstin Forsberg",
       "at": "2026-09-28T13:45:00+02:00"
+    },
+    {
+      "id": "corr-017",
+      "target": "annotations",
+      "op": "set",
+      "review_item": "D3",
+      "match": {
+        "annotation_marker": "n1"
+      },
+      "set": {
+        "annotation_text": "For early terminations that occur before the last visit in treatment period, see the activities listed for ET in this table.",
+        "marker_locations": [
+          {
+            "table_number": 1,
+            "location_type": "schedule_cell",
+            "row_position": 3,
+            "column_position": 20,
+            "method": "text_match"
+          }
+        ]
+      },
+      "reason": "B42c (decided 2026-11-23, rule test: a later general rule wins over an older decision; supersedes corr-011). Prompt 3.9.2 §6 Binding by what a note names: the sentence that names the ET column is split off and bound to the ET header cell; the shading sentence names no condition on a visit and becomes table-wide g2 (corr-036). Alternative taken from D3 ('only to the ET column / scope the note to the whole table').",
+      "source_ref": {
+        "page": 13,
+        "row_position": 1
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-23T16:20:00+01:00"
+    },
+    {
+      "id": "corr-018",
+      "target": "schedule_grid",
+      "op": "set",
+      "match": {
+        "row_position": 1,
+        "column_position": 4
+      },
+      "set": {
+        "annotation_markers": ""
+      },
+      "reason": "n1 moves from the Study Period II Treatment Period header cells to the ET header cell (corr-017).",
+      "source_ref": {
+        "page": 13,
+        "row_position": 1,
+        "column_position": 4
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-23T16:20:00+01:00"
+    },
+    {
+      "id": "corr-019",
+      "target": "schedule_grid",
+      "op": "set",
+      "match": {
+        "row_position": 1,
+        "column_position": 5
+      },
+      "set": {
+        "annotation_markers": ""
+      },
+      "reason": "n1 moves from the Study Period II Treatment Period header cells to the ET header cell (corr-017).",
+      "source_ref": {
+        "page": 13,
+        "row_position": 1,
+        "column_position": 5
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-23T16:20:00+01:00"
+    },
+    {
+      "id": "corr-020",
+      "target": "schedule_grid",
+      "op": "set",
+      "match": {
+        "row_position": 1,
+        "column_position": 6
+      },
+      "set": {
+        "annotation_markers": ""
+      },
+      "reason": "n1 moves from the Study Period II Treatment Period header cells to the ET header cell (corr-017).",
+      "source_ref": {
+        "page": 13,
+        "row_position": 1,
+        "column_position": 6
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-23T16:20:00+01:00"
+    },
+    {
+      "id": "corr-021",
+      "target": "schedule_grid",
+      "op": "set",
+      "match": {
+        "row_position": 1,
+        "column_position": 7
+      },
+      "set": {
+        "annotation_markers": ""
+      },
+      "reason": "n1 moves from the Study Period II Treatment Period header cells to the ET header cell (corr-017).",
+      "source_ref": {
+        "page": 13,
+        "row_position": 1,
+        "column_position": 7
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-23T16:20:00+01:00"
+    },
+    {
+      "id": "corr-022",
+      "target": "schedule_grid",
+      "op": "set",
+      "match": {
+        "row_position": 1,
+        "column_position": 8
+      },
+      "set": {
+        "annotation_markers": ""
+      },
+      "reason": "n1 moves from the Study Period II Treatment Period header cells to the ET header cell (corr-017).",
+      "source_ref": {
+        "page": 13,
+        "row_position": 1,
+        "column_position": 8
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-23T16:20:00+01:00"
+    },
+    {
+      "id": "corr-023",
+      "target": "schedule_grid",
+      "op": "set",
+      "match": {
+        "row_position": 1,
+        "column_position": 9
+      },
+      "set": {
+        "annotation_markers": ""
+      },
+      "reason": "n1 moves from the Study Period II Treatment Period header cells to the ET header cell (corr-017).",
+      "source_ref": {
+        "page": 13,
+        "row_position": 1,
+        "column_position": 9
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-23T16:20:00+01:00"
+    },
+    {
+      "id": "corr-024",
+      "target": "schedule_grid",
+      "op": "set",
+      "match": {
+        "row_position": 1,
+        "column_position": 10
+      },
+      "set": {
+        "annotation_markers": ""
+      },
+      "reason": "n1 moves from the Study Period II Treatment Period header cells to the ET header cell (corr-017).",
+      "source_ref": {
+        "page": 13,
+        "row_position": 1,
+        "column_position": 10
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-23T16:20:00+01:00"
+    },
+    {
+      "id": "corr-025",
+      "target": "schedule_grid",
+      "op": "set",
+      "match": {
+        "row_position": 1,
+        "column_position": 11
+      },
+      "set": {
+        "annotation_markers": ""
+      },
+      "reason": "n1 moves from the Study Period II Treatment Period header cells to the ET header cell (corr-017).",
+      "source_ref": {
+        "page": 13,
+        "row_position": 1,
+        "column_position": 11
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-23T16:20:00+01:00"
+    },
+    {
+      "id": "corr-026",
+      "target": "schedule_grid",
+      "op": "set",
+      "match": {
+        "row_position": 1,
+        "column_position": 12
+      },
+      "set": {
+        "annotation_markers": ""
+      },
+      "reason": "n1 moves from the Study Period II Treatment Period header cells to the ET header cell (corr-017).",
+      "source_ref": {
+        "page": 13,
+        "row_position": 1,
+        "column_position": 12
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-23T16:20:00+01:00"
+    },
+    {
+      "id": "corr-027",
+      "target": "schedule_grid",
+      "op": "set",
+      "match": {
+        "row_position": 1,
+        "column_position": 13
+      },
+      "set": {
+        "annotation_markers": ""
+      },
+      "reason": "n1 moves from the Study Period II Treatment Period header cells to the ET header cell (corr-017).",
+      "source_ref": {
+        "page": 13,
+        "row_position": 1,
+        "column_position": 13
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-23T16:20:00+01:00"
+    },
+    {
+      "id": "corr-028",
+      "target": "schedule_grid",
+      "op": "set",
+      "match": {
+        "row_position": 1,
+        "column_position": 14
+      },
+      "set": {
+        "annotation_markers": ""
+      },
+      "reason": "n1 moves from the Study Period II Treatment Period header cells to the ET header cell (corr-017).",
+      "source_ref": {
+        "page": 13,
+        "row_position": 1,
+        "column_position": 14
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-23T16:20:00+01:00"
+    },
+    {
+      "id": "corr-029",
+      "target": "schedule_grid",
+      "op": "set",
+      "match": {
+        "row_position": 1,
+        "column_position": 15
+      },
+      "set": {
+        "annotation_markers": ""
+      },
+      "reason": "n1 moves from the Study Period II Treatment Period header cells to the ET header cell (corr-017).",
+      "source_ref": {
+        "page": 13,
+        "row_position": 1,
+        "column_position": 15
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-23T16:20:00+01:00"
+    },
+    {
+      "id": "corr-030",
+      "target": "schedule_grid",
+      "op": "set",
+      "match": {
+        "row_position": 1,
+        "column_position": 16
+      },
+      "set": {
+        "annotation_markers": ""
+      },
+      "reason": "n1 moves from the Study Period II Treatment Period header cells to the ET header cell (corr-017).",
+      "source_ref": {
+        "page": 13,
+        "row_position": 1,
+        "column_position": 16
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-23T16:20:00+01:00"
+    },
+    {
+      "id": "corr-031",
+      "target": "schedule_grid",
+      "op": "set",
+      "match": {
+        "row_position": 1,
+        "column_position": 17
+      },
+      "set": {
+        "annotation_markers": ""
+      },
+      "reason": "n1 moves from the Study Period II Treatment Period header cells to the ET header cell (corr-017).",
+      "source_ref": {
+        "page": 13,
+        "row_position": 1,
+        "column_position": 17
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-23T16:20:00+01:00"
+    },
+    {
+      "id": "corr-032",
+      "target": "schedule_grid",
+      "op": "set",
+      "match": {
+        "row_position": 1,
+        "column_position": 18
+      },
+      "set": {
+        "annotation_markers": ""
+      },
+      "reason": "n1 moves from the Study Period II Treatment Period header cells to the ET header cell (corr-017).",
+      "source_ref": {
+        "page": 13,
+        "row_position": 1,
+        "column_position": 18
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-23T16:20:00+01:00"
+    },
+    {
+      "id": "corr-033",
+      "target": "schedule_grid",
+      "op": "set",
+      "match": {
+        "row_position": 1,
+        "column_position": 19
+      },
+      "set": {
+        "annotation_markers": ""
+      },
+      "reason": "n1 moves from the Study Period II Treatment Period header cells to the ET header cell (corr-017).",
+      "source_ref": {
+        "page": 13,
+        "row_position": 1,
+        "column_position": 19
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-23T16:20:00+01:00"
+    },
+    {
+      "id": "corr-034",
+      "target": "schedule_grid",
+      "op": "set",
+      "match": {
+        "row_position": 3,
+        "column_position": 20
+      },
+      "set": {
+        "annotation_markers": "n1"
+      },
+      "reason": "Binds n1 (early terminations sentence) to the ET header cell (corr-017).",
+      "source_ref": {
+        "page": 13,
+        "row_position": 3,
+        "column_position": 20,
+        "cell_value": "ET"
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-23T16:20:00+01:00"
+    },
+    {
+      "id": "corr-035",
+      "target": "annotations",
+      "op": "add",
+      "set": {
+        "annotation_marker": "g1",
+        "annotation_type": "footnote",
+        "annotation_text": "The Schedule of Activities described below should be followed for all participants enrolled in Study GZGI. However, for those participants whose participation in this study is affected by exceptional circumstances, such as pandemics or natural disasters, please refer to Section 10.11 (Appendix 11) for additional guidance.",
+        "marker_locations": [
+          {
+            "table_number": 1,
+            "location_type": "schedule_property",
+            "row_position": 1,
+            "method": "synthesized"
+          }
+        ]
+      },
+      "reason": "B42c (decided 2026-11-23): the paragraph printed between the table title and the frame belongs to the table (prompt 3.9.1 §6 Text above or below the frame); it names no element, so it is table-wide g1. Not extracted under prompt 3.8.1.",
+      "source_ref": {
+        "page": 13
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-23T16:20:00+01:00"
+    },
+    {
+      "id": "corr-036",
+      "target": "annotations",
+      "op": "add",
+      "set": {
+        "annotation_marker": "g2",
+        "annotation_type": "footnote",
+        "annotation_text": "Shaded columns represent the dose escalation period Weeks 0-16.",
+        "marker_locations": [
+          {
+            "table_number": 1,
+            "location_type": "schedule_property",
+            "row_position": 1,
+            "method": "synthesized"
+          }
+        ]
+      },
+      "reason": "B42c (decided 2026-11-23): the second sentence of the former n1, a shading legend that states no condition on a visit (prompt §6: bind to a visit only what states a condition on it), is table-wide g2. Its text says Weeks 0-16; the body shading starts at Week 1 (Visit 4) — transcribed as printed.",
+      "source_ref": {
+        "page": 13,
+        "row_position": 1
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-23T16:20:00+01:00"
+    },
+    {
+      "id": "corr-037",
+      "target": "annotations",
+      "op": "set",
+      "match": {
+        "annotation_marker": "n12"
+      },
+      "set": {
+        "marker_locations": [
+          {
+            "table_number": 1,
+            "location_type": "activity_name",
+            "row_position": 67,
+            "method": "synthesized"
+          }
+        ]
+      },
+      "reason": "B42b (decided 2026-11-23, rule test): the PK note is printed on the mark-free group row 'Pharmacokinetic (PK) sample', so it governs the group and binds to the group row, not each child (prompt 3.9.0 §6 Binding by what a note names). The structure itself stays as confirmed by corr-009 (D1).",
+      "source_ref": {
+        "page": 17,
+        "row_position": 67
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-23T16:20:00+01:00"
+    },
+    {
+      "id": "corr-038",
+      "target": "activities",
+      "op": "set",
+      "match": {
+        "row_position": 67
+      },
+      "set": {
+        "annotation_markers": "n12"
+      },
+      "reason": "n12 moves to the PK group row (corr-037).",
+      "source_ref": {
+        "page": 17,
+        "row_position": 67
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-23T16:20:00+01:00"
+    },
+    {
+      "id": "corr-039",
+      "target": "activities",
+      "op": "set",
+      "match": {
+        "row_position": 68
+      },
+      "set": {
+        "annotation_markers": ""
+      },
+      "reason": "n12 moves from the Predose/Postdose children to the PK group row (corr-037).",
+      "source_ref": {
+        "page": 17,
+        "row_position": 68
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-23T16:20:00+01:00"
+    },
+    {
+      "id": "corr-040",
+      "target": "activities",
+      "op": "set",
+      "match": {
+        "row_position": 69
+      },
+      "set": {
+        "annotation_markers": ""
+      },
+      "reason": "n12 moves from the Predose/Postdose children to the PK group row (corr-037).",
+      "source_ref": {
+        "page": 17,
+        "row_position": 69
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-23T16:20:00+01:00"
+    },
+    {
+      "id": "corr-041",
+      "target": "annotations",
+      "op": "set",
+      "match": {
+        "annotation_marker": "n13"
+      },
+      "set": {
+        "marker_locations": [
+          {
+            "table_number": 1,
+            "location_type": "schedule_cell",
+            "row_position": 75,
+            "column_position": 4,
+            "method": "text_match"
+          },
+          {
+            "table_number": 1,
+            "location_type": "schedule_cell",
+            "row_position": 75,
+            "column_position": 5,
+            "method": "text_match"
+          },
+          {
+            "table_number": 1,
+            "location_type": "schedule_cell",
+            "row_position": 75,
+            "column_position": 6,
+            "method": "text_match"
+          },
+          {
+            "table_number": 1,
+            "location_type": "schedule_cell",
+            "row_position": 75,
+            "column_position": 7,
+            "method": "text_match"
+          },
+          {
+            "table_number": 1,
+            "location_type": "schedule_cell",
+            "row_position": 75,
+            "column_position": 8,
+            "method": "text_match"
+          },
+          {
+            "table_number": 1,
+            "location_type": "schedule_cell",
+            "row_position": 75,
+            "column_position": 9,
+            "method": "text_match"
+          },
+          {
+            "table_number": 1,
+            "location_type": "schedule_cell",
+            "row_position": 75,
+            "column_position": 10,
+            "method": "text_match"
+          },
+          {
+            "table_number": 1,
+            "location_type": "schedule_cell",
+            "row_position": 75,
+            "column_position": 11,
+            "method": "text_match"
+          },
+          {
+            "table_number": 1,
+            "location_type": "schedule_cell",
+            "row_position": 75,
+            "column_position": 13,
+            "method": "text_match"
+          },
+          {
+            "table_number": 1,
+            "location_type": "schedule_cell",
+            "row_position": 75,
+            "column_position": 14,
+            "method": "text_match"
+          },
+          {
+            "table_number": 1,
+            "location_type": "schedule_cell",
+            "row_position": 75,
+            "column_position": 15,
+            "method": "text_match"
+          },
+          {
+            "table_number": 1,
+            "location_type": "schedule_cell",
+            "row_position": 75,
+            "column_position": 17,
+            "method": "text_match"
+          },
+          {
+            "table_number": 1,
+            "location_type": "schedule_cell",
+            "row_position": 75,
+            "column_position": 18,
+            "method": "text_match"
+          }
+        ]
+      },
+      "reason": "B42a (decided 2026-11-23, rule test): the bottle-count note names Visits 3-17 and states how many bottles are dispensed at each, a condition on each scheduled mark, so it binds to the marked Dispense cells of the visits it names (Visits 3-10, 12-14, 16-17; Visits 11 and 15 carry no mark) — prompt 3.9.0 §6 Binding by what a note names. Never raised under prompt 3.8.1; no review item.",
+      "source_ref": {
+        "page": 18,
+        "row_position": 75
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-23T16:20:00+01:00"
+    },
+    {
+      "id": "corr-042",
+      "target": "activities",
+      "op": "set",
+      "match": {
+        "row_position": 75
+      },
+      "set": {
+        "annotation_markers": ""
+      },
+      "reason": "n13 moves from the Dispense row to its marked cells (corr-041).",
+      "source_ref": {
+        "page": 18,
+        "row_position": 75
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-23T16:20:00+01:00"
+    },
+    {
+      "id": "corr-043",
+      "target": "activity_schedule",
+      "op": "set",
+      "match": {
+        "row_position": 75,
+        "column_position": 4
+      },
+      "set": {
+        "annotation_markers": "n13"
+      },
+      "reason": "Binds n13 to the Dispense study intervention capsules mark of a visit the note names (corr-041).",
+      "source_ref": {
+        "page": 18,
+        "row_position": 75,
+        "column_position": 4,
+        "cell_value": "X"
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-23T16:20:00+01:00"
+    },
+    {
+      "id": "corr-044",
+      "target": "activity_schedule",
+      "op": "set",
+      "match": {
+        "row_position": 75,
+        "column_position": 5
+      },
+      "set": {
+        "annotation_markers": "n13"
+      },
+      "reason": "Binds n13 to the Dispense study intervention capsules mark of a visit the note names (corr-041).",
+      "source_ref": {
+        "page": 18,
+        "row_position": 75,
+        "column_position": 5,
+        "cell_value": "X"
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-23T16:20:00+01:00"
+    },
+    {
+      "id": "corr-045",
+      "target": "activity_schedule",
+      "op": "set",
+      "match": {
+        "row_position": 75,
+        "column_position": 6
+      },
+      "set": {
+        "annotation_markers": "n13"
+      },
+      "reason": "Binds n13 to the Dispense study intervention capsules mark of a visit the note names (corr-041).",
+      "source_ref": {
+        "page": 18,
+        "row_position": 75,
+        "column_position": 6,
+        "cell_value": "X"
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-23T16:20:00+01:00"
+    },
+    {
+      "id": "corr-046",
+      "target": "activity_schedule",
+      "op": "set",
+      "match": {
+        "row_position": 75,
+        "column_position": 7
+      },
+      "set": {
+        "annotation_markers": "n13"
+      },
+      "reason": "Binds n13 to the Dispense study intervention capsules mark of a visit the note names (corr-041).",
+      "source_ref": {
+        "page": 18,
+        "row_position": 75,
+        "column_position": 7,
+        "cell_value": "X"
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-23T16:20:00+01:00"
+    },
+    {
+      "id": "corr-047",
+      "target": "activity_schedule",
+      "op": "set",
+      "match": {
+        "row_position": 75,
+        "column_position": 8
+      },
+      "set": {
+        "annotation_markers": "n13"
+      },
+      "reason": "Binds n13 to the Dispense study intervention capsules mark of a visit the note names (corr-041).",
+      "source_ref": {
+        "page": 18,
+        "row_position": 75,
+        "column_position": 8,
+        "cell_value": "X"
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-23T16:20:00+01:00"
+    },
+    {
+      "id": "corr-048",
+      "target": "activity_schedule",
+      "op": "set",
+      "match": {
+        "row_position": 75,
+        "column_position": 9
+      },
+      "set": {
+        "annotation_markers": "n13"
+      },
+      "reason": "Binds n13 to the Dispense study intervention capsules mark of a visit the note names (corr-041).",
+      "source_ref": {
+        "page": 18,
+        "row_position": 75,
+        "column_position": 9,
+        "cell_value": "X"
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-23T16:20:00+01:00"
+    },
+    {
+      "id": "corr-049",
+      "target": "activity_schedule",
+      "op": "set",
+      "match": {
+        "row_position": 75,
+        "column_position": 10
+      },
+      "set": {
+        "annotation_markers": "n13"
+      },
+      "reason": "Binds n13 to the Dispense study intervention capsules mark of a visit the note names (corr-041).",
+      "source_ref": {
+        "page": 18,
+        "row_position": 75,
+        "column_position": 10,
+        "cell_value": "X"
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-23T16:20:00+01:00"
+    },
+    {
+      "id": "corr-050",
+      "target": "activity_schedule",
+      "op": "set",
+      "match": {
+        "row_position": 75,
+        "column_position": 11
+      },
+      "set": {
+        "annotation_markers": "n13"
+      },
+      "reason": "Binds n13 to the Dispense study intervention capsules mark of a visit the note names (corr-041).",
+      "source_ref": {
+        "page": 18,
+        "row_position": 75,
+        "column_position": 11,
+        "cell_value": "X"
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-23T16:20:00+01:00"
+    },
+    {
+      "id": "corr-051",
+      "target": "activity_schedule",
+      "op": "set",
+      "match": {
+        "row_position": 75,
+        "column_position": 13
+      },
+      "set": {
+        "annotation_markers": "n13"
+      },
+      "reason": "Binds n13 to the Dispense study intervention capsules mark of a visit the note names (corr-041).",
+      "source_ref": {
+        "page": 18,
+        "row_position": 75,
+        "column_position": 13,
+        "cell_value": "X"
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-23T16:20:00+01:00"
+    },
+    {
+      "id": "corr-052",
+      "target": "activity_schedule",
+      "op": "set",
+      "match": {
+        "row_position": 75,
+        "column_position": 14
+      },
+      "set": {
+        "annotation_markers": "n13"
+      },
+      "reason": "Binds n13 to the Dispense study intervention capsules mark of a visit the note names (corr-041).",
+      "source_ref": {
+        "page": 18,
+        "row_position": 75,
+        "column_position": 14,
+        "cell_value": "X"
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-23T16:20:00+01:00"
+    },
+    {
+      "id": "corr-053",
+      "target": "activity_schedule",
+      "op": "set",
+      "match": {
+        "row_position": 75,
+        "column_position": 15
+      },
+      "set": {
+        "annotation_markers": "n13"
+      },
+      "reason": "Binds n13 to the Dispense study intervention capsules mark of a visit the note names (corr-041).",
+      "source_ref": {
+        "page": 18,
+        "row_position": 75,
+        "column_position": 15,
+        "cell_value": "X"
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-23T16:20:00+01:00"
+    },
+    {
+      "id": "corr-054",
+      "target": "activity_schedule",
+      "op": "set",
+      "match": {
+        "row_position": 75,
+        "column_position": 17
+      },
+      "set": {
+        "annotation_markers": "n13"
+      },
+      "reason": "Binds n13 to the Dispense study intervention capsules mark of a visit the note names (corr-041).",
+      "source_ref": {
+        "page": 18,
+        "row_position": 75,
+        "column_position": 17,
+        "cell_value": "X"
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-23T16:20:00+01:00"
+    },
+    {
+      "id": "corr-055",
+      "target": "activity_schedule",
+      "op": "set",
+      "match": {
+        "row_position": 75,
+        "column_position": 18
+      },
+      "set": {
+        "annotation_markers": "n13"
+      },
+      "reason": "Binds n13 to the Dispense study intervention capsules mark of a visit the note names (corr-041).",
+      "source_ref": {
+        "page": 18,
+        "row_position": 75,
+        "column_position": 18,
+        "cell_value": "X"
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-23T16:20:00+01:00"
     }
   ]
 }
