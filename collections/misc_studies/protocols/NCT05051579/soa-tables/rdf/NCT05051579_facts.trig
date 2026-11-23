@@ -7,9 +7,9 @@
 <https://kerfors.github.io/soa-tables/id/sha256/ef1eecd8014f634357c4a3b52ee138f5b298483f9cc9dde36f323551dc4a46f0/soa-tables-v1> {
     <https://kerfors.github.io/soa-tables/id/sha256/ef1eecd8014f634357c4a3b52ee138f5b298483f9cc9dde36f323551dc4a46f0/soa-tables-v1> a st:Transcription ;
         st:aboutStudy <https://kerfors.github.io/soa-tables/id/study/NCT05051579> ;
-        st:codeCommit "2b9f55952582c24a27f5e323bdd93b0b9b154de8" ;
-        st:collectionsCommit "e0f4efed468f91af82b23595f4314df21345f874" ;
-        st:consolidatedAt "2026-11-23T15:12:11.451063+00:00"^^xsd:dateTime ;
+        st:codeCommit "994ce383a4691a4337ac6a2f8cdbd70745cca543" ;
+        st:collectionsCommit "3be3375a568601058a0b060f320cc0ca9d8d588e" ;
+        st:consolidatedAt "2026-11-23T17:08:40.272228+00:00"^^xsd:dateTime ;
         st:consolidator "soa_tables.consolidate v1.2" ;
         st:ofFile <https://kerfors.github.io/soa-tables/id/sha256/ef1eecd8014f634357c4a3b52ee138f5b298483f9cc9dde36f323551dc4a46f0> ;
         st:schemaVersion "1.7" .
@@ -2277,13 +2277,13 @@ Participants may need to return to clinical site for additional PK-specific visi
     e:u-t01-r001 a st:UnifiedProperty ;
         st:level 1 ;
         st:member e:t01-r001 ;
-        st:propertyName "Study Period" ;
+        st:propertyName "Epoch" ;
         st:propertyType "epoch" .
 
     e:u-t01-r002 a st:UnifiedProperty ;
         st:level 2 ;
         st:member e:t01-r002 ;
-        st:propertyName "Screening/Lead-in sub-period" ;
+        st:propertyName "Period" ;
         st:propertyType "period" .
 
     e:u-t01-r003 a st:UnifiedProperty ;
@@ -2456,7 +2456,7 @@ Participants may need to return to clinical site for additional PK-specific visi
         st:hierarchyPosition 1 ;
         st:inTable e:t01 ;
         st:level 1 ;
-        st:propertyName "Study Period" ;
+        st:propertyName "Epoch" ;
         st:propertyType "epoch" ;
         st:rowPosition 1 .
 
@@ -2464,7 +2464,7 @@ Participants may need to return to clinical site for additional PK-specific visi
         st:hierarchyPosition 2 ;
         st:inTable e:t01 ;
         st:level 2 ;
-        st:propertyName "Screening/Lead-in sub-period" ;
+        st:propertyName "Period" ;
         st:propertyType "period" ;
         st:rowPosition 2 .
 
@@ -4441,14 +4441,14 @@ Participants may need to return to clinical site for additional PK-specific visi
     e:u-t01-c002-v01 a st:ColumnPropertyValue ;
         st:level 1 ;
         st:position 1 ;
-        st:propertyName "Study Period" ;
+        st:propertyName "Epoch" ;
         st:propertyType "epoch" ;
         st:value "Study Period I Screening/Lead-in" .
 
     e:u-t01-c002-v02 a st:ColumnPropertyValue ;
         st:level 2 ;
         st:position 2 ;
-        st:propertyName "Screening/Lead-in sub-period" ;
+        st:propertyName "Period" ;
         st:propertyType "period" ;
         st:value "Screening" .
 
@@ -4481,14 +4481,14 @@ Participants may need to return to clinical site for additional PK-specific visi
     e:u-t01-c003-v01 a st:ColumnPropertyValue ;
         st:level 1 ;
         st:position 1 ;
-        st:propertyName "Study Period" ;
+        st:propertyName "Epoch" ;
         st:propertyType "epoch" ;
         st:value "Study Period I Screening/Lead-in" .
 
     e:u-t01-c003-v02 a st:ColumnPropertyValue ;
         st:level 2 ;
         st:position 2 ;
-        st:propertyName "Screening/Lead-in sub-period" ;
+        st:propertyName "Period" ;
         st:propertyType "period" ;
         st:value "Lead-In" .
 
@@ -4521,14 +4521,14 @@ Participants may need to return to clinical site for additional PK-specific visi
     e:u-t01-c004-v01 a st:ColumnPropertyValue ;
         st:level 1 ;
         st:position 1 ;
-        st:propertyName "Study Period" ;
+        st:propertyName "Epoch" ;
         st:propertyType "epoch" ;
         st:value "Study Period II Treatment Period" .
 
     e:u-t01-c004-v02 a st:ColumnPropertyValue ;
         st:level 2 ;
         st:position 2 ;
-        st:propertyName "Screening/Lead-in sub-period" ;
+        st:propertyName "Period" ;
         st:propertyType "period" ;
         st:value "Study Period II Treatment Period" .
 
@@ -4561,14 +4561,14 @@ Participants may need to return to clinical site for additional PK-specific visi
     e:u-t01-c005-v01 a st:ColumnPropertyValue ;
         st:level 1 ;
         st:position 1 ;
-        st:propertyName "Study Period" ;
+        st:propertyName "Epoch" ;
         st:propertyType "epoch" ;
         st:value "Study Period II Treatment Period" .
 
     e:u-t01-c005-v02 a st:ColumnPropertyValue ;
         st:level 2 ;
         st:position 2 ;
-        st:propertyName "Screening/Lead-in sub-period" ;
+        st:propertyName "Period" ;
         st:propertyType "period" ;
         st:value "Study Period II Treatment Period" .
 
@@ -4601,14 +4601,14 @@ Participants may need to return to clinical site for additional PK-specific visi
     e:u-t01-c006-v01 a st:ColumnPropertyValue ;
         st:level 1 ;
         st:position 1 ;
-        st:propertyName "Study Period" ;
+        st:propertyName "Epoch" ;
         st:propertyType "epoch" ;
         st:value "Study Period II Treatment Period" .
 
     e:u-t01-c006-v02 a st:ColumnPropertyValue ;
         st:level 2 ;
         st:position 2 ;
-        st:propertyName "Screening/Lead-in sub-period" ;
+        st:propertyName "Period" ;
         st:propertyType "period" ;
         st:value "Study Period II Treatment Period" .
 
@@ -4641,14 +4641,14 @@ Participants may need to return to clinical site for additional PK-specific visi
     e:u-t01-c007-v01 a st:ColumnPropertyValue ;
         st:level 1 ;
         st:position 1 ;
-        st:propertyName "Study Period" ;
+        st:propertyName "Epoch" ;
         st:propertyType "epoch" ;
         st:value "Study Period II Treatment Period" .
 
     e:u-t01-c007-v02 a st:ColumnPropertyValue ;
         st:level 2 ;
         st:position 2 ;
-        st:propertyName "Screening/Lead-in sub-period" ;
+        st:propertyName "Period" ;
         st:propertyType "period" ;
         st:value "Study Period II Treatment Period" .
 
@@ -4681,14 +4681,14 @@ Participants may need to return to clinical site for additional PK-specific visi
     e:u-t01-c008-v01 a st:ColumnPropertyValue ;
         st:level 1 ;
         st:position 1 ;
-        st:propertyName "Study Period" ;
+        st:propertyName "Epoch" ;
         st:propertyType "epoch" ;
         st:value "Study Period II Treatment Period" .
 
     e:u-t01-c008-v02 a st:ColumnPropertyValue ;
         st:level 2 ;
         st:position 2 ;
-        st:propertyName "Screening/Lead-in sub-period" ;
+        st:propertyName "Period" ;
         st:propertyType "period" ;
         st:value "Study Period II Treatment Period" .
 
@@ -4721,14 +4721,14 @@ Participants may need to return to clinical site for additional PK-specific visi
     e:u-t01-c009-v01 a st:ColumnPropertyValue ;
         st:level 1 ;
         st:position 1 ;
-        st:propertyName "Study Period" ;
+        st:propertyName "Epoch" ;
         st:propertyType "epoch" ;
         st:value "Study Period II Treatment Period" .
 
     e:u-t01-c009-v02 a st:ColumnPropertyValue ;
         st:level 2 ;
         st:position 2 ;
-        st:propertyName "Screening/Lead-in sub-period" ;
+        st:propertyName "Period" ;
         st:propertyType "period" ;
         st:value "Study Period II Treatment Period" .
 
@@ -4761,14 +4761,14 @@ Participants may need to return to clinical site for additional PK-specific visi
     e:u-t01-c010-v01 a st:ColumnPropertyValue ;
         st:level 1 ;
         st:position 1 ;
-        st:propertyName "Study Period" ;
+        st:propertyName "Epoch" ;
         st:propertyType "epoch" ;
         st:value "Study Period II Treatment Period" .
 
     e:u-t01-c010-v02 a st:ColumnPropertyValue ;
         st:level 2 ;
         st:position 2 ;
-        st:propertyName "Screening/Lead-in sub-period" ;
+        st:propertyName "Period" ;
         st:propertyType "period" ;
         st:value "Study Period II Treatment Period" .
 
@@ -4801,14 +4801,14 @@ Participants may need to return to clinical site for additional PK-specific visi
     e:u-t01-c011-v01 a st:ColumnPropertyValue ;
         st:level 1 ;
         st:position 1 ;
-        st:propertyName "Study Period" ;
+        st:propertyName "Epoch" ;
         st:propertyType "epoch" ;
         st:value "Study Period II Treatment Period" .
 
     e:u-t01-c011-v02 a st:ColumnPropertyValue ;
         st:level 2 ;
         st:position 2 ;
-        st:propertyName "Screening/Lead-in sub-period" ;
+        st:propertyName "Period" ;
         st:propertyType "period" ;
         st:value "Study Period II Treatment Period" .
 
@@ -4841,14 +4841,14 @@ Participants may need to return to clinical site for additional PK-specific visi
     e:u-t01-c012-v01 a st:ColumnPropertyValue ;
         st:level 1 ;
         st:position 1 ;
-        st:propertyName "Study Period" ;
+        st:propertyName "Epoch" ;
         st:propertyType "epoch" ;
         st:value "Study Period II Treatment Period" .
 
     e:u-t01-c012-v02 a st:ColumnPropertyValue ;
         st:level 2 ;
         st:position 2 ;
-        st:propertyName "Screening/Lead-in sub-period" ;
+        st:propertyName "Period" ;
         st:propertyType "period" ;
         st:value "Study Period II Treatment Period" .
 
@@ -4881,14 +4881,14 @@ Participants may need to return to clinical site for additional PK-specific visi
     e:u-t01-c013-v01 a st:ColumnPropertyValue ;
         st:level 1 ;
         st:position 1 ;
-        st:propertyName "Study Period" ;
+        st:propertyName "Epoch" ;
         st:propertyType "epoch" ;
         st:value "Study Period II Treatment Period" .
 
     e:u-t01-c013-v02 a st:ColumnPropertyValue ;
         st:level 2 ;
         st:position 2 ;
-        st:propertyName "Screening/Lead-in sub-period" ;
+        st:propertyName "Period" ;
         st:propertyType "period" ;
         st:value "Study Period II Treatment Period" .
 
@@ -4921,14 +4921,14 @@ Participants may need to return to clinical site for additional PK-specific visi
     e:u-t01-c014-v01 a st:ColumnPropertyValue ;
         st:level 1 ;
         st:position 1 ;
-        st:propertyName "Study Period" ;
+        st:propertyName "Epoch" ;
         st:propertyType "epoch" ;
         st:value "Study Period II Treatment Period" .
 
     e:u-t01-c014-v02 a st:ColumnPropertyValue ;
         st:level 2 ;
         st:position 2 ;
-        st:propertyName "Screening/Lead-in sub-period" ;
+        st:propertyName "Period" ;
         st:propertyType "period" ;
         st:value "Study Period II Treatment Period" .
 
@@ -4961,14 +4961,14 @@ Participants may need to return to clinical site for additional PK-specific visi
     e:u-t01-c015-v01 a st:ColumnPropertyValue ;
         st:level 1 ;
         st:position 1 ;
-        st:propertyName "Study Period" ;
+        st:propertyName "Epoch" ;
         st:propertyType "epoch" ;
         st:value "Study Period II Treatment Period" .
 
     e:u-t01-c015-v02 a st:ColumnPropertyValue ;
         st:level 2 ;
         st:position 2 ;
-        st:propertyName "Screening/Lead-in sub-period" ;
+        st:propertyName "Period" ;
         st:propertyType "period" ;
         st:value "Study Period II Treatment Period" .
 
@@ -5001,14 +5001,14 @@ Participants may need to return to clinical site for additional PK-specific visi
     e:u-t01-c016-v01 a st:ColumnPropertyValue ;
         st:level 1 ;
         st:position 1 ;
-        st:propertyName "Study Period" ;
+        st:propertyName "Epoch" ;
         st:propertyType "epoch" ;
         st:value "Study Period II Treatment Period" .
 
     e:u-t01-c016-v02 a st:ColumnPropertyValue ;
         st:level 2 ;
         st:position 2 ;
-        st:propertyName "Screening/Lead-in sub-period" ;
+        st:propertyName "Period" ;
         st:propertyType "period" ;
         st:value "Study Period II Treatment Period" .
 
@@ -5041,14 +5041,14 @@ Participants may need to return to clinical site for additional PK-specific visi
     e:u-t01-c017-v01 a st:ColumnPropertyValue ;
         st:level 1 ;
         st:position 1 ;
-        st:propertyName "Study Period" ;
+        st:propertyName "Epoch" ;
         st:propertyType "epoch" ;
         st:value "Study Period II Treatment Period" .
 
     e:u-t01-c017-v02 a st:ColumnPropertyValue ;
         st:level 2 ;
         st:position 2 ;
-        st:propertyName "Screening/Lead-in sub-period" ;
+        st:propertyName "Period" ;
         st:propertyType "period" ;
         st:value "Study Period II Treatment Period" .
 
@@ -5081,14 +5081,14 @@ Participants may need to return to clinical site for additional PK-specific visi
     e:u-t01-c018-v01 a st:ColumnPropertyValue ;
         st:level 1 ;
         st:position 1 ;
-        st:propertyName "Study Period" ;
+        st:propertyName "Epoch" ;
         st:propertyType "epoch" ;
         st:value "Study Period II Treatment Period" .
 
     e:u-t01-c018-v02 a st:ColumnPropertyValue ;
         st:level 2 ;
         st:position 2 ;
-        st:propertyName "Screening/Lead-in sub-period" ;
+        st:propertyName "Period" ;
         st:propertyType "period" ;
         st:value "Study Period II Treatment Period" .
 
@@ -5121,14 +5121,14 @@ Participants may need to return to clinical site for additional PK-specific visi
     e:u-t01-c019-v01 a st:ColumnPropertyValue ;
         st:level 1 ;
         st:position 1 ;
-        st:propertyName "Study Period" ;
+        st:propertyName "Epoch" ;
         st:propertyType "epoch" ;
         st:value "Study Period II Treatment Period" .
 
     e:u-t01-c019-v02 a st:ColumnPropertyValue ;
         st:level 2 ;
         st:position 2 ;
-        st:propertyName "Screening/Lead-in sub-period" ;
+        st:propertyName "Period" ;
         st:propertyType "period" ;
         st:value "Study Period II Treatment Period" .
 
@@ -5161,14 +5161,14 @@ Participants may need to return to clinical site for additional PK-specific visi
     e:u-t01-c020-v01 a st:ColumnPropertyValue ;
         st:level 1 ;
         st:position 1 ;
-        st:propertyName "Study Period" ;
+        st:propertyName "Epoch" ;
         st:propertyType "epoch" ;
         st:value "" .
 
     e:u-t01-c020-v02 a st:ColumnPropertyValue ;
         st:level 2 ;
         st:position 2 ;
-        st:propertyName "Screening/Lead-in sub-period" ;
+        st:propertyName "Period" ;
         st:propertyType "period" ;
         st:value "" .
 
@@ -5201,14 +5201,14 @@ Participants may need to return to clinical site for additional PK-specific visi
     e:u-t01-c021-v01 a st:ColumnPropertyValue ;
         st:level 1 ;
         st:position 1 ;
-        st:propertyName "Study Period" ;
+        st:propertyName "Epoch" ;
         st:propertyType "epoch" ;
         st:value "Study Period III Safety Follow-Up" .
 
     e:u-t01-c021-v02 a st:ColumnPropertyValue ;
         st:level 2 ;
         st:position 2 ;
-        st:propertyName "Screening/Lead-in sub-period" ;
+        st:propertyName "Period" ;
         st:propertyType "period" ;
         st:value "" .
 
