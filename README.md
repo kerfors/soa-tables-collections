@@ -36,6 +36,19 @@ Full protocol PDFs are not stored here. `register.csv` names each file of record
 its sha256 and source address; the RDF identifies the file by the same hash. The RDF interface is described in
 soa-tables [`documents/rdf-interface.md`](https://github.com/kerfors/soa-tables/blob/main/documents/rdf-interface.md).
 
+## Manifest
+
+`collections/{collection}/studies_protocols.xlsx`: sheet `studies` (`nct_id`, `sponsor`, `study_acronym`, `study_code`,
+`therapeutic_area`, `excluded_reason`; usdm_data has `d4k_folder` in place of `sponsor`, and a collection may add
+columns of its own, e.g. `document_file`) and sheet `protocols` (`nct_id`, `soa_pages`, `protocol_url`; `soa_pages`
+may list several comma-separated ranges).
+
+**`sponsor` is the sponsor as printed on the protocol document**, the file of record — the organisation name as the
+document gives it, not the current lead sponsor in ClinicalTrials.gov / AACT, which can name a later owner
+(NCT03739203: Allergan on the document, AbbVie in AACT). A sub-study whose document prints no sponsor takes the sponsor
+its master protocol prints (the cpmp sub-studies of H0P-MC-CPMP). Where `collection.json` derives the sponsor instead
+(usdm_data, from `d4k_folder`), this rule does not apply.
+
 ## RDF
 
 One TriG file per protocol, holding one named graph (the protocol's transcription). The vocabulary is the SHACL file
