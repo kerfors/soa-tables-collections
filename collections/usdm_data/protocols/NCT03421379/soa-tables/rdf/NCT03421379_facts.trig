@@ -7,12 +7,12 @@
 <https://kerfors.github.io/soa-tables/id/sha256/a94c35b9e940b3cd1b7dc326c11ab004f88f8cea4e0df2fa20d4b28b4be16eba/soa-tables-v1> {
     <https://kerfors.github.io/soa-tables/id/sha256/a94c35b9e940b3cd1b7dc326c11ab004f88f8cea4e0df2fa20d4b28b4be16eba/soa-tables-v1> a st:Transcription ;
         st:aboutStudy <https://kerfors.github.io/soa-tables/id/study/NCT03421379> ;
-        st:codeCommit "51f8dc7552331a64cf57648341e27ac8a53aecfd" ;
-        st:collectionsCommit "9a8c9e4ee840a037cc8e80ae7cfc7aecac88c129" ;
-        st:consolidatedAt "2026-11-21T09:30:38.798859+00:00"^^xsd:dateTime ;
+        st:codeCommit "69e4ad2396a5a1581b0cfe80e0cb2bd56c0feb6f" ;
+        st:collectionsCommit "c1bdc3f7943e98f575fbfb424f2b4652c6cb3104" ;
+        st:consolidatedAt "2026-11-24T10:10:13.279372+00:00"^^xsd:dateTime ;
         st:consolidator "soa_tables.consolidate v1.2" ;
         st:ofFile <https://kerfors.github.io/soa-tables/id/sha256/a94c35b9e940b3cd1b7dc326c11ab004f88f8cea4e0df2fa20d4b28b4be16eba> ;
-        st:schemaVersion "1.7" .
+        st:schemaVersion "1.8" .
 
     e:m-t01-r004-t01-c002 a st:ConsolidatedCell ;
         prov:wasDerivedFrom e:t01-r004-c002 ;

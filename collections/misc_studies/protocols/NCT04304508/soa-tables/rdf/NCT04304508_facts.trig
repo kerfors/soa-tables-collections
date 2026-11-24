@@ -7,12 +7,12 @@
 <https://kerfors.github.io/soa-tables/id/sha256/a3ead0a3d5aba97ddcc503b9effb4f100c905662818ebfec846e9b2361cfb816/soa-tables-v1> {
     <https://kerfors.github.io/soa-tables/id/sha256/a3ead0a3d5aba97ddcc503b9effb4f100c905662818ebfec846e9b2361cfb816/soa-tables-v1> a st:Transcription ;
         st:aboutStudy <https://kerfors.github.io/soa-tables/id/study/NCT04304508> ;
-        st:codeCommit "534d7931b4d62ac7935444b848579770ab403602" ;
-        st:collectionsCommit "09d2bc56afd9283dcc7a52616aca73fabaef2a84" ;
-        st:consolidatedAt "2026-11-22T20:03:57.697726+00:00"^^xsd:dateTime ;
+        st:codeCommit "69e4ad2396a5a1581b0cfe80e0cb2bd56c0feb6f" ;
+        st:collectionsCommit "c1bdc3f7943e98f575fbfb424f2b4652c6cb3104" ;
+        st:consolidatedAt "2026-11-24T10:11:33.548187+00:00"^^xsd:dateTime ;
         st:consolidator "soa_tables.consolidate v1.2" ;
         st:ofFile <https://kerfors.github.io/soa-tables/id/sha256/a3ead0a3d5aba97ddcc503b9effb4f100c905662818ebfec846e9b2361cfb816> ;
-        st:schemaVersion "1.7" .
+        st:schemaVersion "1.8" .
 
     e:decision-ccorr-001 a st:Decision ;
         st:decidedAt "2026-11-22T20:08:00Z"^^xsd:dateTime ;
@@ -37,6 +37,54 @@
         st:decisionTarget e:u-t01-r033 ;
         st:op "refines" ;
         st:reason "Footnote l on this row ('Refer to Table 1–1 PK, PD and Biomarker sampling.') points to Table 1–1, which gives the within-visit sampling timepoints for the row; the table details the row, nothing is merged. Not recorded for 'Study drug intake at the site' (also marked l): Table 1–1 gives sampling timepoints, not an intake schedule." .
+
+    e:decision-ccorr-004 a st:Decision ;
+        st:decidedAt "2026-11-24T10:08:00Z"^^xsd:dateTime ;
+        st:decidedByPerson "Kerstin Forsberg" ;
+        st:decisionSource e:t02-c002 ;
+        st:decisionTarget e:u-t01-c003 ;
+        st:op "within" ;
+        st:reason "T2 header 'Day 1 (Visit 2)' names Visit 2; T1 column 3 is Visit 2 (RND/W0, day 1). The timepoint is taken within that visit; nothing is merged." .
+
+    e:decision-ccorr-005 a st:Decision ;
+        st:decidedAt "2026-11-24T10:08:00Z"^^xsd:dateTime ;
+        st:decidedByPerson "Kerstin Forsberg" ;
+        st:decisionSource e:t02-c003 ;
+        st:decisionTarget e:u-t01-c005 ;
+        st:op "within" ;
+        st:reason "T2 header 'Week 4 (Visit 4)' names Visit 4; T1 column 5 is Visit 4 (W4, day 29±4). The timepoint is taken within that visit; nothing is merged." .
+
+    e:decision-ccorr-006 a st:Decision ;
+        st:decidedAt "2026-11-24T10:08:00Z"^^xsd:dateTime ;
+        st:decidedByPerson "Kerstin Forsberg" ;
+        st:decisionSource e:t02-c004 ;
+        st:decisionTarget e:u-t01-c005 ;
+        st:op "within" ;
+        st:reason "T2 header 'Week 4 (Visit 4)' names Visit 4; T1 column 5 is Visit 4 (W4, day 29±4). The timepoint is taken within that visit; nothing is merged." .
+
+    e:decision-ccorr-007 a st:Decision ;
+        st:decidedAt "2026-11-24T10:08:00Z"^^xsd:dateTime ;
+        st:decidedByPerson "Kerstin Forsberg" ;
+        st:decisionSource e:t02-c005 ;
+        st:decisionTarget e:u-t01-c005 ;
+        st:op "within" ;
+        st:reason "T2 header 'Week 4 (Visit 4)' names Visit 4; T1 column 5 is Visit 4 (W4, day 29±4). The timepoint is taken within that visit; nothing is merged." .
+
+    e:decision-ccorr-008 a st:Decision ;
+        st:decidedAt "2026-11-24T10:08:00Z"^^xsd:dateTime ;
+        st:decidedByPerson "Kerstin Forsberg" ;
+        st:decisionSource e:t02-c007 ;
+        st:decisionTarget e:u-t01-c009 ;
+        st:op "within" ;
+        st:reason "T2 header 'Week 26 (Visit 8) / ET' names two main columns: Visit 8 (T1 column 9, W26, day 183±4) here, early termination in ccorr-009. T2 column 6 ('Week 4 or later (Visit 4 or subsequent visit)') names no single main column and has no entry." .
+
+    e:decision-ccorr-009 a st:Decision ;
+        st:decidedAt "2026-11-24T10:08:00Z"^^xsd:dateTime ;
+        st:decidedByPerson "Kerstin Forsberg" ;
+        st:decisionSource e:t02-c007 ;
+        st:decisionTarget e:u-t01-c014 ;
+        st:op "within" ;
+        st:reason "T2 header 'Week 26 (Visit 8) / ET' names two main columns: early termination (T1 column 14, visit 12a) here, Visit 8 in ccorr-008." .
 
     e:m-t01-r007-t01-c002 a st:ConsolidatedCell ;
         prov:wasDerivedFrom e:t01-r007-c002 ;
@@ -2532,18 +2580,6 @@
         st:onPage page:12 ;
         st:rowPosition 10 .
 
-    e:t02-c003 a st:SourceColumn ;
-        st:columnPosition 3 ;
-        st:inTable e:t02 .
-
-    e:t02-c004 a st:SourceColumn ;
-        st:columnPosition 4 ;
-        st:inTable e:t02 .
-
-    e:t02-c005 a st:SourceColumn ;
-        st:columnPosition 5 ;
-        st:inTable e:t02 .
-
     e:t02-c006 a st:SourceColumn ;
         st:columnPosition 6 ;
         st:inTable e:t02 .
@@ -2631,14 +2667,16 @@
         st:member e:t02-c003 ;
         st:propertyValue e:u-t02-c003-v01,
             e:u-t02-c003-v02 ;
-        st:segment "subsidiary" .
+        st:segment "subsidiary" ;
+        st:withinColumn e:u-t01-c005 .
 
     e:u-t02-c004 a st:UnifiedColumn ;
         st:compositeLabel "Week 4 (Visit 4) / 0.5-1.5h Postdose" ;
         st:member e:t02-c004 ;
         st:propertyValue e:u-t02-c004-v01,
             e:u-t02-c004-v02 ;
-        st:segment "subsidiary" .
+        st:segment "subsidiary" ;
+        st:withinColumn e:u-t01-c005 .
 
     e:u-t02-r005 a st:UnifiedActivity ;
         st:displayOrder 30 ;
@@ -2705,6 +2743,18 @@
         st:onPage page:13 ;
         st:rowPosition 33 .
 
+    e:t02-c003 a st:SourceColumn ;
+        st:columnPosition 3 ;
+        st:inTable e:t02 .
+
+    e:t02-c004 a st:SourceColumn ;
+        st:columnPosition 4 ;
+        st:inTable e:t02 .
+
+    e:t02-c005 a st:SourceColumn ;
+        st:columnPosition 5 ;
+        st:inTable e:t02 .
+
     e:u-t01-c015 a st:UnifiedColumn ;
         st:compositeLabel "Safety Follow-up (SFU) / (14 days after EOT or ET) / 13 / ☎ (site) / EOT or ET +2 weeks 379+7" ;
         st:member e:t01-c015 ;
@@ -2731,14 +2781,16 @@
         st:member e:t02-c002 ;
         st:propertyValue e:u-t02-c002-v01,
             e:u-t02-c002-v02 ;
-        st:segment "subsidiary" .
+        st:segment "subsidiary" ;
+        st:withinColumn e:u-t01-c003 .
 
     e:u-t02-c005 a st:UnifiedColumn ;
         st:compositeLabel "Week 4 (Visit 4) / 2-4 h Postdose" ;
         st:member e:t02-c005 ;
         st:propertyValue e:u-t02-c005-v01,
             e:u-t02-c005-v02 ;
-        st:segment "subsidiary" .
+        st:segment "subsidiary" ;
+        st:withinColumn e:u-t01-c005 .
 
     e:u-t02-c006 a st:UnifiedColumn ;
         st:compositeLabel "Week 4 or later (Visit 4 or subsequent visit) / 4-12 h postdose" ;
@@ -2778,14 +2830,6 @@
         st:name "Study drug intake at the site" ;
         st:onPage page:13 ;
         st:rowPosition 36 .
-
-    e:t02-c002 a st:SourceColumn ;
-        st:columnPosition 2 ;
-        st:inTable e:t02 .
-
-    e:t02-c007 a st:SourceColumn ;
-        st:columnPosition 7 ;
-        st:inTable e:t02 .
 
     e:u-t01-r023 a st:UnifiedActivity ;
         st:displayOrder 18 ;
@@ -2827,7 +2871,9 @@
         st:member e:t02-c007 ;
         st:propertyValue e:u-t02-c007-v01,
             e:u-t02-c007-v02 ;
-        st:segment "subsidiary" .
+        st:segment "subsidiary" ;
+        st:withinColumn e:u-t01-c009,
+            e:u-t01-c014 .
 
     e:t01-r016 a st:SourceActivityRow ;
         st:inTable e:t01 ;
@@ -2844,6 +2890,10 @@
         st:name "Stud drug collection and accountability" ;
         st:onPage page:13 ;
         st:rowPosition 37 .
+
+    e:t02-c002 a st:SourceColumn ;
+        st:columnPosition 2 ;
+        st:inTable e:t02 .
 
     e:t02-r003 a st:SourceActivityRow ;
         st:inTable e:t02 ;
@@ -2923,6 +2973,10 @@
         st:name "mRS, NIHSS assessment" ;
         st:onPage page:12 ;
         st:rowPosition 15 .
+
+    e:t02-c007 a st:SourceColumn ;
+        st:columnPosition 7 ;
+        st:inTable e:t02 .
 
     e:t02-r004 a st:SourceActivityRow ;
         st:inTable e:t02 ;
@@ -3045,16 +3099,6 @@
         st:onPage page:12 ;
         st:rowPosition 24 .
 
-    e:u-t01-c005 a st:UnifiedColumn ;
-        st:compositeLabel "Intervention period / (from RND until End of Treatment visit [EOT], 26 to 52 weeks) / 4 / site / W4 29±4" ;
-        st:member e:t01-c005 ;
-        st:propertyValue e:u-t01-c005-v01,
-            e:u-t01-c005-v02,
-            e:u-t01-c005-v03,
-            e:u-t01-c005-v04,
-            e:u-t01-c005-v05 ;
-        st:segment "main" .
-
     e:u-t01-r017 a st:UnifiedActivity ;
         st:displayOrder 12 ;
         st:hierarchyLevel 1 ;
@@ -3151,26 +3195,6 @@
         st:onPage page:12 ;
         st:rowPosition 19 .
 
-    e:u-t01-c009 a st:UnifiedColumn ;
-        st:compositeLabel "Intervention period / (from RND until End of Treatment visit [EOT], 26 to 52 weeks) / 8 / site / W26 183±4" ;
-        st:member e:t01-c009 ;
-        st:propertyValue e:u-t01-c009-v01,
-            e:u-t01-c009-v02,
-            e:u-t01-c009-v03,
-            e:u-t01-c009-v04,
-            e:u-t01-c009-v05 ;
-        st:segment "main" .
-
-    e:u-t01-c014 a st:UnifiedColumn ;
-        st:compositeLabel "Intervention period / Early termination (ET) / 12a / Site / Any time ET+7" ;
-        st:member e:t01-c014 ;
-        st:propertyValue e:u-t01-c014-v01,
-            e:u-t01-c014-v02,
-            e:u-t01-c014-v03,
-            e:u-t01-c014-v04,
-            e:u-t01-c014-v05 ;
-        st:segment "main" .
-
     e:u-t01-r019 a st:UnifiedActivity ;
         st:displayOrder 14 ;
         st:hierarchyLevel 1 ;
@@ -3194,19 +3218,39 @@
         st:onPage page:12 ;
         st:rowPosition 13 .
 
-    e:u-t01-c003 a st:UnifiedColumn ;
-        st:compositeLabel "Intervention period / (from RND until End of Treatment visit [EOT], 26 to 52 weeks) / 2 / site / RND/W0 1" ;
-        st:member e:t01-c003 ;
-        st:propertyValue e:u-t01-c003-v01,
-            e:u-t01-c003-v02,
-            e:u-t01-c003-v03,
-            e:u-t01-c003-v04,
-            e:u-t01-c003-v05 ;
+    e:u-t01-c005 a st:UnifiedColumn ;
+        st:compositeLabel "Intervention period / (from RND until End of Treatment visit [EOT], 26 to 52 weeks) / 4 / site / W4 29±4" ;
+        st:member e:t01-c005 ;
+        st:propertyValue e:u-t01-c005-v01,
+            e:u-t01-c005-v02,
+            e:u-t01-c005-v03,
+            e:u-t01-c005-v04,
+            e:u-t01-c005-v05 ;
         st:segment "main" .
 
     e:t01-c003 a st:SourceColumn ;
         st:columnPosition 3 ;
         st:inTable e:t01 .
+
+    e:u-t01-c009 a st:UnifiedColumn ;
+        st:compositeLabel "Intervention period / (from RND until End of Treatment visit [EOT], 26 to 52 weeks) / 8 / site / W26 183±4" ;
+        st:member e:t01-c009 ;
+        st:propertyValue e:u-t01-c009-v01,
+            e:u-t01-c009-v02,
+            e:u-t01-c009-v03,
+            e:u-t01-c009-v04,
+            e:u-t01-c009-v05 ;
+        st:segment "main" .
+
+    e:u-t01-c014 a st:UnifiedColumn ;
+        st:compositeLabel "Intervention period / Early termination (ET) / 12a / Site / Any time ET+7" ;
+        st:member e:t01-c014 ;
+        st:propertyValue e:u-t01-c014-v01,
+            e:u-t01-c014-v02,
+            e:u-t01-c014-v03,
+            e:u-t01-c014-v04,
+            e:u-t01-c014-v05 ;
+        st:segment "main" .
 
     e:u-t01-r013 a st:UnifiedActivity ;
         st:displayOrder 8 ;
@@ -3219,6 +3263,16 @@
         st:parent e:u-t01-r006 ;
         st:parentName "Administrative procedures" ;
         st:qualifiedKey "Administrative procedures::Prior and Concomitant medication" .
+
+    e:u-t01-c003 a st:UnifiedColumn ;
+        st:compositeLabel "Intervention period / (from RND until End of Treatment visit [EOT], 26 to 52 weeks) / 2 / site / RND/W0 1" ;
+        st:member e:t01-c003 ;
+        st:propertyValue e:u-t01-c003-v01,
+            e:u-t01-c003-v02,
+            e:u-t01-c003-v03,
+            e:u-t01-c003-v04,
+            e:u-t01-c003-v05 ;
+        st:segment "main" .
 
     page:12 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/a3ead0a3d5aba97ddcc503b9effb4f100c905662818ebfec846e9b2361cfb816> ;

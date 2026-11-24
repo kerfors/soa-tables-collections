@@ -7,12 +7,12 @@
 <https://kerfors.github.io/soa-tables/id/sha256/50c1d6b5f6fd373e632efe858b5bdaa2e00f21f5d8e9cd03d8a0935cd0dd153a/soa-tables-v1> {
     <https://kerfors.github.io/soa-tables/id/sha256/50c1d6b5f6fd373e632efe858b5bdaa2e00f21f5d8e9cd03d8a0935cd0dd153a/soa-tables-v1> a st:Transcription ;
         st:aboutStudy <https://kerfors.github.io/soa-tables/id/study/NCT03637764> ;
-        st:codeCommit "51f8dc7552331a64cf57648341e27ac8a53aecfd" ;
-        st:collectionsCommit "9a8c9e4ee840a037cc8e80ae7cfc7aecac88c129" ;
-        st:consolidatedAt "2026-11-21T09:30:40.711672+00:00"^^xsd:dateTime ;
+        st:codeCommit "69e4ad2396a5a1581b0cfe80e0cb2bd56c0feb6f" ;
+        st:collectionsCommit "c1bdc3f7943e98f575fbfb424f2b4652c6cb3104" ;
+        st:consolidatedAt "2026-11-24T10:10:15.409828+00:00"^^xsd:dateTime ;
         st:consolidator "soa_tables.consolidate v1.2" ;
         st:ofFile <https://kerfors.github.io/soa-tables/id/sha256/50c1d6b5f6fd373e632efe858b5bdaa2e00f21f5d8e9cd03d8a0935cd0dd153a> ;
-        st:schemaVersion "1.7" .
+        st:schemaVersion "1.8" .
 
     e:decision-ccorr-001 a st:Decision ;
         st:decidedAt "2026-10-03T08:53:15Z"^^xsd:dateTime ;
