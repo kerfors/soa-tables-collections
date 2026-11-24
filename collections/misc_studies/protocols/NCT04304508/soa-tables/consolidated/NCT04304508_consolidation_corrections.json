@@ -1,6 +1,6 @@
 {
   "schema_name": "soa-consolidation-corrections",
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "protocol_id": "NCT04304508",
   "corrections": [
     {
@@ -47,6 +47,108 @@
       "reason": "Footnote l on this row ('Refer to Table 1–1 PK, PD and Biomarker sampling.') points to Table 1–1, which gives the within-visit sampling timepoints for the row; the table details the row, nothing is merged. Not recorded for 'Study drug intake at the site' (also marked l): Table 1–1 gives sampling timepoints, not an intake schedule.",
       "by": "Kerstin Forsberg",
       "at": "2026-11-22T20:08:00Z"
+    },
+    {
+      "id": "ccorr-004",
+      "op": "within",
+      "source": {
+        "table_number": 2,
+        "column_position": 2,
+        "composite_label": "Day 1 (Visit 2) / Predose Day 1"
+      },
+      "target": {
+        "table_number": 1,
+        "column_position": 3,
+        "composite_label": "Intervention period / (from RND until End of Treatment visit [EOT], 26 to 52 weeks) / 2 / site / RND/W0 1"
+      },
+      "reason": "T2 header 'Day 1 (Visit 2)' names Visit 2; T1 column 3 is Visit 2 (RND/W0, day 1). The timepoint is taken within that visit; nothing is merged.",
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-24T10:08:00Z"
+    },
+    {
+      "id": "ccorr-005",
+      "op": "within",
+      "source": {
+        "table_number": 2,
+        "column_position": 3,
+        "composite_label": "Week 4 (Visit 4) / Predose"
+      },
+      "target": {
+        "table_number": 1,
+        "column_position": 5,
+        "composite_label": "Intervention period / (from RND until End of Treatment visit [EOT], 26 to 52 weeks) / 4 / site / W4 29±4"
+      },
+      "reason": "T2 header 'Week 4 (Visit 4)' names Visit 4; T1 column 5 is Visit 4 (W4, day 29±4). The timepoint is taken within that visit; nothing is merged.",
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-24T10:08:00Z"
+    },
+    {
+      "id": "ccorr-006",
+      "op": "within",
+      "source": {
+        "table_number": 2,
+        "column_position": 4,
+        "composite_label": "Week 4 (Visit 4) / 0.5-1.5h Postdose"
+      },
+      "target": {
+        "table_number": 1,
+        "column_position": 5,
+        "composite_label": "Intervention period / (from RND until End of Treatment visit [EOT], 26 to 52 weeks) / 4 / site / W4 29±4"
+      },
+      "reason": "T2 header 'Week 4 (Visit 4)' names Visit 4; T1 column 5 is Visit 4 (W4, day 29±4). The timepoint is taken within that visit; nothing is merged.",
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-24T10:08:00Z"
+    },
+    {
+      "id": "ccorr-007",
+      "op": "within",
+      "source": {
+        "table_number": 2,
+        "column_position": 5,
+        "composite_label": "Week 4 (Visit 4) / 2-4 h Postdose"
+      },
+      "target": {
+        "table_number": 1,
+        "column_position": 5,
+        "composite_label": "Intervention period / (from RND until End of Treatment visit [EOT], 26 to 52 weeks) / 4 / site / W4 29±4"
+      },
+      "reason": "T2 header 'Week 4 (Visit 4)' names Visit 4; T1 column 5 is Visit 4 (W4, day 29±4). The timepoint is taken within that visit; nothing is merged.",
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-24T10:08:00Z"
+    },
+    {
+      "id": "ccorr-008",
+      "op": "within",
+      "source": {
+        "table_number": 2,
+        "column_position": 7,
+        "composite_label": "Week 26 (Visit 8) / ET / Predose"
+      },
+      "target": {
+        "table_number": 1,
+        "column_position": 9,
+        "composite_label": "Intervention period / (from RND until End of Treatment visit [EOT], 26 to 52 weeks) / 8 / site / W26 183±4"
+      },
+      "reason": "T2 header 'Week 26 (Visit 8) / ET' names two main columns: Visit 8 (T1 column 9, W26, day 183±4) here, early termination in ccorr-009. T2 column 6 ('Week 4 or later (Visit 4 or subsequent visit)') names no single main column and has no entry.",
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-24T10:08:00Z"
+    },
+    {
+      "id": "ccorr-009",
+      "op": "within",
+      "source": {
+        "table_number": 2,
+        "column_position": 7,
+        "composite_label": "Week 26 (Visit 8) / ET / Predose"
+      },
+      "target": {
+        "table_number": 1,
+        "column_position": 14,
+        "composite_label": "Intervention period / Early termination (ET) / 12a / Site / Any time ET+7"
+      },
+      "reason": "T2 header 'Week 26 (Visit 8) / ET' names two main columns: early termination (T1 column 14, visit 12a) here, Visit 8 in ccorr-008.",
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-24T10:08:00Z"
     }
   ]
 }
