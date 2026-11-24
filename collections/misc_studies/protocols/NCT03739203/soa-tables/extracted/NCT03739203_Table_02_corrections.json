@@ -26,6 +26,142 @@
       },
       "by": "Kerstin Forsberg",
       "at": "2026-11-22T19:58:00Z"
+    },
+    {
+      "id": "corr-003",
+      "target": "activity_schedule",
+      "op": "remove",
+      "match": {
+        "column_position": 2,
+        "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures"
+      },
+      "reason": "B5 data follow-up (decided 2026-11-24): the vertical text in the grey cell merged over all activity rows of column 2 is a pointer to another document, not a schedule entry. Its 25 cells go; the text becomes annotation pr1 (corr-005), the blind 3.9.6 shape.",
+      "source_ref": {
+        "page": 85,
+        "column_position": 2
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-24T07:20:00+01:00"
+    },
+    {
+      "id": "corr-004",
+      "target": "activity_schedule",
+      "op": "remove",
+      "match": {
+        "column_position": 3,
+        "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures"
+      },
+      "reason": "B5 data follow-up (decided 2026-11-24): the vertical text in the grey cell merged over all activity rows of column 3 is a pointer to another document, not a schedule entry. Its 25 cells go; the text becomes annotation pr2 (corr-006), the blind 3.9.6 shape.",
+      "source_ref": {
+        "page": 85,
+        "column_position": 3
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-24T07:20:00+01:00"
+    },
+    {
+      "id": "corr-005",
+      "target": "annotations",
+      "op": "add",
+      "set": {
+        "annotation_marker": "pr1",
+        "annotation_type": "source_note",
+        "annotation_text": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
+        "annotation_text_source": {
+          "method": "visual_transcription",
+          "note": "vertical text in the grey cell merged over all activity rows of column 2, page 85 image"
+        },
+        "marker_locations": [
+          {
+            "table_number": 2,
+            "location_type": "schedule_cell",
+            "row_position": 2,
+            "column_position": 2,
+            "method": "text_match"
+          }
+        ]
+      },
+      "reason": "B5 data follow-up (decided 2026-11-24): the column-2 pointer text (corr-003) as source_note pr1, linked to the Visit-number header cell (2,2). Copied from the blind 3.9.6 output.",
+      "source_ref": {
+        "page": 85,
+        "row_position": 2,
+        "column_position": 2
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-24T07:20:00+01:00"
+    },
+    {
+      "id": "corr-006",
+      "target": "annotations",
+      "op": "add",
+      "set": {
+        "annotation_marker": "pr2",
+        "annotation_type": "source_note",
+        "annotation_text": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
+        "annotation_text_source": {
+          "method": "visual_transcription",
+          "note": "vertical text in the grey cell merged over all activity rows of column 3, page 85 image"
+        },
+        "marker_locations": [
+          {
+            "table_number": 2,
+            "location_type": "schedule_cell",
+            "row_position": 2,
+            "column_position": 3,
+            "method": "text_match"
+          }
+        ]
+      },
+      "reason": "B5 data follow-up (decided 2026-11-24): the column-3 pointer text (corr-004) as source_note pr2, linked to the Visit-number header cell (2,3). Copied from the blind 3.9.6 output.",
+      "source_ref": {
+        "page": 85,
+        "row_position": 2,
+        "column_position": 3
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-24T07:20:00+01:00"
+    },
+    {
+      "id": "corr-007",
+      "target": "schedule_grid",
+      "op": "set",
+      "match": {
+        "row_position": 2,
+        "column_position": 2
+      },
+      "set": {
+        "annotation_markers": "pr1"
+      },
+      "reason": "B5 data follow-up (decided 2026-11-24): the Visit 1 header cell carries pr1 (corr-005).",
+      "source_ref": {
+        "page": 85,
+        "row_position": 2,
+        "column_position": 2,
+        "cell_value": "1"
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-24T07:20:00+01:00"
+    },
+    {
+      "id": "corr-008",
+      "target": "schedule_grid",
+      "op": "set",
+      "match": {
+        "row_position": 2,
+        "column_position": 3
+      },
+      "set": {
+        "annotation_markers": "pr2"
+      },
+      "reason": "B5 data follow-up (decided 2026-11-24): the Visit 2 header cell carries pr2 (corr-006).",
+      "source_ref": {
+        "page": 85,
+        "row_position": 2,
+        "column_position": 3,
+        "cell_value": "2"
+      },
+      "by": "Kerstin Forsberg",
+      "at": "2026-11-24T07:20:00+01:00"
     }
   ]
 }

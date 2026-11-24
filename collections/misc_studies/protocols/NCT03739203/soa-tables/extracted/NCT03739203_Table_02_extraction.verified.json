@@ -141,14 +141,16 @@
    "row_position": 2,
    "column_position": 2,
    "cell_value": "1",
-   "method": "visual_read"
+   "method": "visual_read",
+   "annotation_markers": "pr1"
   },
   {
    "table_number": 2,
    "row_position": 2,
    "column_position": 3,
    "cell_value": "2",
-   "method": "visual_read"
+   "method": "visual_read",
+   "annotation_markers": "pr2"
   },
   {
    "table_number": 2,
@@ -605,20 +607,6 @@
   {
    "table_number": 2,
    "row_position": 5,
-   "column_position": 2,
-   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
-   "method": "visual_read"
-  },
-  {
-   "table_number": 2,
-   "row_position": 5,
-   "column_position": 3,
-   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
-   "method": "visual_read"
-  },
-  {
-   "table_number": 2,
-   "row_position": 5,
    "column_position": 4,
    "cell_value": "(X)",
    "method": "raster_pixel_detection"
@@ -654,37 +642,9 @@
   {
    "table_number": 2,
    "row_position": 6,
-   "column_position": 2,
-   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
-   "method": "visual_read"
-  },
-  {
-   "table_number": 2,
-   "row_position": 6,
-   "column_position": 3,
-   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
-   "method": "visual_read"
-  },
-  {
-   "table_number": 2,
-   "row_position": 6,
    "column_position": 7,
    "cell_value": "X",
    "method": "raster_pixel_detection"
-  },
-  {
-   "table_number": 2,
-   "row_position": 7,
-   "column_position": 2,
-   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
-   "method": "visual_read"
-  },
-  {
-   "table_number": 2,
-   "row_position": 7,
-   "column_position": 3,
-   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
-   "method": "visual_read"
   },
   {
    "table_number": 2,
@@ -699,20 +659,6 @@
    "column_position": 8,
    "cell_value": "X",
    "method": "raster_pixel_detection"
-  },
-  {
-   "table_number": 2,
-   "row_position": 8,
-   "column_position": 2,
-   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
-   "method": "visual_read"
-  },
-  {
-   "table_number": 2,
-   "row_position": 8,
-   "column_position": 3,
-   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
-   "method": "visual_read"
   },
   {
    "table_number": 2,
@@ -752,37 +698,9 @@
   {
    "table_number": 2,
    "row_position": 9,
-   "column_position": 2,
-   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
-   "method": "visual_read"
-  },
-  {
-   "table_number": 2,
-   "row_position": 9,
-   "column_position": 3,
-   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
-   "method": "visual_read"
-  },
-  {
-   "table_number": 2,
-   "row_position": 9,
    "column_position": 7,
    "cell_value": "X",
    "method": "raster_pixel_detection"
-  },
-  {
-   "table_number": 2,
-   "row_position": 10,
-   "column_position": 2,
-   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
-   "method": "visual_read"
-  },
-  {
-   "table_number": 2,
-   "row_position": 10,
-   "column_position": 3,
-   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
-   "method": "visual_read"
   },
   {
    "table_number": 2,
@@ -794,20 +712,6 @@
   {
    "table_number": 2,
    "row_position": 11,
-   "column_position": 2,
-   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
-   "method": "visual_read"
-  },
-  {
-   "table_number": 2,
-   "row_position": 11,
-   "column_position": 3,
-   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
-   "method": "visual_read"
-  },
-  {
-   "table_number": 2,
-   "row_position": 11,
    "column_position": 7,
    "cell_value": "X",
    "method": "raster_pixel_detection"
@@ -815,37 +719,9 @@
   {
    "table_number": 2,
    "row_position": 12,
-   "column_position": 2,
-   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
-   "method": "visual_read"
-  },
-  {
-   "table_number": 2,
-   "row_position": 12,
-   "column_position": 3,
-   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
-   "method": "visual_read"
-  },
-  {
-   "table_number": 2,
-   "row_position": 12,
    "column_position": 7,
    "cell_value": "X",
    "method": "raster_pixel_detection"
-  },
-  {
-   "table_number": 2,
-   "row_position": 13,
-   "column_position": 2,
-   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
-   "method": "visual_read"
-  },
-  {
-   "table_number": 2,
-   "row_position": 13,
-   "column_position": 3,
-   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
-   "method": "visual_read"
   },
   {
    "table_number": 2,
@@ -878,20 +754,6 @@
   {
    "table_number": 2,
    "row_position": 14,
-   "column_position": 2,
-   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
-   "method": "visual_read"
-  },
-  {
-   "table_number": 2,
-   "row_position": 14,
-   "column_position": 3,
-   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
-   "method": "visual_read"
-  },
-  {
-   "table_number": 2,
-   "row_position": 14,
    "column_position": 4,
    "cell_value": "X",
    "method": "raster_pixel_detection"
@@ -920,20 +782,6 @@
   {
    "table_number": 2,
    "row_position": 15,
-   "column_position": 2,
-   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
-   "method": "visual_read"
-  },
-  {
-   "table_number": 2,
-   "row_position": 15,
-   "column_position": 3,
-   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
-   "method": "visual_read"
-  },
-  {
-   "table_number": 2,
-   "row_position": 15,
    "column_position": 4,
    "cell_value": "X",
    "method": "raster_pixel_detection"
@@ -958,20 +806,6 @@
    "column_position": 7,
    "cell_value": "X",
    "method": "raster_pixel_detection"
-  },
-  {
-   "table_number": 2,
-   "row_position": 16,
-   "column_position": 2,
-   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
-   "method": "visual_read"
-  },
-  {
-   "table_number": 2,
-   "row_position": 16,
-   "column_position": 3,
-   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
-   "method": "visual_read"
   },
   {
    "table_number": 2,
@@ -990,37 +824,9 @@
   {
    "table_number": 2,
    "row_position": 17,
-   "column_position": 2,
-   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
-   "method": "visual_read"
-  },
-  {
-   "table_number": 2,
-   "row_position": 17,
-   "column_position": 3,
-   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
-   "method": "visual_read"
-  },
-  {
-   "table_number": 2,
-   "row_position": 17,
    "column_position": 7,
    "cell_value": "X",
    "method": "raster_pixel_detection"
-  },
-  {
-   "table_number": 2,
-   "row_position": 18,
-   "column_position": 2,
-   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
-   "method": "visual_read"
-  },
-  {
-   "table_number": 2,
-   "row_position": 18,
-   "column_position": 3,
-   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
-   "method": "visual_read"
   },
   {
    "table_number": 2,
@@ -1049,20 +855,6 @@
    "column_position": 7,
    "cell_value": "X",
    "method": "raster_pixel_detection"
-  },
-  {
-   "table_number": 2,
-   "row_position": 19,
-   "column_position": 2,
-   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
-   "method": "visual_read"
-  },
-  {
-   "table_number": 2,
-   "row_position": 19,
-   "column_position": 3,
-   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
-   "method": "visual_read"
   },
   {
    "table_number": 2,
@@ -1102,20 +894,6 @@
   {
    "table_number": 2,
    "row_position": 20,
-   "column_position": 2,
-   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
-   "method": "visual_read"
-  },
-  {
-   "table_number": 2,
-   "row_position": 20,
-   "column_position": 3,
-   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
-   "method": "visual_read"
-  },
-  {
-   "table_number": 2,
-   "row_position": 20,
    "column_position": 4,
    "cell_value": "X",
    "method": "raster_pixel_detection"
@@ -1147,20 +925,6 @@
    "column_position": 8,
    "cell_value": "X",
    "method": "raster_pixel_detection"
-  },
-  {
-   "table_number": 2,
-   "row_position": 21,
-   "column_position": 2,
-   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
-   "method": "visual_read"
-  },
-  {
-   "table_number": 2,
-   "row_position": 21,
-   "column_position": 3,
-   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
-   "method": "visual_read"
   },
   {
    "table_number": 2,
@@ -1200,20 +964,6 @@
   {
    "table_number": 2,
    "row_position": 22,
-   "column_position": 2,
-   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
-   "method": "visual_read"
-  },
-  {
-   "table_number": 2,
-   "row_position": 22,
-   "column_position": 3,
-   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
-   "method": "visual_read"
-  },
-  {
-   "table_number": 2,
-   "row_position": 22,
    "column_position": 4,
    "cell_value": "X",
    "method": "raster_pixel_detection"
@@ -1235,20 +985,6 @@
   {
    "table_number": 2,
    "row_position": 23,
-   "column_position": 2,
-   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
-   "method": "visual_read"
-  },
-  {
-   "table_number": 2,
-   "row_position": 23,
-   "column_position": 3,
-   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
-   "method": "visual_read"
-  },
-  {
-   "table_number": 2,
-   "row_position": 23,
    "column_position": 4,
    "cell_value": "X",
    "method": "raster_pixel_detection"
@@ -1266,20 +1002,6 @@
    "column_position": 6,
    "cell_value": "X",
    "method": "raster_pixel_detection"
-  },
-  {
-   "table_number": 2,
-   "row_position": 24,
-   "column_position": 2,
-   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
-   "method": "visual_read"
-  },
-  {
-   "table_number": 2,
-   "row_position": 24,
-   "column_position": 3,
-   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
-   "method": "visual_read"
   },
   {
    "table_number": 2,
@@ -1312,20 +1034,6 @@
   {
    "table_number": 2,
    "row_position": 25,
-   "column_position": 2,
-   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
-   "method": "visual_read"
-  },
-  {
-   "table_number": 2,
-   "row_position": 25,
-   "column_position": 3,
-   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
-   "method": "visual_read"
-  },
-  {
-   "table_number": 2,
-   "row_position": 25,
    "column_position": 4,
    "cell_value": "X",
    "method": "raster_pixel_detection"
@@ -1350,20 +1058,6 @@
    "column_position": 7,
    "cell_value": "X",
    "method": "raster_pixel_detection"
-  },
-  {
-   "table_number": 2,
-   "row_position": 26,
-   "column_position": 2,
-   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
-   "method": "visual_read"
-  },
-  {
-   "table_number": 2,
-   "row_position": 26,
-   "column_position": 3,
-   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
-   "method": "visual_read"
   },
   {
    "table_number": 2,
@@ -1396,20 +1090,6 @@
   {
    "table_number": 2,
    "row_position": 27,
-   "column_position": 2,
-   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
-   "method": "visual_read"
-  },
-  {
-   "table_number": 2,
-   "row_position": 27,
-   "column_position": 3,
-   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
-   "method": "visual_read"
-  },
-  {
-   "table_number": 2,
-   "row_position": 27,
    "column_position": 5,
    "cell_value": "X",
    "method": "raster_pixel_detection"
@@ -1427,20 +1107,6 @@
    "column_position": 7,
    "cell_value": "X",
    "method": "raster_pixel_detection"
-  },
-  {
-   "table_number": 2,
-   "row_position": 28,
-   "column_position": 2,
-   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
-   "method": "visual_read"
-  },
-  {
-   "table_number": 2,
-   "row_position": 28,
-   "column_position": 3,
-   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
-   "method": "visual_read"
   },
   {
    "table_number": 2,
@@ -1473,20 +1139,6 @@
    "cell_value": "X",
    "source_range": "4:7",
    "method": "raster_pixel_detection"
-  },
-  {
-   "table_number": 2,
-   "row_position": 29,
-   "column_position": 2,
-   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
-   "method": "visual_read"
-  },
-  {
-   "table_number": 2,
-   "row_position": 29,
-   "column_position": 3,
-   "cell_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
-   "method": "visual_read"
   },
   {
    "table_number": 2,
@@ -1691,6 +1343,42 @@
      "table_number": 2,
      "location_type": "activity_name",
      "row_position": 29
+    }
+   ]
+  },
+  {
+   "annotation_marker": "pr1",
+   "annotation_type": "source_note",
+   "annotation_text": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
+   "annotation_text_source": {
+    "method": "visual_transcription",
+    "note": "vertical text in the grey cell merged over all activity rows of column 2, page 85 image"
+   },
+   "marker_locations": [
+    {
+     "table_number": 2,
+     "location_type": "schedule_cell",
+     "row_position": 2,
+     "column_position": 2,
+     "method": "text_match"
+    }
+   ]
+  },
+  {
+   "annotation_marker": "pr2",
+   "annotation_type": "source_note",
+   "annotation_text": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
+   "annotation_text_source": {
+    "method": "visual_transcription",
+    "note": "vertical text in the grey cell merged over all activity rows of column 3, page 85 image"
+   },
+   "marker_locations": [
+    {
+     "table_number": 2,
+     "location_type": "schedule_cell",
+     "row_position": 2,
+     "column_position": 3,
+     "method": "text_match"
     }
    ]
   }

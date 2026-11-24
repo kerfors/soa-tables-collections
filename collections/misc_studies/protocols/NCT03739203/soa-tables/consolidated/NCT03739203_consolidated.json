@@ -3,7 +3,7 @@
   "schema_version": "1.7",
   "protocol_id": "NCT03739203",
   "consolidation_metadata": {
-    "consolidated_at": "2026-11-22T20:03:57.168409+00:00",
+    "consolidated_at": "2026-11-24T06:16:26.155388+00:00",
     "consolidator": "soa_tables.consolidate v1.2",
     "source_tables": [
       {
@@ -58,7 +58,7 @@
         "track_label": "COVID-19 Modified",
         "activity_count": 25,
         "column_count": 7,
-        "annotation_count": 13,
+        "annotation_count": 15,
         "property_hierarchy": [
           {
             "hierarchical_level": 1,
@@ -106,12 +106,13 @@
     "unified_activity_count": 40,
     "compression_percent": 34,
     "annotation_stats": {
-      "source_annotation_count": 25,
-      "unified_annotation_count": 25,
+      "source_annotation_count": 27,
+      "unified_annotation_count": 27,
       "deduplicated_count": 0,
       "deduplication_percent": 0,
       "by_type": {
-        "footnote": 25
+        "footnote": 25,
+        "source_note": 2
       }
     }
   },
@@ -2891,22 +2892,6 @@
     },
     {
       "xact_id": "xact-037",
-      "xcol_id": "xcol-008",
-      "consolidated_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
-      "source_values": {
-        "2": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures"
-      }
-    },
-    {
-      "xact_id": "xact-037",
-      "xcol_id": "xcol-009",
-      "consolidated_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
-      "source_values": {
-        "2": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures"
-      }
-    },
-    {
-      "xact_id": "xact-037",
       "xcol_id": "xcol-010",
       "consolidated_value": "(X)",
       "source_values": {
@@ -2947,42 +2932,10 @@
     },
     {
       "xact_id": "xact-007",
-      "xcol_id": "xcol-008",
-      "consolidated_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
-      "source_values": {
-        "2": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures"
-      }
-    },
-    {
-      "xact_id": "xact-007",
-      "xcol_id": "xcol-009",
-      "consolidated_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
-      "source_values": {
-        "2": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures"
-      }
-    },
-    {
-      "xact_id": "xact-007",
       "xcol_id": "xcol-013",
       "consolidated_value": "X",
       "source_values": {
         "2": "X"
-      }
-    },
-    {
-      "xact_id": "xact-008",
-      "xcol_id": "xcol-008",
-      "consolidated_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
-      "source_values": {
-        "2": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures"
-      }
-    },
-    {
-      "xact_id": "xact-008",
-      "xcol_id": "xcol-009",
-      "consolidated_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
-      "source_values": {
-        "2": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures"
       }
     },
     {
@@ -2999,22 +2952,6 @@
       "consolidated_value": "X",
       "source_values": {
         "2": "X"
-      }
-    },
-    {
-      "xact_id": "xact-013",
-      "xcol_id": "xcol-008",
-      "consolidated_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
-      "source_values": {
-        "2": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures"
-      }
-    },
-    {
-      "xact_id": "xact-013",
-      "xcol_id": "xcol-009",
-      "consolidated_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
-      "source_values": {
-        "2": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures"
       }
     },
     {
@@ -3059,42 +2996,10 @@
     },
     {
       "xact_id": "xact-014",
-      "xcol_id": "xcol-008",
-      "consolidated_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
-      "source_values": {
-        "2": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures"
-      }
-    },
-    {
-      "xact_id": "xact-014",
-      "xcol_id": "xcol-009",
-      "consolidated_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
-      "source_values": {
-        "2": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures"
-      }
-    },
-    {
-      "xact_id": "xact-014",
       "xcol_id": "xcol-013",
       "consolidated_value": "X",
       "source_values": {
         "2": "X"
-      }
-    },
-    {
-      "xact_id": "xact-015",
-      "xcol_id": "xcol-008",
-      "consolidated_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
-      "source_values": {
-        "2": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures"
-      }
-    },
-    {
-      "xact_id": "xact-015",
-      "xcol_id": "xcol-009",
-      "consolidated_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
-      "source_values": {
-        "2": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures"
       }
     },
     {
@@ -3107,22 +3012,6 @@
     },
     {
       "xact_id": "xact-020",
-      "xcol_id": "xcol-008",
-      "consolidated_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
-      "source_values": {
-        "2": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures"
-      }
-    },
-    {
-      "xact_id": "xact-020",
-      "xcol_id": "xcol-009",
-      "consolidated_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
-      "source_values": {
-        "2": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures"
-      }
-    },
-    {
-      "xact_id": "xact-020",
       "xcol_id": "xcol-013",
       "consolidated_value": "X",
       "source_values": {
@@ -3131,42 +3020,10 @@
     },
     {
       "xact_id": "xact-021",
-      "xcol_id": "xcol-008",
-      "consolidated_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
-      "source_values": {
-        "2": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures"
-      }
-    },
-    {
-      "xact_id": "xact-021",
-      "xcol_id": "xcol-009",
-      "consolidated_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
-      "source_values": {
-        "2": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures"
-      }
-    },
-    {
-      "xact_id": "xact-021",
       "xcol_id": "xcol-013",
       "consolidated_value": "X",
       "source_values": {
         "2": "X"
-      }
-    },
-    {
-      "xact_id": "xact-022",
-      "xcol_id": "xcol-008",
-      "consolidated_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
-      "source_values": {
-        "2": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures"
-      }
-    },
-    {
-      "xact_id": "xact-022",
-      "xcol_id": "xcol-009",
-      "consolidated_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
-      "source_values": {
-        "2": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures"
       }
     },
     {
@@ -3203,22 +3060,6 @@
     },
     {
       "xact_id": "xact-023",
-      "xcol_id": "xcol-008",
-      "consolidated_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
-      "source_values": {
-        "2": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures"
-      }
-    },
-    {
-      "xact_id": "xact-023",
-      "xcol_id": "xcol-009",
-      "consolidated_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
-      "source_values": {
-        "2": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures"
-      }
-    },
-    {
-      "xact_id": "xact-023",
       "xcol_id": "xcol-010",
       "consolidated_value": "X",
       "source_values": {
@@ -3251,22 +3092,6 @@
     },
     {
       "xact_id": "xact-024",
-      "xcol_id": "xcol-008",
-      "consolidated_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
-      "source_values": {
-        "2": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures"
-      }
-    },
-    {
-      "xact_id": "xact-024",
-      "xcol_id": "xcol-009",
-      "consolidated_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
-      "source_values": {
-        "2": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures"
-      }
-    },
-    {
-      "xact_id": "xact-024",
       "xcol_id": "xcol-010",
       "consolidated_value": "X",
       "source_values": {
@@ -3295,22 +3120,6 @@
       "consolidated_value": "X",
       "source_values": {
         "2": "X"
-      }
-    },
-    {
-      "xact_id": "xact-025",
-      "xcol_id": "xcol-008",
-      "consolidated_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
-      "source_values": {
-        "2": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures"
-      }
-    },
-    {
-      "xact_id": "xact-025",
-      "xcol_id": "xcol-009",
-      "consolidated_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
-      "source_values": {
-        "2": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures"
       }
     },
     {
@@ -3331,42 +3140,10 @@
     },
     {
       "xact_id": "xact-026",
-      "xcol_id": "xcol-008",
-      "consolidated_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
-      "source_values": {
-        "2": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures"
-      }
-    },
-    {
-      "xact_id": "xact-026",
-      "xcol_id": "xcol-009",
-      "consolidated_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
-      "source_values": {
-        "2": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures"
-      }
-    },
-    {
-      "xact_id": "xact-026",
       "xcol_id": "xcol-013",
       "consolidated_value": "X",
       "source_values": {
         "2": "X"
-      }
-    },
-    {
-      "xact_id": "xact-027",
-      "xcol_id": "xcol-008",
-      "consolidated_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
-      "source_values": {
-        "2": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures"
-      }
-    },
-    {
-      "xact_id": "xact-027",
-      "xcol_id": "xcol-009",
-      "consolidated_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
-      "source_values": {
-        "2": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures"
       }
     },
     {
@@ -3399,22 +3176,6 @@
       "consolidated_value": "X",
       "source_values": {
         "2": "X"
-      }
-    },
-    {
-      "xact_id": "xact-028",
-      "xcol_id": "xcol-008",
-      "consolidated_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
-      "source_values": {
-        "2": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures"
-      }
-    },
-    {
-      "xact_id": "xact-028",
-      "xcol_id": "xcol-009",
-      "consolidated_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
-      "source_values": {
-        "2": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures"
       }
     },
     {
@@ -3459,22 +3220,6 @@
     },
     {
       "xact_id": "xact-029",
-      "xcol_id": "xcol-008",
-      "consolidated_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
-      "source_values": {
-        "2": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures"
-      }
-    },
-    {
-      "xact_id": "xact-029",
-      "xcol_id": "xcol-009",
-      "consolidated_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
-      "source_values": {
-        "2": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures"
-      }
-    },
-    {
-      "xact_id": "xact-029",
       "xcol_id": "xcol-010",
       "consolidated_value": "X",
       "source_values": {
@@ -3511,22 +3256,6 @@
       "consolidated_value": "X",
       "source_values": {
         "2": "X"
-      }
-    },
-    {
-      "xact_id": "xact-030",
-      "xcol_id": "xcol-008",
-      "consolidated_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
-      "source_values": {
-        "2": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures"
-      }
-    },
-    {
-      "xact_id": "xact-030",
-      "xcol_id": "xcol-009",
-      "consolidated_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
-      "source_values": {
-        "2": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures"
       }
     },
     {
@@ -3571,22 +3300,6 @@
     },
     {
       "xact_id": "xact-038",
-      "xcol_id": "xcol-008",
-      "consolidated_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
-      "source_values": {
-        "2": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures"
-      }
-    },
-    {
-      "xact_id": "xact-038",
-      "xcol_id": "xcol-009",
-      "consolidated_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
-      "source_values": {
-        "2": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures"
-      }
-    },
-    {
-      "xact_id": "xact-038",
       "xcol_id": "xcol-010",
       "consolidated_value": "X",
       "source_values": {
@@ -3611,22 +3324,6 @@
     },
     {
       "xact_id": "xact-031",
-      "xcol_id": "xcol-008",
-      "consolidated_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
-      "source_values": {
-        "2": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures"
-      }
-    },
-    {
-      "xact_id": "xact-031",
-      "xcol_id": "xcol-009",
-      "consolidated_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
-      "source_values": {
-        "2": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures"
-      }
-    },
-    {
-      "xact_id": "xact-031",
       "xcol_id": "xcol-010",
       "consolidated_value": "X",
       "source_values": {
@@ -3651,22 +3348,6 @@
     },
     {
       "xact_id": "xact-039",
-      "xcol_id": "xcol-008",
-      "consolidated_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
-      "source_values": {
-        "2": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures"
-      }
-    },
-    {
-      "xact_id": "xact-039",
-      "xcol_id": "xcol-009",
-      "consolidated_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
-      "source_values": {
-        "2": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures"
-      }
-    },
-    {
-      "xact_id": "xact-039",
       "xcol_id": "xcol-010",
       "consolidated_value": "X",
       "source_values": {
@@ -3695,22 +3376,6 @@
       "consolidated_value": "X",
       "source_values": {
         "2": "X"
-      }
-    },
-    {
-      "xact_id": "xact-033",
-      "xcol_id": "xcol-008",
-      "consolidated_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
-      "source_values": {
-        "2": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures"
-      }
-    },
-    {
-      "xact_id": "xact-033",
-      "xcol_id": "xcol-009",
-      "consolidated_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
-      "source_values": {
-        "2": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures"
       }
     },
     {
@@ -3747,22 +3412,6 @@
     },
     {
       "xact_id": "xact-040",
-      "xcol_id": "xcol-008",
-      "consolidated_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
-      "source_values": {
-        "2": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures"
-      }
-    },
-    {
-      "xact_id": "xact-040",
-      "xcol_id": "xcol-009",
-      "consolidated_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
-      "source_values": {
-        "2": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures"
-      }
-    },
-    {
-      "xact_id": "xact-040",
       "xcol_id": "xcol-010",
       "consolidated_value": "X",
       "source_values": {
@@ -3795,22 +3444,6 @@
     },
     {
       "xact_id": "xact-036",
-      "xcol_id": "xcol-008",
-      "consolidated_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
-      "source_values": {
-        "2": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures"
-      }
-    },
-    {
-      "xact_id": "xact-036",
-      "xcol_id": "xcol-009",
-      "consolidated_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
-      "source_values": {
-        "2": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures"
-      }
-    },
-    {
-      "xact_id": "xact-036",
       "xcol_id": "xcol-011",
       "consolidated_value": "X",
       "source_values": {
@@ -3831,22 +3464,6 @@
       "consolidated_value": "X",
       "source_values": {
         "2": "X"
-      }
-    },
-    {
-      "xact_id": "xact-034",
-      "xcol_id": "xcol-008",
-      "consolidated_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
-      "source_values": {
-        "2": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures"
-      }
-    },
-    {
-      "xact_id": "xact-034",
-      "xcol_id": "xcol-009",
-      "consolidated_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
-      "source_values": {
-        "2": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures"
       }
     },
     {
@@ -3879,22 +3496,6 @@
       "consolidated_value": "X",
       "source_values": {
         "2": "X"
-      }
-    },
-    {
-      "xact_id": "xact-035",
-      "xcol_id": "xcol-008",
-      "consolidated_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
-      "source_values": {
-        "2": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures"
-      }
-    },
-    {
-      "xact_id": "xact-035",
-      "xcol_id": "xcol-009",
-      "consolidated_value": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
-      "source_values": {
-        "2": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures"
       }
     },
     {
@@ -4435,6 +4036,46 @@
         "xact-035"
       ],
       "referenced_xcols": [],
+      "referenced_props": [],
+      "cell_references": [],
+      "occurrence_count": 1
+    },
+    {
+      "xannot_id": "xannot-026",
+      "annotation_type": "source_note",
+      "annotation_text": "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures",
+      "display_markers": "T2:pr1",
+      "source_occurrences": [
+        {
+          "table_num": 2,
+          "marker": "pr1",
+          "annotation_id": "annot-014"
+        }
+      ],
+      "referenced_xacts": [],
+      "referenced_xcols": [
+        "xcol-008"
+      ],
+      "referenced_props": [],
+      "cell_references": [],
+      "occurrence_count": 1
+    },
+    {
+      "xannot_id": "xannot-027",
+      "annotation_type": "source_note",
+      "annotation_text": "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures",
+      "display_markers": "T2:pr2",
+      "source_occurrences": [
+        {
+          "table_num": 2,
+          "marker": "pr2",
+          "annotation_id": "annot-015"
+        }
+      ],
+      "referenced_xacts": [],
+      "referenced_xcols": [
+        "xcol-009"
+      ],
       "referenced_props": [],
       "cell_references": [],
       "occurrence_count": 1
