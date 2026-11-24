@@ -1,9 +1,9 @@
 {
   "schema_name": "soa-tables-consolidated",
-  "schema_version": "1.7",
+  "schema_version": "1.8",
   "protocol_id": "NCT04529096",
   "consolidation_metadata": {
-    "consolidated_at": "2026-11-21T09:30:24.429289+00:00",
+    "consolidated_at": "2026-11-24T10:09:34.787350+00:00",
     "consolidator": "soa_tables.consolidate v1.2",
     "source_tables": [
       {
