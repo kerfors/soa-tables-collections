@@ -7,9 +7,9 @@
 <https://kerfors.github.io/soa-tables/id/sha256/dc5e2ae3233f1b83841dfee437e3105001fb2cd63479b6edb30b0a9b9fce92c5/soa-tables-v1> {
     <https://kerfors.github.io/soa-tables/id/sha256/dc5e2ae3233f1b83841dfee437e3105001fb2cd63479b6edb30b0a9b9fce92c5/soa-tables-v1> a st:Transcription ;
         st:aboutStudy <https://kerfors.github.io/soa-tables/id/study/NCT03739203> ;
-        st:codeCommit "534d7931b4d62ac7935444b848579770ab403602" ;
-        st:collectionsCommit "09d2bc56afd9283dcc7a52616aca73fabaef2a84" ;
-        st:consolidatedAt "2026-11-22T20:03:57.168409+00:00"^^xsd:dateTime ;
+        st:codeCommit "5fd108eba390feb7d16bad1a53b2ca52cb8e0292" ;
+        st:collectionsCommit "4d7ce68ffcb25c8143a082ceb5753b9fcc31a22d" ;
+        st:consolidatedAt "2026-11-24T06:16:26.155388+00:00"^^xsd:dateTime ;
         st:consolidator "soa_tables.consolidate v1.2" ;
         st:ofFile <https://kerfors.github.io/soa-tables/id/sha256/dc5e2ae3233f1b83841dfee437e3105001fb2cd63479b6edb30b0a9b9fce92c5> ;
         st:schemaVersion "1.7" .
@@ -68,18 +68,6 @@
         st:column e:u-t01-c007 ;
         st:value "X" .
 
-    e:m-t01-r012-t02-c002 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r006-c002 ;
-        st:activity e:u-t01-r012 ;
-        st:column e:u-t02-c002 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures" .
-
-    e:m-t01-r012-t02-c003 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r006-c003 ;
-        st:activity e:u-t01-r012 ;
-        st:column e:u-t02-c003 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures" .
-
     e:m-t01-r012-t02-c007 a st:ConsolidatedCell ;
         prov:wasDerivedFrom e:t02-r006-c007 ;
         st:activity e:u-t01-r012 ;
@@ -103,18 +91,6 @@
         st:activity e:u-t01-r013 ;
         st:column e:u-t01-c008 ;
         st:value "X" .
-
-    e:m-t01-r013-t02-c002 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r007-c002 ;
-        st:activity e:u-t01-r013 ;
-        st:column e:u-t02-c002 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures" .
-
-    e:m-t01-r013-t02-c003 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r007-c003 ;
-        st:activity e:u-t01-r013 ;
-        st:column e:u-t02-c003 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures" .
 
     e:m-t01-r013-t02-c007 a st:ConsolidatedCell ;
         prov:wasDerivedFrom e:t02-r007-c007 ;
@@ -194,18 +170,6 @@
         st:column e:u-t01-c008 ;
         st:value "X" .
 
-    e:m-t01-r018-t02-c002 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r008-c002 ;
-        st:activity e:u-t01-r018 ;
-        st:column e:u-t02-c002 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures" .
-
-    e:m-t01-r018-t02-c003 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r008-c003 ;
-        st:activity e:u-t01-r018 ;
-        st:column e:u-t02-c003 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures" .
-
     e:m-t01-r018-t02-c004 a st:ConsolidatedCell ;
         prov:wasDerivedFrom e:t02-r008-c004 ;
         st:activity e:u-t01-r018 ;
@@ -248,18 +212,6 @@
         st:column e:u-t01-c007 ;
         st:value "X" .
 
-    e:m-t01-r019-t02-c002 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r009-c002 ;
-        st:activity e:u-t01-r019 ;
-        st:column e:u-t02-c002 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures" .
-
-    e:m-t01-r019-t02-c003 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r009-c003 ;
-        st:activity e:u-t01-r019 ;
-        st:column e:u-t02-c003 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures" .
-
     e:m-t01-r019-t02-c007 a st:ConsolidatedCell ;
         prov:wasDerivedFrom e:t02-r009-c007 ;
         st:activity e:u-t01-r019 ;
@@ -277,18 +229,6 @@
         st:activity e:u-t01-r020 ;
         st:column e:u-t01-c007 ;
         st:value "X" .
-
-    e:m-t01-r020-t02-c002 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r010-c002 ;
-        st:activity e:u-t01-r020 ;
-        st:column e:u-t02-c002 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures" .
-
-    e:m-t01-r020-t02-c003 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r010-c003 ;
-        st:activity e:u-t01-r020 ;
-        st:column e:u-t02-c003 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures" .
 
     e:m-t01-r020-t02-c007 a st:ConsolidatedCell ;
         prov:wasDerivedFrom e:t02-r010-c007 ;
@@ -338,18 +278,6 @@
         st:column e:u-t01-c007 ;
         st:value "X" .
 
-    e:m-t01-r025-t02-c002 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r011-c002 ;
-        st:activity e:u-t01-r025 ;
-        st:column e:u-t02-c002 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures" .
-
-    e:m-t01-r025-t02-c003 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r011-c003 ;
-        st:activity e:u-t01-r025 ;
-        st:column e:u-t02-c003 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures" .
-
     e:m-t01-r025-t02-c007 a st:ConsolidatedCell ;
         prov:wasDerivedFrom e:t02-r011-c007 ;
         st:activity e:u-t01-r025 ;
@@ -373,18 +301,6 @@
         st:activity e:u-t01-r026 ;
         st:column e:u-t01-c007 ;
         st:value "X" .
-
-    e:m-t01-r026-t02-c002 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r012-c002 ;
-        st:activity e:u-t01-r026 ;
-        st:column e:u-t02-c002 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures" .
-
-    e:m-t01-r026-t02-c003 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r012-c003 ;
-        st:activity e:u-t01-r026 ;
-        st:column e:u-t02-c003 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures" .
 
     e:m-t01-r026-t02-c007 a st:ConsolidatedCell ;
         prov:wasDerivedFrom e:t02-r012-c007 ;
@@ -427,18 +343,6 @@
         st:activity e:u-t01-r027 ;
         st:column e:u-t01-c007 ;
         st:value "X" .
-
-    e:m-t01-r027-t02-c002 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r013-c002 ;
-        st:activity e:u-t01-r027 ;
-        st:column e:u-t02-c002 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures" .
-
-    e:m-t01-r027-t02-c003 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r013-c003 ;
-        st:activity e:u-t01-r027 ;
-        st:column e:u-t02-c003 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures" .
 
     e:m-t01-r027-t02-c004 a st:ConsolidatedCell ;
         prov:wasDerivedFrom e:t02-r013-c004 ;
@@ -500,18 +404,6 @@
         st:column e:u-t01-c007 ;
         st:value "X" .
 
-    e:m-t01-r028-t02-c002 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r014-c002 ;
-        st:activity e:u-t01-r028 ;
-        st:column e:u-t02-c002 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures" .
-
-    e:m-t01-r028-t02-c003 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r014-c003 ;
-        st:activity e:u-t01-r028 ;
-        st:column e:u-t02-c003 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures" .
-
     e:m-t01-r028-t02-c004 a st:ConsolidatedCell ;
         prov:wasDerivedFrom e:t02-r014-c004 ;
         st:activity e:u-t01-r028 ;
@@ -560,18 +452,6 @@
         st:column e:u-t01-c007 ;
         st:value "X" .
 
-    e:m-t01-r029-t02-c002 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r015-c002 ;
-        st:activity e:u-t01-r029 ;
-        st:column e:u-t02-c002 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures" .
-
-    e:m-t01-r029-t02-c003 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r015-c003 ;
-        st:activity e:u-t01-r029 ;
-        st:column e:u-t02-c003 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures" .
-
     e:m-t01-r029-t02-c004 a st:ConsolidatedCell ;
         prov:wasDerivedFrom e:t02-r015-c004 ;
         st:activity e:u-t01-r029 ;
@@ -614,18 +494,6 @@
         st:column e:u-t01-c007 ;
         st:value "X" .
 
-    e:m-t01-r035-t02-c002 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r016-c002 ;
-        st:activity e:u-t01-r035 ;
-        st:column e:u-t02-c002 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures" .
-
-    e:m-t01-r035-t02-c003 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r016-c003 ;
-        st:activity e:u-t01-r035 ;
-        st:column e:u-t02-c003 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures" .
-
     e:m-t01-r035-t02-c005 a st:ConsolidatedCell ;
         prov:wasDerivedFrom e:t02-r016-c005 ;
         st:activity e:u-t01-r035 ;
@@ -649,18 +517,6 @@
         st:activity e:u-t01-r036 ;
         st:column e:u-t01-c007 ;
         st:value "X" .
-
-    e:m-t01-r036-t02-c002 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r017-c002 ;
-        st:activity e:u-t01-r036 ;
-        st:column e:u-t02-c002 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures" .
-
-    e:m-t01-r036-t02-c003 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r017-c003 ;
-        st:activity e:u-t01-r036 ;
-        st:column e:u-t02-c003 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures" .
 
     e:m-t01-r036-t02-c007 a st:ConsolidatedCell ;
         prov:wasDerivedFrom e:t02-r017-c007 ;
@@ -697,18 +553,6 @@
         st:activity e:u-t01-r037 ;
         st:column e:u-t01-c007 ;
         st:value "X" .
-
-    e:m-t01-r037-t02-c002 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r018-c002 ;
-        st:activity e:u-t01-r037 ;
-        st:column e:u-t02-c002 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures" .
-
-    e:m-t01-r037-t02-c003 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r018-c003 ;
-        st:activity e:u-t01-r037 ;
-        st:column e:u-t02-c003 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures" .
 
     e:m-t01-r037-t02-c004 a st:ConsolidatedCell ;
         prov:wasDerivedFrom e:t02-r018-c004 ;
@@ -775,18 +619,6 @@
         st:activity e:u-t01-r038 ;
         st:column e:u-t01-c008 ;
         st:value "X" .
-
-    e:m-t01-r038-t02-c002 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r019-c002 ;
-        st:activity e:u-t01-r038 ;
-        st:column e:u-t02-c002 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures" .
-
-    e:m-t01-r038-t02-c003 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r019-c003 ;
-        st:activity e:u-t01-r038 ;
-        st:column e:u-t02-c003 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures" .
 
     e:m-t01-r038-t02-c004 a st:ConsolidatedCell ;
         prov:wasDerivedFrom e:t02-r019-c004 ;
@@ -860,18 +692,6 @@
         st:column e:u-t01-c008 ;
         st:value "X" .
 
-    e:m-t01-r039-t02-c002 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r020-c002 ;
-        st:activity e:u-t01-r039 ;
-        st:column e:u-t02-c002 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures" .
-
-    e:m-t01-r039-t02-c003 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r020-c003 ;
-        st:activity e:u-t01-r039 ;
-        st:column e:u-t02-c003 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures" .
-
     e:m-t01-r039-t02-c004 a st:ConsolidatedCell ;
         prov:wasDerivedFrom e:t02-r020-c004 ;
         st:activity e:u-t01-r039 ;
@@ -944,18 +764,6 @@
         st:column e:u-t01-c008 ;
         st:value "X" .
 
-    e:m-t01-r040-t02-c002 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r021-c002 ;
-        st:activity e:u-t01-r040 ;
-        st:column e:u-t02-c002 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures" .
-
-    e:m-t01-r040-t02-c003 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r021-c003 ;
-        st:activity e:u-t01-r040 ;
-        st:column e:u-t02-c003 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures" .
-
     e:m-t01-r040-t02-c004 a st:ConsolidatedCell ;
         prov:wasDerivedFrom e:t02-r021-c004 ;
         st:activity e:u-t01-r040 ;
@@ -1009,18 +817,6 @@
         st:activity e:u-t01-r041 ;
         st:column e:u-t01-c006 ;
         st:value "X" .
-
-    e:m-t01-r041-t02-c002 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r023-c002 ;
-        st:activity e:u-t01-r041 ;
-        st:column e:u-t02-c002 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures" .
-
-    e:m-t01-r041-t02-c003 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r023-c003 ;
-        st:activity e:u-t01-r041 ;
-        st:column e:u-t02-c003 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures" .
 
     e:m-t01-r041-t02-c004 a st:ConsolidatedCell ;
         prov:wasDerivedFrom e:t02-r023-c004 ;
@@ -1094,18 +890,6 @@
         st:column e:u-t01-c007 ;
         st:value "X" .
 
-    e:m-t01-r043-t02-c002 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r025-c002 ;
-        st:activity e:u-t01-r043 ;
-        st:column e:u-t02-c002 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures" .
-
-    e:m-t01-r043-t02-c003 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r025-c003 ;
-        st:activity e:u-t01-r043 ;
-        st:column e:u-t02-c003 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures" .
-
     e:m-t01-r043-t02-c004 a st:ConsolidatedCell ;
         prov:wasDerivedFrom e:t02-r025-c004 ;
         st:activity e:u-t01-r043 ;
@@ -1166,18 +950,6 @@
         st:column e:u-t01-c007 ;
         st:value "X" .
 
-    e:m-t01-r044-t02-c002 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r028-c002 ;
-        st:activity e:u-t01-r044 ;
-        st:column e:u-t02-c002 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures" .
-
-    e:m-t01-r044-t02-c003 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r028-c003 ;
-        st:activity e:u-t01-r044 ;
-        st:column e:u-t02-c003 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures" .
-
     e:m-t01-r044-t02-c004 a st:ConsolidatedCell ;
         prov:wasDerivedFrom e:t02-r028-c004 ;
         st:activity e:u-t01-r044 ;
@@ -1232,18 +1004,6 @@
         st:column e:u-t01-c007 ;
         st:value "X" .
 
-    e:m-t01-r045-t02-c002 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r029-c002 ;
-        st:activity e:u-t01-r045 ;
-        st:column e:u-t02-c002 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures" .
-
-    e:m-t01-r045-t02-c003 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r029-c003 ;
-        st:activity e:u-t01-r045 ;
-        st:column e:u-t02-c003 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures" .
-
     e:m-t01-r045-t02-c004 a st:ConsolidatedCell ;
         prov:wasDerivedFrom e:t02-r029-c004 ;
         st:activity e:u-t01-r045 ;
@@ -1286,18 +1046,6 @@
         st:column e:u-t01-c007 ;
         st:value "X" .
 
-    e:m-t01-r046-t02-c002 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r027-c002 ;
-        st:activity e:u-t01-r046 ;
-        st:column e:u-t02-c002 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures" .
-
-    e:m-t01-r046-t02-c003 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r027-c003 ;
-        st:activity e:u-t01-r046 ;
-        st:column e:u-t02-c003 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures" .
-
     e:m-t01-r046-t02-c005 a st:ConsolidatedCell ;
         prov:wasDerivedFrom e:t02-r027-c005 ;
         st:activity e:u-t01-r046 ;
@@ -1315,18 +1063,6 @@
         st:activity e:u-t01-r046 ;
         st:column e:u-t02-c007 ;
         st:value "X" .
-
-    e:m-t02-r005-t02-c002 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r005-c002 ;
-        st:activity e:u-t02-r005 ;
-        st:column e:u-t02-c002 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures" .
-
-    e:m-t02-r005-t02-c003 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r005-c003 ;
-        st:activity e:u-t02-r005 ;
-        st:column e:u-t02-c003 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures" .
 
     e:m-t02-r005-t02-c004 a st:ConsolidatedCell ;
         prov:wasDerivedFrom e:t02-r005-c004 ;
@@ -1358,18 +1094,6 @@
         st:column e:u-t02-c008 ;
         st:value "(X)" .
 
-    e:m-t02-r022-t02-c002 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r022-c002 ;
-        st:activity e:u-t02-r022 ;
-        st:column e:u-t02-c002 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures" .
-
-    e:m-t02-r022-t02-c003 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r022-c003 ;
-        st:activity e:u-t02-r022 ;
-        st:column e:u-t02-c003 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures" .
-
     e:m-t02-r022-t02-c004 a st:ConsolidatedCell ;
         prov:wasDerivedFrom e:t02-r022-c004 ;
         st:activity e:u-t02-r022 ;
@@ -1387,18 +1111,6 @@
         st:activity e:u-t02-r022 ;
         st:column e:u-t02-c006 ;
         st:value "X" .
-
-    e:m-t02-r024-t02-c002 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r024-c002 ;
-        st:activity e:u-t02-r024 ;
-        st:column e:u-t02-c002 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures" .
-
-    e:m-t02-r024-t02-c003 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r024-c003 ;
-        st:activity e:u-t02-r024 ;
-        st:column e:u-t02-c003 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures" .
 
     e:m-t02-r024-t02-c004 a st:ConsolidatedCell ;
         prov:wasDerivedFrom e:t02-r024-c004 ;
@@ -1423,18 +1135,6 @@
         st:activity e:u-t02-r024 ;
         st:column e:u-t02-c007 ;
         st:value "X" .
-
-    e:m-t02-r026-t02-c002 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r026-c002 ;
-        st:activity e:u-t02-r026 ;
-        st:column e:u-t02-c002 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures" .
-
-    e:m-t02-r026-t02-c003 a st:ConsolidatedCell ;
-        prov:wasDerivedFrom e:t02-r026-c003 ;
-        st:activity e:u-t02-r026 ;
-        st:column e:u-t02-c003 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures" .
 
     e:m-t02-r026-t02-c004 a st:ConsolidatedCell ;
         prov:wasDerivedFrom e:t02-r026-c004 ;
@@ -1662,6 +1362,18 @@
         st:occurrence e:t02-n-l ;
         st:refersToActivity e:u-t01-r045 ;
         st:text "Pharmacogenetic sample (1 per patient for the entire study) may be obtained from randomized patients at any time between Visit 2 (Baseline) and Visit 6 (Week 6). To be omitted if sampling is not possible due to remote visits being completed." .
+
+    e:u-t02-n-pr1 a st:UnifiedAnnotation ;
+        st:annotationType "source_note" ;
+        st:occurrence e:t02-n-pr1 ;
+        st:refersToColumn e:u-t02-c002 ;
+        st:text "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures" .
+
+    e:u-t02-n-pr2 a st:UnifiedAnnotation ;
+        st:annotationType "source_note" ;
+        st:occurrence e:t02-n-pr2 ;
+        st:refersToColumn e:u-t02-c003 ;
+        st:text "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures" .
 
     e:u-t02-n-x2a a st:UnifiedAnnotation ;
         st:annotationType "footnote" ;
@@ -2335,6 +2047,14 @@
         st:row e:t01-r046 ;
         st:value "X" .
 
+    e:t02-c002 a st:SourceColumn ;
+        st:columnPosition 2 ;
+        st:inTable e:t02 .
+
+    e:t02-c003 a st:SourceColumn ;
+        st:columnPosition 3 ;
+        st:inTable e:t02 .
+
     e:t02-n-a a st:SourceAnnotation ;
         st:inTable e:t02 ;
         st:marker "a" .
@@ -2383,6 +2103,14 @@
         st:inTable e:t02 ;
         st:marker "l" .
 
+    e:t02-n-pr1 a st:SourceAnnotation ;
+        st:inTable e:t02 ;
+        st:marker "pr1" .
+
+    e:t02-n-pr2 a st:SourceAnnotation ;
+        st:inTable e:t02 ;
+        st:marker "pr2" .
+
     e:t02-n-x2a a st:SourceAnnotation ;
         st:inTable e:t02 ;
         st:marker "*" .
@@ -2419,16 +2147,6 @@
         st:propertyType "study_day" ;
         st:rowPosition 4 .
 
-    e:t02-r005-c002 a st:SourceCell ;
-        st:column e:t02-c002 ;
-        st:row e:t02-r005 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures" .
-
-    e:t02-r005-c003 a st:SourceCell ;
-        st:column e:t02-c003 ;
-        st:row e:t02-r005 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures" .
-
     e:t02-r005-c004 a st:SourceCell ;
         st:column e:t02-c004 ;
         st:row e:t02-r005 ;
@@ -2454,30 +2172,10 @@
         st:row e:t02-r005 ;
         st:value "(X)" .
 
-    e:t02-r006-c002 a st:SourceCell ;
-        st:column e:t02-c002 ;
-        st:row e:t02-r006 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures" .
-
-    e:t02-r006-c003 a st:SourceCell ;
-        st:column e:t02-c003 ;
-        st:row e:t02-r006 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures" .
-
     e:t02-r006-c007 a st:SourceCell ;
         st:column e:t02-c007 ;
         st:row e:t02-r006 ;
         st:value "X" .
-
-    e:t02-r007-c002 a st:SourceCell ;
-        st:column e:t02-c002 ;
-        st:row e:t02-r007 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures" .
-
-    e:t02-r007-c003 a st:SourceCell ;
-        st:column e:t02-c003 ;
-        st:row e:t02-r007 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures" .
 
     e:t02-r007-c007 a st:SourceCell ;
         st:column e:t02-c007 ;
@@ -2488,16 +2186,6 @@
         st:column e:t02-c008 ;
         st:row e:t02-r007 ;
         st:value "X" .
-
-    e:t02-r008-c002 a st:SourceCell ;
-        st:column e:t02-c002 ;
-        st:row e:t02-r008 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures" .
-
-    e:t02-r008-c003 a st:SourceCell ;
-        st:column e:t02-c003 ;
-        st:row e:t02-r008 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures" .
 
     e:t02-r008-c004 a st:SourceCell ;
         st:column e:t02-c004 ;
@@ -2524,75 +2212,25 @@
         st:row e:t02-r008 ;
         st:value "X" .
 
-    e:t02-r009-c002 a st:SourceCell ;
-        st:column e:t02-c002 ;
-        st:row e:t02-r009 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures" .
-
-    e:t02-r009-c003 a st:SourceCell ;
-        st:column e:t02-c003 ;
-        st:row e:t02-r009 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures" .
-
     e:t02-r009-c007 a st:SourceCell ;
         st:column e:t02-c007 ;
         st:row e:t02-r009 ;
         st:value "X" .
-
-    e:t02-r010-c002 a st:SourceCell ;
-        st:column e:t02-c002 ;
-        st:row e:t02-r010 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures" .
-
-    e:t02-r010-c003 a st:SourceCell ;
-        st:column e:t02-c003 ;
-        st:row e:t02-r010 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures" .
 
     e:t02-r010-c007 a st:SourceCell ;
         st:column e:t02-c007 ;
         st:row e:t02-r010 ;
         st:value "X" .
 
-    e:t02-r011-c002 a st:SourceCell ;
-        st:column e:t02-c002 ;
-        st:row e:t02-r011 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures" .
-
-    e:t02-r011-c003 a st:SourceCell ;
-        st:column e:t02-c003 ;
-        st:row e:t02-r011 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures" .
-
     e:t02-r011-c007 a st:SourceCell ;
         st:column e:t02-c007 ;
         st:row e:t02-r011 ;
         st:value "X" .
 
-    e:t02-r012-c002 a st:SourceCell ;
-        st:column e:t02-c002 ;
-        st:row e:t02-r012 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures" .
-
-    e:t02-r012-c003 a st:SourceCell ;
-        st:column e:t02-c003 ;
-        st:row e:t02-r012 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures" .
-
     e:t02-r012-c007 a st:SourceCell ;
         st:column e:t02-c007 ;
         st:row e:t02-r012 ;
         st:value "X" .
-
-    e:t02-r013-c002 a st:SourceCell ;
-        st:column e:t02-c002 ;
-        st:row e:t02-r013 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures" .
-
-    e:t02-r013-c003 a st:SourceCell ;
-        st:column e:t02-c003 ;
-        st:row e:t02-r013 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures" .
 
     e:t02-r013-c004 a st:SourceCell ;
         st:column e:t02-c004 ;
@@ -2614,16 +2252,6 @@
         st:row e:t02-r013 ;
         st:value "X" .
 
-    e:t02-r014-c002 a st:SourceCell ;
-        st:column e:t02-c002 ;
-        st:row e:t02-r014 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures" .
-
-    e:t02-r014-c003 a st:SourceCell ;
-        st:column e:t02-c003 ;
-        st:row e:t02-r014 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures" .
-
     e:t02-r014-c004 a st:SourceCell ;
         st:column e:t02-c004 ;
         st:row e:t02-r014 ;
@@ -2643,16 +2271,6 @@
         st:column e:t02-c007 ;
         st:row e:t02-r014 ;
         st:value "X" .
-
-    e:t02-r015-c002 a st:SourceCell ;
-        st:column e:t02-c002 ;
-        st:row e:t02-r015 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures" .
-
-    e:t02-r015-c003 a st:SourceCell ;
-        st:column e:t02-c003 ;
-        st:row e:t02-r015 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures" .
 
     e:t02-r015-c004 a st:SourceCell ;
         st:column e:t02-c004 ;
@@ -2674,16 +2292,6 @@
         st:row e:t02-r015 ;
         st:value "X" .
 
-    e:t02-r016-c002 a st:SourceCell ;
-        st:column e:t02-c002 ;
-        st:row e:t02-r016 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures" .
-
-    e:t02-r016-c003 a st:SourceCell ;
-        st:column e:t02-c003 ;
-        st:row e:t02-r016 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures" .
-
     e:t02-r016-c005 a st:SourceCell ;
         st:column e:t02-c005 ;
         st:row e:t02-r016 ;
@@ -2694,30 +2302,10 @@
         st:row e:t02-r016 ;
         st:value "X" .
 
-    e:t02-r017-c002 a st:SourceCell ;
-        st:column e:t02-c002 ;
-        st:row e:t02-r017 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures" .
-
-    e:t02-r017-c003 a st:SourceCell ;
-        st:column e:t02-c003 ;
-        st:row e:t02-r017 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures" .
-
     e:t02-r017-c007 a st:SourceCell ;
         st:column e:t02-c007 ;
         st:row e:t02-r017 ;
         st:value "X" .
-
-    e:t02-r018-c002 a st:SourceCell ;
-        st:column e:t02-c002 ;
-        st:row e:t02-r018 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures" .
-
-    e:t02-r018-c003 a st:SourceCell ;
-        st:column e:t02-c003 ;
-        st:row e:t02-r018 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures" .
 
     e:t02-r018-c004 a st:SourceCell ;
         st:column e:t02-c004 ;
@@ -2738,16 +2326,6 @@
         st:column e:t02-c007 ;
         st:row e:t02-r018 ;
         st:value "X" .
-
-    e:t02-r019-c002 a st:SourceCell ;
-        st:column e:t02-c002 ;
-        st:row e:t02-r019 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures" .
-
-    e:t02-r019-c003 a st:SourceCell ;
-        st:column e:t02-c003 ;
-        st:row e:t02-r019 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures" .
 
     e:t02-r019-c004 a st:SourceCell ;
         st:column e:t02-c004 ;
@@ -2774,16 +2352,6 @@
         st:row e:t02-r019 ;
         st:value "X" .
 
-    e:t02-r020-c002 a st:SourceCell ;
-        st:column e:t02-c002 ;
-        st:row e:t02-r020 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures" .
-
-    e:t02-r020-c003 a st:SourceCell ;
-        st:column e:t02-c003 ;
-        st:row e:t02-r020 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures" .
-
     e:t02-r020-c004 a st:SourceCell ;
         st:column e:t02-c004 ;
         st:row e:t02-r020 ;
@@ -2808,16 +2376,6 @@
         st:column e:t02-c008 ;
         st:row e:t02-r020 ;
         st:value "X" .
-
-    e:t02-r021-c002 a st:SourceCell ;
-        st:column e:t02-c002 ;
-        st:row e:t02-r021 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures" .
-
-    e:t02-r021-c003 a st:SourceCell ;
-        st:column e:t02-c003 ;
-        st:row e:t02-r021 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures" .
 
     e:t02-r021-c004 a st:SourceCell ;
         st:column e:t02-c004 ;
@@ -2844,16 +2402,6 @@
         st:row e:t02-r021 ;
         st:value "X" .
 
-    e:t02-r022-c002 a st:SourceCell ;
-        st:column e:t02-c002 ;
-        st:row e:t02-r022 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures" .
-
-    e:t02-r022-c003 a st:SourceCell ;
-        st:column e:t02-c003 ;
-        st:row e:t02-r022 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures" .
-
     e:t02-r022-c004 a st:SourceCell ;
         st:column e:t02-c004 ;
         st:row e:t02-r022 ;
@@ -2869,16 +2417,6 @@
         st:row e:t02-r022 ;
         st:value "X" .
 
-    e:t02-r023-c002 a st:SourceCell ;
-        st:column e:t02-c002 ;
-        st:row e:t02-r023 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures" .
-
-    e:t02-r023-c003 a st:SourceCell ;
-        st:column e:t02-c003 ;
-        st:row e:t02-r023 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures" .
-
     e:t02-r023-c004 a st:SourceCell ;
         st:column e:t02-c004 ;
         st:row e:t02-r023 ;
@@ -2893,16 +2431,6 @@
         st:column e:t02-c006 ;
         st:row e:t02-r023 ;
         st:value "X" .
-
-    e:t02-r024-c002 a st:SourceCell ;
-        st:column e:t02-c002 ;
-        st:row e:t02-r024 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures" .
-
-    e:t02-r024-c003 a st:SourceCell ;
-        st:column e:t02-c003 ;
-        st:row e:t02-r024 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures" .
 
     e:t02-r024-c004 a st:SourceCell ;
         st:column e:t02-c004 ;
@@ -2924,16 +2452,6 @@
         st:row e:t02-r024 ;
         st:value "X" .
 
-    e:t02-r025-c002 a st:SourceCell ;
-        st:column e:t02-c002 ;
-        st:row e:t02-r025 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures" .
-
-    e:t02-r025-c003 a st:SourceCell ;
-        st:column e:t02-c003 ;
-        st:row e:t02-r025 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures" .
-
     e:t02-r025-c004 a st:SourceCell ;
         st:column e:t02-c004 ;
         st:row e:t02-r025 ;
@@ -2953,16 +2471,6 @@
         st:column e:t02-c007 ;
         st:row e:t02-r025 ;
         st:value "X" .
-
-    e:t02-r026-c002 a st:SourceCell ;
-        st:column e:t02-c002 ;
-        st:row e:t02-r026 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures" .
-
-    e:t02-r026-c003 a st:SourceCell ;
-        st:column e:t02-c003 ;
-        st:row e:t02-r026 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures" .
 
     e:t02-r026-c004 a st:SourceCell ;
         st:column e:t02-c004 ;
@@ -2984,16 +2492,6 @@
         st:row e:t02-r026 ;
         st:value "X" .
 
-    e:t02-r027-c002 a st:SourceCell ;
-        st:column e:t02-c002 ;
-        st:row e:t02-r027 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures" .
-
-    e:t02-r027-c003 a st:SourceCell ;
-        st:column e:t02-c003 ;
-        st:row e:t02-r027 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures" .
-
     e:t02-r027-c005 a st:SourceCell ;
         st:column e:t02-c005 ;
         st:row e:t02-r027 ;
@@ -3008,16 +2506,6 @@
         st:column e:t02-c007 ;
         st:row e:t02-r027 ;
         st:value "X" .
-
-    e:t02-r028-c002 a st:SourceCell ;
-        st:column e:t02-c002 ;
-        st:row e:t02-r028 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures" .
-
-    e:t02-r028-c003 a st:SourceCell ;
-        st:column e:t02-c003 ;
-        st:row e:t02-r028 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures" .
 
     e:t02-r028-c004 a st:SourceCell ;
         st:column e:t02-c004 ;
@@ -3038,16 +2526,6 @@
         st:column e:t02-c007 ;
         st:row e:t02-r028 ;
         st:value "X" .
-
-    e:t02-r029-c002 a st:SourceCell ;
-        st:column e:t02-c002 ;
-        st:row e:t02-r029 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 1 Procedures" .
-
-    e:t02-r029-c003 a st:SourceCell ;
-        st:column e:t02-c003 ;
-        st:row e:t02-r029 ;
-        st:value "Refer to Global Protocol or Country-Specific Amendment for Visit 2 Procedures" .
 
     e:t02-r029-c004 a st:SourceCell ;
         st:column e:t02-c004 ;
@@ -3402,6 +2880,16 @@
         st:parentName "" ;
         st:qualifiedKey "::Modified ATRQ" .
 
+    e:u-t02-c002 a st:UnifiedColumn ;
+        st:compositeLabel "Screening / 1 / Up to -2 / Up to -14" ;
+        st:member e:t02-c002 ;
+        st:populationTrack "COVID-19 Modified" ;
+        st:propertyValue e:u-t02-c002-v01,
+            e:u-t02-c002-v02,
+            e:u-t02-c002-v03,
+            e:u-t02-c002-v04 ;
+        st:segment "track" .
+
     e:u-t02-c002-v01 a st:ColumnPropertyValue ;
         st:level 1 ;
         st:position 1 ;
@@ -3429,6 +2917,16 @@
         st:propertyName "Study Day" ;
         st:propertyType "study_day" ;
         st:value "Up to -14" .
+
+    e:u-t02-c003 a st:UnifiedColumn ;
+        st:compositeLabel "Baseline / 2 / 0 / 1" ;
+        st:member e:t02-c003 ;
+        st:populationTrack "COVID-19 Modified" ;
+        st:propertyValue e:u-t02-c003-v01,
+            e:u-t02-c003-v02,
+            e:u-t02-c003-v03,
+            e:u-t02-c003-v04 ;
+        st:segment "track" .
 
     e:u-t02-c003-v01 a st:ColumnPropertyValue ;
         st:level 1 ;
@@ -3705,6 +3203,54 @@
         st:onPage page:16 ;
         st:rowPosition 24 .
 
+    e:t02-r006 a st:SourceActivityRow ;
+        st:inTable e:t02 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "exact" ;
+        st:name "Clinical Laboratory Tests" ;
+        st:onPage page:85 ;
+        st:rowPosition 6 .
+
+    e:t02-r009 a st:SourceActivityRow ;
+        st:inTable e:t02 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "exact" ;
+        st:name "Electrocardiogram" ;
+        st:onPage page:85 ;
+        st:rowPosition 9 .
+
+    e:t02-r010 a st:SourceActivityRow ;
+        st:inTable e:t02 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "exact" ;
+        st:name "Physical Examination" ;
+        st:onPage page:85 ;
+        st:rowPosition 10 .
+
+    e:t02-r011 a st:SourceActivityRow ;
+        st:inTable e:t02 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "exact" ;
+        st:name "HAMD-17" ;
+        st:onPage page:85 ;
+        st:rowPosition 11 .
+
+    e:t02-r012 a st:SourceActivityRow ;
+        st:inTable e:t02 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "exact" ;
+        st:name "YMRS" ;
+        st:onPage page:85 ;
+        st:rowPosition 12 .
+
+    e:t02-r017 a st:SourceActivityRow ;
+        st:inTable e:t02 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "exact" ;
+        st:name "SF-12" ;
+        st:onPage page:85 ;
+        st:rowPosition 17 .
+
     e:u-t01-r007 a st:UnifiedActivity ;
         st:displayOrder 2 ;
         st:hierarchyLevel 0 ;
@@ -3811,6 +3357,33 @@
         st:onPage page:17 ;
         st:rowPosition 36 .
 
+    e:t02-r007 a st:SourceActivityRow ;
+        st:inTable e:t02 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "exact" ;
+        st:name "Serum Pregnancy Test" ;
+        st:onPage page:85 ;
+        st:rowPosition 7 .
+
+    e:t02-r016 a st:SourceActivityRow ;
+        st:inTable e:t02 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "exact" ;
+        st:name "HAM-A" ;
+        st:onPage page:85 ;
+        st:rowPosition 16 .
+
+    e:u-t02-r022 a st:UnifiedActivity ;
+        st:displayOrder 38 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader false ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:member e:t02-r022 ;
+        st:name "Access IWRS for IP assignment" ;
+        st:parentName "" ;
+        st:qualifiedKey "::Access IWRS for IP assignment" .
+
     e:t01-r006 a st:SourceActivityRow ;
         st:inTable e:t01 ;
         st:matchConfidence 1.0 ;
@@ -3850,157 +3423,6 @@
         st:name "HAM-A" ;
         st:onPage page:17 ;
         st:rowPosition 35 .
-
-    e:t02-r006 a st:SourceActivityRow ;
-        st:inTable e:t02 ;
-        st:matchConfidence 1.0 ;
-        st:matchStatus "exact" ;
-        st:name "Clinical Laboratory Tests" ;
-        st:onPage page:85 ;
-        st:rowPosition 6 .
-
-    e:t02-r009 a st:SourceActivityRow ;
-        st:inTable e:t02 ;
-        st:matchConfidence 1.0 ;
-        st:matchStatus "exact" ;
-        st:name "Electrocardiogram" ;
-        st:onPage page:85 ;
-        st:rowPosition 9 .
-
-    e:t02-r010 a st:SourceActivityRow ;
-        st:inTable e:t02 ;
-        st:matchConfidence 1.0 ;
-        st:matchStatus "exact" ;
-        st:name "Physical Examination" ;
-        st:onPage page:85 ;
-        st:rowPosition 10 .
-
-    e:t02-r011 a st:SourceActivityRow ;
-        st:inTable e:t02 ;
-        st:matchConfidence 1.0 ;
-        st:matchStatus "exact" ;
-        st:name "HAMD-17" ;
-        st:onPage page:85 ;
-        st:rowPosition 11 .
-
-    e:t02-r012 a st:SourceActivityRow ;
-        st:inTable e:t02 ;
-        st:matchConfidence 1.0 ;
-        st:matchStatus "exact" ;
-        st:name "YMRS" ;
-        st:onPage page:85 ;
-        st:rowPosition 12 .
-
-    e:t02-r017 a st:SourceActivityRow ;
-        st:inTable e:t02 ;
-        st:matchConfidence 1.0 ;
-        st:matchStatus "exact" ;
-        st:name "SF-12" ;
-        st:onPage page:85 ;
-        st:rowPosition 17 .
-
-    e:u-t01-r042 a st:UnifiedActivity ;
-        st:displayOrder 32 ;
-        st:hierarchyLevel 0 ;
-        st:isSectionHeader false ;
-        st:matchConfidence 1.0 ;
-        st:matchStatus "new" ;
-        st:member e:t01-r042 ;
-        st:name "Drug Return and Compliance" ;
-        st:parentName "" ;
-        st:qualifiedKey "::Drug Return and Compliance" .
-
-    e:t01-r029 a st:SourceActivityRow ;
-        st:inTable e:t01 ;
-        st:matchConfidence 1.0 ;
-        st:matchStatus "new" ;
-        st:name "CGI-I" ;
-        st:onPage page:16 ;
-        st:rowPosition 29 .
-
-    e:t01-r041 a st:SourceActivityRow ;
-        st:inTable e:t01 ;
-        st:matchConfidence 1.0 ;
-        st:matchStatus "new" ;
-        st:name "Dispense IP" ;
-        st:onPage page:17 ;
-        st:rowPosition 41 .
-
-    e:t02-r007 a st:SourceActivityRow ;
-        st:inTable e:t02 ;
-        st:matchConfidence 1.0 ;
-        st:matchStatus "exact" ;
-        st:name "Serum Pregnancy Test" ;
-        st:onPage page:85 ;
-        st:rowPosition 7 .
-
-    e:t02-r016 a st:SourceActivityRow ;
-        st:inTable e:t02 ;
-        st:matchConfidence 1.0 ;
-        st:matchStatus "exact" ;
-        st:name "HAM-A" ;
-        st:onPage page:85 ;
-        st:rowPosition 16 .
-
-    e:u-t01-c008 a st:UnifiedColumn ;
-        st:compositeLabel "Safety Follow-up / 7 / 10 / 71 / ± 3 Days" ;
-        st:member e:t01-c008 ;
-        st:propertyValue e:u-t01-c008-v01,
-            e:u-t01-c008-v02,
-            e:u-t01-c008-v03,
-            e:u-t01-c008-v04,
-            e:u-t01-c008-v05 ;
-        st:segment "main" .
-
-    e:u-t02-r022 a st:UnifiedActivity ;
-        st:displayOrder 38 ;
-        st:hierarchyLevel 0 ;
-        st:isSectionHeader false ;
-        st:matchConfidence 1.0 ;
-        st:matchStatus "new" ;
-        st:member e:t02-r022 ;
-        st:name "Access IWRS for IP assignment" ;
-        st:parentName "" ;
-        st:qualifiedKey "::Access IWRS for IP assignment" .
-
-    <https://kerfors.github.io/soa-tables/id/sha256/dc5e2ae3233f1b83841dfee437e3105001fb2cd63479b6edb30b0a9b9fce92c5> a st:File ;
-        st:sha256 "dc5e2ae3233f1b83841dfee437e3105001fb2cd63479b6edb30b0a9b9fce92c5" .
-
-    e:t01-c008 a st:SourceColumn ;
-        st:columnPosition 8 ;
-        st:inTable e:t01 .
-
-    e:t01-r037 a st:SourceActivityRow ;
-        st:inTable e:t01 ;
-        st:matchConfidence 1.0 ;
-        st:matchStatus "new" ;
-        st:name "BARS/AIMS/SAS" ;
-        st:onPage page:17 ;
-        st:rowPosition 37 .
-
-    e:t01-r043 a st:SourceActivityRow ;
-        st:inTable e:t01 ;
-        st:matchConfidence 1.0 ;
-        st:matchStatus "new" ;
-        st:name "ADT Compliance" ;
-        st:onPage page:17 ;
-        st:rowPosition 43 .
-
-    e:t01-r045 a st:SourceActivityRow ;
-        st:inTable e:t01 ;
-        st:matchConfidence 1.0 ;
-        st:matchStatus "new" ;
-        st:name "Pharmacogenetic Sample" ;
-        st:onPage page:17 ;
-        st:rowPosition 45 .
-
-    e:t01-r046 a st:SourceActivityRow ;
-        st:inTable e:t01 ;
-        st:matchConfidence 1.0 ;
-        st:matchStatus "new" ;
-        st:name "Pharmacokinetic Sample" ;
-        st:onPage page:17 ;
-        st:rowPosition 46 .
 
     e:t02-r022 a st:SourceActivityRow ;
         st:inTable e:t02 ;
@@ -4078,51 +3500,32 @@
         st:parentName "" ;
         st:qualifiedKey "::SF-12" .
 
-    e:u-t02-c008 a st:UnifiedColumn ;
-        st:compositeLabel "Safety Follow-up / 7 / 10 / 71" ;
-        st:member e:t02-c008 ;
-        st:populationTrack "COVID-19 Modified" ;
-        st:propertyValue e:u-t02-c008-v01,
-            e:u-t02-c008-v02,
-            e:u-t02-c008-v03,
-            e:u-t02-c008-v04 ;
-        st:segment "track" .
-
-    e:t01-r027 a st:SourceActivityRow ;
-        st:inTable e:t01 ;
+    e:u-t01-r042 a st:UnifiedActivity ;
+        st:displayOrder 32 ;
+        st:hierarchyLevel 0 ;
+        st:isSectionHeader false ;
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
-        st:name "MADRS" ;
-        st:onPage page:16 ;
-        st:rowPosition 27 .
-
-    e:t01-r028 a st:SourceActivityRow ;
-        st:inTable e:t01 ;
-        st:matchConfidence 1.0 ;
-        st:matchStatus "new" ;
-        st:name "CGI-S" ;
-        st:onPage page:16 ;
-        st:rowPosition 28 .
-
-    e:t01-r042 a st:SourceActivityRow ;
-        st:inTable e:t01 ;
-        st:matchConfidence 1.0 ;
-        st:matchStatus "new" ;
+        st:member e:t01-r042 ;
         st:name "Drug Return and Compliance" ;
-        st:onPage page:17 ;
-        st:rowPosition 42 .
+        st:parentName "" ;
+        st:qualifiedKey "::Drug Return and Compliance" .
 
-    e:t01-r044 a st:SourceActivityRow ;
+    e:t01-r029 a st:SourceActivityRow ;
         st:inTable e:t01 ;
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
-        st:name "Pharmacogenetic Consent" ;
-        st:onPage page:17 ;
-        st:rowPosition 44 .
+        st:name "CGI-I" ;
+        st:onPage page:16 ;
+        st:rowPosition 29 .
 
-    e:t02-c008 a st:SourceColumn ;
-        st:columnPosition 8 ;
-        st:inTable e:t02 .
+    e:t01-r041 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Dispense IP" ;
+        st:onPage page:17 ;
+        st:rowPosition 41 .
 
     e:t02-r013 a st:SourceActivityRow ;
         st:inTable e:t02 ;
@@ -4188,6 +3591,16 @@
         st:onPage page:85 ;
         st:rowPosition 29 .
 
+    e:u-t01-c008 a st:UnifiedColumn ;
+        st:compositeLabel "Safety Follow-up / 7 / 10 / 71 / ± 3 Days" ;
+        st:member e:t01-c008 ;
+        st:propertyValue e:u-t01-c008-v01,
+            e:u-t01-c008-v02,
+            e:u-t01-c008-v03,
+            e:u-t01-c008-v04,
+            e:u-t01-c008-v05 ;
+        st:segment "main" .
+
     e:u-t01-r035 a st:UnifiedActivity ;
         st:displayOrder 25 ;
         st:hierarchyLevel 0 ;
@@ -4233,37 +3646,44 @@
         st:parentName "" ;
         st:qualifiedKey "::IP Return" .
 
-    e:t01-r018 a st:SourceActivityRow ;
-        st:inTable e:t01 ;
-        st:matchConfidence 1.0 ;
-        st:matchStatus "new" ;
-        st:name "Vital Signs" ;
-        st:onPage page:16 ;
-        st:rowPosition 18 .
+    <https://kerfors.github.io/soa-tables/id/sha256/dc5e2ae3233f1b83841dfee437e3105001fb2cd63479b6edb30b0a9b9fce92c5> a st:File ;
+        st:sha256 "dc5e2ae3233f1b83841dfee437e3105001fb2cd63479b6edb30b0a9b9fce92c5" .
 
-    e:t01-r038 a st:SourceActivityRow ;
-        st:inTable e:t01 ;
-        st:matchConfidence 1.0 ;
-        st:matchStatus "new" ;
-        st:name "C-SSRS" ;
-        st:onPage page:17 ;
-        st:rowPosition 38 .
+    e:t01-c008 a st:SourceColumn ;
+        st:columnPosition 8 ;
+        st:inTable e:t01 .
 
-    e:t01-r039 a st:SourceActivityRow ;
+    e:t01-r037 a st:SourceActivityRow ;
         st:inTable e:t01 ;
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
-        st:name "Adverse Events" ;
+        st:name "BARS/AIMS/SAS" ;
         st:onPage page:17 ;
-        st:rowPosition 39 .
+        st:rowPosition 37 .
 
-    e:t01-r040 a st:SourceActivityRow ;
+    e:t01-r043 a st:SourceActivityRow ;
         st:inTable e:t01 ;
         st:matchConfidence 1.0 ;
         st:matchStatus "new" ;
-        st:name "Concomitant Medications" ;
+        st:name "ADT Compliance" ;
         st:onPage page:17 ;
-        st:rowPosition 40 .
+        st:rowPosition 43 .
+
+    e:t01-r045 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Pharmacogenetic Sample" ;
+        st:onPage page:17 ;
+        st:rowPosition 45 .
+
+    e:t01-r046 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Pharmacokinetic Sample" ;
+        st:onPage page:17 ;
+        st:rowPosition 46 .
 
     e:t02-r008 a st:SourceActivityRow ;
         st:inTable e:t02 ;
@@ -4318,6 +3738,52 @@
         st:parentName "" ;
         st:qualifiedKey "::Clinical Laboratory Tests" .
 
+    e:u-t02-c008 a st:UnifiedColumn ;
+        st:compositeLabel "Safety Follow-up / 7 / 10 / 71" ;
+        st:member e:t02-c008 ;
+        st:populationTrack "COVID-19 Modified" ;
+        st:propertyValue e:u-t02-c008-v01,
+            e:u-t02-c008-v02,
+            e:u-t02-c008-v03,
+            e:u-t02-c008-v04 ;
+        st:segment "track" .
+
+    e:t01-r027 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "MADRS" ;
+        st:onPage page:16 ;
+        st:rowPosition 27 .
+
+    e:t01-r028 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "CGI-S" ;
+        st:onPage page:16 ;
+        st:rowPosition 28 .
+
+    e:t01-r042 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Drug Return and Compliance" ;
+        st:onPage page:17 ;
+        st:rowPosition 42 .
+
+    e:t01-r044 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Pharmacogenetic Consent" ;
+        st:onPage page:17 ;
+        st:rowPosition 44 .
+
+    e:t02-c008 a st:SourceColumn ;
+        st:columnPosition 8 ;
+        st:inTable e:t02 .
+
     e:t02-r026 a st:SourceActivityRow ;
         st:inTable e:t02 ;
         st:matchConfidence 1.0 ;
@@ -4325,6 +3791,38 @@
         st:name "IP Return" ;
         st:onPage page:85 ;
         st:rowPosition 26 .
+
+    e:t01-r018 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Vital Signs" ;
+        st:onPage page:16 ;
+        st:rowPosition 18 .
+
+    e:t01-r038 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "C-SSRS" ;
+        st:onPage page:17 ;
+        st:rowPosition 38 .
+
+    e:t01-r039 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Adverse Events" ;
+        st:onPage page:17 ;
+        st:rowPosition 39 .
+
+    e:t01-r040 a st:SourceActivityRow ;
+        st:inTable e:t01 ;
+        st:matchConfidence 1.0 ;
+        st:matchStatus "new" ;
+        st:name "Concomitant Medications" ;
+        st:onPage page:17 ;
+        st:rowPosition 40 .
 
     e:t02-r005 a st:SourceActivityRow ;
         st:inTable e:t02 ;
@@ -4382,10 +3880,6 @@
         st:parentName "" ;
         st:qualifiedKey "::Pharmacokinetic Sample" .
 
-    page:17 a st:Page ;
-        st:inFile <https://kerfors.github.io/soa-tables/id/sha256/dc5e2ae3233f1b83841dfee437e3105001fb2cd63479b6edb30b0a9b9fce92c5> ;
-        st:pageNumber 17 .
-
     e:u-t01-r027 a st:UnifiedActivity ;
         st:displayOrder 22 ;
         st:hierarchyLevel 0 ;
@@ -4434,16 +3928,6 @@
         st:parentName "" ;
         st:qualifiedKey "::ADT Compliance" .
 
-    e:u-t01-c004 a st:UnifiedColumn ;
-        st:compositeLabel "Double-blind Treatment / 3 / 1 / 8 / ± 3 Days" ;
-        st:member e:t01-c004 ;
-        st:propertyValue e:u-t01-c004-v01,
-            e:u-t01-c004-v02,
-            e:u-t01-c004-v03,
-            e:u-t01-c004-v04,
-            e:u-t01-c004-v05 ;
-        st:segment "main" .
-
     e:u-t01-r045 a st:UnifiedActivity ;
         st:displayOrder 35 ;
         st:hierarchyLevel 0 ;
@@ -4456,19 +3940,9 @@
         st:parentName "" ;
         st:qualifiedKey "::Pharmacogenetic Sample" .
 
-    e:t01-c004 a st:SourceColumn ;
-        st:columnPosition 4 ;
-        st:inTable e:t01 .
-
-    e:u-t01-c006 a st:UnifiedColumn ;
-        st:compositeLabel "Double-blind Treatment / 5 / 4 / 29 / ± 3 Days" ;
-        st:member e:t01-c006 ;
-        st:propertyValue e:u-t01-c006-v01,
-            e:u-t01-c006-v02,
-            e:u-t01-c006-v03,
-            e:u-t01-c006-v04,
-            e:u-t01-c006-v05 ;
-        st:segment "main" .
+    page:17 a st:Page ;
+        st:inFile <https://kerfors.github.io/soa-tables/id/sha256/dc5e2ae3233f1b83841dfee437e3105001fb2cd63479b6edb30b0a9b9fce92c5> ;
+        st:pageNumber 17 .
 
     e:u-t01-r039 a st:UnifiedActivity ;
         st:displayOrder 29 ;
@@ -4506,18 +3980,14 @@
         st:parentName "" ;
         st:qualifiedKey "::Pharmacogenetic Consent" .
 
-    e:t01-c006 a st:SourceColumn ;
-        st:columnPosition 6 ;
-        st:inTable e:t01 .
-
-    e:u-t01-c005 a st:UnifiedColumn ;
-        st:compositeLabel "Double-blind Treatment / 4 / 2 / 15 / ± 3 Days" ;
-        st:member e:t01-c005 ;
-        st:propertyValue e:u-t01-c005-v01,
-            e:u-t01-c005-v02,
-            e:u-t01-c005-v03,
-            e:u-t01-c005-v04,
-            e:u-t01-c005-v05 ;
+    e:u-t01-c004 a st:UnifiedColumn ;
+        st:compositeLabel "Double-blind Treatment / 3 / 1 / 8 / ± 3 Days" ;
+        st:member e:t01-c004 ;
+        st:propertyValue e:u-t01-c004-v01,
+            e:u-t01-c004-v02,
+            e:u-t01-c004-v03,
+            e:u-t01-c004-v04,
+            e:u-t01-c004-v05 ;
         st:segment "main" .
 
     e:u-t01-r038 a st:UnifiedActivity ;
@@ -4532,9 +4002,19 @@
         st:parentName "" ;
         st:qualifiedKey "::C-SSRS" .
 
-    e:t01-c005 a st:SourceColumn ;
-        st:columnPosition 5 ;
+    e:t01-c004 a st:SourceColumn ;
+        st:columnPosition 4 ;
         st:inTable e:t01 .
+
+    e:u-t01-c006 a st:UnifiedColumn ;
+        st:compositeLabel "Double-blind Treatment / 5 / 4 / 29 / ± 3 Days" ;
+        st:member e:t01-c006 ;
+        st:propertyValue e:u-t01-c006-v01,
+            e:u-t01-c006-v02,
+            e:u-t01-c006-v03,
+            e:u-t01-c006-v04,
+            e:u-t01-c006-v05 ;
+        st:segment "main" .
 
     e:u-t01-r018 a st:UnifiedActivity ;
         st:displayOrder 13 ;
@@ -4547,6 +4027,24 @@
         st:name "Vital Signs" ;
         st:parentName "" ;
         st:qualifiedKey "::Vital Signs" .
+
+    e:t01-c006 a st:SourceColumn ;
+        st:columnPosition 6 ;
+        st:inTable e:t01 .
+
+    e:u-t01-c005 a st:UnifiedColumn ;
+        st:compositeLabel "Double-blind Treatment / 4 / 2 / 15 / ± 3 Days" ;
+        st:member e:t01-c005 ;
+        st:propertyValue e:u-t01-c005-v01,
+            e:u-t01-c005-v02,
+            e:u-t01-c005-v03,
+            e:u-t01-c005-v04,
+            e:u-t01-c005-v05 ;
+        st:segment "main" .
+
+    e:t01-c005 a st:SourceColumn ;
+        st:columnPosition 5 ;
+        st:inTable e:t01 .
 
     e:u-t02-c004 a st:UnifiedColumn ;
         st:compositeLabel "Double-blind Treatment / 3 / 1 / 8" ;
@@ -4636,26 +4134,6 @@
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/dc5e2ae3233f1b83841dfee437e3105001fb2cd63479b6edb30b0a9b9fce92c5> ;
         st:pageNumber 16 .
 
-    e:u-t02-c002 a st:UnifiedColumn ;
-        st:compositeLabel "Screening / 1 / Up to -2 / Up to -14" ;
-        st:member e:t02-c002 ;
-        st:populationTrack "COVID-19 Modified" ;
-        st:propertyValue e:u-t02-c002-v01,
-            e:u-t02-c002-v02,
-            e:u-t02-c002-v03,
-            e:u-t02-c002-v04 ;
-        st:segment "track" .
-
-    e:u-t02-c003 a st:UnifiedColumn ;
-        st:compositeLabel "Baseline / 2 / 0 / 1" ;
-        st:member e:t02-c003 ;
-        st:populationTrack "COVID-19 Modified" ;
-        st:propertyValue e:u-t02-c003-v01,
-            e:u-t02-c003-v02,
-            e:u-t02-c003-v03,
-            e:u-t02-c003-v04 ;
-        st:segment "track" .
-
     page:85 a st:Page ;
         st:inFile <https://kerfors.github.io/soa-tables/id/sha256/dc5e2ae3233f1b83841dfee437e3105001fb2cd63479b6edb30b0a9b9fce92c5> ;
         st:pageNumber 85 .
@@ -4663,14 +4141,6 @@
     e:t01-c002 a st:SourceColumn ;
         st:columnPosition 2 ;
         st:inTable e:t01 .
-
-    e:t02-c002 a st:SourceColumn ;
-        st:columnPosition 2 ;
-        st:inTable e:t02 .
-
-    e:t02-c003 a st:SourceColumn ;
-        st:columnPosition 3 ;
-        st:inTable e:t02 .
 
     e:u-t01-c002 a st:UnifiedColumn ;
         st:compositeLabel "Screening / 1 / Up to -2 / Up to -14" ;
